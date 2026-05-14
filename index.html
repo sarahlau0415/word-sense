@@ -332,6 +332,15 @@
       margin: 0 0 18px;
     }
 
+    .answer.loading,
+    .answer.error {
+      color: #4c575b;
+    }
+
+    .answer.error strong {
+      color: var(--brick);
+    }
+
     .answer .word-title {
       display: flex;
       align-items: baseline;
@@ -743,15 +752,93 @@
       metaDepth.textContent = data.depth;
     }
 
-    form.addEventListener("submit", event => {
+    function renderGeneratedAnswer(word, source, sentence, answer, model) {
+      const paragraphs = answer
+        .split(/\n{2,}/)
+        .map(paragraph => paragraph.trim())
+        .filter(Boolean);
+
+      result.classList.remove("empty");
+      result.innerHTML = `
+        <div class="answer">
+          <div class="word-title">
+            <h2>${escapeHtml(word)}</h2>
+            <span class="badge">${escapeHtml(model || "模型生成")}</span>
+          </div>
+          ${paragraphs.map(paragraph => `<p>${formatInline(paragraph).replace(/\n/g, "<br>")}</p>`).join("")}
+        </div>
+      `;
+
+      metaWord.textContent = word;
+      metaContext.textContent = sentence.trim() ? "有原句" : (source.trim() ? "有出处" : "只有词");
+      metaDepth.textContent = "模型判断";
+    }
+
+    function renderLoading(word, source, sentence) {
+      result.classList.remove("empty");
+      result.innerHTML = `
+        <div class="answer loading">
+          <div class="word-title">
+            <h2>${escapeHtml(word)}</h2>
+            <span class="badge">生成中</span>
+          </div>
+          <p>正在看这个词在真实语境里怎么工作。复杂一点的词会多想几秒。</p>
+        </div>
+      `;
+      metaWord.textContent = word;
+      metaContext.textContent = sentence.trim() ? "有原句" : (source.trim() ? "有出处" : "只有词");
+      metaDepth.textContent = "模型判断中";
+    }
+
+    function renderError(word, message) {
+      result.classList.remove("empty");
+      result.innerHTML = `
+        <div class="answer error">
+          <div class="word-title">
+            <h2>${escapeHtml(word)}</h2>
+            <span class="badge">暂时失败</span>
+          </div>
+          <p><strong>这次没有生成成功。</strong></p>
+          <p>${escapeHtml(message)}</p>
+          <p>如果你是在本地 file 页面里测试，模型接口需要部署到 Vercel 后才会工作。</p>
+        </div>
+      `;
+      metaDepth.textContent = "接口未完成";
+    }
+
+    async function generateSense(word, source, sentence) {
+      renderLoading(word, source, sentence);
+      result.scrollIntoView({ behavior: "smooth", block: "start" });
+
+      const response = await fetch("/api/sense", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ word, source, sentence })
+      });
+
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data.error || "接口返回失败。");
+      }
+
+      renderGeneratedAnswer(word, source, sentence, data.answer, data.model);
+    }
+
+    form.addEventListener("submit", async event => {
       event.preventDefault();
       const word = wordInput.value.trim();
       if (!word) {
         wordInput.focus();
         return;
       }
-      renderAnswer(word, sourceInput.value.trim(), sentenceInput.value.trim());
-      result.scrollIntoView({ behavior: "smooth", block: "start" });
+      const source = sourceInput.value.trim();
+      const sentence = sentenceInput.value.trim();
+
+      try {
+        await generateSense(word, source, sentence);
+      } catch (error) {
+        renderError(word, error.message);
+      }
     });
 
     document.querySelectorAll("[data-fill]").forEach(button => {

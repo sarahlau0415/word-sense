@@ -1,0 +1,9 @@
+{
+  "name": "word-sense",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A word sense search prototype for Chinese adult English learners.",
+  "scripts": {
+    "check": "node -c api/sense.js"
+  }
+}

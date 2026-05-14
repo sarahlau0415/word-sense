@@ -9,15 +9,37 @@ The page focuses on:
 - sense-specific explanations
 - examples across workplace, daily conversation, and social media contexts
 
-This is currently a front-end prototype. The built-in examples include `shot`, `pristine`, `sweet`, and `agency`; other words use a placeholder flow that can later be connected to a model API.
+This is currently a Vercel-ready prototype. The front end calls `/api/sense`, a small serverless function that uses the OpenAI Responses API to generate Word Sense explanations. The built-in examples include `shot`, `pristine`, `sweet`, and `agency` as a fallback/demo path.
 
 ## Preview Locally
 
-Open `index.html` directly in a browser.
+Open `index.html` directly in a browser to preview the static UI.
 
-No build step or dev server is required.
+Model generation requires a deployed serverless environment with `OPENAI_API_KEY` set. The local `file://` preview cannot call `/api/sense`.
 
-## Publish With GitHub Pages
+## Environment Variables
+
+Set these in Vercel:
+
+- `OPENAI_API_KEY`: required
+- `OPENAI_MODEL`: optional, defaults to `gpt-5.2`
+
+## Check Syntax
+
+```bash
+npm run check
+```
+
+## Publish With Vercel
+
+GitHub Pages can host the static page, but it cannot run `/api/sense`. Use Vercel when you want friends to enter any word and receive generated results.
+
+1. Import this GitHub repository into Vercel.
+2. Add `OPENAI_API_KEY` in the Vercel project environment variables.
+3. Deploy.
+4. Share the Vercel URL.
+
+## Publish Static Preview With GitHub Pages
 
 1. Create a new GitHub repository.
 2. Push this folder to the repository.
@@ -27,7 +49,11 @@ No build step or dev server is required.
 6. Choose the `main` branch and `/root`.
 7. Save and wait for GitHub to generate the public URL.
 
+GitHub Pages is only useful for the UI preview unless `/api/sense` is hosted somewhere else.
+
 ## Project Files
 
-- `index.html`: the full static prototype
+- `index.html`: the full static UI
+- `api/sense.js`: serverless model endpoint
+- `package.json`: project metadata and syntax check script
 - `README.md`: project overview and publishing notes
