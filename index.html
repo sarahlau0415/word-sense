@@ -1,0 +1,795 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Word Sense</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1f2528;
+      --muted: #687176;
+      --line: #d8ddd9;
+      --paper: #fbfaf6;
+      --panel: #ffffff;
+      --green: #24594d;
+      --green-soft: #e3eee9;
+      --brick: #a74e35;
+      --brick-soft: #f5e7df;
+      --gold: #c18b32;
+      --blue: #315f8f;
+      --shadow: 0 18px 45px rgba(31, 37, 40, 0.09);
+      --radius: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background:
+        radial-gradient(circle at 8% 12%, rgba(193, 139, 50, 0.12), transparent 28%),
+        linear-gradient(135deg, #fbfaf6 0%, #eef4f1 48%, #f8efe8 100%);
+      color: var(--ink);
+      min-height: 100vh;
+    }
+
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .shell {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 28px 0 42px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      min-height: 48px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      background: var(--green);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      line-height: 1;
+      box-shadow: 0 8px 20px rgba(36, 89, 77, 0.24);
+    }
+
+    .brand-name {
+      font-size: 20px;
+      font-weight: 750;
+      letter-spacing: 0;
+    }
+
+    .brand-note {
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav button {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.62);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 9px 13px;
+      font-size: 14px;
+    }
+
+    .nav button:hover {
+      border-color: rgba(36, 89, 77, 0.45);
+      background: #fff;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.04fr) minmax(320px, 0.76fr);
+      gap: 26px;
+      align-items: stretch;
+      margin-top: 46px;
+    }
+
+    .search-pane {
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(216, 221, 217, 0.86);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+      backdrop-filter: blur(16px);
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 740px;
+      font-size: clamp(38px, 6vw, 76px);
+      line-height: 0.97;
+      letter-spacing: 0;
+      font-weight: 830;
+    }
+
+    .subhead {
+      color: #4c575b;
+      font-size: 18px;
+      line-height: 1.65;
+      max-width: 680px;
+      margin: 22px 0 26px;
+    }
+
+    .search-box {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+      padding: 8px;
+      background: var(--panel);
+      border: 1px solid rgba(31, 37, 40, 0.16);
+      border-radius: var(--radius);
+    }
+
+    .search-box input {
+      width: 100%;
+      border: 0;
+      outline: 0;
+      min-height: 52px;
+      padding: 0 14px;
+      font-size: 22px;
+      font-weight: 690;
+      color: var(--ink);
+      background: transparent;
+    }
+
+    .primary {
+      border: 0;
+      background: var(--green);
+      color: #fff;
+      min-height: 52px;
+      border-radius: 6px;
+      padding: 0 22px;
+      font-weight: 720;
+    }
+
+    .primary:hover {
+      background: #1f4d43;
+    }
+
+    .context-grid {
+      display: grid;
+      grid-template-columns: 0.72fr 1fr;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0 0 6px 2px;
+    }
+
+    .field input,
+    .field textarea {
+      width: 100%;
+      border: 1px solid rgba(31, 37, 40, 0.15);
+      background: rgba(255, 255, 255, 0.86);
+      border-radius: var(--radius);
+      color: var(--ink);
+      outline: 0;
+      padding: 13px 14px;
+      line-height: 1.45;
+    }
+
+    .field textarea {
+      min-height: 92px;
+      resize: vertical;
+    }
+
+    .examples {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .examples button {
+      border: 1px solid rgba(31, 37, 40, 0.14);
+      background: var(--green-soft);
+      color: #21483f;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-weight: 650;
+    }
+
+    .visual-pane {
+      position: relative;
+      overflow: hidden;
+      min-height: 445px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(31, 37, 40, 0.12);
+      background:
+        linear-gradient(160deg, rgba(36, 89, 77, 0.92), rgba(31, 37, 40, 0.94)),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='900' viewBox='0 0 900 900'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.16'%3E%3Cpath d='M67 142c134 27 258 43 392 2 112-34 210-18 333 47'/%3E%3Cpath d='M83 276c133 54 251 55 380 1 114-48 225-19 352 62'/%3E%3Cpath d='M58 423c154 65 259 61 404-6 110-51 213-29 361 73'/%3E%3Cpath d='M97 590c128 27 232 11 354-56 119-65 234-54 379 44'/%3E%3Cpath d='M46 729c147 41 273 21 389-55 133-87 250-67 398 33'/%3E%3C/g%3E%3Cg fill='%23ffffff' fill-opacity='.2'%3E%3Ccircle cx='180' cy='215' r='5'/%3E%3Ccircle cx='438' cy='301' r='5'/%3E%3Ccircle cx='702' cy='245' r='5'/%3E%3Ccircle cx='274' cy='512' r='5'/%3E%3Ccircle cx='612' cy='572' r='5'/%3E%3Ccircle cx='391' cy='710' r='5'/%3E%3C/g%3E%3C/svg%3E");
+      background-size: cover;
+      box-shadow: var(--shadow);
+      color: #fff;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .sense-stack {
+      display: grid;
+      gap: 14px;
+    }
+
+    .sense-card {
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(255, 255, 255, 0.11);
+      border-radius: var(--radius);
+      padding: 16px;
+      backdrop-filter: blur(12px);
+    }
+
+    .sense-card b {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    .sense-card span {
+      display: block;
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .quote-line {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 32px;
+      line-height: 1.15;
+      max-width: 360px;
+    }
+
+    .workspace {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 22px;
+      margin-top: 24px;
+      align-items: start;
+    }
+
+    .result,
+    .side {
+      background: rgba(255, 255, 255, 0.84);
+      border: 1px solid rgba(216, 221, 217, 0.9);
+      border-radius: var(--radius);
+      box-shadow: 0 12px 32px rgba(31, 37, 40, 0.06);
+    }
+
+    .result {
+      min-height: 480px;
+      padding: 28px;
+    }
+
+    .result.empty {
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    .empty-state {
+      max-width: 450px;
+    }
+
+    .empty-state strong {
+      display: block;
+      color: var(--ink);
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .answer {
+      line-height: 1.82;
+      font-size: 17px;
+    }
+
+    .answer p {
+      margin: 0 0 18px;
+    }
+
+    .answer .word-title {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      padding-bottom: 18px;
+      margin-bottom: 22px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .word-title h2 {
+      margin: 0;
+      font-size: 42px;
+      letter-spacing: 0;
+      line-height: 1;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      border-radius: 999px;
+      padding: 0 10px;
+      color: #7b3c2b;
+      background: var(--brick-soft);
+      font-size: 13px;
+      font-weight: 690;
+      white-space: nowrap;
+    }
+
+    .examples-block {
+      margin-top: 26px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+    }
+
+    .example-item {
+      margin: 16px 0 0;
+      padding: 15px 16px;
+      border-left: 3px solid var(--gold);
+      background: #fffdf8;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .example-item b {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--blue);
+      font-size: 14px;
+    }
+
+    .example-item span {
+      color: #2a3033;
+    }
+
+    .side {
+      padding: 18px;
+      position: sticky;
+      top: 20px;
+    }
+
+    .side h2 {
+      margin: 0 0 14px;
+      font-size: 17px;
+    }
+
+    .meta-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .meta {
+      border: 1px solid rgba(31, 37, 40, 0.1);
+      border-radius: var(--radius);
+      padding: 12px;
+      background: rgba(251, 250, 246, 0.62);
+    }
+
+    .meta small {
+      color: var(--muted);
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .meta strong {
+      color: var(--ink);
+      font-size: 15px;
+    }
+
+    .copy-button {
+      width: 100%;
+      margin-top: 14px;
+      border: 1px solid rgba(36, 89, 77, 0.28);
+      background: #fff;
+      color: var(--green);
+      border-radius: 6px;
+      min-height: 42px;
+      font-weight: 720;
+    }
+
+    @media (max-width: 900px) {
+      .shell {
+        width: min(100% - 28px, 720px);
+        padding-top: 20px;
+      }
+
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav {
+        justify-content: flex-start;
+      }
+
+      .hero,
+      .workspace,
+      .context-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        margin-top: 32px;
+      }
+
+      .visual-pane {
+        min-height: 300px;
+      }
+
+      .side {
+        position: static;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .shell {
+        width: calc(100% - 22px);
+      }
+
+      .search-pane,
+      .result,
+      .visual-pane {
+        padding: 18px;
+      }
+
+      .search-box {
+        grid-template-columns: 1fr;
+      }
+
+      .primary {
+        width: 100%;
+      }
+
+      .word-title {
+        flex-direction: column;
+      }
+
+      .answer .word-title h2 {
+        font-size: 34px;
+      }
+
+      .quote-line {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="mark">W</div>
+        <div>
+          <div class="brand-name">Word Sense</div>
+          <div class="brand-note">给中国成人学习者的用法搜索</div>
+        </div>
+      </div>
+      <nav class="nav" aria-label="快捷词">
+        <button type="button" data-fill="shot">shot</button>
+        <button type="button" data-fill="pristine">pristine</button>
+        <button type="button" data-fill="sweet">sweet</button>
+        <button type="button" data-fill="agency">agency</button>
+      </nav>
+    </header>
+
+    <section class="hero" aria-label="单词搜索">
+      <div class="search-pane">
+        <h1>看见一个词真正工作的样子</h1>
+        <p class="subhead">输入单词，再给一点出处或原句。页面会把解释锚定在那个语境里，避开词典式罗列，直接看用法、语气和中英认知错位。</p>
+
+        <form id="senseForm">
+          <div class="search-box">
+            <input id="wordInput" autocomplete="off" placeholder="输入一个英文词" aria-label="英文词">
+            <button class="primary" type="submit">搜索</button>
+          </div>
+
+          <div class="context-grid">
+            <div class="field">
+              <label for="sourceInput">出处</label>
+              <input id="sourceInput" placeholder="老板邮件、Instagram、Reddit 评论">
+            </div>
+            <div class="field">
+              <label for="sentenceInput">原句</label>
+              <textarea id="sentenceInput" placeholder="see something from a simple shot"></textarea>
+            </div>
+          </div>
+        </form>
+
+        <div class="examples" aria-label="示例搜索">
+          <button type="button" data-example="shot">带原句看 shot</button>
+          <button type="button" data-example="pristine">看 pristine</button>
+          <button type="button" data-example="sweet">看 sweet</button>
+        </div>
+      </div>
+
+      <aside class="visual-pane" aria-label="产品语感">
+        <div class="sense-stack">
+          <div class="sense-card">
+            <b>用法，不是定义</b>
+            <span>从真实句子里看一个词怎样切开经验，而不是先找中文对应词。</span>
+          </div>
+          <div class="sense-card">
+            <b>锚定一个 sense</b>
+            <span>有原句就收窄；只有词时，只讲最值得停下来的 1-2 个用法。</span>
+          </div>
+        </div>
+        <div class="quote-line">meaning lives in use</div>
+      </aside>
+    </section>
+
+    <section class="workspace" aria-label="搜索结果">
+      <article id="result" class="result empty">
+        <div class="empty-state">
+          <strong>先搜一个词</strong>
+          <span>如果你贴上原句，解释会更准；如果只输入词，页面会给最常见的用法入口。</span>
+        </div>
+      </article>
+
+      <aside class="side" aria-label="搜索判断">
+        <h2>当前判断</h2>
+        <div class="meta-list">
+          <div class="meta">
+            <small>词</small>
+            <strong id="metaWord">未输入</strong>
+          </div>
+          <div class="meta">
+            <small>语境</small>
+            <strong id="metaContext">等待原句或出处</strong>
+          </div>
+          <div class="meta">
+            <small>输出深度</small>
+            <strong id="metaDepth">自动判断</strong>
+          </div>
+        </div>
+        <button id="copyPrompt" class="copy-button" type="button">复制查询参数</button>
+      </aside>
+    </section>
+  </main>
+
+  <script>
+    const form = document.querySelector("#senseForm");
+    const wordInput = document.querySelector("#wordInput");
+    const sourceInput = document.querySelector("#sourceInput");
+    const sentenceInput = document.querySelector("#sentenceInput");
+    const result = document.querySelector("#result");
+    const metaWord = document.querySelector("#metaWord");
+    const metaContext = document.querySelector("#metaContext");
+    const metaDepth = document.querySelector("#metaDepth");
+    const copyPrompt = document.querySelector("#copyPrompt");
+
+    const samples = {
+      shot: {
+        badge: "原句锚定",
+        depth: "L2, 有跨语言错位",
+        lead: "`shot` 在摄影语境里不能只当成“照片”。它更像一次取景的动作：相机对准、按下快门，把世界切成一个能被看的瞬间。",
+        paragraphs: [
+          "中文会把“开枪、拍照、喝酒、尝试、打针”分到不同领域；英语里的 `shot` 却常把它们放进同一个身体图式：一次出手，一次释放，一次抓取。",
+          "所以 `a simple shot` 不是“简单照片”那么平。它暗示这个画面没有复杂设计，但这一“下”抓得准。你看到的不是整个事件，而是一个角度、一个构图、一个瞬间。",
+          "和 `photo` 比，`photo` 更像照片这个物；`shot` 更像拍到的这一帧，以及拍它的那一下。和 `scene` 比，`shot` 又小很多，是电影或影像里一个取景单位。"
+        ],
+        examples: [
+          ["职场,内容会议", "We don’t need a full scene; one clean shot of the product in use will say enough."],
+          ["日常,跟朋友", "That’s a great shot of your dad; you really caught his smile at the right moment."],
+          ["社媒", "one simple shot of the empty chair and suddenly the whole movie hurts more"]
+        ]
+      },
+      pristine: {
+        badge: "常见用法",
+        depth: "L2, 物品与环境",
+        lead: "`pristine` 不只是“干净”。它有一种“还没被世界弄乱过”的感觉：没有痕迹，没有磨损，甚至带一点原封未动的光。",
+        paragraphs: [
+          "你可以把它锚在 `clean` 和 `new` 之间。`clean` 只是没有脏东西；`new` 是新的；`pristine` 更像 `clean` 的理想化版本，或者 `new` 的未触碰版本。",
+          "它常贴在自然环境、房间、衣物、文件状态上。说 `pristine beaches` 时，不只是生态报告，也是在说它美，因为它还没有被人类弄坏。",
+          "放在人身上要小心。日常英语里不太会随便说 `a pristine person`，除非是讽刺、文学化，或在谈道德纯洁那种旧式语感。"
+        ],
+        examples: [
+          ["职场,邮件里", "Please keep the original file pristine and make all edits in a separate copy."],
+          ["日常,看房时", "The kitchen looked pristine, like nobody had cooked a real meal there yet."],
+          ["社媒", "that pristine beach in everyone’s vacation photos is probably five feet outside the crop"]
+        ]
+      },
+      sweet: {
+        badge: "常见用法",
+        depth: "L2, 口语高频",
+        lead: "`sweet` 当然可以说味道甜，但真实英语里，它更常用来评价一种让人心里变软的东西：体贴、暖、可爱，或一个小善意被看见的瞬间。",
+        paragraphs: [
+          "味觉上的 `sweet` 很直观。它和 `sugary` 不一样：`sweet` 可以是中性的、愉快的；`sugary` 往往暗示糖太多，甚至有点腻。",
+          "形容人或行为时，`sweet` 不是中文里的“甜美”。它更接近 `kind` 的亲密版本，或者 `nice` 的有温度版本。",
+          "还有一个口语用法是“太好了 / 很不错”：`Sweet, thanks.` 这个在美式口语里自然，语气轻快，但不适合太正式的邮件。"
+        ],
+        examples: [
+          ["职场,Slack 上", "Sweet, thanks for updating the deck before the client call."],
+          ["日常,跟朋友", "That was sweet of him to bring soup when you were sick."],
+          ["社媒", "the way she saved him the last slice is so sweet, actually"]
+        ]
+      },
+      agency: {
+        badge: "抽象概念词",
+        depth: "L3, 文化与学科负载",
+        lead: "`agency` 麻烦的地方在于，它看起来像“能力”或“自主性”，但又不完全等于这两个词。它问的是：一个人是不是能作为行动者，对自己的处境产生影响。",
+        paragraphs: [
+          "中文里我们常说“主观能动性”，但这个表达一进日常语境就显得重。英语里的 `agency` 可以很学术，也可以进入职场、教育、心理咨询、社会议题。",
+          "它和 `freedom` 的差别在于，`freedom` 更像有没有外部限制；`agency` 更关心你是否真的能选择、行动，并承担这个行动带来的结果。",
+          "这个词背后常有一种制度感：人不是只有意愿就够了，还要有资源、信息、权力、空间，才能把意愿变成行动。"
+        ],
+        examples: [
+          ["职场,管理讨论", "The new process gives teams more agency over how they plan and deliver their work."],
+          ["日常,聊人生选择", "Moving out gave her a sense of agency she never really had at home."],
+          ["社媒", "calling it a choice ignores how little agency people actually have in that situation"]
+        ]
+      }
+    };
+
+    function escapeHtml(value) {
+      return value.replace(/[&<>"']/g, char => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#039;"
+      }[char]));
+    }
+
+    function formatInline(text) {
+      return escapeHtml(text).replace(/`([^`]+)`/g, "<code>$1</code>");
+    }
+
+    function inferDepth(word, sentence) {
+      if (sentence.trim()) return "L2, 原句锚定";
+      if (word.length > 9 || ["agency", "identity", "integrity", "authentic", "commitment"].includes(word.toLowerCase())) {
+        return "L3, 概念词";
+      }
+      return "L2, 常见用法";
+    }
+
+    function renderGeneric(word, source, sentence) {
+      const hasSentence = sentence.trim().length > 0;
+      return {
+        badge: hasSentence ? "原句锚定" : "等待模型",
+        depth: inferDepth(word, sentence),
+        lead: hasSentence
+          ? `我现在讲的是 \`${word}\` 在你这句话里的用法；这个词在别的场合可能还有别的意思。`
+          : `\`${word}\` 需要接入后端模型后生成完整解读。这个静态页面先把搜索、语境和结果结构跑通。`,
+        paragraphs: hasSentence
+          ? [
+              `原句：${sentence}`,
+              source ? `出处：${source}。页面会用这个信息判断语域，再收窄到对应的 sense。` : "如果再补一点出处，语气和场域判断会更稳。",
+              "正式接入模型后，这里会呈现画面化解释、近义词锚定、中英认知错位，以及按场域区分的例句。"
+            ]
+          : [
+              "只输入词时，系统会选择最常见、最值得停下来的 1-2 个用法，而不是罗列词典义项。",
+              "如果你有原句，建议贴上来。Word Sense 的核心价值就在于把解释锚定到具体使用场景。"
+            ],
+        examples: [
+          ["职场/正式", "A generated workplace example will appear here after the model is connected."],
+          ["日常", "A natural spoken example will appear here with the right tone and distance."],
+          ["社媒", "a platform-shaped example will appear here without trying too hard"]
+        ]
+      };
+    }
+
+    function renderAnswer(word, source, sentence) {
+      const key = word.toLowerCase();
+      const data = samples[key] || renderGeneric(word, source, sentence);
+
+      result.classList.remove("empty");
+      result.innerHTML = `
+        <div class="answer">
+          <div class="word-title">
+            <h2>${escapeHtml(word)}</h2>
+            <span class="badge">${escapeHtml(data.badge)}</span>
+          </div>
+          <p>${formatInline(data.lead)}</p>
+          ${data.paragraphs.map(paragraph => `<p>${formatInline(paragraph)}</p>`).join("")}
+          <div class="examples-block">
+            <p>几个例子,在不同场域里你感受一下区别:</p>
+            ${data.examples.map(([label, example]) => `
+              <div class="example-item">
+                <b>${escapeHtml(label)}</b>
+                <span>${escapeHtml(example)}</span>
+              </div>
+            `).join("")}
+          </div>
+        </div>
+      `;
+
+      metaWord.textContent = word;
+      metaContext.textContent = sentence.trim() ? "有原句" : (source.trim() ? "有出处" : "只有词");
+      metaDepth.textContent = data.depth;
+    }
+
+    form.addEventListener("submit", event => {
+      event.preventDefault();
+      const word = wordInput.value.trim();
+      if (!word) {
+        wordInput.focus();
+        return;
+      }
+      renderAnswer(word, sourceInput.value.trim(), sentenceInput.value.trim());
+      result.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+
+    document.querySelectorAll("[data-fill]").forEach(button => {
+      button.addEventListener("click", () => {
+        wordInput.value = button.dataset.fill;
+        sourceInput.value = "";
+        sentenceInput.value = "";
+        renderAnswer(wordInput.value, "", "");
+      });
+    });
+
+    document.querySelectorAll("[data-example]").forEach(button => {
+      button.addEventListener("click", () => {
+        const word = button.dataset.example;
+        wordInput.value = word;
+        if (word === "shot") {
+          sourceInput.value = "电影评论";
+          sentenceInput.value = "see something from a simple shot";
+        } else {
+          sourceInput.value = "";
+          sentenceInput.value = "";
+        }
+        renderAnswer(wordInput.value, sourceInput.value, sentenceInput.value);
+      });
+    });
+
+    copyPrompt.addEventListener("click", async () => {
+      const payload = {
+        word: wordInput.value.trim(),
+        source: sourceInput.value.trim(),
+        sentence: sentenceInput.value.trim()
+      };
+      await navigator.clipboard.writeText(JSON.stringify(payload, null, 2));
+      copyPrompt.textContent = "已复制";
+      window.setTimeout(() => {
+        copyPrompt.textContent = "复制查询参数";
+      }, 1200);
+    });
+  </script>
+</body>
+</html>
