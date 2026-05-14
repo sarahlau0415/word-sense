@@ -1,0 +1,7 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/api/sense"
+  to = "/.netlify/functions/sense"
+  status = 200

@@ -9,7 +9,7 @@ The page focuses on:
 - sense-specific explanations
 - examples across workplace, daily conversation, and social media contexts
 
-This is currently a Vercel-ready prototype. The front end calls `/api/sense`, a small serverless function that uses the OpenAI Responses API to generate Word Sense explanations. The built-in examples include `shot`, `pristine`, `sweet`, and `agency` as a fallback/demo path.
+This is currently a serverless-ready prototype. The front end calls `/api/sense`, a small backend function that uses the OpenAI Responses API to generate Word Sense explanations. The built-in examples include `shot`, `pristine`, `sweet`, and `agency` as a fallback/demo path.
 
 ## Preview Locally
 
@@ -30,9 +30,22 @@ Set these in Vercel:
 npm run check
 ```
 
+## Publish With Netlify
+
+Use Netlify when you want friends to enter any word and receive generated results.
+
+1. Import this GitHub repository into Netlify.
+2. Leave the build command empty.
+3. Set the publish directory to `.` if Netlify asks.
+4. Add `OPENAI_API_KEY` in the Netlify project environment variables.
+5. Deploy.
+6. Share the Netlify URL.
+
+The file `netlify.toml` routes `/api/sense` to the Netlify function automatically.
+
 ## Publish With Vercel
 
-GitHub Pages can host the static page, but it cannot run `/api/sense`. Use Vercel when you want friends to enter any word and receive generated results.
+GitHub Pages can host the static page, but it cannot run `/api/sense`. Vercel is another good option if your account can deploy there.
 
 1. Import this GitHub repository into Vercel.
 2. Add `OPENAI_API_KEY` in the Vercel project environment variables.
@@ -54,6 +67,9 @@ GitHub Pages is only useful for the UI preview unless `/api/sense` is hosted som
 ## Project Files
 
 - `index.html`: the full static UI
-- `api/sense.js`: serverless model endpoint
+- `api/sense.js`: Vercel serverless model endpoint
+- `netlify/functions/sense.js`: Netlify serverless model endpoint
+- `lib/generate-sense.js`: shared OpenAI generation logic
+- `netlify.toml`: Netlify routing and publish settings
 - `package.json`: project metadata and syntax check script
 - `README.md`: project overview and publishing notes
