@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word Sense</title>
+
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&f[]=switzer@400,500,600&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #1F1B16;
+  --ink-soft: #4A4036;
+  --ink-faint: #807466;
+  --ink-whisper: #C9BEAE;
+  --paper: #FBFAF6;
+  --paper-deep: #F2EFE7;
+  --paper-warm: #F5F1E7;
+  --rule: #E5DECF;
+  --accent: #A0522D;
+  --accent-deep: #5C2E1A;
+  --accent-soft: #A0522D1A;
+  --accent-medium: #A0522D2E;
+
+  --font-cn: "Noto Sans SC", -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-en-display: "Cabinet Grotesk", "Helvetica Neue", sans-serif;
+  --font-en-body: "Switzer", -apple-system, "Helvetica Neue", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 17px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-family: var(--font-cn);
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--ink);
+  background: var(--paper);
+  min-height: 100vh;
+  font-feature-settings: "kern" 1, "liga" 1;
+  overflow-x: hidden;
+}
+
+/* ============================================ */
+/* Demo onboarding 层                          */
+/* ============================================ */
+.demo-stage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--paper);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.demo-stage.fading-out {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.demo-stage.hidden {
+  display: none;
+}
+
+.demo-content {
+  max-width: 640px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Demo 顶部:品牌 + manifesto */
+.demo-brand {
+  text-align: center;
+  margin-bottom: 3rem;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.demo-brand.show { opacity: 1; }
+
+.demo-brand-mark {
+  font-family: var(--font-en-display);
+  font-size: 1rem;
+  color: var(--accent);
+  opacity: 0.55;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.4em;
+  font-weight: 500;
+}
+
+.demo-brand-name {
+  font-family: var(--font-en-display);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.045em;
+  color: var(--accent-deep);
+  margin-bottom: 0.85rem;
+}
+
+.demo-brand-name .em {
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.demo-tagline {
+  font-family: var(--font-cn);
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+}
+
+/* Demo 中央卡片 */
+.demo-card {
+  width: 100%;
+  min-height: 340px;
+  padding: 2.75rem 2.25rem;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* 入场光标 */
+.demo-cursor {
+  width: 2px;
+  height: 1.8rem;
+  background: var(--accent);
+  animation: cursor-blink 1.2s infinite;
+}
+
+.demo-cursor.hide { display: none; opacity: 0; }
+
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}
+
+/* 大词 */
+.demo-word {
+  font-family: var(--font-en-display);
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.045em;
+  color: var(--accent-deep);
+  opacity: 0;
+  transition: opacity 1s ease, transform 0.6s ease;
+  transform: translateY(8px);
+  position: relative;
+}
+
+.demo-word.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.demo-word.move-up {
+  position: absolute;
+  top: 2rem;
+  font-size: 2.3rem;
+  transition: all 0.8s ease;
+}
+
+/* 中文初始反应 */
+.demo-guess {
+  margin-top: 1.3rem;
+  font-family: var(--font-cn);
+  font-size: 1rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.03em;
+  opacity: 0;
+  transition: opacity 0.8s ease, color 0.4s ease, transform 0.4s ease;
+}
+
+.demo-guess.show { opacity: 1; }
+
+.demo-guess.hide { opacity: 0; visibility: hidden; }
+
+.demo-guess.reconsider {
+  color: var(--ink-faint);
+  opacity: 0.78;
+  text-decoration: line-through;
+  text-decoration-color: var(--accent-medium);
+  text-decoration-thickness: 1px;
+  transform: translateY(-2px);
+}
+
+/* 英文引文 */
+.demo-quote {
+  width: min(100%, 520px);
+  margin-top: 1.65rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--accent);
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.demo-quote.show { opacity: 1; }
+.demo-quote.hide { opacity: 0; visibility: hidden; pointer-events: none; }
+
+.demo-quote-text {
+  font-family: var(--font-en-body);
+  font-size: 1rem;
+  line-height: 1.72;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+}
+
+.sense-target {
+  color: var(--accent-deep);
+  font-weight: 600;
+  background: linear-gradient(to bottom, transparent 58%, var(--accent-soft) 58%, var(--accent-soft) 92%, transparent 92%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 0 0.08em;
+}
+
+.demo-quote.show .sense-target {
+  animation: sense-pulse 1.2s ease 0.45s both;
+}
+
+@keyframes sense-pulse {
+  0% { background-size: 0% 100%; }
+  55% { background-size: 100% 100%; }
+  100% { background-size: 100% 100%; }
+}
+
+.demo-quote-text::before {
+  content: '"';
+  color: var(--ink-whisper);
+  margin-right: 0.1em;
+}
+
+.demo-quote-text::after {
+  content: '"';
+  color: var(--ink-whisper);
+  margin-left: 0.1em;
+}
+
+/* 中文译注 */
+.demo-translation {
+  width: min(100%, 520px);
+  margin-top: 0.9rem;
+  padding-left: 1rem;
+  font-family: var(--font-cn);
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--accent);
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.demo-translation.show { opacity: 1; }
+.demo-translation.hide { opacity: 0; visibility: hidden; pointer-events: none; }
+
+.demo-translation p + p {
+  margin-top: 0.55rem;
+}
+
+.translation-turn {
+  color: var(--accent-deep);
+  font-weight: 500;
+}
+
+.translation-target {
+  color: var(--accent-deep);
+  font-weight: 500;
+}
+
+/* 顿悟段 */
+.demo-insight {
+  max-width: 520px;
+  margin: 0 auto;
+  font-family: var(--font-cn);
+  font-size: 1rem;
+  line-height: 1.9;
+  color: var(--ink);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  right: 2rem;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.demo-insight.show {
+  opacity: 1;
+  display: block;
+}
+
+.demo-insight.hide {
+  opacity: 0;
+}
+
+#demoInsight3 {
+  top: 58%;
+}
+
+
+.demo-insight .quote-mark {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.insight-question {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: var(--accent-deep);
+  font-weight: 600;
+}
+
+.demo-insight .family-list {
+  margin-top: 0.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.68rem;
+  align-items: center;
+}
+
+.demo-insight .family-item {
+  font-family: var(--font-en-display);
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 1.02rem;
+  letter-spacing: -0.01em;
+}
+
+.demo-insight .family-item .note {
+  font-family: var(--font-cn);
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin-left: 0.6rem;
+  letter-spacing: 0;
+}
+
+.demo-insight .family-conclusion {
+  font-family: var(--font-cn);
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+/* 六维标签惊喜 */
+.demo-dimensions {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: none;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+  transform: translateY(-50%);
+}
+
+.demo-dimensions.show {
+  display: flex;
+  opacity: 1;
+}
+
+.demo-dimensions.hide {
+  opacity: 0;
+}
+
+
+.demo-dim-item {
+  font-family: var(--font-cn);
+  font-weight: 500;
+  color: var(--accent-deep);
+  font-size: 0.92rem;
+  letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.demo-dim-item .marker {
+  font-family: var(--font-en-display);
+  font-weight: 500;
+  color: var(--accent);
+  font-size: 0.88rem;
+}
+
+.reveal-unit {
+  opacity: 0;
+  transform: translateY(0.35em);
+  transition: opacity 0.46s ease, transform 0.46s ease;
+}
+
+.reveal-unit.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-inline {
+  display: inline;
+}
+
+.reveal-block {
+  display: block;
+}
+
+.demo-dim-item.reveal-unit,
+.family-item.reveal-unit,
+.family-conclusion.reveal-unit {
+  display: flex;
+}
+
+.family-conclusion.reveal-unit {
+  display: block;
+}
+
+/* 转化段 */
+.demo-transition {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+
+.demo-transition.show { opacity: 1; }
+
+.demo-transition-headline {
+  font-family: var(--font-cn);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--accent-deep);
+  margin-bottom: 0.85rem;
+  letter-spacing: 0.01em;
+}
+
+.demo-transition-headline .en {
+  font-family: var(--font-en-display);
+  font-weight: 700;
+  color: var(--accent-deep);
+}
+
+.demo-transition-sub {
+  font-family: var(--font-cn);
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+
+/* 跳过按钮 */
+.demo-skip {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-family: var(--font-cn);
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  transition: color 0.2s ease;
+  z-index: 1001;
+}
+
+.demo-skip:hover { color: var(--accent); }
+
+.demo-skip::after {
+  content: ' →';
+  font-family: var(--font-en-body);
+}
+
+/* 极细进度条 */
+.demo-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: var(--accent);
+  width: 0%;
+  transition: width 0.3s linear;
+  z-index: 1002;
+  opacity: 0.4;
+}
+
+/* ============================================ */
+/* 主页面(demo 之后呈现)                       */
+/* ============================================ */
+.main-stage {
+  opacity: 0;
+  transition: opacity 0.8s ease 0.3s;
+}
+
+.main-stage.show { opacity: 1; }
+
+/* 顶部导航 */
+.nav {
+  border-bottom: 1px solid var(--rule);
+  padding: 1.1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.nav-brand {
+  font-family: var(--font-en-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav-brand .em {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.nav-about {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  transition: color 0.15s ease;
+}
+
+.nav-about:hover { color: var(--accent); }
+
+/* 主容器 */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2.25rem 2rem 3rem;
+}
+
+/* Hero —— 极简单行 */
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-mark {
+  font-family: var(--font-en-display);
+  font-size: 1rem;
+  color: var(--accent);
+  opacity: 0.55;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.4em;
+  font-weight: 500;
+  user-select: none;
+}
+
+.hero-line {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-brand {
+  font-family: var(--font-en-display);
+  font-size: 1.85rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--accent-deep);
+}
+
+.hero-brand .em {
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.hero-divider {
+  width: 1px;
+  height: 1.1rem;
+  background: var(--rule);
+  display: inline-block;
+}
+
+.hero-manifesto {
+  font-family: var(--font-cn);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+}
+
+.hero-manifesto strong {
+  color: var(--accent-deep);
+  font-weight: 500;
+}
+
+.replay-link {
+  margin-left: 0.85rem;
+  font-family: var(--font-cn);
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-bottom: 1px dashed var(--ink-whisper);
+  padding: 0 0 1px 0;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.replay-link:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* 本周词条段头 */
+.weekly-head {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.weekly-title {
+  font-family: var(--font-cn);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.weekly-issue {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* Dashboard */
+.dashboard {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2.5rem;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--accent);
+  padding: 2rem;
+  border-radius: 2px;
+  margin-bottom: 2.5rem;
+  min-height: 480px;
+}
+
+.word-list {
+  list-style: none;
+  border-right: 1px solid var(--rule);
+  padding-right: 2rem;
+  margin-right: -0.5rem;
+}
+
+.word-item {
+  display: block;
+  padding: 0.7rem 0 0.7rem 0.85rem;
+  border-left: 2px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 0.18s ease, color 0.18s ease;
+}
+
+.word-item:focus {
+  outline: none;
+}
+
+.word-item:focus-visible {
+  outline: 2px solid var(--accent-medium);
+  outline-offset: 3px;
+}
+
+.word-item + .word-item {
+  border-top: 1px solid var(--rule);
+}
+
+.word-item-name {
+  font-family: var(--font-en-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  display: block;
+  margin-bottom: 0.18rem;
+  line-height: 1.2;
+  transition: color 0.18s ease;
+}
+
+.word-item-tag {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 500;
+}
+
+.word-item:hover .word-item-name,
+.word-item.active .word-item-name {
+  color: var(--accent);
+}
+
+.word-item.active {
+  border-left-color: var(--accent);
+}
+
+.word-item.active .word-item-name {
+  color: var(--accent-deep);
+}
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.preview-content {
+  display: none;
+}
+
+.preview-content.active {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.preview-meta {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 0.65rem;
+}
+
+.preview-word {
+  font-family: var(--font-en-display);
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+  color: var(--accent-deep);
+  margin-bottom: 1rem;
+}
+
+.preview-dim {
+  font-family: var(--font-cn);
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+
+.preview-dim::after {
+  content: ' · ';
+  color: var(--accent);
+  opacity: 0.7;
+  font-weight: 400;
+  margin: 0 0.15em;
+}
+
+.preview-sense {
+  font-family: var(--font-cn);
+  font-size: 0.95rem;
+  line-height: 1.78;
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+}
+
+.preview-sense .en {
+  font-family: var(--font-en-display);
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+}
+
+.preview-sense strong:not(.preview-dim) {
+  font-weight: 500;
+  color: var(--ink);
+  background: linear-gradient(to bottom, transparent 62%, var(--accent-soft) 62%, var(--accent-soft) 92%, transparent 92%);
+  padding: 0 0.15em;
+}
+
+.preview-satori {
+  margin-top: auto;
+  padding: 1.1rem 1.2rem;
+  background: var(--paper-warm);
+  border-radius: 3px;
+  border-left: 2px solid var(--accent);
+}
+
+.preview-satori-label {
+  font-family: var(--font-cn);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  color: var(--accent-deep);
+  font-weight: 600;
+  margin-bottom: 0.45rem;
+}
+
+.preview-satori-text {
+  font-family: var(--font-cn);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--ink);
+}
+
+.preview-satori-text strong {
+  font-weight: 500;
+  color: var(--accent-deep);
+}
+
+.preview-satori-text .en {
+  font-family: var(--font-en-display);
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+}
+
+.preview-more {
+  margin-top: 1.25rem;
+}
+
+.preview-more-link {
+  font-family: var(--font-en-display);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--accent-deep);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding-bottom: 2px;
+  border-bottom: 1.5px solid var(--accent);
+  transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.preview-more-link:hover {
+  color: var(--accent);
+  gap: 0.6rem;
+}
+
+/* 搜索区 */
+.search-section {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.search-title {
+  font-family: var(--font-cn);
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.search-title strong {
+  color: var(--accent-deep);
+  font-weight: 500;
+}
+
+.search-form {
+  flex: 1;
+  min-width: 280px;
+}
+
+.search-box {
+  display: flex;
+  align-items: stretch;
+  background: var(--paper);
+  border: 1.5px solid var(--rule);
+  border-radius: 4px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.search-box:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.85rem 1.1rem;
+  font-family: var(--font-en-body);
+  font-size: 0.98rem;
+  color: var(--ink);
+  background: transparent;
+  letter-spacing: -0.005em;
+  min-width: 0;
+}
+
+.search-input::placeholder {
+  color: var(--ink-faint);
+  font-family: var(--font-cn);
+  font-size: 0.92rem;
+  font-weight: 400;
+}
+
+.search-submit {
+  border: none;
+  background: var(--accent-deep);
+  color: var(--paper);
+  padding: 0 1.3rem;
+  font-family: var(--font-en-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+}
+
+.search-submit:hover { background: var(--accent); }
+
+.search-submit::after {
+  content: '→';
+  font-size: 1rem;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.search-submit:hover::after { transform: translateX(2px); }
+
+.search-more-toggle {
+  font-family: var(--font-cn);
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--ink-whisper);
+  padding-bottom: 1px;
+  cursor: pointer;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  white-space: nowrap;
+}
+
+.search-more-toggle:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.search-more-toggle::before {
+  content: '+ ';
+  font-family: var(--font-mono);
+}
+
+.search-more-fields {
+  display: none;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px dashed var(--rule);
+  width: 100%;
+  flex-basis: 100%;
+  gap: 1.25rem;
+}
+
+.search-section.expanded .search-more-fields {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-section.expanded .search-more-toggle::before { content: '− '; }
+
+.field {
+  flex: 1;
+  min-width: 240px;
+}
+
+.field-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 0.4rem;
+}
+
+.field-input {
+  width: 100%;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  padding: 0.6rem 0.85rem;
+  font-family: var(--font-en-body);
+  font-size: 0.92rem;
+  color: var(--ink);
+  border-radius: 3px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.field-input:focus { border-color: var(--accent); }
+.field-input::placeholder { color: var(--ink-whisper); }
+
+/* 产品亮点段 */
+.highlight {
+  margin-top: 2rem;
+  padding: 2rem 2rem 1.75rem;
+  background: var(--paper-deep);
+  border-radius: 3px;
+  font-family: var(--font-cn);
+  line-height: 1.85;
+  color: var(--ink);
+}
+
+.highlight p {
+  font-size: 0.96rem;
+  color: var(--ink);
+  margin-bottom: 0.85rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.85rem;
+}
+
+.highlight p:last-child {
+  margin-bottom: 0;
+}
+
+.highlight .mark {
+  font-family: var(--font-en-display);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--accent);
+  opacity: 0.55;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.highlight .en {
+  font-family: var(--font-en-display);
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+}
+
+/* 页脚 */
+.footer {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  text-align: center;
+  font-family: var(--font-cn);
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  line-height: 1.7;
+}
+
+.footer-mark {
+  font-family: var(--font-en-display);
+  color: var(--accent);
+  opacity: 0.5;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.3em;
+  font-size: 0.95rem;
+}
+
+/* 移动端 */
+@media (max-width: 800px) {
+  html { font-size: 16px; }
+  .container { padding: 2rem 1.25rem 3rem; }
+  .nav { padding: 1rem 1.25rem; }
+  .hero-line { gap: 0; flex-direction: column; align-items: center; }
+  .hero-divider { display: none; }
+  .hero-brand { font-size: 1.75rem; margin-bottom: 0.5rem; }
+  .hero-manifesto { font-size: 0.92rem; }
+
+  .dashboard {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 1.25rem;
+    min-height: auto;
+  }
+
+  .word-list {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+  .preview { display: none; }
+
+  .word-item { padding: 1rem 0 1rem 1rem; }
+  .word-item-name { font-size: 1.25rem; margin-bottom: 0.3rem; }
+
+  .word-item-mobile-hook {
+    display: block;
+    font-family: var(--font-cn);
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    line-height: 1.55;
+    margin-top: 0.4rem;
+    font-weight: 400;
+  }
+
+  .search-section {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+  }
+
+  .search-title { text-align: center; }
+  .search-form { width: 100%; }
+  .search-more-toggle { text-align: center; margin-top: 0.5rem; }
+  .field { min-width: 100%; }
+
+  /* Demo 移动端 */
+  .demo-stage { padding: 1.25rem; }
+  .demo-brand-name { font-size: 1.65rem; }
+  .demo-card { padding: 1.85rem 1.35rem; min-height: 300px; }
+  .demo-word { font-size: 3rem; }
+  .demo-word.move-up { font-size: 1.85rem; top: 1.25rem; }
+  .demo-quote,
+  .demo-translation { width: 100%; }
+  .demo-insight { font-size: 0.94rem; left: 1.35rem; right: 1.35rem; }
+}
+
+@media (min-width: 801px) {
+  .word-item-mobile-hook { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- Demo onboarding 层 -->
+<div class="demo-stage" id="demoStage">
+
+  <div class="demo-content">
+
+    <!-- 品牌头 -->
+    <div class="demo-brand" id="demoBrand">
+      <div class="demo-brand-mark">§</div>
+      <h1 class="demo-brand-name">Word<span class="em">Sense</span></h1>
+      <p class="demo-tagline">查词典不够，来一起感知它。</p>
+    </div>
+
+    <!-- 主舞台卡片 -->
+    <div class="demo-card" id="demoCard">
+
+      <!-- 入场光标 -->
+      <div class="demo-cursor" id="demoCursor"></div>
+
+      <!-- 大词 -->
+      <div class="demo-word" id="demoWord">faculty</div>
+
+      <!-- 中文初始猜测 -->
+      <div class="demo-guess" id="demoGuess">学院？教职工？</div>
+
+      <!-- 英文引文 -->
+      <div class="demo-quote" id="demoQuote">
+        <p class="demo-quote-text">By the end, he had lost most of his <span class="sense-target">cognitive faculties</span>, but he still recognized his daughter's voice.</p>
+      </div>
+
+      <!-- 中文译注 -->
+      <div class="demo-translation" id="demoTranslation">
+        <p>到最后，这个可怜的男人，失去了他几乎所有的<span class="translation-target">知觉能力</span>，但他仍然记得女儿的声音。</p>
+        <p class="translation-turn">等等，faculty 在这里不是“教职工”。</p>
+      </div>
+
+      <!-- 顿悟段 1 -->
+      <div class="demo-insight" id="demoInsight1">
+        <p><span class="insight-question">怎么一个词的两个含义差这么多？</span>它既可以指<span class="quote-mark">感知知识的能力</span>，<br>也可以指承载这种能力的人和机构 —— 教职工、院系。</p>
+      </div>
+
+      <!-- 顿悟段 2 -->
+      <div class="demo-insight" id="demoInsight2">
+        <p><span class="insight-question">中文释义把它们分开了，<br>但在 faculty 这个词里，它们其实连在一起。</span>英语里有一类这样的词 —— 同时指<span class="quote-mark">“一种能力”</span>，和<span class="quote-mark">“承载它的实体”</span>。</p>
+      </div>
+
+      <!-- 顿悟段 3 -->
+      <div class="demo-insight" id="demoInsight3">
+        <div class="family-list">
+          <div class="family-item">administration<span class="note">管理 / 管理层</span></div>
+          <div class="family-item">authority<span class="note">权威 / 权力机构</span></div>
+          <div class="family-item">ministry<span class="note">神职服务 / 政府部</span></div>
+          <div class="family-item">agency<span class="note">行动能力 / 机构</span></div>
+        </div>
+        <p class="family-conclusion">重新看看这些词，其实都是这样。</p>
+      </div>
+
+      <!-- 六维标签惊喜 -->
+      <div class="demo-dimensions" id="demoDimensions">
+        <span class="demo-dim-item"><span class="marker">§</span>字面含义</span>
+        <span class="demo-dim-item"><span class="marker">§</span>本体质感</span>
+        <span class="demo-dim-item"><span class="marker">§</span>寻根溯源</span>
+        <span class="demo-dim-item"><span class="marker">§</span>各路用法</span>
+        <span class="demo-dim-item"><span class="marker">§</span>英汉分野</span>
+        <span class="demo-dim-item"><span class="marker">§</span>悟道时刻</span>
+      </div>
+
+    </div>
+
+    <!-- 转化段 -->
+    <div class="demo-transition" id="demoTransition">
+      <p class="demo-transition-headline">这就是 <span class="en">Word Sense</span>。</p>
+      <p class="demo-transition-sub">不增加新的含义，<br>了解词的本真和来路。</p>
+    </div>
+
+  </div>
+
+  <!-- 跳过按钮 -->
+  <button class="demo-skip" id="demoSkip" type="button">跳过演示</button>
+
+  <!-- 极细进度条 -->
+  <div class="demo-progress" id="demoProgress"></div>
+
+</div>
+
+
+<!-- 主页面 -->
+<div class="main-stage" id="mainStage">
+
+<nav class="nav">
+  <a href="#" class="nav-brand">Word<span class="em">Sense</span></a>
+  <a href="#" class="nav-about">about</a>
+</nav>
+
+<main class="container">
+
+  <section class="hero">
+    <div class="hero-mark">§</div>
+    <div class="hero-line">
+      <h1 class="hero-brand">Word<span class="em">Sense</span></h1>
+      <span class="hero-divider"></span>
+      <p class="hero-manifesto">查词典不够，<strong>来一起感知它。</strong><button class="replay-link" id="replayLink">再看一次 faculty</button></p>
+    </div>
+  </section>
+
+  <div class="weekly-head">
+    <h2 class="weekly-title">本周词条</h2>
+    <span class="weekly-issue">Week 01 · May 2026</span>
+  </div>
+
+  <div class="dashboard">
+
+    <ol class="word-list" id="wordList">
+
+      <a href="#" class="word-item active" data-word="lowkey">
+        <span class="word-item-name">lowkey</span>
+        <span class="word-item-tag">社媒 · L2</span>
+        <span class="word-item-mobile-hook">不是“低调”。是当代美国人说“其实有点……”的方式。</span>
+      </a>
+
+      <a href="#" class="word-item" data-word="agentic">
+        <span class="word-item-name">agentic</span>
+        <span class="word-item-tag">AI · L3</span>
+        <span class="word-item-mobile-hook">2026 年最被滥用的英语词。你确定你懂它在说什么吗？</span>
+      </a>
+
+      <a href="#" class="word-item" data-word="reframe">
+        <span class="word-item-name">reframe</span>
+        <span class="word-item-tag">学术 · L3</span>
+        <span class="word-item-mobile-hook">当英语开始反思自己时，这个词就出现了。</span>
+      </a>
+
+      <a href="#" class="word-item" data-word="sentiment">
+        <span class="word-item-name">sentiment</span>
+        <span class="word-item-tag">新闻 · L2</span>
+        <span class="word-item-mobile-hook">不是“情感”那么简单。它是可测量的、有市场含义的集体情绪。</span>
+      </a>
+
+      <a href="#" class="word-item" data-word="backdrop">
+        <span class="word-item-name">backdrop</span>
+        <span class="word-item-tag">新闻 · L2</span>
+        <span class="word-item-mobile-hook">英文新闻里出现率最高、中国读者最容易跳过的词。</span>
+      </a>
+
+      <a href="#" class="word-item" data-word="itsgiving">
+        <span class="word-item-name">it's giving</span>
+        <span class="word-item-tag">社媒 · L2</span>
+        <span class="word-item-mobile-hook">Twitter 上最有网感的一个句式。学会它，你就听懂了一半。</span>
+      </a>
+
+    </ol>
+
+    <div class="preview">
+
+      <div class="preview-content active" data-preview="lowkey">
+        <div class="preview-meta">封面 · 社媒 · L2</div>
+        <h2 class="preview-word">lowkey</h2>
+        <p class="preview-sense"><strong class="preview-dim">本体质感</strong>当一个美国人说 <span class="en">I lowkey want to quit my job</span>，他不是在说“低调地辞职”。他在说<strong>“我有点想辞职，但又不想把话说重 —— 你别太当真，但也别完全不当真”</strong>。<span class="en">lowkey</span> 是一个态度副词：承认一种内心倾向，但同时包上一层保护色。</p>
+        <div class="preview-satori">
+          <div class="preview-satori-label">悟道时刻</div>
+          <p class="preview-satori-text">学会识别“<strong>态度副词</strong>”，你能解锁整套 Gen Z 表达哲学 —— <span class="en">kinda</span>、<span class="en">sorta</span>、<span class="en">low-key</span>、<span class="en">not gonna lie</span> 都在做同一件事：保留余地。</p>
+        </div>
+        <div class="preview-more">
+          <a href="#" class="preview-more-link">继续看完整解读 →</a>
+        </div>
+      </div>
+
+      <div class="preview-content" data-preview="agentic">
+        <div class="preview-meta">AI · L3</div>
+        <h2 class="preview-word">agentic</h2>
+        <p class="preview-sense"><strong class="preview-dim">本体质感</strong>中文翻成“代理的”或“具有代理能力的”，<strong>漏掉了这个词在 AI 圈承载的全部重量</strong>。<span class="en">agentic</span> 来自哲学里的 <span class="en">agency</span>（主体性、能动性）。当一个 AI 系统被称为 agentic，意味着它能自主决策、能主动行动、能在多步任务里持续推进。</p>
+        <div class="preview-satori">
+          <div class="preview-satori-label">悟道时刻</div>
+          <p class="preview-satori-text">英语世界对“<strong>谁是行动的主体</strong>”有一种执念，从康德到 AI 安全话语，<span class="en">agency</span> 承担着这种执念的全部重量。中文世界相对淡漠 —— 看懂这点，你能看到中英思维方式的根本差异。</p>
+        </div>
+        <div class="preview-more">
+          <a href="#" class="preview-more-link">继续看完整解读 →</a>
+        </div>
+      </div>
+
+      <div class="preview-content" data-preview="reframe">
+        <div class="preview-meta">学术 · L3</div>
+        <h2 class="preview-word">reframe</h2>
+        <p class="preview-sense"><strong class="preview-dim">本体质感</strong>中文翻成“重新框定”或“换个角度看”，听起来像鸡汤话。但 <span class="en">reframe</span> 在英语公共话语里是一个<strong>元认知动作</strong> —— 它假设当下的理解方式本身就是一个“框”，而 reframe 就是<strong>意识到这个框、并把它换掉</strong>。</p>
+        <div class="preview-satori">
+          <div class="preview-satori-label">悟道时刻</div>
+          <p class="preview-satori-text">英语公共话语里有一整族“<strong>反思自己的动词</strong>” —— <span class="en">reframe</span>、<span class="en">unpack</span>、<span class="en">interrogate</span>、<span class="en">contextualize</span>、<span class="en">examine</span>。它们都假设认识可以被反观、可以被换框。这是当代英语公共话语的元认知传统。</p>
+        </div>
+        <div class="preview-more">
+          <a href="#" class="preview-more-link">继续看完整解读 →</a>
+        </div>
+      </div>
+
+      <div class="preview-content" data-preview="sentiment">
+        <div class="preview-meta">新闻 · L2</div>
+        <h2 class="preview-word">sentiment</h2>
+        <p class="preview-sense"><strong class="preview-dim">本体质感</strong>中文“情感”和“情绪”都没翻准。<span class="en">sentiment</span> 在英语新闻、金融、AI 报道里是一个<strong>“集体倾向”的度量</strong> —— 它假设个体情绪汇总起来能形成一个可被分析、可被预测的流向。<span class="en">market sentiment</span>、<span class="en">public sentiment</span>、<span class="en">consumer sentiment</span> 都是这个意思。</p>
+        <div class="preview-satori">
+          <div class="preview-satori-label">悟道时刻</div>
+          <p class="preview-satori-text">英语公共话语有一种<strong>把情感量化的本能</strong> —— 不只是 sentiment，还有 <span class="en">mood</span>（市场情绪）、<span class="en">appetite</span>（投资偏好）、<span class="en">confidence</span>（消费者信心）。看懂这族词，你能看到英文新闻怎么把感受变成可分析的“数据”。</p>
+        </div>
+        <div class="preview-more">
+          <a href="#" class="preview-more-link">继续看完整解读 →</a>
+        </div>
+      </div>
+
+      <div class="preview-content" data-preview="backdrop">
+        <div class="preview-meta">新闻 · L2</div>
+        <h2 class="preview-word">backdrop</h2>
+        <p class="preview-sense"><strong class="preview-dim">本体质感</strong>字典告诉你 <span class="en">backdrop</span> 是“幕布、背景”，但英语新闻里它几乎只用比喻义：<span class="en">against the backdrop of...</span>。这个短语在做一件你可能没注意到的事 —— <strong>它在悄悄给你套一个叙事框架</strong>，把当下事件嵌入一个更大的故事里。</p>
+        <div class="preview-satori">
+          <div class="preview-satori-label">悟道时刻</div>
+          <p class="preview-satori-text">英文新闻有一整套“<strong>戏剧化叙事</strong>”的修辞工具 —— <span class="en">backdrop</span>、<span class="en">unfold</span>、<span class="en">play out</span>、<span class="en">stage</span>、<span class="en">scene</span>。它们都把现实当一出戏在讲。看懂这点，你读英文新闻时能多一层警觉。</p>
+        </div>
+        <div class="preview-more">
+          <a href="#" class="preview-more-link">继续看完整解读 →</a>
+        </div>
+      </div>
+
+      <div class="preview-content" data-preview="itsgiving">
+        <div class="preview-meta">社媒 · L2</div>
+        <h2 class="preview-word">it's giving</h2>
+        <p class="preview-sense"><strong class="preview-dim">本体质感</strong>字面是“它在给”，但实际意思是<strong>“这给人一种 X 的感觉”</strong>。来自 ballroom 文化，2020 年代被 TikTok 推到主流。它的精妙之处在于<strong>不直接说“是什么”，只说“像什么”</strong>，自带评价的轻盈感和距离感。</p>
+        <div class="preview-satori">
+          <div class="preview-satori-label">悟道时刻</div>
+          <p class="preview-satori-text">Gen Z 社媒语言的核心特征是<strong>用“间接评价”替代“直接判断”</strong> —— <span class="en">it's giving</span>、<span class="en">the way that</span>、<span class="en">main character energy</span>、<span class="en">no thoughts head empty</span>。这些句式都拒绝直接断言，只描述印象。看懂这套语法，你才听得懂今天的网络对话。</p>
+        </div>
+        <div class="preview-more">
+          <a href="#" class="preview-more-link">继续看完整解读 →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="search-section" id="searchSection">
+    <p class="search-title">或者，<strong>搜一个让你疑惑的词</strong></p>
+    <form class="search-form" onsubmit="return false;">
+      <div class="search-box">
+        <input
+          type="text"
+          class="search-input"
+          placeholder="输入一个让你疑惑的词"
+          autocomplete="off"
+        >
+        <button type="submit" class="search-submit">Sense it</button>
+      </div>
+    </form>
+    <button class="search-more-toggle" onclick="document.getElementById('searchSection').classList.toggle('expanded')">告诉我更多</button>
+
+    <div class="search-more-fields">
+      <div class="field">
+        <label class="field-label">在哪遇到的</label>
+        <input type="text" class="field-input" placeholder="比如：朋友的 Instagram、一封英文邮件、一本书">
+      </div>
+      <div class="field">
+        <label class="field-label">原句（可选）</label>
+        <input type="text" class="field-input" placeholder="把你看到的那句话贴在这里">
+      </div>
+    </div>
+  </section>
+
+  <section class="highlight">
+    <p><span class="mark">§</span>Word Sense 让你看见词本来的样子。</p>
+    <p><span class="mark">§</span>字面含义、本体质感、寻根溯源、各路用法、英汉分野。</p>
+    <p><span class="mark">§</span>多层 sense，让一个词重新活过来。</p>
+    <p><span class="mark">§</span>一次专心看一个词。</p>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-mark">§</div>
+    慢一点，看见更多。
+  </footer>
+
+</main>
+
+</div>
+
+<script>
+// ============================================
+// Demo 演示流程
+// ============================================
+
+const DEMO_TOTAL = 34500; // 33 秒
+const DEMO_KEY = 'wordsense_demo_seen';
+
+const timeline = [
+  // 阶段 0:入场
+  { at: 100,   action: () => show('demoBrand') },
+  { at: 800,   action: () => show('demoCursor') },
+  
+  // 阶段 1:大词出现(光标真正消失)
+  { at: 1500,  action: () => { hideCursor(); show('demoWord'); } },
+  
+  // 阶段 2:沉默 ——"学院?教职工?"
+  { at: 3000,  action: () => show('demoGuess') },
+  
+  // 阶段 3:转折 —— 先让初始猜测失效,再出现例句
+  { at: 5400,  action: () => document.getElementById('demoGuess')?.classList.add('reconsider') },
+  { at: 6100,  action: () => hide('demoGuess') },
+  { at: 6500,  action: () => show('demoQuote') },
+  
+  // 阶段 4:中文译注
+  { at: 9500,  action: () => show('demoTranslation') },
+  
+  // 阶段 6 准备:把之前的所有内容彻底清空,大词上移
+  { at: 13500, action: () => { hide('demoQuote'); hide('demoTranslation'); moveWordUp(); } },
+  
+  // 阶段 6:顿悟段 1
+  { at: 14800, action: () => show('demoInsight1') },
+  
+  // 阶段 6.5:顿悟段 1 淡出,顿悟段 2 淡入
+  { at: 19000, action: () => hide('demoInsight1') },
+  { at: 19800, action: () => show('demoInsight2') },
+  
+  // 阶段 6.6:顿悟段 2 淡出,顿悟段 3 淡入
+  { at: 23800, action: () => hide('demoInsight2') },
+  { at: 24600, action: () => show('demoInsight3') },
+  
+  // 阶段 7:顿悟段 3 淡出,六维标签作为产品结构出现
+  { at: 28800, action: () => hide('demoInsight3') },
+  { at: 29400, action: () => show('demoDimensions') },
+  
+  // 阶段 8:保留六维标签,收束文案整体出现
+  { at: 30600, action: () => hide('demoWord') },
+  { at: 31000, action: () => show('demoTransition') },
+  
+  // 阶段 9:进入主页面
+  { at: 34500, action: () => finishDemo() }
+];
+
+// 总时长加到 34.5 秒(原 33 秒),给每段过渡留足时间
+
+const timeouts = [];
+let demoStarted = false;
+let progressInterval = null;
+const revealProfiles = {
+  demoGuess: { mode: 'type', speed: 30 },
+  demoQuote: { mode: 'type', speed: 15 },
+  demoTranslation: { mode: 'stagger', selector: 'p', delay: 520 },
+  demoInsight1: { mode: 'phrase', delay: 220 },
+  demoInsight2: { mode: 'phrase', delay: 240 },
+  demoInsight3: { mode: 'stagger', selector: '.family-item, .family-conclusion', delay: 180 },
+  demoDimensions: { mode: 'stagger', selector: '.demo-dim-item', delay: 90 },
+  demoTransition: { mode: 'soft' }
+};
+const textNodeCache = new WeakMap();
+const activeTextStreams = new Map();
+const activeRevealTimers = new Map();
+
+function collectTextNodes(root, includeCached = false) {
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  let node = walker.nextNode();
+
+  while (node) {
+    const text = textNodeCache.get(node) || node.nodeValue;
+    if (text.trim() || (includeCached && textNodeCache.has(node))) nodes.push(node);
+    node = walker.nextNode();
+  }
+
+  return nodes;
+}
+
+function resetTextNodes(el) {
+  const nodes = collectTextNodes(el, true);
+  nodes.forEach(node => {
+    if (!textNodeCache.has(node)) textNodeCache.set(node, node.nodeValue);
+    node.nodeValue = textNodeCache.get(node);
+  });
+}
+
+function stopTextStream(el, restoreText = true) {
+  const active = activeTextStreams.get(el);
+  if (active) {
+    clearInterval(active.timer);
+    activeTextStreams.delete(el);
+  }
+
+  if (restoreText) resetTextNodes(el);
+}
+
+function streamText(el, speed = 18) {
+  stopTextStream(el, false);
+
+  const nodes = collectTextNodes(el).map(node => {
+    if (!textNodeCache.has(node)) textNodeCache.set(node, node.nodeValue);
+    const text = textNodeCache.get(node);
+    node.nodeValue = '';
+    return { node, text, index: 0 };
+  });
+
+  if (!nodes.length) return;
+
+  let nodeIndex = 0;
+  const timer = setInterval(() => {
+    const current = nodes[nodeIndex];
+    current.node.nodeValue += current.text[current.index];
+    current.index += 1;
+
+    if (current.index >= current.text.length) {
+      nodeIndex += 1;
+      if (nodeIndex >= nodes.length) {
+        clearInterval(timer);
+        activeTextStreams.delete(el);
+      }
+    }
+  }, speed);
+
+  activeTextStreams.set(el, { timer });
+}
+
+function stopReveal(el) {
+  const timers = activeRevealTimers.get(el);
+  if (timers) {
+    timers.forEach(timer => clearTimeout(timer));
+    activeRevealTimers.delete(el);
+  }
+
+  el.querySelectorAll('.reveal-unit').forEach(unit => {
+    unit.classList.remove('visible');
+  });
+}
+
+function wrapPhraseContent(el) {
+  if (el.dataset.phrasePrepared === 'true') return;
+
+  el.querySelectorAll('p').forEach(paragraph => {
+    const nodes = Array.from(paragraph.childNodes);
+
+    nodes.forEach(node => {
+      if (node.nodeType === Node.TEXT_NODE && !node.nodeValue.trim()) return;
+      if (node.nodeType === Node.ELEMENT_NODE && node.classList.contains('reveal-unit')) return;
+
+      const wrapper = document.createElement('span');
+      wrapper.className = 'reveal-unit reveal-inline';
+      paragraph.insertBefore(wrapper, node);
+      wrapper.appendChild(node);
+    });
+  });
+
+  el.dataset.phrasePrepared = 'true';
+}
+
+function prepareStaggerUnits(el, selector) {
+  const units = Array.from(el.querySelectorAll(selector));
+  units.forEach(unit => unit.classList.add('reveal-unit'));
+  return units;
+}
+
+function revealUnits(el, units, delay) {
+  stopReveal(el);
+
+  const timers = units.map((unit, index) => setTimeout(() => {
+    unit.classList.add('visible');
+  }, index * delay));
+
+  activeRevealTimers.set(el, timers);
+}
+
+function revealText(el, profile) {
+  stopReveal(el);
+
+  if (!profile) return;
+
+  if (profile.mode === 'type') {
+    streamText(el, profile.speed);
+    return;
+  }
+
+  if (profile.mode === 'phrase') {
+    wrapPhraseContent(el);
+    revealUnits(el, Array.from(el.querySelectorAll('.reveal-unit')), profile.delay);
+    return;
+  }
+
+  if (profile.mode === 'stagger') {
+    revealUnits(el, prepareStaggerUnits(el, profile.selector), profile.delay);
+  }
+}
+
+function show(id) {
+  const el = document.getElementById(id);
+  if (el) {
+    el.style.visibility = '';
+    el.classList.remove('hide');
+    el.classList.add('show');
+    revealText(el, revealProfiles[id]);
+  }
+}
+
+function hide(id) {
+  const el = document.getElementById(id);
+  if (el) {
+    stopTextStream(el);
+    stopReveal(el);
+    el.classList.remove('show');
+    el.classList.add('hide');
+    // 600ms 动画完成后真正 display:none,避免布局占位
+    setTimeout(() => {
+      if (el.classList.contains('hide')) {
+        el.style.visibility = 'hidden';
+      }
+    }, 700);
+  }
+}
+
+function hideCursor() {
+  const el = document.getElementById('demoCursor');
+  if (el) {
+    el.classList.add('hide');
+    el.style.display = 'none';
+  }
+}
+
+function moveWordUp() {
+  const word = document.getElementById('demoWord');
+  if (word) word.classList.add('move-up');
+}
+
+function startDemo() {
+  demoStarted = true;
+  
+  timeline.forEach(step => {
+    const t = setTimeout(step.action, step.at);
+    timeouts.push(t);
+  });
+
+  // 进度条
+  const progress = document.getElementById('demoProgress');
+  const startTime = Date.now();
+  progressInterval = setInterval(() => {
+    const elapsed = Date.now() - startTime;
+    const percent = Math.min(100, (elapsed / DEMO_TOTAL) * 100);
+    progress.style.width = percent + '%';
+    if (percent >= 100) clearInterval(progressInterval);
+  }, 100);
+}
+
+function finishDemo() {
+  // 标记已看过
+  try { localStorage.setItem(DEMO_KEY, 'true'); } catch(e) {}
+  
+  // 淡出 demo 层
+  const demoStage = document.getElementById('demoStage');
+  demoStage.classList.add('fading-out');
+  
+  // 淡入主页面
+  setTimeout(() => {
+    const mainStage = document.getElementById('mainStage');
+    mainStage.style.opacity = '';
+    mainStage.classList.add('show');
+  }, 200);
+  
+  // 完全移除 demo 层
+  setTimeout(() => {
+    demoStage.classList.add('hidden');
+  }, 900);
+}
+
+function skipDemo() {
+  // 清掉所有 timeout
+  timeouts.forEach(t => clearTimeout(t));
+  if (progressInterval) clearInterval(progressInterval);
+  activeTextStreams.forEach(active => clearInterval(active.timer));
+  activeTextStreams.clear();
+  activeRevealTimers.forEach(timers => timers.forEach(timer => clearTimeout(timer)));
+  activeRevealTimers.clear();
+  
+  finishDemo();
+}
+
+// 跳过按钮
+document.getElementById('demoSkip').addEventListener('click', (e) => {
+  e.stopPropagation();
+  skipDemo();
+});
+
+// 重看 demo
+document.getElementById('replayLink').addEventListener('click', () => {
+  try { localStorage.removeItem(DEMO_KEY); } catch(e) {}
+  location.reload();
+});
+
+// 判断是否首次访问
+let isFirstVisit = false;
+try {
+  isFirstVisit = localStorage.getItem(DEMO_KEY) !== 'true';
+} catch(e) {
+  isFirstVisit = true;
+}
+
+if (isFirstVisit) {
+  // 首次访问:启动 demo
+  startDemo();
+  document.getElementById('mainStage').style.opacity = '0';
+} else {
+  // 非首次:直接显示主页面
+  document.getElementById('demoStage').classList.add('hidden');
+  document.getElementById('mainStage').classList.add('show');
+}
+
+// ============================================
+// Dashboard hover 切换
+// ============================================
+(function() {
+  const items = document.querySelectorAll('.word-item');
+  const previews = document.querySelectorAll('.preview-content');
+
+  function activate(targetWord) {
+    items.forEach(item => {
+      item.classList.toggle('active', item.dataset.word === targetWord);
+    });
+    previews.forEach(preview => {
+      preview.classList.toggle('active', preview.dataset.preview === targetWord);
+    });
+  }
+
+  items.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      if (window.matchMedia('(min-width: 801px)').matches) {
+        activate(item.dataset.word);
+      }
+    });
+
+    item.addEventListener('click', (e) => {
+      if (window.matchMedia('(min-width: 801px)').matches) {
+        e.preventDefault();
+        activate(item.dataset.word);
+      }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
