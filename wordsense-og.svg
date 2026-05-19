@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#FBFAF6"/>
+  <rect x="72" y="70" width="1056" height="490" fill="#F5F1E7" stroke="#E5DECF" stroke-width="2"/>
+  <text x="130" y="158" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" fill="#1F1B16">
+    Word<tspan fill="#A0522D">Sense</tspan>
+  </text>
+  <line x1="130" y1="194" x2="1070" y2="194" stroke="#E5DECF" stroke-width="2"/>
+  <text x="130" y="285" font-family="'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="52" font-weight="600" fill="#1F1B16">
+    查词典不够，
+  </text>
+  <text x="130" y="355" font-family="'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="52" font-weight="600" fill="#1F1B16">
+    来一起感知它。
+  </text>
+  <text x="130" y="448" font-family="'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="400" fill="#4A4036">
+    一份关于英文单词的慢读小刊。
+  </text>
+  <text x="130" y="493" font-family="'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="400" fill="#807466">
+    看见中文释义背后，被翻译漏掉的 sense。
+  </text>
+  <text x="972" y="500" font-family="Georgia, 'Times New Roman', serif" font-size="96" font-weight="700" fill="#A0522D" opacity="0.16">§</text>
+</svg>
