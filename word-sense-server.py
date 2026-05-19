@@ -413,7 +413,9 @@ class Handler(BaseHTTPRequestHandler):
             content_type = "application/manifest+json"
         data = path.read_bytes()
         self.send_response(200)
-        self.send_header("Content-Type", f"{content_type}; charset=utf-8")
+        if content_type.startswith("text/") or content_type in {"application/javascript", "application/json", "image/svg+xml"}:
+            content_type = f"{content_type}; charset=utf-8"
+        self.send_header("Content-Type", content_type)
         self.send_header("Content-Length", str(len(data)))
         self.end_headers()
         if not head_only:
