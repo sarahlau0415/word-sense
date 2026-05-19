@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Word Sense</title>
+
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&f[]=switzer@400,500,600&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #1F1B16;
+  --ink-soft: #4A4036;
+  --ink-reading: #2E2923;
+  --ink-faint: #807466;
+  --ink-whisper: #C9BEAE;
+  --paper: #FBFAF6;
+  --paper-deep: #F2EFE7;
+  --paper-warm: #F5F1E7;
+  --rule: #E5DECF;
+  --accent: #A0522D;
+  --accent-deep: #5C2E1A;
+  --accent-soft: #A0522D1A;
+  --accent-medium: #A0522D2E;
+
+  --font-cn: "Noto Sans SC", -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-en-display: "Cabinet Grotesk", "Helvetica Neue", sans-serif;
+  --font-en-body: "Switzer", -apple-system, "Helvetica Neue", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 17px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-family: var(--font-cn);
+  font-weight: 400;
+  line-height: 1.78;
+  color: var(--ink);
+  background: var(--paper);
+  min-height: 100vh;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+.nav {
+  border-bottom: 1px solid var(--rule);
+  padding: 1.35rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.nav-brand {
+  font-family: var(--font-en-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav-brand .em {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-link {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--ink-faint);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  transition: color 0.15s ease;
+}
+
+.nav-link:hover,
+.nav-link.active { color: var(--accent); }
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 4.25rem 2rem 5rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 3rem;
+  align-items: end;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-family: var(--font-en-display);
+  font-size: clamp(3.2rem, 8vw, 6.2rem);
+  line-height: 0.9;
+  letter-spacing: -0.055em;
+  color: var(--accent-deep);
+  margin-bottom: 1.35rem;
+}
+
+h1 .em { color: var(--accent); }
+
+.lead {
+  max-width: 640px;
+  font-size: 1.08rem;
+  line-height: 1.85;
+  color: var(--ink-soft);
+}
+
+.lead strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.hero-note {
+  border-left: 2px solid var(--accent);
+  padding-left: 1rem;
+  color: var(--ink-faint);
+  font-size: 0.86rem;
+  line-height: 1.75;
+}
+
+.hero-note .mark {
+  display: block;
+  font-family: var(--font-en-display);
+  color: var(--accent);
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.section {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.section:last-of-type { border-bottom: none; }
+
+.section-kicker {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.9rem;
+}
+
+h2 {
+  font-family: var(--font-cn);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 1.1rem;
+}
+
+.prose {
+  max-width: 700px;
+  color: var(--ink-reading);
+  font-size: 0.98rem;
+  line-height: 1.9;
+}
+
+.prose p + p { margin-top: 1rem; }
+
+.en {
+  font-family: var(--font-en-body);
+  color: var(--accent);
+}
+
+.dimensions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  margin-top: 1.5rem;
+}
+
+.dimension {
+  background: var(--paper);
+  padding: 1.1rem;
+  min-height: 150px;
+}
+
+.dimension-index {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  color: var(--accent);
+  margin-bottom: 0.7rem;
+}
+
+.dimension-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.45rem;
+}
+
+.dimension-text {
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+  line-height: 1.75;
+}
+
+.workflow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.workflow-step {
+  background: var(--paper-deep);
+  border: 1px solid var(--rule);
+  padding: 1.15rem;
+}
+
+.workflow-step h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent-deep);
+  margin-bottom: 0.5rem;
+}
+
+.workflow-step p {
+  font-size: 0.84rem;
+  color: var(--ink-soft);
+  line-height: 1.75;
+}
+
+.promise {
+  background: var(--paper-warm);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--accent);
+  padding: 2rem;
+  margin-top: 1.5rem;
+}
+
+.promise p {
+  font-size: 1.06rem;
+  color: var(--ink);
+  line-height: 1.9;
+}
+
+.footer {
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+  text-align: center;
+  font-family: var(--font-cn);
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+}
+
+.footer a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-medium);
+}
+
+.footer-author {
+  margin-top: 0.65rem;
+  color: var(--ink-faint);
+}
+
+@media (max-width: 800px) {
+  html { font-size: 16px; }
+  .nav { padding: 1rem 1.25rem; }
+  .container { padding: 3rem 1.25rem 4rem; }
+  .hero { grid-template-columns: 1fr; gap: 1.75rem; }
+  .hero-note { max-width: 26rem; }
+  .dimensions,
+  .workflow { grid-template-columns: 1fr; }
+  .dimension { min-height: auto; }
+  .promise { padding: 1.35rem; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="word-sense-home_9.html" class="nav-brand">Word<span class="em">Sense</span></a>
+  <div class="nav-links">
+    <a href="word-sense-home_9.html#searchSection" class="nav-link">search</a>
+    <a href="word-sense-about.html" class="nav-link active">about</a>
+  </div>
+</nav>
+
+<main class="container">
+  <section class="hero">
+    <div>
+      <div class="eyebrow">About Word Sense</div>
+      <h1>Word<span class="em">Sense</span></h1>
+      <p class="lead">查词典不够。词典告诉你一个词<strong>可以怎么翻译</strong>，但很多时候，真正卡住人的不是翻译，而是这个词在英语里到底<strong>怎么活着</strong>。</p>
+    </div>
+    <aside class="hero-note">
+      <span class="mark">§</span>
+      WordSense 想做的不是替代词典，而是把一个词从释义里重新带回语境、文化、身体感和使用场景里。
+    </aside>
+  </section>
+
+  <section class="section">
+    <div class="section-kicker">Why</div>
+    <h2>中文释义常常把词切开，但英语词本身并不是这样长出来的。</h2>
+    <div class="prose">
+      <p>一个英文词经常有好几个中文意思。学习时常常习惯把它们分开背：这个意思在这里用，那个意思在另一个场景用。这样当然有效，但也很容易让词变成一串离散的中文标签。这就是为什么很多词明明背过，下一次遇到还是想不起来；就算想起来了，也不知道该不该在那个句子里用。</p>
+      <p>WordSense 更关心的是：这些意思之间有没有一条看不见的线？这个词最初的画面是什么？它在新闻、AI、社媒、职场和日常表达里，分别带着什么语气和姿态？只有看见这些关系，你才不只是“知道一个中文意思”，而是真的开始把这个词用起来。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-kicker">Six Angles</div>
+    <h2>用六个维度，让一个词重新变成多层 sense。</h2>
+    <div class="dimensions">
+      <div class="dimension">
+        <div class="dimension-index">01</div>
+        <div class="dimension-title">字面含义</div>
+        <div class="dimension-text">先看这个词最直接的画面，而不是急着找中文对等词。</div>
+      </div>
+      <div class="dimension">
+        <div class="dimension-index">02</div>
+        <div class="dimension-title">本体质感</div>
+        <div class="dimension-text">抓住它真正的语感：轻重、姿态、距离、情绪和动作感。</div>
+      </div>
+      <div class="dimension">
+        <div class="dimension-index">03</div>
+        <div class="dimension-title">寻根溯源</div>
+        <div class="dimension-text">回到词源和历史，让今天的含义不再像凭空出现。</div>
+      </div>
+      <div class="dimension">
+        <div class="dimension-index">04</div>
+        <div class="dimension-title">各路用法</div>
+        <div class="dimension-text">把词放回真实场景：新闻、社媒、职场、学术、AI 和日常对话。</div>
+      </div>
+      <div class="dimension">
+        <div class="dimension-index">05</div>
+        <div class="dimension-title">原生思维</div>
+        <div class="dimension-text">给中文用户一个参照物：通过这个词，看见英文世界自己的语境、思维方式和文化姿态，而不是把英语简单映射成汉语。</div>
+      </div>
+      <div class="dimension">
+        <div class="dimension-index">06</div>
+        <div class="dimension-title">悟道时刻</div>
+        <div class="dimension-text">最后不是多背一个释义，而是拿到以后读英文的一把钥匙。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-kicker">How</div>
+    <h2>每篇词条都要先被理解、再被查证、最后被写成可以带走的领悟。</h2>
+    <div class="workflow">
+      <div class="workflow-step">
+        <h3>先找到主线</h3>
+        <p>不急着堆释义，而是先看这个词最核心的画面、语气和使用场景，找到贯穿多个意思的那条线。</p>
+      </div>
+      <div class="workflow-step">
+        <h3>再核对依据</h3>
+        <p>词源、词典、真实语境和例句都会被重新核对。能查到的地方尽量有依据，不能确定的地方不装作确定。</p>
+      </div>
+      <div class="workflow-step">
+        <h3>最后写成词条</h3>
+        <p>最终呈现的不是资料汇编，而是一条清晰的阅读路径：你能看懂，也能把这个词带回自己的阅读和表达里。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-kicker">For Whom</div>
+    <h2>它适合那些已经会查词，但不满足于查词的人。</h2>
+    <div class="prose">
+      <p>如果你读英文新闻、看 AI 内容、刷社媒、写英文邮件，或者只是经常觉得“这个词我明明查过，但还是没真正懂”，WordSense 就是为这种时刻设计的。</p>
+      <p>它不会把英语变简单，但会让你更知道难在哪里。也许你不会立刻记住所有内容，但你会开始对词产生新的敏感度。</p>
+    </div>
+    <div class="promise">
+      <p>WordSense 的目标，是让你每次离开一个词条时，都不只是知道“它是什么意思”，而是多了一点以后读英文时能带走的 sense。</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <a href="word-sense-home_9.html">回到首页</a>，选一个词慢慢看。
+    <div class="footer-author">
+      想知道背后的人？<a href="word-sense-author.html">了解作者</a>
+    </div>
+  </footer>
+</main>
+
+</body>
+</html>

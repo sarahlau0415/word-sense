@@ -1,0 +1,3057 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word Sense</title>
+<meta name="theme-color" content="#FBFAF6">
+<link rel="manifest" href="manifest.webmanifest">
+
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&f[]=switzer@400,500,600&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #1F1B16;
+  --ink-soft: #4A4036;
+  --ink-faint: #807466;
+  --ink-whisper: #C9BEAE;
+  --paper: #FBFAF6;
+  --paper-deep: #F2EFE7;
+  --paper-warm: #F5F1E7;
+  --rule: #E5DECF;
+  --accent: #A0522D;
+  --accent-deep: #5C2E1A;
+  --accent-soft: #A0522D1A;
+  --accent-medium: #A0522D2E;
+
+  --font-cn: "Noto Sans SC", -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-en-display: "Cabinet Grotesk", "Helvetica Neue", sans-serif;
+  --font-en-body: "Switzer", -apple-system, "Helvetica Neue", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 17px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-family: var(--font-cn);
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--ink);
+  background: var(--paper);
+  min-height: 100vh;
+  font-feature-settings: "kern" 1, "liga" 1;
+  overflow-x: hidden;
+}
+
+/* ============================================ */
+/* Demo onboarding 层                          */
+/* ============================================ */
+.demo-stage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--paper);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.demo-stage.fading-out {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.demo-stage.hidden {
+  display: none;
+}
+
+.demo-content {
+  max-width: 640px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Demo 顶部:品牌 + manifesto */
+.demo-brand {
+  text-align: center;
+  margin-bottom: 3rem;
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.8s ease, margin-bottom 0.8s ease;
+}
+
+.demo-brand.show { opacity: 1; }
+
+.demo-brand.compact {
+  opacity: 1;
+  transform: translateY(-0.3rem) scale(0.92);
+  margin-bottom: 2.35rem;
+}
+
+.demo-brand.compact .demo-brand-mark {
+  opacity: 0.55;
+}
+
+.demo-brand-mark {
+  font-family: var(--font-en-display);
+  font-size: 1rem;
+  color: var(--accent);
+  opacity: 0.55;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.4em;
+  font-weight: 500;
+}
+
+.demo-brand-name {
+  font-family: var(--font-en-display);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.045em;
+  color: rgba(92, 46, 26, 0.92);
+  margin-bottom: 0.85rem;
+}
+
+.demo-brand-name .em {
+  color: rgba(160, 82, 45, 0.88);
+  font-weight: 800;
+}
+
+.demo-tagline {
+  font-family: var(--font-cn);
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+}
+
+/* Demo 中央卡片 */
+.demo-card {
+  width: 100%;
+  min-height: 370px;
+  padding: 2.8rem 2.35rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.3), rgba(242, 239, 231, 0.16)),
+    var(--paper);
+  border: 1px solid rgba(160, 82, 45, 0.12);
+  border-radius: 5px;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.62) inset,
+    0 14px 38px rgba(92, 46, 26, 0.04);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  transition: border-color 0.8s ease, box-shadow 0.8s ease, background 0.8s ease;
+}
+
+.demo-card::before {
+  content: '';
+  position: absolute;
+  left: 2.5rem;
+  right: 2.5rem;
+  top: 1.15rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(160, 82, 45, 0.13), transparent);
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.demo-card.mode-quote::before,
+.demo-card.mode-insight::before,
+.demo-card.mode-system::before {
+  opacity: 1;
+}
+
+.demo-card.mode-system {
+  border-color: rgba(160, 82, 45, 0.18);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.68) inset,
+    0 18px 46px rgba(92, 46, 26, 0.055);
+}
+
+.demo-card.mode-system .demo-dimensions {
+  top: 51%;
+}
+
+/* 入场光标 */
+.demo-cursor {
+  width: 2px;
+  height: 1.8rem;
+  background: var(--accent);
+  animation: cursor-blink 1.2s infinite;
+}
+
+.demo-cursor.hide { display: none; opacity: 0; }
+
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}
+
+/* 大词 */
+.demo-word {
+  font-family: var(--font-en-display);
+  font-size: 3.05rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.045em;
+  color: var(--ink-soft);
+  padding: 0.28rem 0.82rem 0.38rem;
+  border: 1px solid rgba(160, 82, 45, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.38);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.62) inset;
+  opacity: 0;
+  transition: opacity 1s ease, transform 0.6s ease, border-color 0.8s ease, background 0.8s ease, box-shadow 0.8s ease;
+  transform: translateY(8px);
+  position: relative;
+}
+
+.demo-word.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.demo-word.move-up {
+  position: absolute;
+  top: 2.15rem;
+  font-size: 1.86rem;
+  padding: 0.2rem 0.62rem 0.26rem;
+  border-color: rgba(160, 82, 45, 0.14);
+  background: rgba(255, 255, 255, 0.28);
+  box-shadow: none;
+  transition: all 0.8s ease;
+}
+
+/* 中文初始反应 */
+.demo-guess {
+  margin-top: 1.3rem;
+  font-family: var(--font-cn);
+  font-size: 1rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.03em;
+  opacity: 0;
+  transition: opacity 0.8s ease, color 0.4s ease, transform 0.4s ease;
+}
+
+.demo-guess.show { opacity: 1; }
+
+.demo-guess.hide { opacity: 0; visibility: hidden; }
+
+.demo-guess.reconsider {
+  color: var(--ink-faint);
+  opacity: 0.78;
+  text-decoration: line-through;
+  text-decoration-color: var(--accent-medium);
+  text-decoration-thickness: 1px;
+  transform: translateY(-2px);
+}
+
+/* 英文引文 */
+.demo-quote {
+  width: min(100%, 520px);
+  margin-top: 1.65rem;
+  padding-left: 1rem;
+  border-left: 2px solid rgba(160, 82, 45, 0.72);
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.demo-quote.show { opacity: 1; }
+.demo-quote.hide { opacity: 0; visibility: hidden; pointer-events: none; }
+
+.demo-quote-text {
+  font-family: var(--font-en-body);
+  font-size: 1rem;
+  line-height: 1.72;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+}
+
+.sense-target {
+  color: var(--accent-deep);
+  font-weight: 600;
+  background: linear-gradient(to bottom, transparent 58%, rgba(160, 82, 45, 0.14) 58%, rgba(160, 82, 45, 0.14) 92%, transparent 92%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 0 0.08em;
+}
+
+.demo-quote.show .sense-target {
+  animation: sense-pulse 1.2s ease 0.45s both;
+}
+
+@keyframes sense-pulse {
+  0% { background-size: 0% 100%; }
+  55% { background-size: 100% 100%; }
+  100% { background-size: 100% 100%; }
+}
+
+.demo-quote-text::before {
+  content: '"';
+  color: var(--ink-whisper);
+  margin-right: 0.1em;
+}
+
+.demo-quote-text::after {
+  content: '"';
+  color: var(--ink-whisper);
+  margin-left: 0.1em;
+}
+
+/* 中文译注 */
+.demo-translation {
+  width: min(100%, 520px);
+  margin-top: 0.9rem;
+  padding-left: 1rem;
+  font-family: var(--font-cn);
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--ink-soft);
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.demo-translation.show { opacity: 1; }
+.demo-translation.hide { opacity: 0; visibility: hidden; pointer-events: none; }
+
+.demo-translation p + p {
+  margin-top: 0.55rem;
+}
+
+.translation-turn {
+  display: inline-block;
+  margin-top: 0.62rem;
+  color: var(--accent-deep);
+  font-weight: 500;
+  font-size: 0.88rem;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.translation-turn::before,
+.translation-turn::after {
+  color: rgba(160, 82, 45, 0.58);
+}
+
+.translation-turn::before { content: '“'; }
+.translation-turn::after { content: '”'; }
+
+.translation-turn.turn-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.translation-target {
+  color: var(--accent-deep);
+  font-weight: 600;
+  background: linear-gradient(to bottom, transparent 62%, rgba(160, 82, 45, 0.12) 62%, rgba(160, 82, 45, 0.12) 92%, transparent 92%);
+  padding: 0 0.06em;
+}
+
+/* 顿悟段 */
+.demo-insight {
+  max-width: 520px;
+  margin: 0 auto;
+  font-family: var(--font-cn);
+  font-size: 1rem;
+  line-height: 1.9;
+  color: var(--ink-soft);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  right: 2rem;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.demo-insight.show {
+  opacity: 1;
+  display: block;
+}
+
+.demo-insight.hide {
+  opacity: 0;
+}
+
+#demoInsight3 {
+  top: 58%;
+}
+
+
+.demo-insight .quote-mark {
+  color: var(--accent-deep);
+  font-weight: 600;
+}
+
+.faculty-bridge {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 1.05rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.faculty-sense {
+  min-height: 4.6rem;
+  padding: 0.38rem 0.45rem 0.72rem;
+  border-bottom: 1px solid rgba(160, 82, 45, 0.16);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.faculty-sense::before {
+  content: none;
+}
+
+.faculty-sense-label {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(128, 116, 102, 0.72);
+  margin-bottom: 0.3rem;
+}
+
+.faculty-sense-main {
+  color: var(--accent-deep);
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.faculty-sense-sub {
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  margin-top: 0.18rem;
+}
+
+.faculty-sense-sub.reveal-layer {
+  opacity: 0;
+  transform: translateY(0.35rem);
+  transition: opacity 0.72s cubic-bezier(0.16, 1, 0.3, 1), transform 0.72s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faculty-sense-sub.reveal-layer.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.faculty-link {
+  font-family: var(--font-en-display);
+  color: rgba(160, 82, 45, 0.46);
+  font-size: 1.05rem;
+  opacity: 0.9;
+}
+
+.insight-question {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: var(--accent-deep);
+  font-weight: 600;
+}
+
+.demo-insight .family-list {
+  width: min(100%, 500px);
+  margin: 0.4rem auto 0;
+  display: grid;
+  gap: 0.54rem;
+  position: relative;
+}
+
+.demo-insight .family-item {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.72rem;
+  width: 100%;
+  color: var(--ink-soft);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.family-word {
+  font-family: var(--font-en-display);
+  font-weight: 600;
+  color: var(--accent-deep);
+  font-size: 0.98rem;
+  letter-spacing: -0.01em;
+  min-width: 0;
+  text-align: center;
+}
+
+.family-senses {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.42rem;
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  white-space: nowrap;
+}
+
+.family-origin {
+  color: var(--ink-faint);
+}
+
+.family-arrow {
+  font-family: var(--font-en-display);
+  color: rgba(160, 82, 45, 0.44);
+  transform: translateY(-0.02em);
+}
+
+.family-body {
+  color: var(--accent-deep);
+  font-weight: 500;
+}
+
+.demo-insight .family-conclusion {
+  font-family: var(--font-cn);
+  margin-top: 0.92rem;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+/* 六维标签惊喜 */
+.demo-dimensions {
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  width: min(100%, 500px);
+  height: auto;
+  display: none;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 1.1rem;
+  row-gap: 0.78rem;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+  transform: translate(-50%, -50%);
+}
+
+.demo-dimensions::before,
+.demo-dimensions::after {
+  display: none;
+}
+
+.demo-dimensions.show {
+  display: grid;
+  opacity: 1;
+}
+
+.demo-dimensions.hide {
+  opacity: 0;
+}
+
+
+.demo-dim-item {
+  font-family: var(--font-cn);
+  font-weight: 500;
+  color: var(--ink-faint);
+  font-size: 0.96rem;
+  letter-spacing: 0.03em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.16rem;
+  min-height: 2.35rem;
+  padding: 0.08rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.demo-dim-item::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: rgba(160, 82, 45, 0.34);
+  transform: translateX(-50%);
+  transition: width 0.72s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.demo-dim-item::after {
+  content: none;
+}
+
+.demo-dim-item .marker {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: rgba(128, 116, 102, 0.62);
+  font-size: 0.56rem;
+  letter-spacing: 0.08em;
+  opacity: 1;
+}
+
+.demo-dim-item.visible {
+  color: var(--accent-deep);
+}
+
+.demo-dim-item.visible::before {
+  width: 2.4rem;
+}
+
+.demo-dim-item.visible .marker {
+  color: rgba(160, 82, 45, 0.78);
+}
+
+.reveal-unit {
+  opacity: 0;
+  transform: translateY(0.42em);
+  transition: opacity 0.72s cubic-bezier(0.16, 1, 0.3, 1), transform 0.72s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-unit.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-inline {
+  display: inline;
+}
+
+.demo-insight .reveal-inline,
+.demo-guess.reveal-unit {
+  display: inline-block;
+}
+
+.reveal-block {
+  display: block;
+}
+
+.demo-dim-item.reveal-unit,
+.family-item.reveal-unit,
+.family-conclusion.reveal-unit {
+  display: flex;
+}
+
+.family-conclusion.reveal-unit {
+  display: block;
+}
+
+/* 转化段 */
+.demo-transition {
+  position: absolute;
+  left: 2.2rem;
+  right: 2.2rem;
+  bottom: 1.55rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+  pointer-events: none;
+}
+
+.demo-transition.show { opacity: 1; }
+
+.demo-transition-headline {
+  font-family: var(--font-cn);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--accent-deep);
+  margin-bottom: 0.36rem;
+  letter-spacing: 0.01em;
+}
+
+.demo-transition-headline .en {
+  font-family: var(--font-en-display);
+  font-weight: 700;
+  color: var(--accent-deep);
+}
+
+.demo-transition-sub {
+  font-family: var(--font-cn);
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  line-height: 1.62;
+}
+
+/* 跳过按钮 */
+.demo-skip {
+  font-family: var(--font-cn);
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0.46rem 0.75rem;
+  margin-top: 0.7rem;
+  transition: color 0.2s ease;
+  align-self: center;
+}
+
+.demo-skip:hover { color: var(--accent); }
+
+.demo-skip::after {
+  content: ' →';
+  font-family: var(--font-en-body);
+}
+
+/* 极细进度条 */
+.demo-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: var(--accent);
+  width: 0%;
+  transition: width 0.3s linear;
+  z-index: 1002;
+  opacity: 0.4;
+}
+
+/* ============================================ */
+/* 主页面(demo 之后呈现)                       */
+/* ============================================ */
+.main-stage {
+  opacity: 0;
+  transition: opacity 0.8s ease 0.3s;
+}
+
+.main-stage.show { opacity: 1; }
+
+/* 顶部导航 */
+.nav {
+  border-bottom: 1px solid var(--rule);
+  padding: 1.1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.nav-brand {
+  font-family: var(--font-en-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav-brand .em {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.nav-about {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  transition: color 0.15s ease;
+}
+
+.nav-about:hover { color: var(--accent); }
+
+/* 主容器 */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2.25rem 2rem 3rem;
+}
+
+/* Hero —— 极简单行 */
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-mark {
+  font-family: var(--font-en-display);
+  font-size: 1rem;
+  color: var(--accent);
+  opacity: 0.55;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.4em;
+  font-weight: 500;
+  user-select: none;
+}
+
+.hero-line {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-brand {
+  font-family: var(--font-en-display);
+  font-size: 1.85rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--accent-deep);
+}
+
+.hero-brand .em {
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.hero-divider {
+  width: 1px;
+  height: 1.1rem;
+  background: var(--rule);
+  display: inline-block;
+}
+
+.hero-manifesto {
+  font-family: var(--font-cn);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+}
+
+.hero-manifesto strong {
+  color: var(--accent-deep);
+  font-weight: 500;
+}
+
+.replay-link {
+  margin-left: 0.85rem;
+  font-family: var(--font-cn);
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-bottom: 1px dashed var(--ink-whisper);
+  padding: 0 0 1px 0;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.replay-link:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* Dashboard 上方横条 */
+.weekly-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0.35rem 0 0.9rem;
+}
+
+.weekly-head {
+  padding: 0;
+  margin-left: auto;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.weekly-title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.weekly-title-en {
+  font-family: var(--font-en-display);
+  font-style: italic;
+  font-weight: 500;
+  color: var(--accent-deep);
+  letter-spacing: -0.005em;
+}
+
+.weekly-title-sep {
+  font-family: var(--font-cn);
+  color: var(--ink-faint);
+  margin: 0 0.15em;
+}
+
+.weekly-title-cn {
+  font-family: var(--font-cn);
+  font-weight: 400;
+  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+}
+
+.level-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0;
+}
+
+.level-tab {
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  color: var(--ink-faint);
+  padding: 0.45rem 0.72rem;
+  border-radius: 999px;
+  font-family: var(--font-cn);
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
+}
+
+.level-tab:hover,
+.level-tab.active {
+  border-color: var(--accent);
+  color: var(--accent-deep);
+  background: var(--accent-soft);
+}
+
+/* Dashboard */
+.dashboard {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2.5rem;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--accent);
+  padding: 2rem;
+  border-radius: 2px;
+  margin-bottom: 2.5rem;
+  min-height: 480px;
+}
+
+/* 左栏整体容器 */
+.weekly-column {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--rule);
+  padding-right: 2rem;
+  margin-right: -0.5rem;
+}
+
+/* 左栏顶部:期刊元信息 */
+.weekly-masthead {
+  margin-bottom: 1.4rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.weekly-masthead-title {
+  font-family: var(--font-en-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  line-height: 1.1;
+  margin-bottom: 0.7rem;
+}
+
+.weekly-masthead-title .em {
+  color: var(--accent);
+}
+
+.weekly-masthead-meta {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.weekly-masthead-meta .sep {
+  color: var(--ink-whisper);
+  margin: 0 0.4em;
+}
+
+/* 左栏底部:已发布统计 */
+.weekly-footer {
+  margin-top: auto;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--rule);
+}
+
+.weekly-footer-stat {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 500;
+}
+
+.weekly-footer-stat .num {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.word-list {
+  list-style: none;
+  flex: 1;
+}
+
+.word-item {
+  display: block;
+  padding: 0.7rem 0 0.7rem 0.85rem;
+  border-left: 2px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 0.18s ease, color 0.18s ease;
+}
+
+.word-item:focus {
+  outline: none;
+}
+
+.word-item:focus-visible {
+  outline: 2px solid var(--accent-medium);
+  outline-offset: 3px;
+}
+
+.word-item + .word-item {
+  border-top: 1px solid var(--rule);
+}
+
+.word-item-name {
+  font-family: var(--font-en-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  display: block;
+  margin-bottom: 0.18rem;
+  line-height: 1.2;
+  transition: color 0.18s ease;
+}
+
+.word-item-tag {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 500;
+}
+
+.word-item:hover .word-item-name,
+.word-item.active .word-item-name {
+  color: var(--accent);
+}
+
+.word-item.active {
+  border-left-color: var(--accent);
+}
+
+.word-item.active .word-item-name {
+  color: var(--accent-deep);
+}
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.preview-content {
+  display: none;
+}
+
+.preview-content.active {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.preview-meta {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 0.65rem;
+}
+
+.preview-word {
+  font-family: var(--font-en-display);
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+  color: var(--accent-deep);
+  margin-bottom: 1rem;
+}
+
+.preview-dim {
+  font-family: var(--font-cn);
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+
+.preview-dim::after {
+  content: ' · ';
+  color: var(--accent);
+  opacity: 0.7;
+  font-weight: 400;
+  margin: 0 0.15em;
+}
+
+.preview-sense {
+  font-family: var(--font-cn);
+  font-size: 0.95rem;
+  line-height: 1.78;
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+}
+
+.preview-sense .en {
+  font-family: var(--font-en-display);
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+}
+
+.preview-sense strong:not(.preview-dim) {
+  font-weight: 500;
+  color: var(--ink);
+  background: linear-gradient(to bottom, transparent 62%, var(--accent-soft) 62%, var(--accent-soft) 92%, transparent 92%);
+  padding: 0 0.15em;
+}
+
+.preview-satori {
+  margin-top: auto;
+  padding: 1.1rem 1.2rem;
+  background: var(--paper-warm);
+  border-radius: 3px;
+  border-left: 2px solid var(--accent);
+}
+
+.preview-satori-label {
+  font-family: var(--font-cn);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  color: var(--accent-deep);
+  font-weight: 600;
+  margin-bottom: 0.45rem;
+}
+
+.preview-satori-text {
+  font-family: var(--font-cn);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--ink);
+}
+
+.preview-satori-text strong {
+  font-weight: 500;
+  color: var(--accent-deep);
+}
+
+.preview-satori-text .en {
+  font-family: var(--font-en-display);
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+}
+
+.preview-more {
+  margin-top: 1.25rem;
+}
+
+.preview-more-link {
+  font-family: var(--font-en-display);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--accent-deep);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding-bottom: 2px;
+  border-bottom: 1.5px solid var(--accent);
+  transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.preview-more-link:hover {
+  color: var(--accent);
+  gap: 0.6rem;
+}
+
+/* 视觉化引文 - 真实使用场景例句 */
+.preview-quote {
+  margin: 0 0 1.5rem;
+  padding: 1.4rem 1.5rem 1.5rem;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  position: relative;
+}
+
+.preview-quote::before {
+  content: '"';
+  position: absolute;
+  top: 0.5rem;
+  left: 0.85rem;
+  font-family: var(--font-en-display);
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.25;
+}
+
+.preview-quote-text {
+  font-family: var(--font-en-body);
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: var(--ink);
+  font-style: italic;
+  letter-spacing: -0.005em;
+  margin: 0;
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+.preview-quote-text .highlight {
+  color: var(--accent-deep);
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: -0.01em;
+  background: linear-gradient(to bottom, transparent 60%, var(--accent-soft) 60%, var(--accent-soft) 90%, transparent 90%);
+  padding: 0 0.1em;
+}
+
+.preview-quote-context {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--ink-faint);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-top: 0.85rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--rule);
+}
+
+/* 搜索区 */
+.search-section {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.search-title {
+  font-family: var(--font-cn);
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.search-title strong {
+  color: var(--accent-deep);
+  font-weight: 500;
+}
+
+.search-form {
+  flex: 1;
+  min-width: 280px;
+}
+
+.search-box {
+  display: flex;
+  align-items: stretch;
+  background: var(--paper);
+  border: 1.5px solid var(--rule);
+  border-radius: 4px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.search-box:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.85rem 1.1rem;
+  font-family: var(--font-en-body);
+  font-size: 0.98rem;
+  color: var(--ink);
+  background: transparent;
+  letter-spacing: -0.005em;
+  min-width: 0;
+}
+
+.search-input::placeholder {
+  color: var(--ink-faint);
+  font-family: var(--font-cn);
+  font-size: 0.92rem;
+  font-weight: 400;
+}
+
+.search-submit {
+  border: none;
+  background: var(--accent-deep);
+  color: var(--paper);
+  padding: 0 1.3rem;
+  font-family: var(--font-en-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+}
+
+.search-submit:hover { background: var(--accent); }
+
+.search-submit::after {
+  content: '→';
+  font-size: 1rem;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.search-submit:hover::after { transform: translateX(2px); }
+
+.search-more-toggle {
+  font-family: var(--font-cn);
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--ink-whisper);
+  padding-bottom: 1px;
+  cursor: pointer;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  white-space: nowrap;
+}
+
+.search-more-toggle:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.search-more-toggle::before {
+  content: '+ ';
+  font-family: var(--font-mono);
+}
+
+.search-more-fields {
+  display: none;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px dashed var(--rule);
+  width: 100%;
+  flex-basis: 100%;
+  gap: 1.25rem;
+}
+
+.search-section.expanded .search-more-fields {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-section.expanded .search-more-toggle::before { content: '− '; }
+
+.field {
+  flex: 1;
+  min-width: 240px;
+}
+
+.field-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 0.4rem;
+}
+
+.field-input {
+  width: 100%;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  padding: 0.6rem 0.85rem;
+  font-family: var(--font-en-body);
+  font-size: 0.92rem;
+  color: var(--ink);
+  border-radius: 3px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.field-input:focus { border-color: var(--accent); }
+.field-input::placeholder { color: var(--ink-whisper); }
+
+.cost-notice {
+  display: none;
+  position: relative;
+  width: 100%;
+  flex-basis: 100%;
+  max-width: 34rem;
+  margin-top: 0.68rem;
+  margin-left: calc(0.95rem + 7.8rem);
+  padding: 0.72rem 0.82rem 0.76rem;
+  background: rgba(251, 250, 246, 0.96);
+  border: 1px solid rgba(160, 82, 45, 0.16);
+  border-radius: 4px;
+  box-shadow: 0 12px 28px rgba(68, 52, 36, 0.08);
+  color: var(--ink-soft);
+}
+
+.cost-notice::before {
+  content: '';
+  position: absolute;
+  top: -0.42rem;
+  left: 1.3rem;
+  width: 0.78rem;
+  height: 0.78rem;
+  background: rgba(251, 250, 246, 0.96);
+  border-left: 1px solid rgba(160, 82, 45, 0.16);
+  border-top: 1px solid rgba(160, 82, 45, 0.16);
+  transform: rotate(45deg);
+}
+
+.search-section.cost-aware .cost-notice,
+.search-section:focus-within .cost-notice,
+.cost-notice.show {
+  display: block;
+}
+
+.cost-notice-title {
+  font-size: 0.76rem;
+  color: var(--accent-deep);
+  font-weight: 600;
+  margin-bottom: 0.22rem;
+}
+
+.cost-notice-text {
+  font-size: 0.7rem;
+  line-height: 1.62;
+  color: var(--ink-faint);
+}
+
+.key-row {
+  display: flex;
+  gap: 0.42rem;
+  align-items: stretch;
+  margin-top: 0.58rem;
+}
+
+.key-input {
+  min-width: 0;
+  flex: 1;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: 3px;
+  padding: 0.43rem 0.55rem;
+  font-family: var(--font-en-body);
+  font-size: 0.72rem;
+  outline: none;
+}
+
+.key-input:focus {
+  border-color: var(--accent);
+}
+
+.key-input::placeholder {
+  color: var(--ink-whisper);
+}
+
+.key-save {
+  border: 1px solid var(--accent-medium);
+  background: var(--paper);
+  color: var(--accent-deep);
+  border-radius: 3px;
+  padding: 0.43rem 0.56rem;
+  font-family: var(--font-cn);
+  font-size: 0.7rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.key-save:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.key-status {
+  margin-top: 0.35rem;
+  min-height: 1.1rem;
+  font-size: 0.68rem;
+  line-height: 1.55;
+  color: var(--ink-faint);
+}
+
+.key-status.success {
+  color: var(--accent-deep);
+}
+
+.key-status.error {
+  color: #8D3E24;
+}
+
+/* 回访入口 */
+.return-panel {
+  margin-top: 2.3rem;
+  padding: 0;
+  background: transparent;
+}
+
+.return-guide {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.return-guide + .return-guide {
+  margin-top: 1.4rem;
+}
+
+.return-section-mark {
+  margin: 1.35rem 0;
+  text-align: center;
+  font-family: var(--font-en-display);
+  font-size: 1.05rem;
+  color: var(--accent);
+  opacity: 0.5;
+  letter-spacing: 0.26em;
+}
+
+.return-title {
+  font-size: 0.96rem;
+  line-height: 1.75;
+  color: var(--ink-soft);
+  font-weight: 500;
+  margin-bottom: 0.45rem;
+}
+
+.return-text {
+  color: var(--ink-faint);
+  font-size: 0.82rem;
+  line-height: 1.75;
+  margin: 0 auto;
+}
+
+.return-button {
+  appearance: none;
+  border: 1px solid var(--accent-medium);
+  background: var(--paper);
+  color: var(--accent-deep);
+  border-radius: 3px;
+  padding: 0.46rem 0.72rem;
+  font-family: var(--font-cn);
+  font-size: 0.76rem;
+  cursor: pointer;
+  transition: border-color 0.18s ease, background 0.18s ease, color 0.18s ease;
+  margin-top: 0.72rem;
+}
+
+.return-button:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.return-button[disabled] {
+  cursor: default;
+  opacity: 0.62;
+}
+
+.subscribe-form {
+  margin: 0.72rem auto 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.42rem;
+  max-width: 420px;
+}
+
+.subscribe-input {
+  min-width: 0;
+  flex: 1;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: 3px;
+  padding: 0.48rem 0.58rem;
+  font-family: var(--font-en-body);
+  font-size: 0.78rem;
+  outline: none;
+}
+
+.subscribe-input:focus {
+  border-color: var(--accent);
+}
+
+.subscribe-input::placeholder {
+  color: var(--ink-whisper);
+}
+
+.subscribe-submit {
+  border: 1px solid var(--accent-deep);
+  background: var(--accent-deep);
+  color: var(--paper);
+  border-radius: 3px;
+  padding: 0.48rem 0.62rem;
+  font-family: var(--font-cn);
+  font-size: 0.74rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.subscribe-submit:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.return-status {
+  min-height: 1.2rem;
+  margin-top: 0.48rem;
+  font-size: 0.74rem;
+  line-height: 1.6;
+  color: var(--ink-faint);
+}
+
+.return-status.success {
+  color: var(--accent-deep);
+}
+
+.return-status.error {
+  color: #8D3E24;
+}
+
+/* 产品亮点段 */
+.highlight {
+  margin-top: 2rem;
+  padding: 2rem 2rem 1.75rem;
+  background: var(--paper-deep);
+  border-radius: 3px;
+  font-family: var(--font-cn);
+  line-height: 1.85;
+  color: var(--ink);
+}
+
+.highlight p {
+  font-size: 0.96rem;
+  color: var(--accent-deep);
+  margin-bottom: 0.85rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.85rem;
+  font-weight: 600;
+}
+
+.highlight p:last-child {
+  margin-bottom: 0;
+}
+
+.highlight .mark {
+  font-family: var(--font-en-display);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--accent);
+  opacity: 0.72;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.highlight .en {
+  font-family: var(--font-en-display);
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+}
+
+/* 页脚 */
+.footer {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  text-align: center;
+  font-family: var(--font-cn);
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  line-height: 1.7;
+}
+
+.footer-mark {
+  font-family: var(--font-en-display);
+  color: var(--accent);
+  opacity: 0.5;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.3em;
+  font-size: 0.95rem;
+}
+
+/* 移动端 */
+@media (max-width: 800px) {
+  html { font-size: 16px; }
+  .container { padding: 2rem 1.25rem 3rem; }
+  .nav { padding: 1rem 1.25rem; }
+  .hero-line { gap: 0; flex-direction: column; align-items: center; }
+  .hero-divider { display: none; }
+  .hero-brand { font-size: 1.75rem; margin-bottom: 0.5rem; }
+  .hero-manifesto { font-size: 0.92rem; }
+
+  .weekly-toolbar {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0.4rem 0 1rem;
+  }
+
+  .weekly-head {
+    padding: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .level-switch {
+    justify-content: center;
+  }
+
+  .dashboard {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 1.25rem;
+    min-height: auto;
+  }
+
+  .weekly-column {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+  .weekly-masthead {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .weekly-masthead-title {
+    font-size: 1.1rem;
+  }
+
+  .weekly-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .preview { display: none; }
+
+  .word-item { padding: 1rem 0 1rem 1rem; }
+  .word-item-name { font-size: 1.25rem; margin-bottom: 0.3rem; }
+
+  .word-item-mobile-hook {
+    display: block;
+    font-family: var(--font-cn);
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    line-height: 1.55;
+    margin-top: 0.4rem;
+    font-weight: 400;
+  }
+
+  .search-section {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+  }
+
+  .search-title { text-align: center; }
+  .search-form { width: 100%; }
+  .search-more-toggle { text-align: center; margin-top: 0.5rem; }
+  .field { min-width: 100%; }
+  .cost-notice {
+    max-width: none;
+    margin-left: 0;
+  }
+  .key-row {
+    flex-direction: column;
+  }
+  .key-save {
+    width: fit-content;
+  }
+  .return-panel { margin-top: 2rem; }
+  .subscribe-form {
+    flex-direction: column;
+  }
+  .subscribe-submit {
+    width: fit-content;
+  }
+
+  /* Demo 移动端 */
+  .demo-stage { padding: 1.25rem; }
+  .demo-brand-name { font-size: 1.65rem; }
+  .demo-card { padding: 1.85rem 1.35rem; min-height: 330px; }
+  .demo-word { font-size: 2.1rem; padding: 0.22rem 0.66rem 0.3rem; }
+  .demo-word.move-up { font-size: 1.45rem; top: 1.3rem; padding: 0.16rem 0.5rem 0.22rem; }
+  .demo-quote,
+  .demo-translation { width: 100%; }
+  .demo-insight { font-size: 0.94rem; left: 1.35rem; right: 1.35rem; }
+  .faculty-bridge { grid-template-columns: 1fr; gap: 0.45rem; }
+  .faculty-link { transform: rotate(90deg); justify-self: center; }
+  .family-list { gap: 0.46rem; }
+  .demo-insight .family-item { flex-direction: column; gap: 0.08rem; text-align: center; }
+  .family-word { min-width: 0; text-align: center; }
+  .family-senses { justify-content: center; white-space: normal; }
+  .demo-dimensions { top: 57%; width: min(100%, 330px); height: auto; display: none; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 0.8rem; row-gap: 0.48rem; }
+  .demo-card.mode-system .demo-word { top: 42%; font-size: 1.5rem; }
+  .demo-card.mode-system .demo-dimensions { top: 58%; }
+  .demo-dimensions::before,
+  .demo-dimensions::after { display: none; }
+  .demo-dimensions.show { display: grid; }
+  .demo-dim-item { position: relative; left: auto !important; right: auto !important; top: auto !important; bottom: auto !important; min-height: 2.05rem; padding: 0.04rem 0; font-size: 0.82rem; }
+  .demo-transition { left: 1.2rem; right: 1.2rem; bottom: 0.95rem; }
+  .demo-transition-headline { font-size: 0.94rem; }
+  .demo-transition-sub { font-size: 0.76rem; }
+}
+
+@media (min-width: 801px) {
+  .word-item-mobile-hook { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- Demo onboarding 层 -->
+<div class="demo-stage" id="demoStage">
+
+  <div class="demo-content">
+
+    <!-- 品牌头 -->
+    <div class="demo-brand" id="demoBrand">
+      <div class="demo-brand-mark">§</div>
+      <h1 class="demo-brand-name">Word<span class="em">Sense</span></h1>
+      <p class="demo-tagline">查词典不够，来一起感知它。</p>
+    </div>
+
+    <!-- 主舞台卡片 -->
+    <div class="demo-card" id="demoCard">
+
+      <!-- 入场光标 -->
+      <div class="demo-cursor" id="demoCursor"></div>
+
+      <!-- 大词 -->
+      <div class="demo-word" id="demoWord">faculty</div>
+
+      <!-- 中文初始猜测 -->
+      <div class="demo-guess" id="demoGuess">学院？教职工？</div>
+
+      <!-- 英文引文 -->
+      <div class="demo-quote" id="demoQuote">
+        <p class="demo-quote-text">By the end, he had lost most of his <span class="sense-target">cognitive faculties</span>, but he still recognized his daughter's voice.</p>
+      </div>
+
+      <!-- 中文译注 -->
+      <div class="demo-translation" id="demoTranslation">
+        <p class="translation-main">到最后，这个可怜的男人，失去了他几乎所有的<span class="translation-target">知觉能力</span>，但他仍然记得女儿的声音。</p>
+        <p class="translation-turn">等等，faculty 在这里不是“教职工”。</p>
+      </div>
+
+      <!-- 顿悟段 1 -->
+      <div class="demo-insight" id="demoInsight1">
+        <p><span class="insight-question">怎么一个词的两个含义差这么多？</span></p>
+        <div class="faculty-bridge">
+          <div class="faculty-sense">
+            <span class="faculty-sense-label">faculty as power</span>
+            <span class="faculty-sense-main">感知知识的能力</span>
+          </div>
+          <span class="faculty-link">→</span>
+          <div class="faculty-sense">
+            <span class="faculty-sense-label">faculty as body</span>
+            <span class="faculty-sense-main">教职工、院系</span>
+            <span class="faculty-sense-sub reveal-layer" id="facultyBodyLayer">承载这种能力的人和机构</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 顿悟段 2 -->
+      <div class="demo-insight" id="demoInsight2">
+        <p><span class="insight-question">中文释义把它们分开了，<br>但在 faculty 这个词里，它们其实连在一起。</span>英语里有一类这样的词 —— 同时指<span class="quote-mark">“一种能力”</span>，和<span class="quote-mark">“承载它的实体”</span>。</p>
+      </div>
+
+      <!-- 顿悟段 3 -->
+      <div class="demo-insight" id="demoInsight3">
+        <div class="family-list">
+          <div class="family-item">
+            <span class="family-word">administration</span>
+            <span class="family-senses"><span class="family-origin">管理</span><span class="family-arrow">→</span><span class="family-body">管理层</span></span>
+          </div>
+          <div class="family-item">
+            <span class="family-word">authority</span>
+            <span class="family-senses"><span class="family-origin">权威</span><span class="family-arrow">→</span><span class="family-body">权力机构</span></span>
+          </div>
+          <div class="family-item">
+            <span class="family-word">ministry</span>
+            <span class="family-senses"><span class="family-origin">神职服务</span><span class="family-arrow">→</span><span class="family-body">政府部</span></span>
+          </div>
+          <div class="family-item">
+            <span class="family-word">agency</span>
+            <span class="family-senses"><span class="family-origin">行动能力</span><span class="family-arrow">→</span><span class="family-body">机构</span></span>
+          </div>
+        </div>
+        <p class="family-conclusion">重新看看这些词，其实都是这样。</p>
+      </div>
+
+      <!-- 六维标签惊喜 -->
+      <div class="demo-dimensions" id="demoDimensions">
+        <span class="demo-dim-item"><span class="marker">01</span>字面含义</span>
+        <span class="demo-dim-item"><span class="marker">02</span>本体质感</span>
+        <span class="demo-dim-item"><span class="marker">03</span>寻根溯源</span>
+        <span class="demo-dim-item"><span class="marker">04</span>各路用法</span>
+        <span class="demo-dim-item"><span class="marker">05</span>原生思维</span>
+        <span class="demo-dim-item"><span class="marker">06</span>悟道时刻</span>
+      </div>
+
+      <!-- 转化段 -->
+      <div class="demo-transition" id="demoTransition">
+        <p class="demo-transition-headline">这就是 <span class="en">Word Sense</span>。</p>
+        <p class="demo-transition-sub">不增加新的含义，了解词的本真和来路。</p>
+      </div>
+
+    </div>
+
+    <!-- 跳过按钮 -->
+    <button class="demo-skip" id="demoSkip" type="button">跳过演示</button>
+
+  </div>
+
+  <!-- 极细进度条 -->
+  <div class="demo-progress" id="demoProgress"></div>
+
+</div>
+
+
+<!-- 主页面 -->
+<div class="main-stage" id="mainStage">
+
+<nav class="nav">
+  <a href="word-sense-home_9.html" class="nav-brand">Word<span class="em">Sense</span></a>
+  <a href="word-sense-about.html" class="nav-about">about</a>
+</nav>
+
+<main class="container">
+
+  <section class="hero">
+    <div class="hero-mark">§</div>
+    <div class="hero-line">
+      <h1 class="hero-brand">Word<span class="em">Sense</span></h1>
+      <span class="hero-divider"></span>
+      <p class="hero-manifesto">查词典不够，<strong>来一起感知它。</strong><button class="replay-link" id="replayLink">再看一次 faculty</button></p>
+    </div>
+  </section>
+
+  <div class="weekly-toolbar">
+    <div class="level-switch" aria-label="选择词条难度">
+      <button type="button" class="level-tab active" data-level="entry">A2-B1 · 入门</button>
+      <button type="button" class="level-tab" data-level="middle">B1-B2 · 进阶</button>
+      <button type="button" class="level-tab" data-level="advanced">B2-C1 · 高阶</button>
+    </div>
+    <div class="weekly-head">
+      <h2 class="weekly-title"><span class="weekly-title-en">Word by Word</span><span class="weekly-title-sep">，</span><span class="weekly-title-cn">慢慢来</span></h2>
+    </div>
+  </div>
+
+  <div class="dashboard">
+
+    <div class="weekly-column">
+
+      <div class="weekly-masthead">
+        <div class="weekly-masthead-title">Word<span class="em">Sense</span> Weekly</div>
+        <div class="weekly-masthead-meta">
+          Issue 03<span class="sep">·</span>May 18, 2026<br>
+          By Sarah
+        </div>
+      </div>
+
+      <ol class="word-list" id="wordList">
+
+      <a href="word-sense-result_10.html?word=lowkey" class="word-item active" data-word="lowkey">
+        <span class="word-item-name">lowkey</span>
+        <span class="word-item-tag">社媒口语 · B1-B2 · 进阶</span>
+        <span class="word-item-mobile-hook">不是“低调”。是当代美国人说“其实有点……”的方式。</span>
+      </a>
+
+      <a href="word-sense-result_10.html?word=agentic" class="word-item" data-word="agentic">
+        <span class="word-item-name">agentic</span>
+        <span class="word-item-tag">AI 语境 · B2-C1 · 高阶</span>
+        <span class="word-item-mobile-hook">2026 年最被滥用的英语词。你确定你懂它在说什么吗？</span>
+      </a>
+
+      <a href="word-sense-result_10.html?word=reframe" class="word-item" data-word="reframe">
+        <span class="word-item-name">reframe</span>
+        <span class="word-item-tag">学术表达 · B2-C1 · 高阶</span>
+        <span class="word-item-mobile-hook">当英语开始反思自己时，这个词就出现了。</span>
+      </a>
+
+      <a href="word-sense-result_10.html?word=sentiment" class="word-item" data-word="sentiment">
+        <span class="word-item-name">sentiment</span>
+        <span class="word-item-tag">新闻金融 · B1-B2 · 进阶</span>
+        <span class="word-item-mobile-hook">不是“情感”那么简单。它是可测量的、有市场含义的集体情绪。</span>
+      </a>
+
+      <a href="word-sense-result_10.html?word=backdrop" class="word-item" data-word="backdrop">
+        <span class="word-item-name">backdrop</span>
+        <span class="word-item-tag">新闻叙事 · B1-B2 · 进阶</span>
+        <span class="word-item-mobile-hook">英文新闻里出现率最高、中国读者最容易跳过的词。</span>
+      </a>
+
+      <a href="word-sense-result_10.html?word=it's%20giving" class="word-item" data-word="itsgiving">
+        <span class="word-item-name">it's giving</span>
+        <span class="word-item-tag">社媒口语 · B1-B2 · 进阶</span>
+        <span class="word-item-mobile-hook">Twitter 上最有网感的一个句式。学会它，你就听懂了一半。</span>
+      </a>
+
+      </ol>
+
+      <div class="weekly-footer">
+        <div class="weekly-footer-stat">
+          <span class="num">18</span> entries published
+        </div>
+      </div>
+
+    </div>
+
+    <div class="preview">
+
+      <div class="preview-content active" data-preview="lowkey">
+        <div class="preview-meta">社媒口语 · B1-B2 · 进阶</div>
+        <h2 class="preview-word">lowkey</h2>
+        <div class="preview-quote">
+          <p class="preview-quote-text">I <span class="highlight">lowkey</span> want to quit my job, but don't tell anyone.</p>
+          <div class="preview-quote-context">overheard · 在朋友间</div>
+        </div>
+        <p class="preview-sense"><strong class="preview-dim">本体质感</strong>当一个美国人说 <span class="en">I lowkey want to quit my job</span>，他不是在说“低调地辞职”。他在说<strong>“我有点想辞职，但又不想把话说重 —— 你别太当真，但也别完全不当真”</strong>。<span class="en">lowkey</span> 是一个态度副词：承认一种内心倾向，但同时包上一层保护色。</p>
+        <div class="preview-satori">
+          <div class="preview-satori-label">悟道时刻</div>
+          <p class="preview-satori-text">学会识别“<strong>态度副词</strong>”，你能解锁整套 Gen Z 表达哲学 —— <span class="en">kinda</span>、<span class="en">sorta</span>、<span class="en">low-key</span>、<span class="en">not gonna lie</span> 都在做同一件事：保留余地。</p>
+        </div>
+        <div class="preview-more">
+          <a href="word-sense-result_10.html?word=lowkey" class="preview-more-link">继续看完整解读 →</a>
+        </div>
+      </div>
+
+      <div class="preview-content" data-preview="agentic">
+        <div class="preview-meta">AI 语境 · B2-C1 · 高阶</div>
+        <h2 class="preview-word">agentic</h2>
+        <div class="preview-quote">
+          <p class="preview-quote-text">2026 is shaping up to be the year of <span class="highlight">agentic</span> AI — systems that don't just answer, they act.</p>
+          <div class="preview-quote-context">tech newsletter · 关于 AI 趋势</div>
+        </div>
+        <p class="preview-sense"><strong class="preview-dim">本体质感</strong>中文翻成“代理的”或“具有代理能力的”，<strong>漏掉了这个词在 AI 圈承载的全部重量</strong>。<span class="en">agentic</span> 来自哲学里的 <span class="en">agency</span>（主体性、能动性）。当一个 AI 系统被称为 agentic，意味着它能自主决策、能主动行动、能在多步任务里持续推进。</p>
+        <div class="preview-satori">
+          <div class="preview-satori-label">悟道时刻</div>
+          <p class="preview-satori-text">英语世界对“<strong>谁是行动的主体</strong>”有一种执念，从康德到 AI 安全话语，<span class="en">agency</span> 承担着这种执念的全部重量。中文世界相对淡漠 —— 看懂这点，你能看到中英思维方式的根本差异。</p>
+        </div>
+        <div class="preview-more">
+          <a href="word-sense-result_10.html?word=agentic" class="preview-more-link">继续看完整解读 →</a>
+        </div>
+      </div>
+
+      <div class="preview-content" data-preview="reframe">
+        <div class="preview-meta">学术表达 · B2-C1 · 高阶</div>
+        <h2 class="preview-word">reframe</h2>
+        <div class="preview-quote">
+          <p class="preview-quote-text">Let's <span class="highlight">reframe</span> this — it's not a setback, it's a redirect.</p>
+          <div class="preview-quote-context">coach · 在治疗室或职场对话里</div>
+        </div>
+        <p class="preview-sense"><strong class="preview-dim">本体质感</strong>中文翻成“重新框定”或“换个角度看”，听起来像鸡汤话。但 <span class="en">reframe</span> 在英语公共话语里是一个<strong>元认知动作</strong> —— 它假设当下的理解方式本身就是一个“框”，而 reframe 就是<strong>意识到这个框、并把它换掉</strong>。</p>
+        <div class="preview-satori">
+          <div class="preview-satori-label">悟道时刻</div>
+          <p class="preview-satori-text">英语公共话语里有一整族“<strong>反思自己的动词</strong>” —— <span class="en">reframe</span>、<span class="en">unpack</span>、<span class="en">interrogate</span>、<span class="en">contextualize</span>、<span class="en">examine</span>。它们都假设认识可以被反观、可以被换框。这是当代英语公共话语的元认知传统。</p>
+        </div>
+        <div class="preview-more">
+          <a href="word-sense-result_10.html?word=reframe" class="preview-more-link">继续看完整解读 →</a>
+        </div>
+      </div>
+
+      <div class="preview-content" data-preview="sentiment">
+        <div class="preview-meta">新闻金融 · B1-B2 · 进阶</div>
+        <h2 class="preview-word">sentiment</h2>
+        <div class="preview-quote">
+          <p class="preview-quote-text">Market <span class="highlight">sentiment</span> turned bearish ahead of the Fed decision.</p>
+          <div class="preview-quote-context">financial news · 财经头条</div>
+        </div>
+        <p class="preview-sense"><strong class="preview-dim">本体质感</strong>中文“情感”和“情绪”都没翻准。<span class="en">sentiment</span> 在英语新闻、金融、AI 报道里是一个<strong>“集体倾向”的度量</strong> —— 它假设个体情绪汇总起来能形成一个可被分析、可被预测的流向。<span class="en">market sentiment</span>、<span class="en">public sentiment</span>、<span class="en">consumer sentiment</span> 都是这个意思。</p>
+        <div class="preview-satori">
+          <div class="preview-satori-label">悟道时刻</div>
+          <p class="preview-satori-text">英语公共话语有一种<strong>把情感量化的本能</strong> —— 不只是 sentiment，还有 <span class="en">mood</span>（市场情绪）、<span class="en">appetite</span>（投资偏好）、<span class="en">confidence</span>（消费者信心）。看懂这族词，你能看到英文新闻怎么把感受变成可分析的“数据”。</p>
+        </div>
+        <div class="preview-more">
+          <a href="word-sense-result_10.html?word=sentiment" class="preview-more-link">继续看完整解读 →</a>
+        </div>
+      </div>
+
+      <div class="preview-content" data-preview="backdrop">
+        <div class="preview-meta">新闻叙事 · B1-B2 · 进阶</div>
+        <h2 class="preview-word">backdrop</h2>
+        <div class="preview-quote">
+          <p class="preview-quote-text">Against the <span class="highlight">backdrop</span> of rising tensions, the summit opened on Tuesday.</p>
+          <div class="preview-quote-context">news lede · 新闻开头</div>
+        </div>
+        <p class="preview-sense"><strong class="preview-dim">本体质感</strong>字典告诉你 <span class="en">backdrop</span> 是“幕布、背景”，但英语新闻里它几乎只用比喻义：<span class="en">against the backdrop of...</span>。这个短语在做一件你可能没注意到的事 —— <strong>它在悄悄给你套一个叙事框架</strong>，把当下事件嵌入一个更大的故事里。</p>
+        <div class="preview-satori">
+          <div class="preview-satori-label">悟道时刻</div>
+          <p class="preview-satori-text">英文新闻有一整套“<strong>戏剧化叙事</strong>”的修辞工具 —— <span class="en">backdrop</span>、<span class="en">unfold</span>、<span class="en">play out</span>、<span class="en">stage</span>、<span class="en">scene</span>。它们都把现实当一出戏在讲。看懂这点，你读英文新闻时能多一层警觉。</p>
+        </div>
+        <div class="preview-more">
+          <a href="word-sense-result_10.html?word=backdrop" class="preview-more-link">继续看完整解读 →</a>
+        </div>
+      </div>
+
+      <div class="preview-content" data-preview="itsgiving">
+        <div class="preview-meta">社媒口语 · B1-B2 · 进阶</div>
+        <h2 class="preview-word">it's giving</h2>
+        <div class="preview-quote">
+          <p class="preview-quote-text"><span class="highlight">it's giving</span> early 2000s indie sleaze and i'm here for it</p>
+          <div class="preview-quote-context">tiktok comment · 评论区原文</div>
+        </div>
+        <p class="preview-sense"><strong class="preview-dim">本体质感</strong>字面是“它在给”，但实际意思是<strong>“这给人一种 X 的感觉”</strong>。来自 ballroom 文化，2020 年代被 TikTok 推到主流。它的精妙之处在于<strong>不直接说“是什么”，只说“像什么”</strong>，自带评价的轻盈感和距离感。</p>
+        <div class="preview-satori">
+          <div class="preview-satori-label">悟道时刻</div>
+          <p class="preview-satori-text">Gen Z 社媒语言的核心特征是<strong>用“间接评价”替代“直接判断”</strong> —— <span class="en">it's giving</span>、<span class="en">the way that</span>、<span class="en">main character energy</span>、<span class="en">no thoughts head empty</span>。这些句式都拒绝直接断言，只描述印象。看懂这套语法，你才听得懂今天的网络对话。</p>
+        </div>
+        <div class="preview-more">
+          <a href="word-sense-result_10.html?word=it's%20giving" class="preview-more-link">继续看完整解读 →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="search-section" id="searchSection">
+    <p class="search-title">或者，<strong>搜一个让你疑惑的词</strong></p>
+    <form class="search-form" id="senseSearchForm">
+      <div class="search-box">
+        <input
+          type="text"
+          class="search-input"
+          id="senseWordInput"
+          placeholder="输入一个让你疑惑的词"
+          autocomplete="off"
+        >
+        <button type="submit" class="search-submit">Sense it</button>
+      </div>
+    </form>
+    <button class="search-more-toggle" onclick="document.getElementById('searchSection').classList.toggle('expanded')">告诉我更多</button>
+
+    <div class="search-more-fields">
+      <div class="field">
+        <label class="field-label">在哪遇到的</label>
+        <input type="text" class="field-input" id="senseSourceInput" placeholder="比如：朋友的 Instagram、一封英文邮件、一本书">
+      </div>
+      <div class="field">
+        <label class="field-label">原句（可选）</label>
+        <input type="text" class="field-input" id="senseSentenceInput" placeholder="把你看到的那句话贴在这里">
+      </div>
+    </div>
+    <div class="cost-notice" id="searchCostNotice">
+      <div class="cost-notice-title">生成新词条会调用模型和联网查证</div>
+      <p class="cost-notice-text">精选词条的阅读和本网站所有功能使用都是免费的。只有当你搜索内容库里还没有的词时，WordSense 会跑一遍完整审校流程，可能产生 API 成本。粗略估计每个词约 $0.15-$0.35，实际费用以模型、搜索次数和服务商计费为准。你可以使用 Sarah 提供的试用 key，也可以填自己的 OpenAI-compatible API key；key 只用于本次生成，不会写进页面链接。</p>
+      <div class="key-row">
+        <input type="password" class="key-input" id="searchApiKeyInput" placeholder="粘贴 Sarah 给你的 key，或使用你自己的 API key" autocomplete="off">
+        <button type="button" class="key-save" id="searchApiKeySave">本次使用</button>
+      </div>
+      <div class="key-status" id="searchApiKeyStatus" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="highlight">
+    <p><span class="mark">§</span>Word Sense 让你看见词本来的样子。</p>
+    <p><span class="mark">§</span>字面含义、本体质感、寻根溯源、各路用法、原生思维、悟道时刻。</p>
+    <p><span class="mark">§</span>多层 sense，让一个词重新活过来。</p>
+    <p><span class="mark">§</span>一次专心看一个词。</p>
+  </section>
+
+  <section class="return-panel" aria-label="下次继续读">
+    <div class="return-guide install-guide">
+      <div class="return-title">Word Sense 是一份周刊，慢着读。</div>
+      <p class="return-text">把它加到桌面，让它成为你每周的固定栏目 —— 不会消失在书签和邮件之间。</p>
+      <button type="button" class="return-button" id="installPwaButton">添加到桌面</button>
+      <div class="return-status" id="installPwaStatus" aria-live="polite"></div>
+    </div>
+
+    <div class="return-section-mark">§</div>
+
+    <div class="return-guide subscribe-guide">
+      <div class="return-title">或者，留个邮箱。</div>
+      <p class="return-text">Word Sense 每周一期，直接到你的邮箱里。不会被别的事打扰。</p>
+      <form class="subscribe-form" id="mailingListForm">
+        <input type="email" class="subscribe-input" id="mailingListEmail" placeholder="you@example.com" autocomplete="email" required>
+        <button type="submit" class="subscribe-submit">订阅</button>
+      </form>
+      <div class="return-status" id="mailingListStatus" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-mark">§</div>
+    慢一点，看见更多。
+  </footer>
+
+</main>
+
+</div>
+
+<script>
+// ============================================
+// Demo 演示流程
+// ============================================
+
+const DEMO_TOTAL = 36500;
+const DEMO_KEY = 'wordsense_demo_seen';
+
+const timeline = [
+  // 阶段 0:入场
+  { at: 100,   action: () => show('demoBrand') },
+  { at: 800,   action: () => show('demoCursor') },
+  
+  // 阶段 1:大词出现(光标真正消失)
+  { at: 1500,  action: () => { document.getElementById('demoBrand')?.classList.add('compact'); hideCursor(); show('demoWord'); } },
+  
+  // 阶段 2:沉默 ——"学院?教职工?"
+  { at: 3000,  action: () => show('demoGuess') },
+  
+  // 阶段 3:转折 —— 先让初始猜测失效,再出现例句
+  { at: 5400,  action: () => document.getElementById('demoGuess')?.classList.add('reconsider') },
+  { at: 6100,  action: () => hide('demoGuess') },
+  { at: 6500,  action: () => { setCardMode('quote'); show('demoQuote'); } },
+  
+  // 阶段 4:中文译注
+  { at: 9500,  action: () => show('demoTranslation') },
+  { at: 11800, action: () => document.querySelector('.translation-turn')?.classList.add('turn-show') },
+  
+  // 阶段 6 准备:把之前的所有内容彻底清空,大词上移
+  { at: 14300, action: () => { hide('demoQuote'); hide('demoTranslation'); setCardMode('insight'); moveWordUp(); } },
+  
+  // 阶段 6:顿悟段 1
+  { at: 15600, action: () => show('demoInsight1') },
+  { at: 16800, action: () => document.getElementById('facultyBodyLayer')?.classList.add('visible') },
+  
+  // 阶段 6.5:顿悟段 1 淡出,顿悟段 2 淡入
+  { at: 19800, action: () => hide('demoInsight1') },
+  { at: 20600, action: () => show('demoInsight2') },
+  
+  // 阶段 6.6:顿悟段 2 淡出,顿悟段 3 淡入
+  { at: 24600, action: () => hide('demoInsight2') },
+  { at: 25400, action: () => show('demoInsight3') },
+  
+  // 阶段 7:顿悟段 3 淡出,六维标签作为产品结构出现
+  { at: 29600, action: () => hide('demoInsight3') },
+  { at: 30200, action: () => { setCardMode('system'); show('demoDimensions'); } },
+  
+  // 阶段 8:保留六维标签,收束文案整体出现
+  { at: 31400, action: () => {} },
+  { at: 31800, action: () => show('demoTransition') },
+  
+  // 阶段 9:进入主页面
+  { at: 36500, action: () => finishDemo() }
+];
+
+// 总时长加到 34.5 秒(原 33 秒),给每段过渡留足时间
+
+const timeouts = [];
+let demoStarted = false;
+let progressInterval = null;
+const revealProfiles = {
+  demoGuess: { mode: 'self', delay: 0 },
+  demoQuote: { mode: 'phrase', delay: 260 },
+  demoTranslation: { mode: 'stagger', selector: '.translation-main', delay: 360 },
+  demoInsight1: { mode: 'phrase', delay: 180 },
+  demoInsight2: { mode: 'phrase', delay: 190 },
+  demoInsight3: { mode: 'stagger', selector: '.family-item, .family-conclusion', delay: 135 },
+  demoDimensions: { mode: 'stagger', selector: '.demo-dim-item', delay: 80 },
+  demoTransition: { mode: 'soft' }
+};
+const activeRevealTimers = new Map();
+
+function stopReveal(el) {
+  const timers = activeRevealTimers.get(el);
+  if (timers) {
+    timers.forEach(timer => clearTimeout(timer));
+    activeRevealTimers.delete(el);
+  }
+
+  el.querySelectorAll('.reveal-unit').forEach(unit => {
+    unit.classList.remove('visible');
+    unit.style.transitionDelay = '';
+  });
+
+  if (el.classList.contains('reveal-unit')) {
+    el.classList.remove('visible');
+    el.style.transitionDelay = '';
+  }
+}
+
+function wrapPhraseContent(el) {
+  if (el.dataset.phrasePrepared === 'true') return;
+
+  el.querySelectorAll('p').forEach(paragraph => {
+    const nodes = Array.from(paragraph.childNodes);
+
+    nodes.forEach(node => {
+      if (node.nodeType === Node.TEXT_NODE && !node.nodeValue.trim()) return;
+      if (node.nodeType === Node.ELEMENT_NODE && node.classList.contains('reveal-unit')) return;
+
+      const wrapper = document.createElement('span');
+      wrapper.className = 'reveal-unit reveal-inline';
+      paragraph.insertBefore(wrapper, node);
+      wrapper.appendChild(node);
+    });
+  });
+
+  el.dataset.phrasePrepared = 'true';
+}
+
+function prepareStaggerUnits(el, selector) {
+  const units = Array.from(el.querySelectorAll(selector));
+  units.forEach(unit => unit.classList.add('reveal-unit'));
+  return units;
+}
+
+function revealUnits(el, units, delay) {
+  stopReveal(el);
+
+  units.forEach((unit, index) => {
+    unit.style.transitionDelay = `${index * delay}ms`;
+  });
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      units.forEach(unit => unit.classList.add('visible'));
+    });
+  });
+}
+
+function revealText(el, profile) {
+  stopReveal(el);
+
+  if (!profile) return;
+
+  if (profile.mode === 'self') {
+    el.classList.add('reveal-unit');
+    revealUnits(el, [el], profile.delay || 0);
+    return;
+  }
+
+  if (profile.mode === 'phrase') {
+    wrapPhraseContent(el);
+    revealUnits(el, Array.from(el.querySelectorAll('.reveal-unit')), profile.delay);
+    return;
+  }
+
+  if (profile.mode === 'stagger') {
+    revealUnits(el, prepareStaggerUnits(el, profile.selector), profile.delay);
+  }
+}
+
+function show(id) {
+  const el = document.getElementById(id);
+  if (el) {
+    el.style.visibility = '';
+    el.classList.remove('hide');
+    el.classList.add('show');
+    revealText(el, revealProfiles[id]);
+  }
+}
+
+function hide(id) {
+  const el = document.getElementById(id);
+  if (el) {
+    stopReveal(el);
+    el.classList.remove('show');
+    el.classList.add('hide');
+    // 600ms 动画完成后真正 display:none,避免布局占位
+    setTimeout(() => {
+      if (el.classList.contains('hide')) {
+        el.style.visibility = 'hidden';
+      }
+    }, 700);
+  }
+}
+
+function hideCursor() {
+  const el = document.getElementById('demoCursor');
+  if (el) {
+    el.classList.add('hide');
+    el.style.display = 'none';
+  }
+}
+
+function moveWordUp() {
+  const word = document.getElementById('demoWord');
+  if (word) word.classList.add('move-up');
+}
+
+function setCardMode(mode) {
+  const card = document.getElementById('demoCard');
+  if (!card) return;
+  card.classList.remove('mode-quote', 'mode-insight', 'mode-system');
+  if (mode) card.classList.add(`mode-${mode}`);
+}
+
+function startDemo() {
+  demoStarted = true;
+  setCardMode('');
+  document.getElementById('demoBrand')?.classList.remove('compact');
+  document.querySelector('.translation-turn')?.classList.remove('turn-show');
+  document.getElementById('facultyBodyLayer')?.classList.remove('visible');
+  
+  timeline.forEach(step => {
+    const t = setTimeout(step.action, step.at);
+    timeouts.push(t);
+  });
+
+  // 进度条
+  const progress = document.getElementById('demoProgress');
+  const startTime = Date.now();
+  progressInterval = setInterval(() => {
+    const elapsed = Date.now() - startTime;
+    const percent = Math.min(100, (elapsed / DEMO_TOTAL) * 100);
+    progress.style.width = percent + '%';
+    if (percent >= 100) clearInterval(progressInterval);
+  }, 100);
+}
+
+function finishDemo() {
+  // 标记已看过
+  try { localStorage.setItem(DEMO_KEY, 'true'); } catch(e) {}
+  setCardMode('');
+  
+  // 淡出 demo 层
+  const demoStage = document.getElementById('demoStage');
+  demoStage.classList.add('fading-out');
+  
+  // 淡入主页面
+  setTimeout(() => {
+    const mainStage = document.getElementById('mainStage');
+    mainStage.style.opacity = '';
+    mainStage.classList.add('show');
+  }, 200);
+  
+  // 完全移除 demo 层
+  setTimeout(() => {
+    demoStage.classList.add('hidden');
+  }, 900);
+}
+
+function skipDemo() {
+  // 清掉所有 timeout
+  timeouts.forEach(t => clearTimeout(t));
+  if (progressInterval) clearInterval(progressInterval);
+  activeRevealTimers.forEach(timers => timers.forEach(timer => clearTimeout(timer)));
+  activeRevealTimers.clear();
+  
+  finishDemo();
+}
+
+// 跳过按钮
+document.getElementById('demoSkip').addEventListener('click', (e) => {
+  e.stopPropagation();
+  skipDemo();
+});
+
+// 重看 demo
+document.getElementById('replayLink').addEventListener('click', () => {
+  try { localStorage.removeItem(DEMO_KEY); } catch(e) {}
+  location.reload();
+});
+
+// 判断是否首次访问
+let isFirstVisit = false;
+const wantsSearch = window.location.hash === '#searchSection';
+try {
+  isFirstVisit = localStorage.getItem(DEMO_KEY) !== 'true';
+} catch(e) {
+  isFirstVisit = true;
+}
+
+if (wantsSearch) {
+  isFirstVisit = false;
+  try { localStorage.setItem(DEMO_KEY, 'true'); } catch(e) {}
+}
+
+function focusSearchSection() {
+  const section = document.getElementById('searchSection');
+  const input = document.getElementById('senseWordInput');
+  if (!section) return;
+
+  section.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  setTimeout(() => input?.focus(), 350);
+}
+
+if (isFirstVisit) {
+  // 首次访问:启动 demo
+  startDemo();
+  document.getElementById('mainStage').style.opacity = '0';
+} else {
+  // 非首次:直接显示主页面
+  document.getElementById('demoStage').classList.add('hidden');
+  document.getElementById('mainStage').classList.add('show');
+  if (wantsSearch) setTimeout(focusSearchSection, 120);
+}
+
+// ============================================
+// Dashboard hover 切换
+// ============================================
+const homeWordGroups = {
+  entry: {
+    label: 'A2-B1 · 入门',
+    words: [
+      {
+        id: 'resilience',
+        word: 'resilience',
+        query: 'resilience',
+        meta: '心理成长 · A2-B1 · 入门',
+        hook: '不是简单的“坚强”，而是受挫以后还能恢复形状的能力。',
+        quote: 'After everything he went through last year, I’m amazed by his resilience.',
+        quoteHighlight: 'resilience',
+        quoteContext: 'daily · 朋友聊天',
+        sense: '这个词的核心不是硬扛，而是“弹回来”。它让用户先从一个熟悉的中文词进入，再发现英语里更重视恢复、适应和重新站稳。',
+        satori: '看懂 resilience，你会发现英语里的强大不只是忍住，而是经历冲击后还能重新组织自己。'
+      },
+      {
+        id: 'unfold',
+        word: 'unfold',
+        query: 'unfold',
+        meta: '新闻叙事 · A2-B1 · 入门',
+        hook: '不是“展开”这么机械，而是事情一点点显露出来。',
+        quote: 'As the rollout unfolds, we’ll adjust the timeline and keep everyone updated.',
+        quoteHighlight: 'unfolds',
+        quoteContext: 'workplace · 项目更新',
+        sense: 'unfold 把事件想象成一张折起来的纸：读者不是一次知道全部，而是随着时间看它慢慢打开。',
+        satori: '看懂 unfold，你就能听出英文新闻里那种“事情正在成形”的叙事感。'
+      },
+      {
+        id: 'brace',
+        word: 'brace',
+        query: 'brace',
+        meta: '新闻生活 · A2-B1 · 入门',
+        hook: '不是单纯“支撑”，而是提前绷住，准备迎接冲击。',
+        quote: 'We should brace for some tough questions from the client.',
+        quoteHighlight: 'brace',
+        quoteContext: 'workplace · 客户会议前',
+        sense: 'brace 常出现在坏消息前：brace for impact、brace for layoffs。它讲的是身体和心理同时进入防御姿态。',
+        satori: '看懂 brace，你会发现英语很擅长把抽象风险写成身体动作。'
+      },
+      {
+        id: 'surge',
+        word: 'surge',
+        query: 'surge',
+        meta: '新闻数据 · A2-B1 · 入门',
+        hook: '不是普通“上升”，而是一股突然涌上来的力量。',
+        quote: 'The server couldn’t handle the traffic surge during the product launch.',
+        quoteHighlight: 'surge',
+        quoteContext: 'tech report · 发布当天',
+        sense: 'surge 适合描述价格、病例、需求、情绪突然上涨。它比 increase 更有速度、压力和不可忽视感。',
+        satori: '看懂 surge，你就能分清“变多”和“猛地涌上来”之间的语感差别。'
+      },
+      {
+        id: 'verify',
+        word: 'verify',
+        query: 'verify',
+        meta: 'AI 信息 · A2-B1 · 入门',
+        hook: '不是随手“确认一下”，而是把一个说法拿去对证。',
+        quote: 'Could you verify the figures in the report before we send it to the client?',
+        quoteHighlight: 'verify',
+        quoteContext: 'workplace · 发报告前',
+        sense: 'verify 的重点在证据链：一个判断不能只因为听起来对，就算成立。它要求回到来源、事实和可复核的信息。',
+        satori: '看懂 verify，你会更敏感地意识到英语里“可信”常常意味着“可被查证”。'
+      },
+      {
+        id: 'cringe',
+        word: 'cringe',
+        query: 'cringe',
+        meta: '社媒口语 · A2-B1 · 入门',
+        hook: '不是简单“尴尬”，而是尴尬到身体想缩一下。',
+        quote: 'I couldn’t finish the video. The guy was trying so hard, it got cringey fast.',
+        quoteHighlight: 'cringey',
+        quoteContext: 'social · 刷到视频',
+        sense: 'cringe 把一种社交不适写成身体反应：看到过度用力、过时、装酷失败的表达时，人会本能地往后缩。',
+        satori: '看懂 cringe，你就摸到了当代英语网络里“审美尴尬”的身体感。'
+      }
+    ]
+  },
+  middle: {
+    label: 'B1-B2 · 进阶',
+    words: [
+      {
+        id: 'probe',
+        word: 'probe',
+        query: 'probe',
+        meta: '新闻调查 · B1-B2 · 进阶',
+        hook: '不是普通“调查”，而是带着针尖往里探。',
+        quote: 'Regulators are probing whether the company misled investors.',
+        quoteHighlight: 'probing',
+        quoteContext: 'news · 监管报道',
+        sense: 'probe 比 investigate 更有试探和深入感，常用于政府、媒体、医学和技术语境，暗示表面背后还有东西要挖。',
+        satori: '看懂 probe，你会意识到英文新闻里的调查常常不是平铺直叙，而是“向内探测”。'
+      },
+      {
+        id: 'fallout',
+        word: 'fallout',
+        query: 'fallout',
+        meta: '新闻政治 · B1-B2 · 进阶',
+        hook: '不是“掉下来”，而是事件爆炸后飘落下来的后果。',
+        quote: 'We’re still dealing with the fallout from last week’s pricing error.',
+        quoteHighlight: 'fallout',
+        quoteContext: 'business · 危机之后',
+        sense: 'fallout 原本来自核尘埃，后来变成政治、商业、公共事件后的连锁影响。它自带一种余波未平的危险感。',
+        satori: '看懂 fallout，你会读出英语新闻里“事情结束了，但影响还在落下”的时间感。'
+      },
+      {
+        id: 'hallucination',
+        word: 'hallucination',
+        query: 'hallucination',
+        meta: 'AI 语境 · B1-B2 · 进阶',
+        hook: 'AI 不是“撒谎”，而是在没有依据时生成了像真的东西。',
+        quote: 'The model produced a confident answer, but it was a hallucination.',
+        quoteHighlight: 'hallucination',
+        quoteContext: 'AI report · 模型评估',
+        sense: 'hallucination 把模型错误比作幻觉：输出很流畅，甚至很自信，但和事实没有稳固连接。',
+        satori: '看懂 hallucination，你会明白 AI 错误最危险的地方不是错，而是错得很像对。'
+      },
+      {
+        id: 'grounding',
+        word: 'grounding',
+        query: 'grounding',
+        meta: 'AI 信息 · B1-B2 · 进阶',
+        hook: '不是“接地气”，而是让回答落回证据地面。',
+        quote: 'Grounding the answer in sources helps reduce hallucinations.',
+        quoteHighlight: 'Grounding',
+        quoteContext: 'AI docs · 回答质量',
+        sense: 'grounding 在 AI 里强调把生成内容锚定到来源、上下文和可验证材料上，避免漂在空中。',
+        satori: '看懂 grounding，你就能理解为什么真正可靠的 AI 不只是会说，还要知道自己站在哪里。'
+      },
+      {
+        id: 'delulu',
+        word: 'delulu',
+        query: 'delulu',
+        meta: '社媒口语 · B1-B2 · 进阶',
+        hook: '不是医学意义的“妄想”，而是一种半开玩笑的自我上头。',
+        quote: 'I’m delulu enough to think he’ll text back tonight.',
+        quoteHighlight: 'delulu',
+        quoteContext: 'tiktok · 自嘲语气',
+        sense: 'delulu 来自 delusional，但在社媒里常带自嘲：明知道不太现实，还是愿意沉浸在自己的小剧场里。',
+        satori: '看懂 delulu，你会看到网络语言怎么把“不现实”变成一种可爱的自我保护。'
+      },
+      {
+        id: 'brainrot',
+        word: 'brain rot',
+        query: 'brain rot',
+        meta: '社媒文化 · B1-B2 · 进阶',
+        hook: '不是脑子真的坏掉，而是被低密度内容泡久了。',
+        quote: 'This app is pure brain rot, and somehow I can’t stop scrolling.',
+        quoteHighlight: 'brain rot',
+        quoteContext: 'social · 刷屏之后',
+        sense: 'brain rot 描述一种被短视频、梗、碎片内容占据后的精神状态：好笑、上瘾，也有点自我嫌弃。',
+        satori: '看懂 brain rot，你就能听出英语网络文化里那种一边沉迷一边吐槽自己的语气。'
+      }
+    ]
+  },
+  advanced: {
+    label: 'B2-C1 · 高阶',
+    words: [
+      {
+        id: 'deprecate',
+        word: 'deprecate',
+        query: 'deprecate',
+        meta: '技术文档 · B2-C1 · 高阶',
+        hook: '不是简单“弃用”，而是官方不再鼓励你继续用。',
+        quote: 'This endpoint is deprecated and will be removed in a future release.',
+        quoteHighlight: 'deprecated',
+        quoteContext: 'API docs · 迁移提示',
+        sense: 'deprecate 在技术语境里很精确：功能还没消失，但已经被标记为不推荐，未来可能移除。',
+        satori: '看懂 deprecate，你会发现技术英语很重视“现在还能用”和“以后不该用”之间的灰度。'
+      },
+      {
+        id: 'orchestrate',
+        word: 'orchestrate',
+        query: 'orchestrate',
+        meta: 'AI 系统 · B2-C1 · 高阶',
+        hook: '不是普通“组织”，而是像指挥乐团一样调度多个部分。',
+        quote: 'The system orchestrates multiple agents to complete the workflow.',
+        quoteHighlight: 'orchestrates',
+        quoteContext: 'AI product · 系统介绍',
+        sense: 'orchestrate 暗示复杂系统中多个角色、工具、步骤被协调起来，重点不在单点执行，而在整体配合。',
+        satori: '看懂 orchestrate，你就能理解 AI 产品为什么越来越像“调度系统”，而不只是一个回答机器。'
+      },
+      {
+        id: 'inflectionpoint',
+        word: 'inflection point',
+        query: 'inflection point',
+        meta: '商业趋势 · B2-C1 · 高阶',
+        hook: '不是普通“转折点”，而是曲线开始改变方向的关键点。',
+        quote: 'AI feels like an inflection point for every job that used to feel safe.',
+        quoteHighlight: 'inflection point',
+        quoteContext: 'business essay · 趋势判断',
+        sense: 'inflection point 来自数学曲线，进入商业和科技语境后，用来形容增长、趋势或行业结构发生质变的时刻。',
+        satori: '看懂 inflection point，你会读出英语商业话语里对“曲线变化”的迷恋。'
+      },
+      {
+        id: 'accountabilitygap',
+        word: 'accountability gap',
+        query: 'accountability gap',
+        meta: 'AI 治理 · B2-C1 · 高阶',
+        hook: '不是没人负责这么简单，而是责任链中间断掉了。',
+        quote: 'Automated decisions can create an accountability gap when no team owns the outcome.',
+        quoteHighlight: 'accountability gap',
+        quoteContext: 'AI governance · 风险讨论',
+        sense: 'accountability gap 常用于 AI、平台、政府治理：系统造成后果，但责任无法清楚落到某个人或机构身上。',
+        satori: '看懂 accountability gap，你会看到英语公共话语如何把“谁来负责”变成一个结构性问题。'
+      },
+      {
+        id: 'clanker',
+        word: 'clanker',
+        query: 'clanker',
+        meta: 'AI 俚语 · B2-C1 · 高阶',
+        hook: '不是普通机器人称呼，而是带情绪的反 AI 侮辱词。',
+        quote: 'Every comment under that post sounds generated. The clankers are getting comfortable here.',
+        quoteHighlight: 'clankers',
+        quoteContext: 'reddit · 反 AI 语气',
+        sense: 'clanker 原本有金属碰撞声的质感，用来叫机器人时带着轻蔑、排斥和人类阵营感。',
+        satori: '看懂 clanker，你会看到 AI 时代的新俚语如何把技术焦虑变成人群边界。'
+      },
+      {
+        id: 'unhinged',
+        word: 'unhinged',
+        query: 'unhinged',
+        meta: '社媒评价 · B2-C1 · 高阶',
+        hook: '不是单纯“疯了”，而是门铰链松开后整个状态失控。',
+        quote: 'She sent him twenty voice messages after one bad date. That’s kind of unhinged.',
+        quoteHighlight: 'unhinged',
+        quoteContext: 'group chat · 朋友吐槽',
+        sense: 'unhinged 的画面感很强：一个人、观点或表达不再被正常边界固定，开始夸张、失控、离谱。',
+        satori: '看懂 unhinged，你会更敏锐地分辨英语里“离谱但有能量”的评价语气。'
+      }
+    ]
+  }
+};
+
+function escapeHomeHtml(value) {
+  return String(value)
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#039;');
+}
+
+function renderHomeDashboard(level = 'entry') {
+  const group = homeWordGroups[level] || homeWordGroups.entry;
+  const words = group.words;
+  const wordList = document.getElementById('wordList');
+  const preview = document.querySelector('.preview');
+  if (!wordList || !preview) return;
+
+  wordList.innerHTML = words.map((item, index) => `
+    <a href="word-sense-result_10.html?word=${encodeURIComponent(item.query)}" class="word-item${index === 0 ? ' active' : ''}" data-word="${escapeHomeHtml(item.id)}">
+      <span class="word-item-name">${escapeHomeHtml(item.word)}</span>
+      <span class="word-item-tag">${escapeHomeHtml(item.meta)}</span>
+      <span class="word-item-mobile-hook">${escapeHomeHtml(item.hook)}</span>
+    </a>
+  `).join('');
+
+  preview.innerHTML = words.map((item, index) => `
+    <div class="preview-content${index === 0 ? ' active' : ''}" data-preview="${escapeHomeHtml(item.id)}">
+      <div class="preview-meta">${escapeHomeHtml(item.meta)}</div>
+      <h2 class="preview-word">${escapeHomeHtml(item.word)}</h2>
+      ${renderPreviewQuote(item)}
+      <p class="preview-sense"><strong class="preview-dim">本体质感</strong>${escapeHomeHtml(item.sense)}</p>
+      <div class="preview-satori">
+        <div class="preview-satori-label">悟道时刻</div>
+        <p class="preview-satori-text">${escapeHomeHtml(item.satori)}</p>
+      </div>
+      <div class="preview-more">
+        <a href="word-sense-result_10.html?word=${encodeURIComponent(item.query)}" class="preview-more-link">继续看完整解读 →</a>
+      </div>
+    </div>
+  `).join('');
+
+  bindDashboardInteractions();
+}
+
+function renderPreviewQuote(item) {
+  if (!item.quote) return '';
+  return `
+    <div class="preview-quote">
+      <p class="preview-quote-text">${highlightPreviewQuote(item.quote, item.quoteHighlight || item.word)}</p>
+      <div class="preview-quote-context">${escapeHomeHtml(item.quoteContext || 'real usage')}</div>
+    </div>
+  `;
+}
+
+function highlightPreviewQuote(quote, term) {
+  const escapedQuote = escapeHomeHtml(quote);
+  const escapedTerm = escapeHomeHtml(term);
+  if (!escapedTerm) return escapedQuote;
+  const pattern = new RegExp(escapeRegExp(escapedTerm), 'i');
+  return escapedQuote.replace(pattern, match => `<span class="highlight">${match}</span>`);
+}
+
+function escapeRegExp(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function bindDashboardInteractions() {
+  const items = document.querySelectorAll('.word-item');
+  const previews = document.querySelectorAll('.preview-content');
+
+  function activate(targetWord) {
+    items.forEach(item => {
+      item.classList.toggle('active', item.dataset.word === targetWord);
+    });
+    previews.forEach(preview => {
+      preview.classList.toggle('active', preview.dataset.preview === targetWord);
+    });
+  }
+
+  items.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      if (window.matchMedia('(min-width: 801px)').matches) {
+        activate(item.dataset.word);
+      }
+    });
+
+    item.addEventListener('click', (e) => {
+      if (window.matchMedia('(min-width: 801px)').matches) {
+        const wasActive = item.classList.contains('active');
+        if (!wasActive) {
+          e.preventDefault();
+          activate(item.dataset.word);
+        }
+      }
+    });
+  });
+}
+
+(function() {
+  const tabs = document.querySelectorAll('.level-tab');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(item => item.classList.toggle('active', item === tab));
+      renderHomeDashboard(tab.dataset.level);
+    });
+  });
+
+  renderHomeDashboard('entry');
+})();
+
+// ============================================
+// Search → review page
+// ============================================
+(function() {
+  const form = document.getElementById('senseSearchForm');
+  const wordInput = document.getElementById('senseWordInput');
+  const sourceInput = document.getElementById('senseSourceInput');
+  const sentenceInput = document.getElementById('senseSentenceInput');
+  const costNotice = document.getElementById('searchCostNotice');
+  const apiKeyInput = document.getElementById('searchApiKeyInput');
+  const apiKeySave = document.getElementById('searchApiKeySave');
+  const apiKeyStatus = document.getElementById('searchApiKeyStatus');
+
+  if (!form || !wordInput) return;
+
+  function setKeyStatus(message, type = '') {
+    if (!apiKeyStatus) return;
+    apiKeyStatus.textContent = message;
+    apiKeyStatus.classList.remove('success', 'error');
+    if (type) apiKeyStatus.classList.add(type);
+  }
+
+  function showCostNotice() {
+    document.getElementById('searchSection')?.classList.add('cost-aware');
+    costNotice?.classList.add('show');
+  }
+
+  function saveApiKeyForSession() {
+    const key = apiKeyInput?.value.trim() || '';
+    if (!key) {
+      try { sessionStorage.removeItem('wordsense_api_key'); } catch(e) {}
+      setKeyStatus('没有填写 key。若服务器已配置试用额度，也可以直接搜索。');
+      return;
+    }
+    try {
+      sessionStorage.setItem('wordsense_api_key', key);
+      setKeyStatus('已保存为本次生成使用。刷新或关闭浏览器后需要重新填写。', 'success');
+    } catch(e) {
+      setKeyStatus('浏览器没有允许临时保存。你可以直接搜索，本页会尝试随本次请求使用它。', 'error');
+    }
+  }
+
+  wordInput.addEventListener('focus', showCostNotice);
+  wordInput.addEventListener('input', showCostNotice);
+  apiKeyInput?.addEventListener('focus', showCostNotice);
+  apiKeySave?.addEventListener('click', saveApiKeyForSession);
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const word = wordInput.value.trim();
+    if (!word) {
+      wordInput.focus();
+      return;
+    }
+
+    const params = new URLSearchParams({ word });
+    const source = sourceInput?.value.trim();
+    const sentence = sentenceInput?.value.trim();
+
+    if (source) params.set('source', source);
+    if (sentence) params.set('sentence', sentence);
+    const inlineKey = apiKeyInput?.value.trim() || '';
+    if (inlineKey) {
+      try { sessionStorage.setItem('wordsense_api_key', inlineKey); } catch(e) {}
+    }
+
+    const reviewPath = `word-sense-review.html?${params.toString()}`;
+    window.location.href = window.location.protocol.startsWith('http')
+      ? reviewPath
+      : `http://127.0.0.1:8787/${reviewPath}`;
+  });
+})();
+
+// ============================================
+// 回访入口:PWA + 邮件列表
+// ============================================
+(function() {
+  let deferredInstallPrompt = null;
+  const installButton = document.getElementById('installPwaButton');
+  const installStatus = document.getElementById('installPwaStatus');
+  const mailingForm = document.getElementById('mailingListForm');
+  const mailingEmail = document.getElementById('mailingListEmail');
+  const mailingStatus = document.getElementById('mailingListStatus');
+
+  function setStatus(element, message, type = '') {
+    if (!element) return;
+    element.textContent = message;
+    element.classList.remove('success', 'error');
+    if (type) element.classList.add(type);
+  }
+
+  if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
+    navigator.serviceWorker.register('service-worker.js').catch(() => {});
+  }
+
+  window.addEventListener('beforeinstallprompt', (event) => {
+    event.preventDefault();
+    deferredInstallPrompt = event;
+    if (installButton) {
+      installButton.disabled = false;
+      installButton.textContent = '添加到桌面';
+    }
+    setStatus(installStatus, '可以把 WordSense 添加成桌面快捷方式。');
+  });
+
+  window.addEventListener('appinstalled', () => {
+    deferredInstallPrompt = null;
+    if (installButton) {
+      installButton.textContent = '已添加';
+      installButton.disabled = true;
+    }
+    setStatus(installStatus, '已添加到桌面。下次可以直接打开。', 'success');
+  });
+
+  if (installButton) {
+    installButton.addEventListener('click', async () => {
+      if (window.matchMedia('(display-mode: standalone)').matches || navigator.standalone) {
+        setStatus(installStatus, '你已经在桌面应用模式里打开了 WordSense。', 'success');
+        return;
+      }
+
+      if (!deferredInstallPrompt) {
+        setStatus(installStatus, '如果浏览器没有弹出按钮，可以在浏览器菜单里选择“添加到主屏幕”或“安装此网站”。');
+        return;
+      }
+
+      deferredInstallPrompt.prompt();
+      const choice = await deferredInstallPrompt.userChoice;
+      deferredInstallPrompt = null;
+      if (choice.outcome === 'accepted') {
+        setStatus(installStatus, '正在添加到桌面。', 'success');
+      } else {
+        setStatus(installStatus, '没关系，之后也可以从这里再添加。');
+      }
+    });
+  }
+
+  if (mailingForm && mailingEmail) {
+    mailingForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const email = mailingEmail.value.trim();
+      if (!email) {
+        mailingEmail.focus();
+        return;
+      }
+
+      setStatus(mailingStatus, '正在订阅...');
+      try {
+        const response = await fetch('/api/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, page: window.location.pathname })
+        });
+        const payload = await response.json().catch(() => ({}));
+        if (!response.ok) {
+          throw new Error(payload.error || 'subscribe failed');
+        }
+        mailingEmail.value = '';
+        setStatus(mailingStatus, '订阅成功。以后有新词条会发到这个邮箱。', 'success');
+      } catch (error) {
+        setStatus(mailingStatus, '暂时没能保存邮箱。你可以稍后再试。', 'error');
+      }
+    });
+  }
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关于 Word Sense | Sarah</title>
+
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&f[]=switzer@400,500,600&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #1F1B16;
+  --ink-soft: #4A4036;
+  --ink-reading: #2E2923;
+  --ink-faint: #807466;
+  --paper: #FBFAF6;
+  --paper-deep: #F2EFE7;
+  --rule: #E5DECF;
+  --accent: #A0522D;
+  --accent-deep: #5C2E1A;
+  --accent-medium: #A0522D2E;
+
+  --font-cn: "Noto Sans SC", -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-en-display: "Cabinet Grotesk", "Helvetica Neue", sans-serif;
+  --font-en-body: "Switzer", -apple-system, "Helvetica Neue", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 17px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-family: var(--font-cn);
+  font-weight: 400;
+  line-height: 1.82;
+  color: var(--ink);
+  background: var(--paper);
+  min-height: 100vh;
+}
+
+.nav {
+  border-bottom: 1px solid var(--rule);
+  padding: 1.35rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.nav-brand {
+  font-family: var(--font-en-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav-brand .em {
+  color: var(--accent);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-link {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--ink-faint);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+}
+
+.nav-link:hover,
+.nav-link.active { color: var(--accent); }
+
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 4.25rem 2rem 5rem;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-family: var(--font-cn);
+  font-size: clamp(2.2rem, 6vw, 4.2rem);
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: var(--accent-deep);
+  margin-bottom: 1.2rem;
+}
+
+.lead {
+  max-width: 620px;
+  font-size: 1.08rem;
+  line-height: 1.9;
+  color: var(--ink-soft);
+}
+
+.essay {
+  margin-top: 3rem;
+}
+
+.essay-section {
+  padding: 2.35rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.essay-section:last-of-type { border-bottom: none; }
+
+.essay-divider {
+  font-family: var(--font-en-display);
+  color: var(--accent);
+  opacity: 0.62;
+  font-size: 1.25rem;
+  letter-spacing: 0.32em;
+  margin-bottom: 1.35rem;
+}
+
+h2 {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 1.5rem 0 0.65rem;
+}
+
+.prose {
+  color: var(--ink-reading);
+  font-size: 0.98rem;
+  line-height: 1.95;
+}
+
+.prose p + p { margin-top: 1rem; }
+
+.prose strong {
+  font-weight: 600;
+  color: var(--accent-deep);
+}
+
+.prose ul {
+  margin: 1rem 0 0 1.25rem;
+  color: var(--ink-reading);
+}
+
+.prose li {
+  margin-bottom: 0.45rem;
+}
+
+.prose blockquote {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 2px solid var(--accent);
+  color: var(--ink-soft);
+}
+
+.contact-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.social-link {
+  width: 1.7rem;
+  height: 1.7rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--accent-medium);
+  border-radius: 999px;
+  color: var(--accent-deep);
+  text-decoration: none;
+  line-height: 1;
+  transition: border-color 0.18s ease, background 0.18s ease, color 0.18s ease;
+}
+
+.social-link:hover {
+  border-color: var(--accent);
+  background: var(--paper-deep);
+  color: var(--accent);
+}
+
+.social-icon {
+  width: 0.82rem;
+  height: 0.82rem;
+  display: block;
+  fill: currentColor;
+}
+
+.social-letter {
+  font-family: var(--font-cn);
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: currentColor;
+  line-height: 1;
+}
+
+.social-letter.compact {
+  font-family: var(--font-mono);
+  font-size: 0.52rem;
+  letter-spacing: 0;
+  text-transform: lowercase;
+}
+
+.social-link.jike-link {
+  border-color: var(--accent-medium);
+  background: rgba(246, 204, 48, 0.12);
+  color: var(--accent-deep);
+}
+
+.social-link.jike-link:hover {
+  border-color: var(--accent);
+  background: rgba(246, 204, 48, 0.18);
+  color: var(--accent);
+}
+
+.jike-mark {
+  font-family: var(--font-en-display);
+  font-size: 0.95rem;
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+  transform: translateY(-0.02rem) rotate(-4deg);
+}
+
+.essay-signoff {
+  margin-top: 1.4rem;
+  color: var(--accent-deep);
+  font-weight: 500;
+}
+
+.footer {
+  margin-top: 3.2rem;
+  padding-top: 1.8rem;
+  border-top: 1px solid var(--rule);
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+}
+
+.footer a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-medium);
+}
+
+@media (max-width: 800px) {
+  html { font-size: 16px; }
+  .nav { padding: 1rem 1.25rem; }
+  .container { padding: 3rem 1.25rem 4rem; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="word-sense-home_9.html" class="nav-brand">Word<span class="em">Sense</span></a>
+  <div class="nav-links">
+    <a href="word-sense-home_9.html#searchSection" class="nav-link">search</a>
+    <a href="word-sense-about.html" class="nav-link">about</a>
+    <a href="word-sense-author.html" class="nav-link active">author</a>
+  </div>
+</nav>
+
+<main class="container">
+  <header>
+    <div class="eyebrow">About Word Sense</div>
+    <h1>关于 Word Sense</h1>
+    <p class="lead">欢迎光临！我是 Sarah。</p>
+  </header>
+
+  <article class="essay">
+    <section class="essay-section">
+      <div class="essay-divider">§</div>
+      <div class="prose">
+        <p>英语专业出身。当过几年雅思老师，做过一段时间的海外市场。养着一只猫和一只狗。喜欢读书。对语言哲学着迷，对 AI 兴趣不减。最近开始 vibecoding，发现自己可以做一些以前只能想象的事。</p>
+        <p>Word Sense 是其中之一。</p>
+      </div>
+    </section>
+
+    <section class="essay-section">
+      <div class="essay-divider">§</div>
+      <div class="prose">
+        <p>和大家一样，我学单词也是从背字典的含义开始的。晨读的时候不断地去寻找英文单词和中文意思的微弱链接，把它们灌到脑子里。</p>
+        <p>误打误撞进入大学继续学英语后，遇到的生词更深奥、更枯燥，每天还要记忆。但有一个变化是，我开始背它们的英语含义 —— 汉语的翻译已经不能满足对一个单词的全部理解，但也更容易遗忘。哪怕是能拿到好成绩，也是考完就忘。这样其实很可惜。</p>
+        <p>工作以后，我发现我学过的词，很难真正用起来。我不敢开口，不是因为不自信，也不是因为发音不好，而是我发现，<strong>我根本就不知道单词的真正用法，或者说我根本没有学会这个单词</strong>。</p>
+      </div>
+    </section>
+
+    <section class="essay-section">
+      <div class="essay-divider">§</div>
+      <div class="prose">
+        <p>举三个例子。</p>
+
+        <h2>have。</h2>
+        <p>最简单的词。中文翻“有”。每个人从初一就会用。</p>
+        <p>但当一个英语母语者说 “I'm having a hard time”，他不是在“拥有”一个 hard time。当他说 “Let's have lunch”，他也不是在“拥有”午餐。have 在这些用法里是“<strong>和某件事建立一种关系</strong>”，不是“拥有”。</p>
+        <p>但这还只是 have 的浅层。have 真正的微妙在它能抓住<strong>看不见的东西</strong>。</p>
+        <p>看美剧的时候你应该听过这一句 —— “<strong>I thought I had it, but I didn't</strong>”。</p>
+        <p>球场上输了一场本来该赢的球。面试题答错了一道本来知道答案的题。演讲讲到一半突然忘了下一句。这些时刻里，英语母语者会说 “I thought I had it”。</p>
+        <p>it 是什么？没有具体的 it。<strong>it 是英语母语者用 have 抓住一种“我以为我掌控住了”的瞬间时，那个看不见的“它”</strong>。中文里要表达这种意思，你得说“我以为我能赢”、“我以为我会做”、“我以为我能 hold 住” —— 每一种情况要换一种说法。但英语母语者一句 “I thought I had it” 就够了。have 在这里<strong>抓住了一种抽象的、说不清的、关于掌控感的东西</strong>。</p>
+        <p>再往深一层，还有这一句 —— “<strong>I thought I had it in me</strong>”。</p>
+        <p>“我以为我心里有这个东西”。这个“东西”是什么？也没说。但每个英语母语者都听得懂 —— 是某种<strong>潜力、某种内在的能耐、某种自己以为有但其实没有（或者以为没有但其实有）的能力</strong>。</p>
+        <p>“I didn't think I had it in me” —— 我没想到我居然做到了。<br>“Do you have it in you?” —— 你做得到吗？</p>
+        <p>中文里没有这种说法。你不能说“我心里有它”。你得说“我没想到我有这个能耐”、“你有这个本事吗” —— 中文必须把那个“东西”说清楚，但英语用 have + it + in me 就把这种<strong>关于自己内在的、模糊的、需要去探明的能力感</strong>抓住了。</p>
+        <p>中国学习者用 have 几乎只用“拥有”这一层。我们以为我们学会了 have，但我们其实只学会了 have 的一个壳。我们没学会的是 —— <strong>英语母语者用 have 来抓住那些看不见的东西</strong>。</p>
+
+        <h2>faculty。</h2>
+        <p>字典告诉你它是“教职工 / 院系 / 才能”。每个学过英语的中国人都背过。</p>
+        <p>但当你读到一句 “By the end, he had lost most of his cognitive faculties, but he still recognized his daughter's voice”，你才会发现 faculty 在英语里同时承载着两个看起来无关的含义 —— <strong>感知和思考的能力</strong>，以及<strong>承载这些能力的人和机构</strong>。这不是巧合。英语里有一整族这样的词 —— administration（管理 / 管理层）、authority（权威 / 权力机构）、ministry（神职服务 / 政府部）、agency（行动能力 / 机构）—— 它们都同时指一种“能力”和“承载这种能力的实体”。</p>
+        <p>中文释义把这两层意思拆给了完全不同的词，但在英语里，它们其实<strong>是同一件事</strong>。看懂这一点，你就拿到了理解一整族词的钥匙。</p>
+
+        <h2>lowkey。</h2>
+        <p>字典翻“低调”。</p>
+        <p>但当一个美国朋友说 “I lowkey want to quit my job”，他不是在说“我想低调地辞职”。他在说“<strong>我有点想辞职，但又不想把话说重 —— 你别太当真，但也别完全不当真</strong>”。</p>
+        <p>这是一种态度副词，是当代英语母语者表达自己时的一种保护色。中文里没有这种用法 —— 我们靠“有点”、“算是”、“……吧”、反问句来承担类似的功能，但都不是一个词。看懂 lowkey，你能立刻看懂 kinda、sorta、not gonna lie、it's giving 这一整族当代英语的“态度副词”。</p>
+      </div>
+    </section>
+
+    <section class="essay-section">
+      <div class="essay-divider">§</div>
+      <div class="prose">
+        <p>中文翻译没错。但中文翻译承担不了原词的全部重量。</p>
+        <p>Word Sense 想做的事就是这个 —— 帮你看见那些被翻译漏掉的东西。</p>
+        <p>每周一篇深度词条。一个词，我从六个维度展开：它的字面含义、它的本体质感、它的来历、它在不同场合的用法、进入它的原生思维、以及读完这个词你能带走的“钥匙”。</p>
+        <p>最后一项是我最在意的。学一个词的真正价值不在于多记一个词，而是带走一种识别模式 —— 下次你遇到同一类词，你自己就能解锁。一个 lowkey 让你看懂 kinda / sorta / not gonna lie / it's giving 这一整族“态度副词”。一个 faculty 让你看懂 administration / authority / ministry / agency 这一整族“能力 / 机构同源词”。这种迁移性的理解力，才是 Word Sense 真正想给你的东西。</p>
+      </div>
+    </section>
+
+    <section class="essay-section">
+      <div class="essay-divider">§</div>
+      <div class="prose">
+        <p>我必须诚实地告诉你 AI 在这里扮演什么角色。</p>
+        <p>我用 AI 作为写作助手。但每一篇词条的最终判断、每一个例句的取舍、每一处文化对照的措辞，都是我亲自过审和改写的。我有一套完整的工作流，让 AI 帮我查证事实、整合素材，但<strong>它从来不直接面对你</strong>。你读到的每一篇，都经过我作为一个有英语背景、有跨文化经验、有审美的人的把关。</p>
+        <p>我不想让 Word Sense 闻起来像 AI。我认为 Word Sense 应该是<strong>一个认真的人在跟你聊一件有意思的事</strong>，这里面可能有很浓重的个人风格，我希望它是有温度的。</p>
+      </div>
+    </section>
+
+    <section class="essay-section">
+      <div class="essay-divider">§</div>
+      <div class="prose">
+        <p>我希望你这样用 Word Sense：</p>
+        <ul>
+          <li>不要把它当词典。这里不会告诉你“这个词怎么记”。</li>
+          <li>不要为了“提高词汇量”来。Word Sense 不服务这个目标。</li>
+          <li>把它当一份周刊。每周一杯咖啡的时间，看一个词，看它怎么被使用、它从哪来、它的原生思维是什么、它能解锁什么。</li>
+          <li>看完以后，去英文世界里<strong>留意它</strong>。下次你在新闻、邮件、社媒、播客里遇到它，你会“看见”它，而不是滑过它。</li>
+        </ul>
+        <p>这种“看见”会累积。读了 20 个词之后，你看英文的方式会不一样。读了 50 个词，你会发现自己开始<strong>带着另一种思维方式在听一种语言</strong>。</p>
+        <p>这才是 Word Sense 的承诺。</p>
+      </div>
+    </section>
+
+    <section class="essay-section">
+        <div class="essay-divider">§</div>
+        <div class="prose">
+        <p>最后，WS 还是一个非常年轻的产品，希望能帮到你的同时，也能得到你的帮助。有任何建议和想说的，随时联系。</p>
+        <p class="contact-line">
+          <span>邮箱：liuyujiesr@gmail.com</span>
+          <span>手机 / WeChat：18518152860</span>
+          <span>或</span>
+          <a class="social-link" href="https://x.com/sarahliutalk" target="_blank" rel="noopener noreferrer" aria-label="Sarah on X" title="X">
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18.9 2.8h3.3l-7.3 8.3 8.5 10.1h-6.7l-5.2-6.2-6 6.2H2.2l7.8-8.1L1.8 2.8h6.8l4.7 5.7 5.6-5.7Zm-1.2 16.6h1.8L7.6 4.5H5.7l12 14.9Z"/>
+            </svg>
+          </a>
+          <a class="social-link" href="https://xhslink.com/m/6jaYaVjuI1j" target="_blank" rel="noopener noreferrer" aria-label="Sarah on 小红书" title="小红书">
+            <span class="social-letter compact" aria-hidden="true">xhs</span>
+          </a>
+          <a class="social-link jike-link" href="https://okjk.co/dTMl4p" target="_blank" rel="noopener noreferrer" aria-label="Sarah on 即刻" title="即刻">
+            <span class="jike-mark" aria-hidden="true">J</span>
+          </a>
+        </p>
+        <p>慢一点，看见更多。</p>
+        <p class="essay-signoff">— Sarah</p>
+      </div>
+    </section>
+  </article>
+
+  <footer class="footer">
+    <a href="word-sense-about.html">回到 About</a>，或者 <a href="word-sense-home_9.html">回到首页</a>。
+  </footer>
+</main>
+
+</body>
+</html>

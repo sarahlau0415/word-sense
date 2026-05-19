@@ -1,0 +1,14 @@
+{
+  "id": "1779182260546-sense",
+  "word": "sense",
+  "source": "",
+  "sentence": "",
+  "status": "failed",
+  "stage": "准备审校",
+  "stageIndex": 0,
+  "message": "这次词条处理没有完成，请检查密钥、网络或稍后重试。",
+  "dictionaryMeaning": "感觉；意义；判断力；感官。",
+  "createdAt": 1779182260.546268,
+  "updatedAt": 1779182260.5466208,
+  "error": "没有找到 OPENAI_API_KEY。请在环境变量或 word-sense-workflow/.env 里配置。"
+}

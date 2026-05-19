@@ -30,6 +30,17 @@ Set these in Vercel:
 npm run check
 ```
 
+## Validate The Product
+
+The folder `validation/` contains the operating project for testing Word Sense across usage, growth, and business viability. Start with:
+
+- `validation/product-diagnosis.md`
+- `validation/hypotheses.md`
+- `validation/test-plan.md`
+- `validation/content-quality-rubric.md`
+
+The backend prompt in `lib/generate-sense.js` is aligned with the six-dimension Word Sense v2 structure: 字面、感觉、来历、用法、跟中文比、悟道时刻.
+
 ## Publish With Netlify
 
 Use Netlify when you want friends to enter any word and receive generated results.

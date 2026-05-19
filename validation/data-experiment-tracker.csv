@@ -1,0 +1,6 @@
+id,type,status,owner,start_date,end_date,segment,channel,metric,target,result,notes
+U-01,usage,planned,,2026-05-15,,adult learners,usability,task completion,6/8 complete first query,,
+U-02,usage,planned,,2026-05-15,,adult learners,interview,context version score,+20% vs no-context,,
+U-04,usage,planned,,2026-05-15,,content QA,model test,average rubric score,4/5,,
+G-02,growth,planned,,2026-05-15,,language curious users,xiaohongshu/social,save/share rate,+30% vs baseline,,
+B-01,business,planned,,2026-05-15,,mixed users,interview,clear willingness to pay,6/20,,

@@ -1,0 +1,1865 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word Sense — concerning</title>
+
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&f[]=switzer@400,500,600&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #1F1B16;
+  --ink-soft: #4A4036;
+  --ink-reading: #2E2923;
+  --ink-faint: #807466;
+  --ink-whisper: #C9BEAE;
+  --paper: #FBFAF6;
+  --paper-deep: #F2EFE7;
+  --paper-warm: #F5F1E7;
+  --rule: #E5DECF;
+  --accent: #A0522D;
+  --accent-deep: #5C2E1A;
+  --accent-soft: #A0522D1A;
+  --accent-medium: #A0522D2E;
+  --accent-glow: #C8794B;
+
+  --font-cn: "Noto Sans SC", -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-en-display: "Cabinet Grotesk", "Helvetica Neue", sans-serif;
+  --font-en-body: "Switzer", -apple-system, "Helvetica Neue", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 17px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-family: var(--font-cn);
+  font-weight: 400;
+  line-height: 1.78;
+  color: var(--ink);
+  background: var(--paper);
+  min-height: 100vh;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+/* 顶部导航 */
+.nav {
+  border-bottom: 1px solid var(--rule);
+  padding: 1.35rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.nav-brand {
+  font-family: var(--font-en-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav-brand .em {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.nav-search {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--ink-faint);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  transition: color 0.15s ease;
+}
+
+.nav-search:hover { color: var(--accent); }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* 主体容器 */
+.container {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 4.5rem 2rem 6rem;
+}
+
+/* 词条头部 */
+.header {
+  margin-bottom: 3rem;
+  padding-bottom: 2.25rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.header-meta {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.header-meta-item { white-space: nowrap; }
+
+.header-meta-divider {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.word {
+  font-family: var(--font-en-display);
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+  color: var(--accent-deep);
+  margin-bottom: 0.5rem;
+  font-feature-settings: "kern" 1, "liga" 1, "ss01" 1;
+}
+
+.curated-note {
+  display: none;
+  margin-top: 1.1rem;
+  padding: 0.72rem 0 0.74rem 0.92rem;
+  border-left: 2px solid rgba(160, 82, 45, 0.34);
+  background: linear-gradient(90deg, rgba(245, 241, 231, 0.72), rgba(245, 241, 231, 0));
+  color: #6E6256;
+  font-size: 0.82rem;
+  line-height: 1.7;
+  max-width: 610px;
+}
+
+.curated-note.show {
+  display: block;
+}
+
+.curated-note-kicker {
+  display: block;
+  margin-bottom: 0.22rem;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.curated-note-text strong {
+  color: var(--accent-deep);
+  font-weight: 500;
+}
+
+.generated-note {
+  display: none;
+  margin-top: 1.05rem;
+  max-width: 640px;
+  padding: 0.82rem 0.95rem;
+  border: 1px solid rgba(160, 82, 45, 0.14);
+  border-left: 2px solid rgba(160, 82, 45, 0.38);
+  background: rgba(245, 241, 231, 0.48);
+  color: var(--ink-faint);
+}
+
+.generated-note.show {
+  display: block;
+}
+
+.generated-note-kicker {
+  display: block;
+  margin-bottom: 0.24rem;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.generated-note-text {
+  display: block;
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+.generated-note-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.68rem;
+}
+
+.generated-note-button {
+  border: 1px solid var(--rule);
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--accent-deep);
+  border-radius: 3px;
+  padding: 0.34rem 0.54rem;
+  font-family: var(--font-cn);
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.generated-note-button:hover {
+  border-color: var(--accent-medium);
+  background: var(--paper);
+}
+
+.generated-note-status {
+  width: 100%;
+  min-height: 1.2rem;
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+}
+
+/* 用户提供的原句 */
+.word-context {
+  margin-top: 1.5rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--paper-deep);
+  border-radius: 3px;
+}
+
+.word-context-label {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+.word-context-quote {
+  font-family: var(--font-en-body);
+  font-size: 0.94rem;
+  font-weight: 400;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+  line-height: 1.55;
+}
+
+.word-context-quote::before {
+  content: '"';
+  color: var(--ink-whisper);
+  margin-right: 0.05em;
+}
+
+.word-context-quote::after {
+  content: '"';
+  color: var(--ink-whisper);
+  margin-left: 0.05em;
+}
+
+.word-context-source {
+  display: block;
+  font-family: var(--font-cn);
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  margin-top: 0.45rem;
+}
+
+/* 正文段落 */
+.prose-layer {
+  position: relative;
+  margin: 0 0 2.15rem;
+  padding-left: 1.15rem;
+  border-left: 1px solid var(--rule);
+}
+
+.prose-layer::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 0;
+  width: 1px;
+  height: 2.05rem;
+  background: var(--accent);
+}
+
+.prose-layer-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 0.72rem;
+}
+
+.prose-layer p:last-child,
+.prose-layer .example:last-child,
+.prose-layer blockquote:last-child,
+.prose-layer ul:last-child {
+  margin-bottom: 0;
+}
+
+.prose p {
+  margin-bottom: 1.42rem;
+  font-size: 0.96rem;
+  line-height: 1.92;
+  color: var(--ink-reading);
+  font-weight: 400;
+}
+
+.prose .en {
+  font-family: var(--font-en-display);
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+}
+
+/* 维度标签:轻量栗色文字 + 中点 */
+.prose .dim {
+  font-family: var(--font-cn);
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 0.98rem;
+  letter-spacing: 0.02em;
+  margin-right: 0.15em;
+}
+
+.prose .dim::after {
+  content: ' · ';
+  color: var(--accent);
+  opacity: 0.7;
+  font-weight: 400;
+  margin: 0 0.15em;
+}
+
+/* 马克笔高亮(给 strong,不给 dim) */
+.prose p strong:not(.dim) {
+  font-weight: 500;
+  color: var(--ink);
+  background: linear-gradient(to bottom, transparent 62%, var(--accent-soft) 62%, var(--accent-soft) 92%, transparent 92%);
+  padding: 0 0.15em;
+}
+
+.prose code,
+.satori-body code {
+  font-family: var(--font-en-display);
+  font-size: 1em;
+  color: var(--accent);
+  background: transparent;
+}
+
+.prose blockquote {
+  margin: 0 0 1.5rem 0;
+  padding: 0.85rem 0 0.85rem 1.25rem;
+  border-left: 2px solid var(--accent);
+  font-family: var(--font-en-body);
+  color: var(--ink-soft);
+  font-size: 0.96rem;
+  line-height: 1.7;
+}
+
+.prose blockquote .en-hit,
+.satori-body blockquote .en-hit {
+  color: var(--accent-deep);
+  background: rgba(160, 82, 45, 0.11);
+  box-shadow: inset 0 -0.3em 0 rgba(160, 82, 45, 0.11);
+  padding: 0 0.04em;
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+.prose ul {
+  margin: 0 0 1.55rem 1.2rem;
+  padding: 0;
+}
+
+.prose li {
+  margin-bottom: 0.55rem;
+  color: var(--ink-reading);
+  font-size: 0.95rem;
+  line-height: 1.85;
+}
+
+/* em 用作深栗色加重 */
+.prose em {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--accent-deep);
+}
+
+/* 段落呼吸:章节符 */
+.breath {
+  text-align: center;
+  margin: 2.5rem 0;
+  font-family: var(--font-en-display);
+  font-size: 1.2rem;
+  color: var(--accent);
+  opacity: 0.55;
+  letter-spacing: 0.3em;
+  font-weight: 500;
+}
+
+/* 用法维度的例句块 */
+.usage-intro {
+  margin-bottom: 1.5rem;
+}
+
+.examples {
+  margin: 0 0 1.75rem 0;
+}
+
+.example {
+  margin-bottom: 1.5rem;
+  padding: 0;
+  background: transparent;
+  border-radius: 3px;
+}
+
+.example:last-child { margin-bottom: 0; }
+
+.example-label {
+  width: fit-content;
+  max-width: 100%;
+  font-family: var(--font-cn);
+  font-size: 0.72rem;
+  letter-spacing: 0.01em;
+  color: #8D8174;
+  margin-bottom: 0.5rem;
+  padding: 0.16rem 0.52rem 0.18rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 400;
+  background: rgba(245, 241, 231, 0.7);
+  border: 1px solid rgba(160, 82, 45, 0.12);
+  border-radius: 999px;
+}
+
+.example-label-tag {
+  font-family: var(--font-cn);
+  font-size: 0.72rem;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  color: var(--ink-faint);
+  padding-left: 0.6rem;
+  border-left: 1px solid var(--rule);
+  font-weight: 400;
+}
+
+.example-text {
+  font-family: var(--font-en-body);
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--ink-reading);
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  margin: 0;
+}
+
+.example-body {
+  padding: 0.85rem 0.95rem 0.9rem;
+  background: rgba(245, 241, 231, 0.52);
+  border: 1px solid rgba(160, 82, 45, 0.11);
+  border-left: 2px solid rgba(160, 82, 45, 0.38);
+  border-radius: 4px;
+}
+
+.example-direct-translation {
+  margin: 0.58rem 0 0;
+  padding-top: 0.62rem;
+  border-top: 1px solid rgba(160, 82, 45, 0.09);
+  font-family: var(--font-cn);
+  font-size: 1rem;
+  line-height: 1.58;
+  color: var(--ink-reading);
+  font-weight: 400;
+}
+
+.example-text .en-hit {
+  color: var(--accent-deep);
+  background: rgba(160, 82, 45, 0.11);
+  box-shadow: inset 0 -0.32em 0 rgba(160, 82, 45, 0.12);
+  padding: 0 0.04em;
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+.example-translation {
+  font-family: var(--font-cn);
+  font-size: 0.84rem;
+  line-height: 1.65;
+  color: var(--ink-faint);
+  margin-top: 0.54rem;
+  padding: 0 0.2rem 0 0.72rem;
+}
+
+/* 内容依据 */
+.verification {
+  display: none;
+  margin-top: 2.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+}
+
+.verification.show { display: block; }
+
+.verification-kicker {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.45rem;
+  font-weight: 500;
+}
+
+.verification-title {
+  font-family: var(--font-cn);
+  font-size: 0.84rem;
+  line-height: 1.75;
+  color: var(--ink-faint);
+  margin-bottom: 0.85rem;
+}
+
+.verification-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.verification-source {
+  display: inline-flex;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  color: var(--accent);
+  text-decoration: none;
+  background: var(--paper-deep);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 0.3rem 0.42rem;
+  cursor: default;
+  user-select: text;
+}
+
+/* 悟道时刻:豹尾卡片 */
+.satori {
+  margin-top: 3rem;
+  padding: 2.15rem 2rem 1.55rem;
+  background: linear-gradient(180deg, #F7F1E5 0%, var(--paper-deep) 100%);
+  border: 1px solid var(--accent-medium);
+  border-top: none;
+  border-radius: 3px;
+  position: relative;
+}
+
+.satori::before {
+  content: '§';
+  position: absolute;
+  top: -0.85rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--paper);
+  padding: 0 0.75rem;
+  font-family: var(--font-en-display);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.3em;
+}
+
+.satori-label {
+  font-family: var(--font-cn);
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  color: var(--accent-deep);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.05rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+}
+
+.satori-label::before {
+  content: '';
+  display: inline-block;
+  width: 0.92rem;
+  height: 0.92rem;
+  background: var(--accent);
+  opacity: 0.88;
+  mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='black' d='M7.5 14a5.5 5.5 0 1 1 4.46-8.72A5.5 5.5 0 0 1 14 9.5c0 .46-.06.9-.17 1.32L22 19v3h-3v-2h-2v-2h-2.2l-3.08-3.08A5.46 5.46 0 0 1 7.5 14Zm0-2a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm0-2.1a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8Z'/%3E%3C/svg%3E") center / contain no-repeat;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='black' d='M7.5 14a5.5 5.5 0 1 1 4.46-8.72A5.5 5.5 0 0 1 14 9.5c0 .46-.06.9-.17 1.32L22 19v3h-3v-2h-2v-2h-2.2l-3.08-3.08A5.46 5.46 0 0 1 7.5 14Zm0-2a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm0-2.1a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8Z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.satori-body {
+  font-family: var(--font-cn);
+  max-width: 34rem;
+  margin: 0 auto;
+  font-size: 0.94rem;
+  line-height: 1.88;
+  color: var(--ink-reading);
+}
+
+.satori-body p {
+  margin-bottom: 0.88rem;
+}
+
+.satori-body p:first-child {
+  font-size: 0.98rem;
+  line-height: 1.9;
+  color: var(--ink-reading);
+}
+
+.satori-body p:last-child {
+  margin-bottom: 0;
+}
+
+.satori-body strong {
+  font-weight: 500;
+  color: var(--accent-deep);
+}
+
+.satori-body .en {
+  font-family: var(--font-en-display);
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+}
+
+.satori-summary {
+  margin: 0 auto 1.05rem;
+  padding: 0.85rem 0.95rem;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+}
+
+.satori-summary-kicker {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.38rem;
+}
+
+.satori-summary-text {
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+  line-height: 1.7;
+}
+
+.satori-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+  margin-top: 1.15rem;
+  padding-top: 0.95rem;
+  border-top: 1px solid var(--rule);
+}
+
+.satori-action {
+  appearance: none;
+  border: 1px solid var(--accent-medium);
+  background: var(--paper);
+  color: var(--accent-deep);
+  border-radius: 3px;
+  padding: 0.45rem 0.68rem;
+  font-family: var(--font-cn);
+  font-size: 0.76rem;
+  cursor: pointer;
+  transition: border-color 0.18s ease, background 0.18s ease, color 0.18s ease;
+}
+
+.satori-action:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.action-followup {
+  position: relative;
+  margin-top: 1rem;
+  display: none;
+}
+
+.action-followup.show {
+  display: block;
+}
+
+.action-feedback {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  margin-top: 0.15rem;
+}
+
+.action-feedback.show {
+  display: flex;
+}
+
+.action-feedback-note {
+  font-size: 0.74rem;
+  line-height: 1.6;
+  color: var(--ink-faint);
+}
+
+.action-feedback-note strong {
+  color: var(--accent-deep);
+  font-weight: 500;
+}
+
+.action-detail {
+  display: none;
+  margin: 1.35rem auto 0;
+  max-width: 34rem;
+}
+
+.action-detail.show {
+  display: block;
+}
+
+.action-detail-panel {
+  display: none;
+  position: relative;
+  padding: 0.95rem 1rem 1rem;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  text-align: left;
+  box-shadow: 0 14px 34px rgba(68, 52, 36, 0.12);
+  animation: action-detail-in 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.action-detail.show .action-detail-panel {
+  display: block;
+}
+
+.action-detail-panel::before {
+  content: '';
+  position: absolute;
+  top: -0.46rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: var(--paper);
+  border-left: 1px solid var(--rule);
+  border-top: 1px solid var(--rule);
+  transform: rotate(45deg);
+}
+
+.action-followup[data-source="save"] .action-detail-panel::before {
+  left: calc(50% - 6.4rem);
+}
+
+.action-followup[data-source="share"] .action-detail-panel::before {
+  left: calc(50% + 5.5rem);
+}
+
+.satori-panel-title {
+  padding-right: 1.35rem;
+  font-size: 0.82rem;
+  color: var(--accent-deep);
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.satori-panel-text {
+  font-size: 0.76rem;
+  color: var(--ink-faint);
+  line-height: 1.65;
+}
+
+.satori-panel-copy {
+  margin-top: 0.65rem;
+  padding: 0.65rem 0.7rem;
+  max-height: 12.5rem;
+  overflow: auto;
+  background: var(--paper-deep);
+  border-left: 2px solid var(--accent);
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  line-height: 1.65;
+}
+
+.satori-panel-next {
+  margin-top: 0.65rem;
+  font-size: 0.74rem;
+  color: var(--ink-faint);
+  line-height: 1.6;
+}
+
+.share-variants {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.7rem;
+}
+
+.share-variant {
+  border: 1px solid var(--rule);
+  background: rgba(255, 255, 255, 0.56);
+  color: var(--ink-soft);
+  padding: 0.32rem 0.58rem;
+  border-radius: 999px;
+  font-family: var(--font-cn);
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.share-variant:hover,
+.share-variant.active {
+  border-color: var(--accent);
+  color: var(--accent-deep);
+  background: var(--accent-soft);
+}
+
+.bubble-close {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.62rem;
+  border: none;
+  background: transparent;
+  color: var(--ink-faint);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.bubble-close:hover {
+  color: var(--accent-deep);
+}
+
+/* 页脚边界语 */
+.boundary {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-cn);
+  font-size: 0.85rem;
+  color: var(--ink-faint);
+  text-align: center;
+  line-height: 1.7;
+}
+
+.boundary a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-soft);
+  padding-bottom: 2px;
+  margin-left: 0.4rem;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  font-family: var(--font-en-body);
+  font-weight: 500;
+}
+
+.boundary a:hover {
+  border-bottom-color: var(--accent);
+  color: var(--accent-deep);
+}
+
+/* 移动端 */
+@media (max-width: 640px) {
+  html { font-size: 16px; }
+  .container { padding: 2.75rem 1.5rem 5rem; }
+  .word { font-size: 3rem; }
+  .nav { padding: 1rem 1.5rem; }
+  .header { margin-bottom: 2.5rem; padding-bottom: 2rem; }
+  .word-context { padding: 0.85rem 1rem; }
+  .prose-layer { padding-left: 0.95rem; margin-bottom: 1.8rem; }
+  .example { padding: 0.95rem 1rem 0.95rem 1.15rem; }
+  .example-text { font-size: 1rem; }
+  .verification { margin-top: 2.35rem; }
+  .satori { padding: 1.5rem 1.35rem 1.35rem; }
+  .satori-body { font-size: 0.96rem; }
+  .satori-body p:first-child { font-size: 1.02rem; }
+}
+
+/* 进入动效 */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes action-detail-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.header { animation: fade-up 0.55s cubic-bezier(0.16, 1, 0.3, 1); }
+.prose p { animation: fade-up 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both; }
+.breath { animation: fade-up 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both; }
+.satori { animation: fade-up 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.22s both; }
+.boundary { animation: fade-up 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="word-sense-home_9.html" class="nav-brand">Word<span class="em">Sense</span></a>
+  <div class="nav-links">
+    <a href="word-sense-home_9.html#searchSection" class="nav-search">← 搜下一个词</a>
+    <a href="word-sense-about.html" class="nav-search">about</a>
+  </div>
+</nav>
+
+<main class="container">
+
+  <header class="header">
+    <div class="header-meta">
+      <span class="header-meta-item">L2 标准纠偏</span>
+      <span class="header-meta-divider"></span>
+      <span class="header-meta-item">职场语境</span>
+    </div>
+    <h1 class="word">concerning</h1>
+
+    <div class="curated-note" id="curatedNote"></div>
+    <div class="generated-note" id="generatedNote"></div>
+
+    <div class="word-context">
+      <span class="word-context-label">你提供的语境</span>
+      <span class="word-context-quote">My manager said some of these numbers are concerning.</span>
+      <span class="word-context-source">—— 周会后老板的邮件</span>
+    </div>
+  </header>
+
+  <article class="prose">
+
+    <section class="prose-layer">
+      <div class="prose-layer-label">字面含义</div>
+      <p><span class="en">concern</span> 来自拉丁语 <span class="en">concernere</span>，字面意思是"和……一起筛分"，后来引申为"与某事相关、牵涉其中"。<span class="en">concerning</span> 作为形容词，原本指"涉及某事的"，后来演变成"令人在意的"。注意它没有"担忧"那种主动的情绪意味，它是"被某事牵动注意力"的状态。</p>
+    </section>
+
+    <section class="prose-layer">
+      <div class="prose-layer-label">本体质感</div>
+      <p>在你这句话里，<span class="en">concerning</span> 不是单纯的"令人担忧的"。如果你这样理解，你会觉得老板在表达情绪——但他其实在做一件更冷的事。这个词在职场和新闻语境里有一种<strong>克制的预警属性</strong>：说话人已经判断有问题、但暂时不想把话说重。它戴着客观面具（something <em>is</em> concerning），但实际上是说话人在做立场表态——用形容词下判断，不用动词直接说"我认为"。</p>
+
+      <p>这族词还有一个完整的强度梯度，你可以体会一下：<span class="en">concerning</span> &lt; <span class="en">troubling</span> &lt; <span class="en">worrying</span> &lt; <span class="en">unsettling</span> &lt; <span class="en">alarming</span>。从"我开始注意到了"到"我已经在按警报"，每一档对应一种语用功能。</p>
+    </section>
+
+    <section class="prose-layer">
+      <div class="prose-layer-label">各路用法</div>
+      <p>几个例子，在不同场域里你感受一下区别：</p>
+
+      <div class="examples">
+        <div class="example">
+          <div class="example-label">
+            Workplace
+            <span class="example-label-tag">同事在 Slack 上</span>
+          </div>
+          <p class="example-text">Hey, the retention numbers from last week are concerning. Got a sec to dig in?</p>
+        </div>
+
+        <div class="example">
+          <div class="example-label">
+            Daily
+            <span class="example-label-tag">朋友之间</span>
+          </div>
+          <p class="example-text">It's a little concerning that he hasn't texted back in two days, right?</p>
+        </div>
+
+        <div class="example">
+          <div class="example-label">
+            Internet
+            <span class="example-label-tag">Twitter 上一条 post</span>
+          </div>
+          <p class="example-text">the way no one is talking about this is honestly concerning</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="breath">§</div>
+
+    <section class="prose-layer">
+      <div class="prose-layer-label">原生思维</div>
+      <p>中文翻译"令人担忧的"没错，但它<strong>漏掉了那种"克制信号"的语用功能</strong>。中文里最接近的可能是"有点……不太对劲"那种欲言又止的语感，或者职场里"这几个数据，我们得聊聊"的潜台词。注意中文里这种克制态度通常要靠句式、语气词、和上下文一起承担，英文用一个 <span class="en">concerning</span> 就把这个功能压缩进了一个形容词里。这是英语职场语言一种独特的修辞效率。</p>
+    </section>
+
+  </article>
+
+  <section class="verification" id="verificationSection" aria-label="内容依据"></section>
+
+  <section class="satori">
+    <div class="satori-label">悟道时刻</div>
+    <div class="satori-body">
+      <div class="satori-summary">
+        <div class="satori-summary-kicker">你刚刚看见了</div>
+        <div class="satori-summary-text">concerning 不是简单的“令人担忧”，而是一种克制、客观外衣下的判断方式。</div>
+      </div>
+      <p>学会识别"<strong>戴着客观面具的判断词</strong>"，你就拿到了一把钥匙——能瞬间看穿英文职场和新闻里的隐性立场表态。</p>
+      <p>下次你看到 <span class="en">troubling</span>、<span class="en">unsettling</span>、<span class="en">warrants attention</span>、<span class="en">raises questions</span>、<span class="en">falls short of expectations</span> 这些词，不要再当成"客观描述"读。它们都在做同一件事：<strong>说话人在下判断，但用形容词的客观外衣包装起来</strong>。一旦识别这个模式，你不只懂了 <span class="en">concerning</span>，你懂了一整套英文公共话语的修辞习惯。</p>
+    </div>
+    <div class="satori-actions">
+      <button type="button" class="satori-action" id="saveWordButton">保存到笔记</button>
+      <button type="button" class="satori-action" id="shareWordButton">复制分享链接</button>
+    </div>
+  </section>
+
+  <section class="action-followup" aria-label="保存和分享反馈">
+    <div class="action-feedback" id="actionFeedback" aria-live="polite"></div>
+    <div class="action-detail" id="satoriStatus" aria-live="polite"></div>
+  </section>
+
+  <footer class="boundary">
+    这一轮到这里。<a href="word-sense-home_9.html#searchSection">搜下一个词 →</a>
+  </footer>
+
+</main>
+
+<script src="word-sense-content.js?v=20260518-usage"></script>
+<script>
+(function() {
+  const params = new URLSearchParams(window.location.search);
+  const requestedWord = (params.get('word') || 'resilience').trim();
+  const source = (params.get('source') || '').trim();
+  const sentence = (params.get('sentence') || '').trim();
+  const normalizedWord = requestedWord.toLowerCase();
+  const entries = window.WORD_SENSE_ENTRIES || {};
+  const entry = entries[normalizedWord];
+  const concerningVerification = {
+    sources: [
+      { label: 'etymonline.com', url: 'https://www.etymonline.com/word/concern' },
+      { label: 'merriam-webster.com', url: 'https://www.merriam-webster.com/dictionary/concern' },
+      { label: 'merriam-webster.com', url: 'https://www.merriam-webster.com/grammar/concerning-concern-adjective-usage' },
+      { label: 'oxfordlearnersdictionaries.com', url: 'https://www.oxfordlearnersdictionaries.com/us/definition/english/concerning_2' },
+      { label: 'collinsdictionary.com', url: 'https://www.collinsdictionary.com/us/dictionary/english/concerning' }
+    ]
+  };
+  const curatedReasons = {
+    "resilience": "这周它频繁出现在新闻和社会报道里，但中文“韧性”容易把它理解成静态的能忍。它真正强调的是经历冲击之后，主动恢复、重新弹回来的能力。",
+    "unfold": "新闻里常用它写危机、事件和局势的发展，但中文“展开/发生”太平了。unfold 把事件写成一幕幕在眼前打开的过程。",
+    "brace": "经济、外交、灾害新闻里常见 brace for X，但中文“准备承受”会漏掉它的身体感。它的核心画面是人在冲击来临前绷紧身体。",
+    "surge": "它常用来写病例、价格、需求、失业等数字上升，但不是普通 increase。surge 带着“像浪一样突然涌起”的动态感。",
+    "verify": "AI 圈不断讨论 verifier-loop 和 verify，但中文“验证”容易听成普通检查。它背后有证据链、独立确认和可复核性的语感。",
+    "cringe": "cringe 在社媒里极高频，但中文“尴尬”只翻到一半。它本来是身体退缩的动作，用来写尴尬到身体本能想缩一下。",
+    "probe": "probe 在新闻调查、监管和司法语境里稳定高频，但中文“调查”太宽。它本来是“探针”，所以更像谨慎地往深处探。",
+    "fallout": "fallout 常出现在政治、经济和企业危机之后，但中文“后果”太普通。它原本指核爆后的沉降物，自带看不见却持续落下的影响。",
+    "hallucination": "AI 圈高频讨论 hallucination，但中文“幻觉”容易把它变成简单比喻。它暗含“系统生成了一个看似真实、但没有现实锚点的东西”。",
+    "grounding": "grounding 是 AI 里减少 hallucination 的关键词，但中文“接地/基于事实”都不够。它的隐喻是把抽象输出重新拴回具体事实和外部依据。",
+    "delulu": "delulu 在 TikTok 和社媒里稳定高频，但它不是严肃的“妄想”。它是 delusional 被网络语气软化后的词，带着自嘲、可爱和明知不现实的希望感。",
+    "brain rot": "brain rot 是近年重要的文化批判词，但中文“脑腐/脑残”会变得太硬。它说的是一种自觉的内容消费自嘲：知道被低营养内容腐蚀，却停不下来。",
+    "deprecate": "AI 和技术文档里频繁出现 deprecate / deprecation，但中文“弃用”太粗暴。它真正的意思更温和：现在不推荐继续用，但还会给你一段迁移时间。",
+    "orchestrate": "multi-agent orchestration 是 AI 圈高频概念，但中文“编排/协调”没有完全翻出它的画面。它来自 orchestra，强调多个独立专业角色在一个指挥下协同。",
+    "inflection point": "AI 和商业趋势里常说某件事到了 inflection point，但中文“拐点”容易让人觉得变化已经发生。它更像曲线正在改变方向，带着“质变将至”的预感。",
+    "accountability gap": "AI 治理里常见 accountability gap，但中文很难用一个词说清。它指一种灰色空间：明明应该有人负责，却找不到能被真正追责的人或机制。",
+    "clanker": "clanker 是新近上升的反 AI 社媒词，用来讽刺 AI 或过度依赖 AI 的人。它同时带着机械感和轻蔑感，中文几乎没有现成对应词。",
+    "unhinged": "unhinged 在 Reddit 和 X 上高频出现，但中文“疯了/离谱”都太泛。它字面是“门铰链脱开”，所以失控感很有画面：不是普通奇怪，而是脱轨了。"
+  };
+  const highlightTermsByWord = {
+    "resilience": ["resilience", "resilient"],
+    "unfold": ["unfold", "unfolds", "unfolded", "unfolding"],
+    "brace": ["brace", "braces", "braced", "bracing", "brace for"],
+    "surge": ["surge", "surges", "surged", "surging"],
+    "verify": ["verify", "verifies", "verified", "verifying", "verifier", "verifier-loop"],
+    "cringe": ["cringe", "cringes", "cringed", "cringing", "cringey"],
+    "probe": ["probe", "probes", "probed", "probing"],
+    "fallout": ["fallout"],
+    "hallucination": ["hallucination", "hallucinations", "hallucinate", "hallucinates", "hallucinated", "hallucinating"],
+    "grounding": ["grounding", "grounded", "ground", "grounded responses"],
+    "delulu": ["delulu", "delusional"],
+    "brain rot": ["brain rot", "brainrot", "brain-rot", "brain is rotting"],
+    "deprecate": ["deprecate", "deprecates", "deprecated", "deprecating", "deprecation", "self-deprecating"],
+    "orchestrate": ["orchestrate", "orchestrates", "orchestrated", "orchestrating", "orchestration", "orchestrator"],
+    "inflection point": ["inflection point", "inflection points"],
+    "accountability gap": ["accountability gap", "accountability gaps", "accountability"],
+    "clanker": ["clanker", "clankers"],
+    "unhinged": ["unhinged"]
+  };
+  const exampleTranslations = {
+    "we need to build more resilience into the supply chain before the next disruption hits.": { direct: "下一次中断来临前，我们需要让供应链更有恢复力。", note: "这里不是说供应链要“坚强”，而是说它要有备用路径、缓冲空间、恢复机制。" },
+    "she showed real resilience during the restructuring and kept the team focused through a difficult few months.": { direct: "在重组期间，她展现了真正的韧性，让团队在艰难的几个月里保持专注。", note: "这里说的不是她没压力，而是她在压力里没有散掉，还能把别人稳住。" },
+    "after everything he went through last year, i'm amazed by his resilience.": { direct: "经历了去年那些事之后，我很佩服他的韧性。", note: "这句话里带着一点敬意：这个人经历过东西，但没有被那段经历彻底定义。" },
+    "resilience isn't pretending you're fine. it's finding your way back after you're not.": { direct: "resilience 不是假装自己没事，而是在真的不行之后，仍然找到回来的路。", note: "这里的网感不在 slang，而在句式：短句、低调、不装饰，把一个生活感悟压成一句话。" },
+    "as the rollout unfolds, we'll adjust the timeline and keep everyone updated on any major risks.": "随着上线过程逐步展开，我们会调整时间表，并把重大风险同步给大家。",
+    "i just sat there and watched the whole argument unfold at dinner.": "我就坐在那里，看着整场争吵在晚餐桌上一点点展开。",
+    "watching this drama unfold in real time is honestly better than the actual show.": "实时看这场戏发展下去，说真的比正片还好看。",
+    "we should brace for some tough questions from the client after last week's delayed launch.": "上周上线延期之后，我们得准备好面对客户的一些尖锐问题。",
+    "the team is bracing for a sharp increase in support tickets once the update goes live.": "更新上线后，团队正在准备迎接支持工单的明显增加。",
+    "brace yourself - mom found the receipt, and she definitely knows we broke the lamp.": "做好心理准备，妈妈发现收据了，她肯定知道灯是我们弄坏的。",
+    "she braced herself against the wall as the train suddenly lurched forward.": "火车突然往前一晃，她用身体抵住墙稳住自己。",
+    "everyone is bracing for rent increases like we all haven't been doing that for three years.": "大家都在准备迎接房租上涨，好像我们这三年不是一直在这样过一样。",
+    "we saw a surge in sign-ups after the pricing page was redesigned last week.": "上周价格页改版后，我们看到注册量突然大幅上升。",
+    "the server couldn't handle the traffic surge during the product launch.": "产品发布期间流量猛增，服务器扛不住了。",
+    "i felt a sudden surge of anger when he said that.": "他说那句话时，我突然涌上一股怒气。",
+    "hospitals are preparing for a possible surge in flu cases this winter.": "医院正在为今年冬天流感病例可能激增做准备。",
+    "that random surge of motivation at 1am always convinces me i can fix my whole life.": "凌晨一点突然涌上来的动力，总让我觉得自己能把整个人生都修好。",
+    "could you verify the figures in the report before we send it to the client?": "发给客户之前，你能把报告里的数字核实一下吗？",
+    "i'm not booking the hotel until i verify that the address is actually near the station.": "在我确认地址真的离车站近之前，我不会订这家酒店。",
+    "you have to verify your email before the account lets you post anything.": "你得先验证邮箱，这个账号才会允许你发内容。",
+    "i cringed a little when the client read our slogan out loud in the meeting.": "客户在会上把我们的标语念出来时，我有点尴尬到想缩一下。",
+    "i couldn't finish the video. the guy was trying so hard, it got cringey fast.": "那个视频我看不完。他太用力了，很快就变得尴尬得让人不适。",
+    "this whole \"founder mindset\" post is pure cringe and i need everyone to stop sharing it.": "这整篇“创始人心态”的帖子太尴尬了，我真的希望大家别再转了。",
+    "everything he posts on social media seems so cringe.": "他在社交媒体上发的每个东西都显得很尴尬。",
+    "when you're watching the show you constantly think \"this is cringe,\" but it's completely addictive!": "你看这个节目时会一直想“这也太尴尬了”，但它又让人完全停不下来。",
+    "we need to probe why users drop off after signup, not just assume the form is too long.": "我们需要深入查一下用户为什么注册后流失，而不是直接假设表单太长。",
+    "regulators are probing whether the company misled investors about the risks in its financial products.": "监管机构正在调查这家公司是否在金融产品风险上误导了投资者。",
+    "i didn't want to probe, but he seemed upset and kept avoiding the topic.": "我本来不想追问，但他看起来很难过，而且一直回避这个话题。",
+    "people keep probing celebrities' private lives and then act shocked when they push back.": "人们不停窥探名人的私生活，等对方反击时又装作很震惊。",
+    "we're still dealing with the fallout from last week's pricing error, especially among our enterprise clients.": "我们还在处理上周定价错误带来的后续影响，尤其是在企业客户那边。",
+    "the political fallout from the decision continued for months, even after the policy was revised.": "即使政策后来被修改，这个决定造成的政治余波仍持续了好几个月。",
+    "after their breakup, the whole friend group somehow got pulled into the fallout.": "他们分手之后，不知怎么整个朋友圈都被卷进了后续影响里。",
+    "the fallout from this launch is going to be messier than the launch itself.": "这次发布之后的烂摊子，可能会比发布本身还难处理。",
+    "the model handled simple questions well, but it still produced hallucinations when asked for legal citations.": "这个模型处理简单问题还不错，但一让它提供法律引用，它还是会编出不存在的内容。",
+    "after several nights without sleep, he reported auditory hallucinations and was advised to seek medical evaluation.": "连续几晚没睡后，他说自己出现了幻听，于是被建议去做医学评估。",
+    "i thought i heard my phone ring, but maybe it was just a tiny sleep-deprived hallucination.": "我以为听见手机响了，但可能只是睡眠不足带来的小幻觉。",
+    "asked the chatbot for sources and it gave me three totally fake papers. classic hallucination behavior.": "我让聊天机器人给出处，它给了我三篇完全不存在的论文。典型 hallucination。",
+    "the program gives new analysts a solid grounding in the tools before they work with clients.": "这个项目会先让新分析师扎实掌握工具，再让他们接触客户。",
+    "when i feel anxious, walking outside without my phone is weirdly grounding for me.": "我焦虑的时候，不带手机出去走走，反而会让我莫名地安定下来。",
+    "try a simple grounding exercise: name five things you can see, four things you can feel, three things you can hear, two things you can smell, and one thing you can taste.": "试一个简单的 grounding 练习：说出五个你看得见的东西、四个摸得到的东西、三个听得到的声音、两个闻得到的气味和一个尝得到的味道。",
+    "there's something grounding about cooking dinner after staring at screens all day.": "盯了一整天屏幕后，做一顿晚饭会让人有种重新落回现实的安定感。",
+    "i know i'm being delulu, but the way he smiled at me felt oddly specific.": "我知道我有点 delulu，但他对我笑的那个方式真的微妙得像是有什么意思。",
+    "you're a little delulu if you think that \"maybe later\" text means he's planning something romantic.": "如果你觉得那句“以后再说”是在暗示他要准备什么浪漫安排，那你有点 delulu。",
+    "me applying to one job and already imagining my first-day outfit, delulu era fully activated.": "我才投了一个工作，就已经开始想第一天穿什么了，delulu 模式完全启动。",
+    "she liked one story and now i'm delulu again, this is not a safe environment.": "她给我一条 story 点了赞，我又开始 delulu 了，这环境太不安全了。",
+    "i watched three hours of random tiktoks last night, and now my brain feels like complete brain rot.": "我昨晚刷了三个小时乱七八糟的 TikTok，现在感觉脑子彻底被腌坏了。",
+    "he quotes memes in every conversation now. i think the brain rot has fully taken over.": "他现在每次聊天都在引用 meme。我觉得 brain rot 已经完全接管他了。",
+    "this show is pure brain rot but i cannot stop watching it.": "这个节目纯纯 brain rot，但我就是停不下来。",
+    "my entire feed is brain rot and somehow the algorithm knows i want more.": "我的整个信息流都是 brain rot，更离谱的是算法还知道我想继续看。",
+    "this api is deprecated and will be removed in a future release, so please migrate to the new endpoint.": "这个 API 已被标记为不推荐使用，并会在未来版本中移除，请迁移到新的端点。",
+    "the committee formally deprecated the old reporting practice because it encouraged teams to hide early risks.": "委员会正式不再推荐旧的汇报做法，因为它会鼓励团队隐藏早期风险。",
+    "he has this dry, self-deprecating humor that makes people relax around him quickly.": "他有一种干干的自嘲式幽默，很快就能让身边的人放松下来。",
+    "her self-deprecating captions are funny, but sometimes i wonder if she actually believes them.": "她那些自嘲式配文挺好笑，但有时我会想，她是不是其实真的相信那些话。",
+    "maya orchestrated the rollout across product, sales, and support, so customers heard one clear message.": "Maya 协调了产品、销售和客服三个团队的上线节奏，所以客户听到的是一个清晰统一的信息。",
+    "officials believe the protests were orchestrated by groups with a broader political agenda.": "官员认为这些抗议是由带有更大政治目的的组织策划的。",
+    "somehow he orchestrated the whole surprise dinner without his wife noticing anything.": "不知怎么，他把整场惊喜晚餐安排好了，而且他妻子一点都没察觉。",
+    "she really orchestrated an entire soft launch of that relationship and thought we wouldn't notice.": "她真的把这段关系搞成了一场完整的软启动，还以为我们看不出来。",
+    "we believe the market is reaching an inflection point, and our current pricing model may not hold.": "我们认为市场正在接近一个拐点，现在的定价模式可能撑不住了。",
+    "the company hit an inflection point last quarter as retention improved and acquisition costs started to fall.": "上个季度，随着留存改善、获客成本开始下降，公司到了一个关键转折点。",
+    "moving abroad was an inflection point for me; i stopped treating work as my whole identity.": "搬到国外对我来说是一个人生拐点；我不再把工作当成自己的全部身份。",
+    "ai feels like an inflection point for every job that used to feel safe from automation.": "对那些曾经觉得不会被自动化影响的工作来说，AI 像是一个拐点。",
+    "there is an accountability gap when automated decisions affect customers, but no team owns the final outcome.": "当自动化决策影响客户，却没有任何团队对最终结果负责时，就出现了 accountability gap。",
+    "the new framework aims to close the accountability gap between platform operators, data providers, and regulators.": "这个新框架旨在弥合平台运营方、数据提供方和监管者之间的问责空白。",
+    "everyone keeps blaming \"the system,\" but that's exactly the accountability gap people are talking about.": "大家一直怪“系统”，但这正是人们所说的 accountability gap。",
+    "that old heater is such a clanker; it wakes me up every time the pipes start shaking.": "那台旧暖气真是个哐当作响的破机器；管道一开始震，它就把我吵醒。",
+    "we turned the corner and three clankers were already waiting behind the blast door.": "我们一转过拐角，三台哐当作响的机器已经在防爆门后等着了。",
+    "every comment under that post sounds generated. the clankers are getting way too comfortable here.": "那条帖子下面每条评论都像生成的。那些 clanker 在这儿也太自在了。",
+    "his reaction in the meeting felt a bit unhinged, especially when he started attacking people personally.": "他在会上的反应有点失控，尤其是开始进行人身攻击的时候。",
+    "she sent him twenty voice messages after one bad date. that's kind of unhinged.": "一次糟糕约会之后，她给他发了二十条语音。这有点失控了。",
+    "this plot twist is so unhinged and somehow it's the only reason i'm still watching.": "这个剧情反转太疯了，但不知怎么也正是我还在看的唯一原因。"
+  };
+  window.WORD_SENSE_EXAMPLE_TRANSLATIONS = exampleTranslations;
+  let activeHighlightTerms = highlightTermsByWord[normalizedWord] || [normalizedWord];
+
+  const wordEl = document.querySelector('.word');
+  const titleWord = normalizeDisplayWord(entry?.displayWord || requestedWord || 'concerning');
+  if (wordEl) wordEl.textContent = titleWord;
+  document.title = `Word Sense — ${titleWord}`;
+  setupSatoriActions(titleWord);
+
+  const context = document.querySelector('.word-context');
+  const quote = document.querySelector('.word-context-quote');
+  const sourceEl = document.querySelector('.word-context-source');
+
+  if (sentence && quote) {
+    quote.textContent = sentence;
+    if (sourceEl) sourceEl.textContent = source ? `—— ${source}` : '—— 你提供的原句';
+  } else if (context && normalizedWord !== 'concerning') {
+    context.style.display = 'none';
+  }
+
+  const metaItems = document.querySelectorAll('.header-meta-item');
+  const curatedNote = document.getElementById('curatedNote');
+  const generatedNote = document.getElementById('generatedNote');
+
+  if (entry) {
+    const isUserGenerated = (entry.meta || []).includes('用户搜索');
+    if (metaItems[0]) metaItems[0].textContent = entry.meta?.[0] || '本周词条';
+    if (metaItems[1]) metaItems[1].textContent = entry.meta?.[1] || 'WordSense';
+    const curatedReason = curatedReasons[normalizedWord];
+    if (curatedNote && curatedReason && (entry.meta || []).includes('本周精选')) {
+      curatedNote.innerHTML = `
+        <span class="curated-note-kicker">精选词条入选原因</span>
+        <span class="curated-note-text">${escapeHtml(curatedReason)}</span>
+      `;
+      curatedNote.classList.add('show');
+    }
+    if (generatedNote && isUserGenerated) {
+      generatedNote.innerHTML = `
+        <span class="generated-note-kicker">你的生成词条</span>
+        <span class="generated-note-text">这条内容是根据你搜索的词生成并审校后的结果。你可以把完整 Markdown 留到自己的 Notion、飞书文档或本地文件里，之后继续改写、做笔记或分享。</span>
+        <span class="generated-note-actions">
+          <button type="button" class="generated-note-button" data-generated-copy>复制完整 Markdown</button>
+          <button type="button" class="generated-note-button" data-generated-download>下载 Markdown</button>
+          <span class="generated-note-status" id="generatedNoteStatus" aria-live="polite"></span>
+        </span>
+      `;
+      generatedNote.classList.add('show');
+      setupGeneratedNoteActions(titleWord, entry);
+    }
+
+    const split = splitSatori(entry.markdown);
+    const prose = document.querySelector('.prose');
+    if (prose) prose.innerHTML = markdownToHtml(split.prose, activeHighlightTerms);
+    renderVerification(entry.verification);
+
+    const satoriLabel = document.querySelector('.satori-label');
+    const satoriBody = document.querySelector('.satori-body');
+    if (satoriLabel) satoriLabel.textContent = '悟道时刻';
+    if (satoriBody) satoriBody.innerHTML = renderSatoriBody(split.satori || '', titleWord, activeHighlightTerms);
+    return;
+  }
+
+  if (normalizedWord === 'concerning') {
+    renderVerification(concerningVerification);
+    return;
+  }
+
+  const reviewParams = new URLSearchParams({ word: requestedWord });
+  if (source) reviewParams.set('source', source);
+  if (sentence) reviewParams.set('sentence', sentence);
+  const reviewPath = `word-sense-review.html?${reviewParams.toString()}`;
+
+  if (!params.get('static')) {
+    window.location.replace(
+      window.location.protocol.startsWith('http')
+        ? reviewPath
+        : `http://127.0.0.1:8787/${reviewPath}`
+    );
+    return;
+  }
+
+  renderVerification(null);
+
+  if (metaItems[0]) metaItems[0].textContent = '审校中';
+  if (metaItems[1]) metaItems[1].textContent = '正在整理词条';
+
+  const prose = document.querySelector('.prose');
+  if (prose) {
+    prose.innerHTML = `
+      <p><strong class="dim">正在审校</strong><span class="en">${escapeHtml(titleWord)}</span> 的 Word Sense 解读。</p>
+      <p>这个词条还在整理中。我们会先核对常见词义，再看词源、真实语境和容易误读的地方，最后写成一条完整的阅读路径。</p>
+      <p>完成后，这里会直接展示对应词条。你也可以先回到首页，换一个已经精选好的词慢慢看。</p>
+    `;
+  }
+
+  const satoriLabel = document.querySelector('.satori-label');
+  const satoriBody = document.querySelector('.satori-body');
+  if (satoriLabel) satoriLabel.textContent = '下一步';
+  if (satoriBody) {
+    satoriBody.innerHTML = `
+      <p>当 <span class="en">${escapeHtml(titleWord)}</span> 的终稿生成后，这里会展示它真正的「悟道时刻」。</p>
+      <p>现在先给它一点时间。一个好词条不是把中文释义搬过来，而是把这个词为什么这样用、在哪些场景里成立讲清楚。</p>
+    `;
+  }
+})();
+
+function escapeHtml(value) {
+  return value
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#039;');
+}
+
+function normalizeDisplayWord(value) {
+  const raw = String(value || '').trim();
+  if (!raw) return raw;
+  if (shouldPreserveCapitalization(raw)) return raw;
+  return raw.toLowerCase();
+}
+
+function shouldPreserveCapitalization(value) {
+  const trimmed = value.trim();
+  const fixedForms = new Set(['AI', 'API', 'US', 'UK', 'Gen Z', 'TikTok', 'Instagram', 'Slack', 'X']);
+  if (fixedForms.has(trimmed)) return true;
+  if (/^[A-Z]{2,}(?:[-\s][A-Z0-9]{2,})*$/.test(trimmed)) return true;
+  if (/\b(?:AI|API|Gen Z|TikTok|Instagram|Slack|X)\b/.test(trimmed)) return true;
+  return false;
+}
+
+function renderVerification(verification) {
+  const section = document.getElementById('verificationSection');
+  if (!section) return;
+
+  if (!verification) {
+    section.classList.remove('show');
+    section.innerHTML = '';
+    return;
+  }
+
+  const sources = verification.sources || [];
+
+  section.innerHTML = `
+    <div class="verification-kicker">内容依据</div>
+    <div class="verification-title">这篇解读参考了词典、词源资料和真实语境来源。下面是本条主要依据。</div>
+    ${sources.length ? `
+      <div class="verification-sources">
+        ${sources.map(source => `<span class="verification-source" title="${escapeHtml(source.url)}">${escapeHtml(source.label)}</span>`).join('')}
+      </div>
+    ` : ''}
+  `;
+  section.classList.add('show');
+}
+
+function setupSatoriActions(word) {
+  const saveButton = document.getElementById('saveWordButton');
+  const shareButton = document.getElementById('shareWordButton');
+  const status = document.getElementById('satoriStatus');
+  const feedback = document.getElementById('actionFeedback');
+  const shareText = buildShareText(word, 'direct');
+
+  if (saveButton) {
+    saveButton.addEventListener('click', async () => {
+      const noteText = buildNoteText(word);
+      try {
+        const saved = JSON.parse(localStorage.getItem('wordsense_saved_words') || '[]');
+        if (!saved.includes(word)) saved.unshift(word);
+        localStorage.setItem('wordsense_saved_words', JSON.stringify(saved.slice(0, 50)));
+        await navigator.clipboard.writeText(noteText);
+        if (saveButton) saveButton.textContent = '已复制笔记';
+        showSatoriPanel('saved', word, noteText, 'direct', 'save');
+      } catch(e) {
+        showSatoriPanel('saved-fallback', word, noteText, 'direct', 'save');
+      }
+    });
+  }
+
+  if (shareButton) {
+    shareButton.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(shareText);
+        showSatoriPanel('shared', word, shareText, 'direct', 'share');
+      } catch(e) {
+        showSatoriPanel('share-fallback', word, shareText, 'direct', 'share');
+      }
+    });
+  }
+
+  if (status) {
+    status.addEventListener('click', async event => {
+      if (event.target.closest('[data-bubble-close]')) {
+        const followup = document.querySelector('.action-followup');
+        status.classList.remove('show');
+        status.innerHTML = '';
+        if (followup) {
+          followup.classList.remove('show');
+          followup.removeAttribute('data-source');
+        }
+        if (feedback) {
+          feedback.classList.remove('show');
+          feedback.innerHTML = '';
+        }
+        return;
+      }
+
+      const button = event.target.closest('[data-share-style]');
+      if (!button) return;
+
+      const style = button.dataset.shareStyle || 'direct';
+      const text = buildShareText(word, style);
+      try {
+        await navigator.clipboard.writeText(text);
+        showSatoriPanel('shared', word, text, style, 'share');
+      } catch(e) {
+        showSatoriPanel('share-fallback', word, text, style, 'share');
+      }
+    });
+  }
+}
+
+function setupGeneratedNoteActions(word, entry) {
+  const copyButton = document.querySelector('[data-generated-copy]');
+  const downloadButton = document.querySelector('[data-generated-download]');
+  const status = document.getElementById('generatedNoteStatus');
+  const markdown = buildGeneratedMarkdown(word, entry);
+
+  copyButton?.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(markdown);
+      if (status) status.textContent = '已复制。可以直接粘到 Notion、飞书文档或备忘录。';
+    } catch(e) {
+      if (status) status.textContent = '浏览器拦截了复制。可以用下方“下载 Markdown”保存。';
+    }
+  });
+
+  downloadButton?.addEventListener('click', () => {
+    const blob = new Blob([markdown], { type: 'text/markdown;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `${slugifyWord(word)}-wordsense.md`;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    if (status) status.textContent = 'Markdown 文件已开始下载。';
+  });
+}
+
+function buildGeneratedMarkdown(word, entry) {
+  const url = window.location.href;
+  const markdown = entry?.markdown || '';
+  const verification = entry?.verification;
+  const sources = verification?.sources || [];
+  const sourceText = sources.length
+    ? sources.map(source => `- ${source.label}${source.url ? `：${source.url}` : ''}`).join('\n')
+    : '- 本条词条暂未展示外部来源。';
+
+  return `# ${word} | WordSense\n\n> 这是我用 WordSense 生成并审校过的一条英文词条。\n\n## 完整词条\n\n${markdown}\n\n## 内容依据\n\n${sourceText}\n\n## 回看入口\n${url}\n\n## 我的记录\n- 我想记住的语感：\n- 我遇到过的例句：\n- 下次可以留意的场景：\n`;
+}
+
+function slugifyWord(word) {
+  return String(word || 'word')
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '') || 'word';
+}
+
+function showSatoriPanel(type, word, shareText, activeStyle = 'direct', source = 'share') {
+  const status = document.getElementById('satoriStatus');
+  const feedback = document.getElementById('actionFeedback');
+  const followup = document.querySelector('.action-followup');
+  if (!status) return;
+  const isLocalShare = window.location.protocol === 'file:';
+  const shareStyleLabels = {
+    direct: '发给朋友',
+    social: '发朋友圈/动态',
+    work: '发工作群'
+  };
+  const showVariants = type === 'shared' || type === 'share-fallback';
+
+  const panels = {
+    saved: {
+      title: `笔记内容已复制`,
+      text: `已经为「${word}」整理了一段适合放进 Notion、飞书文档、备忘录或其他个人知识库的笔记。`,
+      next: '下一步：打开你的笔记工具，新建一页或粘到已有英语学习笔记里。'
+    },
+    'saved-fallback': {
+      title: '笔记内容已准备好',
+      text: '浏览器可能拦截了自动复制。你可以手动选中下面这段内容，放进 Notion、飞书文档或备忘录。',
+      next: '下一步：选中文案，复制到你的个人笔记工具里。'
+    },
+    shared: {
+      title: '分享文案已复制',
+      text: '你复制的不只是链接，而是一段适合发给朋友或发到社交平台的简介。',
+      next: isLocalShare
+        ? '下一步：这是本地预览链接，只能在这台电脑上打开；正式发布后，同样的位置会复制可直接发给朋友的网页链接。'
+        : '下一步：打开微信、飞书、朋友圈或任何你想分享的地方，直接粘贴。'
+    },
+    'share-fallback': {
+      title: '复制可能被浏览器拦截了',
+      text: '你可以手动选中下面这段分享文案复制出去。',
+      next: '下一步：选中文案，复制到你想分享的平台。'
+    }
+  };
+
+  const panel = panels[type];
+  if (followup) {
+    followup.classList.add('show');
+    followup.dataset.source = source;
+  }
+  if (feedback) {
+    feedback.classList.add('show');
+    feedback.innerHTML = `<div class="action-feedback-note"><strong>${escapeHtml(panel.title)}</strong>，详情已展开在下方。</div>`;
+  }
+  status.classList.add('show');
+  status.innerHTML = `
+    <div class="action-detail-panel">
+      <button type="button" class="bubble-close" data-bubble-close aria-label="关闭提示">×</button>
+      <div class="satori-panel-title">${escapeHtml(panel.title)}</div>
+      <div class="satori-panel-text">${escapeHtml(panel.text)}</div>
+      <div class="satori-panel-copy">${escapeHtml(shareText).replaceAll('\n', '<br>')}</div>
+      ${showVariants ? `
+        <div class="share-variants" aria-label="选择分享文案样式">
+          ${Object.entries(shareStyleLabels).map(([style, label]) => `
+            <button type="button" class="share-variant${style === activeStyle ? ' active' : ''}" data-share-style="${style}">
+              ${escapeHtml(label)}
+            </button>
+          `).join('')}
+        </div>
+      ` : ''}
+      <div class="satori-panel-next">${escapeHtml(panel.next)}</div>
+    </div>
+  `;
+}
+
+function buildShareText(word, style = 'direct') {
+  const url = window.location.href;
+  const templates = {
+    direct: `我刚在 WordSense 里看了「${word}」这个词。\n它不是只给中文释义，而是从字面、质感、来路、用法和英文原生思维里重新理解一个词。\n${url}`,
+    social: `今天重新认识了一个词：「${word}」。\nWordSense 不是让你多背一个中文释义，而是把这个词的字面、质感、来路、用法和英文原生思维连起来看。\n${url}`,
+    work: `分享一个 WordSense 词条：「${word}」。\n它把一个英文词拆成字面含义、本体质感、寻根溯源、各路用法、原生思维和悟道时刻，适合一起校准语感。\n${url}`
+  };
+
+  return templates[style] || templates.direct;
+}
+
+function buildNoteText(word) {
+  const url = window.location.href;
+  const summary = document.querySelector('.satori-summary-text')?.textContent.trim()
+    || renderSatoriSummary(word).replace(/<[^>]+>/g, '').trim();
+
+  return `# ${word} | WordSense\n\n## 我最近刚领悟了这个词的 sense\n${summary}\n\n## 回看入口\n${url}\n\n## 我的记录\n- 我想记住的语感：\n- 我遇到过的例句：\n- 下次可以留意的场景：`;
+}
+
+function renderSatoriBody(markdown, word, highlightTerms = []) {
+  const body = markdownToHtml(markdown, highlightTerms);
+  return `${renderSatoriSummary(word)}${body}`;
+}
+
+function renderSatoriSummary(word) {
+  const summaries = {
+    'lowkey': 'lowkey 不是“低调地做某事”，而是在把真实想法放出来一点，同时又不把话说满。',
+    'agentic': 'agentic 不是普通的“主动”，而是在说一个人或系统把自己放在行动者的位置上。',
+    'reframe': 'reframe 不是换个好听说法，而是把同一件事放进另一个理解框架里。',
+    'sentiment': 'sentiment 不是纯情绪，也不是冷观点，而是带着情感温度的态度倾向。',
+    'backdrop': 'backdrop 不是普通背景，而是一块影响你怎么看前景事件的“后景布”。',
+    "it's giving": "it's giving 不是 give 的新意思，而是在给一种气质、氛围或人设快速命名。",
+    'resilience': 'resilience 不是被动忍耐，而是经历冲击之后还能恢复、调整并重新站稳的能力。',
+    'unfold': 'unfold 不是普通“发生”，而是把事件看成一个在时间里逐层显露的过程。',
+    'brace': 'brace 不是普通准备，而是身体先绷住，准备承受即将到来的冲击。',
+    'surge': 'surge 不是一般增加，而是一股像浪一样突然涌起、会形成压力的力量。',
+    'verify': 'verify 不是随口确认，而是把说法、身份或数据拿到证据面前核对。',
+    'cringe': 'cringe 不是简单尴尬，而是身体本能想往后缩的那种不适反应。',
+    'probe': 'probe 不是泛泛调查，而是像探针一样谨慎地往深处试探。',
+    'fallout': 'fallout 不是普通后果，而是事件之后仍会持续落下、扩散的余波。',
+    'hallucination': 'hallucination 在 AI 语境里不是普通错误，而是生成了看似真实却没有依据的内容。',
+    'grounding': 'grounding 不是抽象的“基于事实”，而是把输出重新拴回来源、上下文和证据。',
+    'delulu': 'delulu 不是严肃妄想，而是明知不现实、仍带着自嘲保留希望的上头状态。',
+    'brain rot': 'brain rot 不是骂人脑残，而是对低营养内容消费的一种自觉自嘲。',
+    'deprecate': 'deprecate 不是立刻废弃，而是温和地告诉你：不再推荐，准备迁移。',
+    'orchestrate': 'orchestrate 不是普通协调，而是像指挥一样让多个独立部分协同演奏。',
+    'inflection point': 'inflection point 不是已经完成的转折，而是趋势正在改变方向、质变将至的时刻。',
+    'accountability gap': 'accountability gap 指的是后果已经出现，但责任链断开、没人真正能被追责的空白。',
+    'clanker': 'clanker 不是中性机器人称呼，而是带机械感和轻蔑感的反 AI 俚语。',
+    'unhinged': 'unhinged 不是普通离谱，而是像门脱了铰链一样，原本的约束轴不在了。'
+  };
+  const summary = summaries[word.toLowerCase()] || '这个词的价值不只在释义，而在它背后那套可复用的理解方式。';
+
+  return `
+    <div class="satori-summary">
+      <div class="satori-summary-kicker">你刚刚看见了</div>
+      <div class="satori-summary-text">${escapeHtml(summary)}</div>
+    </div>
+  `;
+}
+
+function splitSatori(markdown) {
+  const match = markdown.match(/\*\*\[?悟道时刻\]?\*\*/);
+  if (!match) return { prose: markdown, satori: '' };
+
+  const marker = match[0];
+  const index = match.index;
+  const prose = markdown.slice(0, index).trim();
+  const satori = markdown
+    .slice(index + marker.length)
+    .replace(/^\s*·\s*/, '')
+    .trim();
+
+  return { prose, satori };
+}
+
+function markdownToHtml(markdown, highlightTerms = []) {
+  const blocks = markdown.trim().split(/\n{2,}/).filter(Boolean);
+  const rendered = [];
+  let currentLayer = null;
+
+  blocks.forEach(block => {
+    const match = block.match(/^\*\*\[?(字面含义|本体质感|寻根溯源|各路用法|英汉分野|原生思维|悟道时刻)\]?\*\*\s*·\s*/);
+
+    if (match) {
+      if (currentLayer) rendered.push(renderLayer(currentLayer, highlightTerms));
+      currentLayer = {
+        label: match[1] === '英汉分野' ? '原生思维' : match[1],
+        blocks: [block.replace(match[0], '')]
+      };
+      return;
+    }
+
+    if (currentLayer) {
+      currentLayer.blocks.push(block);
+    } else {
+      rendered.push(blockToHtml(block, highlightTerms));
+    }
+  });
+
+  if (currentLayer) rendered.push(renderLayer(currentLayer, highlightTerms));
+  return rendered.join('\n');
+}
+
+function renderLayer(layer, highlightTerms = []) {
+  const body = renderLayerBlocks(layer.blocks, highlightTerms, layer.label === '各路用法');
+  return `<section class="prose-layer"><div class="prose-layer-label">${escapeHtml(layer.label)}</div>${body}</section>`;
+}
+
+function renderLayerBlocks(blocks, highlightTerms = [], isUsageLayer = false) {
+  const rendered = [];
+  const cleanBlocks = blocks.filter(block => block.trim());
+
+  for (let i = 0; i < cleanBlocks.length; i += 1) {
+    const block = cleanBlocks[i];
+    const next = cleanBlocks[i + 1];
+    const afterNext = cleanBlocks[i + 2];
+
+    if (isUsageLayer && isScenarioLabelBlock(block) && next && isQuoteExampleBlock(next)) {
+      const label = stripBoldLabel(block);
+      const parsedExample = parseQuoteExample(next.split('\n').map(line => line.replace(/^\s*>\s?/, '')));
+      const followingNote = afterNext && isChineseNoteBlock(afterNext) && !isScenarioLabelBlock(afterNext) ? afterNext : '';
+      rendered.push(renderExampleCard(label, parsedExample.english, highlightTerms, followingNote, parsedExample.direct));
+      i += followingNote ? 2 : 1;
+      continue;
+    }
+
+    rendered.push(blockToHtml(block, highlightTerms, isUsageLayer));
+  }
+
+  return rendered.join('\n');
+}
+
+function blockToHtml(block, highlightTerms = [], isUsageLayer = false) {
+  const lines = block.split('\n');
+
+  if (isUsageLayer && isScenarioQuoteBlock(lines)) {
+    const label = stripBoldLabel(lines[0]);
+    const parsedExample = parseQuoteExample(lines.slice(1).map(line => line.replace(/^\s*>\s?/, '')));
+    return renderExampleCard(label, parsedExample.english, highlightTerms, '', parsedExample.direct);
+  }
+
+  if (lines.every(line => line.trim().startsWith('>'))) {
+    const quoteLines = lines.map(line => line.replace(/^\s*>\s?/, ''));
+
+    if (isUsageLayer && isLabeledEnglishExample(quoteLines)) {
+      const label = stripBoldLabel(quoteLines[0]);
+      const parsedExample = parseQuoteExample(quoteLines.slice(1));
+      return renderExampleCard(label, parsedExample.english, highlightTerms, '', parsedExample.direct);
+    }
+
+    if (isUsageLayer && isExampleQuote(quoteLines)) {
+      const english = normalizeEnglishExample(quoteLines[0] || '');
+      const chinese = quoteLines.slice(1).join('<br>');
+      return `
+        <div class="example">
+          <div class="example-label">口语 / 社媒例句</div>
+          <div class="example-body">
+            <p class="example-text">${highlightEnglishTerms(inlineMarkdown(english), highlightTerms)}</p>
+            <p class="example-direct-translation">${inlineMarkdown(chinese)}</p>
+          </div>
+        </div>
+      `;
+    }
+
+    const quote = normalizeEnglishPunctuation(quoteLines.join('\n'));
+    const quoteHtml = inlineMarkdown(quote).replaceAll('\n', '<br>');
+    const quoteTranslation = getExampleTranslation(quote);
+    if (isUsageLayer && quoteTranslation.direct) {
+      return `
+        <div class="example">
+          <div class="example-body">
+            <p class="example-text">${highlightEnglishTerms(quoteHtml, highlightTerms)}</p>
+            <p class="example-direct-translation">${escapeHtml(quoteTranslation.direct)}</p>
+          </div>
+          ${quoteTranslation.note ? `<p class="example-translation">${escapeHtml(quoteTranslation.note)}</p>` : ''}
+        </div>
+      `;
+    }
+    return `<blockquote>${highlightEnglishTerms(quoteHtml, highlightTerms)}</blockquote>`;
+  }
+
+  if (lines.every(line => /^\s*-\s+/.test(line))) {
+    const items = lines
+      .map(line => line.replace(/^\s*-\s+/, ''))
+      .map(line => `<li>${inlineMarkdown(line)}</li>`)
+      .join('');
+    return `<ul>${items}</ul>`;
+  }
+
+  return `<p>${inlineMarkdown(block).replaceAll('\n', '<br>')}</p>`;
+}
+
+function isExampleQuote(lines) {
+  if (lines.length < 2 || lines.length > 3) return false;
+  const first = lines[0].trim();
+  const rest = lines.slice(1).join('').trim();
+  return /[A-Za-z]/.test(first) && /[\u4e00-\u9fff]/.test(rest);
+}
+
+function isLabeledEnglishExample(lines) {
+  if (lines.length < 2 || lines.length > 4) return false;
+  const label = lines[0].trim();
+  const firstQuoteLine = lines.slice(1).find(line => line.trim());
+  return /^\*\*[^*]+\*\*$/.test(label) && isEnglishDominant(firstQuoteLine || '');
+}
+
+function isScenarioLabelBlock(block) {
+  const trimmed = block.trim();
+  return (
+    (/^\s*\*\*[^*]+\*\*\s*$/.test(trimmed) && /[\u4e00-\u9fff]/.test(trimmed)) ||
+    (/^[\u4e00-\u9fffA-Za-z/，、\s]+[:：]?$/.test(trimmed) &&
+      /[\u4e00-\u9fff]/.test(trimmed) &&
+      trimmed.length <= 18 &&
+      !/[。！？；]/.test(trimmed))
+  );
+}
+
+function isScenarioQuoteBlock(lines) {
+  if (lines.length < 2) return false;
+  const label = lines[0].trim();
+  const quoteLines = lines.slice(1).filter(line => line.trim());
+  if (!/^\*\*[^*]+\*\*\s*$/.test(label) || !/[\u4e00-\u9fff]/.test(label)) return false;
+  if (!quoteLines.length || !quoteLines.every(line => line.trim().startsWith('>'))) return false;
+  const firstQuoteLine = quoteLines[0].replace(/^\s*>\s?/, '');
+  return isEnglishDominant(firstQuoteLine);
+}
+
+function isQuoteExampleBlock(block) {
+  const lines = block.split('\n');
+  if (!lines.every(line => line.trim().startsWith('>'))) return false;
+  const firstQuoteLine = lines.map(line => line.replace(/^\s*>\s?/, '')).find(line => line.trim()) || '';
+  return isEnglishDominant(firstQuoteLine);
+}
+
+function isChineseNoteBlock(block) {
+  const trimmed = block.trim();
+  return /[\u4e00-\u9fff]/.test(trimmed) && !trimmed.startsWith('**') && !trimmed.startsWith('>');
+}
+
+function stripBoldLabel(value) {
+  return value
+    .replace(/^\s*\*\*/, '')
+    .replace(/\*\*\s*$/, '')
+    .replace(/^\[|\]$/g, '')
+    .replace(/[:：]\s*$/, '')
+    .trim();
+}
+
+function parseQuoteExample(lines) {
+  const cleanLines = lines.map(line => line.trim()).filter(Boolean);
+  const englishLines = [];
+  const chineseLines = [];
+  cleanLines.forEach(line => {
+    if (!chineseLines.length && isEnglishDominant(line)) {
+      englishLines.push(line);
+    } else {
+      chineseLines.push(line);
+    }
+  });
+  return {
+    english: normalizeEnglishExample(englishLines.join(' ')),
+    direct: chineseLines.length ? chineseLines.join('<br>') : ''
+  };
+}
+
+function renderExampleCard(label, english, highlightTerms = [], noteOverride = '', directOverride = '') {
+  const translation = getExampleTranslation(english);
+  const direct = directOverride || (typeof translation === 'string' ? translation : translation.direct);
+  const note = noteOverride || (typeof translation === 'string' ? '' : translation.note);
+  return `
+    <div class="example">
+      <div class="example-label">${escapeHtml(label)}</div>
+      <div class="example-body">
+        <p class="example-text">${highlightEnglishTerms(inlineMarkdown(english), highlightTerms)}</p>
+        ${direct ? `<p class="example-direct-translation">${inlineMarkdown(direct)}</p>` : ''}
+      </div>
+      ${note ? `<p class="example-translation">${inlineMarkdown(note)}</p>` : ''}
+    </div>
+  `;
+}
+
+function inlineMarkdown(value) {
+  let html = escapeHtml(value);
+
+  html = html.replace(/`([^`]+)`/g, '<span class="en">$1</span>');
+  html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  html = html.replace(/\*([^*]+)\*/g, (match, text) => {
+    return /[A-Za-z]/.test(text) ? `<span class="en">${text}</span>` : `<em>${text}</em>`;
+  });
+
+  return html;
+}
+
+function normalizeEnglishPunctuation(value) {
+  if (!isEnglishDominant(value)) return value;
+
+  return value
+    .replaceAll('，', ', ')
+    .replaceAll('。', '.')
+    .replaceAll('？', '?')
+    .replaceAll('！', '!')
+    .replaceAll('；', '; ')
+    .replaceAll('：', ': ')
+    .replaceAll('（', '(')
+    .replaceAll('）', ')')
+    .replaceAll('“', '"')
+    .replaceAll('”', '"')
+    .replaceAll('‘', "'")
+    .replaceAll('’', "'");
+}
+
+function normalizeEnglishExample(value) {
+  let text = normalizeEnglishPunctuation(value).trim();
+  if (!isEnglishDominant(text)) return text;
+
+  text = text.replace(/^([a-z])/, match => match.toUpperCase());
+  text = text.replace(/([.!?]\s+)([a-z])/g, (match, prefix, letter) => `${prefix}${letter.toUpperCase()}`);
+  text = text.replace(/\bi\b/g, 'I');
+  if (!/[.!?]"?$/.test(text)) text += '.';
+  return text;
+}
+
+function getExampleTranslation(english) {
+  const translations = window.WORD_SENSE_EXAMPLE_TRANSLATIONS || {};
+  const key = normalizeExampleKey(english);
+  const value = translations[key];
+  if (!value) return { direct: '', note: '' };
+  return typeof value === 'string' ? { direct: value, note: '' } : value;
+}
+
+function normalizeExampleKey(value) {
+  return normalizeEnglishPunctuation(value)
+    .trim()
+    .replace(/\s+/g, ' ')
+    .replace(/[—–]/g, '-')
+    .replace(/[“”]/g, '"')
+    .replace(/[‘’]/g, "'")
+    .replace(/\bi\b/g, 'i')
+    .replace(/[.!?]$/g, match => match)
+    .toLowerCase();
+}
+
+function isEnglishDominant(value) {
+  const englishCount = (value.match(/[A-Za-z]/g) || []).length;
+  const chineseCount = (value.match(/[\u4e00-\u9fff]/g) || []).length;
+  return englishCount > 0 && englishCount >= chineseCount * 2;
+}
+
+function highlightEnglishTerms(html, terms = []) {
+  if (!terms.length) return html;
+
+  const uniqueTerms = [...new Set(terms.filter(Boolean))]
+    .sort((a, b) => b.length - a.length)
+    .map(escapeRegExp);
+  if (!uniqueTerms.length) return html;
+
+  const pattern = new RegExp(`(^|[^A-Za-z0-9-])(${uniqueTerms.join('|')})(?=$|[^A-Za-z0-9-])`, 'gi');
+
+  return html
+    .split(/(<[^>]+>)/g)
+    .map(part => {
+      if (part.startsWith('<')) return part;
+      return part.replace(pattern, (match, prefix, term) => `${prefix}<span class="en-hit">${term}</span>`);
+    })
+    .join('');
+}
+
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+</script>
+
+</body>
+</html>

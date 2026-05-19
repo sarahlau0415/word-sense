@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word Sense — 审校中</title>
+
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&f[]=switzer@400,500,600&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #1F1B16;
+  --ink-soft: #4A4036;
+  --ink-faint: #807466;
+  --ink-whisper: #C9BEAE;
+  --paper: #FBFAF6;
+  --paper-deep: #F2EFE7;
+  --paper-warm: #F5F1E7;
+  --rule: #E5DECF;
+  --accent: #A0522D;
+  --accent-deep: #5C2E1A;
+  --accent-soft: #A0522D1A;
+  --accent-medium: #A0522D2E;
+
+  --font-cn: "Noto Sans SC", -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-en-display: "Cabinet Grotesk", "Helvetica Neue", sans-serif;
+  --font-en-body: "Switzer", -apple-system, "Helvetica Neue", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 17px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-family: var(--font-cn);
+  font-weight: 400;
+  line-height: 1.78;
+  color: var(--ink);
+  background: var(--paper);
+  min-height: 100vh;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+.nav {
+  border-bottom: 1px solid var(--rule);
+  padding: 1.35rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.nav-brand {
+  font-family: var(--font-en-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav-brand .em { color: var(--accent); }
+
+.nav-link {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--ink-faint);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+}
+
+.nav-link:hover { color: var(--accent); }
+
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 5rem 2rem 5.5rem;
+}
+
+.review-shell {
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--accent);
+  background: var(--paper);
+  padding: 2.5rem;
+}
+
+.kicker {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.9rem;
+}
+
+.title {
+  font-family: var(--font-cn);
+  font-size: 1.45rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 0.35rem;
+}
+
+.word {
+  font-family: var(--font-en-display);
+  font-size: clamp(3.4rem, 9vw, 5.8rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+  color: var(--accent-deep);
+  margin: 0.6rem 0 1.25rem;
+}
+
+.intro {
+  max-width: 560px;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.working-dots {
+  display: inline-flex;
+  width: 1.25em;
+  color: var(--accent);
+}
+
+.working-dots span {
+  animation: dot-pulse 1.25s ease-in-out infinite;
+  opacity: 0.2;
+}
+
+.working-dots span:nth-child(2) { animation-delay: 0.18s; }
+.working-dots span:nth-child(3) { animation-delay: 0.36s; }
+
+.review-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.notify-button {
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  color: var(--ink-soft);
+  padding: 0.46rem 0.72rem;
+  font-family: var(--font-cn);
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
+}
+
+.notify-button:hover,
+.notify-button.active {
+  border-color: var(--accent);
+  color: var(--accent-deep);
+  background: var(--accent-soft);
+}
+
+.notify-button:disabled {
+  cursor: default;
+  opacity: 0.68;
+}
+
+.dictionary-note {
+  max-width: 560px;
+  margin: 1.05rem 0 0.9rem;
+  padding: 0.85rem 1rem;
+  background: var(--paper-deep);
+  border-left: 2px solid var(--accent);
+}
+
+.dictionary-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.32rem;
+}
+
+.dictionary-meaning {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.review-progress {
+  margin-top: 2.1rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+}
+
+.stage-list {
+  list-style: none;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.stage-item {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr;
+  gap: 0.75rem;
+  align-items: baseline;
+  color: var(--ink-faint);
+  transition: color 0.24s ease, transform 0.24s ease;
+}
+
+.stage-mark {
+  font-family: var(--font-mono);
+  color: var(--ink-whisper);
+  text-align: center;
+}
+
+.stage-title {
+  font-size: 0.95rem;
+  color: inherit;
+}
+
+.stage-detail {
+  display: block;
+  margin-top: 0.12rem;
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  line-height: 1.55;
+}
+
+.stage-item.done {
+  color: var(--ink-soft);
+}
+
+.stage-item.done .stage-mark {
+  color: var(--accent);
+}
+
+.stage-item.active {
+  color: var(--accent-deep);
+  transform: translateX(2px);
+}
+
+.stage-item.active .stage-mark {
+  color: var(--accent);
+  animation: active-mark-pulse 1.35s ease-in-out infinite;
+}
+
+.status-panel {
+  margin-top: 2rem;
+  background: var(--paper-deep);
+  border-left: 2px solid var(--accent);
+  padding: 1rem 1.1rem;
+  min-height: 5.2rem;
+}
+
+.status-title {
+  font-size: 0.9rem;
+  color: var(--accent-deep);
+  font-weight: 500;
+  margin-bottom: 0.35rem;
+}
+
+.status-copy {
+  font-size: 0.84rem;
+  color: var(--ink-soft);
+  line-height: 1.75;
+}
+
+.source-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 1rem;
+}
+
+.source-chip {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--rule);
+  background: rgba(255, 255, 255, 0.42);
+  padding: 0.32rem 0.48rem;
+}
+
+.complete-actions {
+  display: none;
+  margin-top: 1.4rem;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.complete-actions.show { display: flex; }
+
+.complete-actions.failed {
+  display: flex;
+}
+
+.action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--accent-medium);
+  color: var(--accent-deep);
+  text-decoration: none;
+  padding: 0.58rem 0.85rem;
+  font-size: 0.82rem;
+  background: var(--paper);
+  transition: background 0.18s ease, border-color 0.18s ease;
+}
+
+.action:hover {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
+
+.action.secondary {
+  border-color: var(--rule);
+  color: var(--ink-soft);
+}
+
+.failure-hint {
+  margin-top: 0.8rem;
+  font-size: 0.76rem;
+  line-height: 1.65;
+  color: var(--ink-faint);
+}
+
+.progress-line {
+  height: 2px;
+  background: var(--rule);
+  margin-top: 1.6rem;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 0%;
+  height: 100%;
+  background:
+    linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.34) 44%, transparent 78%),
+    var(--accent);
+  background-size: 140px 100%, auto;
+  transition: width 0.5s ease;
+  animation: progress-work 1.8s linear infinite;
+}
+
+@media (max-width: 720px) {
+  html { font-size: 16px; }
+  .nav { padding: 1rem 1.25rem; }
+  .container { padding: 3rem 1.25rem 4rem; }
+  .review-shell { padding: 1.55rem; }
+}
+
+@keyframes dot-pulse {
+  0%, 72%, 100% { opacity: 0.22; transform: translateY(0); }
+  28% { opacity: 1; transform: translateY(-1px); }
+}
+
+@keyframes active-mark-pulse {
+  0%, 100% { opacity: 0.45; transform: translateX(0); }
+  50% { opacity: 1; transform: translateX(2px); }
+}
+
+@keyframes progress-work {
+  from { background-position: -140px 0, 0 0; }
+  to { background-position: 140px 0, 0 0; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="word-sense-home_9.html" class="nav-brand">Word<span class="em">Sense</span></a>
+  <a href="word-sense-about.html" class="nav-link">about</a>
+</nav>
+
+<main class="container">
+  <section class="review-shell" aria-live="polite">
+    <div class="kicker">Editorial Review</div>
+    <h1 class="title">正在审校这个词条</h1>
+    <div class="word" id="reviewWord">resilience</div>
+    <div class="dictionary-note">
+      <span class="dictionary-label">词典释义</span>
+      <span class="dictionary-meaning" id="dictionaryMeaning">恢复力；韧性；复原能力。</span>
+    </div>
+    <p class="intro">WordSense 正在继续处理这个词条：我们会把它放回真实语境里审校、整理。这个过程可能需要一点时间<span class="working-dots" aria-hidden="true"><span>.</span><span>.</span><span>.</span></span></p>
+    <div class="review-tools">
+      <button class="notify-button" id="notifyButton" type="button">完成后提醒我</button>
+    </div>
+
+    <div class="review-progress">
+      <ol class="stage-list" id="stageList"></ol>
+      <div class="progress-line"><div class="progress-fill" id="progressFill"></div></div>
+
+      <div class="status-panel">
+        <div class="status-title" id="statusTitle">准备开始审校</div>
+        <div class="status-copy" id="statusCopy">我们会按词义、来路、语境和容易误读的地方逐层看这个词。</div>
+        <div class="source-row" id="sourceRow"></div>
+      </div>
+
+      <div class="complete-actions" id="completeActions">
+        <a class="action" id="resultLink" href="word-sense-result_10.html">立即打开词条</a>
+        <a class="action" href="word-sense-home_9.html#searchSection">换一个词</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const word = params.get('word') || 'resilience';
+const normalizedWord = word.trim() || 'resilience';
+const source = params.get('source') || '';
+const sentence = params.get('sentence') || '';
+const resultUrl = `word-sense-result_10.html?word=${encodeURIComponent(normalizedWord)}`;
+const apiBase = window.location.protocol.startsWith('http') ? window.location.origin : 'http://127.0.0.1:8787';
+const dictionaryMeanings = {
+  resilience: '恢复力；韧性；复原能力。',
+  unfold: '展开；逐渐显露；逐步发生。',
+  brace: '支撑；使做好准备；绷紧以应对冲击。',
+  surge: '激增；猛涨；涌动。',
+  verify: '核实；查证；确认。',
+  cringe: '畏缩；尴尬得不适；感到难为情。',
+  probe: '调查；探查；深入追问。',
+  fallout: '后果；余波；附带影响。',
+  hallucination: '幻觉；幻视；AI 语境中指无依据但像真的生成内容。',
+  grounding: '基础；接地；AI 语境中指把回答锚定到来源和上下文。',
+  delulu: '网络俚语，指带自嘲意味的“不切实际”或“上头”。',
+  'brain rot': '网络俚语，指被低质量内容占据后的精神状态。',
+  deprecate: '不赞成；反对；技术语境中指弃用、不推荐继续使用。',
+  orchestrate: '编排；协调；像指挥一样组织多个部分。',
+  'inflection point': '拐点；转折点；趋势开始改变方向的关键点。',
+  'accountability gap': '责任缺口；责任链断裂、难以追责的状态。',
+  clanker: '俚语，对机器人或 AI 的贬称。',
+  unhinged: '失控的；离谱的；不受正常边界约束的。',
+  sense: '感觉；意义；判断力；感官。'
+};
+
+const stages = [
+  {
+    title: '核对基础词义',
+    detail: '先确认这个词最稳定、最常见的意思。',
+    status: '先把地基打稳。',
+    copy: '我们正在核对这个词的基础词义，避免后面的解释建立在一个太松的中文对应上。',
+    sources: ['dictionary']
+  },
+  {
+    title: '追溯词源和来路',
+    detail: '看它最早的画面，以及后来怎么长出今天的用法。',
+    status: '正在看这个词从哪里来。',
+    copy: '一个词今天的语感，常常藏在它最初的画面和一路变化里。',
+    sources: ['etymology', 'dictionary']
+  },
+  {
+    title: '对照真实使用场景',
+    detail: '看它在新闻、社媒、职场或日常表达里如何出现。',
+    status: '正在把词放回真实英语里。',
+    copy: '同一个词在不同场景里，轻重、距离和姿态可能完全不一样。',
+    sources: ['news', 'social', 'corpus']
+  },
+  {
+    title: '检查容易误读的地方',
+    detail: '看中文直译、常见解释和真实语感之间哪里会错开。',
+    status: '正在检查容易误读的地方。',
+    copy: '这一步不是挑错，而是找到中文用户最容易错过的那一层 sense。',
+    sources: ['usage', 'translation']
+  },
+  {
+    title: '整理内容依据',
+    detail: '把主要来源和可展示的依据收束出来。',
+    status: '正在整理内容依据。',
+    copy: '最后呈现给你的不是一串原始查找记录，而是这篇词条主要参考了哪些可靠来源。',
+    sources: ['dictionary', 'etymology', 'usage']
+  },
+  {
+    title: '写成最终词条',
+    detail: '把审校后的内容整理成一篇可以读进去的解释。',
+    status: '正在写成最终词条。',
+    copy: '现在把查到的内容收束成一条清晰的阅读路径，让这个词从释义变成 sense。',
+    sources: []
+  }
+];
+
+const stageList = document.getElementById('stageList');
+const statusTitle = document.getElementById('statusTitle');
+const statusCopy = document.getElementById('statusCopy');
+const sourceRow = document.getElementById('sourceRow');
+const progressFill = document.getElementById('progressFill');
+const completeActions = document.getElementById('completeActions');
+const notifyButton = document.getElementById('notifyButton');
+const dictionaryMeaningEl = document.getElementById('dictionaryMeaning');
+let notifyEnabled = false;
+let notifyShown = false;
+let soundEnabled = false;
+let audioContext = null;
+
+document.getElementById('reviewWord').textContent = normalizedWord;
+document.getElementById('resultLink').href = resultUrl;
+setDictionaryMeaning(dictionaryMeanings[normalizedWord.toLowerCase()] || '正在读取常见中文释义。');
+loadDictionaryMeaning();
+
+if (!('Notification' in window)) {
+  notifyButton.disabled = true;
+  notifyButton.textContent = '当前浏览器不支持提醒';
+} else if (Notification.permission === 'granted') {
+  notifyEnabled = true;
+  notifyButton.classList.add('active');
+  notifyButton.textContent = '完成后会提醒你';
+}
+
+notifyButton.addEventListener('click', async () => {
+  if (!('Notification' in window)) return;
+
+  enableCompletionSound();
+
+  if (Notification.permission === 'granted') {
+    notifyEnabled = true;
+  } else if (Notification.permission !== 'denied') {
+    const permission = await Notification.requestPermission();
+    notifyEnabled = permission === 'granted';
+  }
+
+  if (notifyEnabled) {
+    notifyButton.classList.add('active');
+    notifyButton.textContent = '完成后会提醒你';
+  } else {
+    notifyButton.textContent = '提醒未开启';
+  }
+});
+
+function enableCompletionSound() {
+  soundEnabled = true;
+  try {
+    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+    if (!AudioCtx) return;
+    audioContext = audioContext || new AudioCtx();
+    if (audioContext.state === 'suspended') audioContext.resume();
+  } catch(e) {
+    soundEnabled = false;
+  }
+}
+
+stageList.innerHTML = stages.map((stage, index) => `
+  <li class="stage-item" data-index="${index}">
+    <span class="stage-mark">·</span>
+    <span>
+      <span class="stage-title">${stage.title}</span>
+      <span class="stage-detail">${stage.detail}</span>
+    </span>
+  </li>
+`).join('');
+
+function renderSources(sources) {
+  sourceRow.innerHTML = sources.map(source => `<span class="source-chip">${source}</span>`).join('');
+}
+
+function setDictionaryMeaning(meaning) {
+  dictionaryMeaningEl.textContent = meaning || '常见中文释义正在整理中。';
+}
+
+async function loadDictionaryMeaning() {
+  if (!window.location.protocol.startsWith('http')) return;
+
+  try {
+    const response = await fetch(`${apiBase}/api/dictionary?word=${encodeURIComponent(normalizedWord)}`);
+    if (!response.ok) return;
+    const data = await response.json();
+    if (data.dictionaryMeaning) setDictionaryMeaning(data.dictionaryMeaning);
+  } catch(e) {
+    // 释义只是等待页的快速锚点，失败时保留本地文案即可。
+  }
+}
+
+function setStage(activeIndex) {
+  const items = Array.from(document.querySelectorAll('.stage-item'));
+  items.forEach((item, index) => {
+    item.classList.toggle('done', index < activeIndex);
+    item.classList.toggle('active', index === activeIndex);
+    item.querySelector('.stage-mark').textContent = index < activeIndex ? '✓' : index === activeIndex ? '→' : '·';
+  });
+
+  const stage = stages[activeIndex];
+  statusTitle.textContent = stage.status;
+  statusCopy.textContent = stage.copy;
+  renderSources(stage.sources);
+  progressFill.style.width = `${Math.round(((activeIndex + 1) / stages.length) * 100)}%`;
+
+  if (activeIndex === stages.length - 1) {
+    return;
+  }
+}
+
+function finishReview(targetUrl = resultUrl) {
+  const items = Array.from(document.querySelectorAll('.stage-item'));
+  items.forEach(item => {
+    item.classList.add('done');
+    item.classList.remove('active');
+    item.querySelector('.stage-mark').textContent = '✓';
+  });
+  progressFill.style.width = '100%';
+  statusTitle.textContent = '审校完成';
+  statusCopy.textContent = '词条已经整理好，正在为你打开完整解读。';
+  document.title = `审校完成 — ${normalizedWord}`;
+  showCompletionNotice();
+  sourceRow.innerHTML = '';
+  completeActions.classList.add('show');
+  document.getElementById('resultLink').href = targetUrl;
+  setTimeout(() => {
+    window.location.href = targetUrl;
+  }, 1800);
+}
+
+function showCompletionNotice() {
+  if (notifyShown) return;
+  notifyShown = true;
+  playCompletionSound();
+
+  if (notifyEnabled && 'Notification' in window && Notification.permission === 'granted') {
+    new Notification('WordSense 词条已完成', {
+      body: `「${normalizedWord}」已经审校完成，正在打开完整解读。`
+    });
+  }
+}
+
+function playCompletionSound() {
+  if (!soundEnabled || !audioContext) return;
+
+  try {
+    const now = audioContext.currentTime;
+    const notes = [
+      { frequency: 523.25, start: 0, duration: 0.11 },
+      { frequency: 659.25, start: 0.12, duration: 0.13 },
+      { frequency: 783.99, start: 0.27, duration: 0.18 }
+    ];
+
+    notes.forEach(note => {
+      const oscillator = audioContext.createOscillator();
+      const gain = audioContext.createGain();
+      oscillator.type = 'sine';
+      oscillator.frequency.setValueAtTime(note.frequency, now + note.start);
+      gain.gain.setValueAtTime(0.0001, now + note.start);
+      gain.gain.exponentialRampToValueAtTime(0.075, now + note.start + 0.025);
+      gain.gain.exponentialRampToValueAtTime(0.0001, now + note.start + note.duration);
+      oscillator.connect(gain);
+      gain.connect(audioContext.destination);
+      oscillator.start(now + note.start);
+      oscillator.stop(now + note.start + note.duration + 0.02);
+    });
+  } catch(e) {
+    // Completion sound is optional; keep the review flow moving if audio fails.
+  }
+}
+
+function failReview(message, errorType = 'unknown') {
+  statusTitle.textContent = '这次没有完成';
+  statusCopy.textContent = normalizeFailureMessage(message, errorType);
+  const hints = {
+    missing_key: '如果你是第一次生成新词条，可以先回到首页，在搜索框下方填入 Sarah 给你的试用 key，或使用你自己的 key。',
+    invalid_key: '通常是 key 少复制了一段、前后多了空格，或者这个 key 不是当前服务商可用的 key。',
+    quota: '如果你用的是自己的 key，这通常需要去服务商后台看余额、限额或账单状态。',
+    model: '这通常不是你的词输入错了，而是这个 key 或服务商没有开放当前模型。',
+    network: '内容没有丢失；你可以等一会儿再试一次。',
+    unknown: '如果连续出现，可以把这个词和错误状态发给 Sarah。'
+  };
+  sourceRow.innerHTML = `<div class="failure-hint">${hints[errorType] || hints.unknown}</div>`;
+  completeActions.classList.add('show', 'failed');
+  completeActions.innerHTML = `
+    <a class="action" href="word-sense-home_9.html#searchSection">重新输入 key / 换一个词</a>
+    <a class="action secondary" href="word-sense-author.html">联系 Sarah</a>
+  `;
+}
+
+function normalizeFailureMessage(message, errorType = 'unknown') {
+  const raw = String(message || '').trim();
+  const lowered = raw.toLowerCase();
+  if (
+    errorType === 'missing_key' ||
+    lowered.includes('openai_api_key') ||
+    lowered.includes('.env') ||
+    raw.includes('环境变量') ||
+    raw.includes('没有找到')
+  ) {
+    return '这次生成没有可用的 API key。请回到首页重新输入 key，或联系 Sarah 获取试用 key。';
+  }
+  return raw || '词条处理没有完成。请检查网络或密钥后重试。';
+}
+
+function runDemoReview() {
+  setStage(0);
+  stages.slice(1).forEach((_, index) => {
+    setTimeout(() => {
+      const stageIndex = index + 1;
+      setStage(stageIndex);
+      if (stageIndex === stages.length - 1) {
+        setTimeout(() => finishReview(resultUrl), 1700);
+      }
+    }, 2200 * (index + 1));
+  });
+}
+
+async function startRealReview() {
+  try {
+    setStage(0);
+    let apiKey = '';
+    try {
+      apiKey = sessionStorage.getItem('wordsense_api_key') || '';
+    } catch(e) {}
+
+    const response = await fetch(`${apiBase}/api/jobs`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ word: normalizedWord, source, sentence, apiKey })
+    });
+
+    if (!response.ok) throw new Error('创建审校任务失败');
+    const job = await response.json();
+    if (job.dictionaryMeaning) setDictionaryMeaning(job.dictionaryMeaning);
+    pollJob(job.id);
+  } catch (error) {
+    failReview('暂时没能创建审校任务。请确认网络连接正常，或者稍后再试。', 'network');
+  }
+}
+
+async function pollJob(jobId) {
+  try {
+    const response = await fetch(`${apiBase}/api/jobs/${encodeURIComponent(jobId)}`);
+    if (!response.ok) throw new Error('读取审校状态失败');
+    const job = await response.json();
+    if (job.dictionaryMeaning) setDictionaryMeaning(job.dictionaryMeaning);
+    const index = Math.max(0, Math.min(stages.length - 1, Number(job.stageIndex || 0)));
+    setStage(index);
+    if (job.message) statusCopy.textContent = job.message;
+    if (job.stage) statusTitle.textContent = job.stage;
+
+    if (job.status === 'complete') {
+      const target = job.resultUrl || resultUrl;
+      finishReview(target);
+      return;
+    }
+
+    if (job.status === 'failed') {
+      failReview(job.error || job.message, job.errorType || 'unknown');
+      return;
+    }
+
+    setTimeout(() => pollJob(jobId), 1200);
+  } catch (error) {
+    failReview('暂时无法读取审校状态。请确认网络连接正常，或者稍后再试。', 'network');
+  }
+}
+
+if (window.location.protocol.startsWith('http') && params.get('demo') !== '1') {
+  startRealReview();
+} else {
+  runDemoReview();
+}
+</script>
+
+</body>
+</html>
