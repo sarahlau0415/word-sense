@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wordsense.sarahliu.fun/sitemap.xml
