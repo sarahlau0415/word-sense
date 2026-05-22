@@ -9,20 +9,21 @@ The page focuses on:
 - sense-specific explanations
 - examples across workplace, daily conversation, and social media contexts
 
-This is currently a serverless-ready prototype. The front end calls `/api/sense`, a small backend function that uses the OpenAI Responses API to generate Word Sense explanations. The built-in examples include `shot`, `pristine`, `sweet`, and `agency` as a fallback/demo path.
+The current public Word Sense site runs on a VPS at `wordsense.sarahliu.fun`. The old Netlify serverless prototype is no longer used.
 
 ## Preview Locally
 
 Open `index.html` directly in a browser to preview the static UI.
 
-Model generation requires a deployed serverless environment with `OPENAI_API_KEY` set. The local `file://` preview cannot call `/api/sense`.
+Model generation is handled by the VPS-backed Word Sense server, not by Netlify Functions.
 
 ## Environment Variables
 
-Set these in Vercel:
+Set these on the VPS/service environment:
 
 - `OPENAI_API_KEY`: required
-- `OPENAI_MODEL`: optional, defaults to `gpt-5.2`
+- `OPENAI_BASE_URL`: optional OpenAI-compatible endpoint
+- `OPENAI_MODEL`: optional
 
 ## Check Syntax
 
@@ -41,18 +42,9 @@ The folder `validation/` contains the operating project for testing Word Sense a
 
 The backend prompt in `lib/generate-sense.js` is aligned with the six-dimension Word Sense v2 structure: 字面、感觉、来历、用法、跟中文比、悟道时刻.
 
-## Publish With Netlify
+## Netlify status
 
-Use Netlify when you want friends to enter any word and receive generated results.
-
-1. Import this GitHub repository into Netlify.
-2. Leave the build command empty.
-3. Set the publish directory to `.` if Netlify asks.
-4. Add `OPENAI_API_KEY` in the Netlify project environment variables.
-5. Deploy.
-6. Share the Netlify URL.
-
-The file `netlify.toml` routes `/api/sense` to the Netlify function automatically.
+Netlify is no longer used for this product. The remaining `netlify.toml` exists only to skip accidental builds if an old Netlify site is still connected to this repository.
 
 ## Publish With Vercel
 
@@ -79,8 +71,7 @@ GitHub Pages is only useful for the UI preview unless `/api/sense` is hosted som
 
 - `index.html`: the full static UI
 - `api/sense.js`: Vercel serverless model endpoint
-- `netlify/functions/sense.js`: Netlify serverless model endpoint
 - `lib/generate-sense.js`: shared OpenAI generation logic
-- `netlify.toml`: Netlify routing and publish settings
+- `netlify.toml`: legacy Netlify build skip guard
 - `package.json`: project metadata and syntax check script
 - `README.md`: project overview and publishing notes
