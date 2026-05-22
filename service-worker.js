@@ -1,4 +1,4 @@
-const CACHE_NAME = 'wordsense-v1';
+const CACHE_NAME = 'wordsense-v2';
 const APP_SHELL = [
   '/',
   '/word-sense-home_9.html',
