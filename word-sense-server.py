@@ -73,6 +73,10 @@ def dictionary_meaning(word: str) -> str:
     return DICTIONARY_MEANINGS.get(word.strip().lower(), "常见中文释义正在整理中。")
 
 
+def contains_cjk(text: str) -> bool:
+    return bool(re.search(r"[\u3400-\u9FFF\uF900-\uFAFF]", text))
+
+
 def normalize_display_word(word: str) -> str:
     raw = word.strip()
     if not raw:
@@ -320,6 +324,12 @@ class Handler(BaseHTTPRequestHandler):
         if not word:
             self.send_json({"error": "word is required"}, status=400)
             return
+        if contains_cjk(word):
+            self.send_json({
+                "error": "目前 Word Sense 只支持英文词或英文短语。中文词条我们先不开放生成。",
+                "errorType": "invalid-word",
+            }, status=400)
+            return
         api_key = str(payload.get("apiKey") or "").strip()
 
         job_id = f"{int(now() * 1000)}-{workflow_mod.safe_word_dir(word).lower()}"
@@ -378,6 +388,12 @@ class Handler(BaseHTTPRequestHandler):
             word = str(query.get("word", [""])[0]).strip()
             if not word:
                 self.send_json({"error": "word is required"}, status=400)
+                return
+            if contains_cjk(word):
+                self.send_json({
+                    "error": "目前 Word Sense 只支持英文词或英文短语。中文词条我们先不开放生成。",
+                    "errorType": "invalid-word",
+                }, status=400)
                 return
             self.send_json({"word": word, "dictionaryMeaning": dictionary_meaning(word)})
             return

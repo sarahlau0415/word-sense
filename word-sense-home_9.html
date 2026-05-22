@@ -2944,6 +2944,10 @@ function bindDashboardInteractions() {
     }
   }
 
+  function containsChineseText(value) {
+    return /[\u3400-\u9FFF\uF900-\uFAFF]/.test(value);
+  }
+
   wordInput.addEventListener('focus', showCostNotice);
   wordInput.addEventListener('input', showCostNotice);
   apiKeyInput?.addEventListener('focus', showCostNotice);
@@ -2954,6 +2958,12 @@ function bindDashboardInteractions() {
 
     const word = wordInput.value.trim();
     if (!word) {
+      wordInput.focus();
+      return;
+    }
+    if (containsChineseText(word)) {
+      showCostNotice();
+      setKeyStatus('目前 Word Sense 只支持英文词或英文短语。中文词条我们先不开放生成。', 'error');
       wordInput.focus();
       return;
     }

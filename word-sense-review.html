@@ -417,6 +417,7 @@ const word = params.get('word') || 'resilience';
 const normalizedWord = word.trim() || 'resilience';
 const source = params.get('source') || '';
 const sentence = params.get('sentence') || '';
+const hasChineseSearchWord = /[\u3400-\u9FFF\uF900-\uFAFF]/.test(normalizedWord);
 const resultUrl = `word-sense-result_10.html?word=${encodeURIComponent(normalizedWord)}`;
 const apiBase = window.location.protocol.startsWith('http') ? window.location.origin : 'http://127.0.0.1:8787';
 const dictionaryMeanings = {
@@ -705,6 +706,10 @@ function runDemoReview() {
 
 async function startRealReview() {
   try {
+    if (hasChineseSearchWord) {
+      failReview('目前 Word Sense 只支持英文词或英文短语。中文词条我们先不开放生成。', 'invalid-word');
+      return;
+    }
     setStage(0);
     let apiKey = '';
     try {
