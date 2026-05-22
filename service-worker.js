@@ -1,11 +1,13 @@
-const CACHE_NAME = 'wordsense-v3';
+const CACHE_NAME = 'wordsense-v4';
 const APP_SHELL = [
   '/',
   '/word-sense-home_9.html',
   '/word-sense-about.html',
   '/word-sense-result_10.html',
   '/word-sense-review.html',
+  '/word-sense-metrics.html',
   '/word-sense-content.js',
+  '/word-sense-events.js',
   '/manifest.webmanifest',
   '/wordsense-icon.svg',
   '/wordsense-icon-192.png',

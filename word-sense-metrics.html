@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word Sense Metrics</title>
+<meta name="theme-color" content="#FBFAF6">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2">
+<link rel="shortcut icon" href="/favicon.ico?v=2">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&f[]=switzer@400,500,600&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #1F1B16;
+  --ink-soft: #4A4036;
+  --ink-faint: #807466;
+  --paper: #FBFAF6;
+  --paper-deep: #F2EFE7;
+  --rule: #E5DECF;
+  --accent: #A0522D;
+  --accent-deep: #5C2E1A;
+  --font-cn: "Noto Sans SC", -apple-system, "PingFang SC", sans-serif;
+  --font-en: "Switzer", -apple-system, "Helvetica Neue", sans-serif;
+  --font-display: "Cabinet Grotesk", "Helvetica Neue", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-cn);
+}
+.shell {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 56px 0 72px;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--rule);
+}
+.mark {
+  font-family: Georgia, serif;
+  color: var(--accent);
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 4.8rem);
+  letter-spacing: -0.045em;
+  color: var(--accent-deep);
+}
+.subtitle {
+  margin: 10px 0 0;
+  color: var(--ink-soft);
+  line-height: 1.8;
+}
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink-faint);
+  font-size: 0.88rem;
+}
+select,
+input,
+button {
+  border: 1px solid var(--rule);
+  background: rgba(255, 255, 255, 0.48);
+  color: var(--ink-soft);
+  font: inherit;
+  padding: 0.58rem 0.7rem;
+  border-radius: 4px;
+}
+button {
+  color: var(--accent-deep);
+  cursor: pointer;
+}
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 28px 0;
+}
+.summary-card {
+  background: var(--paper-deep);
+  border-left: 3px solid var(--accent);
+  padding: 18px 20px;
+}
+.summary-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.summary-value {
+  margin-top: 8px;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--accent-deep);
+}
+section {
+  margin-top: 34px;
+}
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 18px;
+  margin-bottom: 12px;
+}
+h2 {
+  margin: 0;
+  color: var(--accent-deep);
+  font-size: 1.15rem;
+}
+.hint {
+  color: var(--ink-faint);
+  font-size: 0.84rem;
+}
+.table-wrap {
+  overflow-x: auto;
+  border-top: 1px solid var(--rule);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 680px;
+}
+th,
+td {
+  padding: 13px 10px;
+  border-bottom: 1px solid var(--rule);
+  text-align: left;
+  vertical-align: top;
+  white-space: nowrap;
+}
+th {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 500;
+}
+td {
+  color: var(--ink-soft);
+}
+.num {
+  font-family: var(--font-mono);
+  color: var(--accent-deep);
+}
+.empty {
+  padding: 22px 0;
+  color: var(--ink-faint);
+}
+@media (max-width: 760px) {
+  .shell { width: min(100% - 28px, 1120px); padding-top: 34px; }
+  .top { display: block; }
+  .controls { justify-content: flex-start; margin-top: 20px; }
+  .summary { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<main class="shell">
+  <div class="top">
+    <div>
+      <div class="mark">§</div>
+      <h1>Metrics</h1>
+      <p class="subtitle">看 Word Sense 的数据漏斗、关键事件趋势和用户路径卡点。这里记录的是产品事件，不替代 GoAccess 的访问大盘。</p>
+    </div>
+    <form class="controls" id="metricsControls">
+      <label>窗口
+        <select id="daysSelect">
+          <option value="1">1 天</option>
+          <option value="7" selected>7 天</option>
+          <option value="14">14 天</option>
+          <option value="30">30 天</option>
+          <option value="90">90 天</option>
+        </select>
+      </label>
+      <label>从 <input type="date" id="startDate"></label>
+      <label>到 <input type="date" id="endDate"></label>
+      <button type="submit">更新</button>
+    </form>
+  </div>
+
+  <div class="summary">
+    <div class="summary-card">
+      <div class="summary-label">Events</div>
+      <div class="summary-value" id="eventsTotal">-</div>
+    </div>
+    <div class="summary-card">
+      <div class="summary-label">Sessions</div>
+      <div class="summary-value" id="sessionsTotal">-</div>
+    </div>
+    <div class="summary-card">
+      <div class="summary-label">Window</div>
+      <div class="summary-value" id="windowLabel">-</div>
+    </div>
+  </div>
+
+  <section>
+    <div class="section-head">
+      <h2>数据漏斗</h2>
+      <div class="hint">看用户从访问、阅读、搜索到留下关系的层层转化。</div>
+    </div>
+    <div class="table-wrap"><table id="funnelTable"></table></div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>关键事件趋势</h2>
+      <div class="hint">按天看关键动作有没有抬升，适合对照发文和传播动作。</div>
+    </div>
+    <div class="table-wrap"><table id="trendTable"></table></div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>用户路径卡点</h2>
+      <div class="hint">不是判断对错，而是提示下一轮产品优化该盯哪里。</div>
+    </div>
+    <div class="table-wrap"><table id="blockerTable"></table></div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>词条热度</h2>
+      <div class="hint">辅助判断哪些词更有传播力。</div>
+    </div>
+    <div class="table-wrap"><table id="wordTable"></table></div>
+  </section>
+</main>
+
+<script>
+const labels = {
+  home_view: '首页',
+  word_click: '点精选词',
+  result_view: '词条页',
+  search_submit: '搜索',
+  review_start: '审校开始',
+  generation_success: '生成成功',
+  generation_fail: '生成失败',
+  save_click: '保存',
+  share_click: '分享',
+  subscribe_success: '订阅成功',
+  install_click: '安装'
+};
+
+const trendKeys = ['home_view', 'word_click', 'result_view', 'search_submit', 'review_start', 'generation_success', 'generation_fail', 'save_click', 'share_click', 'subscribe_success', 'install_click'];
+
+function cell(value, className = '') {
+  return `<td class="${className}">${value ?? '-'}</td>`;
+}
+
+function head(items) {
+  return `<thead><tr>${items.map(item => `<th>${item}</th>`).join('')}</tr></thead>`;
+}
+
+function percent(value) {
+  return value === null || value === undefined ? '-' : `${value}%`;
+}
+
+function renderTable(table, headers, rows, emptyText = '这个时间窗口里还没有数据。') {
+  if (!rows.length) {
+    table.innerHTML = head(headers) + `<tbody><tr><td colspan="${headers.length}" class="empty">${emptyText}</td></tr></tbody>`;
+    return;
+  }
+  table.innerHTML = head(headers) + `<tbody>${rows.join('')}</tbody>`;
+}
+
+function dateText(timestamp) {
+  return new Date(timestamp * 1000).toLocaleDateString('zh-CN', { month: '2-digit', day: '2-digit' });
+}
+
+async function loadMetrics(params = '') {
+  const response = await fetch(`/api/metrics${params}`);
+  if (!response.ok) throw new Error('metrics failed');
+  return response.json();
+}
+
+function renderMetrics(data) {
+  document.getElementById('eventsTotal').textContent = data.totals.events;
+  document.getElementById('sessionsTotal').textContent = data.totals.uniqueSessions;
+  document.getElementById('windowLabel').textContent = `${dateText(data.window.start)}-${dateText(data.window.end)}`;
+
+  renderTable(
+    document.getElementById('funnelTable'),
+    ['步骤', '人数/次数', '相对上一层'],
+    data.funnel.map(row => `<tr>${cell(row.step)}${cell(row.count, 'num')}${cell(percent(row.rateFromPrevious), 'num')}</tr>`)
+  );
+
+  renderTable(
+    document.getElementById('trendTable'),
+    ['日期', ...trendKeys.map(key => labels[key])],
+    data.trend.map(row => `<tr>${cell(row.date)}${trendKeys.map(key => cell(row[key] || 0, 'num')).join('')}</tr>`)
+  );
+
+  renderTable(
+    document.getElementById('blockerTable'),
+    ['路径', '起点', '完成', '流失', '转化率', '观察点'],
+    data.blockers.map(row => `<tr>${cell(row.path)}${cell(row.start, 'num')}${cell(row.done, 'num')}${cell(row.drop, 'num')}${cell(percent(row.conversionRate), 'num')}${cell(row.watchArea)}</tr>`)
+  );
+
+  renderTable(
+    document.getElementById('wordTable'),
+    ['词', '相关事件'],
+    data.topWords.map(row => `<tr>${cell(row.word)}${cell(row.count, 'num')}</tr>`)
+  );
+}
+
+async function refresh() {
+  const days = document.getElementById('daysSelect').value;
+  const start = document.getElementById('startDate').value;
+  const end = document.getElementById('endDate').value;
+  const params = new URLSearchParams();
+  params.set('days', days);
+  if (start) params.set('start', start);
+  if (end) params.set('end', end);
+  const data = await loadMetrics(`?${params.toString()}`);
+  renderMetrics(data);
+}
+
+document.getElementById('metricsControls').addEventListener('submit', event => {
+  event.preventDefault();
+  refresh().catch(() => alert('暂时没能读取指标。'));
+});
+
+refresh().catch(() => alert('暂时没能读取指标。'));
+</script>
+</body>
+</html>

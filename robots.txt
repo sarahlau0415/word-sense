@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /word-sense-metrics.html
 
 Sitemap: https://wordsense.sarahliu.fun/sitemap.xml

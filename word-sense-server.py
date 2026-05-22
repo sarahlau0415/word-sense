@@ -11,6 +11,7 @@ import re
 import sys
 import threading
 import time
+from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, quote, unquote, urlparse
@@ -22,6 +23,7 @@ JOBS_DIR = WORKFLOW_DIR / "jobs"
 RUN_PY = WORKFLOW_DIR / "run.py"
 BUILD_CONTENT = WORKFLOW_DIR / "build_content_js.py"
 SUBSCRIBERS_FILE = ROOT / "mailing-list.jsonl"
+EVENTS_FILE = ROOT / "events.jsonl"
 DICTIONARY_CACHE_FILE = WORKFLOW_DIR / "dictionary-cache.json"
 
 HOST = "127.0.0.1"
@@ -29,6 +31,7 @@ PORT = 8787
 
 JOB_LOCK = threading.Lock()
 DICTIONARY_LOCK = threading.Lock()
+EVENT_LOCK = threading.Lock()
 JOBS: dict[str, dict[str, object]] = {}
 JOB_SECRETS: dict[str, dict[str, str]] = {}
 
@@ -73,6 +76,208 @@ builder_mod = load_module(BUILD_CONTENT, "wordsense_build_content")
 
 def now() -> float:
     return time.time()
+
+
+def event_day(timestamp: float) -> str:
+    return datetime.fromtimestamp(timestamp, timezone.utc).astimezone().strftime("%Y-%m-%d")
+
+
+def parse_date_to_timestamp(value: str, end_of_day: bool = False) -> float | None:
+    try:
+        parsed = datetime.strptime(value, "%Y-%m-%d")
+    except ValueError:
+        return None
+    if end_of_day:
+        parsed = parsed.replace(hour=23, minute=59, second=59)
+    return parsed.timestamp()
+
+
+def append_event(record: dict[str, object]) -> None:
+    record.setdefault("createdAt", now())
+    with EVENT_LOCK:
+        with EVENTS_FILE.open("a", encoding="utf-8") as file:
+            file.write(json.dumps(record, ensure_ascii=False) + "\n")
+
+
+def read_jsonl(path: Path) -> list[dict[str, object]]:
+    if not path.exists():
+        return []
+    records: list[dict[str, object]] = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        try:
+            value = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if isinstance(value, dict):
+            records.append(value)
+    return records
+
+
+def read_events() -> list[dict[str, object]]:
+    events = read_jsonl(EVENTS_FILE)
+
+    for record in read_jsonl(SUBSCRIBERS_FILE):
+        events.append({
+            "event": "subscribe_success",
+            "createdAt": record.get("createdAt"),
+            "page": record.get("page") or "/",
+            "source": "subscriber_file",
+        })
+
+    if JOBS_DIR.exists():
+        for path in JOBS_DIR.glob("*.json"):
+            try:
+                job = json.loads(path.read_text(encoding="utf-8"))
+            except (json.JSONDecodeError, OSError):
+                continue
+            word = str(job.get("word") or "")
+            job_id = str(job.get("id") or path.stem)
+            created = job.get("createdAt")
+            updated = job.get("updatedAt") or created
+            if created:
+                events.append({
+                    "event": "review_start",
+                    "createdAt": created,
+                    "word": word,
+                    "jobId": job_id,
+                    "source": "job_file",
+                })
+            if job.get("status") == "complete" and updated:
+                events.append({
+                    "event": "generation_success",
+                    "createdAt": updated,
+                    "word": word,
+                    "jobId": job_id,
+                    "source": "job_file",
+                })
+            if job.get("status") == "failed" and updated:
+                events.append({
+                    "event": "generation_fail",
+                    "createdAt": updated,
+                    "word": word,
+                    "jobId": job_id,
+                    "errorType": job.get("errorType"),
+                    "source": "job_file",
+                })
+    return [event for event in events if isinstance(event.get("createdAt"), (int, float))]
+
+
+def unique_count(events: list[dict[str, object]], names: set[str]) -> int:
+    identities: set[str] = set()
+    for event in events:
+        if str(event.get("event")) not in names:
+            continue
+        identity = event.get("sessionId") or event.get("jobId")
+        if identity:
+            identities.add(str(identity))
+        else:
+            identities.add(f"{event.get('event')}:{event.get('createdAt')}:{event.get('word', '')}")
+    return len(identities)
+
+
+def build_metrics(days: int = 7, start: float | None = None, end: float | None = None) -> dict[str, object]:
+    end_ts = end or now()
+    start_ts = start if start is not None else end_ts - max(1, days) * 86400
+    events = [
+        event for event in read_events()
+        if start_ts <= float(event.get("createdAt") or 0) <= end_ts
+    ]
+
+    trend_names = [
+        "home_view",
+        "word_click",
+        "result_view",
+        "search_submit",
+        "review_start",
+        "generation_success",
+        "generation_fail",
+        "save_click",
+        "share_click",
+        "subscribe_submit",
+        "subscribe_success",
+        "install_click",
+    ]
+    trend: dict[str, dict[str, int]] = {}
+    for event in events:
+        name = str(event.get("event") or "")
+        if name not in trend_names:
+            continue
+        day = event_day(float(event.get("createdAt") or 0))
+        trend.setdefault(day, {item: 0 for item in trend_names})
+        trend[day][name] += 1
+
+    funnel_steps = [
+        ("访问首页", {"home_view"}),
+        ("点击精选词条", {"word_click", "preview_continue_click"}),
+        ("阅读词条页", {"result_view"}),
+        ("提交搜索", {"search_submit"}),
+        ("进入审校流程", {"review_start"}),
+        ("生成成功", {"generation_success"}),
+        ("保存/分享/订阅/安装", {"save_click", "share_click", "subscribe_success", "install_click"}),
+    ]
+    funnel = []
+    previous = None
+    for label, names in funnel_steps:
+        count = unique_count(events, names)
+        funnel.append({
+            "step": label,
+            "count": count,
+            "rateFromPrevious": None if previous in (None, 0) else round(count / previous * 100, 1),
+        })
+        previous = count
+
+    def event_total(names: set[str]) -> int:
+        return sum(1 for event in events if str(event.get("event")) in names)
+
+    checkpoints = [
+        ("首页到精选词条", event_total({"home_view"}), event_total({"word_click", "preview_continue_click"}), "首页展示、选词吸引力"),
+        ("词条页到保存/分享", event_total({"result_view"}), event_total({"save_click", "share_click"}), "结果页获得感和分享动机"),
+        ("搜索到审校", event_total({"search_submit"}), event_total({"review_start"}), "搜索成本提示、API key、网络"),
+        ("审校到生成成功", event_total({"review_start"}), event_total({"generation_success"}), "生成时间、模型/API 错误"),
+        ("订阅表单到成功", event_total({"subscribe_submit"}), event_total({"subscribe_success"}), "邮箱表单、保存接口"),
+    ]
+    blockers = []
+    for label, start_count, done_count, area in checkpoints:
+        drop = max(0, start_count - done_count)
+        blockers.append({
+            "path": label,
+            "start": start_count,
+            "done": done_count,
+            "drop": drop,
+            "conversionRate": None if start_count == 0 else round(done_count / start_count * 100, 1),
+            "watchArea": area,
+        })
+
+    word_counts: dict[str, int] = {}
+    for event in events:
+        if str(event.get("event")) in {"word_click", "result_view", "search_submit", "review_start", "generation_success"}:
+            word = str(event.get("word") or "").strip()
+            if word:
+                word_counts[word] = word_counts.get(word, 0) + 1
+
+    return {
+        "window": {
+            "start": start_ts,
+            "end": end_ts,
+            "days": days,
+        },
+        "totals": {
+            "events": len(events),
+            "uniqueSessions": unique_count(events, set(trend_names)),
+        },
+        "funnel": funnel,
+        "trend": [
+            {"date": day, **counts}
+            for day, counts in sorted(trend.items())
+        ],
+        "blockers": blockers,
+        "topWords": [
+            {"word": word, "count": count}
+            for word, count in sorted(word_counts.items(), key=lambda item: item[1], reverse=True)[:12]
+        ],
+    }
 
 
 def read_dictionary_cache() -> dict[str, str]:
@@ -392,6 +597,10 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self) -> None:
         parsed = urlparse(self.path)
+        if parsed.path == "/api/events":
+            self.handle_event()
+            return
+
         if parsed.path == "/api/subscribe":
             self.handle_subscribe()
             return
@@ -445,6 +654,34 @@ class Handler(BaseHTTPRequestHandler):
         thread.start()
         self.send_json(public_job(job), status=201)
 
+    def handle_event(self) -> None:
+        length = int(self.headers.get("Content-Length", "0") or "0")
+        raw = self.rfile.read(length).decode("utf-8") if length else "{}"
+        try:
+            payload = json.loads(raw)
+        except json.JSONDecodeError:
+            self.send_json({"error": "invalid json"}, status=400)
+            return
+
+        event_name = str(payload.get("event") or "").strip()
+        if not re.match(r"^[a-z][a-z0-9_]{1,48}$", event_name):
+            self.send_json({"error": "invalid event"}, status=400)
+            return
+
+        properties = payload.get("properties") if isinstance(payload.get("properties"), dict) else {}
+        record = {
+            "event": event_name,
+            "sessionId": str(payload.get("sessionId") or "")[:80],
+            "page": str(payload.get("page") or "")[:240],
+            "word": str(properties.get("word") or payload.get("word") or "")[:120],
+            "properties": properties,
+            "referer": self.headers.get("Referer", "")[:240],
+            "userAgent": self.headers.get("User-Agent", "")[:240],
+            "createdAt": now(),
+        }
+        append_event(record)
+        self.send_json({"ok": True}, status=201)
+
     def handle_subscribe(self) -> None:
         length = int(self.headers.get("Content-Length", "0") or "0")
         raw = self.rfile.read(length).decode("utf-8") if length else "{}"
@@ -471,6 +708,20 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self) -> None:
         parsed = urlparse(self.path)
+        if parsed.path == "/api/metrics":
+            query = parse_qs(parsed.query)
+            try:
+                days = int(str(query.get("days", ["7"])[0]) or "7")
+            except ValueError:
+                days = 7
+            days = max(1, min(days, 365))
+            start = query.get("start", [""])[0]
+            end = query.get("end", [""])[0]
+            start_ts = parse_date_to_timestamp(start) if start else None
+            end_ts = parse_date_to_timestamp(end, end_of_day=True) if end else None
+            self.send_json(build_metrics(days=days, start=start_ts, end=end_ts))
+            return
+
         if parsed.path == "/api/dictionary":
             query = parse_qs(parsed.query)
             word = str(query.get("word", [""])[0]).strip()
