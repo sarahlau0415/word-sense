@@ -1746,6 +1746,54 @@ body {
   font-size: 0.95rem;
 }
 
+.site-update {
+  max-width: 620px;
+  margin: 1.05rem auto 0;
+  padding: 0.58rem 0.7rem;
+  border: 1px solid var(--rule);
+  background: rgba(245, 241, 231, 0.45);
+  color: var(--ink-faint);
+  font-size: 0.68rem;
+  line-height: 1.65;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+.site-update.hidden {
+  display: none;
+}
+
+.site-update-copy {
+  min-width: 0;
+}
+
+.site-update-label {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-right: 0.3rem;
+}
+
+.site-update-close {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: none;
+  background: transparent;
+  color: var(--ink-whisper);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.site-update-close:hover {
+  color: var(--accent-deep);
+}
+
 /* 移动端 */
 @media (max-width: 800px) {
   html { font-size: 16px; }
@@ -2252,6 +2300,13 @@ body {
   <footer class="footer">
     <div class="footer-mark">§</div>
     慢一点，看见更多。
+    <div class="site-update" id="siteUpdateNotice" data-version="2026-05-22-search-language">
+      <div class="site-update-copy">
+        <span class="site-update-label">Update</span>
+        5 月 22 日:搜索框先只开放英文词和英文短语,中文词条暂不生成。
+      </div>
+      <button type="button" class="site-update-close" id="siteUpdateClose" aria-label="关闭更新说明">×</button>
+    </div>
   </footer>
 
 </main>
@@ -3077,6 +3132,28 @@ function bindDashboardInteractions() {
       }
     });
   }
+})();
+
+// ============================================
+// 轻量更新说明
+// ============================================
+(function() {
+  const notice = document.getElementById('siteUpdateNotice');
+  const close = document.getElementById('siteUpdateClose');
+  if (!notice || !close) return;
+
+  const version = notice.dataset.version || 'current';
+  const storageKey = `wordsense_update_dismissed_${version}`;
+  try {
+    if (localStorage.getItem(storageKey) === 'true') {
+      notice.classList.add('hidden');
+    }
+  } catch(e) {}
+
+  close.addEventListener('click', () => {
+    notice.classList.add('hidden');
+    try { localStorage.setItem(storageKey, 'true'); } catch(e) {}
+  });
 })();
 </script>
 
