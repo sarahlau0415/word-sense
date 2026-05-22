@@ -1,6 +1,5 @@
 <svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-  <rect width="512" height="512" rx="96" fill="#FBFAF6"/>
-  <rect x="48" y="48" width="416" height="416" rx="72" fill="#F2EFE7" stroke="#E5DECF" stroke-width="8"/>
-  <text x="256" y="287" text-anchor="middle" font-family="Georgia, serif" font-size="172" font-weight="700" fill="#A0522D">§</text>
-  <text x="256" y="348" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" font-weight="700" letter-spacing="-2" fill="#5C2E1A">WS</text>
+  <rect width="512" height="512" rx="132" fill="#FBFAF6"/>
+  <rect x="46" y="46" width="420" height="420" rx="112" fill="#F2EFE7" stroke="#E5DECF" stroke-width="8"/>
+  <text x="256" y="326" text-anchor="middle" font-family="Georgia, serif" font-size="248" font-weight="700" fill="#A0522D">§</text>
 </svg>
