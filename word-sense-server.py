@@ -6,6 +6,7 @@ from __future__ import annotations
 import importlib.util
 import json
 import mimetypes
+import os
 import re
 import sys
 import threading
@@ -21,11 +22,13 @@ JOBS_DIR = WORKFLOW_DIR / "jobs"
 RUN_PY = WORKFLOW_DIR / "run.py"
 BUILD_CONTENT = WORKFLOW_DIR / "build_content_js.py"
 SUBSCRIBERS_FILE = ROOT / "mailing-list.jsonl"
+DICTIONARY_CACHE_FILE = WORKFLOW_DIR / "dictionary-cache.json"
 
 HOST = "127.0.0.1"
 PORT = 8787
 
 JOB_LOCK = threading.Lock()
+DICTIONARY_LOCK = threading.Lock()
 JOBS: dict[str, dict[str, object]] = {}
 JOB_SECRETS: dict[str, dict[str, str]] = {}
 
@@ -49,6 +52,9 @@ DICTIONARY_MEANINGS = {
     "clanker": "俚语，对机器人或 AI 的贬称。",
     "unhinged": "失控的；离谱的；不受正常边界约束的。",
     "sense": "感觉；意义；判断力；感官。",
+    "overhead": "头顶上方；经常性开销；技术语境中指额外系统开销。",
+    "render": "使成为；呈现；计算机语境中指渲染、生成画面或界面。",
+    "inference": "推断；推论；机器学习语境中指模型推理阶段。",
 }
 
 
@@ -69,8 +75,90 @@ def now() -> float:
     return time.time()
 
 
-def dictionary_meaning(word: str) -> str:
-    return DICTIONARY_MEANINGS.get(word.strip().lower(), "常见中文释义正在整理中。")
+def read_dictionary_cache() -> dict[str, str]:
+    with DICTIONARY_LOCK:
+        if not DICTIONARY_CACHE_FILE.exists():
+            return {}
+        try:
+            data = json.loads(DICTIONARY_CACHE_FILE.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            return {}
+        return {str(key): str(value) for key, value in data.items() if value}
+
+
+def write_dictionary_cache(cache: dict[str, str]) -> None:
+    with DICTIONARY_LOCK:
+        DICTIONARY_CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
+        DICTIONARY_CACHE_FILE.write_text(
+            json.dumps(cache, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+
+
+def clean_dictionary_meaning(text: str) -> str:
+    cleaned = re.sub(r"\s+", " ", text).strip().strip('"“”')
+    cleaned = re.sub(r"^(释义|中文释义|常见中文释义)\s*[:：]\s*", "", cleaned)
+    if len(cleaned) > 180:
+        cleaned = cleaned[:180].rstrip("；，,、 ") + "。"
+    return cleaned
+
+
+def generate_dictionary_meaning(word: str, api_key: str | None = None) -> str | None:
+    OpenAI = getattr(workflow_mod, "OpenAI", None)
+    if OpenAI is None:
+        return None
+
+    load_dotenv = getattr(workflow_mod, "load_dotenv", None)
+    if load_dotenv is not None:
+        load_dotenv(WORKFLOW_DIR / ".env")
+
+    resolved_api_key = api_key or os.getenv("OPENAI_API_KEY")
+    if not resolved_api_key:
+        return None
+
+    client_kwargs: dict[str, str] = {"api_key": resolved_api_key}
+    resolved_base_url = os.getenv("OPENAI_BASE_URL")
+    if resolved_base_url:
+        client_kwargs["base_url"] = resolved_base_url
+
+    client = OpenAI(**client_kwargs)
+    model = os.getenv("OPENAI_DICTIONARY_MODEL") or os.getenv("OPENAI_MODEL") or workflow_mod.DEFAULT_WRITE_MODEL
+    response = client.responses.create(
+        model=model,
+        max_output_tokens=120,
+        instructions=(
+            "你是一个简明英汉词典。用户给你一个英文单词或英文短语。"
+            "请只输出常见中文释义,用分号分隔,必要时补充一个高频专业语境。"
+            "不要写解释文章,不要写例句,不要使用 Markdown。"
+        ),
+        input=f"英文词或短语:{word}",
+    )
+    text = workflow_mod.response_text(response)
+    return clean_dictionary_meaning(text) or None
+
+
+def dictionary_meaning(word: str, api_key: str | None = None) -> str:
+    key = word.strip().lower()
+    if not key:
+        return "常见中文释义正在整理中。"
+    if key in DICTIONARY_MEANINGS:
+        return DICTIONARY_MEANINGS[key]
+
+    cache = read_dictionary_cache()
+    if key in cache:
+        return cache[key]
+
+    try:
+        generated = generate_dictionary_meaning(word, api_key=api_key)
+    except Exception:
+        generated = None
+
+    if generated:
+        cache[key] = generated
+        write_dictionary_cache(cache)
+        return generated
+
+    return "常见中文释义正在整理中。"
 
 
 def contains_cjk(text: str) -> bool:
@@ -342,7 +430,7 @@ class Handler(BaseHTTPRequestHandler):
             "stage": "准备审校",
             "stageIndex": 0,
             "message": "词条已经进入审校队列。",
-            "dictionaryMeaning": dictionary_meaning(word),
+            "dictionaryMeaning": dictionary_meaning(word, api_key=api_key),
             "createdAt": now(),
             "updatedAt": now(),
         }
