@@ -1,4 +1,4 @@
-const CACHE_NAME = 'wordsense-v2';
+const CACHE_NAME = 'wordsense-v3';
 const APP_SHELL = [
   '/',
   '/word-sense-home_9.html',
@@ -7,7 +7,11 @@ const APP_SHELL = [
   '/word-sense-review.html',
   '/word-sense-content.js',
   '/manifest.webmanifest',
-  '/wordsense-icon.svg'
+  '/wordsense-icon.svg',
+  '/wordsense-icon-192.png',
+  '/wordsense-icon-512.png',
+  '/favicon-32x32.png',
+  '/favicon-16x16.png'
 ];
 
 self.addEventListener('install', (event) => {
