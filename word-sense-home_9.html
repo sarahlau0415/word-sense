@@ -1557,6 +1557,30 @@ body {
   color: #8D3E24;
 }
 
+.spell-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.38rem;
+  align-items: center;
+  margin-top: 0.42rem;
+}
+
+.spell-suggestion {
+  border: 1px solid var(--accent-medium);
+  background: rgba(255, 255, 255, 0.52);
+  color: var(--accent-deep);
+  border-radius: 999px;
+  padding: 0.24rem 0.58rem 0.28rem;
+  font-family: var(--font-en-body);
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.spell-suggestion:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
 /* 回访入口 */
 .return-panel {
   margin-top: 2.3rem;
@@ -2987,6 +3011,48 @@ function bindDashboardInteractions() {
     if (type) apiKeyStatus.classList.add(type);
   }
 
+  function spellWarningKey(word) {
+    return `wordsense_spell_warning_${word.toLowerCase()}`;
+  }
+
+  function clearSpellStatus() {
+    if (!apiKeyStatus) return;
+    apiKeyStatus.innerHTML = '';
+    apiKeyStatus.classList.remove('success', 'error');
+  }
+
+  function renderSpellSuggestions(word, suggestions) {
+    if (!apiKeyStatus) return;
+    apiKeyStatus.classList.remove('success');
+    apiKeyStatus.classList.add('error');
+    const intro = document.createElement('div');
+    intro.textContent = '这个词看起来可能拼写有误。你是不是想查：';
+    const wrap = document.createElement('div');
+    wrap.className = 'spell-suggestions';
+    suggestions.forEach(suggestion => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'spell-suggestion';
+      button.textContent = suggestion;
+      button.addEventListener('click', () => {
+        wordInput.value = suggestion;
+        clearSpellStatus();
+        form.requestSubmit();
+      });
+      wrap.appendChild(button);
+    });
+    apiKeyStatus.innerHTML = '';
+    apiKeyStatus.append(intro, wrap);
+    try { sessionStorage.setItem(spellWarningKey(word), '1'); } catch(e) {}
+  }
+
+  async function checkSpellingBeforeSearch(word) {
+    if (!window.location.protocol.startsWith('http')) return { ok: true };
+    const response = await fetch(`/api/spellcheck?word=${encodeURIComponent(word)}`);
+    if (!response.ok) return { ok: true };
+    return response.json();
+  }
+
   function showCostNotice() {
     document.getElementById('searchSection')?.classList.add('cost-aware');
     costNotice?.classList.add('show');
@@ -3016,7 +3082,7 @@ function bindDashboardInteractions() {
   apiKeyInput?.addEventListener('focus', showCostNotice);
   apiKeySave?.addEventListener('click', saveApiKeyForSession);
 
-  form.addEventListener('submit', (event) => {
+  form.addEventListener('submit', async (event) => {
     event.preventDefault();
 
     const word = wordInput.value.trim();
@@ -3028,6 +3094,30 @@ function bindDashboardInteractions() {
       showCostNotice();
       setKeyStatus('目前 Word Sense 只支持英文词或英文短语。中文词条我们先不开放生成。', 'error');
       wordInput.focus();
+      return;
+    }
+
+    showCostNotice();
+    try {
+      const spelling = await checkSpellingBeforeSearch(word);
+      if (spelling && spelling.ok === false && spelling.errorType === 'misspelling') {
+        let hasWarned = false;
+        try { hasWarned = sessionStorage.getItem(spellWarningKey(word)) === '1'; } catch(e) {}
+        if (hasWarned) {
+          setKeyStatus('这个词拼写有误。请重新输入一个英文词，或选择正确拼写后再生成。', 'error');
+        } else {
+          renderSpellSuggestions(word, spelling.suggestions || []);
+        }
+        wordInput.focus();
+        return;
+      }
+      if (spelling && spelling.ok === false) {
+        setKeyStatus(spelling.message || '请输入有效的英文词或英文短语。', 'error');
+        wordInput.focus();
+        return;
+      }
+    } catch(e) {
+      setKeyStatus('暂时没能检查拼写。请稍后再试，避免把拼错的词送进审校。', 'error');
       return;
     }
 

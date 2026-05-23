@@ -12,6 +12,7 @@ import sys
 import threading
 import time
 from datetime import datetime, timezone
+from difflib import SequenceMatcher
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, quote, unquote, urlparse
@@ -24,6 +25,7 @@ RUN_PY = WORKFLOW_DIR / "run.py"
 BUILD_CONTENT = WORKFLOW_DIR / "build_content_js.py"
 SUBSCRIBERS_FILE = ROOT / "mailing-list.jsonl"
 EVENTS_FILE = ROOT / "events.jsonl"
+WORDLIST_FILE = ROOT / "word-sense-wordlist.txt"
 DICTIONARY_CACHE_FILE = WORKFLOW_DIR / "dictionary-cache.json"
 
 HOST = "127.0.0.1"
@@ -34,6 +36,29 @@ DICTIONARY_LOCK = threading.Lock()
 EVENT_LOCK = threading.Lock()
 JOBS: dict[str, dict[str, object]] = {}
 JOB_SECRETS: dict[str, dict[str, str]] = {}
+WORDLIST: set[str] | None = None
+
+KNOWN_PHRASES = {
+    "it's giving",
+    "its giving",
+    "inflection point",
+    "accountability gap",
+    "brain rot",
+    "main character energy",
+    "side eye",
+    "low-key",
+    "high-key",
+}
+
+COMMON_SPELLING_SUGGESTIONS = {
+    "dawm": ["dawn", "damn"],
+    "litelly": ["literally"],
+    "helo": ["hello"],
+    "recieve": ["receive"],
+    "langauge": ["language"],
+    "definately": ["definitely"],
+    "wierd": ["weird"],
+}
 
 DICTIONARY_MEANINGS = {
     "resilience": "恢复力；韧性；复原能力。",
@@ -366,6 +391,130 @@ def dictionary_meaning(word: str, api_key: str | None = None) -> str:
     return "常见中文释义正在整理中。"
 
 
+def load_wordlist() -> set[str]:
+    global WORDLIST
+    if WORDLIST is not None:
+        return WORDLIST
+
+    words: set[str] = set(DICTIONARY_MEANINGS.keys())
+    words.update(KNOWN_PHRASES)
+    if WORDLIST_FILE.exists():
+        for line in WORDLIST_FILE.read_text(encoding="utf-8").splitlines():
+            item = line.strip().lower()
+            if item:
+                words.add(item)
+    WORDLIST = words
+    return WORDLIST
+
+
+def normalized_spell_tokens(text: str) -> list[str]:
+    lowered = text.lower().strip()
+    lowered = lowered.replace("’", "'")
+    lowered = lowered.replace("'s", "s")
+    return re.findall(r"[a-z]+", lowered)
+
+
+def levenshtein_distance(a: str, b: str, limit: int = 3) -> int:
+    if abs(len(a) - len(b)) > limit:
+        return limit + 1
+    previous = list(range(len(b) + 1))
+    for index_a, char_a in enumerate(a, start=1):
+        current = [index_a]
+        row_min = current[0]
+        for index_b, char_b in enumerate(b, start=1):
+            cost = 0 if char_a == char_b else 1
+            value = min(previous[index_b] + 1, current[index_b - 1] + 1, previous[index_b - 1] + cost)
+            current.append(value)
+            row_min = min(row_min, value)
+        if row_min > limit:
+            return limit + 1
+        previous = current
+    return previous[-1]
+
+
+def spelling_suggestions(token: str, limit: int = 5) -> list[str]:
+    token = token.lower()
+    if token in COMMON_SPELLING_SUGGESTIONS:
+        return COMMON_SPELLING_SUGGESTIONS[token][:limit]
+
+    if len(token) <= 2:
+        return []
+
+    candidates: list[tuple[int, float, str]] = []
+    first = token[0]
+    for word in load_wordlist():
+        if " " in word or "-" in word or len(word) < 3:
+            continue
+        if word[0] != first:
+            continue
+        if abs(len(word) - len(token)) > 3:
+            continue
+        distance = levenshtein_distance(token, word, limit=3)
+        if distance > 3:
+            continue
+        ratio = SequenceMatcher(None, token, word).ratio()
+        if distance <= 2 or ratio >= 0.72:
+            candidates.append((distance, -ratio, word))
+
+    candidates.sort()
+    suggestions: list[str] = []
+    for _, _, word in candidates:
+        if word not in suggestions and word != token:
+            suggestions.append(word)
+        if len(suggestions) >= limit:
+            break
+    return suggestions
+
+
+def spellcheck_word(word: str) -> dict[str, object]:
+    raw = word.strip()
+    lowered = raw.lower().replace("’", "'")
+    if not raw:
+        return {"ok": False, "errorType": "empty", "suggestions": []}
+    if contains_cjk(raw):
+        return {
+            "ok": False,
+            "errorType": "invalid-word",
+            "message": "目前 Word Sense 只支持英文词或英文短语。中文词条我们先不开放生成。",
+            "suggestions": [],
+        }
+    if lowered in load_wordlist() or lowered in KNOWN_PHRASES:
+        return {"ok": True, "suggestions": []}
+
+    tokens = normalized_spell_tokens(raw)
+    if not tokens:
+        return {
+            "ok": False,
+            "errorType": "invalid-word",
+            "message": "请输入英文词或英文短语。",
+            "suggestions": [],
+        }
+
+    unknown = [token for token in tokens if token not in load_wordlist()]
+    if not unknown:
+        return {"ok": True, "suggestions": []}
+
+    # Only block when there is a strong likely correction. Obscure but valid slang can still enter the workflow.
+    suggestions = spelling_suggestions(unknown[0])
+    if suggestions:
+        return {
+            "ok": False,
+            "errorType": "misspelling",
+            "message": "这个词看起来可能拼写有误。",
+            "suggestions": suggestions,
+            "unknownToken": unknown[0],
+        }
+    if not re.search(r"[aeiouy]", unknown[0]) or re.search(r"(qx|qz|zx|xq|zq)", unknown[0]):
+        return {
+            "ok": False,
+            "errorType": "misspelling",
+            "message": "这个词看起来不像有效英文拼写。请重新输入。",
+            "suggestions": [],
+            "unknownToken": unknown[0],
+        }
+    return {"ok": True, "suggestions": []}
+
+
 def contains_cjk(text: str) -> bool:
     return bool(re.search(r"[\u3400-\u9FFF\uF900-\uFAFF]", text))
 
@@ -627,6 +776,14 @@ class Handler(BaseHTTPRequestHandler):
                 "errorType": "invalid-word",
             }, status=400)
             return
+        spelling = spellcheck_word(word)
+        if not spelling.get("ok"):
+            self.send_json({
+                "error": spelling.get("message") or "这个词看起来可能拼写有误。请重新输入。",
+                "errorType": spelling.get("errorType") or "misspelling",
+                "suggestions": spelling.get("suggestions") or [],
+            }, status=400)
+            return
         api_key = str(payload.get("apiKey") or "").strip()
 
         job_id = f"{int(now() * 1000)}-{workflow_mod.safe_word_dir(word).lower()}"
@@ -735,6 +892,13 @@ class Handler(BaseHTTPRequestHandler):
                 }, status=400)
                 return
             self.send_json({"word": word, "dictionaryMeaning": dictionary_meaning(word)})
+            return
+
+        if parsed.path == "/api/spellcheck":
+            query = parse_qs(parsed.query)
+            word = str(query.get("word", [""])[0]).strip()
+            result = spellcheck_word(word)
+            self.send_json({"word": word, **result})
             return
 
         if parsed.path.startswith("/api/jobs/"):

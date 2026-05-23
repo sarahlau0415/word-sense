@@ -732,7 +732,14 @@ async function startRealReview() {
       body: JSON.stringify({ word: normalizedWord, source, sentence, apiKey })
     });
 
-    if (!response.ok) throw new Error('创建审校任务失败');
+    if (!response.ok) {
+      const payload = await response.json().catch(() => ({}));
+      const suggestions = Array.isArray(payload.suggestions) && payload.suggestions.length
+        ? ` 可能想查：${payload.suggestions.join(' / ')}。`
+        : '';
+      failReview(`${payload.error || '创建审校任务失败'}${suggestions}`, payload.errorType || 'network');
+      return;
+    }
     const job = await response.json();
     if (job.dictionaryMeaning) setDictionaryMeaning(job.dictionaryMeaning);
     pollJob(job.id);
