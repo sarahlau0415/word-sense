@@ -7,33 +7,45 @@
   <style>
     :root {
       color-scheme: light;
-      --ink: #1f2528;
-      --muted: #687176;
-      --line: #d8ddd9;
-      --paper: #fbfaf6;
-      --panel: #ffffff;
-      --green: #24594d;
-      --green-soft: #e3eee9;
-      --brick: #a74e35;
-      --brick-soft: #f5e7df;
-      --gold: #c18b32;
-      --blue: #315f8f;
-      --shadow: 0 18px 45px rgba(31, 37, 40, 0.09);
-      --radius: 8px;
+      --paper: #fcfaf4;
+      --white: #fffefa;
+      --ink: #151515;
+      --muted: #575750;
+      --line: #d0cabb;
+      --line-soft: #e4dfd3;
+      --blue: #c5dcf4;
+      --cobalt: #243fc8;
+      --green: #5b8b40;
+      --forest: #285542;
+      --coral: #ff8875;
+      --peach: #f5b08b;
+      --gray: #d9d9d7;
+      --board: #eee9dd;
+      --note: #fff29e;
+      --radius: 2px;
+      --mono: "Courier New", "Liberation Mono", "Songti SC", monospace;
+      --body: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+      --serif: Georgia, "Songti SC", "STSong", serif;
     }
 
     * {
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-      background:
-        radial-gradient(circle at 8% 12%, rgba(193, 139, 50, 0.12), transparent 28%),
-        linear-gradient(135deg, #fbfaf6 0%, #eef4f1 48%, #f8efe8 100%);
-      color: var(--ink);
       min-height: 100vh;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--body);
+    }
+
+    body.notice-open {
+      overflow: hidden;
     }
 
     button,
@@ -46,839 +58,2333 @@
       cursor: pointer;
     }
 
-    .shell {
-      width: min(1180px, calc(100% - 40px));
-      margin: 0 auto;
-      padding: 28px 0 42px;
+    code {
+      font-family: var(--mono);
+      font-size: 0.94em;
+      background: rgba(19, 19, 19, 0.06);
+      padding: 1px 4px;
     }
 
-    .topbar {
+    .page {
+      width: min(1360px, calc(100% - 34px));
+      margin: 0 auto;
+      padding: 18px 0 52px;
+    }
+
+    .release-layer {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: grid;
+      place-items: center;
+      padding: 22px;
+      background: rgba(20, 20, 18, 0.52);
+      animation: release-fade-in 220ms ease-out both;
+    }
+
+    .release-layer[hidden] {
+      display: none;
+    }
+
+    .release-layer.leaving {
+      animation: release-fade-out 180ms ease-out both;
+    }
+
+    .release-note {
+      position: relative;
+      width: min(548px, 100%);
+      padding: clamp(28px, 5vw, 42px);
+      background:
+        linear-gradient(rgba(255, 254, 250, 0.92), rgba(250, 246, 236, 0.95)),
+        url("assets/archive/old-paper-texture.jpg") center / cover;
+      box-shadow: 0 18px 62px rgba(12, 12, 11, 0.26);
+      transform: rotate(-0.24deg);
+    }
+
+    .release-note::before {
+      content: "";
+      position: absolute;
+      top: -9px;
+      left: calc(50% - 29px);
+      width: 58px;
+      height: 17px;
+      background: rgba(190, 169, 122, 0.62);
+      transform: rotate(-2deg);
+    }
+
+    .release-dismiss {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 36px;
+      height: 36px;
+      border: 1px dotted #a69e90;
+      background: transparent;
+      color: #4f4b43;
+      font: 700 16px/1 var(--mono);
+    }
+
+    .release-kicker {
+      display: inline-block;
+      margin: 0 0 27px;
+      padding: 7px 9px;
+      background: var(--ink);
+      color: var(--white);
+      font: 700 12px/1 var(--mono);
+    }
+
+    .release-note h2 {
+      max-width: 380px;
+      margin: 0 0 18px;
+      font: 700 clamp(29px, 4vw, 37px)/1.22 var(--mono);
+    }
+
+    .release-note p {
+      margin: 0 0 15px;
+      max-width: 450px;
+      color: #312f2a;
+      font-size: 16px;
+      line-height: 1.72;
+    }
+
+    .release-actions {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 29px;
+    }
+
+    .release-enter {
+      border: 0;
+      padding: 14px 19px;
+      background: var(--cobalt);
+      color: #fffefa;
+      font: 700 15px/1 var(--mono);
+    }
+
+    .release-once {
+      color: #686258;
+      font: 12px/1.5 var(--mono);
+    }
+
+    @keyframes release-fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes release-fade-out {
+      from { opacity: 1; }
+      to { opacity: 0; }
+    }
+
+    .masthead {
+      display: flex;
+      align-items: baseline;
       justify-content: space-between;
       gap: 20px;
-      min-height: 48px;
+      border-bottom: 1px solid var(--line);
+      padding: 0 0 16px;
     }
 
     .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      min-width: 0;
-    }
-
-    .mark {
-      width: 38px;
-      height: 38px;
-      border-radius: 8px;
-      background: var(--green);
-      color: #fff;
-      display: grid;
-      place-items: center;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 21px;
-      line-height: 1;
-      box-shadow: 0 8px 20px rgba(36, 89, 77, 0.24);
-    }
-
-    .brand-name {
-      font-size: 20px;
-      font-weight: 750;
-      letter-spacing: 0;
-    }
-
-    .brand-note {
-      margin-top: 2px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-
-    .nav button {
-      border: 1px solid var(--line);
-      background: rgba(255, 255, 255, 0.62);
+      margin: 0;
       color: var(--ink);
-      border-radius: 999px;
-      padding: 9px 13px;
+      text-decoration: none;
+      font: 700 clamp(25px, 3vw, 34px)/1 var(--mono);
+    }
+
+    .issue {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font: 700 14px/1.2 var(--mono);
+      color: var(--muted);
+    }
+
+    .issue span:last-child {
+      border: 1px dashed #aea797;
+      padding: 11px 14px;
+      color: var(--ink);
+    }
+
+    .header-links {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+    }
+
+    .header-links a {
+      color: var(--muted);
+      font: 700 13px/1.2 var(--mono);
+      text-decoration: none;
+    }
+
+    .header-links a:hover,
+    .header-links a:focus-visible {
+      color: var(--cobalt);
+    }
+
+    .intro {
+      display: grid;
+      grid-template-columns: minmax(330px, 0.82fr) minmax(360px, 1fr);
+      gap: clamp(30px, 6vw, 88px);
+      align-items: end;
+      padding: 54px 0 44px;
+    }
+
+    .intro h1 {
+      margin: 0 0 17px;
+      max-width: 490px;
+      font: 700 clamp(38px, 5vw, 58px)/1.14 var(--mono);
+    }
+
+    .intro p {
+      margin: 0;
+      max-width: 474px;
+      color: #33332e;
+      font-size: 17px;
+      line-height: 1.72;
+    }
+
+    .lookup {
+      background: var(--white);
+      padding: 20px;
+      box-shadow: 0 1px 0 rgba(20, 20, 20, 0.06), 0 7px 22px rgba(20, 20, 20, 0.045);
+    }
+
+    .lookup-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      font: 700 14px/1 var(--mono);
+    }
+
+    .lookup-title span {
+      background: var(--ink);
+      color: var(--white);
+      padding: 7px 9px;
+    }
+
+    .search-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 104px;
+      gap: 8px;
+    }
+
+    .search-row input {
+      min-height: 52px;
+      width: 100%;
+      border: 1px solid #c4bdae;
+      background: #fff;
+      outline: 0;
+      padding: 0 13px;
+      font: 700 21px/1 var(--mono);
+    }
+
+    .search-row input:focus,
+    .context input:focus,
+    .context textarea:focus {
+      box-shadow: 4px 4px 0 var(--blue);
+    }
+
+    .search-row button {
+      border: 0;
+      background: var(--cobalt);
+      color: #fff;
+      font: 700 16px/1 var(--mono);
+    }
+
+    .search-row button:hover {
+      background: #182c9f;
+    }
+
+    .context {
+      display: grid;
+      grid-template-columns: 0.75fr 1.15fr;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .context input,
+    .context textarea {
+      width: 100%;
+      border: 1px dashed #c3bcaf;
+      background: #fffefa;
+      outline: 0;
+      padding: 11px;
+      color: var(--ink);
       font-size: 14px;
     }
 
-    .nav button:hover {
-      border-color: rgba(36, 89, 77, 0.45);
-      background: #fff;
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: minmax(0, 1.04fr) minmax(320px, 0.76fr);
-      gap: 26px;
-      align-items: stretch;
-      margin-top: 46px;
-    }
-
-    .search-pane {
-      background: rgba(255, 255, 255, 0.78);
-      border: 1px solid rgba(216, 221, 217, 0.86);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 28px;
-      backdrop-filter: blur(16px);
-    }
-
-    h1 {
-      margin: 0;
-      max-width: 740px;
-      font-size: clamp(38px, 6vw, 76px);
-      line-height: 0.97;
-      letter-spacing: 0;
-      font-weight: 830;
-    }
-
-    .subhead {
-      color: #4c575b;
-      font-size: 18px;
-      line-height: 1.65;
-      max-width: 680px;
-      margin: 22px 0 26px;
-    }
-
-    .search-box {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      gap: 10px;
-      align-items: center;
-      padding: 8px;
-      background: var(--panel);
-      border: 1px solid rgba(31, 37, 40, 0.16);
-      border-radius: var(--radius);
-    }
-
-    .search-box input {
-      width: 100%;
-      border: 0;
-      outline: 0;
-      min-height: 52px;
-      padding: 0 14px;
-      font-size: 22px;
-      font-weight: 690;
-      color: var(--ink);
-      background: transparent;
-    }
-
-    .primary {
-      border: 0;
-      background: var(--green);
-      color: #fff;
-      min-height: 52px;
-      border-radius: 6px;
-      padding: 0 22px;
-      font-weight: 720;
-    }
-
-    .primary:hover {
-      background: #1f4d43;
-    }
-
-    .context-grid {
-      display: grid;
-      grid-template-columns: 0.72fr 1fr;
-      gap: 12px;
-      margin-top: 14px;
-    }
-
-    .field label {
-      display: block;
-      font-size: 13px;
-      color: var(--muted);
-      margin: 0 0 6px 2px;
-    }
-
-    .field input,
-    .field textarea {
-      width: 100%;
-      border: 1px solid rgba(31, 37, 40, 0.15);
-      background: rgba(255, 255, 255, 0.86);
-      border-radius: var(--radius);
-      color: var(--ink);
-      outline: 0;
-      padding: 13px 14px;
-      line-height: 1.45;
-    }
-
-    .field textarea {
-      min-height: 92px;
+    .context textarea {
+      min-height: 67px;
       resize: vertical;
     }
 
-    .examples {
+    .gallery-header {
       display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-top: 18px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border-top: 1px solid var(--line);
+      padding-top: 17px;
+      margin-bottom: 16px;
     }
 
-    .examples button {
-      border: 1px solid rgba(31, 37, 40, 0.14);
-      background: var(--green-soft);
-      color: #21483f;
-      border-radius: 999px;
-      padding: 8px 12px;
-      font-weight: 650;
+    .gallery-header h2 {
+      margin: 0;
+      font: 700 19px/1 var(--mono);
     }
 
-    .visual-pane {
+    .gallery-header p {
+      margin: 0;
+      color: var(--muted);
+      font: 14px/1.4 var(--mono);
+    }
+
+    .gallery-tools {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+    }
+
+    .shelf-toggle {
+      border: 1px dashed #aea797;
+      background: transparent;
+      min-height: 37px;
+      padding: 0 12px;
+      color: var(--forest);
+      font: 700 13px/1 var(--mono);
+    }
+
+    .shelf-count {
+      display: inline-flex;
+      justify-content: center;
+      min-width: 19px;
+      margin-left: 6px;
+      padding: 3px 5px;
+      background: var(--forest);
+      color: #f7f3e9;
+    }
+
+    .saved-drawer {
+      margin: 0 0 17px;
+      padding: 15px 17px;
+      background: #edf0e3;
+      border: 1px dashed #a9aa95;
+    }
+
+    .saved-drawer[hidden] {
+      display: none;
+    }
+
+    .saved-drawer-head {
+      margin: 0 0 11px;
+      color: var(--forest);
+      font: 700 12px/1.4 var(--mono);
+    }
+
+    .saved-drawer p {
+      margin: 0;
+      color: #514d45;
+      font-size: 14px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .word-card {
       position: relative;
       overflow: hidden;
-      min-height: 445px;
-      border-radius: var(--radius);
-      border: 1px solid rgba(31, 37, 40, 0.12);
+      height: clamp(212px, 17vw, 252px);
+      border: 0;
+      padding: 0;
+      text-align: left;
+      color: var(--ink);
+      background: var(--card);
+      box-shadow: 0 1px 0 rgba(22, 22, 22, 0.05), 0 5px 15px rgba(22, 22, 22, 0.045);
+    }
+
+    .card-face,
+    .card-reveal {
+      position: absolute;
+      inset: 0;
+      padding: 18px 17px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 240ms ease, opacity 210ms ease;
+    }
+
+    .card-face {
+      background: var(--card);
+    }
+
+    .card-reveal {
+      background: var(--reveal);
+      transform: translateY(100%);
+      color: var(--reveal-ink, var(--ink));
+    }
+
+    .word-card:hover .card-face,
+    .word-card:focus-visible .card-face {
+      transform: translateY(-22%);
+      opacity: 0.25;
+    }
+
+    .word-card:hover .card-reveal,
+    .word-card:focus-visible .card-reveal {
+      transform: translateY(0);
+    }
+
+    .card-no {
+      font: 700 12px/1 var(--mono);
+      opacity: 0.66;
+    }
+
+    .card-word {
+      display: block;
+      margin-top: 15px;
+      font: 700 clamp(26px, 2.55vw, 36px)/1.05 var(--mono);
+      text-transform: lowercase;
+      overflow-wrap: anywhere;
+    }
+
+    .card-word.compact {
+      font-size: clamp(21px, 2.05vw, 29px);
+      line-height: 1.12;
+    }
+
+    .translation {
+      display: block;
+      margin-top: 9px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .card-foot {
+      border-top: 1px solid rgba(21, 21, 21, 0.2);
+      padding-top: 11px;
+      font: 14px/1.35 var(--mono);
+    }
+
+    .card-reveal strong {
+      display: block;
+      margin-top: 14px;
+      max-width: 250px;
+      font: 700 clamp(17px, 1.6vw, 21px)/1.5 var(--serif);
+    }
+
+    .card-reveal .open {
+      font: 700 14px/1 var(--mono);
+    }
+
+    .dossier {
+      margin-top: 38px;
       background:
-        linear-gradient(160deg, rgba(36, 89, 77, 0.92), rgba(31, 37, 40, 0.94)),
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='900' viewBox='0 0 900 900'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.16'%3E%3Cpath d='M67 142c134 27 258 43 392 2 112-34 210-18 333 47'/%3E%3Cpath d='M83 276c133 54 251 55 380 1 114-48 225-19 352 62'/%3E%3Cpath d='M58 423c154 65 259 61 404-6 110-51 213-29 361 73'/%3E%3Cpath d='M97 590c128 27 232 11 354-56 119-65 234-54 379 44'/%3E%3Cpath d='M46 729c147 41 273 21 389-55 133-87 250-67 398 33'/%3E%3C/g%3E%3Cg fill='%23ffffff' fill-opacity='.2'%3E%3Ccircle cx='180' cy='215' r='5'/%3E%3Ccircle cx='438' cy='301' r='5'/%3E%3Ccircle cx='702' cy='245' r='5'/%3E%3Ccircle cx='274' cy='512' r='5'/%3E%3Ccircle cx='612' cy='572' r='5'/%3E%3Ccircle cx='391' cy='710' r='5'/%3E%3C/g%3E%3C/svg%3E");
-      background-size: cover;
-      box-shadow: var(--shadow);
-      color: #fff;
-      padding: 28px;
+        radial-gradient(circle at 20% 20%, rgba(255, 254, 250, 0.55), transparent 42%),
+        linear-gradient(rgba(230, 223, 208, 0.8), rgba(230, 223, 208, 0.88)),
+        url("assets/archive/old-paper-texture.jpg") center / cover;
+      padding: clamp(18px, 4vw, 48px);
+      display: none;
+      box-shadow: inset 0 0 52px rgba(69, 52, 30, 0.1);
+    }
+
+    .dossier.open {
+      display: block;
+    }
+
+    .file-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .file-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 7px;
+    }
+
+    .file-label {
+      background: #273129;
+      color: #f7f3e9;
+      padding: 9px 13px;
+      font: 700 14px/1 var(--mono);
+    }
+
+    .close-file {
+      border: 1px dashed #b4ae9e;
+      background: var(--white);
+      padding: 10px 13px;
+      font: 700 13px/1 var(--mono);
+    }
+
+    .file-action {
+      border: 1px solid #c9c0ae;
+      background: rgba(255, 254, 250, 0.8);
+      min-height: 37px;
+      padding: 0 12px;
+      color: #3d3933;
+      font: 700 13px/1 var(--mono);
+      transition: background 160ms cubic-bezier(0.16, 1, 0.3, 1), color 160ms cubic-bezier(0.16, 1, 0.3, 1), border-color 160ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .file-action:hover,
+    .file-action:focus-visible {
+      border-color: #285542;
+      background: #f1ede2;
+    }
+
+    .file-action.selected {
+      border-color: var(--cobalt);
+      background: var(--blue);
+      color: var(--cobalt);
+    }
+
+    .file-action.active {
+      border-color: #285542;
+      background: #285542;
+      color: #f7f3e9;
+    }
+
+    .action-receipt[hidden] {
+      display: none;
+    }
+
+    .action-receipt {
+      position: relative;
+      margin: -7px 0 26px auto;
+      width: min(630px, 100%);
+      padding: 18px 20px 19px;
+      border: 1px dashed #b4ae9e;
+      background:
+        linear-gradient(rgba(255, 254, 250, 0.93), rgba(255, 254, 250, 0.93)),
+        url("assets/archive/old-paper-texture.jpg") center / cover;
+      box-shadow: 3px 4px 11px rgba(44, 35, 24, 0.08);
+      animation: receipt-in 180ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes receipt-in {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .receipt-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      margin-bottom: 9px;
+    }
+
+    .receipt-kicker {
+      color: #285542;
+      font: 700 12px/1.4 var(--mono);
+      text-transform: uppercase;
+    }
+
+    .receipt-close {
+      border: 0;
+      background: transparent;
+      font: 700 13px/1 var(--mono);
+    }
+
+    .receipt-title {
+      margin: 0 0 6px;
+      color: var(--ink);
+      font: 700 18px/1.45 var(--mono);
+    }
+
+    .receipt-copy,
+    .receipt-next {
+      margin: 0;
+      color: #514d45;
+      font: 14px/1.7 var(--body);
+    }
+
+    .receipt-next {
+      margin-top: 12px;
+      color: #285542;
+      font-weight: 700;
+    }
+
+    .saved-shelf {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 7px;
+      margin-top: 14px;
+    }
+
+    .saved-shelf-label {
+      color: #777064;
+      font: 12px/1.4 var(--mono);
+      margin-right: 3px;
+    }
+
+    .saved-file {
+      background: #285542;
+      color: #fffefa;
+      padding: 6px 9px;
+      text-decoration: none;
+      font: 700 13px/1 var(--mono);
+    }
+
+    .share-choices {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin: 13px 0 11px;
+    }
+
+    .share-choice,
+    .receipt-command {
+      border: 1px solid #c9c0ae;
+      background: var(--white);
+      padding: 8px 11px;
+      color: #403d36;
+      font: 700 13px/1.2 var(--mono);
+    }
+
+    .share-choice.active {
+      background: #c5dcf4;
+      border-color: #243fc8;
+      color: #243fc8;
+    }
+
+    .receipt-command {
+      margin-top: 12px;
+      border-color: #285542;
+      background: #285542;
+      color: #fffefa;
+    }
+
+    .receipt-text {
+      display: block;
+      width: 100%;
+      min-height: 78px;
+      resize: none;
+      border: 1px dashed #b4ae9e;
+      margin-top: 11px;
+      padding: 10px;
+      background: #f4f0e6;
+      color: var(--ink);
+      font: 13px/1.6 var(--mono);
+    }
+
+    .case-cover {
+      position: relative;
+      width: min(780px, 100%);
+      margin: 14px auto 22px;
+      padding: clamp(28px, 5vw, 48px);
+      background:
+        linear-gradient(rgba(249, 244, 231, 0.77), rgba(244, 237, 222, 0.84)),
+        url("assets/archive/old-paper-texture.jpg") center / cover;
+      box-shadow: 2px 4px 4px rgba(56, 39, 21, 0.08), 9px 14px 29px rgba(56, 39, 21, 0.12);
+      transform: rotate(-0.35deg);
+    }
+
+    .case-cover::before {
+      content: "";
+      position: absolute;
+      width: 62px;
+      height: 19px;
+      top: -10px;
+      left: 48%;
+      background: rgba(190, 169, 122, 0.52);
+      transform: rotate(3deg);
+    }
+
+    .case-cover::after {
+      content: "ARCHIVE COPY / HANDLE WITH CARE";
+      position: absolute;
+      right: 28px;
+      bottom: 20px;
+      color: rgba(110, 63, 47, 0.7);
+      font: 700 11px/1 var(--mono);
+      border: 1px solid rgba(110, 63, 47, 0.46);
+      padding: 7px 8px;
+      transform: rotate(-2deg);
+    }
+
+    .word-heading {
+      margin: 0 0 9px;
+      font: 700 clamp(42px, 5vw, 64px)/1 var(--mono);
+    }
+
+    .surface-label {
+      margin: 0;
+      display: inline-block;
+      border: 1px solid #d0c9b9;
+      padding: 6px 10px;
+      color: #3c3c37;
+      font-size: 15px;
+    }
+
+    .clue-trail {
+      width: min(780px, 100%);
+      margin: 0 auto;
+      display: grid;
+      gap: 0;
+      background: #f7f2e7;
+      box-shadow: 2px 5px 15px rgba(46, 35, 23, 0.07);
+    }
+
+    .artifact {
+      position: relative;
+      width: 100%;
+      margin-left: 0;
+      padding: clamp(30px, 4vw, 40px) clamp(25px, 5vw, 44px);
+      font: 18px/1.82 var(--serif);
+      box-shadow: none;
+      transform: none;
+      border-top: 1px solid rgba(76, 63, 45, 0.12);
+    }
+
+    .artifact-tag {
+      position: static;
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 19px;
+      padding: 0;
+      background: transparent;
+      color: #645d50;
+      font: 700 13px/1 var(--mono);
+      box-shadow: none;
+      transform: none;
+    }
+
+    .artifact-tag::before {
+      content: "";
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      margin-right: 9px;
+      border-radius: 50%;
+      background: var(--tag-color, var(--cobalt));
+    }
+
+    .artifact p,
+    .artifact-copy p {
+      margin: 0;
+    }
+
+    .artifact-copy p + p {
+      margin-top: 14px;
+    }
+
+    .artifact-literal {
+      background:
+        linear-gradient(rgba(240, 236, 226, 0.76), rgba(236, 231, 218, 0.79)),
+        url("assets/archive/old-paper-texture.jpg") center / cover;
+      font: 15px/1.72 var(--mono);
+      border-top: 0;
+    }
+
+    .clipping-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 18px;
+      padding-bottom: 10px;
+      border-bottom: 3px double rgba(30, 28, 24, 0.5);
+      color: #514b40;
+      font: 700 11px/1.25 var(--mono);
+      text-transform: uppercase;
+    }
+
+    .artifact-literal .slip-definition {
+      margin: 0 0 20px;
+      color: #3e3c37;
+      font: 14px/1.7 var(--mono);
+      column-count: 2;
+      column-gap: 25px;
+      column-rule: 1px solid rgba(34, 32, 27, 0.18);
+    }
+
+    .artifact-literal .slip-definition b {
+      display: block;
+      color: var(--ink);
+      font-size: 25px;
+      text-transform: lowercase;
+    }
+
+    .artifact-feeling {
+      background:
+        linear-gradient(90deg, transparent 47px, rgba(183, 70, 62, 0.16) 47px 48px, transparent 48px),
+        repeating-linear-gradient(180deg, transparent 0 34px, rgba(77, 100, 123, 0.09) 34px 35px),
+        #f6f1df;
+      padding-left: clamp(59px, 8vw, 70px);
+      font-size: 19px;
+      line-height: 1.7;
+    }
+
+    .margin-note {
+      display: block;
+      margin: 0 0 18px;
+      color: #7c7061;
+      font: 12px/1.4 var(--mono);
+      text-transform: uppercase;
+    }
+
+    .neighbor-notes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 21px;
+    }
+
+    .neighbor-note {
+      flex: 1 1 184px;
+      padding: 9px 11px;
+      background: rgba(255, 252, 237, 0.38);
+      color: #494338;
+      font: 14px/1.58 var(--mono);
+    }
+
+    .neighbor-note b {
+      display: block;
+      margin-bottom: 5px;
+      color: #b55749;
+      font-size: 15px;
+    }
+
+    .artifact-origin {
+      isolation: isolate;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(99, 67, 34, 0.05), transparent 7%, transparent 48.9%, rgba(90, 61, 30, 0.09) 49.8%, rgba(255, 247, 226, 0.4) 50.6%, transparent 51.7%, transparent 94%, rgba(99, 67, 34, 0.06)),
+        linear-gradient(105deg, #efe5ce 0%, #f4ebd7 48%, #ebddc0 100%);
+      font-family: var(--serif);
+      box-shadow:
+        inset 0 0 0 1px rgba(94, 68, 38, 0.2),
+        inset 0 0 32px rgba(86, 60, 31, 0.08);
+    }
+
+    .artifact-origin::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: 10px 11px;
+      border: 1px solid rgba(103, 75, 43, 0.18);
+      background:
+        linear-gradient(123deg, transparent 0 46%, rgba(104, 72, 41, 0.08) 48%, transparent 51%) bottom left / 88px 74px no-repeat,
+        repeating-linear-gradient(180deg, transparent 0 25px, rgba(100, 71, 38, 0.02) 26px, transparent 27px);
+      box-shadow:
+        inset 0 1px rgba(255, 249, 231, 0.54),
+        inset 0 -1px rgba(74, 49, 27, 0.08);
+      pointer-events: none;
+    }
+
+    .artifact-origin > .artifact-tag {
+      position: relative;
+      z-index: 2;
+    }
+
+    .origin-volume-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 20px;
+      margin: 0 0 25px;
+      padding: 9px 0 11px;
+      border-top: 3px double rgba(57, 43, 27, 0.52);
+      border-bottom: 1px solid rgba(57, 43, 27, 0.42);
+      color: #403729;
+      font: 12px/1.35 var(--mono);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .origin-volume-head strong {
+      font: 700 clamp(17px, 2.3vw, 21px)/1.1 var(--serif);
+      letter-spacing: 0.09em;
+    }
+
+    .folio {
+      position: relative;
+      z-index: 1;
+    }
+
+    .book-mark {
+      display: block;
+      margin-bottom: 16px;
+      color: #716555;
+      font: italic 13px/1.4 var(--serif);
+    }
+
+    .origin-citation {
+      position: relative;
+      float: left;
+      width: clamp(172px, 28%, 202px);
+      margin: 9px clamp(28px, 4vw, 40px) 19px -8px;
+      padding: 20px 17px 16px;
+      background: #f3e4bd;
+      border: 1px solid rgba(93, 67, 37, 0.3);
+      color: #534937;
+      font: 12px/1.65 var(--mono);
+      box-shadow:
+        1px 2px 0 rgba(88, 61, 30, 0.08),
+        4px 5px 11px rgba(58, 42, 24, 0.1);
+      transform: rotate(-1deg);
+    }
+
+    .origin-citation::before {
+      content: "";
+      position: absolute;
+      top: -9px;
+      left: 35%;
+      width: 48px;
+      height: 15px;
+      background: rgba(183, 155, 102, 0.5);
+      transform: rotate(2deg);
+    }
+
+    .citation-label {
+      display: block;
+      margin-bottom: 13px;
+      padding-bottom: 7px;
+      border-bottom: 1px solid rgba(90, 63, 36, 0.22);
+      color: #746451;
+      font: 700 10px/1 var(--mono);
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .citation-headword {
+      display: block;
+      margin-bottom: 10px;
+      color: #26221b;
+      font: 700 27px/1.05 var(--serif);
+      text-transform: lowercase;
+    }
+
+    .origin-citation strong {
+      display: block;
+      margin-top: 8px;
+      color: #2c2924;
+      font: 700 14px/1.62 var(--mono);
+    }
+
+    .origin-entry-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 13px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(74, 52, 27, 0.32);
+      color: #514537;
+      font: 11px/1.35 var(--mono);
+      text-transform: uppercase;
+    }
+
+    .origin-entry-head strong {
+      color: #241f18;
+      font: 700 clamp(27px, 3.8vw, 34px)/1 var(--serif);
+      text-transform: lowercase;
+    }
+
+    .origin-entry .artifact-copy {
+      color: #241f18;
+      font-size: 17px;
+      line-height: 1.82;
+    }
+
+    .origin-entry::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .artifact-origin::after {
+      content: "folio 47 / verified trail";
+      position: relative;
+      z-index: 1;
+      display: block;
+      margin-top: 26px;
+      color: #7b7161;
+      text-align: right;
+      font: 13px/1 var(--mono);
+    }
+
+    .source-ledger {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px 13px;
+      margin-top: 24px;
+      padding-top: 13px;
+      border-top: 1px solid rgba(90, 63, 36, 0.15);
+      color: #746958;
+      font: 12px/1.5 var(--mono);
+    }
+
+    .source-ledger a {
+      color: #534937;
+      text-decoration: underline;
+      text-decoration-color: rgba(83, 73, 55, 0.32);
+      text-underline-offset: 3px;
+    }
+
+    .artifact-uses {
+      background:
+        linear-gradient(rgba(235, 231, 220, 0.66), rgba(230, 226, 214, 0.76)),
+        url("assets/archive/old-paper-texture.jpg") center / cover;
+      color: #211f1a;
+    }
+
+    .news-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 18px;
+      margin-bottom: 18px;
+      padding-bottom: 9px;
+      border-bottom: 3px double rgba(44, 41, 36, 0.72);
+      font: 12px/1.4 var(--mono);
+      text-transform: uppercase;
+    }
+
+    .news-head strong {
+      font: 700 clamp(23px, 3.2vw, 29px)/1 var(--serif);
+      text-transform: none;
+    }
+
+    .news-copy {
+      columns: 2 270px;
+      column-gap: 35px;
+      column-rule: 1px solid rgba(36, 32, 25, 0.23);
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    .quote-clips {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      margin-top: 25px;
+      border-top: 2px solid rgba(36, 32, 25, 0.65);
+    }
+
+    .quote-clip {
+      padding: 14px 17px 8px;
+      background: transparent;
+      border-right: 1px solid rgba(36, 32, 25, 0.25);
+      font: 15px/1.6 var(--mono);
+    }
+
+    .quote-clip:last-child {
+      border-right: 0;
+    }
+
+    .quote-clip b {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--cobalt);
+      font: 700 12px/1 var(--mono);
+      text-transform: uppercase;
+    }
+
+    .usage-excerpt {
+      break-inside: avoid;
+      margin: 19px 0 0;
+      padding: 11px 0 2px 16px;
+      border-left: 2px solid rgba(36, 32, 25, 0.3);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .usage-excerpt strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #32618a;
+      font: 700 12px/1.35 var(--mono);
+      text-transform: uppercase;
+    }
+
+    .usage-excerpt .en-line {
+      display: block;
+      font-family: var(--serif);
+    }
+
+    .usage-excerpt .zh-line {
+      display: block;
+      margin-top: 5px;
+      color: #625a4d;
+      font-size: 14px;
+    }
+
+    .artifact-context {
+      background:
+        linear-gradient(rgba(237, 232, 220, 0.8), rgba(232, 226, 213, 0.88)),
+        url("assets/archive/old-paper-texture.jpg") center / cover;
+      color: #23221f;
+      overflow: hidden;
+    }
+
+    .film-strip {
+      position: relative;
+      margin: 0 0 21px;
+      padding: 15px 18px;
+      background:
+        radial-gradient(circle, #f0eadc 0 3px, transparent 4px) 12px 7px / 23px 12px repeat-x,
+        radial-gradient(circle, #f0eadc 0 3px, transparent 4px) 12px calc(100% - 7px) / 23px 12px repeat-x,
+        #050606;
+    }
+
+    .film-frames {
+      display: grid;
+      grid-template-columns: minmax(180px, 0.8fr) minmax(280px, 1.22fr);
+      gap: 5px;
+      background: #050606;
+    }
+
+    .contrast-frame {
+      min-height: 122px;
+      padding: clamp(13px, 2vw, 18px);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
 
-    .sense-stack {
-      display: grid;
-      gap: 14px;
+    .contrast-frame.en {
+      background: #f1eee5;
+      color: #141515;
     }
 
-    .sense-card {
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      background: rgba(255, 255, 255, 0.11);
-      border-radius: var(--radius);
-      padding: 16px;
-      backdrop-filter: blur(12px);
+    .contrast-frame.zh {
+      background: #1c1d1d;
+      color: #f1ede4;
     }
 
-    .sense-card b {
-      display: block;
-      margin-bottom: 8px;
-      font-size: 15px;
+    .contrast-label {
+      color: #847968;
+      font: 12px/1.4 var(--mono);
+      text-transform: uppercase;
     }
 
-    .sense-card span {
-      display: block;
-      color: rgba(255, 255, 255, 0.76);
+    .contrast-frame.zh .contrast-label {
+      color: #c0b8a8;
+    }
+
+    .contrast-frame p {
+      margin-top: 13px;
+      font: 16px/1.58 var(--serif);
+    }
+
+    .context-reading {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .artifact-context .source-line {
+      margin: 0 0 20px;
+      padding: 13px 16px;
+      background: transparent;
+      border-top: 1px solid rgba(48, 43, 35, 0.2);
+      border-bottom: 1px solid rgba(48, 43, 35, 0.2);
+      color: #595246;
+      font: 15px/1.65 var(--mono);
+    }
+
+    .artifact-context .source-line.empty {
+      display: none;
+    }
+
+    .artifact-insight {
+      background: #f8f3e7;
+      padding: clamp(40px, 6vw, 58px) clamp(31px, 7vw, 60px) clamp(30px, 4vw, 42px);
+      font-size: clamp(20px, 2.3vw, 23px);
+      line-height: 1.72;
+      box-shadow: none;
+    }
+
+    .insight-transcript {
+      position: relative;
+      padding: 56px 0 26px;
+    }
+
+    .insight-transcript::before {
+      content: "\201C";
+      position: absolute;
+      top: -12px;
+      left: 0;
+      color: #285542;
+      font: 100px/1 Georgia, serif;
+    }
+
+    .save-insight {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 29px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(47, 42, 33, 0.19);
+      color: #625b4e;
+      font: 12px/1.4 var(--mono);
+      text-transform: uppercase;
+    }
+
+    .save-insight button {
+      padding: 8px 11px;
+      border: 1px solid #285542;
+      background: transparent;
+      color: #285542;
+      font: 12px/1.4 var(--mono);
+      text-transform: uppercase;
+    }
+
+    .save-insight button.active {
+      background: #285542;
+      color: #f7f3e9;
+    }
+
+    .keeper-feedback {
+      flex-basis: 100%;
+      margin: 2px 0 0;
+      color: #285542;
+      font: 700 13px/1.6 var(--body);
+      text-transform: none;
+    }
+
+    .keeper-feedback[hidden] {
+      display: none;
+    }
+
+    .artifact-insight::after {
+      content: "\201D";
+      position: absolute;
+      right: 31px;
+      bottom: 52px;
+      color: rgba(40, 85, 66, 0.24);
+      font: 92px/1 Georgia, serif;
+    }
+
+    .context-note {
+      display: none;
+      margin: 0 0 22px;
+      padding: 12px 14px;
+      background: var(--blue);
+      border: 0;
       font-size: 14px;
       line-height: 1.55;
     }
 
-    .quote-line {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 32px;
-      line-height: 1.15;
-      max-width: 360px;
-    }
-
-    .workspace {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) 320px;
-      gap: 22px;
-      margin-top: 24px;
-      align-items: start;
-    }
-
-    .result,
-    .side {
-      background: rgba(255, 255, 255, 0.84);
-      border: 1px solid rgba(216, 221, 217, 0.9);
-      border-radius: var(--radius);
-      box-shadow: 0 12px 32px rgba(31, 37, 40, 0.06);
-    }
-
-    .result {
-      min-height: 480px;
-      padding: 28px;
-    }
-
-    .result.empty {
-      display: grid;
-      place-items: center;
-      text-align: center;
-      color: var(--muted);
-    }
-
-    .empty-state {
-      max-width: 450px;
-    }
-
-    .empty-state strong {
+    .context-note.show {
       display: block;
-      color: var(--ink);
-      font-size: 24px;
-      margin-bottom: 10px;
     }
 
-    .answer {
-      line-height: 1.82;
-      font-size: 17px;
+    .loading-sheet {
+      font: 18px/1.7 var(--mono);
     }
 
-    .answer p {
-      margin: 0 0 18px;
+    .loading-sheet::after {
+      content: "";
+      display: inline-block;
+      width: 34px;
+      margin-left: 9px;
+      border-bottom: 2px solid var(--ink);
+      animation: type 1s steps(4, end) infinite;
     }
 
-    .answer.loading,
-    .answer.error {
-      color: #4c575b;
+    @keyframes type {
+      0% { width: 8px; }
+      100% { width: 42px; }
     }
 
-    .answer.error strong {
-      color: var(--brick);
+    .error-note {
+      color: #b4382b;
+      font-family: var(--body);
     }
 
-    .answer .word-title {
+    .footer-line {
       display: flex;
-      align-items: baseline;
       justify-content: space-between;
-      gap: 16px;
-      padding-bottom: 18px;
-      margin-bottom: 22px;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .word-title h2 {
-      margin: 0;
-      font-size: 42px;
-      letter-spacing: 0;
-      line-height: 1;
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      min-height: 28px;
-      border-radius: 999px;
-      padding: 0 10px;
-      color: #7b3c2b;
-      background: var(--brick-soft);
-      font-size: 13px;
-      font-weight: 690;
-      white-space: nowrap;
-    }
-
-    .examples-block {
-      margin-top: 26px;
-      padding-top: 20px;
+      gap: 20px;
+      margin-top: 38px;
+      padding-top: 16px;
       border-top: 1px solid var(--line);
-    }
-
-    .example-item {
-      margin: 16px 0 0;
-      padding: 15px 16px;
-      border-left: 3px solid var(--gold);
-      background: #fffdf8;
-      border-radius: 0 8px 8px 0;
-    }
-
-    .example-item b {
-      display: block;
-      margin-bottom: 7px;
-      color: var(--blue);
-      font-size: 14px;
-    }
-
-    .example-item span {
-      color: #2a3033;
-    }
-
-    .side {
-      padding: 18px;
-      position: sticky;
-      top: 20px;
-    }
-
-    .side h2 {
-      margin: 0 0 14px;
-      font-size: 17px;
-    }
-
-    .meta-list {
-      display: grid;
-      gap: 10px;
-    }
-
-    .meta {
-      border: 1px solid rgba(31, 37, 40, 0.1);
-      border-radius: var(--radius);
-      padding: 12px;
-      background: rgba(251, 250, 246, 0.62);
-    }
-
-    .meta small {
       color: var(--muted);
-      display: block;
-      margin-bottom: 5px;
+      font: 13px/1.6 var(--mono);
     }
 
-    .meta strong {
-      color: var(--ink);
-      font-size: 15px;
-    }
-
-    .copy-button {
-      width: 100%;
-      margin-top: 14px;
-      border: 1px solid rgba(36, 89, 77, 0.28);
-      background: #fff;
-      color: var(--green);
-      border-radius: 6px;
-      min-height: 42px;
-      font-weight: 720;
-    }
-
-    @media (max-width: 900px) {
-      .shell {
-        width: min(100% - 28px, 720px);
-        padding-top: 20px;
+    @media (max-width: 980px) {
+      .intro {
+        grid-template-columns: 1fr;
       }
 
-      .topbar {
+      .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .word-card {
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        width: calc(100% - 24px);
+      }
+
+      .masthead,
+      .gallery-header,
+      .footer-line {
         align-items: flex-start;
         flex-direction: column;
       }
 
-      .nav {
-        justify-content: flex-start;
-      }
-
-      .hero,
-      .workspace,
-      .context-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        margin-top: 32px;
-      }
-
-      .visual-pane {
-        min-height: 300px;
-      }
-
-      .side {
-        position: static;
-      }
-    }
-
-    @media (max-width: 560px) {
-      .shell {
-        width: calc(100% - 22px);
-      }
-
-      .search-pane,
-      .result,
-      .visual-pane {
-        padding: 18px;
-      }
-
-      .search-box {
-        grid-template-columns: 1fr;
-      }
-
-      .primary {
+      .gallery-tools {
         width: 100%;
+        justify-content: space-between;
       }
 
-      .word-title {
+      .intro {
+        padding: 34px 0 32px;
+      }
+
+      .context,
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .word-card {
+        height: 238px;
+      }
+
+      .dossier {
+        padding: 13px;
+      }
+
+      .file-bar {
+        align-items: flex-start;
         flex-direction: column;
       }
 
-      .answer .word-title h2 {
-        font-size: 34px;
+      .file-controls {
+        width: 100%;
+        justify-content: flex-start;
       }
 
-      .quote-line {
-        font-size: 26px;
+      .case-cover,
+      .artifact,
+      .artifact-literal,
+      .artifact-feeling,
+      .artifact-origin,
+      .artifact-context,
+      .artifact-insight {
+        width: 100%;
+        margin-left: 0;
+        transform: none;
+      }
+
+      .quote-clips {
+        grid-template-columns: 1fr;
+      }
+
+      .folio {
+        display: block;
+      }
+
+      .artifact-origin {
+        background:
+          linear-gradient(105deg, #efe5ce 0%, #f4ebd7 45%, #ebddc0 100%);
+      }
+
+      .film-frames {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .origin-citation {
+        float: none;
+        width: min(220px, 100%);
+        margin: 5px 0 22px;
+      }
+
+      .origin-volume-head,
+      .origin-entry-head {
+        flex-direction: column;
+        gap: 7px;
+      }
+
+      .news-copy {
+        columns: 1;
+      }
+
+      .quote-clip {
+        border-right: 0;
+        border-bottom: 1px solid rgba(36, 32, 25, 0.25);
+        padding-bottom: 15px;
+      }
+
+      .quote-clip:last-child {
+        border-bottom: 0;
+      }
+
+      .film-strip {
+        padding: 14px 13px;
+      }
+
+      .contrast-frame {
+        min-height: 130px;
+        padding: 13px 11px;
+      }
+
+      .contrast-frame p {
+        font-size: 14px;
+      }
+
+      .artifact-literal .slip-definition {
+        column-count: 1;
+      }
+
+      .artifact-insight {
+        padding-top: 57px;
       }
     }
   </style>
 </head>
 <body>
-  <main class="shell">
-    <header class="topbar">
-      <div class="brand">
-        <div class="mark">W</div>
-        <div>
-          <div class="brand-name">Word Sense</div>
-          <div class="brand-note">给中国成人学习者的用法搜索</div>
+  <section id="releaseNotice" class="release-layer" role="dialog" aria-modal="true" aria-labelledby="releaseTitle" hidden>
+    <div class="release-note">
+      <button id="releaseClose" class="release-dismiss" type="button" aria-label="关闭改版通知">X</button>
+      <span class="release-kicker">改版手记 / issue 001</span>
+      <h2 id="releaseTitle">Word Sense 换了一种样子</h2>
+      <p>第一版帮我们把想法做了出来，但视觉上仍带着一些熟悉的 AI 页面感。</p>
+      <p>这一次，我们重新编排了阅读方式：更像一份独立出版物，也更适合安静读完一个词。</p>
+      <p>你仍然可以搜索一个词，也可以先抽出一张词卡，沿着它的声音、来路和语境读下去。</p>
+      <div class="release-actions">
+        <button id="releaseEnter" class="release-enter" type="button">进入新版 -></button>
+        <span class="release-once">此通知只出现一次</span>
+      </div>
+    </div>
+  </section>
+  <main class="page">
+    <header class="masthead">
+      <a class="brand" href="index.html">Word Sense</a>
+      <div class="header-links">
+        <a href="word-sense-about.html">about</a>
+        <a href="word-sense-author.html">一封信</a>
+        <div class="issue">
+          <span>FIELD NOTES ON ENGLISH</span>
+          <span>ISSUE 001</span>
         </div>
       </div>
-      <nav class="nav" aria-label="快捷词">
-        <button type="button" data-fill="shot">shot</button>
-        <button type="button" data-fill="pristine">pristine</button>
-        <button type="button" data-fill="sweet">sweet</button>
-        <button type="button" data-fill="agency">agency</button>
-      </nav>
     </header>
 
-    <section class="hero" aria-label="单词搜索">
-      <div class="search-pane">
-        <h1>看见一个词真正工作的样子</h1>
-        <p class="subhead">输入单词，再给一点出处或原句。页面会把解释锚定在那个语境里，避开词典式罗列，直接看用法、语气和中英认知错位。</p>
-
-        <form id="senseForm">
-          <div class="search-box">
-            <input id="wordInput" autocomplete="off" placeholder="输入一个英文词" aria-label="英文词">
-            <button class="primary" type="submit">搜索</button>
-          </div>
-
-          <div class="context-grid">
-            <div class="field">
-              <label for="sourceInput">出处</label>
-              <input id="sourceInput" placeholder="老板邮件、Instagram、Reddit 评论">
-            </div>
-            <div class="field">
-              <label for="sentenceInput">原句</label>
-              <textarea id="sentenceInput" placeholder="see something from a simple shot"></textarea>
-            </div>
-          </div>
-        </form>
-
-        <div class="examples" aria-label="示例搜索">
-          <button type="button" data-example="shot">带原句看 shot</button>
-          <button type="button" data-example="pristine">看 pristine</button>
-          <button type="button" data-example="sweet">看 sweet</button>
-        </div>
+    <section class="intro">
+      <div>
+        <h1>那些你以为已经懂了的词</h1>
+        <p>一个英文词被翻成中文的那一刻，常常只剩下了正面。把卡片翻过来，看看真实使用里还留下了什么痕迹。</p>
       </div>
 
-      <aside class="visual-pane" aria-label="产品语感">
-        <div class="sense-stack">
-          <div class="sense-card">
-            <b>用法，不是定义</b>
-            <span>从真实句子里看一个词怎样切开经验，而不是先找中文对应词。</span>
-          </div>
-          <div class="sense-card">
-            <b>锚定一个 sense</b>
-            <span>有原句就收窄；只有词时，只讲最值得停下来的 1-2 个用法。</span>
-          </div>
+      <form id="senseForm" class="lookup">
+        <div class="lookup-title">
+          <span>SEARCH THE FILES</span>
+          <small>一次看一个词</small>
         </div>
-        <div class="quote-line">meaning lives in use</div>
-      </aside>
+        <div class="search-row">
+          <input id="wordInput" autocomplete="off" placeholder="输入一个英文词" aria-label="英文词">
+          <button type="submit">搜索</button>
+        </div>
+        <div class="context">
+          <input id="sourceInput" placeholder="出处, 如老板邮件" aria-label="出处">
+          <textarea id="sentenceInput" placeholder="原句, 如果你有的话" aria-label="原句"></textarea>
+        </div>
+      </form>
     </section>
 
-    <section class="workspace" aria-label="搜索结果">
-      <article id="result" class="result empty">
-        <div class="empty-state">
-          <strong>先搜一个词</strong>
-          <span>如果你贴上原句，解释会更准；如果只输入词，页面会给最常见的用法入口。</span>
+    <section aria-label="精选词卡">
+      <div class="gallery-header">
+        <h2>FEATURED WORD CARDS / 16 FILES</h2>
+        <div class="gallery-tools">
+          <p>hover 看线索 / click 阅读词条</p>
+          <button id="savedShelfToggle" class="shelf-toggle" type="button" aria-expanded="false">
+            收藏夹 <span id="savedCount" class="shelf-count">0</span>
+          </button>
         </div>
-      </article>
-
-      <aside class="side" aria-label="搜索判断">
-        <h2>当前判断</h2>
-        <div class="meta-list">
-          <div class="meta">
-            <small>词</small>
-            <strong id="metaWord">未输入</strong>
-          </div>
-          <div class="meta">
-            <small>语境</small>
-            <strong id="metaContext">等待原句或出处</strong>
-          </div>
-          <div class="meta">
-            <small>输出深度</small>
-            <strong id="metaDepth">自动判断</strong>
-          </div>
-        </div>
-        <button id="copyPrompt" class="copy-button" type="button">复制查询参数</button>
-      </aside>
+      </div>
+      <div id="savedDrawer" class="saved-drawer" hidden></div>
+      <div id="featuredCards" class="cards"></div>
     </section>
+
+    <section id="dossier" class="dossier" aria-live="polite">
+      <div class="file-bar">
+        <span id="fileLabel" class="file-label">open file</span>
+        <div class="file-controls">
+          <button id="saveFile" class="file-action" type="button" aria-pressed="false" aria-expanded="false">收藏</button>
+          <button id="copyFile" class="file-action" type="button" aria-expanded="false">复制词条</button>
+          <button id="shareFile" class="file-action" type="button" aria-expanded="false">分享</button>
+          <button id="closeFile" class="close-file" type="button">CLOSE X</button>
+        </div>
+      </div>
+      <section id="actionReceipt" class="action-receipt" aria-live="polite" hidden>
+        <div id="receiptContent"></div>
+      </section>
+      <header class="case-cover">
+        <h2 id="detailWord" class="word-heading">wail</h2>
+        <p id="detailSurface" class="surface-label">正面写着：“哀号；嚎啕；痛哭；哭诉”</p>
+      </header>
+      <div id="clueTrail" class="clue-trail"></div>
+    </section>
+
+    <footer class="footer-line">
+      <span>WORD SENSE / WORDS HAVE LIVES BEYOND TRANSLATION</span>
+      <span>读完一张，再抽出下一张。</span>
+    </footer>
   </main>
 
+  <script src="word-sense-content.js"></script>
   <script>
     const form = document.querySelector("#senseForm");
     const wordInput = document.querySelector("#wordInput");
     const sourceInput = document.querySelector("#sourceInput");
     const sentenceInput = document.querySelector("#sentenceInput");
-    const result = document.querySelector("#result");
-    const metaWord = document.querySelector("#metaWord");
-    const metaContext = document.querySelector("#metaContext");
-    const metaDepth = document.querySelector("#metaDepth");
-    const copyPrompt = document.querySelector("#copyPrompt");
+    const dossier = document.querySelector("#dossier");
+    const fileLabel = document.querySelector("#fileLabel");
+    const detailWord = document.querySelector("#detailWord");
+    const detailSurface = document.querySelector("#detailSurface");
+    const clueTrail = document.querySelector("#clueTrail");
+    const closeFile = document.querySelector("#closeFile");
+    const featuredCards = document.querySelector("#featuredCards");
+    const savedShelfToggle = document.querySelector("#savedShelfToggle");
+    const savedCount = document.querySelector("#savedCount");
+    const savedDrawer = document.querySelector("#savedDrawer");
+    const saveFile = document.querySelector("#saveFile");
+    const copyFile = document.querySelector("#copyFile");
+    const shareFile = document.querySelector("#shareFile");
+    const actionReceipt = document.querySelector("#actionReceipt");
+    const receiptContent = document.querySelector("#receiptContent");
+    const page = document.querySelector(".page");
+    const releaseNotice = document.querySelector("#releaseNotice");
+    const releaseClose = document.querySelector("#releaseClose");
+    const releaseEnter = document.querySelector("#releaseEnter");
+    const releaseStorageKey = "wordsense_redesign_notice_v1";
+    const savedFilesKey = "wordsense_saved_files_v1";
+    let currentFile = "";
+    let currentData = null;
+    let currentSource = "";
+    let currentSentence = "";
+    let currentShareStyle = "direct";
 
-    const samples = {
-      shot: {
-        badge: "原句锚定",
-        depth: "L2, 有跨语言错位",
-        lead: "`shot` 在摄影语境里不能只当成“照片”。它更像一次取景的动作：相机对准、按下快门，把世界切成一个能被看的瞬间。",
-        paragraphs: [
-          "中文会把“开枪、拍照、喝酒、尝试、打针”分到不同领域；英语里的 `shot` 却常把它们放进同一个身体图式：一次出手，一次释放，一次抓取。",
-          "所以 `a simple shot` 不是“简单照片”那么平。它暗示这个画面没有复杂设计，但这一“下”抓得准。你看到的不是整个事件，而是一个角度、一个构图、一个瞬间。",
-          "和 `photo` 比，`photo` 更像照片这个物；`shot` 更像拍到的这一帧，以及拍它的那一下。和 `scene` 比，`shot` 又小很多，是电影或影像里一个取景单位。"
+    const cardCatalog = [
+      { word: "wail", meaning: "哀号；痛哭", trail: "声音 / 哀痛 / 警报", clue: "一条拉长的声音，把痛苦推到空气里。", card: "#c5dcf4", reveal: "#263fc7", revealInk: "#fffefa" },
+      { word: "sense", meaning: "感觉；意义", trail: "感知 / 判断", clue: "从身体接收，到脑中各部分接上。", card: "#f4f1ea", reveal: "#161818", revealInk: "#f7f3e9" },
+      { word: "lowkey", meaning: "有点；低调", trail: "社媒 / 姿态", clue: "把真实想法稍微藏着说出来。", card: "#ff8875", reveal: "#fff1a6", revealInk: "#171717" },
+      { word: "brace", meaning: "撑住；准备应对", trail: "动作 / 压力", clue: "冲击还没来，身体已经先紧起来。", card: "#5b8b40", reveal: "#f5b08b", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "cringe", meaning: "尴尬到缩起来", trail: "身体 / 社媒", clue: "不是不好看，是你身体先退了一下。", card: "#e0ded9", reveal: "#234b72", revealInk: "#fffefa" },
+      { word: "grounding", meaning: "让人落回现实", trail: "心理 / AI", clue: "一个词，把漂浮的东西重新接地。", card: "#32618a", reveal: "#e7dcb9", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "fallout", meaning: "余波；后果", trail: "新闻 / 关系", clue: "爆炸结束后，落下来的东西才难处理。", card: "#f5b08b", reveal: "#285542", revealInk: "#fffefa" },
+      { word: "unfold", meaning: "展开；逐步显露", trail: "过程 / 叙事", clue: "事情像一张折起的纸慢慢打开。", card: "#285542", reveal: "#d9d9d7", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "surge", meaning: "激增；涌起", trail: "数据 / 情绪", clue: "不是增加，是一股力量突然往上涌。", card: "#f2e6c9", reveal: "#c95440", revealInk: "#fffefa" },
+      { word: "verify", meaning: "核实；确认", trail: "证据 / 工作", clue: "相信之前，先把手伸向证据。", card: "#b9d3ea", reveal: "#356248", revealInk: "#fffefa" },
+      { word: "backdrop", meaning: "背景；底幕", trail: "新闻 / 画面", clue: "它不站在前面，却改变前景的读法。", card: "#d7d4cf", reveal: "#2447bd", revealInk: "#fffefa" },
+      { word: "reframe", meaning: "换一个框架看", trail: "思维 / 沟通", clue: "事实没变，装它的框换了。", card: "#c75a48", reveal: "#f1e8d3", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "sentiment", meaning: "情绪；倾向", trail: "市场 / 公众", clue: "它不是某个人的心情，而是一片气压。", card: "#486b3b", reveal: "#c8ddf0", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "delulu", meaning: "上头式幻想", trail: "社媒 / 自嘲", clue: "知道不现实，还是愿意先相信一会儿。", card: "#ffb498", reveal: "#25353a", revealInk: "#fffefa" },
+      { word: "agentic", meaning: "具备行动主体性", trail: "AI / 行动", clue: "谁不只响应，而是真的发起下一步？", card: "#356248", reveal: "#e1dfda", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "accountability gap", meaning: "责任缺口", trail: "制度 / AI", clue: "结果影响了人，却没人真正接住责任。", card: "#315f87", reveal: "#ff8875", revealInk: "#171717", faceInk: "#fffefa", compact: true }
+    ];
+
+    const files = {
+      wail: {
+        surface: "“哀号；嚎啕；痛哭；哭诉”",
+        slip: "<b>wail</b><br>v. / n.<br><br>哀号；嚎啕；痛哭；哭诉",
+        originCitation: "Middle English<br>Old Norse væla<br>lament / cry aloud",
+        contrast: [
+          ["English first hears", "the shape of the sound before it labels the feeling"],
+          ["中文常落到", "“哀号 / 哭嚎 / 呼啸”"]
         ],
-        examples: [
-          ["职场,内容会议", "We don’t need a full scene; one clean shot of the product in use will say enough."],
-          ["日常,跟朋友", "That’s a great shot of your dad; you really caught his smile at the right moment."],
-          ["社媒", "one simple shot of the empty chair and suddenly the whole movie hurts more"]
-        ]
+        markdown: `**字面含义** · wail 最原始的画面，不是普通地“哭”，而是把声音拉长、放大，让悲伤、痛苦、绝望直接变成一串听得见的声音。它像哭喊、哀号，声音本身就带着“我撑不住了”的形状。这个词里有一种从喉咙里往外拖出来的长声，像风里的尖响，也像有人在失控边缘发出的哭声。
+
+**本体质感** · 这个词一出口，画面就不是安静地掉眼泪，而是有人情绪顶到喉咙口，声音冲出来，带着拖长、发颤、没法压住的感觉。相比 cry，wail 更容易让人想到一种长而高、更加外放的哭号；相比 sob，它更突出“声音被拉开”的那一下；和 moan 放在一起看，它通常也更接近哀号，而不是低声呻吟或抱怨。你会感觉说话的人不是在陈述“她很难过”，而是在把那种难过直接摊到空气里。它也能用在风声、警报、警笛这类声音上——只要那种声音尖长、持续、像在拉扯你的神经，就可以用 wail。
+
+**寻根溯源** · 这个词在英语里见于中古英语，通常认为来自古诺斯语 *væla*，并和表示“悲哀、灾祸”的日耳曼语根有关。它从早期到现代，大致一直围绕“哭号、哀叫”这类声音展开。也因此，它今天既能说人，也能说东西发出的声响，核心都还是那种被拉长的、带情绪压力的音色。
+
+**各路用法** ·
+
+**日常,描述人的哭嚎**
+> She started to wail when she heard the news.
+> 她一听到消息就开始嚎啕大哭。
+
+这里不是安静流泪，而是情绪直接冲破控制。
+
+**日常,描述环境里的尖长声音**
+> The wind wailed outside the window all night.
+> 风整晚都在窗外呼啸，听起来像在哀号。
+
+这里的重点不是“风很大”，而是声音带出来的那种凄厉感。
+
+➤ *这种用法放在警笛、警报上尤其稳。像 sirens wailing 这种搭配，词典里就很常见。*
+
+**原生思维** · 从词典义项看，wail 先抓住的往往不是一个抽象的“情绪名称”，而是“声音形状”：长、高、拖、压不住。中文里我们可以说“哭”“喊”“哀嚎”，但英语这边更容易先抓住那条声音的线，再让悲伤、痛苦、恐惧附着上去。也就是说，wail 与其说是先判断“这个人很悲伤”，不如说是先听见“这个悲伤是怎么响出来的”。
+
+**悟道时刻** · 你真正要记住的，不是“wail = 哭”，而是它可以被理解成一个高度依赖声音质地来传递情绪的词。英语里有些词，不急着给情绪命名，而是先把它在空气里的形状说出来。
+
+下次你再遇到这类词，先别急着翻成一个抽象情绪。先听：它是怎么响的。很多时候，英语真正抓住的，就是那一下发出来的声音本身。`,
+        verification: {
+          sources: [
+            ["Etymonline", "https://www.etymonline.com/word/wail"],
+            ["Merriam-Webster", "https://www.merriam-webster.com/dictionary/wail"],
+            ["Cambridge Dictionary", "https://dictionary.cambridge.org/dictionary/english/wail"],
+            ["Oxford Learner's Dictionaries", "https://www.oxfordlearnersdictionaries.com/definition/english/wail_1"],
+            ["OED", "https://www.oed.com/dictionary/wail_v"]
+          ]
+        }
       },
-      pristine: {
-        badge: "常见用法",
-        depth: "L2, 物品与环境",
-        lead: "`pristine` 不只是“干净”。它有一种“还没被世界弄乱过”的感觉：没有痕迹，没有磨损，甚至带一点原封未动的光。",
-        paragraphs: [
-          "你可以把它锚在 `clean` 和 `new` 之间。`clean` 只是没有脏东西；`new` 是新的；`pristine` 更像 `clean` 的理想化版本，或者 `new` 的未触碰版本。",
-          "它常贴在自然环境、房间、衣物、文件状态上。说 `pristine beaches` 时，不只是生态报告，也是在说它美，因为它还没有被人类弄坏。",
-          "放在人身上要小心。日常英语里不太会随便说 `a pristine person`，除非是讽刺、文学化，或在谈道德纯洁那种旧式语感。"
+      shot: {
+        surface: "“镜头”",
+        slip: "<b>shot</b><br>n. a photograph; a film sequence<br><br>中文先记住了结果：一个画面。",
+        story: [
+          ["字面", "`shot` 最初抓住的是一次朝目标发出的动作：瞄准，然后在一个瞬间释放。摄影保留了这个身体画面。"],
+          ["感觉", "在影像里，它比 `photo` 更有动作感：不只是画面成品，而是相机对准、按下快门，把什么抓住的那一下。"],
+          ["来历", "开枪、拍摄、喝一小杯、打一针、试一次，在英语里并非毫不相干；它们都沿着“一次边界清楚的释放”连起来。"],
+          ["用法", "夸 `a great shot` 时，人往往也在夸取景、时机或构图，而不只是照片里的对象好看。右边三条摘录就是它在不同关系里的落点。"],
+          ["此处", "`a simple shot` 不是“简单照片”那么平。它说的是画面设计也许朴素，但这一取景动作刚好让你看见了更多。"],
+          ["悟道时刻", "中文常按领域把意思分家；遇到英语高频小词时，试着先找它们共同的身体动作，多个 sense 会突然连起来。"]
         ],
         examples: [
-          ["职场,邮件里", "Please keep the original file pristine and make all edits in a separate copy."],
-          ["日常,看房时", "The kitchen looked pristine, like nobody had cooked a real meal there yet."],
-          ["社媒", "that pristine beach in everyone’s vacation photos is probably five feet outside the crop"]
+          ["content meeting", "One clean shot of the product in use will say enough."],
+          ["with a friend", "That’s a great shot of your dad; you caught his smile."],
+          ["social", "one simple shot of the empty chair and suddenly the whole movie hurts more"]
         ]
       },
       sweet: {
-        badge: "常见用法",
-        depth: "L2, 口语高频",
-        lead: "`sweet` 当然可以说味道甜，但真实英语里，它更常用来评价一种让人心里变软的东西：体贴、暖、可爱，或一个小善意被看见的瞬间。",
-        paragraphs: [
-          "味觉上的 `sweet` 很直观。它和 `sugary` 不一样：`sweet` 可以是中性的、愉快的；`sugary` 往往暗示糖太多，甚至有点腻。",
-          "形容人或行为时，`sweet` 不是中文里的“甜美”。它更接近 `kind` 的亲密版本，或者 `nice` 的有温度版本。",
-          "还有一个口语用法是“太好了 / 很不错”：`Sweet, thanks.` 这个在美式口语里自然，语气轻快，但不适合太正式的邮件。"
+        surface: "“甜的”",
+        slip: "<b>sweet</b><br>adj. tasting like sugar<br><br>可它在关系里，比糖走得更远。",
+        story: [
+          ["字面", "`sweet` 先是糖、蜂蜜、水果入口时的甜味，是一种不带阻力、容易让人靠近的感官体验。"],
+          ["感觉", "用到人和动作上时，它不是端正的夸奖，而是你看到一个细小关心时，心里变软的那一下。"],
+          ["来历", "英语很自然地把令人愉快的味觉移到声音、性格和关系动作上：好的东西仿佛也尝起来舒服。"],
+          ["用法", "`That was sweet of her.` 通常贴着具体动作说；直接评价一个人 `sweet`，关系距离会显得更近。"],
+          ["此处", "正面的“甜”只记住了味道；在人际语境里，它接住的是一个不张扬、但刚好被你注意到的善意。"],
+          ["悟道时刻", "当味觉词走进关系场景，不要急着翻译味道；先问它描述的是哪一种身体上的舒服和亲近。"]
         ],
         examples: [
-          ["职场,Slack 上", "Sweet, thanks for updating the deck before the client call."],
-          ["日常,跟朋友", "That was sweet of him to bring soup when you were sick."],
-          ["社媒", "the way she saved him the last slice is so sweet, actually"]
+          ["slack", "Sweet, thanks for fixing that before the call."],
+          ["with a friend", "That was sweet of her to bring you soup."],
+          ["social", "the way she saved him the last slice is so sweet"]
+        ]
+      },
+      fair: {
+        surface: "“公平的”",
+        slip: "<b>fair</b><br>adj. just; reasonable; acceptable<br><br>不是每次都在谈正义。",
+        story: [
+          ["字面", "`fair` 有一种秤两边没有明显偏斜的画面：分配、判断或要求没有让一方吃明显的亏。"],
+          ["感觉", "日常里的 `That's fair.` 往往很克制：不是热烈同意，而是承认你的理由站得住，不算过分。"],
+          ["来历", "从无偏向、合乎规则，到合理价格、尚可表现，它逐渐成为评价“尺度可接受”的常用词。"],
+          ["用法", "会议里它能接住 concerns；朋友之间它能结束争辩的一小回合；社媒里它可以表示部分认可。"],
+          ["此处", "把它一律读成“公平”会把口语变重；这里更像“这个判断/要求我认，分寸合理”。"],
+          ["悟道时刻", "看到道德色彩浓的中文翻译时，留意英语原词是不是其实在处理互动中的尺度和可接受度。"]
+        ],
+        examples: [
+          ["workplace", "That is a fair concern, and we should address it before launch."],
+          ["conversation", "You don't want to come tonight? That's fair."],
+          ["social", "fair take, but the ending still did not work for me"]
         ]
       },
       agency: {
-        badge: "抽象概念词",
-        depth: "L3, 文化与学科负载",
-        lead: "`agency` 麻烦的地方在于，它看起来像“能力”或“自主性”，但又不完全等于这两个词。它问的是：一个人是不是能作为行动者，对自己的处境产生影响。",
-        paragraphs: [
-          "中文里我们常说“主观能动性”，但这个表达一进日常语境就显得重。英语里的 `agency` 可以很学术，也可以进入职场、教育、心理咨询、社会议题。",
-          "它和 `freedom` 的差别在于，`freedom` 更像有没有外部限制；`agency` 更关心你是否真的能选择、行动，并承担这个行动带来的结果。",
-          "这个词背后常有一种制度感：人不是只有意愿就够了，还要有资源、信息、权力、空间，才能把意愿变成行动。"
+        surface: "“能动性”",
+        slip: "<b>agency</b><br>n. capacity to act and choose<br><br>翻译正确，却容易失去人的处境。",
+        story: [
+          ["字面", "`agency` 指向 acting 的能力：人不是被摆布的对象，而是能让事情因自己的行动而不同的主体。"],
+          ["感觉", "它比 `freedom` 更落地。没有人拦你，不等于你真的有信息、资源和空间把选择做出来。"],
+          ["来历", "这个词从行动者与代理关系进入社会科学、教育与工作讨论，逐渐承担“谁能真正作用于局面”的问题。"],
+          ["用法", "谈团队授权、学生选择、疾病或家庭处境时，`agency` 都会追问选择是否真的能转成行动。"],
+          ["此处", "“能动性”在中文里准确却抽象；英语中的它往往紧贴某个活生生的人，到底有没有可动用的空间。"],
+          ["悟道时刻", "当英语讨论 choice 时，再问一步：选择只是名义存在，还是这个人真的拥有 agency？"]
         ],
         examples: [
-          ["职场,管理讨论", "The new process gives teams more agency over how they plan and deliver their work."],
-          ["日常,聊人生选择", "Moving out gave her a sense of agency she never really had at home."],
-          ["社媒", "calling it a choice ignores how little agency people actually have in that situation"]
+          ["team meeting", "The new workflow gives editors more agency over what they publish."],
+          ["daily life", "Moving out gave her a sense of agency at last."],
+          ["social", "calling it a choice ignores how little agency people have there"]
         ]
       }
     };
 
     function escapeHtml(value) {
-      return value.replace(/[&<>"']/g, char => ({
+      return String(value).replace(/[&<>"']/g, character => ({
         "&": "&amp;",
         "<": "&lt;",
         ">": "&gt;",
-        '"': "&quot;",
+        "\"": "&quot;",
         "'": "&#039;"
-      }[char]));
+      }[character]));
     }
 
-    function formatInline(text) {
+    function inline(text) {
       return escapeHtml(text)
         .replace(/`([^`]+)`/g, "<code>$1</code>")
-        .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+        .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+        .replace(/\*([^*\n]+)\*/g, "<em>$1</em>");
     }
 
-    function inferDepth(word, sentence) {
-      if (sentence.trim()) return "L2, 原句锚定";
-      if (word.length > 9 || ["agency", "identity", "integrity", "authentic", "commitment"].includes(word.toLowerCase())) {
-        return "L3, 概念词";
+    function renderFeaturedCards() {
+      featuredCards.innerHTML = cardCatalog.map((card, index) => `
+        <button class="word-card" type="button" data-file="${escapeHtml(card.word)}"
+          style="--card:${card.card};--reveal:${card.reveal};--reveal-ink:${card.revealInk};${card.faceInk ? `color:${card.faceInk};` : ""}">
+          <span class="card-face">
+            <span>
+              <span class="card-no">FILE ${String(index + 1).padStart(3, "0")}</span>
+              <span class="card-word${card.compact ? " compact" : ""}">${escapeHtml(card.word)}</span>
+              <span class="translation">“${escapeHtml(card.meaning)}”</span>
+            </span>
+            <span class="card-foot">${escapeHtml(card.trail)}</span>
+          </span>
+          <span class="card-reveal">
+            <span class="card-no">A CLUE</span>
+            <strong>${escapeHtml(card.clue)}</strong>
+            <span class="open">open file -></span>
+          </span>
+        </button>
+      `).join("");
+    }
+
+    function shouldShowReleaseNotice() {
+      const forcePreview = new URLSearchParams(window.location.search).get("notice") === "1";
+      if (forcePreview) return true;
+      if (new URLSearchParams(window.location.search).has("word")) return false;
+      try {
+        return window.localStorage.getItem(releaseStorageKey) !== "seen";
+      } catch (error) {
+        return true;
       }
-      return "L2, 常见用法";
     }
 
-    function renderGeneric(word, source, sentence) {
-      const hasSentence = sentence.trim().length > 0;
-      return {
-        badge: hasSentence ? "原句锚定" : "等待模型",
-        depth: inferDepth(word, sentence),
-        lead: hasSentence
-          ? `我现在讲的是 \`${word}\` 在你这句话里的用法；这个词在别的场合可能还有别的意思。`
-          : `\`${word}\` 需要接入后端模型后生成完整解读。这个静态页面先把搜索、语境和结果结构跑通。`,
-        paragraphs: hasSentence
-          ? [
-              `原句：${sentence}`,
-              source ? `出处：${source}。页面会用这个信息判断语域，再收窄到对应的 sense。` : "如果再补一点出处，语气和场域判断会更稳。",
-              "正式接入模型后，这里会呈现画面化解释、近义词锚定、中英认知错位，以及按场域区分的例句。"
-            ]
-          : [
-              "只输入词时，系统会选择最常见、最值得停下来的 1-2 个用法，而不是罗列词典义项。",
-              "如果你有原句，建议贴上来。Word Sense 的核心价值就在于把解释锚定到具体使用场景。"
-            ],
-        examples: [
-          ["职场/正式", "A generated workplace example will appear here after the model is connected."],
-          ["日常", "A natural spoken example will appear here with the right tone and distance."],
-          ["社媒", "a platform-shaped example will appear here without trying too hard"]
-        ]
-      };
+    function openReleaseNotice() {
+      releaseNotice.hidden = false;
+      page.inert = true;
+      document.body.classList.add("notice-open");
+      releaseEnter.focus();
     }
 
-    function renderAnswer(word, source, sentence) {
-      const key = word.toLowerCase();
-      const data = samples[key] || renderGeneric(word, source, sentence);
-
-      result.classList.remove("empty");
-      result.innerHTML = `
-        <div class="answer">
-          <div class="word-title">
-            <h2>${escapeHtml(word)}</h2>
-            <span class="badge">${escapeHtml(data.badge)}</span>
-          </div>
-          <p>${formatInline(data.lead)}</p>
-          ${data.paragraphs.map(paragraph => `<p>${formatInline(paragraph)}</p>`).join("")}
-          <div class="examples-block">
-            <p>几个例子,在不同场域里你感受一下区别:</p>
-            ${data.examples.map(([label, example]) => `
-              <div class="example-item">
-                <b>${escapeHtml(label)}</b>
-                <span>${escapeHtml(example)}</span>
-              </div>
-            `).join("")}
-          </div>
-        </div>
-      `;
-
-      metaWord.textContent = word;
-      metaContext.textContent = sentence.trim() ? "有原句" : (source.trim() ? "有出处" : "只有词");
-      metaDepth.textContent = data.depth;
+    function closeReleaseNotice() {
+      try {
+        window.localStorage.setItem(releaseStorageKey, "seen");
+      } catch (error) {
+        // Private browsing may block local storage; the notice can safely reappear.
+      }
+      releaseNotice.classList.add("leaving");
+      window.setTimeout(() => {
+        releaseNotice.hidden = true;
+        releaseNotice.classList.remove("leaving");
+        page.inert = false;
+        document.body.classList.remove("notice-open");
+      }, 180);
     }
 
-    function renderGeneratedAnswer(word, source, sentence, answer, model) {
-      const paragraphs = answer
+    function paragraphs(text) {
+      return String(text)
         .split(/\n{2,}/)
-        .map(paragraph => paragraph.trim())
-        .filter(Boolean);
-
-      result.classList.remove("empty");
-      result.innerHTML = `
-        <div class="answer">
-          <div class="word-title">
-            <h2>${escapeHtml(word)}</h2>
-            <span class="badge">${escapeHtml(model || "模型生成")}</span>
-          </div>
-          ${paragraphs.map(paragraph => `<p>${formatInline(paragraph).replace(/\n/g, "<br>")}</p>`).join("")}
-        </div>
-      `;
-
-      metaWord.textContent = word;
-      metaContext.textContent = sentence.trim() ? "有原句" : (source.trim() ? "有出处" : "只有词");
-      metaDepth.textContent = "模型判断";
+        .map(paragraph => `<p>${inline(paragraph).replace(/\n/g, "<br>")}</p>`)
+        .join("");
     }
 
-    function renderLoading(word, source, sentence) {
-      result.classList.remove("empty");
-      result.innerHTML = `
-        <div class="answer loading">
-          <div class="word-title">
-            <h2>${escapeHtml(word)}</h2>
-            <span class="badge">生成中</span>
-          </div>
-          <p>正在看这个词在真实语境里怎么工作。复杂一点的词会多想几秒。</p>
-        </div>
-      `;
-      metaWord.textContent = word;
-      metaContext.textContent = sentence.trim() ? "有原句" : (source.trim() ? "有出处" : "只有词");
-      metaDepth.textContent = "模型判断中";
+    function usageParagraphs(text) {
+      return String(text)
+        .split(/\n{2,}/)
+        .map(paragraph => {
+          const lines = paragraph.split("\n").map(line => line.trim()).filter(Boolean);
+          const label = lines[0]?.match(/^\*\*(.+?)\*\*$/);
+          if (label && lines.slice(1).some(line => line.startsWith(">"))) {
+            const quotes = lines.slice(1)
+              .filter(line => line.startsWith(">"))
+              .map(line => line.replace(/^>\s?/, ""));
+            return `
+              <div class="usage-excerpt">
+                <strong>${escapeHtml(label[1])}</strong>
+                ${quotes[0] ? `<span class="en-line">${inline(quotes[0])}</span>` : ""}
+                ${quotes[1] ? `<span class="zh-line">${inline(quotes[1])}</span>` : ""}
+              </div>
+            `;
+          }
+          return `<p>${inline(paragraph).replace(/\n/g, "<br>")}</p>`;
+        })
+        .join("");
     }
 
-    function renderError(word, message) {
-      result.classList.remove("empty");
-      result.innerHTML = `
-        <div class="answer error">
-          <div class="word-title">
-            <h2>${escapeHtml(word)}</h2>
-            <span class="badge">暂时失败</span>
-          </div>
-          <p><strong>这次没有生成成功。</strong></p>
-          <p>${escapeHtml(message)}</p>
-          <p>如果你是在本地 file 页面里测试，模型接口需要部署到 Vercel 后才会工作。</p>
-        </div>
-      `;
-      metaDepth.textContent = "接口未完成";
+    function tag(label, color) {
+      return `<span class="artifact-tag" style="--tag-color:${color}">${escapeHtml(label)}</span>`;
     }
 
-    async function generateSense(word, source, sentence) {
-      renderLoading(word, source, sentence);
-      result.scrollIntoView({ behavior: "smooth", block: "start" });
+    function renderTrail(entries, data = {}, source = "", sentence = "", word = currentFile) {
+      const content = Object.fromEntries(entries);
+      const examples = (data.examples || []).map(([label, text]) => `
+        <div class="quote-clip">
+          <b>${escapeHtml(label)}</b>
+          ${escapeHtml(text)}
+        </div>
+      `).join("");
+      const evidenceSentence = sentence || data.sampleSentence || "";
+      const evidenceSource = source || data.sampleSource || "";
+      const evidence = evidenceSentence || evidenceSource
+        ? `<p class="source-line">${evidenceSentence ? `原句 / ${escapeHtml(evidenceSentence)}` : ""}${evidenceSentence && evidenceSource ? "<br>" : ""}${evidenceSource ? `出处 / ${escapeHtml(evidenceSource)}` : ""}</p>`
+        : `<p class="source-line empty"></p>`;
+      const literalSlip = data.slip
+        ? `<div class="slip-definition">${data.slip}</div>`
+        : "";
+      const neighbors = (data.neighbors || []).map(([word, note]) => `
+        <div class="neighbor-note">
+          <b>${escapeHtml(word)}</b>${escapeHtml(note)}
+        </div>
+      `).join("");
+      const sources = (data.verification?.sources || []).map(([label, url]) => `
+        <a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${escapeHtml(label)}</a>
+      `).join("");
+      const contrast = data.contrast || [
+        ["English in use", evidenceSentence || "a lived scene before a translated label"],
+        ["中文落点", "这里记录直译容易漏掉的部分"]
+      ];
+      const contextualReading = `
+        <div class="context-reading">
+          ${evidence}
+          <div class="artifact-copy">${paragraphs(content["此处"] || "没有原句时，这里记录最常见的理解落点。")}</div>
+        </div>`;
 
-      const response = await fetch("/api/sense", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ word, source, sentence })
-      });
+      return `
+        <section class="artifact artifact-literal">
+          ${tag("01 / 字面", "#243fc8")}
+          <div class="clipping-header"><span>Language desk / entry</span><span>Surface reading</span></div>
+          ${literalSlip}
+          <div class="artifact-copy">${paragraphs(content["字面"] || "正在整理这个词最具体的画面。")}</div>
+        </section>
+        <section class="artifact artifact-feeling">
+          ${tag("02 / 感觉", "#e86953")}
+          <span class="margin-note">pencil notes / compare before translating</span>
+          <div class="artifact-copy">${paragraphs(content["感觉"] || "正在辨认这个词的质地与温度。")}</div>
+          ${neighbors ? `<div class="neighbor-notes">${neighbors}</div>` : ""}
+        </section>
+        <section class="artifact artifact-origin">
+          ${tag("03 / 溯源", "#5b8b40")}
+          <div class="origin-volume-head">
+            <strong>Etymological Dictionary</strong>
+            <span>reference leaf / p. 047</span>
+          </div>
+          <div class="folio">
+            <aside class="origin-citation">
+              <span class="citation-label">citation slip / filed</span>
+              <b class="citation-headword">${escapeHtml(word || "entry")}</b>
+              <span class="margin-note">source trail</span>
+              <strong>${data.originCitation || "language descent<br>recorded forms<br>meaning shift"}</strong>
+            </aside>
+            <article class="origin-entry">
+              <div class="origin-entry-head">
+                <strong>${escapeHtml(word || "entry")}</strong>
+                <span>history &amp; descent</span>
+              </div>
+              <span class="book-mark">A reference page on where the word travelled from</span>
+              <div class="artifact-copy">${paragraphs(content["来历"] || "正在查找这个用法从哪里长出来。")}</div>
+              ${sources ? `<div class="source-ledger"><span>sources /</span>${sources}</div>` : ""}
+            </article>
+          </div>
+        </section>
+        <section class="artifact artifact-uses">
+          ${tag("04 / 各路用法", "#32618a")}
+          <div class="news-head"><strong>The Usage Dispatch</strong><span>voices from different scenes</span></div>
+          <div class="artifact-copy news-copy">${usageParagraphs(content["用法"] || "正在搜集它出现过的真实场面。")}</div>
+          ${examples ? `<div class="quote-clips">${examples}</div>` : ""}
+        </section>
+        <section class="artifact artifact-context">
+          ${tag("05 / 英汉之间", "#c48620")}
+          <div class="film-strip">
+            <div class="film-frames">
+              <div class="contrast-frame en">
+                <span class="contrast-label">${escapeHtml(contrast[0][0])}</span>
+                <p>${inline(contrast[0][1]).replace(/\n/g, "<br>")}</p>
+              </div>
+              <div class="contrast-frame zh">
+                <span class="contrast-label">${escapeHtml(contrast[1][0])}</span>
+                <p>${inline(contrast[1][1]).replace(/\n/g, "<br>")}</p>
+              </div>
+            </div>
+          </div>
+          ${contextualReading}
+        </section>
+        <section class="artifact artifact-insight">
+          ${tag("06 / 悟道时刻", "#285542")}
+          <div class="insight-transcript">
+            <div class="artifact-copy">${paragraphs(content["悟道时刻"] || "正在等待一条可以迁移到下一个词的线索。")}</div>
+            <div class="save-insight">
+              <span>Word Sense / keeper card</span>
+              <button type="button" data-save-insight>收藏这一张</button>
+              <p class="keeper-feedback" data-keeper-feedback aria-live="polite" hidden></p>
+            </div>
+          </div>
+        </section>
+      `;
+    }
 
-      const data = await response.json();
-      if (!response.ok) {
-        throw new Error(data.error || "接口返回失败。");
+    function parseGeneratedDimensions(answer) {
+      const alias = {
+        "字面含义": "字面",
+        "本体质感": "感觉",
+        "寻根溯源": "来历",
+        "各路用法": "用法",
+        "原生思维": "此处",
+        "英汉分野": "此处",
+        "悟道时刻": "悟道时刻"
+      };
+      const labels = "字面含义|本体质感|寻根溯源|各路用法|原生思维|英汉分野|悟道时刻|字面|感觉|来历|用法|此处";
+      const cleanAnswer = String(answer)
+        .replace(/^\s*#\s*改写终稿\s*/i, "")
+        .split(/\n---\s*\n#\s*改动说明/i)[0]
+        .trim();
+      const blocks = cleanAnswer.split(new RegExp(`(?=\\*\\*(?:${labels})\\*\\*\\s*·)`));
+      const parsed = blocks.map(block => {
+        const match = block.match(new RegExp(`^\\s*\\*\\*(${labels})\\*\\*\\s*·\\s*([\\s\\S]*)$`));
+        return match ? [alias[match[1]] || match[1], match[2].trim()] : null;
+      }).filter(Boolean);
+      return parsed.length >= 4 ? parsed : [["感觉", cleanAnswer]];
+    }
+
+    function showFile(word, data, source = "", sentence = "") {
+      currentFile = word;
+      currentData = data;
+      currentSource = source;
+      currentSentence = sentence;
+      fileLabel.textContent = `file / ${word}`;
+      detailWord.textContent = word;
+      detailSurface.textContent = `正面写着：${data.surface}`;
+      const entries = data.markdown ? parseGeneratedDimensions(data.markdown) : data.story;
+      clueTrail.innerHTML = renderTrail(entries, data, source, sentence, word);
+      updateFileLink(word);
+      refreshSavedState();
+      closeActionReceipt();
+
+      dossier.classList.add("open");
+      dossier.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function updateFileLink(word) {
+      const url = new URL(window.location.href);
+      url.searchParams.delete("notice");
+      url.searchParams.set("word", word);
+      url.hash = "dossier";
+      window.history.replaceState({}, "", url);
+    }
+
+    function filePermalink(word) {
+      const url = new URL(window.location.href);
+      url.search = "";
+      url.searchParams.set("word", word);
+      url.hash = "dossier";
+      return url.toString();
+    }
+
+    function readSavedFiles() {
+      try {
+        const saved = JSON.parse(window.localStorage.getItem(savedFilesKey) || "[]");
+        return Array.isArray(saved) ? saved : [];
+      } catch (error) {
+        return [];
+      }
+    }
+
+    function renderSavedDrawer() {
+      const saved = readSavedFiles();
+      savedCount.textContent = String(saved.length);
+      if (!saved.length) {
+        savedDrawer.innerHTML = `
+          <p class="saved-drawer-head">saved files / 0</p>
+          <p>这里还没有词卡。读到想留下的词，点击“收藏”。</p>
+        `;
+        return;
+      }
+      savedDrawer.innerHTML = `
+        <p class="saved-drawer-head">saved files / ${saved.length}</p>
+        <div class="saved-shelf" aria-label="已收藏的词卡">
+          ${saved.map(word => `
+            <a class="saved-file" href="${escapeHtml(filePermalink(word))}">${escapeHtml(word)}</a>
+          `).join("")}
+        </div>
+      `;
+    }
+
+    function refreshSavedState() {
+      if (!currentFile) return;
+      const saved = readSavedFiles().includes(currentFile);
+      saveFile.classList.toggle("active", saved);
+      saveFile.textContent = saved ? "已收藏" : "收藏";
+      saveFile.setAttribute("aria-pressed", String(saved));
+      const keeperButton = clueTrail.querySelector("[data-save-insight]");
+      if (keeperButton) {
+        keeperButton.classList.toggle("active", saved);
+        keeperButton.textContent = saved ? "已收藏" : "收藏这一张";
+      }
+    }
+
+    function showActionReceipt(content, source) {
+      actionReceipt.dataset.source = source;
+      saveFile.classList.toggle("selected", source === "save");
+      copyFile.classList.toggle("selected", source === "copy");
+      shareFile.classList.toggle("selected", source === "share");
+      saveFile.setAttribute("aria-expanded", String(source === "save"));
+      copyFile.setAttribute("aria-expanded", String(source === "copy"));
+      shareFile.setAttribute("aria-expanded", String(source === "share"));
+      receiptContent.innerHTML = `
+        <div class="receipt-head">
+          <span class="receipt-kicker">${escapeHtml(source)} / handling slip</span>
+          <button class="receipt-close" type="button" data-close-receipt aria-label="关闭处理回执">X</button>
+        </div>
+        ${content}
+      `;
+      actionReceipt.hidden = false;
+    }
+
+    function closeActionReceipt() {
+      actionReceipt.hidden = true;
+      receiptContent.innerHTML = "";
+      delete actionReceipt.dataset.source;
+      saveFile.classList.remove("selected");
+      copyFile.classList.remove("selected");
+      shareFile.classList.remove("selected");
+      saveFile.setAttribute("aria-expanded", "false");
+      copyFile.setAttribute("aria-expanded", "false");
+      shareFile.setAttribute("aria-expanded", "false");
+    }
+
+    function savedShelf(saved) {
+      if (!saved.length) return "";
+      return `
+        <div class="saved-shelf" aria-label="你的收藏">
+          <span class="saved-shelf-label">你的收藏 /</span>
+          ${saved.slice(0, 8).map(word => `
+            <a class="saved-file" href="${escapeHtml(filePermalink(word))}">${escapeHtml(word)}</a>
+          `).join("")}
+        </div>
+      `;
+    }
+
+    function showSavedReceipt(removed) {
+      const saved = readSavedFiles();
+      const title = removed ? `${currentFile} 已移出收藏` : `${currentFile} 已收入收藏`;
+      const copy = removed
+        ? "这张词卡不再保留收藏标记；阅读内容仍然可以继续打开。"
+        : "收藏标记保存在这台浏览器中。下次打开这张词卡，它仍会显示在你的收藏里。";
+      showActionReceipt(`
+        <h3 class="receipt-title">${escapeHtml(title)}</h3>
+        <p class="receipt-copy">${escapeHtml(copy)}</p>
+        ${savedShelf(saved)}
+        ${removed ? "" : '<button class="receipt-command" type="button" data-open-shelf>打开收藏夹</button>'}
+        <p class="receipt-next">${removed ? "下一步：继续阅读，或重新收藏这一张。" : "下一步：你可以继续阅读，收藏已经放好了。"}</p>
+      `, "save");
+    }
+
+    function showKeeperFeedback(message) {
+      const keeperFeedback = clueTrail.querySelector("[data-keeper-feedback]");
+      if (!keeperFeedback) return;
+      keeperFeedback.textContent = message;
+      keeperFeedback.hidden = false;
+    }
+
+    function toggleSavedFile(origin = "toolbar") {
+      if (!currentFile) return;
+      const saved = readSavedFiles();
+      const existing = saved.indexOf(currentFile);
+      if (existing >= 0) {
+        saved.splice(existing, 1);
+      } else {
+        saved.unshift(currentFile);
+      }
+      try {
+        window.localStorage.setItem(savedFilesKey, JSON.stringify(saved));
+        if (origin === "keeper") {
+          showKeeperFeedback(existing >= 0
+            ? "已移出收藏。需要时仍可在这里重新收下它。"
+            : "已收藏。下次在这台浏览器打开它，收藏标记还会在。");
+        } else {
+          showSavedReceipt(existing >= 0);
+        }
+      } catch (error) {
+        if (origin === "keeper") {
+          showKeeperFeedback("这次没有保存下来。你仍可以复制链接留住这张词卡。");
+        } else {
+          showActionReceipt(`
+            <h3 class="receipt-title">这次没有保存下来</h3>
+            <p class="receipt-copy">浏览器没有允许保存收藏标记，你仍然可以复制链接留住这张词卡。</p>
+          `, "save");
+        }
+      }
+      renderSavedDrawer();
+      refreshSavedState();
+    }
+
+    function activeFileText() {
+      const entries = currentData?.markdown
+        ? parseGeneratedDimensions(currentData.markdown)
+        : (currentData?.story || []);
+      const context = [
+        currentSentence && `原句 / ${currentSentence}`,
+        currentSource && `出处 / ${currentSource}`
+      ].filter(Boolean).join("\n");
+      return [
+        `${currentFile} | Word Sense`,
+        context,
+        entries.map(([label, text]) => `${label}\n${text}`).join("\n\n"),
+        filePermalink(currentFile)
+      ].filter(Boolean).join("\n\n");
+    }
+
+    function legacyCopy(text) {
+      const field = document.createElement("textarea");
+      field.value = text;
+      field.setAttribute("readonly", "");
+      field.style.position = "fixed";
+      field.style.left = "-9999px";
+      document.body.appendChild(field);
+      field.select();
+      const copied = document.execCommand("copy");
+      field.remove();
+      return copied;
+    }
+
+    async function tryCopy(text) {
+      if (legacyCopy(text)) return true;
+      try {
+        await navigator.clipboard.writeText(text);
+        return true;
+      } catch (error) {
+        return false;
+      }
+    }
+
+    async function copyCurrentFile() {
+      if (!currentFile) return;
+      const text = activeFileText();
+      const copied = await tryCopy(text);
+      showActionReceipt(`
+        <h3 class="receipt-title">${copied ? "完整词条已复制" : "词条内容已为你备好"}</h3>
+        <p class="receipt-copy">${copied
+          ? "它包含六段阅读内容和回看链接。"
+          : "浏览器没有允许自动复制，请选中下方内容后复制。"}</p>
+        ${copied ? "" : `<textarea class="receipt-text" readonly aria-label="可复制的完整词条">${escapeHtml(text)}</textarea>`}
+        <p class="receipt-next">下一步：粘贴到备忘录、Notion 或自己的语言笔记里。</p>
+      `, "copy");
+    }
+
+    function buildShareText(style = "direct") {
+      const link = filePermalink(currentFile);
+      const templates = {
+        direct: `我刚在 Word Sense 读了「${currentFile}」。它不只是一个中文释义，而是一张关于真实用法的词条档案。\n${link}`,
+        social: `今天重新认识了一个词：${currentFile}。\n原来它在英文里的质感，远比中文正面那一行丰富。\n${link}`,
+        work: `分享一张 Word Sense 词条档案：${currentFile}。\n它从字面、质感、来路和语境里重新校准这个词的读法。\n${link}`
+      };
+      return templates[style] || templates.direct;
+    }
+
+    function showShareComposer(style = currentShareStyle, state = "") {
+      currentShareStyle = style;
+      const text = buildShareText(style);
+      const status = state === "copied"
+        ? '<p class="receipt-next">已复制。下一步：打开微信、朋友圈或群聊，直接粘贴。</p>'
+        : '<p class="receipt-next">下一步：选一种口吻，复制后粘到你想分享的地方。</p>';
+      showActionReceipt(`
+        <h3 class="receipt-title">把 ${escapeHtml(currentFile)} 发给谁？</h3>
+        <p class="receipt-copy">先选一段合适的引子，分享出去的会是这张词卡的链接。</p>
+        <div class="share-choices" aria-label="分享口吻">
+          <button class="share-choice${style === "direct" ? " active" : ""}" type="button" data-share-style="direct">发给朋友</button>
+          <button class="share-choice${style === "social" ? " active" : ""}" type="button" data-share-style="social">发动态</button>
+          <button class="share-choice${style === "work" ? " active" : ""}" type="button" data-share-style="work">发工作群</button>
+        </div>
+        <textarea class="receipt-text" readonly aria-label="分享文案">${escapeHtml(text)}</textarea>
+        <button class="receipt-command" type="button" data-copy-share>复制这段分享文案</button>
+        ${status}
+      `, "share");
+    }
+
+    async function shareCurrentFile() {
+      if (!currentFile) return;
+      showShareComposer("direct");
+    }
+
+    function showCatalogFile(word) {
+      if (files[word]) {
+        showFile(word, files[word]);
+        return;
       }
 
-      renderGeneratedAnswer(word, source, sentence, data.answer, data.model);
+      const card = cardCatalog.find(item => item.word === word);
+      const entry = window.WORD_SENSE_ENTRIES && window.WORD_SENSE_ENTRIES[word];
+      if (!entry) {
+        showError(word, "这份词条暂时还没有加入阅读档案。");
+        return;
+      }
+      const surfaceMeaning = card ? `“${card.meaning}”` : "“从真实语境里整理出的词义线索”";
+      const slipMeaning = card ? card.meaning : "newly filed entry";
+
+      showFile(word, {
+        surface: surfaceMeaning,
+        slip: `<b>${escapeHtml(word)}</b><br>archive entry<br><br>${escapeHtml(slipMeaning)}`,
+        markdown: entry.markdown,
+        contrast: [
+          ["English in use", "the lived shape held inside this word"],
+          ["中文正面写着", card ? `“${card.meaning}”` : "先从语境回看它的落点"]
+        ],
+        verification: {
+          sources: (entry.verification?.sources || []).slice(0, 5).map(item => [item.label, item.url])
+        }
+      });
     }
 
-    form.addEventListener("submit", async event => {
+    function showLoading(word, source, sentence) {
+      fileLabel.textContent = `search / ${word}`;
+      detailWord.textContent = word;
+      detailSurface.textContent = "正在抽出这张词卡";
+      clueTrail.innerHTML = `
+        <section class="artifact artifact-literal">
+          ${tag("IN PROGRESS", "#243fc8")}
+          <p class="loading-sheet">正在整理用法、语气与例句</p>
+        </section>
+      `;
+      dossier.classList.add("open");
+      dossier.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function showGenerated(word, answer, source, sentence) {
+      const generatedDimensions = parseGeneratedDimensions(answer);
+      fileLabel.textContent = `new file / ${word}`;
+      detailWord.textContent = word;
+      detailSurface.textContent = "从真实使用里整理出的档案";
+      clueTrail.innerHTML = renderTrail(generatedDimensions, {}, source, sentence, word);
+    }
+
+    function showError(word, message) {
+      detailSurface.textContent = "这份档案暂时没有整理成功";
+      clueTrail.innerHTML = `
+        <section class="artifact artifact-literal">
+          ${tag("FILE UNAVAILABLE", "#b4382b")}
+          <p class="error-note">${escapeHtml(message)}</p>
+          <p>精选词卡仍然可以阅读；新词生成暂时没有连接到这个预览页面。</p>
+        </section>
+      `;
+    }
+
+    renderFeaturedCards();
+    renderSavedDrawer();
+    if (shouldShowReleaseNotice()) {
+      openReleaseNotice();
+    }
+
+    releaseEnter.addEventListener("click", closeReleaseNotice);
+    releaseClose.addEventListener("click", closeReleaseNotice);
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape" && !releaseNotice.hidden) {
+        closeReleaseNotice();
+      }
+    });
+
+    document.querySelectorAll("[data-file]").forEach(card => {
+      card.addEventListener("click", () => {
+        const word = card.dataset.file;
+        wordInput.value = word;
+        sourceInput.value = "";
+        sentenceInput.value = "";
+        showCatalogFile(word);
+      });
+    });
+
+    form.addEventListener("submit", event => {
       event.preventDefault();
-      const word = wordInput.value.trim();
+      const word = wordInput.value.trim().toLowerCase();
+      const source = sourceInput.value.trim();
+      const sentence = sentenceInput.value.trim();
       if (!word) {
         wordInput.focus();
         return;
       }
-      const source = sourceInput.value.trim();
-      const sentence = sentenceInput.value.trim();
 
-      try {
-        await generateSense(word, source, sentence);
-      } catch (error) {
-        renderError(word, error.message);
+      if (files[word] && !source && !sentence) {
+        showCatalogFile(word);
+        return;
+      }
+
+      if (window.WORD_SENSE_ENTRIES?.[word] && !source && !sentence) {
+        showCatalogFile(word);
+        return;
+      }
+
+      const reviewParams = new URLSearchParams({ word });
+      if (source) reviewParams.set("source", source);
+      if (sentence) reviewParams.set("sentence", sentence);
+      window.location.href = `word-sense-review.html?${reviewParams.toString()}`;
+    });
+
+    saveFile.addEventListener("click", toggleSavedFile);
+    copyFile.addEventListener("click", copyCurrentFile);
+    shareFile.addEventListener("click", shareCurrentFile);
+    actionReceipt.addEventListener("click", async event => {
+      if (event.target.closest("[data-close-receipt]")) {
+        closeActionReceipt();
+        return;
+      }
+
+      if (event.target.closest("[data-open-shelf]")) {
+        savedDrawer.hidden = false;
+        savedShelfToggle.setAttribute("aria-expanded", "true");
+        savedDrawer.scrollIntoView({ behavior: "smooth", block: "center" });
+        return;
+      }
+
+      const styleButton = event.target.closest("[data-share-style]");
+      if (styleButton) {
+        showShareComposer(styleButton.dataset.shareStyle || "direct");
+        return;
+      }
+
+      if (event.target.closest("[data-copy-share]")) {
+        const text = buildShareText(currentShareStyle);
+        const copied = await tryCopy(text);
+        if (copied) {
+          showShareComposer(currentShareStyle, "copied");
+        } else {
+          showShareComposer(currentShareStyle);
+          const nextStep = receiptContent.querySelector(".receipt-next");
+          if (nextStep) {
+            nextStep.textContent = "浏览器没有允许自动复制。请选中上面的分享文案，手动复制后粘贴。";
+          }
+          const field = receiptContent.querySelector(".receipt-text");
+          field?.focus();
+          field?.select();
+        }
+      }
+    });
+    savedShelfToggle.addEventListener("click", () => {
+      const willOpen = savedDrawer.hidden;
+      renderSavedDrawer();
+      savedDrawer.hidden = !willOpen;
+      savedShelfToggle.setAttribute("aria-expanded", String(willOpen));
+    });
+    clueTrail.addEventListener("click", event => {
+      if (event.target.closest("[data-save-insight]")) {
+        toggleSavedFile("keeper");
       }
     });
 
-    document.querySelectorAll("[data-fill]").forEach(button => {
-      button.addEventListener("click", () => {
-        wordInput.value = button.dataset.fill;
-        sourceInput.value = "";
-        sentenceInput.value = "";
-        renderAnswer(wordInput.value, "", "");
-      });
+    closeFile.addEventListener("click", () => {
+      closeActionReceipt();
+      dossier.classList.remove("open");
+      const url = new URL(window.location.href);
+      url.searchParams.delete("word");
+      url.hash = "";
+      window.history.replaceState({}, "", url);
+      document.querySelector(".gallery-header").scrollIntoView({ behavior: "smooth", block: "start" });
     });
 
-    document.querySelectorAll("[data-example]").forEach(button => {
-      button.addEventListener("click", () => {
-        const word = button.dataset.example;
-        wordInput.value = word;
-        if (word === "shot") {
-          sourceInput.value = "电影评论";
-          sentenceInput.value = "see something from a simple shot";
-        } else {
-          sourceInput.value = "";
-          sentenceInput.value = "";
-        }
-        renderAnswer(wordInput.value, sourceInput.value, sentenceInput.value);
-      });
-    });
-
-    copyPrompt.addEventListener("click", async () => {
-      const payload = {
-        word: wordInput.value.trim(),
-        source: sourceInput.value.trim(),
-        sentence: sentenceInput.value.trim()
-      };
-      await navigator.clipboard.writeText(JSON.stringify(payload, null, 2));
-      copyPrompt.textContent = "已复制";
-      window.setTimeout(() => {
-        copyPrompt.textContent = "复制查询参数";
-      }, 1200);
-    });
+    const initialWord = new URLSearchParams(window.location.search).get("word")?.trim().toLowerCase();
+    if (initialWord && (files[initialWord] || window.WORD_SENSE_ENTRIES?.[initialWord])) {
+      showCatalogFile(initialWord);
+    }
   </script>
 </body>
 </html>

@@ -1,10 +1,12 @@
-const CACHE_NAME = 'wordsense-v4';
+const CACHE_NAME = 'wordsense-v5';
 const APP_SHELL = [
   '/',
-  '/word-sense-home_9.html',
+  '/index.html',
   '/word-sense-about.html',
-  '/word-sense-result_10.html',
+  '/word-sense-author.html',
   '/word-sense-review.html',
+  '/archive-pages.css',
+  '/assets/archive/old-paper-texture.jpg',
   '/word-sense-metrics.html',
   '/word-sense-content.js',
   '/word-sense-events.js',
@@ -44,6 +46,6 @@ self.addEventListener('fetch', (event) => {
         caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
         return response;
       })
-      .catch(() => caches.match(event.request).then((cached) => cached || caches.match('/word-sense-home_9.html')))
+      .catch(() => caches.match(event.request).then((cached) => cached || caches.match('/index.html')))
   );
 });

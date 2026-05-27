@@ -378,12 +378,17 @@ body {
   to { background-position: 140px 0, 0 0; }
 }
 </style>
+<link rel="stylesheet" href="archive-pages.css">
 </head>
-<body>
+<body class="archive-review">
 
 <nav class="nav">
-  <a href="word-sense-home_9.html" class="nav-brand">Word<span class="em">Sense</span></a>
-  <a href="word-sense-about.html" class="nav-link">about</a>
+  <a href="index.html" class="nav-brand">Word <span class="em">Sense</span></a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">search</a>
+    <a href="word-sense-about.html" class="nav-link">about</a>
+    <a href="word-sense-author.html" class="nav-link">一封信</a>
+  </div>
 </nav>
 
 <main class="container">
@@ -411,8 +416,8 @@ body {
       </div>
 
       <div class="complete-actions" id="completeActions">
-        <a class="action" id="resultLink" href="word-sense-result_10.html">立即打开词条</a>
-        <a class="action" href="word-sense-home_9.html#searchSection">换一个词</a>
+        <a class="action" id="resultLink" href="index.html">立即打开词条</a>
+        <a class="action secondary" href="index.html">换一个词</a>
       </div>
     </div>
   </section>
@@ -425,9 +430,10 @@ const normalizedWord = word.trim() || 'resilience';
 const source = params.get('source') || '';
 const sentence = params.get('sentence') || '';
 const hasChineseSearchWord = /[\u3400-\u9FFF\uF900-\uFAFF]/.test(normalizedWord);
-const resultUrl = `word-sense-result_10.html?word=${encodeURIComponent(normalizedWord)}`;
+const resultUrl = `index.html?word=${encodeURIComponent(normalizedWord)}#dossier`;
 const apiBase = window.location.protocol.startsWith('http') ? window.location.origin : 'http://127.0.0.1:8787';
 const dictionaryMeanings = {
+  wail: '哀号；嚎啕；痛哭；发出尖长的声音。',
   resilience: '恢复力；韧性；复原能力。',
   unfold: '展开；逐渐显露；逐步发生。',
   brace: '支撑；使做好准备；绷紧以应对冲击。',
@@ -681,7 +687,7 @@ function failReview(message, errorType = 'unknown') {
   sourceRow.innerHTML = `<div class="failure-hint">${hints[errorType] || hints.unknown}</div>`;
   completeActions.classList.add('show', 'failed');
   completeActions.innerHTML = `
-    <a class="action" href="word-sense-home_9.html#searchSection">重新输入 key / 换一个词</a>
+    <a class="action" href="index.html">换一个词重试</a>
     <a class="action secondary" href="word-sense-author.html">联系 Sarah</a>
   `;
 }

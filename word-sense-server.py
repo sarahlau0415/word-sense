@@ -708,7 +708,7 @@ def run_job(job_id: str) -> None:
         )
 
         builder_mod.main()
-        result_url = f"/word-sense-result_10.html?word={quote(word)}"
+        result_url = f"/index.html?word={quote(word)}#dossier"
         update_job(
             job_id,
             status="complete",
