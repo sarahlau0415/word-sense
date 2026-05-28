@@ -42,36 +42,29 @@ The folder `validation/` contains the operating project for testing Word Sense a
 
 The backend prompt in `lib/generate-sense.js` is aligned with the six-dimension Word Sense v2 structure: 字面、感觉、来历、用法、跟中文比、悟道时刻.
 
-## Netlify status
+## Publish To Production
+
+Production runs from the VPS-backed Word Sense server at `wordsense.sarahliu.fun`.
+
+Before release:
+
+1. Merge the prepared release branch into `main`.
+2. Push `main` to GitHub.
+3. Pull the latest `main` on the VPS.
+4. Restart the Word Sense server process.
+5. Check `/index.html`, `/word-sense-review.html`, and a generated `/word-sense-entry.html?word=...` page.
+
+## Legacy Hosting Notes
 
 Netlify is no longer used for this product. The remaining `netlify.toml` exists only to skip accidental builds if an old Netlify site is still connected to this repository.
 
-## Publish With Vercel
-
-GitHub Pages can host the static page, but it cannot run `/api/sense`. Vercel is another good option if your account can deploy there.
-
-1. Import this GitHub repository into Vercel.
-2. Add `OPENAI_API_KEY` in the Vercel project environment variables.
-3. Deploy.
-4. Share the Vercel URL.
-
-## Publish Static Preview With GitHub Pages
-
-1. Create a new GitHub repository.
-2. Push this folder to the repository.
-3. Open the repository settings.
-4. Go to Pages.
-5. Set the source to `Deploy from a branch`.
-6. Choose the `main` branch and `/root`.
-7. Save and wait for GitHub to generate the public URL.
-
-GitHub Pages is only useful for the UI preview unless `/api/sense` is hosted somewhere else.
+GitHub Pages can host a static UI preview, but it cannot run the VPS job API. Vercel-related files are retained only as legacy prototype code.
 
 ## Project Files
 
 - `index.html`: the index wall and search entry point
 - `word-sense-entry.html`: the standalone word dossier reading page
-- `api/sense.js`: Vercel serverless model endpoint
+- `api/sense.js`: legacy Vercel serverless prototype endpoint
 - `lib/generate-sense.js`: shared OpenAI generation logic
 - `netlify.toml`: legacy Netlify build skip guard
 - `package.json`: project metadata and syntax check script
