@@ -69,7 +69,8 @@ GitHub Pages is only useful for the UI preview unless `/api/sense` is hosted som
 
 ## Project Files
 
-- `index.html`: the full static UI
+- `index.html`: the index wall and search entry point
+- `word-sense-entry.html`: the standalone word dossier reading page
 - `api/sense.js`: Vercel serverless model endpoint
 - `lib/generate-sense.js`: shared OpenAI generation logic
 - `netlify.toml`: legacy Netlify build skip guard

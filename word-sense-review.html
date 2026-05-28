@@ -430,7 +430,7 @@ const normalizedWord = word.trim() || 'resilience';
 const source = params.get('source') || '';
 const sentence = params.get('sentence') || '';
 const hasChineseSearchWord = /[\u3400-\u9FFF\uF900-\uFAFF]/.test(normalizedWord);
-const resultUrl = `index.html?word=${encodeURIComponent(normalizedWord)}#dossier`;
+const resultUrl = `word-sense-entry.html?word=${encodeURIComponent(normalizedWord)}`;
 const apiBase = window.location.protocol.startsWith('http') ? window.location.origin : 'http://127.0.0.1:8787';
 const dictionaryMeanings = {
   wail: '哀号；嚎啕；痛哭；发出尖长的声音。',
@@ -677,10 +677,10 @@ function failReview(message, errorType = 'unknown') {
   statusTitle.textContent = '这次没有完成';
   statusCopy.textContent = normalizeFailureMessage(message, errorType);
   const hints = {
-    missing_key: '如果你是第一次生成新词条，可以先回到首页，在搜索框下方填入 Sarah 给你的试用 key，或使用你自己的 key。',
-    invalid_key: '通常是 key 少复制了一段、前后多了空格，或者这个 key 不是当前服务商可用的 key。',
-    quota: '如果你用的是自己的 key，这通常需要去服务商后台看余额、限额或账单状态。',
-    model: '这通常不是你的词输入错了，而是这个 key 或服务商没有开放当前模型。',
+    missing_key: '新词生成服务暂时没有配置完成。你的输入还在，可以稍后再试，或把这个状态告诉 Sarah。',
+    invalid_key: '新词生成服务暂时无法连接。这不是你的输入问题，可以稍后再试，或把这个状态告诉 Sarah。',
+    quota: '新词生成服务目前触及使用限额。这不是你的输入问题，请稍后再试。',
+    model: '新词生成服务当前不可用。这不是你的词输入错了，请稍后再试。',
     network: '内容没有丢失；你可以等一会儿再试一次。',
     unknown: '如果连续出现，可以把这个词和错误状态发给 Sarah。'
   };
@@ -702,7 +702,7 @@ function normalizeFailureMessage(message, errorType = 'unknown') {
     raw.includes('环境变量') ||
     raw.includes('没有找到')
   ) {
-    return '这次生成没有可用的 API key。请回到首页重新输入 key，或联系 Sarah 获取试用 key。';
+    return '新词生成服务暂时没有配置完成。这不是你的输入问题，请稍后再试。';
   }
   return raw || '词条处理没有完成。请检查网络或密钥后重试。';
 }
@@ -727,15 +727,10 @@ async function startRealReview() {
       return;
     }
     setStage(0);
-    let apiKey = '';
-    try {
-      apiKey = sessionStorage.getItem('wordsense_api_key') || '';
-    } catch(e) {}
-
     const response = await fetch(`${apiBase}/api/jobs`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ word: normalizedWord, source, sentence, apiKey })
+      body: JSON.stringify({ word: normalizedWord, source, sentence })
     });
 
     if (!response.ok) {

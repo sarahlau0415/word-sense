@@ -1,12 +1,12 @@
 {
   "name": "WordSense",
   "short_name": "WordSense",
-  "description": "查词典不够，来一起感知英文词。",
-  "start_url": "/word-sense-home_9.html",
+  "description": "用五到十分钟，重新认识一个以为已经懂了的英文词。",
+  "start_url": "/index.html",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#FBFAF6",
-  "theme_color": "#FBFAF6",
+  "background_color": "#fcfaf4",
+  "theme_color": "#fcfaf4",
   "icons": [
     {
       "src": "/wordsense-icon-192.png",

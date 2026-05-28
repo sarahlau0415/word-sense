@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Word Sense | 重新认识一个英文词</title>
-  <meta name="description" content="给中国成人英语学习者的一份词语档案索引：用五到十分钟，读见英文词在真实使用里的质地。">
-  <link rel="canonical" href="https://wordsense.sarahliu.fun/">
-  <meta property="og:type" content="website">
+  <title>Word Sense | 词条档案</title>
+  <meta name="description" content="读一份英文词语档案：从表面释义走向真实使用里的声音、来路与语境。">
+  <link rel="canonical" href="https://wordsense.sarahliu.fun/word-sense-entry.html">
+  <meta property="og:type" content="article">
   <meta property="og:site_name" content="Word Sense">
-  <meta property="og:title" content="Word Sense | 重新认识一个英文词">
-  <meta property="og:description" content="一面词卡索引墙，一份可以慢慢展开的英文词语档案。">
-  <meta property="og:url" content="https://wordsense.sarahliu.fun/">
+  <meta property="og:title" content="Word Sense | 词条档案">
+  <meta property="og:description" content="用五到十分钟，重新认识一个以为已经懂了的英文词。">
+  <meta property="og:url" content="https://wordsense.sarahliu.fun/word-sense-entry.html">
   <meta property="og:image" content="https://wordsense.sarahliu.fun/wordsense-og.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Word Sense | 重新认识一个英文词">
-  <meta name="twitter:description" content="一面词卡索引墙，一份可以慢慢展开的英文词语档案。">
+  <meta name="twitter:title" content="Word Sense | 词条档案">
+  <meta name="twitter:description" content="用五到十分钟，重新认识一个以为已经懂了的英文词。">
   <meta name="twitter:image" content="https://wordsense.sarahliu.fun/wordsense-og.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
@@ -415,7 +415,6 @@
     }
 
     .word-card {
-      display: block;
       position: relative;
       overflow: hidden;
       height: clamp(212px, 17vw, 252px);
@@ -425,7 +424,6 @@
       color: var(--ink);
       background: var(--card);
       box-shadow: 0 1px 0 rgba(22, 22, 22, 0.05), 0 5px 15px rgba(22, 22, 22, 0.045);
-      text-decoration: none;
     }
 
     .card-face,
@@ -544,6 +542,8 @@
       background: var(--white);
       padding: 10px 13px;
       font: 700 13px/1 var(--mono);
+      color: inherit;
+      text-decoration: none;
     }
 
     .file-action {
@@ -1329,12 +1329,58 @@
     .footer-line {
       display: flex;
       justify-content: space-between;
-      gap: 20px;
+      align-items: flex-end;
+      gap: 28px;
       margin-top: 38px;
-      padding-top: 16px;
+      padding-top: 22px;
+      padding-bottom: clamp(22px, 4vw, 44px);
       border-top: 1px solid var(--line);
       color: var(--muted);
       font: 13px/1.6 var(--mono);
+    }
+
+    .next-file {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 7px;
+      color: var(--forest);
+      text-align: right;
+      text-decoration: none;
+    }
+
+    .next-file-kicker {
+      color: #80786b;
+      font: 11px/1 var(--mono);
+    }
+
+    .next-file-copy {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 14px;
+      color: var(--ink);
+      font: 21px/1.45 var(--serif);
+    }
+
+    .next-file-arrow {
+      color: var(--forest);
+      font: 700 16px/1 var(--mono);
+      transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .next-file:hover .next-file-copy,
+    .next-file:focus-visible .next-file-copy {
+      color: var(--forest);
+    }
+
+    .next-file:hover .next-file-arrow,
+    .next-file:focus-visible .next-file-arrow {
+      transform: translateX(5px);
+    }
+
+    .next-file:focus-visible {
+      outline: 2px solid var(--cobalt);
+      outline-offset: 8px;
     }
 
     @media (max-width: 980px) {
@@ -1361,6 +1407,15 @@
       .footer-line {
         align-items: flex-start;
         flex-direction: column;
+      }
+
+      .next-file {
+        align-items: flex-start;
+        text-align: left;
+      }
+
+      .next-file-copy {
+        font-size: 19px;
       }
 
       .gallery-tools {
@@ -1471,27 +1526,23 @@
         padding-top: 57px;
       }
     }
+
+    .entry-page .dossier {
+      display: block;
+      margin-top: clamp(26px, 4vw, 50px);
+    }
+
+    .entry-page .footer-line {
+      margin-top: clamp(34px, 6vw, 70px);
+    }
   </style>
 </head>
-<body>
-  <section id="releaseNotice" class="release-layer" role="dialog" aria-modal="true" aria-labelledby="releaseTitle" hidden>
-    <div class="release-note">
-      <button id="releaseClose" class="release-dismiss" type="button" aria-label="关闭改版通知">X</button>
-      <span class="release-kicker">改版手记 / issue 001</span>
-      <h2 id="releaseTitle">Word Sense 换了一种样子</h2>
-      <p>第一版帮我们把想法做了出来，但视觉上仍带着一些熟悉的 AI 页面感。</p>
-      <p>这一次，我们重新编排了阅读方式：更像一份独立出版物，也更适合安静读完一个词。</p>
-      <p>你仍然可以搜索一个词，也可以先抽出一张词卡，沿着它的声音、来路和语境读下去。</p>
-      <div class="release-actions">
-        <button id="releaseEnter" class="release-enter" type="button">进入新版 -></button>
-        <span class="release-once">此通知只出现一次</span>
-      </div>
-    </div>
-  </section>
+<body class="entry-page">
   <main class="page">
     <header class="masthead">
       <a class="brand" href="index.html">Word Sense</a>
       <div class="header-links">
+        <a href="index.html">词卡索引</a>
         <a href="word-sense-about.html">about</a>
         <a href="word-sense-author.html">一封信</a>
         <div class="issue">
@@ -1501,52 +1552,20 @@
       </div>
     </header>
 
-    <section class="intro">
-      <div>
-        <h1>那些你以为已经懂了的词</h1>
-        <p>一个英文词被翻成中文的那一刻，常常只剩下了正面。把卡片翻过来，看看真实使用里还留下了什么痕迹。</p>
-      </div>
-
-      <form id="senseForm" class="lookup">
-        <div class="lookup-title">
-          <span>SEARCH THE FILES</span>
-          <small>一次看一个词</small>
-        </div>
-        <div class="search-row">
-          <input id="wordInput" autocomplete="off" placeholder="输入一个英文词" aria-label="英文词">
-          <button type="submit">搜索</button>
-        </div>
-        <div class="context">
-          <input id="sourceInput" placeholder="出处, 如老板邮件" aria-label="出处">
-          <textarea id="sentenceInput" placeholder="原句, 如果你有的话" aria-label="原句"></textarea>
-        </div>
-      </form>
-    </section>
-
-    <section aria-label="精选词卡">
-      <div class="gallery-header">
-        <h2>ISSUE 002 WORD CARDS / 18 FILES</h2>
-        <div class="gallery-tools">
-          <p>hover 看线索 / click 阅读词条</p>
-          <button id="savedShelfToggle" class="shelf-toggle" type="button" aria-expanded="false">
-            收藏夹 <span id="savedCount" class="shelf-count">0</span>
-          </button>
-        </div>
-      </div>
-      <div id="savedDrawer" class="saved-drawer" hidden></div>
-      <div id="featuredCards" class="cards"></div>
-    </section>
-
-    <section id="dossier" class="dossier" aria-hidden="true" hidden>
+    <section id="dossier" class="dossier open" aria-labelledby="detailWord">
       <div class="file-bar">
         <span id="fileLabel" class="file-label">open file</span>
         <div class="file-controls">
           <button id="saveFile" class="file-action" type="button" aria-pressed="false" aria-expanded="false">收藏</button>
           <button id="copyFile" class="file-action" type="button" aria-expanded="false">复制词条</button>
           <button id="shareFile" class="file-action" type="button" aria-expanded="false">分享</button>
-          <button id="closeFile" class="close-file" type="button">CLOSE X</button>
+          <button id="savedShelfToggle" class="file-action" type="button" aria-expanded="false">
+            收藏夹 <span id="savedCount" class="shelf-count">0</span>
+          </button>
+          <a id="closeFile" class="close-file" href="index.html">BACK TO INDEX</a>
         </div>
       </div>
+      <div id="savedDrawer" class="saved-drawer" hidden></div>
       <section id="actionReceipt" class="action-receipt" aria-live="polite" hidden>
         <div id="receiptContent"></div>
       </section>
@@ -1559,10 +1578,14 @@
 
     <footer class="footer-line">
       <span>WORD SENSE / WORDS HAVE LIVES BEYOND TRANSLATION</span>
-      <span>读完一张，再抽出下一张。</span>
+      <a class="next-file" href="index.html">
+        <span class="next-file-kicker">BACK TO CARD INDEX / NEXT FILE</span>
+        <span class="next-file-copy">读完这一张，再抽出下一张 <span class="next-file-arrow" aria-hidden="true">-&gt;</span></span>
+      </a>
     </footer>
   </main>
 
+  <script src="word-sense-content.js"></script>
   <script>
     const form = document.querySelector("#senseForm");
     const wordInput = document.querySelector("#wordInput");
@@ -1615,13 +1638,6 @@
       { word: "clanker", meaning: "反 AI 侮辱词", trail: "AI / 俚语", clue: "金属声变成了人类对机器的排斥感。", card: "#c5dcf4", reveal: "#25353a", revealInk: "#fffefa" },
       { word: "unhinged", meaning: "失控；离谱", trail: "社媒 / 评价", clue: "门铰链松开后，整个状态不再被固定。", card: "#ff8875", reveal: "#315f87", revealInk: "#fffefa" }
     ];
-    const archivedWords = new Set([
-      "wail", "lowkey", "agentic", "reframe", "sentiment", "backdrop", "it's giving",
-      "accountability gap", "brace", "brain rot", "clanker", "cringe", "delulu",
-      "deprecate", "exchange", "fallout", "grounding", "hallucination",
-      "inflection point", "orchestrate", "probe", "resilience", "sense", "surge",
-      "unfold", "unhinged", "verify"
-    ]);
 
     const files = {
       wail: {
@@ -1758,7 +1774,7 @@
 
     function renderFeaturedCards() {
       featuredCards.innerHTML = cardCatalog.map((card, index) => `
-        <a class="word-card" href="word-sense-entry.html?word=${encodeURIComponent(card.word)}" data-file="${escapeHtml(card.word)}"
+        <button class="word-card" type="button" data-file="${escapeHtml(card.word)}"
           style="--card:${card.card};--reveal:${card.reveal};--reveal-ink:${card.revealInk};${card.faceInk ? `color:${card.faceInk};` : ""}">
           <span class="card-face">
             <span>
@@ -1773,7 +1789,7 @@
             <strong>${escapeHtml(card.clue)}</strong>
             <span class="open">open file -></span>
           </span>
-        </a>
+        </button>
       `).join("");
     }
 
@@ -1868,6 +1884,10 @@
       const sources = (data.verification?.sources || []).map(([label, url]) => `
         <a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${escapeHtml(label)}</a>
       `).join("");
+      const traceLabel = sources ? "sources noted below" : "reading note / source not filed";
+      const traceContents = data.originCitation || (sources
+        ? "documented forms<br>meaning shifts<br>sources below"
+        : "formation<br>history in use<br>read as a note");
       const contrast = data.contrast || [
         ["English in use", evidenceSentence || "a lived scene before a translated label"],
         ["中文落点", "这里记录直译容易漏掉的部分"]
@@ -1899,10 +1919,10 @@
           </div>
           <div class="folio">
             <aside class="origin-citation">
-              <span class="citation-label">reading note / source when available</span>
+              <span class="citation-label">${traceLabel}</span>
               <b class="citation-headword">${escapeHtml(word || "entry")}</b>
               <span class="margin-note">source trail</span>
-              <strong>${data.originCitation || "formation<br>history in use<br>read as a note"}</strong>
+              <strong>${traceContents}</strong>
             </aside>
             <article class="origin-entry">
               <div class="origin-entry-head">
@@ -1979,6 +1999,7 @@
       currentData = data;
       currentSource = source;
       currentSentence = sentence;
+      document.title = `${word} | Word Sense`;
       fileLabel.textContent = `file / ${word}`;
       detailWord.textContent = word;
       detailSurface.textContent = `正面写着：${data.surface}`;
@@ -1989,19 +2010,19 @@
       closeActionReceipt();
 
       dossier.classList.add("open");
-      dossier.scrollIntoView({ behavior: "smooth", block: "start" });
     }
 
     function updateFileLink(word) {
       const url = new URL(window.location.href);
       url.searchParams.delete("notice");
       url.searchParams.set("word", word);
-      url.hash = "dossier";
+      url.hash = "";
       window.history.replaceState({}, "", url);
     }
 
     function filePermalink(word) {
-      const url = new URL("word-sense-entry.html", window.location.href);
+      const url = new URL(window.location.href);
+      url.search = "";
       url.searchParams.set("word", word);
       return url.toString();
     }
@@ -2294,40 +2315,7 @@
       `;
     }
 
-    renderFeaturedCards();
     renderSavedDrawer();
-    if (shouldShowReleaseNotice()) {
-      openReleaseNotice();
-    }
-
-    releaseEnter.addEventListener("click", closeReleaseNotice);
-    releaseClose.addEventListener("click", closeReleaseNotice);
-    document.addEventListener("keydown", event => {
-      if (event.key === "Escape" && !releaseNotice.hidden) {
-        closeReleaseNotice();
-      }
-    });
-
-    form.addEventListener("submit", event => {
-      event.preventDefault();
-      const word = wordInput.value.trim().toLowerCase();
-      const source = sourceInput.value.trim();
-      const sentence = sentenceInput.value.trim();
-      if (!word) {
-        wordInput.focus();
-        return;
-      }
-
-      if (archivedWords.has(word) && !source && !sentence) {
-        window.location.href = `word-sense-entry.html?word=${encodeURIComponent(word)}`;
-        return;
-      }
-
-      const reviewParams = new URLSearchParams({ word });
-      if (source) reviewParams.set("source", source);
-      if (sentence) reviewParams.set("sentence", sentence);
-      window.location.href = `word-sense-review.html?${reviewParams.toString()}`;
-    });
 
     saveFile.addEventListener("click", toggleSavedFile);
     copyFile.addEventListener("click", copyCurrentFile);
@@ -2380,19 +2368,18 @@
       }
     });
 
-    closeFile.addEventListener("click", () => {
-      closeActionReceipt();
-      dossier.classList.remove("open");
-      const url = new URL(window.location.href);
-      url.searchParams.delete("word");
-      url.hash = "";
-      window.history.replaceState({}, "", url);
-      document.querySelector(".gallery-header").scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-
     const initialWord = new URLSearchParams(window.location.search).get("word")?.trim().toLowerCase();
-    if (initialWord) {
-      window.location.replace(`word-sense-entry.html?word=${encodeURIComponent(initialWord)}`);
+    if (initialWord && (files[initialWord] || window.WORD_SENSE_ENTRIES?.[initialWord])) {
+      showCatalogFile(initialWord);
+    } else if (initialWord) {
+      currentFile = initialWord;
+      detailWord.textContent = initialWord;
+      showError(initialWord, "这份词条还没有进入阅读档案。回到索引页搜索它，我们会为它整理一份新档案。");
+    } else {
+      currentFile = "未选择词条";
+      detailWord.textContent = "打开一张词卡";
+      detailSurface.textContent = "先从索引页选择一个词";
+      showError("", "请回到词卡索引，抽出一张你想读的词。");
     }
   </script>
   <script src="/word-sense-events.js"></script>

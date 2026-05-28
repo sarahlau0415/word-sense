@@ -1,4 +1,4 @@
-const CACHE_NAME = 'wordsense-v5';
+const CACHE_NAME = 'wordsense-v8-issue-002';
 const APP_SHELL = [
   '/',
   '/index.html',
@@ -6,9 +6,7 @@ const APP_SHELL = [
   '/word-sense-author.html',
   '/word-sense-review.html',
   '/archive-pages.css',
-  '/assets/archive/old-paper-texture.jpg',
   '/word-sense-metrics.html',
-  '/word-sense-content.js',
   '/word-sense-events.js',
   '/manifest.webmanifest',
   '/wordsense-icon.svg',

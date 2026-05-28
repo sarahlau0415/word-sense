@@ -51,9 +51,13 @@
     const path = window.location.pathname;
     const word = wordFromUrl();
 
-    if (path.endsWith('/word-sense-home_9.html') || path === '/') {
+    if (path.endsWith('/index.html') || path.endsWith('/word-sense-home_9.html') || path === '/') {
       track('home_view');
       document.addEventListener('click', event => {
+        const card = event.target.closest?.('.word-card');
+        if (card) {
+          track('word_click', { word: card.dataset.file || '' });
+        }
         const item = event.target.closest?.('.word-item');
         if (item) {
           track('word_click', {
@@ -78,13 +82,23 @@
           hasApiKey: Boolean(document.getElementById('searchApiKeyInput')?.value?.trim())
         });
       }, { capture: true });
+      document.getElementById('senseForm')?.addEventListener('submit', () => {
+        track('search_submit', {
+          word: document.getElementById('wordInput')?.value?.trim() || '',
+          hasSource: Boolean(document.getElementById('sourceInput')?.value?.trim()),
+          hasSentence: Boolean(document.getElementById('sentenceInput')?.value?.trim())
+        });
+      }, { capture: true });
       document.getElementById('installPwaButton')?.addEventListener('click', () => track('install_click'));
       document.getElementById('mailingListForm')?.addEventListener('submit', () => track('subscribe_submit'), { capture: true });
       return;
     }
 
-    if (path.endsWith('/word-sense-result_10.html')) {
+    if (path.endsWith('/word-sense-entry.html') || path.endsWith('/word-sense-result_10.html')) {
       track('result_view', { word });
+      document.getElementById('saveFile')?.addEventListener('click', () => track('save_click', { word }));
+      document.getElementById('shareFile')?.addEventListener('click', () => track('share_click', { word, style: 'open' }));
+      document.getElementById('copyFile')?.addEventListener('click', () => track('copy_click', { word }));
       document.getElementById('saveWordButton')?.addEventListener('click', () => track('save_click', { word }));
       document.getElementById('shareWordButton')?.addEventListener('click', () => track('share_click', { word, style: 'direct' }));
       document.addEventListener('click', event => {

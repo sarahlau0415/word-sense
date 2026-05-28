@@ -610,25 +610,25 @@ def classify_workflow_error(exc: Exception) -> tuple[str, str]:
     if any(token in lowered for token in ["openai_api_key", ".env", "environment variable", "环境变量", "没有找到"]):
         return (
             "missing_key",
-            "这次生成没有可用的 API key。请回到首页重新输入 key，或联系 Sarah 获取试用 key。",
+            "新词生成服务暂时没有配置完成。这不是你的输入问题，请稍后再试。",
         )
 
     if any(token in lowered for token in ["401", "403", "unauthorized", "forbidden", "access_denied", "no permission", "credentials", "invalid_api_key", "invalid api key", "incorrect api key", "authentication"]):
         return (
             "invalid_key",
-            "这个 API key 没有通过验证，或没有权限访问当前服务/模型。请检查有没有复制完整，或者换一个 key 再试。",
+            "新词生成服务暂时无法连接。这不是你的输入问题，请稍后再试。",
         )
 
     if any(token in lowered for token in ["quota", "insufficient", "billing", "balance", "credit", "payment", "429"]):
         return (
             "quota",
-            "这个 API key 可能余额不足、额度已用完，或触发了调用限制。请检查账户余额和限额后再试。",
+            "新词生成服务目前触及使用限额。这不是你的输入问题，请稍后再试。",
         )
 
     if any(token in lowered for token in ["model", "not found", "does not exist", "not supported", "unsupported"]):
         return (
             "model",
-            "当前 API key 或服务商可能不支持 WordSense 使用的模型。请换一个可用 key，或联系 Sarah 确认模型配置。",
+            "新词生成服务当前不可用。这不是你的词输入错了，请稍后再试。",
         )
 
     if any(token in lowered for token in ["timeout", "timed out", "connection", "network", "tls", "ssl", "temporarily", "server disconnected"]):
@@ -708,7 +708,7 @@ def run_job(job_id: str) -> None:
         )
 
         builder_mod.main()
-        result_url = f"/index.html?word={quote(word)}#dossier"
+        result_url = f"/word-sense-entry.html?word={quote(word)}"
         update_job(
             job_id,
             status="complete",
@@ -921,7 +921,7 @@ class Handler(BaseHTTPRequestHandler):
 
     def serve_static(self, request_path: str, head_only: bool = False) -> None:
         if request_path in ("", "/"):
-            request_path = "/word-sense-home_9.html"
+            request_path = "/index.html"
         relative = unquote(request_path).lstrip("/")
         path = (ROOT / relative).resolve()
         if not str(path).startswith(str(ROOT.resolve())) or not path.exists() or path.is_dir():
@@ -954,7 +954,7 @@ class Handler(BaseHTTPRequestHandler):
 
 def main() -> None:
     server = ThreadingHTTPServer((HOST, PORT), Handler)
-    print(f"WordSense server running at http://{HOST}:{PORT}/word-sense-home_9.html")
+    print(f"WordSense server running at http://{HOST}:{PORT}/index.html")
     server.serve_forever()
 
 
