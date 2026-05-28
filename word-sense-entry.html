@@ -1115,8 +1115,8 @@
     .usage-excerpt {
       break-inside: avoid;
       margin: 19px 0 0;
-      padding: 11px 0 2px 16px;
-      border-left: 2px solid rgba(36, 32, 25, 0.3);
+      padding: 11px 0 8px;
+      border-top: 1px solid rgba(36, 32, 25, 0.34);
       font-size: 16px;
       line-height: 1.7;
     }
@@ -1139,6 +1139,14 @@
       margin-top: 5px;
       color: #625a4d;
       font-size: 14px;
+    }
+
+    .usage-excerpt .usage-note {
+      display: block;
+      margin-top: 9px;
+      color: #3f382f;
+      font-size: 14px;
+      line-height: 1.72;
     }
 
     .artifact-context {
@@ -1833,27 +1841,155 @@
         .join("");
     }
 
+    const usageTranslations = {
+      "We need to build more resilience into the supply chain before the next disruption hits.": "下一次冲击到来之前，我们需要让供应链更有韧性。",
+      "She showed real resilience during the restructuring and kept the team focused through a difficult few months.": "重组期间她表现出真正的韧性，在艰难的几个月里仍让团队保持专注。",
+      "After everything he went through last year, I’m amazed by his resilience.": "经历了去年那些事之后，他还能这样恢复过来，我很佩服他的韧性。",
+      "resilience isn’t pretending you’re fine. it’s finding your way back after you’re not": "resilience 不是假装自己没事，而是在你真的撑不住之后，慢慢找到回来的路。",
+      "As the rollout unfolds, we’ll adjust the timeline and keep everyone updated on any major risks.": "随着发布逐步推进，我们会调整时间线，并让大家了解任何主要风险。",
+      "I just sat there and watched the whole argument unfold at dinner.": "我就坐在那里，看着整场争吵在晚餐时一步步展开。",
+      "watching this drama unfold in real time is honestly better than the actual show": "实时看这场闹剧展开，说真的，比正片还好看。",
+      "We should brace for some tough questions from the client after last week’s delayed launch.": "上周发布延期之后，我们应该准备好面对客户的一些尖锐问题。",
+      "The team is bracing for a sharp increase in support tickets once the update goes live.": "更新上线后，团队正在准备应对客服工单的急剧增加。",
+      "Brace yourself — Mom found the receipt, and she definitely knows we broke the lamp.": "你做好心理准备，妈妈找到收据了，她肯定知道我们把灯弄坏了。",
+      "She braced herself against the wall as the train suddenly lurched forward.": "火车突然向前一晃，她用身体抵住墙稳住自己。",
+      "everyone is bracing for rent increases like we all haven’t been doing that for three years": "大家都在准备迎接房租上涨，好像我们过去三年不是一直在这样似的。",
+      "We saw a surge in sign-ups after the pricing page was redesigned last week.": "上周价格页面改版后，我们看到注册量突然涌上来。",
+      "The server couldn’t handle the traffic surge during the product launch.": "产品发布期间流量猛增，服务器扛不住了。",
+      "I felt a sudden surge of anger when he said that.": "他说那句话时，我突然一阵怒火涌上来。",
+      "Hospitals are preparing for a possible surge in flu cases this winter.": "医院正在为今年冬天流感病例可能激增做准备。",
+      "that random surge of motivation at 1am always convinces me i can fix my whole life": "凌晨一点突然涌上来的那股动力，总让我觉得自己能把整个人生都修好。",
+      "Could you verify the figures in the report before we send it to the client?": "在我们把报告发给客户之前，你能核对一下里面的数据吗？",
+      "I’m not booking the hotel until I verify that the address is actually near the station.": "我要先确认那个地址真的离车站近，才会订这家酒店。",
+      "You have to verify your email before the account lets you post anything.": "你必须先验证邮箱，这个账号才会允许你发布内容。",
+      "I cringed a little when the client read our slogan out loud in the meeting.": "客户在会上把我们的标语念出来时，我有点尴尬到缩了一下。",
+      "I couldn’t finish the video. The guy was trying so hard, it got cringey fast.": "那个视频我看不完。他太用力了，很快就变得很尬。",
+      "this whole “founder mindset” post is pure cringe and i need everyone to stop sharing it": "这整篇“创始人心态”的帖子纯粹很尬，大家真的别再转了。",
+      "Everything he posts on social media seems so cringe.": "他在社媒上发的所有东西都显得好尬。",
+      "When you're watching the show you constantly think “this is cringe,” but it's completely addictive!": "你看这个节目时会一直想“这也太尬了”，但又完全停不下来。",
+      "We need to probe why users drop off after signup, not just assume the form is too long.": "我们需要深入查一下用户为什么注册后流失，而不是直接假设表单太长。",
+      "Regulators are probing whether the company misled investors about the risks in its financial products.": "监管机构正在调查这家公司是否在金融产品风险上误导了投资者。",
+      "I didn’t want to probe, but he seemed upset and kept avoiding the topic.": "我不想追问，但他看起来不太高兴，而且一直避开这个话题。",
+      "people keep probing celebrities’ private lives and then act shocked when they push back": "人们一直探挖名人的私生活，等他们反击时又装得很震惊。",
+      "We’re still dealing with the fallout from last week’s pricing error, especially among our enterprise clients.": "我们还在处理上周定价错误带来的后果，尤其是企业客户那边。",
+      "The political fallout from the decision continued for months, even after the policy was revised.": "即使政策后来修改了，这个决定造成的政治后果仍持续了几个月。",
+      "After their breakup, the whole friend group somehow got pulled into the fallout.": "他们分手后，整个朋友圈不知怎么都被卷进了后续风波。",
+      "the fallout from this launch is going to be messier than the launch itself": "这次发布的后续风波可能会比发布本身还乱。",
+      "The model handled simple questions well, but it still produced hallucinations when asked for legal citations.": "这个模型处理简单问题还不错，但一被要求提供法律引用，还是会编出不存在的内容。",
+      "After several nights without sleep, he reported auditory hallucinations and was advised to seek medical evaluation.": "连续几晚没睡后，他说自己出现了幻听，并被建议接受医学评估。",
+      "I thought I heard my phone ring, but maybe it was just a tiny sleep-deprived hallucination.": "我以为听见手机响了，但也许只是缺觉导致的一点幻觉。",
+      "asked the chatbot for sources and it gave me three totally fake papers. classic hallucination behavior": "我让聊天机器人给来源，它给了我三篇完全不存在的论文，典型的幻觉表现。",
+      "The program gives new analysts a solid grounding in the tools before they work with clients.": "这个项目会先让新分析师打好工具基础，再让他们接触客户。",
+      "When I feel anxious, walking outside without my phone is weirdly grounding for me.": "我焦虑的时候，不带手机出去走走，反而会让我很奇妙地稳下来。",
+      "Try a simple grounding exercise: name five things you can see, four things you can feel, three things you can hear, two things you can smell, and one thing you can taste.": "试一个简单的安定练习：说出五个你看见的东西、四个你能触到的东西、三个你能听见的声音、两个你能闻到的气味和一个你能尝到的味道。",
+      "there’s something grounding about cooking dinner after staring at screens all day": "盯了一整天屏幕后，做晚饭这件事有种让人落回地面的感觉。",
+      "I know I’m being delulu, but the way he smiled at me felt oddly specific.": "我知道我有点自我脑补，但他对我笑的方式就是莫名很有指向性。",
+      "You’re a little delulu if you think that “maybe later” text means he’s planning something romantic.": "如果你觉得那条“也许以后吧”的消息说明他在计划什么浪漫的事，那你有点想太多了。",
+      "me applying to one job and already imagining my first-day outfit, delulu era fully activated": "我才投了一份工作，就已经开始想第一天穿什么了，彻底进入 delulu 模式。",
+      "she liked one story and now i’m delulu again, this is not a safe environment": "她点赞了一条 story，我又开始脑补了，这个环境一点都不安全。",
+      "I watched three hours of random TikToks last night, and now my brain feels like complete brain rot.": "我昨晚刷了三个小时乱七八糟的 TikTok，现在感觉脑子彻底被腌坏了。",
+      "He quotes memes in every conversation now. I think the brain rot has fully taken over.": "他现在每次聊天都引用梗图。我觉得 brain rot 已经彻底占领他了。",
+      "this show is pure brain rot but i cannot stop watching it": "这个节目纯属 brain rot，但我就是停不下来。",
+      "my entire feed is brain rot and somehow the algorithm knows i want more": "我的整个信息流都是 brain rot，而算法不知怎么还知道我想继续看。",
+      "This API is deprecated and will be removed in a future release, so please migrate to the new endpoint.": "这个 API 已被弃用，并将在未来版本中移除，请迁移到新的端点。",
+      "The committee formally deprecated the old reporting practice because it encouraged teams to hide early risks.": "委员会正式废止了旧的汇报做法，因为它会鼓励团队隐藏早期风险。",
+      "He has this dry, self-deprecating humor that makes people relax around him quickly.": "他有一种干巴巴的自嘲式幽默，很快就能让身边的人放松下来。",
+      "her self-deprecating captions are funny, but sometimes i wonder if she actually believes them": "她那些自嘲式配文很好笑，但有时候我会怀疑她是不是真的这么想自己。",
+      "Maya orchestrated the rollout across product, sales, and support, so customers heard one clear message.": "Maya 协调了产品、销售和客服的发布节奏，所以客户听到的是同一个清晰信息。",
+      "Officials believe the protests were orchestrated by groups with a broader political agenda.": "官员认为这些抗议是由有更广泛政治议程的团体策划组织的。",
+      "Somehow he orchestrated the whole surprise dinner without his wife noticing anything.": "不知怎么，他把整场惊喜晚餐安排好了，而且他妻子一点都没察觉。",
+      "she really orchestrated an entire soft launch of that relationship and thought we wouldn’t notice": "她真的给那段关系安排了一整套软启动，还以为我们看不出来。",
+      "We believe the market is reaching an inflection point, and our current pricing model may not hold.": "我们认为市场正在到达一个转折点，当前的定价模式可能撑不住了。",
+      "The company hit an inflection point last quarter as retention improved and acquisition costs started to fall.": "上个季度，随着留存改善、获客成本开始下降，公司到达了一个转折点。",
+      "Moving abroad was an inflection point for me; I stopped treating work as my whole identity.": "搬到国外对我来说是一个转折点，我不再把工作当成自己的全部身份。",
+      "ai feels like an inflection point for every job that used to feel safe from automation": "AI 感觉成了所有过去看似不会被自动化影响的工作的转折点。",
+      "There is an accountability gap when automated decisions affect customers, but no team owns the final outcome.": "当自动化决策影响客户，却没有任何团队对最终结果负责时，就会出现问责缺口。",
+      "The new framework aims to close the accountability gap between platform operators, data providers, and regulators.": "这个新框架旨在弥合平台运营方、数据提供方和监管者之间的问责缺口。",
+      "everyone keeps blaming “the system,” but that’s exactly the accountability gap people are talking about": "大家一直把责任推给“系统”，但这正是人们说的那个问责缺口。",
+      "That old heater is such a clanker; it wakes me up every time the pipes start shaking.": "那台旧暖气真是个哐当作响的老家伙，管道一开始震就会把我吵醒。",
+      "We turned the corner and three clankers were already waiting behind the blast door.": "我们一转过拐角，三台 clanker 已经在防爆门后面等着了。",
+      "every comment under that post sounds generated. the clankers are getting way too comfortable here": "那条帖子下面每条评论都像生成的，这些 clanker 在这儿也太自在了。",
+      "His reaction in the meeting felt a bit unhinged, especially when he started attacking people personally.": "他在会上的反应有点失控，尤其是开始人身攻击的时候。",
+      "She sent him twenty voice messages after one bad date. That’s kind of unhinged.": "一次糟糕约会之后，她给他发了二十条语音。这有点失控了。",
+      "this plot twist is so unhinged and somehow it’s the only reason i’m still watching": "这个剧情反转离谱到失控，但不知怎么，这正是我还在看的唯一原因。"
+    };
+
+    function cleanUsageLine(line) {
+      return String(line || "")
+        .trim()
+        .replace(/^>\s?/, "")
+        .replace(/\s{2,}$/g, "")
+        .trim();
+    }
+
+    function isUsageLabel(paragraph) {
+      const text = String(paragraph || "").trim();
+      if (!text || text.startsWith(">")) return false;
+      if (/^[-`]/.test(text)) return false;
+      if (/。|，|；|：/.test(text) && text.length > 18) return false;
+      return text.length <= 32;
+    }
+
+    function renderUsageBlock(label, quoteParagraph, noteParagraph = "") {
+      const quoteLines = String(quoteParagraph)
+        .split("\n")
+        .map(cleanUsageLine)
+        .filter(Boolean);
+      let scene = String(label || "").trim().replace(/^#+\s*/, "").replace(/[:：]\s*$/, "");
+      if (quoteLines[0]) {
+        const quotedLabel = quoteLines[0].match(/^\*\*\[?(.+?)\]?\*\*$/);
+        if (quotedLabel) {
+          scene = quotedLabel[1].trim();
+          quoteLines.shift();
+        }
+      }
+      const english = quoteLines.find(line => /[A-Za-z]/.test(line) && !/[\u4e00-\u9fff]/.test(line)) || "";
+      const directZh = quoteLines.find(line => /[\u4e00-\u9fff]/.test(line)) || usageTranslations[english] || "";
+      const note = noteParagraph ? inline(noteParagraph).replace(/\n/g, "<br>") : "";
+      return `
+        <div class="usage-excerpt">
+          ${scene ? `<strong>${escapeHtml(scene)}</strong>` : ""}
+          ${english ? `<span class="en-line">${inline(english)}</span>` : ""}
+          ${directZh ? `<span class="zh-line">${inline(directZh)}</span>` : ""}
+          ${note ? `<span class="usage-note">${note}</span>` : ""}
+        </div>
+      `;
+    }
+
     function usageParagraphs(text) {
-      return String(text)
-        .split(/\n{2,}/)
-        .map(paragraph => {
-          const lines = paragraph.split("\n").map(line => line.trim()).filter(Boolean);
-          const label = lines[0]?.match(/^\*\*(.+?)\*\*$/);
-          if (label && lines.slice(1).some(line => line.startsWith(">"))) {
-            const quotes = lines.slice(1)
-              .filter(line => line.startsWith(">"))
-              .map(line => line.replace(/^>\s?/, ""));
-            return `
-              <div class="usage-excerpt">
-                <strong>${escapeHtml(label[1])}</strong>
-                ${quotes[0] ? `<span class="en-line">${inline(quotes[0])}</span>` : ""}
-                ${quotes[1] ? `<span class="zh-line">${inline(quotes[1])}</span>` : ""}
-              </div>
-            `;
-          }
-          return `<p>${inline(paragraph).replace(/\n/g, "<br>")}</p>`;
-        })
-        .join("");
+      const blocks = String(text).split(/\n{2,}/).map(block => block.trim()).filter(Boolean);
+      const rendered = [];
+      for (let index = 0; index < blocks.length; index += 1) {
+        const block = blocks[index];
+        const lines = block.split("\n").map(line => line.trim()).filter(Boolean);
+        const boldLabel = lines[0]?.match(/^\*\*\[?(.+?)\]?\*\*$/);
+        const hasQuote = lines.some(line => line.startsWith(">"));
+
+        if (boldLabel && hasQuote) {
+          const note = blocks[index + 1] && !blocks[index + 1].startsWith(">") && !isUsageLabel(blocks[index + 1])
+            ? blocks[++index]
+            : "";
+          rendered.push(renderUsageBlock(boldLabel[1], block, note));
+          continue;
+        }
+
+        if (isUsageLabel(block) && blocks[index + 1]?.startsWith(">")) {
+          const quoteBlock = blocks[++index];
+          const note = blocks[index + 1] && !blocks[index + 1].startsWith(">") && !isUsageLabel(blocks[index + 1])
+            ? blocks[++index]
+            : "";
+          rendered.push(renderUsageBlock(block, quoteBlock, note));
+          continue;
+        }
+
+        if (block.startsWith(">")) {
+          rendered.push(renderUsageBlock("", block));
+          continue;
+        }
+
+        rendered.push(`<p>${inline(block).replace(/\n/g, "<br>")}</p>`);
+      }
+      return rendered.join("");
     }
 
     function tag(label, color) {
