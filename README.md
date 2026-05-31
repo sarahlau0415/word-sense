@@ -54,6 +54,10 @@ Before release:
 4. Restart the Word Sense server process.
 5. Check `/index.html`, `/word-sense-review.html`, and a generated `/word-sense-entry.html?word=...` page.
 
+## Latest Fixes
+
+- 2026-05-31: Mobile visitors no longer see the redesign notice by default; the origin index slip now scales long headwords so they stay inside the paper label.
+
 ## Legacy Hosting Notes
 
 Netlify is no longer used for this product. The remaining `netlify.toml` exists only to skip accidental builds if an old Netlify site is still connected to this repository.

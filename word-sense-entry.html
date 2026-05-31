@@ -984,6 +984,20 @@
       color: #26221b;
       font: 700 27px/1.05 var(--serif);
       text-transform: lowercase;
+      max-width: 100%;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      hyphens: auto;
+    }
+
+    .citation-headword.long {
+      font-size: 22px;
+      line-height: 1.08;
+    }
+
+    .citation-headword.extra-long {
+      font-size: 18px;
+      line-height: 1.12;
     }
 
     .origin-citation strong {
@@ -1803,13 +1817,15 @@
 
     function shouldShowReleaseNotice() {
       const forcePreview = new URLSearchParams(window.location.search).get("notice") === "1";
-      if (forcePreview) return true;
-      if (new URLSearchParams(window.location.search).has("word")) return false;
-      try {
-        return window.localStorage.getItem(releaseStorageKey) !== "seen";
-      } catch (error) {
-        return true;
-      }
+      return Boolean(forcePreview && releaseNotice);
+    }
+
+    function citationHeadwordClass(word) {
+      const text = String(word || "");
+      const compactLength = text.replace(/\s+/g, "").length;
+      if (compactLength >= 18) return "citation-headword extra-long";
+      if (compactLength >= 12 || text.includes(" ")) return "citation-headword long";
+      return "citation-headword";
     }
 
     function openReleaseNotice() {
@@ -2056,7 +2072,7 @@
           <div class="folio">
             <aside class="origin-citation">
               <span class="citation-label">${traceLabel}</span>
-              <b class="citation-headword">${escapeHtml(word || "entry")}</b>
+              <b class="${citationHeadwordClass(word || "entry")}">${escapeHtml(word || "entry")}</b>
               <span class="margin-note">source trail</span>
               <strong>${traceContents}</strong>
             </aside>

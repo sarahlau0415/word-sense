@@ -449,15 +449,26 @@
       color: var(--reveal-ink, var(--ink));
     }
 
-    .word-card:hover .card-face,
-    .word-card:focus-visible .card-face {
+    .word-card:focus-visible .card-face,
+    .word-card.is-previewing .card-face {
       transform: translateY(-22%);
       opacity: 0.25;
     }
 
-    .word-card:hover .card-reveal,
-    .word-card:focus-visible .card-reveal {
+    .word-card:focus-visible .card-reveal,
+    .word-card.is-previewing .card-reveal {
       transform: translateY(0);
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .word-card:hover .card-face {
+        transform: translateY(-22%);
+        opacity: 0.25;
+      }
+
+      .word-card:hover .card-reveal {
+        transform: translateY(0);
+      }
     }
 
     .card-no {
@@ -500,6 +511,22 @@
 
     .card-reveal .open {
       font: 700 14px/1 var(--mono);
+    }
+
+    .word-card.is-previewing .open {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    @media (max-width: 780px), (hover: none) and (pointer: coarse) {
+      .card-reveal .open {
+        display: inline-flex;
+        align-items: center;
+        align-self: flex-start;
+        min-height: 46px;
+        margin: 8px 0 -10px -12px;
+        padding: 14px 16px 14px 12px;
+      }
     }
 
     .dossier {
@@ -984,6 +1011,20 @@
       color: #26221b;
       font: 700 27px/1.05 var(--serif);
       text-transform: lowercase;
+      max-width: 100%;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      hyphens: auto;
+    }
+
+    .citation-headword.long {
+      font-size: 22px;
+      line-height: 1.08;
+    }
+
+    .citation-headword.extra-long {
+      font-size: 18px;
+      line-height: 1.12;
     }
 
     .origin-citation strong {
@@ -1759,6 +1800,7 @@
     function renderFeaturedCards() {
       featuredCards.innerHTML = cardCatalog.map((card, index) => `
         <a class="word-card" href="word-sense-entry.html?word=${encodeURIComponent(card.word)}" data-file="${escapeHtml(card.word)}"
+          aria-label="${escapeHtml(card.word)}：先看线索，再打开词条"
           style="--card:${card.card};--reveal:${card.reveal};--reveal-ink:${card.revealInk};${card.faceInk ? `color:${card.faceInk};` : ""}">
           <span class="card-face">
             <span>
@@ -1779,13 +1821,15 @@
 
     function shouldShowReleaseNotice() {
       const forcePreview = new URLSearchParams(window.location.search).get("notice") === "1";
-      if (forcePreview) return true;
-      if (new URLSearchParams(window.location.search).has("word")) return false;
-      try {
-        return window.localStorage.getItem(releaseStorageKey) !== "seen";
-      } catch (error) {
-        return true;
-      }
+      return Boolean(forcePreview && releaseNotice);
+    }
+
+    function citationHeadwordClass(word) {
+      const text = String(word || "");
+      const compactLength = text.replace(/\s+/g, "").length;
+      if (compactLength >= 18) return "citation-headword extra-long";
+      if (compactLength >= 12 || text.includes(" ")) return "citation-headword long";
+      return "citation-headword";
     }
 
     function openReleaseNotice() {
@@ -1900,7 +1944,7 @@
           <div class="folio">
             <aside class="origin-citation">
               <span class="citation-label">reading note / source when available</span>
-              <b class="citation-headword">${escapeHtml(word || "entry")}</b>
+              <b class="${citationHeadwordClass(word || "entry")}">${escapeHtml(word || "entry")}</b>
               <span class="margin-note">source trail</span>
               <strong>${data.originCitation || "formation<br>history in use<br>read as a note"}</strong>
             </aside>
@@ -2261,6 +2305,19 @@
       });
     }
 
+    function usesMobileCardPreview() {
+      return window.matchMedia("(max-width: 780px), (hover: none) and (pointer: coarse)").matches;
+    }
+
+    function clearCardPreviews(exceptCard = null) {
+      featuredCards.querySelectorAll(".word-card.is-previewing").forEach(card => {
+        if (card !== exceptCard) {
+          card.classList.remove("is-previewing");
+          card.removeAttribute("aria-current");
+        }
+      });
+    }
+
     function showLoading(word, source, sentence) {
       fileLabel.textContent = `search / ${word}`;
       detailWord.textContent = word;
@@ -2327,6 +2384,26 @@
       if (source) reviewParams.set("source", source);
       if (sentence) reviewParams.set("sentence", sentence);
       window.location.href = `word-sense-review.html?${reviewParams.toString()}`;
+    });
+
+    featuredCards.addEventListener("click", event => {
+      const card = event.target.closest(".word-card");
+      if (!card || !usesMobileCardPreview()) return;
+
+      const wantsOpenFile = Boolean(event.target.closest(".open"));
+      if (card.classList.contains("is-previewing") && wantsOpenFile) {
+        return;
+      }
+
+      event.preventDefault();
+      clearCardPreviews(card);
+      card.classList.add("is-previewing");
+      card.setAttribute("aria-current", "true");
+    });
+
+    document.addEventListener("click", event => {
+      if (!usesMobileCardPreview() || event.target.closest(".word-card")) return;
+      clearCardPreviews();
     });
 
     saveFile.addEventListener("click", toggleSavedFile);
