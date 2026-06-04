@@ -341,6 +341,84 @@
       resize: vertical;
     }
 
+
+    .lookup-support {
+      margin-top: 10px;
+      border-top: 1px dashed #cbc3b4;
+      padding-top: 11px;
+    }
+
+    .lookup-support summary {
+      cursor: pointer;
+      color: var(--forest);
+      font: 700 13px/1.4 var(--mono);
+      list-style-position: outside;
+    }
+
+    .lookup-support[open] summary {
+      margin-bottom: 10px;
+    }
+
+    .search-cost-note {
+      margin: 0 0 10px;
+      color: #4a463d;
+      font-size: 13px;
+      line-height: 1.58;
+    }
+
+    .key-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .key-row input {
+      min-height: 40px;
+      border: 1px solid #c4bdae;
+      background: #fffefa;
+      outline: 0;
+      padding: 0 11px;
+      color: var(--ink);
+      font: 700 13px/1 var(--mono);
+    }
+
+    .key-row input:focus {
+      box-shadow: 4px 4px 0 var(--blue);
+    }
+
+    .key-row button {
+      min-height: 40px;
+      border: 1px solid var(--ink);
+      background: var(--ink);
+      color: var(--white);
+      padding: 0 12px;
+      font: 700 13px/1 var(--mono);
+    }
+
+
+    .key-status,
+    .install-status,
+    .mailing-status {
+      min-height: 18px;
+      margin-top: 7px;
+      color: var(--muted);
+      font: 12px/1.45 var(--mono);
+    }
+
+    .key-status.success,
+    .install-status.success,
+    .mailing-status.success {
+      color: var(--forest);
+    }
+
+    .key-status.error,
+    .install-status.error,
+    .mailing-status.error {
+      color: #b4382b;
+    }
+
+
     .gallery-header {
       display: flex;
       align-items: center;
@@ -414,6 +492,280 @@
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 12px;
+    }
+
+    .archive-section {
+      margin-top: clamp(34px, 5vw, 58px);
+      padding: 18px 0 0;
+      border-top: 1px dashed #bcb5a7;
+    }
+
+    .archive-section .gallery-header {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .archive-note {
+      max-width: 390px;
+    }
+
+    .archive-folder {
+      --pouch-width: min(764px, calc(100vw - 34px));
+      position: relative;
+      width: var(--pouch-width);
+      height: clamp(520px, 86vw, 682px);
+      margin: 0 auto;
+      padding: 0;
+      overflow: visible;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      isolation: isolate;
+    }
+
+    .archive-folder::before,
+    .archive-folder::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: min(764px, 100%);
+      transform: translateX(-50%);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      pointer-events: none;
+    }
+
+    .archive-folder::before {
+      inset-block-start: 0;
+      height: clamp(520px, 86vw, 682px);
+      background-image: url("assets/archive/envelope-open-back-vector.svg");
+      filter: drop-shadow(0 14px 18px rgba(91, 51, 16, 0.14));
+      z-index: 1;
+    }
+
+    .archive-folder::after {
+      bottom: 0;
+      height: clamp(294px, 48.5vw, 385px);
+      background-image: url("assets/archive/envelope-open-front-vector.svg");
+      filter: drop-shadow(0 10px 14px rgba(91, 51, 16, 0.12));
+      z-index: 30;
+    }
+
+    .archive-tabs {
+      position: absolute;
+      top: clamp(176px, 22vw, 196px);
+      left: 0;
+      right: 0;
+      width: min(704px, calc(100% - 54px));
+      height: 360px;
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+    }
+
+    .archive-tabs::before {
+      content: "";
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      top: 44px;
+      height: 330px;
+      background:
+        linear-gradient(180deg, rgba(255, 247, 229, 0.98), rgba(238, 216, 184, 0.98)),
+        url("assets/archive/old-paper-texture.jpg") center / cover;
+      border: 1px solid rgba(137, 91, 46, 0.38);
+      border-radius: 13px 13px 4px 4px;
+      box-shadow:
+        0 8px 0 rgba(137, 91, 46, 0.10),
+        0 18px 16px rgba(72, 43, 19, 0.08);
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .archive-tabs::after {
+      content: "";
+      position: absolute;
+      left: 126px;
+      right: 126px;
+      top: 150px;
+      height: 3px;
+      background: rgba(126, 88, 54, 0.42);
+      border-radius: 99px;
+      box-shadow:
+        0 38px 0 rgba(126, 88, 54, 0.28),
+        0 76px 0 rgba(126, 88, 54, 0.20);
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .archive-tabs li {
+      position: absolute;
+      left: calc(var(--x, 0) * 1px);
+      top: calc(var(--y, 0) * 1px);
+      pointer-events: none;
+    }
+
+    .archive-file {
+      --file-width: min(690px, calc(var(--pouch-width) - 62px));
+      position: relative;
+      display: block;
+      width: var(--file-width);
+      height: 300px;
+      color: #2d2922;
+      text-decoration: none;
+      pointer-events: none;
+    }
+
+    .archive-file::before {
+      content: "";
+      position: absolute;
+      left: 8px;
+      right: 8px;
+      top: 0;
+      height: 330px;
+      background:
+        linear-gradient(180deg, rgba(255, 247, 229, 0.97), rgba(238, 216, 184, 0.97)),
+        url("assets/archive/old-paper-texture.jpg") center / cover;
+      border: 1px solid rgba(137, 91, 46, 0.36);
+      border-radius: 15px 15px 4px 4px;
+      box-shadow:
+        0 7px 0 rgba(137, 91, 46, 0.09),
+        0 15px 13px rgba(72, 43, 19, 0.07);
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .archive-file::after {
+      content: "";
+      position: absolute;
+      left: 118px;
+      right: 118px;
+      top: 102px;
+      height: 3px;
+      background: rgba(126, 88, 54, 0.38);
+      border-radius: 99px;
+      box-shadow:
+        0 36px 0 rgba(126, 88, 54, 0.25),
+        0 72px 0 rgba(126, 88, 54, 0.18);
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .archive-file-tab {
+      --tab-bg-1: #e7bd31;
+      --tab-border: #9d7420;
+      --tab-ink: #28251e;
+      position: absolute;
+      top: 0;
+      left: var(--tab-x, 18px);
+      z-index: 60;
+      display: inline-flex;
+      align-items: center;
+      width: clamp(112px, 14vw, 128px);
+      min-height: 40px;
+      padding: 8px 10px 7px;
+      background: var(--tab-bg-1);
+      border: 1px solid var(--tab-border);
+      border-bottom-color: rgba(88, 58, 24, 0.18);
+      border-radius: 1px;
+      color: var(--tab-ink);
+      font: 700 clamp(9.5px, 1.35vw, 11px)/1.08 var(--mono);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+      overflow-wrap: anywhere;
+      word-break: normal;
+      box-shadow: 0 2px 0 rgba(92, 68, 31, 0.1);
+      pointer-events: auto;
+      cursor: pointer;
+      transition: transform 130ms ease, background 130ms ease, border-color 130ms ease, color 130ms ease;
+    }
+
+    .archive-tabs li:nth-child(2n) .archive-file-tab { --tab-bg-1: #e9e1c9; --tab-border: #a18d63; --tab-ink: #2e2920; }
+    .archive-tabs li:nth-child(3n) .archive-file-tab { --tab-bg-1: #78b4ad; --tab-border: #35716e; --tab-ink: #102423; }
+    .archive-tabs li:nth-child(4n) .archive-file-tab { --tab-bg-1: #df7e3e; --tab-border: #8f3f20; --tab-ink: #fff7e8; }
+    .archive-tabs li:nth-child(5n) .archive-file-tab { --tab-bg-1: #d9b3a4; --tab-border: #9e6458; --tab-ink: #321f1a; }
+    .archive-tabs li:nth-child(7n) .archive-file-tab { --tab-bg-1: #6f9dc3; --tab-border: #355e7c; --tab-ink: #f7fbff; }
+
+    .archive-file:focus-visible {
+      outline: 0;
+    }
+
+    .archive-file:has(.archive-file-tab:hover) .archive-file-tab,
+    .archive-file:focus-visible .archive-file-tab {
+      transform: translateY(-3px);
+      background: var(--ink);
+      border-color: var(--ink);
+      color: var(--white);
+    }
+
+    .archive-tabs li:nth-child(1) { --x: 0; --y: 0; --tab-x: 0px; }
+    .archive-tabs li:nth-child(2) { --x: 2; --y: 4; --tab-x: 116px; }
+    .archive-tabs li:nth-child(3) { --x: 0; --y: 8; --tab-x: 232px; }
+    .archive-tabs li:nth-child(4) { --x: 2; --y: 12; --tab-x: 348px; }
+    .archive-tabs li:nth-child(5) { --x: 0; --y: 16; --tab-x: 464px; }
+    .archive-tabs li:nth-child(6) { --x: 2; --y: 20; --tab-x: 580px; }
+    .archive-tabs li:nth-child(7) { --x: 0; --y: 52; --tab-x: 0px; }
+    .archive-tabs li:nth-child(8) { --x: 2; --y: 56; --tab-x: 116px; }
+    .archive-tabs li:nth-child(9) { --x: 0; --y: 60; --tab-x: 232px; }
+    .archive-tabs li:nth-child(10) { --x: 2; --y: 64; --tab-x: 348px; }
+    .archive-tabs li:nth-child(11) { --x: 0; --y: 68; --tab-x: 464px; }
+    .archive-tabs li:nth-child(12) { --x: 2; --y: 72; --tab-x: 580px; }
+    .archive-tabs li:nth-child(13) { --x: 0; --y: 104; --tab-x: 0px; }
+    .archive-tabs li:nth-child(14) { --x: 2; --y: 108; --tab-x: 116px; }
+    .archive-tabs li:nth-child(15) { --x: 0; --y: 112; --tab-x: 232px; }
+    .archive-tabs li:nth-child(16) { --x: 2; --y: 116; --tab-x: 348px; }
+    .archive-tabs li:nth-child(17) { --x: 0; --y: 120; --tab-x: 464px; }
+    .archive-tabs li:nth-child(18) { --x: 2; --y: 124; --tab-x: 580px; }
+
+    .archive-folder-label {
+      position: absolute;
+      right: 26px;
+      top: 202px;
+      z-index: 35;
+      padding: 8px 10px;
+      background: rgba(246, 246, 239, 0.82);
+      border: 1px solid rgba(95, 96, 89, 0.34);
+      color: #4b4d48;
+      font: 700 12px/1 var(--mono);
+    }
+
+    @media (max-width: 760px) {
+      .archive-folder {
+        height: 560px;
+      }
+
+      .archive-tabs {
+        top: 158px;
+        width: calc(100% - 40px);
+        transform: scale(0.66);
+        transform-origin: center top;
+      }
+
+      .archive-file-tab {
+        width: 128px;
+      }
+
+      .archive-tabs li:nth-child(1) { --tab-x: 6px; }
+      .archive-tabs li:nth-child(2) { --tab-x: 86px; }
+      .archive-tabs li:nth-child(3) { --tab-x: 166px; }
+      .archive-tabs li:nth-child(4) { --tab-x: 246px; }
+      .archive-tabs li:nth-child(5) { --tab-x: 326px; }
+      .archive-tabs li:nth-child(6) { --tab-x: 6px; }
+      .archive-tabs li:nth-child(7) { --tab-x: 86px; }
+      .archive-tabs li:nth-child(8) { --tab-x: 166px; }
+      .archive-tabs li:nth-child(9) { --tab-x: 246px; }
+      .archive-tabs li:nth-child(10) { --tab-x: 326px; }
+      .archive-tabs li:nth-child(11) { --tab-x: 6px; }
+      .archive-tabs li:nth-child(12) { --tab-x: 86px; }
+      .archive-tabs li:nth-child(13) { --tab-x: 166px; }
+      .archive-tabs li:nth-child(14) { --tab-x: 246px; }
+      .archive-tabs li:nth-child(15) { --tab-x: 326px; }
+      .archive-tabs li:nth-child(16) { --tab-x: 46px; }
+      .archive-tabs li:nth-child(17) { --tab-x: 166px; }
+      .archive-tabs li:nth-child(18) { --tab-x: 286px; }
     }
 
     .word-card {
@@ -1369,6 +1721,132 @@
       font-family: var(--body);
     }
 
+    .top-install {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 4px;
+      margin-left: auto;
+    }
+
+    .top-install-button {
+      min-height: 31px;
+      border: 1px dashed #9b9385;
+      background: rgba(255, 254, 250, 0.72);
+      color: var(--forest);
+      padding: 0 10px;
+      font: 700 12px/1 var(--mono);
+      cursor: pointer;
+    }
+
+    .top-install-button:hover,
+    .top-install-button:focus-visible {
+      background: var(--ink);
+      border-color: var(--ink);
+      color: var(--white);
+      outline: 0;
+    }
+
+    .top-install-status {
+      max-width: 210px;
+      min-height: 15px;
+      color: var(--muted);
+      text-align: right;
+      font: 11px/1.35 var(--mono);
+    }
+
+    .top-install-status.success {
+      color: var(--forest);
+    }
+
+    .top-install-status.error {
+      color: #b4382b;
+    }
+
+    .return-panel {
+      margin-top: clamp(32px, 5vw, 52px);
+      padding-top: 17px;
+      border-top: 1px dashed #bcb5a7;
+    }
+
+    .subscribe-guide {
+      display: grid;
+      grid-template-columns: minmax(220px, 1fr) minmax(260px, 420px);
+      gap: 16px;
+      align-items: end;
+      color: #2d2922;
+    }
+
+    .return-title {
+      margin-bottom: 6px;
+      color: var(--ink);
+      font: 700 16px/1.25 var(--serif);
+    }
+
+    .return-text {
+      max-width: 38em;
+      margin: 0;
+      color: #4a463d;
+      font-size: 13px;
+      line-height: 1.65;
+    }
+
+    .subscribe-form {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .subscribe-input {
+      min-height: 34px;
+      min-width: 0;
+      border: 0;
+      border-bottom: 1px solid #918776;
+      background: transparent;
+      outline: 0;
+      padding: 0 2px;
+      color: var(--ink);
+      font: 700 13px/1 var(--mono);
+    }
+
+    .subscribe-input:focus {
+      border-bottom-color: var(--ink);
+      box-shadow: 0 3px 0 rgba(38, 63, 199, 0.18);
+    }
+
+    .subscribe-submit {
+      min-height: 34px;
+      border: 1px solid var(--ink);
+      background: transparent;
+      color: var(--ink);
+      padding: 0 12px;
+      font: 700 12px/1 var(--mono);
+      cursor: pointer;
+    }
+
+    .subscribe-submit:hover,
+    .subscribe-submit:focus-visible {
+      background: var(--ink);
+      color: var(--white);
+      outline: 0;
+    }
+
+    .return-status {
+      min-height: 17px;
+      margin-top: 7px;
+      color: var(--muted);
+      font: 12px/1.45 var(--mono);
+    }
+
+    .return-status.success {
+      color: var(--forest);
+    }
+
+    .return-status.error {
+      color: #b4382b;
+    }
+
     .footer-line {
       display: flex;
       justify-content: space-between;
@@ -1406,6 +1884,15 @@
         flex-direction: column;
       }
 
+      .top-install {
+        align-items: flex-start;
+        margin-left: 0;
+      }
+
+      .top-install-status {
+        text-align: left;
+      }
+
       .gallery-tools {
         width: 100%;
         justify-content: space-between;
@@ -1413,6 +1900,15 @@
 
       .intro {
         padding: 34px 0 32px;
+      }
+
+      .subscribe-guide {
+        grid-template-columns: 1fr;
+        align-items: start;
+      }
+
+      .subscribe-form {
+        grid-template-columns: 1fr auto;
       }
 
       .context,
@@ -1539,8 +2035,12 @@
         <a href="word-sense-author.html">一封信</a>
         <div class="issue">
           <span>FIELD NOTES ON ENGLISH</span>
-          <span>ISSUE 002</span>
+          <span>ISSUE 003</span>
         </div>
+      </div>
+      <div class="top-install">
+        <button type="button" class="top-install-button" id="installPwaButton">添加到桌面</button>
+        <span class="top-install-status install-status" id="installPwaStatus" aria-live="polite"></span>
       </div>
     </header>
 
@@ -1563,12 +2063,21 @@
           <input id="sourceInput" placeholder="出处, 如老板邮件" aria-label="出处">
           <textarea id="sentenceInput" placeholder="原句, 如果你有的话" aria-label="原句"></textarea>
         </div>
+        <details id="searchTools" class="lookup-support">
+          <summary>API key</summary>
+          <p class="search-cost-note">已有词卡免费阅读。搜索内容库里没有的新词时，Word Sense 会启动审校流程并调用模型；这一步需要填写你自己的 OpenAI-compatible API key。本次 key 只临时存在浏览器 session，不会写进链接。</p>
+          <div class="key-row">
+            <input id="searchApiKeyInput" type="password" autocomplete="off" placeholder="本次使用的 API key">
+            <button id="searchApiKeySave" type="button">保存本次 key</button>
+          </div>
+          <div id="searchApiKeyStatus" class="key-status" aria-live="polite"></div>
+        </details>
       </form>
     </section>
 
     <section aria-label="精选词卡">
       <div class="gallery-header">
-        <h2>ISSUE 002 WORD CARDS / 18 FILES</h2>
+        <h2>ISSUE 003 WORD CARDS / 16 FILES</h2>
         <div class="gallery-tools">
           <p>hover 看线索 / click 阅读词条</p>
           <button id="savedShelfToggle" class="shelf-toggle" type="button" aria-expanded="false">
@@ -1578,6 +2087,16 @@
       </div>
       <div id="savedDrawer" class="saved-drawer" hidden></div>
       <div id="featuredCards" class="cards"></div>
+    </section>
+
+    <section class="archive-section" aria-label="上一期归档词卡">
+      <div class="gallery-header">
+        <h2>ARCHIVE DRAWER / ISSUE 002</h2>
+        <div class="gallery-tools">
+          <p class="archive-note">上一期收进档案夹，只露出词条标签；点开任意标签继续阅读。</p>
+        </div>
+      </div>
+      <div id="archiveCards" class="archive-folder"><span class="archive-folder-label">open an old file -></span></div>
     </section>
 
     <section id="dossier" class="dossier" aria-hidden="true" hidden>
@@ -1600,6 +2119,22 @@
       <div id="clueTrail" class="clue-trail"></div>
     </section>
 
+    <section class="return-panel" aria-label="下次继续读">
+      <div class="subscribe-guide">
+        <div>
+          <div class="return-title">留个邮箱，下一期慢慢读。</div>
+          <p class="return-text">新一期词卡更新时寄给你，不追热点，也不塞满收件箱。</p>
+        </div>
+        <div>
+          <form class="subscribe-form" id="mailingListForm">
+            <input type="email" class="subscribe-input" id="mailingListEmail" placeholder="you@example.com" autocomplete="email" required aria-label="邮箱地址">
+            <button type="submit" class="subscribe-submit">订阅</button>
+          </form>
+          <div class="return-status mailing-status" id="mailingListStatus" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer-line">
       <span>WORD SENSE / WORDS HAVE LIVES BEYOND TRANSLATION</span>
       <span>读完一张，再抽出下一张。</span>
@@ -1611,6 +2146,10 @@
     const wordInput = document.querySelector("#wordInput");
     const sourceInput = document.querySelector("#sourceInput");
     const sentenceInput = document.querySelector("#sentenceInput");
+    const searchTools = document.querySelector("#searchTools");
+    const apiKeyInput = document.querySelector("#searchApiKeyInput");
+    const apiKeySave = document.querySelector("#searchApiKeySave");
+    const apiKeyStatus = document.querySelector("#searchApiKeyStatus");
     const dossier = document.querySelector("#dossier");
     const fileLabel = document.querySelector("#fileLabel");
     const detailWord = document.querySelector("#detailWord");
@@ -1618,6 +2157,7 @@
     const clueTrail = document.querySelector("#clueTrail");
     const closeFile = document.querySelector("#closeFile");
     const featuredCards = document.querySelector("#featuredCards");
+    const archiveCards = document.querySelector("#archiveCards");
     const savedShelfToggle = document.querySelector("#savedShelfToggle");
     const savedCount = document.querySelector("#savedCount");
     const savedDrawer = document.querySelector("#savedDrawer");
@@ -1639,6 +2179,25 @@
     let currentShareStyle = "direct";
 
     const cardCatalog = [
+      { word: "pull", meaning: "拉；牵引", trail: "动作 / 关系", clue: "不是把东西往自己这边拽这么简单，是一种看不见的力量在牵动。", card: "#c5dcf4", reveal: "#263fc7", revealInk: "#fffefa" },
+      { word: "punch", meaning: "击打；冲击力", trail: "动作 / 力度", clue: "不只是打一拳，而是某个东西带着短促、集中、直接的冲击。", card: "#ff8875", reveal: "#fff1a6", revealInk: "#171717" },
+      { word: "address", meaning: "处理；面对", trail: "职场 / 问题", clue: "不是知道地址，而是把一个问题正式拿到面前处理。", card: "#5b8b40", reveal: "#f5b08b", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "blast", meaning: "爆发；猛批", trail: "新闻 / 社媒", clue: "像爆炸一样突然放出来：声音、批评、消息、情绪都可以 blast。", card: "#315f87", reveal: "#ff8875", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "head", meaning: "朝向；带头", trail: "身体 / 方向", clue: "head 不只是头，也可以是一个人或事情开始朝某个方向走。", card: "#f4f1ea", reveal: "#161818", revealInk: "#f7f3e9" },
+      { word: "render", meaning: "使成为；呈现", trail: "技术 / 表达", clue: "不是单纯渲染画面，而是把某个东西变成可见、可读、可判断的状态。", card: "#f2e6c9", reveal: "#c95440", revealInk: "#fffefa" },
+      { word: "capacity", meaning: "容量；身份能力", trail: "职场 / 制度", clue: "capacity 常常不是能装多少，而是你以什么身份、能承接多少。", card: "#356248", reveal: "#e1dfda", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "hushpitality", meaning: "安静式接待", trail: "新词 / 旅游", clue: "把 hush 和 hospitality 接在一起：服务变轻，噪音退后。", card: "#d7d4cf", reveal: "#2447bd", revealInk: "#fffefa", compact: true },
+      { word: "Norwegian life-cleaning", meaning: "挪威式生活整理", trail: "文化 / 生活方式", clue: "不是清理整个人生，而是在日常里提前减轻物品和未来负担。", card: "#c75a48", reveal: "#f1e8d3", revealInk: "#171717", faceInk: "#fffefa", compact: true },
+      { word: "at its discretion", meaning: "由其自行裁量", trail: "法律 / 条款", clue: "听起来礼貌，实际是在说决定权不在你手里。", card: "#486b3b", reveal: "#c8ddf0", revealInk: "#171717", faceInk: "#fffefa", compact: true },
+      { word: "navigate", meaning: "导航；周旋", trail: "职场 / 复杂局面", clue: "不是知道路线，而是在复杂环境里一边找路一边避开阻力。", card: "#b9d3ea", reveal: "#356248", revealInk: "#fffefa" },
+      { word: "distill", meaning: "提炼；萃取", trail: "思考 / 写作", clue: "从一堆材料里把最干净、最核心的东西慢慢提出来。", card: "#ffb498", reveal: "#25353a", revealInk: "#fffefa" },
+      { word: "canonical", meaning: "标准；正典", trail: "技术 / 学术", clue: "不是普通正确，而是被承认为那一个标准版本。", card: "#32618a", reveal: "#e7dcb9", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "horizon", meaning: "地平线；视野边界", trail: "趋势 / 想象", clue: "它不是远方本身，而是你目前能看见、能预期到的边界。", card: "#f5b08b", reveal: "#285542", revealInk: "#fffefa" },
+      { word: "cookbook", meaning: "食谱；操作配方集", trail: "技术 / 文档", clue: "在技术语境里，它不是厨房书，而是一套可照着做的解决方案。", card: "#285542", reveal: "#d9d9d7", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "slopper", meaning: "湿乱底色的词", trail: "俚语 / 食物 / AI", clue: "词形先给你一层湿乱感，但真正意思要看它落在哪个场景。", card: "#e0ded9", reveal: "#234b72", revealInk: "#fffefa" }
+    ];
+
+    const archiveCardCatalog = [
       { word: "resilience", meaning: "恢复力；韧性", trail: "心理 / 恢复", clue: "不是硬扛，是受挫后还能恢复形状。", card: "#c5dcf4", reveal: "#263fc7", revealInk: "#fffefa" },
       { word: "unfold", meaning: "展开；逐步显露", trail: "新闻 / 叙事", clue: "事情像一张折起的纸慢慢打开。", card: "#f4f1ea", reveal: "#161818", revealInk: "#f7f3e9" },
       { word: "brace", meaning: "撑住；准备应对", trail: "新闻 / 生活", clue: "冲击还没来，身体已经先紧起来。", card: "#5b8b40", reveal: "#f5b08b", revealInk: "#171717", faceInk: "#fffefa" },
@@ -1660,9 +2219,11 @@
     ];
     const archivedWords = new Set([
       "wail", "lowkey", "agentic", "reframe", "sentiment", "backdrop", "it's giving",
-      "accountability gap", "brace", "brain rot", "clanker", "cringe", "delulu",
-      "deprecate", "exchange", "fallout", "grounding", "hallucination",
-      "inflection point", "orchestrate", "probe", "resilience", "sense", "surge",
+      "accountability gap", "address", "at its discretion", "blast", "brace", "brain rot",
+      "canonical", "capacity", "clanker", "cookbook", "cringe", "delulu", "deprecate",
+      "distill", "exchange", "fallout", "grounding", "hallucination", "head", "horizon",
+      "hushpitality", "inflection point", "navigate", "Norwegian life-cleaning", "orchestrate",
+      "probe", "pull", "punch", "render", "resilience", "sense", "slopper", "surge",
       "unfold", "unhinged", "verify"
     ]);
 
@@ -1799,14 +2360,15 @@
         .replace(/\*([^*\n]+)\*/g, "<em>$1</em>");
     }
 
-    function renderFeaturedCards() {
-      featuredCards.innerHTML = cardCatalog.map((card, index) => `
+    function renderCards(container, cards, options = {}) {
+      const prefix = options.prefix || "FILE";
+      container.innerHTML = cards.map((card, index) => `
         <a class="word-card" href="word-sense-entry.html?word=${encodeURIComponent(card.word)}" data-file="${escapeHtml(card.word)}"
           aria-label="${escapeHtml(card.word)}：先看线索，再打开词条"
           style="--card:${card.card};--reveal:${card.reveal};--reveal-ink:${card.revealInk};${card.faceInk ? `color:${card.faceInk};` : ""}">
           <span class="card-face">
             <span>
-              <span class="card-no">FILE ${String(index + 1).padStart(3, "0")}</span>
+              <span class="card-no">${prefix} ${String(index + 1).padStart(3, "0")}</span>
               <span class="card-word${card.compact ? " compact" : ""}">${escapeHtml(card.word)}</span>
               <span class="translation">“${escapeHtml(card.meaning)}”</span>
             </span>
@@ -1819,6 +2381,47 @@
           </span>
         </a>
       `).join("");
+    }
+
+    function renderArchiveFolder() {
+      archiveCards.innerHTML = '<span class="archive-folder-label">open an old file -&gt;</span><ul class="archive-tabs">' + archiveCardCatalog.map((card) => `
+        <li>
+          <a class="archive-file" href="word-sense-entry.html?word=${encodeURIComponent(card.word)}"
+            aria-label="打开上一期词条 ${escapeHtml(card.word)}">
+            <span class="archive-file-tab">${escapeHtml(card.word)}</span>
+          </a>
+        </li>
+      `).join("") + '</ul>';
+    }
+
+
+
+    function setInlineStatus(element, message, type = "") {
+      if (!element) return;
+      element.textContent = message;
+      element.classList.remove("success", "error");
+      if (type) element.classList.add(type);
+    }
+
+    function saveApiKeyForSession() {
+      const key = apiKeyInput?.value.trim() || "";
+      if (!key) {
+        try { window.sessionStorage.removeItem("wordsense_api_key"); } catch (error) {}
+        setInlineStatus(apiKeyStatus, "没有填写 key。搜索内容库里没有的新词需要你自己的 API key。", "");
+        return "";
+      }
+      try {
+        window.sessionStorage.setItem("wordsense_api_key", key);
+        setInlineStatus(apiKeyStatus, "已保存为本次生成使用；关闭浏览器后会清除。", "success");
+      } catch (error) {
+        setInlineStatus(apiKeyStatus, "浏览器没有允许临时保存；提交时仍会尝试带上这个 key。", "error");
+      }
+      return key;
+    }
+
+    function renderFeaturedCards() {
+      renderCards(featuredCards, cardCatalog);
+      renderArchiveFolder();
     }
 
     function shouldShowReleaseNotice() {
@@ -2312,7 +2915,7 @@
     }
 
     function clearCardPreviews(exceptCard = null) {
-      featuredCards.querySelectorAll(".word-card.is-previewing").forEach(card => {
+      document.querySelectorAll(".word-card.is-previewing").forEach(card => {
         if (card !== exceptCard) {
           card.classList.remove("is-previewing");
           card.removeAttribute("aria-current");
@@ -2361,6 +2964,8 @@
 
     releaseEnter.addEventListener("click", closeReleaseNotice);
     releaseClose.addEventListener("click", closeReleaseNotice);
+    apiKeySave?.addEventListener("click", saveApiKeyForSession);
+    apiKeyInput?.addEventListener("focus", () => searchTools?.setAttribute("open", ""));
     document.addEventListener("keydown", event => {
       if (event.key === "Escape" && !releaseNotice.hidden) {
         closeReleaseNotice();
@@ -2382,13 +2987,27 @@
         return;
       }
 
+      let sessionKey = apiKeyInput?.value.trim() || "";
+      if (!sessionKey) {
+        try { sessionKey = window.sessionStorage.getItem("wordsense_api_key") || ""; } catch (error) {}
+      }
+      if (!sessionKey.trim()) {
+        searchTools?.setAttribute("open", "");
+        apiKeyInput?.focus();
+        setInlineStatus(apiKeyStatus, "搜索内容库里没有的新词需要填写你自己的 API key。已有词卡可以直接阅读。", "error");
+        return;
+      }
+      if (apiKeyInput?.value.trim()) {
+        saveApiKeyForSession();
+      }
+
       const reviewParams = new URLSearchParams({ word });
       if (source) reviewParams.set("source", source);
       if (sentence) reviewParams.set("sentence", sentence);
       window.location.href = `word-sense-review.html?${reviewParams.toString()}`;
     });
 
-    featuredCards.addEventListener("click", event => {
+    document.addEventListener("click", event => {
       const card = event.target.closest(".word-card");
       if (!card || !usesMobileCardPreview()) return;
 
@@ -2476,9 +3095,87 @@
   </script>
   <script src="/word-sense-events.js"></script>
   <script>
+    let deferredInstallPrompt = null;
+    const installButton = document.querySelector("#installPwaButton");
+    const installStatus = document.querySelector("#installPwaStatus");
+    const mailingForm = document.querySelector("#mailingListForm");
+    const mailingEmail = document.querySelector("#mailingListEmail");
+    const mailingStatus = document.querySelector("#mailingListStatus");
+
+    function setInstallStatus(message, type = "") {
+      if (!installStatus) return;
+      installStatus.textContent = message;
+      installStatus.classList.remove("success", "error");
+      if (type) installStatus.classList.add(type);
+    }
+
     if ("serviceWorker" in navigator && window.location.protocol.startsWith("http")) {
       navigator.serviceWorker.register("/service-worker.js").catch(() => {});
     }
+
+    window.addEventListener("beforeinstallprompt", event => {
+      event.preventDefault();
+      deferredInstallPrompt = event;
+      if (installButton) installButton.disabled = false;
+      setInstallStatus("可以把 Word Sense 添加成桌面应用。");
+    });
+
+    window.addEventListener("appinstalled", () => {
+      deferredInstallPrompt = null;
+      if (installButton) {
+        installButton.textContent = "已添加";
+        installButton.disabled = true;
+      }
+      setInstallStatus("已添加到桌面。", "success");
+    });
+
+    function setMailingStatus(message, type = "") {
+      if (!mailingStatus) return;
+      mailingStatus.textContent = message;
+      mailingStatus.classList.remove("success", "error");
+      if (type) mailingStatus.classList.add(type);
+    }
+
+    installButton?.addEventListener("click", async () => {
+      if (window.matchMedia("(display-mode: standalone)").matches || navigator.standalone) {
+        setInstallStatus("你已经在桌面应用模式里打开了 Word Sense。", "success");
+        return;
+      }
+      if (!deferredInstallPrompt) {
+        setInstallStatus("如果浏览器没有弹出安装按钮，可以在浏览器菜单里选择“添加到主屏幕”或“安装此网站”。");
+        return;
+      }
+      deferredInstallPrompt.prompt();
+      const choice = await deferredInstallPrompt.userChoice;
+      deferredInstallPrompt = null;
+      setInstallStatus(choice.outcome === "accepted" ? "正在添加到桌面。" : "之后也可以再添加。", choice.outcome === "accepted" ? "success" : "");
+    });
+
+    mailingForm?.addEventListener("submit", async event => {
+      event.preventDefault();
+      const email = mailingEmail?.value.trim() || "";
+      if (!email) {
+        mailingEmail?.focus();
+        return;
+      }
+
+      setMailingStatus("正在订阅...");
+      try {
+        const response = await fetch("/api/subscribe", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email, page: window.location.pathname })
+        });
+        const payload = await response.json().catch(() => ({}));
+        if (!response.ok) {
+          throw new Error(payload.error || "subscribe failed");
+        }
+        if (mailingEmail) mailingEmail.value = "";
+        setMailingStatus("订阅成功。下一期会寄到这个邮箱。", "success");
+      } catch (error) {
+        setMailingStatus("暂时没能保存邮箱。你可以稍后再试。", "error");
+      }
+    });
   </script>
 </body>
 </html>

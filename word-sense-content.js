@@ -331,6 +331,62 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "norwegian life-cleaning": {
+    "displayWord": "norwegian life-cleaning",
+    "meta": [
+      "文化表达 · B1-B2 · 进阶",
+      "Issue 003"
+    ],
+    "markdown": "**字面含义** · 这个短语里最显眼的是 Norwegian，字面上就是“挪威的、挪威人的”；life 是“生活/生命”；cleaning 是“清理、打扫、整理”。但把它们放在一起时，它并不只是一个随手硬拼出来的碎片。更准确地说，**Norwegian life-cleaning** 是近年英语媒体里出现过、也被解释过的新整理说法：不算那种历史很久、人人默认都懂的老牌固定搭配，但也已经不是凭空误读出来的片段了。它在具体语境里，通常不是泛泛地说“清理生活”，而是更接近一种提前、持续地整理家中物品的生活方式——一边让自己过得更轻盈，一边减少未来留给家人的负担。\n\n**本体质感** · 这组词的质感，已经不能简单说成“完全没有标准感”。更贴切的说法是：它带着一种很明显的**新术语感**。你一听就知道，这不像 bread and butter 那样老练自然，也不像 decluttering 那样已经彻底日常化；它更像是近年家居整理语境里被媒体包装出来、可供传播的一个名字。也正因为这样，它听上去会有一点标题感、标签感、概念化的光泽。若脱离整理语境，部分读者可能还是会觉得它像新造词，甚至带一点翻译腔；可一旦放回家居整理、生活方式写作里，这种陌生感反而正是它被记住的原因。\n\n**寻根溯源** · 这个短语不是空降冒出来的。至少在公开可查的英语使用里，2018 年就已经出现过 *The Gentle Art of Norwegian Life-Cleaning* 这样的标题；到 2025—2026 年，它又在家居整理媒体里被更频繁地拿出来解释，Cambridge Dictionary Blog 也把它当作新词现象来说明。它常常不是孤立出现，而是被媒体放在 **Swedish death cleaning** 的旁边理解：后者更成熟、名气也更大，讲的是人在晚年主动整理物品，减少身后留给家人的收拾负担；而 **Norwegian life-cleaning** 往往被写成它更柔和、更日常的一版——不是等到生命后段才处理，而是在现在、在日常里，一点点把东西理顺。\n\n**各路用法** · 这个表达目前更像媒体整理术语，而不是人人日常脱口而出的口语，所以它常见于解释型、概念型的场景。\n\n**家居整理文章里**\n> Norwegian life-cleaning is about sorting through your belongings now, so your home feels lighter and your family has less to deal with later.\n> 挪威式生活整理，说的是现在就开始整理自己的物品，让家里更轻盈，也让家人在以后少承担一些收拾负担。\n\n这里的 Norwegian life-cleaning 不是普通打扫卫生，而是一种被命名出来的整理理念。\n\n**生活方式写作里**\n> Some writers describe Norwegian life-cleaning as a gentler, more everyday version of Swedish death cleaning.\n> 有些作者把挪威式生活整理描述为瑞典式“死亡整理”更温和、更日常的版本。\n\n这里重点不是国籍本身，而是媒体借“Norwegian / Swedish”这种文化标签，帮读者快速抓住概念差别。\n\n**聊天解释概念时**\n> It’s not really about cleaning your whole life; it’s more about gradually letting go of things before they become someone else’s burden.\n> 它其实不是真的把你整个人生都清理一遍；它更像是在东西变成别人负担之前，慢慢把一部分物品放下。\n\n这里正好能看出它和中文直觉的差别：表面上像“清理生活”，实际落点常常还是家中物品、日常负担和未来责任。\n\n**原生思维** · 英语里母语者当然也会创造这种概念词，但在很多自然表达里，他们还是更常把整理的对象说得更清楚。比如 **life admin** 更偏“生活琐事和事务管理”，**decluttering** 更偏“清掉杂物、腾出空间”；而 **clean up one’s life**、**get one’s life in order** 这类说法虽然自然，也更像普通搭配，不完全是同一层级的术语。也就是说，**life-cleaning** 不是英语里完全不可能的组合，只是它并不是传统核心词汇；它一旦成立，往往要靠特定语境来托住，靠媒体给它赋义。这个片段真正暴露出的点是：在常见日常表达中，英语往往还是更愿意把“到底在整理什么”说清楚，而不是笼统地把“生活”整个打包。\n\n**悟道时刻** · 这个词最值得记住的，不是“挪威”这层异国感，而是英语里很多新表达其实都这样长出来：先由媒体命名，再由语境把它养熟。看到这类词，别急着逐字直译，先看它到底在命名什么具体动作。\n\n以后再遇到看似很大的组合词，先问自己一句：它说的是人生观，还是收纳法，还是一种被包装过的生活方式标签？你一旦先抓动作边界，就不会被字面带跑。",
+    "verification": {
+      "claimCount": 6,
+      "confirmedCount": 1,
+      "softenedCount": 3,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "英语里并没有一个常规词组叫 Norwegian life-cleaning，所以它不…",
+        "这组词本身没有母语者一眼就能识别的‘标准质感’，因为它不是常见搭配。",
+        "英语母语者如果真这么写，通常会让人先怀疑这是误写、恶搞，或者是从别的语言直译过来的表…",
+        "英语里母语者通常不会把 life 和 cleaning 直接捆成一个稳定概念。",
+        "他们更常说的是 life admin, decluttering, cleaning…"
+      ],
+      "sources": [
+        {
+          "label": "Cambridge Dictionary Blog",
+          "url": "https://dictionaryblog.cambridge.org/2026/02/23/new-words-23-february-2026/"
+        },
+        {
+          "label": "Homes & Gardens",
+          "url": "https://www.homesandgardens.com/solved/norwegian-life-cleaning"
+        },
+        {
+          "label": "Apartment Therapy",
+          "url": "https://www.apartmenttherapy.com/norwegian-life-cleaning-is-a-gentle-habit-thatll-get-your-home-tidy-3-37542177"
+        },
+        {
+          "label": "Maggie Rowe",
+          "url": "https://maggierowe.wordpress.com/2018/03/20/the-gentle-art-of-norwegian-life-cleaning-freeing-yourself-from-the-clutch-of-clutter/"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/life-admin_n"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/decluttering"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/declutter"
+        },
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Swedish_death_cleaning"
+        }
+      ]
+    }
+  },
   "accountability gap": {
     "displayWord": "accountability gap",
     "meta": [
@@ -383,6 +439,173 @@ window.WORD_SENSE_ENTRIES = {
         {
           "label": "Santoni de Sio & Mecacci, “Four Responsibility Gaps with Artificial Intelligence”",
           "url": "https://link.springer.com/article/10.1007/s13347-021-00450-x"
+        }
+      ]
+    }
+  },
+  "address": {
+    "displayWord": "address",
+    "meta": [
+      "职场表达 · A2-B1 · 入门",
+      "Issue 003"
+    ],
+    "markdown": "**字面含义** · 从词源上看，address 的早期义项接近“朝着某处去、摆正、对准、引导”。它后来确实分叉得很远：一边长成了“地址”，像把人或地点精确地指向某个位置；另一边长成了“讲话、应对、处理问题”，像把注意力和动作朝向某个对象。大致来看，这个词的核心，不是静态地“有一个东西在那里”，而是“我把自己对准它了”。如果再补一层词源线，它来自古法语 *adrecier*，里面本来就有 “go straight toward / straighten / set right / point / direct” 这一串意味，所以它后面那些看似分散的义项，其实并不散。\n\n**本体质感** · 从词源和常见用法看，address 很经常带着一种“把话、把注意力、把行动指向某个对象”的意味。你可以把它体会成一种正面接触：不是随口提一下，而是正式地、明确地、带着责任感地去碰那个点。比如 address a problem，常常不只是“谈论问题”，而是把问题拎出来，开始正面处理；address the audience，也不只是“对观众说话”，而更像是站出来、把话朝着听众送过去。它给人的感觉，往往是“别绕开，直接面对”。\n\n**寻根溯源** · 这个词的源头比“地址”这个现代名词要早得多。它进入英语时，较早的动词义大致就是 “guide, aim, direct” 这一类，也就是“引导、瞄准、朝向”。后来才慢慢长出不同分支：15 世纪中叶有了“写明收件地址”的用法，15 世纪晚期有了“向某人说话”的用法；再往后，名词上的“正式演说”出现在 18 世纪中叶，“住址”这个今天最常见的名词义则是更晚近才固定下来。这个时间线本身就很说明问题：address 不是先有一个“地址”摆在那里，后来才借出去；更像是先有“朝向、对准、指引”这个动作，后面才一路分化成“把信写给谁”“向谁讲话”“对什么问题下手”。\n\n**各路用法** · 几个例子，在不同场域里你感受一下它怎么落地：\n\n**职场,邮件里**\n> We need to address the delay before it affects the client.\n> 我们需要在它影响客户之前处理这个延误。\n\n这里的 address 不是泛泛地“提到”，而是把延误当成一个必须正面处理的对象。\n\n**职场,会议上**\n> The manager addressed the team about the new policy.\n> 经理就新政策向团队做了说明。\n\n这里有一种正式站出来、把信息朝着听众送过去的感觉，带着公开性和明确性。\n\n**日常,朋友聊天**\n> I still need to address the issue with my landlord.\n> 我还是得处理一下和房东的那个问题。\n\n这里不是“聊聊”而已，而是心里知道这事不能一直搁着，迟早要正面去碰。\n\n**社媒,评论区**\n> This post addresses a real concern many people have.\n> 这条帖子回应了很多人真正关心的一个问题。\n\n这里的 address 通常可理解为“对准了核心议题，并作出了回应”，不是随便擦边带过。\n\n➤ 值得注意的是，在法律、政策、公共事务语境里，address 常常就是“正式回应/处理某个问题”。而且现代词典在列这个词的动词义时，往往就会把 “deal with / give attention to” 放在前面，所以你看到 address an issue、address concerns 这类搭配时，脑子里更接近“把议题正面拎出来并着手处理”，而不只是“谈到一下”。\n\n**原生思维** · 英语里用 address 时，常常是在做一种“对准动作”。不是把信息散出去，而是把话、责任、行动朝着一个明确对象送过去。中文里我们会说“处理问题”“回应问题”“提到问题”，这些都能碰到一部分，但 address 这个词把“正面朝向”和“正式介入”捏在一起了。它默认的姿势不是绕着走，而是站到问题面前，承认它存在，然后开始对付它。当然，具体落到不同搭配里，它也可能是“致函、称呼、发表讲话”，但底层那种“朝向明确对象”的感觉，还是在的。\n\n**悟道时刻** · 如果从词源和主要义项往回抽，address 的共通骨架，确实可以概括成“定向”——先把对象认出来，再把动作送过去。它既能变成地址，也能变成演说、称呼、处理问题，因为这些表面动作都在做同一件事：朝向一个明确目标。\n\n以后你再见到 address，不要急着把它翻成某一个固定中文词。先问一句：这里它是在把谁、把什么，正面地对准出来？一旦这个识别方式建立起来，这个词就会从“多义词”变成“同一骨架下的不同落点”。",
+    "verification": {
+      "claimCount": 10,
+      "confirmedCount": 6,
+      "softenedCount": 4,
+      "uncertainCount": 1,
+      "rejectedCount": 0,
+      "checked": [
+        "这个词最早的画面感，是‘把东西往某个方向放正、对准、处理好’。",
+        "它后来分叉得很远：一边长成了‘地址’，像把人或地点精确地指向某个位置；另一边长成了‘…",
+        "这个词的核心，不是静态地‘有一个东西在那里’，而是‘我把自己对准它了’。",
+        "address 最有质感的地方，不是‘说’本身，而是‘把话、把注意力、把行动朝着某个…",
+        "address a problem” 不是单纯“谈论问题”，而是“正面处理问题”。"
+      ],
+      "sources": [
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/address"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/address"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/address"
+        },
+        {
+          "label": "Cambridge Dictionary（addressing）",
+          "url": "https://dictionary.cambridge.org/dictionary/english/addressing"
+        },
+        {
+          "label": "Britannica Dictionary",
+          "url": "https://www.britannica.com/dictionary/address"
+        },
+        {
+          "label": "Wiktionary",
+          "url": "https://en.wiktionary.org/wiki/address"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/address_v"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/address_n"
+        }
+      ]
+    }
+  },
+  "at its discretion": {
+    "displayWord": "at its discretion",
+    "meta": [
+      "法律商务 · B2-C1 · 高阶",
+      "Issue 003"
+    ],
+    "markdown": "**本体质感** · `at its discretion` 这组词的核心气质，不是“它想怎么样就怎么样”的随便，而是“把决定权交给它，由它自行判断是否、何时、以什么方式处理”。你会在合同、政策、规则里经常撞见它：一只看不见的手把门开出来，但门钥匙不在你手上。这里的 `discretion` 不是日常里那种“谨慎、分寸感”这一面，而更是“裁量权、自由决定的空间”。所以整组短语的味道很像：制度先把边框画好，剩下的留给机构或公司内部按情况拿捏。它不是任性，而更像一种被规则授予的决定空间。\n\n**各路用法** · 这个短语强烈偏正式，最常见于合同、条款、公司政策、政府公告这种地方。它的功能不是聊天，而是给一方留出处理空间，同时把“你不能要求它必须这么做”这件事写进规则里。\n\n**职场,合同里**\n> The company may terminate the agreement at its discretion.\n> 公司可自行决定终止该协议。\n\n这句话的重点不是“公司可能会终止”，而是“是否终止由公司保留判断权，对方不能仅凭自身意愿要求公司必须终止或继续”。\n\n**职场,奖金政策**\n> Bonus payments are granted at the manager’s discretion.\n> 奖金发放由经理酌情决定。\n\n这里有一种很明显的上位感：规则给了一个口子，但奖金是否发放、发多少，通常还是留给管理者在既定规则内裁量。\n\n**平台,使用规则**\n> The platform may suspend or remove content at its discretion.\n> 平台可自行决定暂停或移除内容。\n\n这类说法偶尔也会出现在日常事务语境里，但一说出来就明显偏书面、偏制度化，像是在划一条权利边界，而不是在闲聊。\n\n**原生思维** · 英语母语者看到这个短语，脑子里通常不是“随便”，而是“授权后留白”。也就是说，先承认某个主体有判断空间，再把责任和结果一起交给它。中文里我们会说“酌情”“视情况而定”“由……决定”，但英语里的 `at its discretion` 更像把这份空间法律化、制度化了：不是临场发挥，而是被规则允许的判断余地。Merriam-Webster 对它的抓手很直接：*done if, how, when, etc., someone chooses to do it*，也就是“是否做、怎么做、什么时候做，由那一方来决定”。\n\n**悟道时刻** · 这个短语真正值得记住的，不是“discretion = 谨慎”，而是它常常标记一种权限结构：谁拥有判断权，谁就握着结果的开关。以后你看到 `at X’s discretion`，可以先去找两件事——X 是谁，规则把哪一段决定权交给了 X。很多正式英语表面在说“会不会发生”，底下其实在写“谁有资格决定它发生”。",
+    "verification": {
+      "claimCount": 13,
+      "confirmedCount": 8,
+      "softenedCount": 4,
+      "uncertainCount": 1,
+      "rejectedCount": 0,
+      "checked": [
+        "`at its discretion` 这组词的核心气质，不是‘它想怎么样就怎么样’…",
+        "这里的 `discretion` 不是日常里那种‘谨慎、分寸感’，而是‘裁量权、自由…",
+        "你会在合同、政策、规则里经常撞见它。",
+        "这个短语几乎总在正式文本里出现，尤其是合同、条款、公司政策、政府公告这种地方。",
+        "它的功能不是聊天，而是给一方留出处理空间，同时把‘你不能要求它必须这么做’这件事写进…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/at%20%28someone%27s%29%20discretion"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/discretion"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/discretion"
+        },
+        {
+          "label": "Collins Dictionary",
+          "url": "https://www.collinsdictionary.com/dictionary/english/at-the-discretion-of-someone"
+        },
+        {
+          "label": "Cornell Legal Information Institute (Wex)",
+          "url": "https://www.law.cornell.edu/wex/discretion"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/discretion"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/discretion_n"
+        },
+        {
+          "label": "SEC filing example",
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000016/googexhibit1009q42022.htm"
+        }
+      ]
+    }
+  },
+  "blast": {
+    "displayWord": "blast",
+    "meta": [
+      "社媒新闻 · A2-B1 · 入门",
+      "Issue 003"
+    ],
+    "markdown": "**字面含义** · blast 最早主要不是“爆炸”，而是跟吹动、阵风、气流的猛冲有关。你脑子里可以先放一个画面：空气被突然推出去，一股风猛地打过来。后来，它才一步步扩展到爆炸、巨响、声浪这些更强烈的场景。  \n如果要抓一个方便理解的核心意象，可以把它先想成“有一股东西猛地往外冲”。\n\n**本体质感** · 这个词在英语里有一种很“有劲儿”的手感。它不温吞，不含蓄，带着突然、猛烈、带一点粗暴的外放感。说 a blast of wind，像风不是“来了一点”，而是迎面打你一下；说 blasting music，像声音被开得过满，整个空间都被它占住。它常常不是在描述一个稳定状态，而是在描一个瞬间的冲击。  \n在口语里，a blast 还有一种很轻快的快乐感，像“玩得很嗨、很尽兴”，但这个快乐不是安静地满意，而是带着能量外溢的那种开心。\n\n**寻根溯源** · 它的老底确实和“吹、风、喷出”这一类动作有关。古英语里的 **blæst**，本义大致就是 “a blowing, a breeze, puff of wind”，也就是一次吹动、一阵风、一股气流。后来英语里才逐渐发展出“爆炸”的意思，这条义项大约到 17 世纪才明确起来；再往后，又扩展到声音、情绪等强烈外放的场景。  \n所以，今天你会同时看到它既能落在物理层面，也能落在语气、社交感受上。至于口语里的 a blast 表示“玩得很尽兴”，一种常见说法是这个义项在 1953 年的美国英语俚语里已经很清楚了。\n\n**各路用法** ·\n\n**职场,邮件或营销推送**\n> We should do an email blast to all employees this afternoon.\n> 我们今天下午应该给所有员工做一次群发邮件。\n\n这里的 email blast 不是普通 send，而是“覆盖式地一下子发出去”，常带一点群发、推送、营销腔的语感。\n\n**日常,跟朋友**\n> We had a blast at the concert last night.\n> 我们昨晚在演唱会上玩得特别尽兴。\n\n这里的 blast 跟“快乐”有关，但不是安静的开心，而是那种整晚都很带劲、很过瘾的体验。\n\n**日常,抱怨或提醒**\n> The speaker was blasting music all night.\n> 那个音箱整晚都在震天响地放音乐。\n\n这里的 blasting 带着“过响、过猛、压住周围环境”的味道，不只是“放音乐”，而是声音强到侵入别人空间，也常带抱怨色彩。\n\n**社媒评论区**\n> The bass really blasts through headphones.\n> 这个低音在耳机里冲击力特别猛。\n\n这里的 blasts 往往是在夸那种冲击力：声音、节奏、能量一下子顶上来。\n\n**原生思维** · 从学习者理解的角度，可以先别把 blast 只记成“炸”。更好用的抓法，是先看它有没有一种“猛地外放”的动态：风猛地吹来，音乐猛地轰出来，信息被一下子群发出去，情绪也像被强力打出来。中文里我们有时会说“炸”“轰”“冲一下”“玩嗨了”，但英语很喜欢把这些感觉收进同一个词里，核心大致都是那种外放、猛、一下到位的动态。  \n不过真遇到具体搭配，还是要结合场景看。像 blast off、blast through、blast out，很多时候都还保留强力、突然、外放的感觉，但具体意思不能机械地只靠一个字面去套。\n\n**悟道时刻** · 这个词真正值得你抓住的，不是“blast = 炸”，而是它背后那股往外猛冲的劲。最早是风和气流，后来才长成爆炸、巨响、群发、玩得很嗨这些分支。\n\n以后再见到 blast，先别急着逐个对译；先问一句：这里是不是有什么东西被突然放大、推出、轰出来了？这个识别动作一建立，很多散开的意思就会自己连起来。",
+    "verification": {
+      "claimCount": 10,
+      "confirmedCount": 6,
+      "softenedCount": 6,
+      "uncertainCount": 2,
+      "rejectedCount": 1,
+      "checked": [
+        "blast 的最早义是否真与“吹、风、气流”有关",
+        "“爆炸”义是否为后起义",
+        "“a blast = 很尽兴”是否有词典支持及时间线",
+        "“blast music / blast out” 是否确有“大声播放”的义项"
+      ],
+      "sources": [
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/blast"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/blast"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/blast_n1"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/blast_v"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/blast"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/email-blast"
+        },
+        {
+          "label": "Longman Dictionary of Contemporary English",
+          "url": "https://www.ldoceonline.com/dictionary/blast"
+        },
+        {
+          "label": "Longman Dictionary of Contemporary English",
+          "url": "https://www.ldoceonline.com/dictionary/a-blast"
         }
       ]
     }
@@ -499,6 +722,107 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "canonical": {
+    "displayWord": "canonical",
+    "meta": [
+      "技术学术 · B2-C1 · 高阶",
+      "Issue 003"
+    ],
+    "markdown": "**字面含义** · 这个词早期主要和教会里的 canon、canon law 有关，先表示“合乎教会规则的、依教规而定的”，后来也发展出“正典相关的”意思。所以它不是那种“看起来差不多”的意思，而更接近：一堆可能的写法、解法、版本里，先把那个被系统认可、可拿来当参照的版本拎出来。\n\n**本体质感** · 英语里说 canonical，空气里常会有一种“先别急着创新，先看标准样子”的感觉。尤其在技术、数学、逻辑这些语境里，它通常不是在夸“最好”，而是在说“最符合规则、最便于对齐、最适合拿来当默认参照的那个”。  \n在这些场景里，它有一种把乱收束起来的手感：一个对象可以有很多等价写法，但 canonical form 往往是那个被整理过、便于比较和处理的标准形，很多时候还暗含“唯一表示”的追求。可一到文学、批评或艺术语境里，canonical 又常常不只是“规范”，还会带一点“被纳入经典体系、被公认重要”的意味。它背后不只是审美，而是秩序：让系统、讨论、计算，或者经典谱系，都对齐到同一个参照物。\n\n**寻根溯源** · 它来自希腊语 kanon，原意是“尺子、标准、规条”。后来进入拉丁语和教会语境后，它首先和“规则、教规”绑定，随后也发展出“正典”相关含义。英语里的 canonical 大约在 15 世纪已有记录，早期意思接近“according to ecclesiastical law”，也就是“依教会法规而定”；到更一般的用法里，它再慢慢长成“合乎规则、可作标准”的意思。到了今天，canonical 已大量扩展到宗教之外的技术、数学、文学等场景，但那根骨头没变：它始终在处理对象与“规则、正典、标准”的关系。\n\n**各路用法** · 几个例子，先看它在不同场景里怎么站稳位置：\n\n**学术,论文里**\n> The manuscript is a canonical example of early modern satire.\n> 这份手稿是早期近代讽刺文学的一个典型代表。\n\n这里的 canonical 主要是在说“很能代表这一类、近乎教科书式”，但在人文学科里，也可能顺带带出一点“经典案例”的评价色彩。\n\n**技术,数据处理时**\n> The data should be converted into a canonical format before comparison.\n> 这些数据在比较之前应该被转换成标准格式。\n\n这里的重点是“统一成一个可比的形态”，不是“美化”。很多技术语境里的 canonical，就是把不同来源、不同写法先归一到同一表示上，再来处理。\n\n**影评,聊类型片时**\n> That movie is a canonical coming-of-age story.\n> 那部电影是成长题材里很典型的一部作品。\n\n这里既有“这个类型里很典型”的意思，也常带一点“它已经成了这个类型的公认代表作”的味道，不只是普通的“常见”。\n\n➤ *值得注意的是，在计算机、数学、逻辑这些语境里，canonical 往往相当稳定地指向“标准形式 / 标准表示法”。更严格一点说，它有时甚至是在某个等价关系下，从每个等价类里选出一个代表。看到它时，别先想到“经典”或“权威”，先想到“被统一过、可比较、可处理的形式”。*\n\n**原生思维** · 英语母语者用 canonical 时，脑子里常常不是单纯在做褒奖，而是在做归一化或定标：把许多变体收拢到一个默认参照上。中文里我们很容易顺手翻成“经典的”“正统的”“权威的”，但这些词各自只抓住一面；英语里的 canonical 更常把“标准性、被认可、典型性”揉在一起，在某些学术或技术语境中，它也确实有利于统一讨论、比较、处理或引用。它的核心动作不是给对象盖奖章，而是把对象放进一个系统里，让它成为那个“以后大家照着说、照着算、照着认”的版本。\n\n**悟道时刻** · 这个词真正重要的，不是“它很高级”，而是它提醒你：英语里很多词说的不是对象本身有多好，而是它在一个系统里被放在什么位置。canonical 的关键，不只是“标准”，而是“被拿来当参照”。\n\n以后再遇到 canonical、standard、default、normative、authoritative 这一组词，先别急着都翻成“标准的”。先问一句：它是在说“常见”，还是在说“被选作坐标”？这一层一分开，英文里很多“标准感”就会立刻清楚。",
+    "verification": {
+      "claimCount": 13,
+      "confirmedCount": 5,
+      "softenedCount": 8,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "这个词最早和教会里的‘canon’有关，指‘按规矩承认的、列入正典的’。",
+        "它来自希腊语 kanon，原意是‘尺子、标准、规条’。",
+        "后来进到拉丁语和教会语境里，就变成‘被正式承认、属于正典’的意思。",
+        "再往后，这种‘标准、正统、可作为参照’的骨架被抽出来，进入了数学、计算机、文学批评这…",
+        "今天你看到 canonical，往往已经不再和宗教直接相关，但那种‘被系统承认的标准…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/canonical"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/canon"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/canonical"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/canonical"
+        },
+        {
+          "label": "Encyclopædia Britannica（canon）",
+          "url": "https://www.britannica.com/topic/canon-sacred-literature"
+        },
+        {
+          "label": "Wikipedia（Canonical form）",
+          "url": "https://en.wikipedia.org/wiki/Canonical_form"
+        },
+        {
+          "label": "MathWords（Canonical form）",
+          "url": "https://www.mathwords.com/c/canonical.htm"
+        }
+      ]
+    }
+  },
+  "capacity": {
+    "displayWord": "capacity",
+    "meta": [
+      "职场制度 · B1-B2 · 进阶",
+      "Issue 003"
+    ],
+    "markdown": "**字面含义** · capacity 最早让人想到的是“容纳的本领”：一个容器能装多少水，一间房能坐多少人，一个系统能吃下多少负载。它的骨架很物理，像是在问“这个东西的边界到底在哪里”。所以后来它一旦跑到抽象领域，在很多常见语境里也还是会先指向那层“可承载的上限”——只不过装的不是液体，而是人、任务、能量、责任、可能性。\n\n**本体质感** · 这个词有一种“上限感”和“承载感”叠在一起的质地。说 a room has a capacity of 200，你听到的是空间的边界；说 someone is working at full capacity，你听到的是机器已经接近满负荷；说 in my capacity as a manager，你听到的是“以我这个角色所能承担的权限/功能范围”。它不是一个柔软、情绪化的词，而是很像量具、额度、阈值、槽位这些东西。  \n在英语里，capacity 很多时候不是单纯在描述“多不多”，而是在划线：这里能装到哪儿、这个人能做到哪儿、这个机构能承担到哪儿。中文里我们很容易把它先往“能力”上靠，但英语里的常见用法往往也会先落在“可用空间、可承受范围、可发挥的最大程度”上。  \n如果你把它和几个常见近邻放在一起，会更清楚：ability 可以粗略理解成“做成这件事的能力”，capability 更像“具备做成一些事的潜能或配置”，capacity 则更常落在“容量、承载力、上限、角色范围”这边。当然，这几个词在真实语境里会有重叠；这里只是帮你抓住它们各自更常见的重心。它不是在夸人聪明，而是在量一个边界有多大。\n\n**寻根溯源** · capacity 在英语里可追到 15 世纪初，经由古法语 *capacité*，再上溯到拉丁语 *capacitas / capacitatem*，并和 *capere* “to take” 有关。从词源上看，它一直带着一种 “take / hold” 的语义背景：重点不是“创造出什么”，而是“能装下、能承接多少”。  \n有意思的是，它在英语里并不是先只有物理“容量”，后来才慢慢抽象化；较早期的用法里，表示“容纳能力”和表示法律、道德、智力意义上的“能力”，就已经并存了。所以它今天在抽象语境里还能自然保留那种“装得下多少”的隐喻：脑子的 capacity、经济的 capacity、政府的 capacity，都是把“容器/承载体”这个图式往别的领域迁过去。英语里很多抽象名词之所以自然，大概也正因为它们背后还有这么一层很稳的身体经验。\n\n**各路用法** · 几个例子，在不同场域里你感受一下它怎么站稳：\n\n**职场,汇报里**\n> Our current production capacity is limited, so we need to prioritize the biggest orders.\n> 我们当前的生产能力有限，所以需要优先处理最大的订单。\n\n这里的 capacity 不是泛泛的“能力”，而是可以量化、可以排到表上的“可承载产量”。\n\n**职场,邮件里**\n> I’m writing in my capacity as project lead to confirm the timeline.\n> 我以项目负责人的身份写这封邮件，确认一下时间表。\n\n这里的 capacity 很像“身份所对应的权限范围”，不是情绪，也不是才能，而是角色边界。\n\n**日常,跟朋友**\n> I don’t think I have the capacity to deal with this today.\n> 我觉得我今天没有余力处理这件事。\n\n这句话里更像是在说心理上、情绪上或精力上的处理余量不够。中文常会说“没精力”，而英语这里用的是一种“承受力已经接近上限”的说法。\n\n**日常,描述状态**\n> The theater was filled to capacity, and people were still lining up outside.\n> 剧院已经满员了，外面还有人在排队。\n\n这里就是最原始的“装满了”的那层意思，几乎能看到一个空间被塞到边界。\n\n➤ *值得注意的是，在工程、制造、运输、计算资源这些语境里，capacity 往往就是固定在“最大可承载量 / 最大处理能力”上，看到时基本不用先往“能力”那边想。*\n\n**原生思维** · 下面是一种帮助理解的语义图式，不是严格的词典定义：从常见搭配看，capacity 往往更强调“能装多少、能扛多少、能以什么身份/范围去做”，而不只是抽象地问“行不行”。这就是为什么它既能说机器，也能说公司，也能说人：大家都像被当成某种“有边界的承载体”。  \n中文里我们会把“能力、容量、精力、资格、身份范围”分开说；英语里 capacity 往往能把这些东西压进同一个图式里——核心不只是“能力”这个中文大词，而是“可承载的上限”这个更底层的感觉。\n\n**悟道时刻** · 你真正要记住的，不是“capacity = 能力”这么平的一层，而是它背后的承载图式：这个东西能装多少，能扛多少，能以什么范围发生作用。  \n一旦你抓住这点，看到 capacity 时就别急着找中文对译，先问自己：这里是在量容量、量负荷，还是在量一个角色所覆盖的边界。这个问题一换，词义就自己站稳了。",
+    "verification": {
+      "claimCount": 15,
+      "confirmedCount": 7,
+      "softenedCount": 8,
+      "uncertainCount": 1,
+      "rejectedCount": 0,
+      "checked": [
+        "主流词典都收录了三大核心义项：",
+        "但“母语者脑子里先想到什么”这类心理表述，无法直接证实，只能说与词典义项和搭配分布大体一致"
+      ],
+      "sources": [
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/capacity"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/capacity"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/capacity"
+        },
+        {
+          "label": "Oxford Advanced American Dictionary",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/capacity"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/capacity"
+        },
+        {
+          "label": "Etymonline, capable",
+          "url": "https://www.etymonline.com/word/capable"
+        },
+        {
+          "label": "Etymonline, capability",
+          "url": "https://www.etymonline.com/word/capability"
+        }
+      ]
+    }
+  },
   "clanker": {
     "displayWord": "clanker",
     "meta": [
@@ -551,6 +875,55 @@ window.WORD_SENSE_ENTRIES = {
         {
           "label": "Axios",
           "url": "https://www.axios.com/2025/08/06/ai-chatgpt-star-wars-clankers"
+        }
+      ]
+    }
+  },
+  "cookbook": {
+    "displayWord": "cookbook",
+    "meta": [
+      "技术文档 · B2-C1 · 高阶",
+      "Issue 003"
+    ],
+    "markdown": "**字面含义** · 先把它拆开看，cook 是“做饭”，book 是“书”。最原始的画面不是抽象概念，而是一本专门教你怎么把食材变成一道菜的书：配方、步骤之类，像一套可照着做的操作说明。\n\n**本体质感** · 英语里 cookbook 这个词有意思的地方，不只是“菜谱书”本身，还在于它后来很自然地长出了“按步骤照着做”的感觉。作为名词，它当然可以就是一本菜谱；再往外走，它也可以指一种详细、可执行的指南。Merriam-Webster 就直接给过一个很稳的广义解释：a book of detailed instructions。\n\n所以一个母语环境里的人如果说某个方案、流程、做法 has a cookbook feel，通常可以理解成：它很步骤化，很现成，拿来就能照着做。这里面未必天然有贬义。很多时候，这恰恰是优点——清楚、实用、对新手友好。只是在批评语境里，它才可能进一步带出另一层意思：太按部就班，原理没有展开，弹性也不够。Merriam-Webster 对形容词义的概括就很传神：involving or using step-by-step procedures whose rationale is usually not explained.\n\n**寻根溯源** · 这个词的来路其实很直白，就是 cook + book。按 Etymonline 的记录，cookbook 这个名词见于 1809 年；再往前，还有更早的说法 cookery book，见于 1630 年代。也就是说，它一开始确实就是厨房里的那种“教你做”的书。后来的引申，并不是突然拐弯，而是顺着这个核心一路长出来的：凡是能把事情写成 recipe 一样的步骤，英语里就很容易借 cookbook 这个意象来命名。\n\n**各路用法** · 几个你会真正碰到的样子：\n\n**日常,聊做饭**\n> I keep a small cookbook on the kitchen shelf for weeknight dinners.\n> 我在厨房架子上放了一本小菜谱书，专门给工作日晚上做饭用。\n\n这里就是最老实的实物：一本拿来参考的书。\n\n**工作/技术,讨论方案**\n> We do not need a cookbook solution; we need something that fits our actual workflow.\n> 我们不需要那种照着步骤就能套用的现成方案，我们需要真正适合我们工作流程的东西。\n\n这里的 cookbook 是自拟用法，但语感是成立的：重点不在“菜谱”，而在“recipe-based”。在这样的语境里，它可能带一点“模板化、照搬式”的批评，不过批评色彩仍然取决于上下文。\n\n**技术/正式,写文档**\n> The manual reads like a cookbook, which is useful for beginners but limiting for advanced users.\n> 这份手册读起来像一本菜谱式说明，对新手有用，但会限制进阶用户。\n\n这个说法可以自然理解为：手册写得一步一步、可直接执行。这样的写法对新手通常很友好；但在具体语境中，也可能让人觉得它对更熟的人来说有点局限。\n\n顺着这个意思，你也能理解为什么技术世界里会有很多真叫 Cookbook 的东西。Oracle 官方文档就把 Visual Builder Cookbook 解释为 a collection of step-by-step recipes。这里完全不是贬义，反而是在强调：你来这里，就是为了拿到能直接做出来的范例。\n\n**原生思维** · 在不少语境里，cookbook 会让人想到“已经整理好、可以照着执行的完整流程”。中文里我们会说“菜谱”“教程”“说明书”“模板”，但 cookbook 这个词的隐喻核心更稳定一些：它不是泛泛地教你一个概念，而是把事情压成一页页可执行的步骤。\n\n所以它真正抓住的，常常不是内容属于哪个领域，而是这个东西是不是被组织成了 recipe 一样的形式。这个形式本身可以是中性的，也可以是优点；只有放进批评语境里，它才会进一步变成“太现成、太标准化、缺少弹性”。\n\n**悟道时刻** · cookbook 的关键，不在“厨房”，而在“配方”。一旦一个东西被说成 cookbook，真正被点亮的往往是它的组织方式：是不是把复杂问题写成了可以一步步照做的路径。\n\n以后你再遇到这个词，先别急着把它听成批评。先看语境：如果对方在夸，它是在说清楚、实用、对新手友好；如果在嫌，它才是在说过于配方式、原理不足、弹性不够。抓住这层，你就抓住了 cookbook 的活义。",
+    "verification": {
+      "claimCount": 10,
+      "confirmedCount": 5,
+      "softenedCount": 4,
+      "uncertainCount": 2,
+      "rejectedCount": 1,
+      "checked": [
+        "Etymonline 的词源与首见年代",
+        "Cambridge 对名词义的基础定义"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/cookbook"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/cookbook"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/cookbook"
+        },
+        {
+          "label": "Oracle Help Center",
+          "url": "https://docs.oracle.com/en/cloud/paas/app-builder-cloud/visual-builder-developer/work-visual-builder-cookbook.html"
+        },
+        {
+          "label": "Microsoft Learn (.NET / Roslyn SDK)",
+          "url": "https://learn.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/"
+        },
+        {
+          "label": "Google Books — *ActionScript Cookbook*",
+          "url": "https://books.google.com/books/about/ActionScript_Cookbook.html?id=ICVvNLPpN_4C"
+        },
+        {
+          "label": "Google Books — *Fundamental Laboratory Approaches for Biochemistry and Biotechnology*",
+          "url": "https://books.google.com/books/about/Fundamental_Laboratory_Approaches_for_Bi.html?id=263UDwAAQBAJ"
         }
       ]
     }
@@ -719,6 +1092,54 @@ window.WORD_SENSE_ENTRIES = {
         {
           "label": "Cambridge Dictionary — self-deprecating",
           "url": "https://dictionary.cambridge.org/dictionary/english/self-deprecating"
+        }
+      ]
+    }
+  },
+  "distill": {
+    "displayWord": "distill",
+    "meta": [
+      "思考写作 · B1-B2 · 进阶",
+      "Issue 003"
+    ],
+    "markdown": "**字面含义** · 这个词最早和“蒸馏”绑在一起：把液体加热，让蒸汽升起，再冷凝成更纯的液体。眼前的画面不是“提炼观点”这种抽象动作，而是一个很具体的过程：杂质留在下面，精华被一点点收拢到另一处。英语里后来的很多比喻义，确实是从这个“把分散的东西浓缩成更纯、更少、更有力的部分”长出来的。\n\n**本体质感** · 它的气质不是“总结一下”那么轻，而是语感上带着一种慢、准、耐心的收拢感。说 distill 的人，往往不是在铺开一堆材料，而是在做减法：把噪音去掉，把核心留下，把散乱的信息压缩成能带走的一小撮。它常常会给人一种“我已经看过很多，现在我只给你最纯的那部分”的语感，所以既有提炼的功力，也带一点克制的分量。  \n你会感觉它在很多语境里比 summarize 更强调“提炼精华”，而不只是压缩篇幅；和 extract、reduce 放在一起看时，它也常给人一种“不只是变少，而是变得更纯、更可用”的感觉。中文里常翻成“提炼”，而英语里的 distill 往往还带着“从复杂材料中留下核心部分”的意味。\n\n**寻根溯源** · 它来自拉丁语系，核心原义就是“滴下来、流下来”这一类动作。更细一点说，英语里的 distill 可追到中古英语 *distillen*，再往前经由法语和中世纪拉丁语，连到拉丁语 *destillare / distillare*，意思就是“涓滴而下、滴下”。后来它进入蒸馏技术语境，指把液体分离、净化。这个物理过程很重要，因为它后来的抽象义，延续的正是蒸馏的隐喻：不是随手总结一下，而是经过分离、浓缩，最后得到更纯、更核心的部分。也正因为如此，distill 用在思想、经验、信息上时，常带着一种“经过折腾之后留下精华”的感觉。\n\n**各路用法** · 几个例子，感受它在不同场域里的重心：\n\n**职场,邮件里**\n> We distilled the client feedback into three clear priorities.\n> 我们把客户反馈提炼成了三个明确的优先事项。\n\n这里不是“整理了一下”，而是把很多零散意见收拢成可执行的骨架。\n\n**职场,会议上**\n> The report distills months of research into a few practical takeaways.\n> 这份报告把数月的研究提炼成了几个实用结论。\n\n这里强调的是：材料很多，但最后交到你手里的，是被浓缩过、能直接用的部分。\n\n**日常,聊天里**\n> I need some time to distill what really happened.\n> 我需要点时间理清到底发生了什么。\n\n这句话里，distill 不只是“想清楚”那么轻，而更像让杂乱的经历慢慢沉淀，最后留下核心事实和感受。\n\n**社媒,长文/笔记里**\n> Her post distills a complicated year into one honest paragraph.\n> 她那篇帖子把复杂的一年浓缩成一段很诚实的话。\n\n这里的美感在于：不是信息很多，而是浓缩后的那一段足够准，足够有穿透力。\n\n**原生思维** · 在实际用法里，英语里的 distill 往往不只是“把内容说短一点”，而更强调“把里面真正值得留下的东西分离出来”。这和中文里很多时候说“总结”有点不一样：总结偏向把要点列出来，distill 更像把一堆混杂物反复过滤，最后得到一滴精华。它常暗示一个筛选与取舍的过程：留下什么，舍弃什么，并不是自动发生的，而是说话人主动做出来的判断。换句话说，distill 不是单纯的压缩，它更接近一种带方向感的提纯。\n\n**悟道时刻** · distill 最值得记住的，不是“提炼”这个中文对译本身，而是它背后的动作感：从杂、多、乱里，筛出少、准、能带走的那一点。以后再遇到 summarize、condense、extract、boil down 这些近义词，你就先问一句：这里强调的只是变短，还是把精华留下来？\n\n一旦你能分出“缩短”和“提纯”的区别，distill 的位置就会一下子清楚很多。",
+    "verification": {
+      "claimCount": 10,
+      "confirmedCount": 5,
+      "softenedCount": 5,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "这个词最早和‘蒸馏’绑在一起：把液体加热，让蒸汽升起，再冷凝成更纯的液体。",
+        "英语里后来的很多比喻义，都是从这个‘把分散的东西浓缩成更纯、更少、更有力的部分’长出…",
+        "它来自拉丁语系，核心原义就是‘滴下来、流下来’这一类动作。",
+        "后来进入蒸馏技术语境，指把液体分离、净化。",
+        "英语一直保留着那个隐喻：不是凭空总结，而是经过加热、分离、冷凝，最后得到更纯的部分。"
+      ],
+      "sources": [
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/distill"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/distill"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/distill"
+        },
+        {
+          "label": "Collins Dictionary",
+          "url": "https://www.collinsdictionary.com/dictionary/english/distill"
+        },
+        {
+          "label": "WordReference",
+          "url": "https://www.wordreference.com/definition/distill"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/distil_v"
         }
       ]
     }
@@ -945,6 +1366,170 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "head": {
+    "displayWord": "head",
+    "meta": [
+      "方向动作 · A2-B1 · 入门",
+      "Issue 003"
+    ],
+    "markdown": "**字面含义** · 最先浮出来的是“头”：人或动物身体最上面的那个部分，装着脸、眼睛、耳朵，也常常带出“顶端”“前端”的空间感觉。英语里这层非常具体的画面，会一路长出很多用法：一个队伍的 head 是站在最前面的，一个组织的 head 是“头儿”，在语言学里，短语也有 head——就是那个带着结构主导权的核心词。\n\n**本体质感** · 这个词从词源和常见义项看，很容易延展出一种“前端、领头、主导”的感觉。它不只是“脑袋”，还常常带着“站在前面”“决定走向”的姿态：人群里那个先动的人、桌子这一头、组织里做决定的人，都会往 head 靠。  \n它也很容易和“顶部 / 前端 / 主导位”连在一起，所以你会看到很多结构都在借它：the head of the line, the head of the table, the head of department。更有意思的是，这条线在词源里就埋着：Old English 的 heafod 除了“头部”，也可指“chief person, leader, ruler”。所以 head 不是后来偶然“借用”成负责人，它本来就和“上位者、领头者”这层感觉挨得很近。\n\n**各路用法** · 几个最常见的场景里，你会看到它怎么从“头”长出去：\n\n**日常,身体部位**\n> I hit my head on the low shelf.\n> 我的头撞到了那个矮架子上。\n\n这是最直接的物理意义，画面感很强。\n\n**日常,人群/位置**\n> She stood at the head of the queue and asked a question.\n> 她站在队伍最前面，问了一个问题。\n\n这里的 head 已经不是“头部”本身，而是“最前面的位置”。\n\n**职场,组织角色**\n> She is the head of the marketing department.\n> 她是市场部负责人。\n\n这里的 head 不是“头”这个器官，而是“带头的人”“负责人”。\n\n**日常,脑中循环**\n> This song has been stuck in my head all day.\n> 这首歌一整天都在我脑子里循环。\n\n这里的 head 变成了一个很英语的心理空间：旋律一旦“进了脑袋”，就会在里面转个不停。中文也能懂，但英语把这种状态说得尤其自然。\n\n**原生思维** · 英语里很多时候用到 head，已经不只是在说器官，而是在激活“前端、上位、主导”这一层联想。所以它特别容易往位置、角色、结构这些方向扩展。中文里我们会用“头”“带头”“负责人”分别说不同面，但英语常常更顺手地用同一个词，把这些面连起来。你看到 head，往往可以先问：这里是在说“前面那个”“管事那个”，还是“那个起结构主导作用的核心”？\n\n**悟道时刻** · 这个词最值钱的地方，不在于它有多少义项，而在于你会开始看见英语一种很常见的生长方式：从身体位置，长到结构位置，再长到权力位置。head 只是一个入口。\n\n以后再遇到这类词，你可以先别急着背义项，先看它在句子里是不是站在“前、上、主导”的位置。很多时候，位置一看懂，意思就自己亮了。",
+    "verification": {
+      "claimCount": 11,
+      "confirmedCount": 8,
+      "softenedCount": 5,
+      "uncertainCount": 1,
+      "rejectedCount": 0,
+      "checked": [
+        "head”最先/最基本的字面义是“头”，即人或动物身体最上面的部分，带有“顶端”“前…",
+        "一个队伍的 head 是站在最前面的，一个句子的 head 是带着结构主导权的那个部…",
+        "head”在英语里带有“方向感的主控中枢”“领头”“站在前面”“决定走向”的意义延展…",
+        "the head of the line / the head of the tab…",
+        "例句 “I hit my head on the low shelf.” 对应的是直…"
+      ],
+      "sources": [
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/head"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/head"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/stuck%20in%20one%27s%20head"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/head"
+        },
+        {
+          "label": "Wiktionary",
+          "url": "https://en.wiktionary.org/wiki/head"
+        },
+        {
+          "label": "Wiktionary",
+          "url": "https://en.wiktionary.org/wiki/heafod"
+        },
+        {
+          "label": "Oxford Reference",
+          "url": "https://www.oxfordreference.com/abstract/10.1093/acref/9780199202720.001.0001/acref-9780199202720-e-2271"
+        }
+      ]
+    }
+  },
+  "horizon": {
+    "displayWord": "horizon",
+    "meta": [
+      "趋势想象 · B1-B2 · 进阶",
+      "Issue 003"
+    ],
+    "markdown": "**字面含义** · 它最原始的画面，是你站在地面上往远处看，天空和大地在视线尽头“接上”的那一条线。不是一条真实画出来的线，而是眼睛能碰到的最远边界。这个词后来能长出“前景、范围、界线”这些意思，也可以理解为都是从“可见边界”这个核心意象慢慢引申出来的。\n\n**本体质感** · horizon 这个词很有“远”和“开”的气味。它不是那种贴在手边、捏得住的词，而是把人往外推：你抬头，视线被拉长，心也跟着松开一点。它常常带一点“尚未到达，但已经可以看见”的感觉，所以英语里更常说 broaden your horizons 或 widen your horizons，重点不是单纯“增加知识”，而是把你从一个窄小、熟悉、封闭的视野里带出去，让你开始看到更远的可能。  \n它的语感里没有压迫感，更多是空间感、可能性、边界感。你会感觉它像一条线：线这边是你现在站的位置，线那边是你还没去过的地方。  \n如果放在常见搭配里，near the horizon 在字面场景里通常就是“靠近地平线的位置”，而 on the horizon 则常常是“已经冒头、快要出现”。后者保留了它那种“远处正在形成轮廓”的质地，也往往带一点更形象、更含蓄的逼近感。\n\n**各路用法** · 几个例子，感受一下它怎么在不同场景里把“远处”“前景”“边界”这几层气味带出来：\n\n**日常,跟朋友看风景**\n> The sun is just above the horizon.\n> 太阳刚刚在地平线上方。\n\n这里就是最直白的画面：你看到的不是“太阳”本身，而是太阳和地平线之间那点关系。\n\n**日常,聊人生规划**\n> Travel can really widen your horizons.\n> 旅行真的能拓宽你的视野。\n\n这句里，horizons 已经不再是地理上的那条线，而是“你能想到、能理解、能容纳的世界边界”。\n\n**职场,会议里谈前景**\n> There are no major changes on the horizon yet.\n> 目前还看不出有什么重大变化要发生。\n\non the horizon 很常见，意思是“已经隐约出现，快要来了”，语气往往比直接说 “will happen soon” 更形象，也更含蓄一点。\n\n**日常,谈未来选择**\n> She is looking beyond the horizon for her next move.\n> 她在为下一步寻找地平线之外的可能。\n\n这里的 beyond the horizon 不是说物理上的远方，而是在说“超出眼下能清楚看见的范围”。这更像是一种解释性写法，不必把它当成特别固定的高频短语来记。\n\n**原生思维** · 英语母语者用 horizon 的时候，脑子里常常不是在做“翻译成视野”这种事，而是在拿“看得见的边界”来想“人能想到的边界”。也就是说，这个词天生带着一种空间隐喻：你站在这里，能看到多远，就决定了你目前理解世界的半径。  \n它的词源也很能说明这件事。horizon 来自希腊语 horizon，原本就有“划定边界”的意思，背后连着的是 bound、limit、divide、separate 这一组感觉。所以它后来既能指“认知或经验的范围”，也能指“有可能抵达的前景”，并不奇怪。  \n所以它常见于谈经验、见识、未来可能性的语境。英语里说 broaden your horizons，真正动的不是“知识量”这个中文里很容易想到的概念，而是“把一个人的世界半径往外推”。这就是它的手感。\n\n**悟道时刻** · horizon 真正值得抓住的，不是“地平线”这张风景图，而是“可见边界”这个底层结构。英语很喜欢拿空间的边界，去说认知的边界、人生的前景。\n\n以后你再见到 on the horizon、broaden your horizons、beyond the horizon，别急着逐字翻。先问一句：这里说的，是眼睛看到的尽头，还是一个人当下理解世界的尽头？这一下看出来，词就活了。",
+    "verification": {
+      "claimCount": 12,
+      "confirmedCount": 6,
+      "softenedCount": 5,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "它最原始的画面，是你站在地面上往远处看，天空和大地在视线尽头‘接上’的那一条线。",
+        "这个词后来能长出‘前景、范围、界线’这些意思，都是从‘看得见的尽头’往外推出来的。",
+        "widening the horizon，重点不是单纯‘增加知识’，而是把你从一个窄…",
+        "near the horizon 是‘就在眼前可见的尽头’。",
+        "on the horizon 是‘已经冒头、快要出现’。"
+      ],
+      "sources": [
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/horizon"
+        },
+        {
+          "label": "Merriam-Webster, *horizon*",
+          "url": "https://www.merriam-webster.com/dictionary/horizon"
+        },
+        {
+          "label": "Merriam-Webster, *on the horizon*",
+          "url": "https://www.merriam-webster.com/dictionary/on%20the%20horizon"
+        },
+        {
+          "label": "Merriam-Webster, *broaden one’s horizons*",
+          "url": "https://www.merriam-webster.com/dictionary/broaden%20his%20horizons"
+        },
+        {
+          "label": "Cambridge Dictionary, *on the horizon*",
+          "url": "https://dictionary.cambridge.org/dictionary/english/on-the-horizon"
+        },
+        {
+          "label": "Cambridge Dictionary, *broaden/expand/widen someone’s horizons*",
+          "url": "https://dictionary.cambridge.org/dictionary/english/broaden-expand-widen-horizons"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries, *horizon*",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/horizon"
+        },
+        {
+          "label": "Collins Dictionary, *horizon*",
+          "url": "https://www.collinsdictionary.com/dictionary/english/horizon"
+        }
+      ]
+    }
+  },
+  "hushpitality": {
+    "displayWord": "hushpitality",
+    "meta": [
+      "新词观察 · B1-B2 · 进阶",
+      "Issue 003"
+    ],
+    "markdown": "**字面含义** · 这个词看起来像把 **hush** 和 **hospitality** 叠在了一起。前半个像“安静下来、压低声音、让环境别太吵”；后半个是“待客、接待、招待”。所以它天然就带出一个画面：不是热闹迎宾，而是把接待这件事往安静、平和、低刺激的方向收。到 2025–2026 年的旅游语境里，它已经不只是随手乱造的拼接词了，而是一个开始被明确解释、被行业拿来命名趋势的说法。\n\n**本体质感** · 它的质感不是“热情迎宾”那种外放的 hospitality，而是把手势收轻了、把声音压低了、把光线调暗了的 hospitality。你会感觉到：有人把门打开，没大声吆喝，只是用眼神、摆手、轻声一句“come in”把你带进去。这个词如果被故意造出来，通常是在卖一种氛围：克制、安静、平和，带一点私密感。它更像一种整体接待风格或空间体验标签，而不是一个能被清单化列项的单一服务名。\n\n**寻根溯源** · 从构词上看，**hushpitality** 基本就是 **hush + hospitality** 的混成。**hush** 本身就是“嘘、安静、别出声”的那股劲，词源上作为要求安静的感叹声，至少可以追到 1600 年前后；**hospitality** 则是“待客、接待”，也自然延伸到酒店与餐旅行业。两个词一接上，意思几乎不用解释：不是单纯住得好，而是住在一个不吵、不被打扰、能把感官慢慢放下来的接待环境里。\n\n更关键的是，它现在已经有了现实语境里的“硬落点”。Cambridge Dictionary Blog 把它解释为：  \n> “a style of tourism that focuses on providing travellers with quiet places to stay and a peaceful atmosphere with no loud activity or disturbance”  \n> “一种以为旅行者提供安静住处、以及没有喧闹活动或干扰的平和氛围为重点的旅游风格。”\n\n这一下就把它从“像是文案自造词”往前推了一步：它还不是多数主流词典里的成熟常规词条，但已经是被观察、被解释、被行业传播的词了。\n\n**各路用法** · 这个词目前主要见于旅游、酒店业的趋势报道、品牌内容和概念化文案里，尤其适合描述“安静住宿”“低噪音体验”“去刺激化休息”这类取向。下面这些句子可当作理解它的示例句来看。\n\n**酒店趋势报道**\n> More travelers are choosing hushpitality: quiet stays, softer spaces, and fewer interruptions.  \n> 越来越多旅行者在选择 hushpitality：更安静的住宿、更柔和的空间、更少的打扰。\n\n这里的 hushpitality 不是某项单独服务，而是一整套“安静地被接待”的体验取向。\n\n**品牌文案**\n> We designed the retreat around hushpitality, with calm rooms and a peaceful atmosphere.  \n> 我们围绕 hushpitality 来设计这处休憩空间，强调安静的房间和宁静的氛围。\n\n这种写法会把普通的住宿体验，往“平和、低刺激、可恢复精力”的方向重新命名。\n\n**旅行者描述感受**\n> What I wanted wasn't luxury—it was hushpitality.  \n> 我想要的不是奢华，而是 hushpitality 这种安静的接待感。\n\n这句话的重点不在豪华程度，而在“有没有一种不被噪音和节奏推着走的照顾”。\n\n➤ *值得注意的是，它带有明显的趋势命名和品牌表达色彩，日常通用口语里仍不算常规词；但在 2025–2026 年的旅游语境中，这个说法已经明显升温。*\n\n**原生思维** · 英语里这种拼接词常干的事，不是先把意思讲清楚，而是先把气氛摆出来。看到 **hushpitality**，读者很容易先联想到 **hush + hospitality** 的组合效果：原来这里说的不是一般意义上的“服务周到”，而是一种“把安静也当成接待内容”的体验。也就是说，它先用构词把空间定调，再让你从那个调性里回到意思。英语里这种品牌化、概念化的新造混成词一直很多，而这个词特别典型：它不是为定义一个物件而生，而是为命名一种当下越来越能被感受到的需求而生。\n\n**悟道时刻** · **hushpitality** 真正有意思的地方，不是它多“新”，而是它把一个时代需求说出来了：有时候人要的不是更多服务，而是更少噪音、更少打扰、更少被环境推着走。\n\n以后再碰到这类词，先别急着问“词典有没有”，先看它把哪两个旧词拧成了一个新感受。能被拼出来的，往往正是这个时代刚刚长出来、但大家已经隐约需要的东西。",
+    "verification": {
+      "claimCount": 11,
+      "confirmedCount": 3,
+      "softenedCount": 6,
+      "uncertainCount": 2,
+      "rejectedCount": 1,
+      "checked": [
+        "这个词看起来像把 **hush** 和 **hospitality** 叠在了一起。",
+        "它不是一个标准英语词。",
+        "如果你是从某个品牌文案、酒吧菜单、酒店广告或社媒里看到的，大概率是在借这层拼接感做一…",
+        "这个拼写本身不属于标准通用词，所以它最常见的是作为标题、口号、店名概念或文案里的造词…",
+        "这个词如果被故意造出来，通常是在卖一种氛围：克制、隐秘、私密、带点仪式感。"
+      ],
+      "sources": [
+        {
+          "label": "Cambridge Dictionary Blog",
+          "url": "https://dictionaryblog.cambridge.org/2026/03/02/new-words-2-march-2026/"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/hush"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/hospitality"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hospitality"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/hush"
+        },
+        {
+          "label": "Hilton 2026 Trends Report",
+          "url": "https://stories.hilton.com/2026-trends/hushpitality-seeking-sweet-silence"
+        },
+        {
+          "label": "Hilton News Release",
+          "url": "https://stories.hilton.com/releases/2026-trends-release"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/hospitality"
+        }
+      ]
+    }
+  },
   "inflection point": {
     "displayWord": "inflection point",
     "meta": [
@@ -997,6 +1582,50 @@ window.WORD_SENSE_ENTRIES = {
         {
           "label": "Google Books — Andrew Grove, *Only the Paranoid Survive*",
           "url": "https://books.google.com/books/about/Only_the_Paranoid_Survive.html?id=edsUnndEO5EC"
+        }
+      ]
+    }
+  },
+  "navigate": {
+    "displayWord": "navigate",
+    "meta": [
+      "职场抽象 · B1-B2 · 进阶",
+      "Issue 003"
+    ],
+    "markdown": "**字面含义** · 这个词最早就是“在水上开船、辨方向”。你可以想成：一艘船不是直线冲过去，而是在看水流、看风、看岸线，一边调整一边往前走。这个“在复杂环境里找到路”的画面，可以看作它后来许多比喻义的底子。\n\n**本体质感** · navigate 这个词的手感，不是“走过去”，也不是“解决掉”，而是“边看边调，穿过一团有阻力的东西”。它里面有一种动态的机敏：前面不是空地，是障碍、规则、信息噪音、陌生地形，你不是硬碰硬，而是在其中找路径。英语里常见 navigate a situation / process / system，也会延伸到 conversation 这类互动场景，这个词常让人感觉不是单纯“处理”，而是在复杂结构里找出可行路线。\n\n它也常带着一种轻微的现实感：不浪漫，也不绝望，就是承认“这事不好走，但我知道要怎么绕”。所以它比 “deal with” 更像在说路径，比 “solve” 更像在说过程。你会感觉到它里面有方向感、判断、持续微调。\n\n**寻根溯源** · 它来自拉丁语 *navigare*，核心里确实有“船”和“驱动航行”的影子：和 *navis*（船）、*agere*（驱动、推动）相关。英语里这个词在 16 世纪已经出现，Merriam-Webster 给出的首见时间是 1588。它一路从具体的航海动作，慢慢扩展到更广泛的“穿过复杂环境”的场景：制度、流程、技术界面、情绪关系、职业选择。英语里常见这种从空间路径到抽象处境的迁移，navigate 就是其中很清楚的一个例子。\n\n**各路用法** · 几个例子，看看它在不同场域里的姿态。\n\n**职场,会议里**\n> We need to navigate the approval process more carefully this time.\n> 这次我们需要更谨慎地走审批流程。\n\n这里不是说“完成审批”，而是说“在这个流程里找出能走通的路径”。\n\n**职场,邮件里**\n> She knows how to navigate difficult conversations with clients.\n> 她很会应对与客户之间的棘手沟通。\n\n重点不在“说服”，而在“在对话的障碍里稳稳穿过去”。\n\n**日常,跟朋友**\n> He is trying to navigate a new city without a phone.\n> 他正试着在没有手机的情况下在一座新城市里找路。\n\n这是它最本来的画面，地理意义还在，动作感也最明显。\n\n**日常,讲关系**\n> They are still navigating their relationship after the move.\n> 搬家之后，他们还在慢慢摸索这段关系该怎么走。\n\n这里的 navigate 很典型：不是一句话能“解决”，而是两个人在变化后的局面里试路。它也常被延伸到关系这类没有标准答案的处境里。\n\n**社媒,评论区**\n> I am still navigating adult life, honestly.\n> 说实话，我还在摸索成年人的生活。\n\n这里带一点自我陈述的松弛感：不是“我已经掌控了”，而是“我还在学着穿过它”。这种说法也常见于人生阶段、身份转换这类语境。\n\n值得注意的是，在技术产品、网站设计、软件界面语境里，navigate 也可以更具体地指“在网站、网页或屏幕之间移动，并找到所需内容”。这个时候它的空间感会被保留得很强。\n\n**原生思维** · 英语里常会把抽象问题说成像“找路”一样的事：不是先幻想一个完美解法，而是先找到一条能走的线。这和中文里有时直接说“解决”“处理”不太一样：navigate 更承认结构的复杂，承认你是在限制中前进。它的思维方式很像：先定位，再选路，再修正，而不是一口气把局面打穿。\n\n所以你会发现，它特别适合那些“没有标准答案，但有可行路径”的事情。英语不是非要把这种状态说得很沉重，而是很自然地给它一个词。navigate 说的，正是人在复杂系统里保持方向感的那一下。\n\n**悟道时刻** · navigate 真正特别的地方，不是“去到哪里”，而是“怎么在不好走的东西里面继续前进”。它把难题看成地形，把应对看成选路。\n\n以后你再遇到一个词，不妨问自己：它是在说结果，还是在说穿越过程？如果重点是方向感、判断和微调，那很可能就是 navigate 这一类词在发光。",
+    "verification": {
+      "claimCount": 8,
+      "confirmedCount": 5,
+      "softenedCount": 4,
+      "uncertainCount": 2,
+      "rejectedCount": 0,
+      "checked": [
+        "这个词最早就是‘在水上开船、辨方向’。",
+        "这个‘在复杂环境里找到路’的画面，是它后来所有比喻义的底子。",
+        "它来自拉丁语系，核心里有‘船’和‘航行’的影子。",
+        "这个词一路从具体的航海动作，慢慢扩展到任何需要穿过复杂环境的场景。",
+        "英语里说 navigate a situation, navigate a syst…"
+      ],
+      "sources": [
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/navigate"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/navigate"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/navigate_v"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/navigate"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/navigate"
         }
       ]
     }
@@ -1109,6 +1738,162 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "pull": {
+    "displayWord": "pull",
+    "meta": [
+      "动作隐喻 · A2-B1 · 入门",
+      "Issue 003"
+    ],
+    "markdown": "**字面含义** · pull 最原始的动作就是“拉”：手抓住一个东西，把它往自己这边、往某个方向拽过来。你可以直接看到那个画面——绳子被拉紧，门被拉开，椅子被往后拉一点。这个词很早就和“施力、使移动”绑定在一起，所以后来很多抽象用法，骨子里还保留着“把东西朝某个方向带动起来”的感觉。  \n如果再往前追一点，pull 可追溯到古英语 pullian，早期有 “pluck off / draw out” 这样的意思，也就是“扯下、拉出”一类很具体的动作。它的最终词源并不完全确定，但从现存线索看，这个词一开始就带着很强的手上动作感。\n\n**本体质感** · 从词典定义看，pull 的核心更接近“施力并使对象朝某个方向移动”，而不只是“力气大”本身。这个词强调的往往不是一个静态结果，而是一个动作过程：有东西被往这边带，有方向，有时也有阻力。它既可以很日常，也可以很有动作感，比如 pull the door、pull a chair、pull someone aside。  \n更有意思的是，它在很多固定搭配里都保留着这种“把局面往某个方向拽”的质地：pull off 像是把一件难事做成了；pull through 是熬过难关，或者把人从危险里带出来；pull away 则常表示拉开距离、驶离、甩开。你会发现它不是单纯在描述一个“状态”，而是在描述一种方向性的推进。  \n如果看语感梯度，和 drag、yank、haul 这类词相比，pull 通常更基础、更中性，也较少自带“猛拽”或“费力拖运”的额外色彩。它是那种最基础、也最可延展的“拉”。\n\n**各路用法** · 几个例子，感受它在不同场域里的骨架：\n\n**职场，邮件里**\n> Could you pull the latest sales data before the meeting?\n> 你能在会议前把最新的销售数据调出来吗？\n\n在数据、分析或技术语境里，pull 常可以表示“调取、拉取”信息。动作感还在，只是对象换成了数据。\n\n**日常，跟朋友**\n> She pulled me into the room before I could say anything.\n> 她在我开口之前就把我拉进了房间。\n\n这里就是很直接的物理动作，干净、明确，不拐弯。\n\n**日常，口语**\n> We need to pull together if we want this to work.\n> 如果这事想成，我们得齐心协力。\n\n这里的 pull together 不只是“拉到一起”，更接近“作为一个整体共同努力，把分散的力量朝同一个目标收拢”。\n\n**社媒评论区**\n> He somehow pulled it off with no rehearsal.\n> 他居然没排练也把这事搞成了。\n\n这里的 pull off 带一种“事情本来有难度，但他最后还是做成了”的意味，重点在结果的难得和完成感。\n\n**原生思维** · 从这个词的常见用法看，pull 往往会凸显三件事：谁在施力，东西往哪边走，过程里有没有阻力。它很少只是一个纯状态词，更像一个动作框架。  \n所以英语里不少抽象表达也会借 pull 来说“把信息、资源、局面朝某个方向带动”。中文里我们有时会说“拉数据”“拉近一点”“把事情做成”，其实已经很接近这个动作逻辑；只是英语里的 pull 覆盖面更广，常会从实体拉动一路扩展到协作、获取、推进这些场景。\n\n**悟道时刻** · pull 真正值得记住的，不只是“拉”这个中文对译，而是它背后的方向性：先有施力，再有移动，再看结果。抓住这条线，pull in、pull away、pull through、pull off 就不再是零散搭配，而是一组同骨架的变化。\n\n以后你遇到 pull，先别急着翻成“拉”。先问一句：这里是谁在把什么往哪个方向带？这个问题一出来，很多意思会自己亮出来。",
+    "verification": {
+      "claimCount": 14,
+      "confirmedCount": 7,
+      "softenedCount": 7,
+      "uncertainCount": 2,
+      "rejectedCount": 0,
+      "checked": [
+        "pull 最原始的动作就是‘拉’：手抓住一个东西，把它往自己这边、往某个方向拽过来。",
+        "这个词很早就和‘施力、使移动’绑定在一起。",
+        "pull 这个词的核心不是‘力气大’本身，而是‘施加一个朝向性的动作’。",
+        "pull 比 drag 更轻、更自然；比 yank 更不粗暴；比 haul 更不显得…",
+        "pull off 像是‘硬把一件事做成了’。"
+      ],
+      "sources": [
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/pull"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/pull"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/pull_v"
+        },
+        {
+          "label": "Cambridge Dictionary（pull together）",
+          "url": "https://dictionary.cambridge.org/dictionary/english/pull-together"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries（pull off）",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/pull-off"
+        },
+        {
+          "label": "Merriam-Webster（pull through）",
+          "url": "https://www.merriam-webster.com/dictionary/pull%20through"
+        },
+        {
+          "label": "Wiktionary（pull）",
+          "url": "https://en.wiktionary.org/wiki/pull"
+        },
+        {
+          "label": "English-Corpora（COCA 入口）",
+          "url": "https://www.english-corpora.org/coca/"
+        }
+      ]
+    }
+  },
+  "punch": {
+    "displayWord": "punch",
+    "meta": [
+      "动作质感 · A2-B1 · 入门",
+      "Issue 003"
+    ],
+    "markdown": "**字面含义** · punch 在今天最直观、最常见的意思之一，当然是“用拳头打”。你几乎能直接看见那个动作：手握紧，前臂往前一送，接触很短，力道集中，带一点“啪”的击中感。这个词的身体感很强，所以它后来长出来的很多意思，骨子里都还带着“短促、集中、一下子打进去”的影子。\n\n**本体质感** · 英语里 punch 这个词不是那种慢慢铺开的动作，它给人的感觉是一下子把力量送出去。它常常带着“有效”“有劲”“有冲击点”的气质。说一段话 has punch，不是说它长，而是说它有抓人那一下；说一道味道或者一杯 drink has punch，也不是说它温和，而是说入口后有猛地一下的劲道。这个词的核心，不只是“打”，更像是“打出效果”。它像一个短促的爆点：不拖、不散，直接命中。\n\n**寻根溯源** · 如果只看现代英语，你很容易以为 punch 一开始就是“拳头打人”。但词源线索更复杂一点。就“击打”这条语义来说，晚 14 世纪的英语里先出现的是“推、戳、顶、捅”这一类意思；到了 1520 年代，才有更明确的“用拳头打”记录。再往后，它在口语和引申用法里不断扩开。到了 20 世纪初，punch 还发展出“有劲、有冲击力、有效果”这样的抽象意思。也就是说，它后来能走到表达、风格、结尾、味道这些场景，未必只是从“拳击动作”单线长出来的，更可以理解为在借用一种“击中、见效、一下到位”的身体隐喻。这里我们只谈和“打、冲击力”有关的这一支，不涉及饮料那个 punch 的词源。\n\n**各路用法** · 几个示例句，先看它在不同场景里怎么保留那股“击中一下”的感觉：\n\n**日常，谈拳头动作**\n> He punched the bag three times and stopped to catch his breath.\n> 他打了沙袋三下，然后停下来喘气。\n\n这里是最原始、最直观的物理动作：力量集中，动作短，打完就有反应。\n\n**日常，讲味道**\n> The soup needs more punch, maybe a bit of ginger or chili.\n> 这汤还差点劲，可能得加一点姜或者辣椒。\n\n这里的 punch 不是“辣”本身，而是味道里还缺那一下顶上来的劲。\n\n**职场，讲表达**\n> The presentation is clear, but it needs more punch in the opening.\n> 这个演示很清楚，但开头还需要更有冲击力一点。\n\n这里说的是表达上的“第一下抓人感”，不是内容本身对不对。\n\n**日常，讲人格/风格**\n> She has a lot of punch in her writing.\n> 她的写作很有劲，很有冲击力。\n\n不是说她“写得暴力”，而是说文字有力，能打到人。\n\n**社媒，讲内容**\n> The ending has punch, even though the video is only thirty seconds long.\n> 这个结尾很有劲，虽然视频只有三十秒。\n\n短，但不软；轻，但能留下效果。\n\n**原生思维** · 英语母语者用 punch 时，脑子里常常不是先想“拳头”这个名词，而是先想“有没有那一下的力道”。所以它很适合放在味道、句子、表演、开场、结尾这些地方：只要你想表达“这里要有效果、要来一记”，punch 就很自然。中文里我们常说“有劲”“有力”“有冲击力”“提神”“带点刺激”，这些分别抓住了它的一部分；而英语里更常见的压缩方式，是把这些感觉收进一个“打出去的瞬间效果”里。\n\n**悟道时刻** · punch 最该记住的，不只是“拳头打”，而是英语很喜欢把“有效果”想成“打中一下”。你以后遇到 punchy、pack a punch、punch line、punch up 这些词，会发现它们都在追问同一件事：这里有没有那一下，能不能一下见效。\n\n真正会用这个词的人，不是只会把它翻成“打”，而是能听出哪句话、哪个味道、哪个结尾，正在“出拳”。",
+    "verification": {
+      "claimCount": 10,
+      "confirmedCount": 6,
+      "softenedCount": 5,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "**punch 最早就是‘用拳头打’**。",
+        "**punch 作为‘打击’的词，来自更早的英语形态**。",
+        "**后来在口语里不断扩开**。",
+        "它之所以能一路从‘拳击动作’走到‘语言、味道、节奏、效果’这些抽象场景……",
+        "英语里很多用 punch 的地方，本质上都在借这个‘击中感’。"
+      ],
+      "sources": [
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/punch"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/punch"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/punch_2"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/punch"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/punchy"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/punch-line"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/punch-up"
+        }
+      ]
+    }
+  },
+  "render": {
+    "displayWord": "render",
+    "meta": [
+      "技术语境 · B1-B2 · 进阶",
+      "Issue 003"
+    ],
+    "markdown": "**字面含义** · render 最早在英语里的义项，并不是一开始就把“使……成为、把……交出来、把……转译成某种形式”并排摆稳了。更准确地说，早期它先带有“复述、再说一遍、翻译”以及“交出、交付、归还”这些动作，后来才进一步发展出“使……成为”这一支。你可以先抓一个很物理的画面：手里有一团原材料，经过处理后，变成了另一种可用的东西。这个画面不必当成词源事实本身，但在很多常见用法里，它确实能帮你理解 render：它不是“凭空创造”，更像“把东西处理、转化、呈现出来”，或者把某种结果正式交付出去。这个骨架后来一路长出很多现代用法。\n\n**本体质感** · 这个词的手感很“工序化”。说 render 的人，脑子里往往不是在看一个静态结果，而是在看“从 A 变到 B 的过程”。所以它常带一种“处理后呈现”的质地：把一幅图像渲染出来，把一个论点表达得更清楚，把某种情形弄得“使……变成”某状态。它比 make 更像“经过一层转换”，比 show 更像“让东西以某种形式出现在眼前”。  \n在英语里它还有一种很典型的被动/正式感，尤其在法律、书面语里，像 “render aid”, “render judgment”, “render assistance” 这种，语气会有点庄重：不是随口说“做一下”，而是“提供、作出、施以”。多部词典也确实把这些相关义项标成 formal。\n\n**寻根溯源** · render 来自古法语 rendre，往上可追到拉丁语 reddere，核心感觉和“交回、送回、归还”有关。英语里大致到 14 世纪晚期就能见到这个动词，早期义项包括“复述、再说、翻译”；到约 1400 年前后，又明显有了“交出、交付、归还”的意思；再往后，到 15 世纪晚期，才发展出“使成为”；到 16 世纪末，又出现了“表现、描绘”的路数。后来它一边保留了“交付、提供、作出”的正式语感，一边又在现代技术领域发展出“把内容处理后显示或渲染出来”的意思。大致来看，很多常见义项都没有离开一个相似动作：经过处理，再把结果送到人眼前、手上，或某个确定状态里。\n\n**各路用法** · 几个例子，在不同场域里你感受一下它的骨架：\n\n**职场,邮件里**\n> We will render assistance if the client needs it.\n> 如果客户需要，我们会提供协助。\n\n这里的 render 很正式，像是在把“帮助”作为一种可交付的东西递出去。\n\n**法律,裁决语境**\n> The jury rendered its verdict after reviewing the evidence.\n> 陪审团在审查证据后作出了裁决。\n\n这里不是简单说 “made a decision”，而是更书面地说“把裁决正式作出来”。\n\n**技术,开发场景**\n> The browser renders the page in under two seconds.\n> 浏览器在两秒内就把页面渲染出来了。\n\n这里的核心就是“把代码、数据、结构处理后显示成你看得见的页面”。\n\n**日常,朋友聊天**\n> The apology was sincere, but it did not render the situation less awkward.\n> 道歉是诚恳的，但这并没有让场面没那么尴尬。\n\n这里 render 后面接的是结果状态，意思是“使……变得”。\n\n在计算机语境里，render 通常就是指把内容处理后显示/渲染出来；对象可以是 page、image、text、scene，重点有时偏“显示”，有时偏“生成视觉结果”，但底层还是那个“处理后呈现”的动作。\n\n**原生思维** · 英语母语者用 render 时，常常是在想“把一个东西变成某种可见、可用、可交付的样子”。它不是中文里那种一下子很口语的“弄成”，而是更像在说：这个过程经过了正式处理，最后落到了一个明确结果上。  \n所以当你看到 render judgment, render assistance, render a service, render a page，你要捕捉的不是“做了什么”这么粗的层面，而是“把某种东西落实成一个可被接收的形式”。这也是为什么它在正式文本里特别顺手：它天然带一点“手续完成了、结果交付了”的感觉。  \n当然，这更像是一种便于理解的语义骨架，不是词典给出的单一定义；但拿它去看法律、日常、技术这几条线，往往很有解释力。\n\n**悟道时刻** · render 真正值得你记住的，不是它能翻成多少中文，而是它常在做同一件事：把某样东西经过处理，落成一个结果。这个结果有时是裁决，有时是帮助，有时是页面，有时是某种状态。\n\n以后再遇到这类词，别急着追一个固定中文义。先问自己：这里被“送达”的结果是什么？一旦看见这个落点，render 的气质就出来了。",
+    "verification": {
+      "claimCount": 11,
+      "confirmedCount": 6,
+      "softenedCount": 5,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "**render 最早和‘使……成为、把……交出来、把……转译成某种形式’这一类动作…",
+        "**它不是‘凭空创造’，更像‘把已有的东西加工、转化、呈现出来’。**",
+        "**render 在英语里有一种典型的被动/正式感，尤其在法律、书面语里，像 ‘re…",
+        "**render 来自古法语 rendre，往上可追到拉丁语 reddere，核心感…",
+        "**后来这个词进入英语后，一边保留了‘交付、提供、作出’的正式语感，一边又在技术领域…"
+      ],
+      "sources": [
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/render"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/render"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/render"
+        },
+        {
+          "label": "Collins Dictionary",
+          "url": "https://www.collinsdictionary.com/dictionary/english/render"
+        },
+        {
+          "label": "Wiktionary",
+          "url": "https://en.wiktionary.org/wiki/render"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/"
+        }
+      ]
+    }
+  },
   "resilience": {
     "displayWord": "resilience",
     "meta": [
@@ -1214,6 +1999,60 @@ window.WORD_SENSE_ENTRIES = {
         {
           "label": "Wiktionary — sensus",
           "url": "https://en.wiktionary.org/wiki/sensus"
+        }
+      ]
+    }
+  },
+  "slopper": {
+    "displayWord": "slopper",
+    "meta": [
+      "俚语观察 · B2-C1 · 高阶",
+      "Issue 003"
+    ],
+    "markdown": "**字面含义** · 这个词的词形，的确很容易让人先想到 `slop` 那种稀、乱、湿、往下淌的东西。`slopper` 不是一个很标准、很常见的英语基础词；从构词上看，它至少有一支是从 `slop + -er` 长出来的，所以词面上天然带着一点“跟糊、脏、湿乱有关”的影子。只是要小心：这种词形直觉不能直接当成它在现实里的唯一词义。\n\n**本体质感** · 如果只按词形去感受，`slopper` 确实会让人联想到一种不太体面、边界不清、带点黏腻感的东西。但现实使用里，它不是单纯拿来泛指“一坨稀糊糊玩意儿”的万能口语词，而是已经长出了几个比较具体的义项。大致来看，这个词身上有两股气质：一股来自 `slop` 的湿乱感官底色，另一股来自具体语境——有时候是地方食物名，有时候是网络上的贬称。也就是说，它的“脏湿质感”更像底色，不是全部。\n\n**寻根溯源** · 它和 `slop` 的关系是站得住的。`slop` 本来就有“泔水、稀烂的东西、废液、洒出来的液体”这些影子，后面有些派生词也会延续这一路语义。`slopper` 至少有一部分就是这样形成的。至于词族联想，更稳妥的近邻是 `slop / sloppy / slush` 这类词：它们在语感上都容易把人带到湿、乱、糊、不利落的画面里。`slurp` 倒更像声音和动作上的近邻，不宜硬说是同一条词源线。\n\n**各路用法** · 这个词真正值得注意的，不是“它是不是能泛指一团糊东西”，而是它在现实里已经有少数可辨认的用法，而且分得很开。\n\n**地方食物,美国科罗拉多**\n> A Pueblo slopper is typically described as an open-faced burger smothered in green chile sauce, often topped with cheese and onions.\n> Pueblo slopper 通常指一种开口式汉堡，上面浇满青辣椒酱，常常再加奶酪和洋葱。\n\n这里的 slopper 不是骂人，也不是随口说“糊成一坨”，而是一个很具体的地方食物名。它之所以叫这个名字，和那种“浇得满满、湿乎乎覆盖上去”的视觉画面有关系。\n\n**网络语境,谈 AI 内容**\n> The simplest, most straightforward option is to be a “slopper”.\n> 最简单、最直接的做法，就是去当一个“slopper”。\n\n这里的 slopper 指的是那类大量制造或依赖 AI slop 的人。在这个语境里，它明显带贬义：不是中性描述，而是在说对方在粗糙、廉价、批量地生产内容。\n\n所以如果你在具体句子里看到 `slopper`，不要先把它自动理解成“稀糊糊的东西”。更稳妥的做法是先看场景：是在说美国地方食物，还是在说近年的网络俚语；如果都不是，再回到词形和上下文，判断它是不是某种带语气的延伸用法。\n\n**原生思维** · 英语里有一类词，确实会把视觉和手感直接压进词形里，让你一看就觉得它不干净、不利落、像在往下淌。`slopper` 身上也有这种诱导性，所以人很容易顺手把它理解成一种“湿、乱、塌、脏”的状态词。但更接近母语使用的方式，不是只抓这个模糊感受，而是让语境来定它到底落在哪个义项上：食物名时，它可以是地方身份的一部分；AI 俚语里，它又成了带讽刺的标签。词形给你的是底色，语境给你的才是落点。\n\n**悟道时刻** · `slopper` 最值得学的，不是一个抽象定义，而是一种识别顺序：先认出它和 `slop` 那层湿乱底色的联系，再立刻追问——这次它是在说什么现实场景。很多英语词都这样：声音和触感先把你带进门，真正的意思却要靠时代和语境落锤。以后遇到 `slop / sloppy / slush` 这类词，也可以先抓身体感，再分清哪些是语感近邻，哪些才是词源近邻。",
+    "verification": {
+      "claimCount": 14,
+      "confirmedCount": 4,
+      "softenedCount": 3,
+      "uncertainCount": 3,
+      "rejectedCount": 3,
+      "checked": [
+        "`slopper` **确实存在**，但不是一个只有“稀糊糊东西”这一路的泛义词",
+        "至少可确认两条现实义项：",
+        "初稿两条例句未查到真实词典义或可靠语料支持，像是作者自造示例，而非已证实的常见用法"
+      ],
+      "sources": [
+        {
+          "label": "Wiktionary",
+          "url": "https://en.wiktionary.org/wiki/slopper"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/slopper_n3"
+        },
+        {
+          "label": "Merriam-Webster (`slop`)",
+          "url": "https://www.merriam-webster.com/dictionary/slop"
+        },
+        {
+          "label": "Etymonline (`slop`)",
+          "url": "https://www.etymonline.com/word/slop"
+        },
+        {
+          "label": "Etymonline (`sloppy`)",
+          "url": "https://www.etymonline.com/word/sloppy"
+        },
+        {
+          "label": "Etymonline (`slurp`)",
+          "url": "https://www.etymonline.com/word/slurp"
+        },
+        {
+          "label": "New York Magazine",
+          "url": "https://nymag.com/intelligencer/article/ai-generated-content-internet-online-slop-spam.html"
+        },
+        {
+          "label": "Colorado Department of Agriculture",
+          "url": "https://ag.colorado.gov/press-release/smothered-in-flavor-pueblo-chile-slopper-takes-the-spotlight-september-colorado-proud"
         }
       ]
     }

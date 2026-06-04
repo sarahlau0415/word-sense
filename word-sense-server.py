@@ -785,6 +785,12 @@ class Handler(BaseHTTPRequestHandler):
             }, status=400)
             return
         api_key = str(payload.get("apiKey") or "").strip()
+        if not api_key:
+            self.send_json({
+                "error": "搜索内容库里没有的新词需要填写你自己的 API key。",
+                "errorType": "missing-api-key",
+            }, status=401)
+            return
 
         job_id = f"{int(now() * 1000)}-{workflow_mod.safe_word_dir(word).lower()}"
         job = {

@@ -727,10 +727,20 @@ async function startRealReview() {
       return;
     }
     setStage(0);
+    let sessionApiKey = '';
+    try {
+      sessionApiKey = sessionStorage.getItem('wordsense_api_key') || '';
+    } catch(e) {}
+    if (!sessionApiKey.trim()) {
+      failReview('搜索内容库里没有的新词需要填写你自己的 API key。请回到首页，在“API key”里填入本次使用的 key。', 'missing-api-key');
+      return;
+    }
+    const jobPayload = { word: normalizedWord, source, sentence };
+    jobPayload.apiKey = sessionApiKey.trim();
     const response = await fetch(`${apiBase}/api/jobs`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ word: normalizedWord, source, sentence })
+      body: JSON.stringify(jobPayload)
     });
 
     if (!response.ok) {

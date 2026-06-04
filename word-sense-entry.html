@@ -1571,7 +1571,7 @@
         <a href="word-sense-author.html">一封信</a>
         <div class="issue">
           <span>FIELD NOTES ON ENGLISH</span>
-          <span>ISSUE 002</span>
+          <span>ISSUE 003</span>
         </div>
       </div>
     </header>
@@ -1643,24 +1643,22 @@
     let currentShareStyle = "direct";
 
     const cardCatalog = [
-      { word: "resilience", meaning: "恢复力；韧性", trail: "心理 / 恢复", clue: "不是硬扛，是受挫后还能恢复形状。", card: "#c5dcf4", reveal: "#263fc7", revealInk: "#fffefa" },
-      { word: "unfold", meaning: "展开；逐步显露", trail: "新闻 / 叙事", clue: "事情像一张折起的纸慢慢打开。", card: "#f4f1ea", reveal: "#161818", revealInk: "#f7f3e9" },
-      { word: "brace", meaning: "撑住；准备应对", trail: "新闻 / 生活", clue: "冲击还没来，身体已经先紧起来。", card: "#5b8b40", reveal: "#f5b08b", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "surge", meaning: "激增；涌起", trail: "新闻 / 数据", clue: "不是增加，是一股力量突然往上涌。", card: "#ff8875", reveal: "#fff1a6", revealInk: "#171717" },
-      { word: "verify", meaning: "核实；确认", trail: "AI / 证据", clue: "相信之前，先把手伸向证据。", card: "#b9d3ea", reveal: "#356248", revealInk: "#fffefa" },
-      { word: "cringe", meaning: "尴尬到缩起来", trail: "身体 / 社媒", clue: "不是不好看，是你身体先退了一下。", card: "#e0ded9", reveal: "#234b72", revealInk: "#fffefa" },
-      { word: "probe", meaning: "探查；深入调查", trail: "新闻 / 调查", clue: "不是普通调查，是带着针尖往里探。", card: "#f5b08b", reveal: "#285542", revealInk: "#fffefa" },
-      { word: "fallout", meaning: "余波；后果", trail: "新闻 / 政治", clue: "爆炸结束后，落下来的东西才难处理。", card: "#285542", reveal: "#d9d9d7", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "hallucination", meaning: "幻觉；无依据生成", trail: "AI / 错误", clue: "最危险的不是错，而是错得很像对。", card: "#315f87", reveal: "#ff8875", revealInk: "#171717", faceInk: "#fffefa", compact: true },
-      { word: "grounding", meaning: "锚定证据", trail: "AI / 信息", clue: "让漂浮的回答重新接到来源地面。", card: "#32618a", reveal: "#e7dcb9", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "delulu", meaning: "上头式幻想", trail: "社媒 / 自嘲", clue: "知道不现实，还是愿意先相信一会儿。", card: "#ffb498", reveal: "#25353a", revealInk: "#fffefa" },
-      { word: "brain rot", meaning: "碎片内容泡脑", trail: "社媒 / 文化", clue: "一边沉迷，一边嫌弃自己刷太久。", card: "#d7d4cf", reveal: "#2447bd", revealInk: "#fffefa" },
-      { word: "deprecate", meaning: "标记为不推荐", trail: "技术 / 文档", clue: "现在还能用，但官方已经不鼓励继续用。", card: "#486b3b", reveal: "#c8ddf0", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "orchestrate", meaning: "编排；调度", trail: "AI / 系统", clue: "像指挥乐团一样，让多个部分同时进入。", card: "#f2e6c9", reveal: "#c95440", revealInk: "#fffefa" },
-      { word: "inflection point", meaning: "拐点；转折点", trail: "商业 / 趋势", clue: "不是普通变化，是曲线开始换方向。", card: "#c75a48", reveal: "#f1e8d3", revealInk: "#171717", faceInk: "#fffefa", compact: true },
-      { word: "accountability gap", meaning: "责任缺口", trail: "AI / 治理", clue: "结果影响了人，却没人真正接住责任。", card: "#356248", reveal: "#e1dfda", revealInk: "#171717", faceInk: "#fffefa", compact: true },
-      { word: "clanker", meaning: "反 AI 侮辱词", trail: "AI / 俚语", clue: "金属声变成了人类对机器的排斥感。", card: "#c5dcf4", reveal: "#25353a", revealInk: "#fffefa" },
-      { word: "unhinged", meaning: "失控；离谱", trail: "社媒 / 评价", clue: "门铰链松开后，整个状态不再被固定。", card: "#ff8875", reveal: "#315f87", revealInk: "#fffefa" }
+      { word: "pull", meaning: "拉；牵引", trail: "动作 / 关系", clue: "不是把东西往自己这边拽这么简单，是一种看不见的力量在牵动。", card: "#c5dcf4", reveal: "#263fc7", revealInk: "#fffefa" },
+      { word: "punch", meaning: "击打；冲击力", trail: "动作 / 力度", clue: "不只是打一拳，而是某个东西带着短促、集中、直接的冲击。", card: "#ff8875", reveal: "#fff1a6", revealInk: "#171717" },
+      { word: "address", meaning: "处理；面对", trail: "职场 / 问题", clue: "不是知道地址，而是把一个问题正式拿到面前处理。", card: "#5b8b40", reveal: "#f5b08b", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "blast", meaning: "爆发；猛批", trail: "新闻 / 社媒", clue: "像爆炸一样突然放出来：声音、批评、消息、情绪都可以 blast。", card: "#315f87", reveal: "#ff8875", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "head", meaning: "朝向；带头", trail: "身体 / 方向", clue: "head 不只是头，也可以是一个人或事情开始朝某个方向走。", card: "#f4f1ea", reveal: "#161818", revealInk: "#f7f3e9" },
+      { word: "render", meaning: "使成为；呈现", trail: "技术 / 表达", clue: "不是单纯渲染画面，而是把某个东西变成可见、可读、可判断的状态。", card: "#f2e6c9", reveal: "#c95440", revealInk: "#fffefa" },
+      { word: "capacity", meaning: "容量；身份能力", trail: "职场 / 制度", clue: "capacity 常常不是能装多少，而是你以什么身份、能承接多少。", card: "#356248", reveal: "#e1dfda", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "hushpitality", meaning: "安静式接待", trail: "新词 / 旅游", clue: "把 hush 和 hospitality 接在一起：服务变轻，噪音退后。", card: "#d7d4cf", reveal: "#2447bd", revealInk: "#fffefa", compact: true },
+      { word: "Norwegian life-cleaning", meaning: "挪威式生活整理", trail: "文化 / 生活方式", clue: "不是清理整个人生，而是在日常里提前减轻物品和未来负担。", card: "#c75a48", reveal: "#f1e8d3", revealInk: "#171717", faceInk: "#fffefa", compact: true },
+      { word: "at its discretion", meaning: "由其自行裁量", trail: "法律 / 条款", clue: "听起来礼貌，实际是在说决定权不在你手里。", card: "#486b3b", reveal: "#c8ddf0", revealInk: "#171717", faceInk: "#fffefa", compact: true },
+      { word: "navigate", meaning: "导航；周旋", trail: "职场 / 复杂局面", clue: "不是知道路线，而是在复杂环境里一边找路一边避开阻力。", card: "#b9d3ea", reveal: "#356248", revealInk: "#fffefa" },
+      { word: "distill", meaning: "提炼；萃取", trail: "思考 / 写作", clue: "从一堆材料里把最干净、最核心的东西慢慢提出来。", card: "#ffb498", reveal: "#25353a", revealInk: "#fffefa" },
+      { word: "canonical", meaning: "标准；正典", trail: "技术 / 学术", clue: "不是普通正确，而是被承认为那一个标准版本。", card: "#32618a", reveal: "#e7dcb9", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "horizon", meaning: "地平线；视野边界", trail: "趋势 / 想象", clue: "它不是远方本身，而是你目前能看见、能预期到的边界。", card: "#f5b08b", reveal: "#285542", revealInk: "#fffefa" },
+      { word: "cookbook", meaning: "食谱；操作配方集", trail: "技术 / 文档", clue: "在技术语境里，它不是厨房书，而是一套可照着做的解决方案。", card: "#285542", reveal: "#d9d9d7", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "slopper", meaning: "湿乱底色的词", trail: "俚语 / 食物 / AI", clue: "词形先给你一层湿乱感，但真正意思要看它落在哪个场景。", card: "#e0ded9", reveal: "#234b72", revealInk: "#fffefa" }
     ];
 
     const files = {
