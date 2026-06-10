@@ -505,7 +505,7 @@ window.WORD_SENSE_ENTRIES = {
       "法律商务 · B2-C1 · 高阶",
       "Issue 003"
     ],
-    "markdown": "**字面含义** · `at its discretion` 字面上就是“由它自己的 discretion 来决定”。这里的 `its` 通常指公司、平台、机构、委员会这类主体；`discretion` 在这组短语里不是普通的“谨慎”，而是“判断余地、裁量权、可自行决定的空间”。\n\n**本体质感** · `at its discretion` 这组词的核心气质，不是“它想怎么样就怎么样”的随便，而是“把决定权交给它，由它自行判断是否、何时、以什么方式处理”。你会在合同、政策、规则里经常撞见它：一只看不见的手把门开出来，但门钥匙不在你手上。这里的 `discretion` 不是日常里那种“谨慎、分寸感”这一面，而更是“裁量权、自由决定的空间”。所以整组短语的味道很像：制度先把边框画好，剩下的留给机构或公司内部按情况拿捏。它不是任性，而更像一种被规则授予的决定空间。\n\n**寻根溯源** · discretion 来自拉丁语里和“分开、辨别、判断”有关的一支，后来在英语里一边发展出“谨慎、分寸、审慎”的意思，一边也发展出法律和制度语境里的“裁量权”。这两条线其实有关：能 discretion，不只是能乱选，而是被默认有能力、有权限根据具体情况做判断。\n\n所以 `at its discretion` 在现代正式英语里常常不是描述心理品质，而是在写权限边界：规则把一段决定空间留给某个主体。合同、平台条款、公司政策喜欢它，正是因为它可以把“是否做、何时做、怎么做，由我方判断”这件事写得很制度化。\n\n**各路用法** · 这个短语强烈偏正式，最常见于合同、条款、公司政策、政府公告这种地方。它的功能不是聊天，而是给一方留出处理空间，同时把“你不能要求它必须这么做”这件事写进规则里。\n\n**职场,合同里**\n> The company may terminate the agreement at its discretion.\n> 公司可自行决定终止该协议。\n\n这句话的重点不是“公司可能会终止”，而是“是否终止由公司保留判断权，对方不能仅凭自身意愿要求公司必须终止或继续”。\n\n**职场,奖金政策**\n> Bonus payments are granted at the manager’s discretion.\n> 奖金发放由经理酌情决定。\n\n这里有一种很明显的上位感：规则给了一个口子，但奖金是否发放、发多少，通常还是留给管理者在既定规则内裁量。\n\n**平台,使用规则**\n> The platform may suspend or remove content at its discretion.\n> 平台可自行决定暂停或移除内容。\n\n这类说法偶尔也会出现在日常事务语境里，但一说出来就明显偏书面、偏制度化，像是在划一条权利边界，而不是在闲聊。\n\n**原生思维** · 英语母语者看到这个短语，脑子里通常不是“随便”，而是“授权后留白”。也就是说，先承认某个主体有判断空间，再把责任和结果一起交给它。中文里我们会说“酌情”“视情况而定”“由……决定”，但英语里的 `at its discretion` 更像把这份空间法律化、制度化了：不是临场发挥，而是被规则允许的判断余地。Merriam-Webster 对它的抓手很直接：*done if, how, when, etc., someone chooses to do it*，也就是“是否做、怎么做、什么时候做，由那一方来决定”。\n\n**悟道时刻** · 这个短语真正值得记住的，不是“discretion = 谨慎”，而是它常常标记一种权限结构：谁拥有判断权，谁就握着结果的开关。以后你看到 `at X’s discretion`，可以先去找两件事——X 是谁，规则把哪一段决定权交给了 X。很多正式英语表面在说“会不会发生”，底下其实在写“谁有资格决定它发生”。",
+    "markdown": "**本体质感** · `at its discretion` 这组词的核心气质，不是“它想怎么样就怎么样”的随便，而是“把决定权交给它，由它自行判断是否、何时、以什么方式处理”。你会在合同、政策、规则里经常撞见它：一只看不见的手把门开出来，但门钥匙不在你手上。这里的 `discretion` 不是日常里那种“谨慎、分寸感”这一面，而更是“裁量权、自由决定的空间”。所以整组短语的味道很像：制度先把边框画好，剩下的留给机构或公司内部按情况拿捏。它不是任性，而更像一种被规则授予的决定空间。\n\n**各路用法** · 这个短语强烈偏正式，最常见于合同、条款、公司政策、政府公告这种地方。它的功能不是聊天，而是给一方留出处理空间，同时把“你不能要求它必须这么做”这件事写进规则里。\n\n**职场,合同里**\n> The company may terminate the agreement at its discretion.\n> 公司可自行决定终止该协议。\n\n这句话的重点不是“公司可能会终止”，而是“是否终止由公司保留判断权，对方不能仅凭自身意愿要求公司必须终止或继续”。\n\n**职场,奖金政策**\n> Bonus payments are granted at the manager’s discretion.\n> 奖金发放由经理酌情决定。\n\n这里有一种很明显的上位感：规则给了一个口子，但奖金是否发放、发多少，通常还是留给管理者在既定规则内裁量。\n\n**平台,使用规则**\n> The platform may suspend or remove content at its discretion.\n> 平台可自行决定暂停或移除内容。\n\n这类说法偶尔也会出现在日常事务语境里，但一说出来就明显偏书面、偏制度化，像是在划一条权利边界，而不是在闲聊。\n\n**原生思维** · 英语母语者看到这个短语，脑子里通常不是“随便”，而是“授权后留白”。也就是说，先承认某个主体有判断空间，再把责任和结果一起交给它。中文里我们会说“酌情”“视情况而定”“由……决定”，但英语里的 `at its discretion` 更像把这份空间法律化、制度化了：不是临场发挥，而是被规则允许的判断余地。Merriam-Webster 对它的抓手很直接：*done if, how, when, etc., someone chooses to do it*，也就是“是否做、怎么做、什么时候做，由那一方来决定”。\n\n**悟道时刻** · 这个短语真正值得记住的，不是“discretion = 谨慎”，而是它常常标记一种权限结构：谁拥有判断权，谁就握着结果的开关。以后你看到 `at X’s discretion`，可以先去找两件事——X 是谁，规则把哪一段决定权交给了 X。很多正式英语表面在说“会不会发生”，底下其实在写“谁有资格决定它发生”。",
     "verification": {
       "claimCount": 13,
       "confirmedCount": 8,
@@ -984,6 +984,111 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "daemon": {
+    "displayWord": "daemon",
+    "meta": [
+      "Vibe Coding · 后台进程 · B2-C1",
+      "Issue 004"
+    ],
+    "markdown": "**字面含义** · 它最早不是“恶魔”那种纯粹邪恶的东西，而是古希腊里一种常被描述为介于神与人之间、或低于神的超自然存在、带引导性的灵体，像“看不见但在场的东西”。后来到了拉丁和基督教语境里，这个词的阴影越来越重，才慢慢偏向今天很多人第一反应的“魔鬼/邪灵”。所以你现在看到 daemon，脑子里最好先不要只盯着宗教恐怖片那一层。也正因为这样，后来的 `daemon` / `daimon` 这类拼写，有时会被刻意用来和更直接让人想到邪灵的 `demon` 拉开一点距离，保留一点古典、玄学、非纯邪恶的颜色。\n\n**本体质感** · 这个词一落到英语里，最有意思的地方是它的“双重气质”：一边是古老、神秘、带点危险的；一边又常常被现代技术圈借去，变成一种“后台默默干活的服务进程”。它比 `process` 更有一点人格感，比 `background service` 更有一点神秘感；比 `evil spirit` 更技术化，比 `program` 更像“它自己在那儿一直跑”。不过这里得卡准一点：daemon 不等于任何后台运行的程序。在技术语境里，它通常指那种在后台运行、为系统或其他进程提供功能的 service process，也就是中文常说的“守护进程”。所以它像守夜人，不像演员；像一直值班的系统角色，不是随便一个退到后台的任务。\n\n**寻根溯源** · 这个词从古希腊语 *daimōn* 来，原本指的是一种灵性存在、神力或引导性的灵体，不必然是邪恶的。后来在宗教翻译和文化想象里，它被逐步压到“恶”的一侧；到了现代英语主流词典里，`daemon` 也常常会被直接视作 `demon` 的变体或近义写法。再往后，计算机领域把它借了过去，但这不是随手一借。这个技术义一般会追溯到 MIT Project MAC：当时的团队受 Maxwell’s demon 启发，用 `daemon` 来命名那些在后台不知疲倦处理系统杂务的进程。也就是说，今天这个词的技术用法，借的并不只是“神秘感”，而是“有个看不见的东西在后台持续起作用”这层很老的联想，只不过超自然对象换成了程序。\n\n**各路用法** ·\n\n**职场,技术文档里**\n> The daemon runs in the background and handles incoming requests automatically.\n> 这个守护进程在后台运行，会自动处理传入的请求。\n\n这里的 daemon 不是“恶魔”，而是技术里固定下来的后台服务进程。中文常译成“守护进程”，已经把那种“持续看守、持续运作”的感觉译出来了一半。\n\n**运维,改配置之后**\n> We need to restart the daemon after changing the configuration file.\n> 修改配置文件后，我们需要重启这个守护进程。\n\n`start/stop/restart the daemon` 是很常见的技术搭配，说明它被当成一个持续运行、可管理的系统角色来看待。\n\n**系统说明,更准确的技术义**\n> A daemon process provides services to other processes without direct user interaction.\n> 守护进程会在没有用户直接交互的情况下为其他进程提供服务。\n\n这句话能把边界说清：daemon 通常不是任意“放在后台跑”的程序，而是那类给系统或别的进程提供功能的服务进程。\n\n**文学,奇幻语境里**\n> In the story, a daemon follows him like an unseen guide.\n> 在这个故事里，一个灵体像看不见的引路者一样跟着他。\n\n到了非技术语境里，它更多出现在文学、奇幻或刻意古典化的表达里，带一点不可见、却持续施加影响的力量感。\n\n➤ *值得注意的是，在 Unix/Linux 等技术语境里，daemon 通常特指“守护进程”这类后台服务进程；而在文学、宗教或古典化表达里，它才会回到“灵体/邪灵/玄学存在”那一侧。*\n\n**原生思维** · 英语里这个词容易同时点亮两盏灯：一盏灯照着“它在后台默默运行”，另一盏灯照着“它像个有自己意志的东西”。这就是 daemon 真正的味道——不是简单把一个程序说成程序，而是把它说成一种“持续在场但不露脸的存在”。中文里我们当然也能说“守护进程”，但那更偏功能说明；daemon 的英文感觉里，往往还多一层拟人化的阴影，像系统里住着一个不吵不闹、却一直在工作的幽灵。只是在技术语境里，这种幽灵感通常不带“邪恶”意味，更多是一种命名上的形象化。\n\n**悟道时刻** · daemon 最值得抓住的，不是“恶魔”这个表面联想，而是“看不见，却持续起作用的存在”。一旦你认出这层核，你以后再看技术英语里的很多命名，就会更快明白：英语常常不是直接给机制下定义，而是先给它一个角色。凡是那种不露面、常驻、替系统做事的东西，英语就很爱把它说得像一个在场者。学会识别这种“功能被角色化”的瞬间，你就开始真正进入英语的命名脑回路了。",
+    "verification": {
+      "claimCount": 10,
+      "confirmedCount": 5,
+      "softenedCount": 6,
+      "uncertainCount": 2,
+      "rejectedCount": 1,
+      "checked": [
+        "古希腊义是否确实不是“纯邪恶恶魔”",
+        "计算机义是否只是“神秘联想”，还是有明确的术语来源与技术定义"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/daemon"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/daemon"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/daemon"
+        },
+        {
+          "label": "Britannica",
+          "url": "https://www.britannica.com/topic/demon-Greek-religion"
+        },
+        {
+          "label": "Oxford Reference",
+          "url": "https://www.oxfordreference.com/view/10.1093/acref/9780198609810.001.0001/acref-9780198609810-e-1976"
+        },
+        {
+          "label": "man7 Linux manual",
+          "url": "https://www.man7.org/linux/man-pages/man7/daemon.7.html"
+        },
+        {
+          "label": "man7 Linux manual (`daemon(3)`)",
+          "url": "https://www.man7.org/linux/man-pages/man3/daemon.3.html"
+        },
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Daemon_%28computing%29"
+        }
+      ]
+    }
+  },
+  "debounce": {
+    "displayWord": "debounce",
+    "meta": [
+      "Vibe Coding · 交互节奏 · B2-C1",
+      "Issue 004"
+    ],
+    "markdown": "**字面含义** · 这个词建立在机械触点会 bounce 的现象上：按下去之后，触点不是干脆利落地只碰一次，而是会因为机械抖动在极短时间里反复接触、反复弹开。debounce 本来就是把这种抖动压住，让它不要一碰就算、多次乱响的动作。\n\n**本体质感** · 这个词身上有一种“先别急着响应”的工程气质。你能感觉到它不是在追求快，而是在追求稳：先把一连串杂乱、过密、重复的信号挡一下，等局面安静下来，再把它们压成一次真正有效的触发。母语者说 debounce 的时候，脑子里往往不是一个“语义”问题，而是一个“时序控制”问题：别让系统被连续触发拖着跑。它和 throttle 很像，但气质不同；debounce 更像“等尘埃落定再处理”，throttle 更像“限流，按节拍处理”。不过这里也别说得太死：debounce 最常见的是末尾执行一次，但工程上也常见一开始就先触发一次的做法，甚至首尾都支持。\n\n**寻根溯源** · 从构词上看，它可以理解为 de- + bounce，核心就是把“弹跳造成的抖动”去掉。它最典型的早期土壤在电子和机械开关里：按钮按下去，本该是一次输入，但物理接点会在极短时间内抖几下，于是系统如果每次都算，就会误判成多次按键。后来这个词被借到软件和前端里，意思大体没变，只是“抖动”的对象从机械触点换成了用户输入、滚动、搜索请求、窗口尺寸变化。MDN 对它的说法很准：把在某个时间间隔里发生得太近的操作丢弃并合并成一次调用。\n\n**各路用法** · 几个例子，在不同场域里你感受一下它怎么落地：\n\n**职场,前端协作里**\n> We should debounce the search input so we do not fire a request on every keystroke.\n> 我们应该给搜索输入做防抖，这样就不会每敲一个键都发一次请求。\n\n这里的重点不是“延迟”，而是别让一串过密的输入都变成动作。\n\n**日常,跟做产品的朋友聊**\n> My phone keeps lagging, so I added debounce to the scroll handler.\n> 我的手机老是卡，所以我给滚动处理函数加了防抖。\n\n这句话默认听的人知道你在说代码里的事件处理，不是在说普通生活里的“克制一下”。\n\n**技术讨论,改性能的时候**\n> Use a debounced resize handler.\n> 给 resize 处理函数做防抖。\n\n这是很贴工程现场的一种说法，意思通常是窗口尺寸连续变化时，不要每一下都立刻触发重算。\n\n**社媒,技术圈讨论**\n> Debounce is for “wait until the user stops,” while throttle is for “do it at most once every interval.”\n> 防抖是“等用户停下来再做”，而节流是“每隔一段时间最多做一次”。\n\n这种说法很像圈内人给新人做快速分流：先抓住时序上的差别，再谈实现。只是更细一点说，这里讲的是最常见的 trailing-edge 理解；真实工程里也常见 leading-edge，甚至 leading + trailing 一起开。\n\n➤ *值得注意的是，在前端和交互开发里，debounce 基本还是“防抖”这一个固定动作，看到它通常会直接往输入、搜索、滚动、窗口 resize 这些连续触发的场景想。像 Lodash 这类库里的 debounce，还常带 leading、trailing、cancel、flush 这些选项或方法，所以它不只是“简单延迟一下”。*\n\n**原生思维** · 英语母语者用 debounce 的时候，脑子里想的不是“把事情拖慢”，而是“把一串不该被当真的重复触发，压缩成一次真正有效的触发”。中文里我们说“防抖”，其实已经很接近了；但英文这边更像是在强调一种控制策略：很多实现会先等信号稳定后再反应，也有一些会先立刻执行一次，再压住后面的连续触发。它真正关心的是：什么时候才算真的发生了。\n\n**悟道时刻** · debounce 真正迷人的地方，不是“延迟执行”，而是它背后的判断：连续出现，不等于值得连续响应。工程世界先承认噪音存在，再设计规则筛出那一次真正算数的触发。\n\n以后再遇到这类术语，别急着翻中文，先问自己三件事：它在压什么重复，它按什么时序筛选，它最后认哪一次。这个识别方式，比记住“防抖=debounce”更值钱。",
+    "verification": {
+      "claimCount": 13,
+      "confirmedCount": 8,
+      "softenedCount": 4,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "这个词最早是从‘bounce back’那种物理弹跳里长出来的",
+        "按下去之后，触点不是干脆利落地只碰一次，而是会因为机械抖动在极短时间里反复接触、反复…",
+        "debounce 本来就是‘把这种抖动压住，让它不要一碰就算、多次乱响’的动作。",
+        "这个词由 de- + bounce 组成，核心是‘去掉弹跳/反弹的抖动’。",
+        "它最典型的早期土壤在电子和机械开关里。"
+      ],
+      "sources": [
+        {
+          "label": "MDN Web Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/Debounce"
+        },
+        {
+          "label": "MDN Web Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/Throttle"
+        },
+        {
+          "label": "Lodash Documentation",
+          "url": "https://lodash.com/docs/4.17.4#debounce"
+        },
+        {
+          "label": "Analog Devices Glossary",
+          "url": "https://www.analog.com/en/resources/glossary/debounce.html"
+        },
+        {
+          "label": "Wiktionary",
+          "url": "https://en.wiktionary.org/wiki/debounce"
+        },
+        {
+          "label": "Jack Ganssle, *A Guide to Debouncing*",
+          "url": "https://www.ganssle.com/debouncing-pt2.htm"
+        },
+        {
+          "label": "npm package `debounce`",
+          "url": "https://www.npmjs.com/package/debounce"
+        }
+      ]
+    }
+  },
   "delulu": {
     "displayWord": "delulu",
     "meta": [
@@ -1144,6 +1249,48 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "drain": {
+    "displayWord": "drain",
+    "meta": [
+      "Vibe Coding · 队列动作 · B1-B2",
+      "Issue 004"
+    ],
+    "markdown": "**字面含义** · drain 最早就是“把水排出去、放干”。你可以想象洗碗池底下拧开塞子，水旋着往下走；或者雨后地面慢慢失去积水，变得干。这个词的骨架非常具体：有东西在流走、被抽走、被放空。它也很常直接当名词用，指下水道口、排水口、排水管这类东西。比如洗手池里的那个口子，本身就可以叫 a drain。\n\n**本体质感** · 这个词常让人联想到的，不是“空”本身，而是“被一点点抽空”的过程感。它带着一种持续流失的画面：精力被工作一点点榨干，电池被后台程序慢慢吃掉，耐心被一件琐事一层层磨没。它常常不是一下子崩掉，而是像水位持续下降。  \n在情绪和资源上，drain 也常有一种“无形消耗”的味道——不是猛烈撞击，而是长期、安静、难以忽略地耗损。你说 something is draining，重点往往是“它在消耗你”，而不只是“它让你累”。\n\n**寻根溯源** · 这个词确实可以追到古英语，词源线上常会提到 **dreahnian**，意思大致是把液体慢慢抽掉、滤出、逐步去除。也就是说，它的核心动作从很早开始就不是单纯一下子“倒空”，而更接近“让东西一点点离开、流走、被去掉”。后来它从物理排水，很自然地扩展到更抽象的“把能量、资源、精力往外放掉”。所以今天英语里很多看似抽象的用法，依然可以理解成那个老底子的延伸：某种东西正在被一点点抽走。\n\n**各路用法** ·  \n**日常,跟朋友**  \n> That meeting really drained me.  \n> 那个会真的把我耗干了。  \n\n这里不是单纯说“我累”，而是说这件事像在持续抽走我的精力。\n\n**日常,谈关系或状态**  \n> Being around him can be emotionally draining.  \n> 和他待在一起会很耗情绪。  \n\ndraining 比 tired 更像“持续消耗你”，带一点被磨损的感觉。\n\n**日常,打完电话后的状态**  \n> I felt emotionally drained after the call.  \n> 打完那通电话后，我感觉情绪都被耗空了。  \n\n这里的 drained 是结果态：不是“这件事很累人”，而是“我已经被它耗掉了”。\n\n**职场,邮件里**  \n> The process is draining the team of time and energy.  \n> 这个流程正在抽走团队的时间和精力。  \n\n这是很高频的句型：**drain somebody/something of something**，意思就是“从……身上抽走……”。\n\n**宏观,谈资源或财政**  \n> War drained the country of its resources.  \n> 战争耗尽了这个国家的资源。  \n\ndrain 不只用在人身上，也常说组织、国家、账户、系统被持续消耗。\n\n**日常,抱怨通勤**  \n> Commuting is a drain on my time and energy.  \n> 通勤很消耗我的时间和精力。  \n\n这里它变成名词结构 **a drain on ...**，意思是“对……的消耗”或“给……带来负担”。\n\n**情绪,慢慢消退**  \n> My anger slowly drained away.  \n> 我的怒气慢慢消了下去。  \n\n这个说法很关键，因为它把最原始的“液体流走”保留得很清楚，也正好搭起了字面义和抽象义之间的桥。\n\n**生活,家里堵了**  \n> The sink drain is blocked.  \n> 洗手池的下水口堵住了。  \n\n这是最基础也很高频的名词义。drain 不总是在说“耗尽”，它也常常就是那个排水口本身。\n\n**原生思维** · 用 drain 时，英语里常把重点放在“被抽走、在流失”这个动态过程上，而不只是最后那个“已经没了”的结果。中文里我们会说“累”“烦”“消耗大”，这些都对，但 drain 更爱抓那个动作：东西不是静止地坏掉，而是在被慢慢抽空。你一旦抓住这个画面，drain 的很多抽象用法就会同时亮起来——不管是情绪 drain away，还是工作 drain you of energy，本质上都是同一套图像。\n\n**悟道时刻** · drain 的厉害，不在于它能不能翻成“累”或“消耗”，而在于它总在偷偷保留那个画面：有什么东西正从里面往外走。以后看到 drain、draining、drained，先别急着判断程度，先问一句：这里被抽走的到底是什么？一旦看见那个“流失中的东西”，这个词就不再散，而会一下子成串。",
+    "verification": {
+      "claimCount": 10,
+      "confirmedCount": 6,
+      "softenedCount": 4,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "词源是否确实可追到古英语",
+        "抽象义“耗尽、使疲惫”是否为词典正式义项而非作者自行引申",
+        "初稿例句所依赖的语义方向是否成立"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/drain"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/drain"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/draining"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/drain_1"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/drain"
+        }
+      ]
+    }
+  },
   "exchange": {
     "displayWord": "exchange",
     "meta": [
@@ -1200,6 +1347,62 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "fallback": {
+    "displayWord": "fallback",
+    "meta": [
+      "Vibe Coding · 失败路径 · B1-B2",
+      "Issue 004"
+    ],
+    "markdown": "**字面含义** · 这个词源上来自 *fall back*，核心就是“后撤、退回”。如果顺着这条线去看，fallback 给人的底层画面，不是“再找一个新的”，而是主路走不通时，先退一步，回到一个还能继续运转、还能依靠的位置。原来那种“往后掉一层”的感觉，可以当成一种形象化理解，但更稳妥的说法还是：它和“退回去”这条语义链紧紧连着。词源上也确实能看到这条线：*fall back* 的“撤退”义很早就有，而名词 *fallback* 表示“后备、退路”的用法，19 世纪中叶已经出现。\n\n**本体质感** · fallback 的质感，至少在今天的常见语境里，确实偏实用、偏保底。它不像在炫耀“我还有别的高招”，更像是在承认：主方案未必稳，所以最好留一个能接上的后手。这个后手有时是提前准备好的，有时只是临场的保底选择，但共同点都是——前面那条路一旦失效，这里还能撑住。很多语境里，可以粗略分成这样：backup 更像“存着的替代品”，alternative 更像“另一种选择”，contingency 更像“为意外预设的应对方案”，而 fallback 更强调“当前路径失灵后，可以退回去依靠的那一项”。它也不只单独当名词用，很多时候会直接放在前面作定语：*fallback plan*、*fallback option*、*fallback position*，所以你读到它时，往往看到的就是“保底方案”“退路位置”“后手立场”这种结构。\n\n**寻根溯源** · 这个词好懂，恰恰因为它的来路并不绕。先有动词短语 *fall back*，意思是“后撤、退回”；后来才有名词 *fallback*，表示“可退守的东西”“后备依靠”。所以它不是从“聪明替代”长出来的，而是从“撤回到还能守住的地方”长出来的。也正因为这层来历，fallback 天然带一点位置感：你不是平移到另一个 equally good 的新选项，而是退到一个仍可用、仍能兜底的位置上。这个“退守”感，解释了为什么它在策略、谈判、系统设计里都这么顺手。\n\n**各路用法** · 几个例子，感受它在不同场域里的位置：\n\n**职场, 邮件里**\n> If the client pushes back on the timeline, we have a fallback option ready.\n> 如果客户对时间表提出异议，我们已经准备好了一个保底方案。\n\n这里的重点不是“还有别的点子”，而是“主方案可能被卡住，所以有一个能立刻接上的后手”。\n\n**谈判, 会议室里**\n> We can't open with our fallback position.\n> 我们不能一开始就亮出我们的退让底线。\n\n这里的 *fallback position* 不只是泛泛的“备选方案”，更常是谈判里的保底立场：再退，也大致退到这里。\n\n**日常, 跟朋友**\n> If dinner plans fall through, pizza is my fallback.\n> 如果晚饭计划黄了，披萨就是我的保底选择。\n\n这不是一个精致的备用剧本，更像“万一前面的安排不成，至少还有这个”。\n\n**技术, 开发讨论**\n> The app uses a fallback when the primary server fails.\n> 主服务器故障时，这个应用会启用一个替代方案。\n\n这里的 fallback 是主资源失效后的替代路径或降级方案。它有时可能是自动触发的，但不要直接把它等同于“自动回退”那个专门意思；在更严格的基础设施语境里，自动切换到备用实例更常叫 *failover*，切回原位则常叫 *failback*。\n\n**前端, 字体与页面**\n> We added a fallback font and an offline fallback page.\n> 我们加了备用字体，也加了离线时显示的保底页面。\n\n这就是技术语境里很典型的用法：不是追求完美替代，而是保证主资源失灵时，系统别直接塌掉。\n\n**原生思维** · 更自然的理解，不是“我还有第二个选项”，而是“如果前面那条路断了，我退到哪里还能继续”。所以 fallback 往往带一点层级感：主路先走着，但后面已经留好了可退的层。中文常把它统翻成“备用”“后备”“替代”，这些都没错，只是还差一点动作感。英语里的 fallback 更像是在看一套东西如何收住、如何兜底、如何避免彻底停摆。也因此，它特别适合那些不能只靠乐观推进的场景：谈判要有底线，计划要有后手，系统要有降级路径。\n\n**悟道时刻** · fallback 真正有力量的地方，不在“备选”，而在“退守”。它提醒你的不是世界上还有很多可能，而是主路径一旦失效，你能不能立刻落到一个仍可运行的位置。\n\n以后再见到这类词，别只问“它是不是替代品”，要问“它是在加一个选项，还是在留一个退路”。能分清这一点，你对很多英语词的判断都会一下子变准。",
+    "verification": {
+      "claimCount": 16,
+      "confirmedCount": 6,
+      "softenedCount": 5,
+      "uncertainCount": 2,
+      "rejectedCount": 1,
+      "checked": [
+        "Merriam-Webster",
+        "Cambridge Dictionary",
+        "Oxford Learner’s Dictionaries",
+        "Etymonline",
+        "OED 检索摘要"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fallback"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/fallback"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/fallback"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/fallback"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/fallback_adj"
+        },
+        {
+          "label": "MDN Web Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-family"
+        },
+        {
+          "label": "MDN Web Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/font-display"
+        },
+        {
+          "label": "web.dev",
+          "url": "https://web.dev/articles/offline-fallback-page"
+        }
+      ]
+    }
+  },
   "fallout": {
     "displayWord": "fallout",
     "meta": [
@@ -1250,6 +1453,110 @@ window.WORD_SENSE_ENTRIES = {
         {
           "label": "Dictionary.com",
           "url": "https://www.dictionary.com/browse/fallout"
+        }
+      ]
+    }
+  },
+  "flush": {
+    "displayWord": "flush",
+    "meta": [
+      "Vibe Coding · 缓冲动作 · B1-B2",
+      "Issue 004"
+    ],
+    "markdown": "**字面含义** · flush 最容易抓住的画面，仍然是某种东西一下子冲起来、涌过去，或者一下子显到表面上。它可以是水冲过管道、液体快速带走东西，也可以是脸一下子红起来、热意往上涌。一个有帮助的抓法是：它常常不是慢慢铺开，而是某种变化突然到位，表面立刻有了反应。\n\n**本体质感** · 这个词有力的地方，未必只是“流动”，而是那种迅速贴到表面、把表面状态改掉的感觉。你可以把它理解成几种看上去很散、其实彼此相通的动作感：冲净、涌上来、涨满、贴平。它既能是很干净的“齐平”，也能是很生理的“脸红”“潮红”，还有很动作性的“冲掉”“冲洗”。像 flush with cash，说的不只是“有钱”，而是手头宽裕到一种明显充盈的状态；而说 someone was flushed with pride / success，则更像是情绪和血色一起涌到脸上，带出兴奋、发热、满面光彩的感觉。两者相关，但不是同一个固定模板。\n\n**寻根溯源** · flush 的词源关系其实比较复杂，不能简单地一口气归成某条单一的古法语或拉丁语来源。词源资料甚至会直接提醒，这个词本身有点“难缠”。大致来看，英语里较早的 flush 更接近“突然窜动、疾飞、惊起”这一类动作感，后来才逐步发展出水流喷涌、脸发红、情绪上脸、表面齐平、用液体冲洗等分支。所以它今天这些义项，不像是从一个特别整齐的定义里长出来，更像是围着几根老骨架分化：突然运动、一下子显到表面、以及把东西推平或冲开。\n\n**各路用法** ·\n\n**日常,跟朋友**\n> My face flushed when I heard my name on the stage.\n> 听到台上叫我的名字时，我的脸一下子红了。\n\n这里的 flush 不是单纯“变红”这个结果，而是那股热和血突然往脸上冲的过程。\n\n**日常,家里/生活**\n> Please flush the toilet before you leave.\n> 你走之前请把马桶冲一下。\n\n这是最具体、最日常的用法：用水把东西往下冲走。\n\n**日常,急救/护理**\n> Flush the wound with clean water.\n> 用清水冲洗伤口。\n\n这里能看出 flush 不只和马桶有关，它也可以指让液体快速流过某个地方，把污物、刺激物或残留物带走。\n\n**日常,形容财务状态**\n> She was flush with cash after selling her apartment.\n> 她卖掉公寓后手头一下子很宽裕。\n\n这里不是单纯“有钱”，而是手头资金很充裕。这个说法更常用在 cash、funds 这一类资源语境里，也带一点口语感。\n\n**日常,情绪上脸**\n> He stood there, flushed with pride.\n> 他站在那里，满脸都是自豪带来的红光。\n\n这里更自然的搭配是 flushed with pride，不是“有很多 pride”，而是情绪直接上脸，整个人都发热、发亮了。\n\n**职场,邮件/会议**\n> Let’s make the new panel flush with the wall.\n> 我们让新的面板和墙面齐平吧。\n\n这里的 flush 是“表面平齐”，很工程、很空间感，强调没有凸起、没有缝隙。\n\n**产品,设计讨论**\n> The design feels clean because every button sits flush.\n> 这个设计之所以显得干净，是因为每个按钮都嵌得很齐平。\n\n这种说法不只出现在社媒里，在产品、装修、工业设计和 UI 讨论里都很常见，夸的是那种平、顺、没有多余起伏的质感。\n\n**职场,审计/排查**\n> The audit flushed out several reporting errors.\n> 这次审计查出了几处报告错误。\n\nflush out 是很值得记的一支：把藏着的东西逼出来、查出来、赶出来。它和前面那些义项放在一起看，还是同一个感觉——原本藏着的东西，被一下子逼到明面上。\n\n**技术,日志或缓存里**\n> The logger flushes its buffer before the process exits.\n> 进程退出前，日志器会把缓冲区里的内容 flush 出去，也就是刷写出来。\n\n这里的 `flush` 常译成“刷新、刷写、冲刷缓冲区”。它不是 UI 上的“刷新页面”，而是把暂时攒在 buffer 里的东西一次性推到真正的目的地，比如文件、终端、网络或磁盘。\n\n**原生思维** · 英语里这些 flush，并不一定要硬背成彼此无关的几个词义。一个更顺手的理解方式是：看它是不是在说某种东西突然显到表面，或者被液体、边缘、力量处理到一个很明显的状态。脸红，是热和血冲上来；冲厕所或冲洗伤口，是液体快速带走东西；齐平，是边缘被推到同一平面；flush with cash，是资源处在一种明显充盈的状态；flush out，则是把原本躲着的问题逼出来。中文里我们往往会分别说“红了”“冲掉了”“齐平”“宽裕”“查出来了”，英语这里更愿意让这些场景共用一种动态画面。\n\n**悟道时刻** · flush 的妙，不在它有多少义项，而在它总把变化写成“表面突然有反应”。要么是水冲过，要么是血色涌上来，要么是边缘贴平，要么是藏着的东西被逼出来。\n\n以后再遇到这种词，别急着逐条背定义。先看它是不是在说：某种东西突然显形了、满出来了，或者被处理到贴面、到位。抓住这个骨架，flush 就不会散。",
+    "verification": {
+      "claimCount": 14,
+      "confirmedCount": 5,
+      "softenedCount": 4,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "flush 的最老、最具体的画面，是‘突然冲起来、流过去、涨满一片’。",
+        "它可以是水冲水管、潮水涌上来，也可以是脸一下子红起来、热意往上涌。",
+        "这个词里总有一种‘不是慢慢铺开，而是一下子到位’的感觉。",
+        "母语者说 flush，脑子里常常不是一个静止物件，而是一个表面被迅速覆盖、填平、冲净…",
+        "它既能是很干净的‘齐平’，也能是很生理的‘脸红’‘潮红’，还有很动作性的‘冲掉’‘冲…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/flush"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/flush"
+        },
+        {
+          "label": "Cambridge Dictionary (`flush with something`)",
+          "url": "https://dictionary.cambridge.org/dictionary/english/flush-with"
+        },
+        {
+          "label": "Cambridge Dictionary (`flush out`)",
+          "url": "https://dictionary.cambridge.org/dictionary/english/flush-out"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries (`flushed`)",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/flushed"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/flush"
+        },
+        {
+          "label": "Britannica Dictionary (`flush`)",
+          "url": "https://www.britannica.com/dictionary/flush"
+        },
+        {
+          "label": "Node.js Streams Documentation",
+          "url": "https://nodejs.org/api/stream.html"
+        }
+      ]
+    }
+  },
+  "fork": {
+    "displayWord": "fork",
+    "meta": [
+      "Vibe Coding · 分叉隐喻 · B1-B2",
+      "Issue 004"
+    ],
+    "markdown": "**字面含义** · fork 最原始的画面，是一件“分叉”的东西：一根柄，前端伸出两三根尖齿，像小树枝一样岔开。现代人最熟的具体义之一当然是餐具里的叉子，但它也可以指树杈、路口、河道这种“从一条线分成两条”的形状。这个词里最核心的不是“插”，而是“分开成两个或多个方向”。\n\n**本体质感** · 这个词在英语里很有“岔口感”。一说 fork，人脑子里常会冒出一种“这里开始分流了”的画面：路走到一半，突然一分为二；河道到了某处，开始分出支流；代码走到某个节点，开始出现另一条独立路线。它本身带着一种轻微的结构感，不是情绪词，也不是抽象大词，而是把“分叉”这件事非常干净地摆出来。  \n在不同语境里，它的质地也会变：餐具里的 fork 很日常、很具体；a fork in the road 常会让人联想到选择和转向；road forks / river forks 更像客观发生的结构变化；在技术语境里，fork 往往带着一种“从原项目另开一路”的冷静感。甚至像 bicycle fork 这样的说法，也还是那个老图式：一个部件向前伸出两支，夹住轮子。这个词的底层图式，始终是“原本连着的东西，开始岔开”。\n\n**寻根溯源** · fork 的词源很早，追上去能到古英语里表示“叉状工具、干草叉、叉状武器”的词，而不是一开始就专指餐桌上的叉子。餐桌叉这个义项在英语文献里大约到 1430 年才出现，之后才慢慢成为现代最常见的具体义之一。再往后，fork 又在不同方向上长出稳定用法：河流的分汊大约见于 1753 年，道路的岔口大约见于 1839 年。也就是说，它不是先做成一个“吃饭的词”，再勉强借去别处，而是一直围着“叉状、分叉、岔开”这个核心图像在发展。也因为这个核心够稳，今天它的许多引申义看起来很散，骨架却没怎么变。\n\n**各路用法** ·\n\n**日常,聊路线**\n> Take the left fork after the bridge.\n> 过了桥以后走左边那条岔路。\n\n这里的 fork 很具体，就是路分成两边后的那个岔口或岔路。\n\n**出行,看前方路况**\n> The road forks just after the bridge.\n> 这条路一过桥就分叉了。\n\n这里 fork 是动词，不是“有一个岔路”，而是“这条路本身分成两条”。\n\n**技术,GitHub 语境**\n> The team forked the repository and built their own version.\n> 这个团队 fork 了这个仓库，然后做了自己的版本。\n\n这里的 fork 是很实在的技术动作：基于原仓库创建一个新的仓库，再按自己的方向修改。它和 branch 不完全一样；branch 通常还是同一仓库里的分支，fork 则往往已经另开了一个仓库。\n\n**口语,抱怨花钱**\n> We had to fork out $500 for repairs.\n> 我们只好掏出 500 美元修东西。\n\n这一支就很值得单独记。fork out / fork over 不是“分叉”，而是很口语地说“掏钱，尤其是有点不情愿地掏”。\n\n**日常,聊自行车**\n> The front fork was bent in the crash.\n> 前叉在这次撞击里撞弯了。\n\n这里的 fork 指自行车前叉。你会发现它虽然离餐具和路口都很远，但形状上还是那个“叉开的支架”。\n\n**原生思维** · 英语里用 fork 的时候，抓到的往往不是“有两个东西”这个结果，而是“一个东西从这里开始不再是一条线”这个瞬间。所以它特别适合拿来讲岔路、支流、结构分支，也自然能延伸到代码、版本和流程。  \n但这个词也提醒人一件事：英语里的词并不总是只沿一条线演化。像 fork 这样的词，大部分常见义项都还认得出“分叉”图像，可一旦进入固定短语，比如 fork out / fork over，就已经不能只靠字面去猜了。学这种词，最有效的方式不是背一个中文总义，而是先抓住骨架，再留意哪些搭配已经长成了自己的意思。\n\n**悟道时刻** · fork 真正好用的地方，不是它能翻成“叉子”或“分叉”，而是它总在提醒你：英语很多词先抓一个空间结构，再把它搬去路、河、器物、代码，最后甚至搬去行为。你以后遇到这类词，先别急着问“它对应哪个中文词”，先问：它原来让什么东西在眼前岔开了？这个问题一抓准，词义会自己排队站好。",
+    "verification": {
+      "claimCount": 14,
+      "confirmedCount": 6,
+      "softenedCount": 5,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "fork 最原始的画面，是一件‘分叉’的东西：一根柄，前端伸出两三根尖齿，像小树枝一…",
+        "它先是餐具里的叉子，也可以是树枝、路口、河道这种‘从一条线分成两条’的形状。",
+        "这个词里最核心的不是‘插’，而是‘分开成两个或多个方向’。",
+        "a fork in the road 带一点人生岔路的意味。",
+        "to fork into two paths 就更像过程里的结构变化。"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fork"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/fork"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/fork_1"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/fork"
+        },
+        {
+          "label": "GitHub Docs — Fork a repository",
+          "url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo"
+        },
+        {
+          "label": "GitHub Docs — About forks",
+          "url": "https://docs.github.com/articles/about-forks"
         }
       ]
     }
@@ -1372,7 +1679,7 @@ window.WORD_SENSE_ENTRIES = {
       "方向动作 · A2-B1 · 入门",
       "Issue 003"
     ],
-    "markdown": "**字面含义** · 最先浮出来的是“头”：人或动物身体最上面的那个部分，装着脸、眼睛、耳朵，也常常带出“顶端”“前端”的空间感觉。英语里这层非常具体的画面，会一路长出很多用法：一个队伍的 head 是站在最前面的，一个组织的 head 是“头儿”，在语言学里，短语也有 head——就是那个带着结构主导权的核心词。\n\n**本体质感** · 这个词从词源和常见义项看，很容易延展出一种“前端、领头、主导”的感觉。它不只是“脑袋”，还常常带着“站在前面”“决定走向”的姿态：人群里那个先动的人、桌子这一头、组织里做决定的人，都会往 head 靠。  \n它也很容易和“顶部 / 前端 / 主导位”连在一起，所以你会看到很多结构都在借它：the head of the line, the head of the table, the head of department。更有意思的是，这条线在词源里就埋着：Old English 的 heafod 除了“头部”，也可指“chief person, leader, ruler”。所以 head 不是后来偶然“借用”成负责人，它本来就和“上位者、领头者”这层感觉挨得很近。\n\n**寻根溯源** · head 来自古英语 heafod，最基本是身体的“头”。但这条词源从早期就不只停在器官上，也能指首领、统治者、上位的人。这个来路很能照亮现代用法：英语不是先有一个孤立的“头”，再生硬地借去说负责人；它一直都容易把身体最上方、最前方的部分，推到结构里的“主导位置”。\n\n也因此，head 可以一路走向 the head of the table、the head of the line、head of department，甚至语言学里的 head。它们共享的不是同一个中文词，而是同一种空间逻辑：前端、上端、核心、主导。\n\n还有一条很容易被中文学习者忽略的线：head 可以从“头”变成“一个人/一个动物的计数单位”。这不是现代互联网里的“人头”梗，而是更老、更朴素的计数方式：数人或牲畜时，一个 head 就是一个个体。今天的 headcount / head count、per head、a head of cattle 都还保留着这个影子。\n\n**各路用法** · 几个最常见的场景里，你会看到它怎么从“头”长出去：\n\n**日常,身体部位**\n> I hit my head on the low shelf.\n> 我的头撞到了那个矮架子上。\n\n这是最直接的物理意义，画面感很强。\n\n**日常,人群/位置**\n> She stood at the head of the queue and asked a question.\n> 她站在队伍最前面，问了一个问题。\n\n这里的 head 已经不是“头部”本身，而是“最前面的位置”。\n\n**日常,方向动作**\n> I’m heading to the station now.\n> 我现在正往车站去。\n\n这是 head 作为动词的高频用法：不是“用头做什么”，而是“朝某个方向走/去”。head to、head for、head back、head home 都很常见，底层还是“前端带着身体往某处走”。\n\n**职场,组织角色**\n> She is the head of the marketing department.\n> 她是市场部负责人。\n\n这里的 head 不是“头”这个器官，而是“带头的人”“负责人”。\n\n**日常,脑中循环**\n> This song has been stuck in my head all day.\n> 这首歌一整天都在我脑子里循环。\n\n这里的 head 变成了一个很英语的心理空间：旋律一旦“进了脑袋”，就会在里面转个不停。中文也能懂，但英语把这种状态说得尤其自然。\n\n**职场,人数统计**\n> We need an accurate head count before booking the venue.\n> 预订场地前，我们需要准确统计人数。\n\n这里的 head 不是“头部”，而是“一个人”这个计数单位。headcount / head count 在公司里也常指员工人数、编制人数；语气比“数人头”更正式、更行政。\n\n**原生思维** · 英语里很多时候用到 head，已经不只是在说器官，而是在激活“前端、上位、主导”这一层联想。所以它特别容易往位置、角色、结构这些方向扩展。中文里我们会用“头”“带头”“负责人”分别说不同面，但英语常常更顺手地用同一个词，把这些面连起来。你看到 head，往往可以先问：这里是在说“前面那个”“管事那个”“一个被统计的个体”，还是“那个起结构主导作用的核心”？\n\n**悟道时刻** · 这个词最值钱的地方，不在于它有多少义项，而在于你会开始看见英语一种很常见的生长方式：从身体位置，长到结构位置，再长到权力位置。head 只是一个入口。\n\n以后再遇到这类词，你可以先别急着背义项，先看它在句子里是不是站在“前、上、主导”的位置。很多时候，位置一看懂，意思就自己亮了。",
+    "markdown": "**字面含义** · 最先浮出来的是“头”：人或动物身体最上面的那个部分，装着脸、眼睛、耳朵，也常常带出“顶端”“前端”的空间感觉。英语里这层非常具体的画面，会一路长出很多用法：一个队伍的 head 是站在最前面的，一个组织的 head 是“头儿”，在语言学里，短语也有 head——就是那个带着结构主导权的核心词。\n\n**本体质感** · 这个词从词源和常见义项看，很容易延展出一种“前端、领头、主导”的感觉。它不只是“脑袋”，还常常带着“站在前面”“决定走向”的姿态：人群里那个先动的人、桌子这一头、组织里做决定的人，都会往 head 靠。  \n它也很容易和“顶部 / 前端 / 主导位”连在一起，所以你会看到很多结构都在借它：the head of the line, the head of the table, the head of department。更有意思的是，这条线在词源里就埋着：Old English 的 heafod 除了“头部”，也可指“chief person, leader, ruler”。所以 head 不是后来偶然“借用”成负责人，它本来就和“上位者、领头者”这层感觉挨得很近。\n\n**各路用法** · 几个最常见的场景里，你会看到它怎么从“头”长出去：\n\n**日常,身体部位**\n> I hit my head on the low shelf.\n> 我的头撞到了那个矮架子上。\n\n这是最直接的物理意义，画面感很强。\n\n**日常,人群/位置**\n> She stood at the head of the queue and asked a question.\n> 她站在队伍最前面，问了一个问题。\n\n这里的 head 已经不是“头部”本身，而是“最前面的位置”。\n\n**职场,组织角色**\n> She is the head of the marketing department.\n> 她是市场部负责人。\n\n这里的 head 不是“头”这个器官，而是“带头的人”“负责人”。\n\n**日常,脑中循环**\n> This song has been stuck in my head all day.\n> 这首歌一整天都在我脑子里循环。\n\n这里的 head 变成了一个很英语的心理空间：旋律一旦“进了脑袋”，就会在里面转个不停。中文也能懂，但英语把这种状态说得尤其自然。\n\n**原生思维** · 英语里很多时候用到 head，已经不只是在说器官，而是在激活“前端、上位、主导”这一层联想。所以它特别容易往位置、角色、结构这些方向扩展。中文里我们会用“头”“带头”“负责人”分别说不同面，但英语常常更顺手地用同一个词，把这些面连起来。你看到 head，往往可以先问：这里是在说“前面那个”“管事那个”，还是“那个起结构主导作用的核心”？\n\n**悟道时刻** · 这个词最值钱的地方，不在于它有多少义项，而在于你会开始看见英语一种很常见的生长方式：从身体位置，长到结构位置，再长到权力位置。head 只是一个入口。\n\n以后再遇到这类词，你可以先别急着背义项，先看它在句子里是不是站在“前、上、主导”的位置。很多时候，位置一看懂，意思就自己亮了。",
     "verification": {
       "claimCount": 11,
       "confirmedCount": 8,
@@ -1424,7 +1731,7 @@ window.WORD_SENSE_ENTRIES = {
       "趋势想象 · B1-B2 · 进阶",
       "Issue 003"
     ],
-    "markdown": "**字面含义** · 它最原始的画面，是你站在地面上往远处看，天空和大地在视线尽头“接上”的那一条线。不是一条真实画出来的线，而是眼睛能碰到的最远边界。这个词后来能长出“前景、范围、界线”这些意思，也可以理解为都是从“可见边界”这个核心意象慢慢引申出来的。\n\n**本体质感** · horizon 这个词很有“远”和“开”的气味。它不是那种贴在手边、捏得住的词，而是把人往外推：你抬头，视线被拉长，心也跟着松开一点。它常常带一点“尚未到达，但已经可以看见”的感觉，所以英语里更常说 broaden your horizons 或 widen your horizons，重点不是单纯“增加知识”，而是把你从一个窄小、熟悉、封闭的视野里带出去，让你开始看到更远的可能。  \n它的语感里没有压迫感，更多是空间感、可能性、边界感。你会感觉它像一条线：线这边是你现在站的位置，线那边是你还没去过的地方。  \n如果放在常见搭配里，near the horizon 在字面场景里通常就是“靠近地平线的位置”，而 on the horizon 则常常是“已经冒头、快要出现”。后者保留了它那种“远处正在形成轮廓”的质地，也往往带一点更形象、更含蓄的逼近感。\n\n**寻根溯源** · horizon 来自希腊语 horizon，背后有“划定边界、分开、限定”的意思。这个来路很关键：horizon 不是随便一条风景线，而是“视线到这里为止”的那条界线。它一开始就和 bound、limit、divide、separate 这一组感觉挨得很近。\n\n所以它后来能说经验范围、认知边界、未来前景，并不奇怪。人站在某处，能看见多远，世界就暂时到哪里；当 experience broadens your horizons，不只是知识变多，而是那条“我能理解什么、想象什么”的边界被往外推了一点。\n\n**各路用法** · 几个例子，感受一下它怎么在不同场景里把“远处”“前景”“边界”这几层气味带出来：\n\n**日常,跟朋友看风景**\n> The sun is just above the horizon.\n> 太阳刚刚在地平线上方。\n\n这里就是最直白的画面：你看到的不是“太阳”本身，而是太阳和地平线之间那点关系。\n\n**日常,聊人生规划**\n> Travel can really widen your horizons.\n> 旅行真的能拓宽你的视野。\n\n这句里，horizons 已经不再是地理上的那条线，而是“你能想到、能理解、能容纳的世界边界”。\n\n**职场,会议里谈前景**\n> There are no major changes on the horizon yet.\n> 目前还看不出有什么重大变化要发生。\n\non the horizon 很常见，意思是“已经隐约出现，快要来了”，语气往往比直接说 “will happen soon” 更形象，也更含蓄一点。\n\n**日常,谈未来选择**\n> She is looking beyond the horizon for her next move.\n> 她在为下一步寻找地平线之外的可能。\n\n这里的 beyond the horizon 不是说物理上的远方，而是在说“超出眼下能清楚看见的范围”。这更像是一种解释性写法，不必把它当成特别固定的高频短语来记。\n\n**原生思维** · 英语母语者用 horizon 的时候，脑子里常常不是在做“翻译成视野”这种事，而是在拿“看得见的边界”来想“人能想到的边界”。也就是说，这个词天生带着一种空间隐喻：你站在这里，能看到多远，就决定了你目前理解世界的半径。  \n它的词源也很能说明这件事。horizon 来自希腊语 horizon，原本就有“划定边界”的意思，背后连着的是 bound、limit、divide、separate 这一组感觉。所以它后来既能指“认知或经验的范围”，也能指“有可能抵达的前景”，并不奇怪。  \n所以它常见于谈经验、见识、未来可能性的语境。英语里说 broaden your horizons，真正动的不是“知识量”这个中文里很容易想到的概念，而是“把一个人的世界半径往外推”。这就是它的手感。\n\n**悟道时刻** · horizon 真正值得抓住的，不是“地平线”这张风景图，而是“可见边界”这个底层结构。英语很喜欢拿空间的边界，去说认知的边界、人生的前景。\n\n以后你再见到 on the horizon、broaden your horizons、beyond the horizon，别急着逐字翻。先问一句：这里说的，是眼睛看到的尽头，还是一个人当下理解世界的尽头？这一下看出来，词就活了。",
+    "markdown": "**字面含义** · 它最原始的画面，是你站在地面上往远处看，天空和大地在视线尽头“接上”的那一条线。不是一条真实画出来的线，而是眼睛能碰到的最远边界。这个词后来能长出“前景、范围、界线”这些意思，也可以理解为都是从“可见边界”这个核心意象慢慢引申出来的。\n\n**本体质感** · horizon 这个词很有“远”和“开”的气味。它不是那种贴在手边、捏得住的词，而是把人往外推：你抬头，视线被拉长，心也跟着松开一点。它常常带一点“尚未到达，但已经可以看见”的感觉，所以英语里更常说 broaden your horizons 或 widen your horizons，重点不是单纯“增加知识”，而是把你从一个窄小、熟悉、封闭的视野里带出去，让你开始看到更远的可能。  \n它的语感里没有压迫感，更多是空间感、可能性、边界感。你会感觉它像一条线：线这边是你现在站的位置，线那边是你还没去过的地方。  \n如果放在常见搭配里，near the horizon 在字面场景里通常就是“靠近地平线的位置”，而 on the horizon 则常常是“已经冒头、快要出现”。后者保留了它那种“远处正在形成轮廓”的质地，也往往带一点更形象、更含蓄的逼近感。\n\n**各路用法** · 几个例子，感受一下它怎么在不同场景里把“远处”“前景”“边界”这几层气味带出来：\n\n**日常,跟朋友看风景**\n> The sun is just above the horizon.\n> 太阳刚刚在地平线上方。\n\n这里就是最直白的画面：你看到的不是“太阳”本身，而是太阳和地平线之间那点关系。\n\n**日常,聊人生规划**\n> Travel can really widen your horizons.\n> 旅行真的能拓宽你的视野。\n\n这句里，horizons 已经不再是地理上的那条线，而是“你能想到、能理解、能容纳的世界边界”。\n\n**职场,会议里谈前景**\n> There are no major changes on the horizon yet.\n> 目前还看不出有什么重大变化要发生。\n\non the horizon 很常见，意思是“已经隐约出现，快要来了”，语气往往比直接说 “will happen soon” 更形象，也更含蓄一点。\n\n**日常,谈未来选择**\n> She is looking beyond the horizon for her next move.\n> 她在为下一步寻找地平线之外的可能。\n\n这里的 beyond the horizon 不是说物理上的远方，而是在说“超出眼下能清楚看见的范围”。这更像是一种解释性写法，不必把它当成特别固定的高频短语来记。\n\n**原生思维** · 英语母语者用 horizon 的时候，脑子里常常不是在做“翻译成视野”这种事，而是在拿“看得见的边界”来想“人能想到的边界”。也就是说，这个词天生带着一种空间隐喻：你站在这里，能看到多远，就决定了你目前理解世界的半径。  \n它的词源也很能说明这件事。horizon 来自希腊语 horizon，原本就有“划定边界”的意思，背后连着的是 bound、limit、divide、separate 这一组感觉。所以它后来既能指“认知或经验的范围”，也能指“有可能抵达的前景”，并不奇怪。  \n所以它常见于谈经验、见识、未来可能性的语境。英语里说 broaden your horizons，真正动的不是“知识量”这个中文里很容易想到的概念，而是“把一个人的世界半径往外推”。这就是它的手感。\n\n**悟道时刻** · horizon 真正值得抓住的，不是“地平线”这张风景图，而是“可见边界”这个底层结构。英语很喜欢拿空间的边界，去说认知的边界、人生的前景。\n\n以后你再见到 on the horizon、broaden your horizons、beyond the horizon，别急着逐字翻。先问一句：这里说的，是眼睛看到的尽头，还是一个人当下理解世界的尽头？这一下看出来，词就活了。",
     "verification": {
       "claimCount": 12,
       "confirmedCount": 6,
@@ -1530,6 +1837,62 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "hydrate": {
+    "displayWord": "hydrate",
+    "meta": [
+      "Vibe Coding · 前端隐喻 · B2-C1",
+      "Issue 004"
+    ],
+    "markdown": "**字面含义** · 这个词最直白的画面，确实是“给东西加水 / 让它含水”。它来自 Greek 里表示“水”的根。更准确地说，`hydrate` 先是一个科学词：名词里可以指化学上的“含水化合物”，动词里则有“使与水化合、使水合”的意思；后来才一路扩展到医学、健康和日常英语里。到了现代高频用法里，你最常见到的，主要是三层：化学里的水合，身体层面的补液，以及皮肤语境里的补水。至于它为什么总让人觉得不只是“喝水”那么平，那是因为在很多实际语境里，它常常顺带指向一种状态上的回升：一个干掉的东西，被水重新浸润，被拉回更有生气、更能正常运作的样子。\n\n**本体质感** · 这个词在今天的英语里，常常不只是“喝点水”这么简单，尤其在 health、fitness、wellness 这些语境里，它通常比 `drink water` 更强调“把水分补足”这个结果。也就是说，我不是随便喝一口，我是在往身体需要的方向补。  \n在护肤语境里，它又会变成一种“让皮肤更水润、更舒服”的手感，常常还会连着 softness、plumpness 这类效果一起出现。它和 `moisturize` 的确很近，但更稳妥的说法是：在护肤行业和产品文案里，`hydrate` 常被用来强调给皮肤增加水分，`moisturize` 常强调减少水分流失、把水分留住；只是这条边界并不是任何场合都划得很死。整体来看，母语环境里说 `hydrate`，往往还是带一点功能性、管理身体或皮肤状态的色彩，不太像纯修辞。\n\n**寻根溯源** · 这个词的来路，本身就解释了它为什么今天能跨那么多场景。词根一路追到 Greek 的 “water”。英语里的 `hydrate` 先以化学义站住脚：19 世纪初先有名词，指“含水化合物”，随后有了动词义，表示“使与水化合”。而那种今天最常见的“给身体补水、恢复水分”的一般用法，其实是后来才明显扩展开来的。  \n所以你会发现，`hydrate` 不是先有“多喝水”的生活口号，再借去科学里；方向大致相反。它像是一个本来很技术性的词，慢慢走进了医学、健身、护肤，最后变成我们今天随手就会看到的提醒：`Hydrate.` `Stay hydrated.` 这也解释了它身上那种很特别的质感——哪怕落到日常，它还是带着一点“把系统调回正常”的专业底色。\n\n如果放到前端里，`hydrate` 又多了一层很贴切的技术隐喻。中文技术圈常会把它译作“水合”，但对初学者来说，更好懂的说法可能是“客户端接管”：服务器已经把 HTML 先“干”在那里了，浏览器端的 JavaScript 再接上事件、状态和交互，让这块静态页面重新变成一个会响应的界面。这个用法不是在说页面真的缺水，而是在借“补回可运行状态”的感觉，描述从静态标记到可交互应用的那一刻。\n\n**各路用法** · 几个例子，在不同场域里你感受一下区别：\n\n**化学，课本里**\n> In chemistry, to hydrate a substance is to combine it with water.\n> 在化学里，hydrate 一个物质，就是让它与水化合。\n\n这里的 hydrate 不是“喝水”，而是最早也最硬核的科学义。它说明这个词的核心，原本就是“进入含水状态”这件事。\n\n**日常，朋友之间**\n> Make sure you hydrate before the hike.\n> 徒步前记得先补足水分。\n\n这里不是在科普，而是在提醒你做一个很基础、很必要的动作。比起单纯说喝点水，它更强调“别让身体带着缺水状态出发”。\n\n**运动后，简短提醒**\n> Hydrate after your workout.\n> 训练后记得补水。\n\n这种用法很口语，也很常见。到了这种提醒句里，`hydrate` 有时就几乎等于“喝点水、补点液体”，只是语气更像健康建议。\n\n**日常，关心身体状态**\n> I've been trying to hydrate more since I keep getting headaches.\n> 自从我老是头疼之后，我一直在尽量多补水。\n\n这里的 hydrate 已经带上了“照顾身体”的意味，不只是喝水这么简单，而是有意识地把身体状态往正常那边拉。\n\n**护肤/美妆语境**\n> This serum hydrates without making my skin greasy.\n> 这款精华能给皮肤补水，而且不会让皮肤变得油腻。\n\n这里的 hydrate 不是“把水倒上去”，而是“让皮肤变得更水润、更舒服”。\n\n**医疗，补液语境**\n> The doctor said oral hydration was enough, so I didn't need an IV.\n> 医生说口服补液就够了，所以我不需要打点滴补液。\n\n到了医疗场景里，`hydration` 会更明确地指“补液”这件事，语感也更专业。\n\n**前端，框架文档或报错里**\n> React hydrates the server-rendered HTML so the buttons can respond.\n> React 会对服务端渲染好的 HTML 做 hydration，也就是让客户端代码接管它，使按钮重新能响应点击。\n\n这里的 `hydrate / hydration` 可以先译成“水合”，但不要只停在字面。它更像“给静态页面接回神经”：HTML 已经在那儿，但还没完全活起来；客户端代码接管之后，事件和状态才回到页面上。\n\n这里顺手提一句：在护肤语境中，英语里常会把“补进去”和“留住”分开说，所以你会看到 `hydrate` 和 `moisturize` 并排出现。但这个区分在行业里常见归常见，并不是每个品牌、每套说法都划得完全一致。\n\n**原生思维** · 如果你想更稳地抓住这个词，可以把它理解成：不是单看“水”这个动作，而是看“缺水状态有没有被拉回来”。这样很多用法就会一下子通了。人可以 hydrate，皮肤可以 hydrate，化学物质也可以 hydrate；表面看对象很散，底层逻辑却很统一——它关心的是某个东西进入了含水、较稳定、较舒服、较能运作的状态。  \n这也是为什么 `stay hydrated` 听起来会比“记得喝水”多一层状态感。再往下一步看，`hydration` 是这个状态本身，`dehydrated` 是失水了，`rehydrate` 则是重新把水补回来。顺着这条线理解，你记住的就不是零散释义，而是一整套图景。  \n如果放到护肤里，这套图景也仍然成立：很多时候英语会倾向于把“增加水分”和“减少流失”分开说，只是这种切分更像常见用法，不必把它理解成绝对铁律。\n\n放到 Vibe Coding 里，它也仍然是同一个图景：一个东西已经有形状，却还没完全能动。`hydrate` 说的是把那层可运行、可响应、可交互的状态补回去。\n\n**悟道时刻** · `hydrate` 真正该记住的，不是“= 喝水”，而是“让缺水的东西重新回到可用、舒服、正常的状态”。一旦抓住这条线，化学里的水合、身体里的补液、护肤里的补水，其实是在说同一个动作。\n\n以后再看到 `stay hydrated`、`dehydrated`、`rehydrate`，别急着背中文。先问一句：这里是谁缺了水，它现在是在含水、失水，还是被补回来了？这就是这个词最省力的识别方式。",
+    "verification": {
+      "claimCount": 12,
+      "confirmedCount": 5,
+      "softenedCount": 6,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "Merriam-Webster `hydrate`",
+        "Cambridge Dictionary `hydrate`",
+        "Oxford Learner’s Dictionaries `hydrate`",
+        "Etymonline `hydrate`",
+        "Britannica `hydrate`"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hydrate"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/hydrate"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/hydrate"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/hydrate"
+        },
+        {
+          "label": "Britannica",
+          "url": "https://www.britannica.com/science/hydrate"
+        },
+        {
+          "label": "Merriam-Webster Medical",
+          "url": "https://www.merriam-webster.com/medical/hydration"
+        },
+        {
+          "label": "PMC / Indian Journal of Dermatology",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4885180/"
+        },
+        {
+          "label": "React Documentation",
+          "url": "https://react.dev/reference/react-dom/client/hydrateRoot"
+        }
+      ]
+    }
+  },
   "inflection point": {
     "displayWord": "inflection point",
     "meta": [
@@ -1582,6 +1945,62 @@ window.WORD_SENSE_ENTRIES = {
         {
           "label": "Google Books — Andrew Grove, *Only the Paranoid Survive*",
           "url": "https://books.google.com/books/about/Only_the_Paranoid_Survive.html?id=edsUnndEO5EC"
+        }
+      ]
+    }
+  },
+  "mount": {
+    "displayWord": "mount",
+    "meta": [
+      "Vibe Coding · 结构接入 · B1-B2",
+      "Issue 004"
+    ],
+    "markdown": "**字面含义** · mount 最早就和“上去、登上去”有关，像人骑上马、爬上去。后来它又长出“装上去、固定到位”“逐步上升、累积”“组织并发起”等一整串现代用法。大致来看，这些义项里仍能看到一种历史影子：东西不是平放在那里，而是被放到某个位置上、被抬到一个更可用的状态里。按词源线索看，它大约在 1300 年前后已有“骑上马”的意思，14 世纪中期出现“上升、增加”一支，到了 16 世纪又明显发展出“安到位、装到位”的及物用法。\n\n**本体质感** · 这个词给人的感觉，常常是“上去、装上、就位、开始成形”。它往往不是一个纯静态的结果词，而带着动作推进感：像一只手把东西架起来、扣上去，或者像一股势头正在往上堆。说 The monitor is mounted on the wall，你会感觉它不是随便放着，而是被固定在一个明确的位置上。说 Pressure is mounting，你会感觉那不是一下子爆开，而是压力在持续抬高、逐渐逼近。\n\n如果把它当成一种理解骨架来看，mount 常常不只是“变多”或“开始”，而是“某个东西被推到台面上、推到位、推到更难忽视的程度”。不过这更多是一种帮助理解的读法，不是所有现代搭配都能机械地还原成同一个画面；因为这个词后来确实分化出了几支很独立、很常用的路径。\n\n**寻根溯源** · mount 来自古法语 *monter*，更早可追到拉丁语里“上升、攀登”的路子，所以它最早的身体动作感非常明确：先是“登上去”，尤其是“骑上马”。这也解释了为什么它后来既能说人上马，也能说东西装到架子上、墙上、底座上。\n\n但这个词有意思的地方，在于它没有停在“往上”这么简单。随着用法扩展，英语把它推到了几个很现代的方向：一类是“固定到位”，一类是“逐步增加”，还有一类是“组织并发起”。它们未必是同一张图的硬翻版，却还能让人隐约感觉到那个老骨架——不是凭空出现，而是被架起来、被推起来、被发动起来。\n\n**各路用法** ·\n\n**机房,硬件部署时**\n> We mounted the server in the new rack yesterday.\n> 我们昨天把服务器装到新的机架上了。\n\n这里的 mount 很实在，就是“装到支撑结构上并固定好”。这个用法常见于硬件、机架、墙面、底座、支架这些语境，不等于所有场景下都能直接拿它说“安装”。\n\n**日常,说山或者骑马**\n> They mounted their horses and headed out before sunrise.\n> 他们骑上马，天亮前就出发了。\n\n这里保留了这个词最古老的身体画面：人把自己放到一个更高的位置上，再开始行动。\n\n**职场,截止日前的压迫感**\n> Pressure is mounting as the deadline gets closer.\n> 随着截止日期临近，压力正在越来越大。\n\n这里不是说压力“突然变大了”，而是它在一层层堆高，越来越逼近人。\n\n**日常,等结果时的情绪变化**\n> Her excitement mounted as she waited for the results.\n> 她等结果的时候越来越兴奋。\n\n情绪也可以 mount：不是一下跳到顶点，而是慢慢往上抬。\n\n**社媒,局势判断时**\n> The evidence against him is mounting fast.\n> 对他不利的证据正在迅速累积。\n\n这里的感觉是：局面在往一个更稳、更重、也更难忽视的方向发展。\n\n**公共议题,组织行动时**\n> Residents mounted a campaign against the proposal.\n> 居民们发起了一场反对这项提案的行动。\n\n这是现代很高频的一支。这里的 mount 不是“自己往上涨”，而是“组织起来并发动”。attack、challenge、operation、exhibition 这些词前面，也常能看到类似的 mount。\n\n**技术,命令行里**\n> You need to mount the drive before you can access the files.\n> 你得先挂载这个驱动器，才能访问里面的文件。\n\n这是计算机语境里非常常见的用法。这里的 mount 不是“安装”，而是把一个文件系统接到当前系统里，让它变得可访问、可使用。\n\n**原生思维** · 英语母语者用 mount 时，常常不是只在看“数量变没变”，而是在看“东西有没有被放到位、推起来、成势”。所以它既能说骑上马，也能说把设备装上去；既能说压力、证据、兴奋在增加，也能说去 mount a campaign——把一件事组织起来，正式推上场。\n\n中文里我们会把这些拆得很开：骑上、装上、增长、累积、发起、挂载，各有各的词。但英语会让你看到一种更连贯的思路：有些变化不是抽象地“变多了”，而是某样东西被推进了一个更明确、更可操作、也更难忽视的位置。技术里的 mount 其实尤其典型：不是把硬盘“装一个软件”，而是把它接进系统，让它进入可访问状态。\n\n**悟道时刻** · mount 最值得抓住的，不是一个孤零零的中文对译，而是那种“就位并成势”的感觉：人可以 mount a horse，设备可以 be mounted on a wall，压力可以 mount，行动也可以 be mounted。你以后再见到它，先别急着翻成“安装”或“增加”，先问一句：这里是不是在说，某样东西被推到了一个开始起作用的位置上。",
+    "verification": {
+      "claimCount": 15,
+      "confirmedCount": 5,
+      "softenedCount": 5,
+      "uncertainCount": 0,
+      "rejectedCount": 1,
+      "checked": [
+        "**mount 最早就是‘上去、登上去’**，像人骑上马、爬上山、把一件东西安上去、…",
+        "这个词的画面感很强：有一个‘**从下往上贴合/攀附/安置**’的动作。",
+        "它后来长出很多比喻用法，**但骨架一直没变**：把某样东西抬到一个更高、更稳定、或者…",
+        "mount 的质地是‘**向上、贴上、固定住**’。",
+        "**a computer is mounted in the wall**” 可以表…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/mount"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/mount"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/mount_1"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/mount"
+        },
+        {
+          "label": "Longman Dictionary of Contemporary English",
+          "url": "https://www.ldoceonline.com/dictionary/mount"
+        },
+        {
+          "label": "Linux man page `mount(8)`",
+          "url": "https://www.man7.org/linux/man-pages/man8/mount.8.html"
+        },
+        {
+          "label": "Oracle Linux Blog",
+          "url": "https://blogs.oracle.com/linux/understanding-linux-mount-and-unmount"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/mount_v"
         }
       ]
     }
@@ -1682,6 +2101,62 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "poll": {
+    "displayWord": "poll",
+    "meta": [
+      "Vibe Coding · 反复询问 · B1-B2",
+      "Issue 004"
+    ],
+    "markdown": "**字面含义** · poll 最早确实和“头”有关，不过更准确地说，它在英语里的早期用法指“头、头顶”，现存记录见于中世纪英语，词源也和中低地德语、中古荷兰语里表示“头、顶部”的词有关。后来它又发展出“头数、按人头统计”的意思，所以它的底层画面依然很朴素：按人头计数，或者向一批人征询意见再把结果汇总。这个“按人头、形成可数结果”的动作，后来长成了今天最常见的两条路：一条是“民意调查”，一条是“投票”。\n\n**本体质感** · 这个词有一种“先去摸一下大家怎么想”的感觉。它不要求你已经知道答案，只是在正式下决定之前，先做一个轻量、快速、带统计意味的探测。很多现代语境里说 poll，脑子里常常不是“大调查”那种沉重感，而是“先取样看看风向”的动作感：把分散的人意见收拢成一个可数的结果。  \n在“投票”这个意思里，它又带着一点秩序感和程序感：不是随便表态，而是把意见变成可以记录、可以计数、可以宣布的东西。正式一点的场合里，它甚至还能指要求会议成员逐一表态、把票数记清楚。\n\n**寻根溯源** · 这个词的演化线其实很清楚：先是“头、头顶”，再到“按人头计数”，然后才慢慢走向选举和调查语境。大致来看，表示“计票、点票”的用法在 17 世纪开始清晰起来，到了 19 世纪，poll 已经能直接指选举中的投票；而今天我们熟悉的“民调”意味，则是更晚近才稳定下来的。也就是说，它不是先有抽象的“公众意见”，而是先有“人数可数、结果可报”的那个动作，后来才接上了现代社会里的风向、支持率和偏好分布。\n\n**各路用法** ·\n\n**职场,会议里**\n> We ran a quick poll to see whether the team preferred Monday or Wednesday.\n> 我们快速做了个小调查，看看团队更喜欢周一还是周三。\n\n这里的 poll 不是正式公投，而是先收集一下偏好，方便往下推进。\n\n**职场,邮件里**\n> Could you poll the group before the call and send me the results?\n> 你能在电话会议前先向组里征询一下意见，然后把结果发给我吗？\n\n这里的 poll 更像“先征询一批人的看法，再汇总结果”，带一点流程感。\n\n**日常,朋友群里**\n> I put up a poll in the group chat to choose a restaurant.\n> 我在群里发了个投票，选一家餐厅。\n\n这时 poll 很轻，几乎就是“让大家点一下选项”。\n\n**社媒,Instagram / X 上**\n> Here’s a poll: which cover looks better, A or B?\n> 这里有个投票：A 和 B 哪个封面更好看？\n\n社媒里的 poll 往往很短平快，重点不是严肃统计，而是互动和即时反馈。\n\n**新闻,看选举报道时**\n> Voters are heading to the polls across the country.\n> 全国各地的选民正前往投票站投票。\n\n这里的 the polls 不是“很多份民调”，而是新闻英语里非常高频的说法，通常指投票站、投票现场，或者整个投票时段。\n\n**新闻,看民调分析时**\n> The latest opinion poll shows growing support for the policy.\n> 最新的民意调查显示，支持这项政策的人越来越多。\n\nopinion poll 就是很典型的“民调”说法，强调的是公众意见的分布，不一定意味着真正已经开始投票。\n\n**技术,接口或任务状态里**\n> The client polls the API every five seconds until the job is done.\n> 客户端每五秒 poll 一次 API，直到任务完成。\n\n技术里的 `poll / polling` 常译成“轮询”：不是等对方主动通知你，而是你隔一段时间问一次“好了没”。它仍然保留着这个词很古老的动作感——一个个去问、反复去问，最后把状态问出来。\n\n**原生思维** · 英语母语者用 poll 时，脑子里常常是在做一件“把分散意见变成可数结果”的事。它不是先想“观点”本身，而是先想“怎么收集、怎么计数、怎么让结果可见”。中文里我们有“调查”“投票”“征询意见”这些词，分别抓住了不同侧面；而 poll 往往把这几层压在同一个动作里：先问，再数，再得到一个可以拿来继续决策的结果。  \n所以你读英文新闻时，看到 poll，别急着只翻成“调查”。它有时更像“民调”，有时更像“投票”，而到了 the polls 这种固定说法里，甚至已经落到“投票站”这个非常具体的场景上了。\n\n**悟道时刻** · poll 真正厉害的，不是同时对应“调查”和“投票”，而是它把意见处理成了结果：先收集，再计数，再形成风向。以后你判断一个英文词，不妨多问一步——它是在描述“理解大家怎么想”，还是在描述“把大家怎么想变成可记录的结果”？抓住这一步，poll 就不会只是个词义题，而会变成一个识别英语思路的抓手。",
+    "verification": {
+      "claimCount": 7,
+      "confirmedCount": 5,
+      "softenedCount": 4,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "poll 最早和‘头’有关，古英语里它指‘头顶、头部’。",
+        "后来也指‘头数、按人头统计’。",
+        "所以它的底层画面很朴素：把一群人一个个点出来，数一数，或者问一问。",
+        "这个‘按人头、逐个采样’的动作，后来长成了今天最常见的两条路：一条是‘民意调查’，一…",
+        "英语里说 poll，脑子里常常不是‘大调查’那种沉重感，而是‘先取样看看风向’的动作…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/poll"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/poll"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/poll"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries（noun）",
+          "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/poll_1"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries（verb）",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/poll_2"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/poll_n1"
+        },
+        {
+          "label": "Merriam-Webster（polling place）",
+          "url": "https://www.merriam-webster.com/dictionary/polling%20place"
+        },
+        {
+          "label": "MDN setInterval",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval"
+        }
+      ]
+    }
+  },
   "probe": {
     "displayWord": "probe",
     "meta": [
@@ -1744,7 +2219,7 @@ window.WORD_SENSE_ENTRIES = {
       "动作隐喻 · A2-B1 · 入门",
       "Issue 003"
     ],
-    "markdown": "**字面含义** · pull 最原始的动作就是“拉”：手抓住一个东西，把它往自己这边、往某个方向拽过来。你可以直接看到那个画面——绳子被拉紧，门被拉开，椅子被往后拉一点。这个词很早就和“施力、使移动”绑定在一起，所以后来很多抽象用法，骨子里还保留着“把东西朝某个方向带动起来”的感觉。\n\n**本体质感** · 从词典定义看，pull 的核心更接近“施力并使对象朝某个方向移动”，而不只是“力气大”本身。这个词强调的往往不是一个静态结果，而是一个动作过程：有东西被往这边带，有方向，有时也有阻力。它既可以很日常，也可以很有动作感，比如 pull the door、pull a chair、pull someone aside。  \n更有意思的是，它在很多固定搭配里都保留着这种“把局面往某个方向拽”的质地：pull off 像是把一件难事做成了；pull through 是熬过难关，或者把人从危险里带出来；pull away 则常表示拉开距离、驶离、甩开。你会发现它不是单纯在描述一个“状态”，而是在描述一种方向性的推进。  \n如果看语感梯度，和 drag、yank、haul 这类词相比，pull 通常更基础、更中性，也较少自带“猛拽”或“费力拖运”的额外色彩。它是那种最基础、也最可延展的“拉”。\n\n**寻根溯源** · pull 可追溯到古英语 pullian，早期就有 “pluck off / draw out” 这样的意思，也就是“扯下、拉出”一类很具体的动作。它的最终词源并不完全确定，但从现存线索看，这个词一开始就带着很强的手上动作感。\n\n这条线索也解释了它为什么后来不只表示“把东西拉近”，还可以表示“把已经放出去、摆出去、上线了的东西撤回来”。广告可以被 pulled，节目可以被 pulled from the schedule，某人的 license 可以被 pulled，一个 invite 也可以被 pulled。它们表面上不是手在拉绳子，但底层仍然是同一个动作：把某个东西从原来的位置、场合、许可状态里抽走。\n\n所以 pull 的历史感不是一条漂亮直线，而是一组动作隐喻：拉近、拉出、撤下、调取、带过来。你抓住“有东西被从某处移走或带向某处”，这个词很多现代义项就不会散。\n\n**各路用法** · 几个例子，感受它在不同场域里的骨架：\n\n**职场，邮件里**\n> Could you pull the latest sales data before the meeting?\n> 你能在会议前把最新的销售数据调出来吗？\n\n在数据、分析或技术语境里，pull 常可以表示“调取、拉取”信息。动作感还在，只是对象换成了数据。\n\n**职场，市场/公关语境**\n> The team pulled the campaign after customers complained about the wording.\n> 客户投诉措辞以后，团队撤下了这轮宣传。\n\n这里的 pull 不是“拉动宣传”，而是“撤掉、下架、停止继续放出去”。常见对象包括 ads、campaigns、episodes、funding、support。\n\n**日常，跟朋友**\n> She pulled me into the room before I could say anything.\n> 她在我开口之前就把我拉进了房间。\n\n这里就是很直接的物理动作，干净、明确，不拐弯。\n\n**日常，邀请关系**\n> They pulled my invite after the guest list changed.\n> 嘉宾名单改了以后，他们把我的邀请撤回了。\n\npull the invite / pull an invitation 是口语里可以见到的说法，意思接近 withdraw、rescind 或 revoke the invitation，只是 pull 更口语，更像把一张已经递出去的东西抽回来。\n\n**日常，口语**\n> We need to pull together if we want this to work.\n> 如果这事想成，我们得齐心协力。\n\n这里的 pull together 不只是“拉到一起”，更接近“作为一个整体共同努力，把分散的力量朝同一个目标收拢”。\n\n**社媒评论区**\n> He somehow pulled it off with no rehearsal.\n> 他居然没排练也把这事搞成了。\n\n这里的 pull off 带一种“事情本来有难度，但他最后还是做成了”的意味，重点在结果的难得和完成感。\n\n**原生思维** · 从这个词的常见用法看，pull 往往会凸显三件事：谁在施力，东西往哪边走，过程里有没有阻力。它很少只是一个纯状态词，更像一个动作框架。  \n所以英语里不少抽象表达也会借 pull 来说“把信息、资源、局面朝某个方向带动”。中文里我们有时会说“拉数据”“拉近一点”“把事情做成”，其实已经很接近这个动作逻辑；只是英语里的 pull 覆盖面更广，常会从实体拉动一路扩展到协作、获取、推进、撤回这些场景。\n\n这里尤其要小心“撤回/撤掉”这一支。中文会把它分成撤稿、撤广告、下架节目、吊销执照、收回邀请；英语却可以用 pull 把它们压进同一个动作：原来那个东西已经在某个场域里，现在有人把它抽走了。这个 pull 往往带有决定权，像平台、公司、主办方、机构伸手把东西拿回来。\n\n**悟道时刻** · pull 真正值得记住的，不只是“拉”这个中文对译，而是它背后的方向性：先有施力，再有移动，再看结果。抓住这条线，pull in、pull away、pull through、pull off、pull the ad、pull the invite 就不再是零散搭配，而是一组同骨架的变化。\n\n以后你遇到 pull，先别急着翻成“拉”。先问一句：这里是谁在把什么从哪里带走，或者往哪个方向带？这个问题一出来，很多意思会自己亮出来。",
+    "markdown": "**字面含义** · pull 最原始的动作就是“拉”：手抓住一个东西，把它往自己这边、往某个方向拽过来。你可以直接看到那个画面——绳子被拉紧，门被拉开，椅子被往后拉一点。这个词很早就和“施力、使移动”绑定在一起，所以后来很多抽象用法，骨子里还保留着“把东西朝某个方向带动起来”的感觉。  \n如果再往前追一点，pull 可追溯到古英语 pullian，早期有 “pluck off / draw out” 这样的意思，也就是“扯下、拉出”一类很具体的动作。它的最终词源并不完全确定，但从现存线索看，这个词一开始就带着很强的手上动作感。\n\n**本体质感** · 从词典定义看，pull 的核心更接近“施力并使对象朝某个方向移动”，而不只是“力气大”本身。这个词强调的往往不是一个静态结果，而是一个动作过程：有东西被往这边带，有方向，有时也有阻力。它既可以很日常，也可以很有动作感，比如 pull the door、pull a chair、pull someone aside。  \n更有意思的是，它在很多固定搭配里都保留着这种“把局面往某个方向拽”的质地：pull off 像是把一件难事做成了；pull through 是熬过难关，或者把人从危险里带出来；pull away 则常表示拉开距离、驶离、甩开。你会发现它不是单纯在描述一个“状态”，而是在描述一种方向性的推进。  \n如果看语感梯度，和 drag、yank、haul 这类词相比，pull 通常更基础、更中性，也较少自带“猛拽”或“费力拖运”的额外色彩。它是那种最基础、也最可延展的“拉”。\n\n**各路用法** · 几个例子，感受它在不同场域里的骨架：\n\n**职场，邮件里**\n> Could you pull the latest sales data before the meeting?\n> 你能在会议前把最新的销售数据调出来吗？\n\n在数据、分析或技术语境里，pull 常可以表示“调取、拉取”信息。动作感还在，只是对象换成了数据。\n\n**日常，跟朋友**\n> She pulled me into the room before I could say anything.\n> 她在我开口之前就把我拉进了房间。\n\n这里就是很直接的物理动作，干净、明确，不拐弯。\n\n**日常，口语**\n> We need to pull together if we want this to work.\n> 如果这事想成，我们得齐心协力。\n\n这里的 pull together 不只是“拉到一起”，更接近“作为一个整体共同努力，把分散的力量朝同一个目标收拢”。\n\n**社媒评论区**\n> He somehow pulled it off with no rehearsal.\n> 他居然没排练也把这事搞成了。\n\n这里的 pull off 带一种“事情本来有难度，但他最后还是做成了”的意味，重点在结果的难得和完成感。\n\n**原生思维** · 从这个词的常见用法看，pull 往往会凸显三件事：谁在施力，东西往哪边走，过程里有没有阻力。它很少只是一个纯状态词，更像一个动作框架。  \n所以英语里不少抽象表达也会借 pull 来说“把信息、资源、局面朝某个方向带动”。中文里我们有时会说“拉数据”“拉近一点”“把事情做成”，其实已经很接近这个动作逻辑；只是英语里的 pull 覆盖面更广，常会从实体拉动一路扩展到协作、获取、推进这些场景。\n\n**悟道时刻** · pull 真正值得记住的，不只是“拉”这个中文对译，而是它背后的方向性：先有施力，再有移动，再看结果。抓住这条线，pull in、pull away、pull through、pull off 就不再是零散搭配，而是一组同骨架的变化。\n\n以后你遇到 pull，先别急着翻成“拉”。先问一句：这里是谁在把什么往哪个方向带？这个问题一出来，很多意思会自己亮出来。",
     "verification": {
       "claimCount": 14,
       "confirmedCount": 7,
@@ -1846,13 +2321,69 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "race": {
+    "displayWord": "race",
+    "meta": [
+      "Vibe Coding · 并发时间 · B1-B2",
+      "Issue 004"
+    ],
+    "markdown": "**字面含义** · race 较早的核心画面，确实是“奔跑、急驶、赛跑”这一组很具体的动作：人往前冲，马车往前冲，船也可以往前冲。它一开始更贴近“谁更快到达”的速度场景。后来很多常见引申义，也大体都是从这个“向前冲、比别人快一步”的图式里长出来的——不过现代英语里的 race，早已不只是在说字面上的跑。\n\n**本体质感** · 这个词一出现，英语里常会先带出一种速度感、紧迫感和争先感，而不只是冷静的“比赛规则”。它可以是身体在跑，也可以是事情在加速推进，甚至是脑子里念头在乱冲。母语使用里，race 常常带着一种“谁先到、谁先赢、时间不等人”的张力。  \n如果是动词，race 当然可以指参加比赛、和别人比快，但它也很常表示“带着劲儿猛冲”“飞快赶去某地”“心跳/思绪/机器飞快运转”。The engine was racing. My mind was racing. 这里的核心不是普通移动，而是明显提速，甚至有点逼近失控。  \n如果是名词，它也不只是一场体育比赛。到了现代英语里，race 很常指一种“角逐中的争先状态”：政治上的竞选，商业上的抢跑，技术上的竞逐，都可以叫 race。至于“像是把几个人或几股力量放进同一条赛道里看谁先到”，更适合把它当成一种帮助理解的认知画面，而不是词源事实本身。\n\n**寻根溯源** · race 这一词路其实要分开看。表示“奔跑、竞速、赛跑”的 race，长期保留了“快速前冲”的骨架，所以今天我们还能自然理解 race against time、mind racing、engine racing 这些说法。  \n但英语里另一个同形的 race，也就是“人种 / 种族”那个义项，并不是从“赛跑”义自然扩展出来的，而是另一条词源线。把这两条线分开，反而更能看清英语的真实面貌：一个是速度与竞逐，一个是人群分类；它们现在拼成同一个词形，但来路并不相同。\n\n**各路用法** ·  \n**职场,会议里**  \n> We are in a race to finish the product before the holiday season.  \n> 我们正在争分夺秒赶产品，要在假期前把它做完。\n\n这里的 race 不是体育比赛，而是“时间压力下的冲刺状态”。race to do something 也是很常见的结构。\n\n**日常,下班赶路**  \n> I had to race home before the storm started.  \n> 我得在暴风雨开始前赶紧冲回家。\n\n这里是高频日常义：不是“参赛”，而是“飞快赶去某地”。像 race home、race to the station 都很自然。\n\n**日常,朋友聊天**  \n> My mind was racing after I got the message.  \n> 我收到那条消息后，脑子里飞快地转个不停。\n\n这里的 race 更像“思绪在狂奔”，不是字面跑步。\n\n**日常,描述身体反应**  \n> Her heart started racing when she saw the bill.  \n> 她看到账单时，心跳开始加速。\n\n这是一种很英语的身体感写法：把心跳写成在跑。\n\n**科技,行业竞争**  \n> Several companies are in a race to develop cheaper AI chips.  \n> 好几家公司都在争先开发更便宜的 AI 芯片。\n\n这里的 race 是现代英语里非常高频的抽象义：不是在跑道上跑，而是在商业和技术上抢先。\n\n**新闻,政治报道**  \n> She has dropped out of the presidential race.  \n> 她已经退出总统竞选了。\n\npresidential race、race for the White House 这一类说法都很常见。到了这里，race 基本就是“角逐、竞逐”。\n\n**国际,宏大议题**  \n> An arms race can drain both sides for years.  \n> 军备竞赛可能让双方多年都被持续消耗。\n\n像 arms race、space race 这种搭配，最能看出 race 已经从“比谁跑得快”走到了“比谁更快取得优势”。\n\n**原生思维** · 英语里用 race 时，脑子里往往不只是“竞争”这个中文大词，而更像一个具体动作图式：往前冲、抢时间、抢位置、别被别人甩开。中文也会说“和时间赛跑”“竞速”“抢跑”，但英语更顺手地把这种感觉扩到思绪、心跳、项目进度、竞选局势、技术竞赛上。  \n也正因为这样，race 一边能落在很肉身的东西上——腿、心跳、发动机；一边又能无缝转去很抽象的东西——白宫竞选、军备竞赛、找出疗法的全球争先。至于 race 表示“人种 / 种族”时，就不要再拿这套“向前冲”的画面去硬解了，那是另一条历史线。\n\n**悟道时刻** · 你真正该抓住的，不是 race=比赛，而是 race 里那股“更快、更先、别落后”的压力结构。它既能写人在跑，也能写心在跑、局势在跑、技术在跑。\n\n以后看到 race，先别急着翻成“比赛”。先问一句：这里是在写谁在争先，还是在写什么东西被推到了加速状态？这个判断一出来，词义就一下子亮了。",
+    "verification": {
+      "claimCount": 12,
+      "confirmedCount": 5,
+      "softenedCount": 5,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "**race 最早是‘奔跑、急驶、赛跑’这一组很具体的动作**",
+        "**它的画面不是‘竞争’这么抽象，而是‘谁更快到达’的速度场景**",
+        "**后来的比喻义，基本都从这个‘向前冲、比别人快一步’的画面长出来**",
+        "**如果是动词，race 不是普通的 run，更像‘带着劲儿猛冲’‘心跳/思绪/机器…",
+        "**The engine was racing.** / race 可用于发动机转得…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/race"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/race"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/race"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries（noun）",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/race_1"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries（verb）",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/race_2"
+        },
+        {
+          "label": "Cambridge Dictionary（someone’s heart/mind/pulse races）",
+          "url": "https://dictionary.cambridge.org/dictionary/english/heart-mind-pulse-races"
+        },
+        {
+          "label": "Merriam-Webster（a race against time）",
+          "url": "https://www.merriam-webster.com/dictionary/a%20race%20against%20time"
+        },
+        {
+          "label": "Longman Dictionary of Contemporary English",
+          "url": "https://www.ldoceonline.com/dictionary/race"
+        }
+      ]
+    }
+  },
   "render": {
     "displayWord": "render",
     "meta": [
       "技术语境 · B1-B2 · 进阶",
       "Issue 003"
     ],
-    "markdown": "**字面含义** · render 最早在英语里的义项，并不是一开始就把“使……成为、把……交出来、把……转译成某种形式”并排摆稳了。更准确地说，早期它先带有“复述、再说一遍、翻译”以及“交出、交付、归还”这些动作，后来才进一步发展出“使……成为”这一支。你可以先抓一个很物理的画面：手里有一团原材料，经过处理后，变成了另一种可用的东西。这个画面不必当成词源事实本身，但在很多常见用法里，它确实能帮你理解 render：它不是“凭空创造”，更像“把东西处理、转化、呈现出来”，或者把某种结果正式交付出去。这个骨架后来一路长出很多现代用法。\n\n**本体质感** · 这个词的手感很“工序化”。说 render 的人，脑子里往往不是在看一个静态结果，而是在看“从 A 变到 B 的过程”。所以它常带一种“处理后呈现”的质地：把一幅图像渲染出来，把一个论点表达得更清楚，把某种情形弄得“使……变成”某状态。它比 make 更像“经过一层转换”，比 show 更像“让东西以某种形式出现在眼前”。  \n在英语里它还有一种很典型的被动/正式感，尤其在法律、书面语里，像 “render aid”, “render judgment”, “render assistance” 这种，语气会有点庄重：不是随口说“做一下”，而是“提供、作出、施以”。多部词典也确实把这些相关义项标成 formal。\n\n**寻根溯源** · render 来自古法语 rendre，往上可追到拉丁语 reddere，核心感觉和“交回、送回、归还”有关。英语里大致到 14 世纪晚期就能见到这个动词，早期义项包括“复述、再说、翻译”；到约 1400 年前后，又明显有了“交出、交付、归还”的意思；再往后，到 15 世纪晚期，才发展出“使成为”；到 16 世纪末，又出现了“表现、描绘”的路数。后来它一边保留了“交付、提供、作出”的正式语感，一边又在现代技术领域发展出“把内容处理后显示或渲染出来”的意思。大致来看，很多常见义项都没有离开一个相似动作：经过处理，再把结果送到人眼前、手上，或某个确定状态里。\n\n**各路用法** · 几个例子，在不同场域里你感受一下它的骨架：\n\n**职场,邮件里**\n> We will render assistance if the client needs it.\n> 如果客户需要，我们会提供协助。\n\n这里的 render 很正式，像是在把“帮助”作为一种可交付的东西递出去。\n\n**法律,裁决语境**\n> The jury rendered its verdict after reviewing the evidence.\n> 陪审团在审查证据后作出了裁决。\n\n这里不是简单说 “made a decision”，而是更书面地说“把裁决正式作出来”。\n\n**技术,开发场景**\n> The browser renders the page in under two seconds.\n> 浏览器在两秒内就把页面渲染出来了。\n\n这里的核心就是“把代码、数据、结构处理后显示成你看得见的页面”。\n\n**翻译/转译语境**\n> She rendered the poem into English without losing its quiet rhythm.\n> 她把那首诗译成英文，同时保住了它安静的节奏。\n\n这里的 render 接近“翻译、转译”，但比普通 translate 更带一点“把原作处理成另一种可呈现形式”的感觉。它和技术里的 render page 不是同一个场景，却共享“经过转换后呈现出来”的骨架。\n\n**日常,朋友聊天**\n> The apology was sincere, but it did not render the situation less awkward.\n> 道歉是诚恳的，但这并没有让场面没那么尴尬。\n\n这里 render 后面接的是结果状态，意思是“使……变得”。\n\n在计算机语境里，render 通常就是指把内容处理后显示/渲染出来；对象可以是 page、image、text、scene，重点有时偏“显示”，有时偏“生成视觉结果”，但底层还是那个“处理后呈现”的动作。\n\n**原生思维** · 英语母语者用 render 时，常常是在想“把一个东西变成某种可见、可用、可交付的样子”。它不是中文里那种一下子很口语的“弄成”，而是更像在说：这个过程经过了正式处理，最后落到了一个明确结果上。  \n所以当你看到 render judgment, render assistance, render a service, render a page，你要捕捉的不是“做了什么”这么粗的层面，而是“把某种东西落实成一个可被接收的形式”。这也是为什么它在正式文本里特别顺手：它天然带一点“手续完成了、结果交付了”的感觉。  \n当然，这更像是一种便于理解的语义骨架，不是词典给出的单一定义；但拿它去看法律、日常、技术这几条线，往往很有解释力。\n\n**悟道时刻** · render 真正值得你记住的，不是它能翻成多少中文，而是它常在做同一件事：把某样东西经过处理，落成一个结果。这个结果有时是裁决，有时是帮助，有时是页面，有时是某种状态。\n\n以后再遇到这类词，别急着追一个固定中文义。先问自己：这里被“送达”的结果是什么？一旦看见这个落点，render 的气质就出来了。",
+    "markdown": "**字面含义** · render 最早在英语里的义项，并不是一开始就把“使……成为、把……交出来、把……转译成某种形式”并排摆稳了。更准确地说，早期它先带有“复述、再说一遍、翻译”以及“交出、交付、归还”这些动作，后来才进一步发展出“使……成为”这一支。你可以先抓一个很物理的画面：手里有一团原材料，经过处理后，变成了另一种可用的东西。这个画面不必当成词源事实本身，但在很多常见用法里，它确实能帮你理解 render：它不是“凭空创造”，更像“把东西处理、转化、呈现出来”，或者把某种结果正式交付出去。这个骨架后来一路长出很多现代用法。\n\n**本体质感** · 这个词的手感很“工序化”。说 render 的人，脑子里往往不是在看一个静态结果，而是在看“从 A 变到 B 的过程”。所以它常带一种“处理后呈现”的质地：把一幅图像渲染出来，把一个论点表达得更清楚，把某种情形弄得“使……变成”某状态。它比 make 更像“经过一层转换”，比 show 更像“让东西以某种形式出现在眼前”。  \n在英语里它还有一种很典型的被动/正式感，尤其在法律、书面语里，像 “render aid”, “render judgment”, “render assistance” 这种，语气会有点庄重：不是随口说“做一下”，而是“提供、作出、施以”。多部词典也确实把这些相关义项标成 formal。\n\n**寻根溯源** · render 来自古法语 rendre，往上可追到拉丁语 reddere，核心感觉和“交回、送回、归还”有关。英语里大致到 14 世纪晚期就能见到这个动词，早期义项包括“复述、再说、翻译”；到约 1400 年前后，又明显有了“交出、交付、归还”的意思；再往后，到 15 世纪晚期，才发展出“使成为”；到 16 世纪末，又出现了“表现、描绘”的路数。后来它一边保留了“交付、提供、作出”的正式语感，一边又在现代技术领域发展出“把内容处理后显示或渲染出来”的意思。大致来看，很多常见义项都没有离开一个相似动作：经过处理，再把结果送到人眼前、手上，或某个确定状态里。\n\n**各路用法** · 几个例子，在不同场域里你感受一下它的骨架：\n\n**职场,邮件里**\n> We will render assistance if the client needs it.\n> 如果客户需要，我们会提供协助。\n\n这里的 render 很正式，像是在把“帮助”作为一种可交付的东西递出去。\n\n**法律,裁决语境**\n> The jury rendered its verdict after reviewing the evidence.\n> 陪审团在审查证据后作出了裁决。\n\n这里不是简单说 “made a decision”，而是更书面地说“把裁决正式作出来”。\n\n**技术,开发场景**\n> The browser renders the page in under two seconds.\n> 浏览器在两秒内就把页面渲染出来了。\n\n这里的核心就是“把代码、数据、结构处理后显示成你看得见的页面”。\n\n**日常,朋友聊天**\n> The apology was sincere, but it did not render the situation less awkward.\n> 道歉是诚恳的，但这并没有让场面没那么尴尬。\n\n这里 render 后面接的是结果状态，意思是“使……变得”。\n\n在计算机语境里，render 通常就是指把内容处理后显示/渲染出来；对象可以是 page、image、text、scene，重点有时偏“显示”，有时偏“生成视觉结果”，但底层还是那个“处理后呈现”的动作。\n\n**原生思维** · 英语母语者用 render 时，常常是在想“把一个东西变成某种可见、可用、可交付的样子”。它不是中文里那种一下子很口语的“弄成”，而是更像在说：这个过程经过了正式处理，最后落到了一个明确结果上。  \n所以当你看到 render judgment, render assistance, render a service, render a page，你要捕捉的不是“做了什么”这么粗的层面，而是“把某种东西落实成一个可被接收的形式”。这也是为什么它在正式文本里特别顺手：它天然带一点“手续完成了、结果交付了”的感觉。  \n当然，这更像是一种便于理解的语义骨架，不是词典给出的单一定义；但拿它去看法律、日常、技术这几条线，往往很有解释力。\n\n**悟道时刻** · render 真正值得你记住的，不是它能翻成多少中文，而是它常在做同一件事：把某样东西经过处理，落成一个结果。这个结果有时是裁决，有时是帮助，有时是页面，有时是某种状态。\n\n以后再遇到这类词，别急着追一个固定中文义。先问自己：这里被“送达”的结果是什么？一旦看见这个落点，render 的气质就出来了。",
     "verification": {
       "claimCount": 11,
       "confirmedCount": 6,
@@ -1943,6 +2474,58 @@ window.WORD_SENSE_ENTRIES = {
         {
           "label": "USGS Ecological Resilience",
           "url": "https://www.usgs.gov/publications/ecological-resilience"
+        }
+      ]
+    }
+  },
+  "resolve": {
+    "displayWord": "resolve",
+    "meta": [
+      "Vibe Coding · 确定落点 · B1-B2",
+      "Issue 004"
+    ],
+    "markdown": "**字面含义** · resolve 最早的画面，是“把缠在一起的东西重新分开、理顺”。拉丁语里有“松开、解开、分开”的意思，所以这个词骨子里一直带着一种把混乱处理成可辨认、可推进状态的感觉。后来它不管是指“解决问题”，还是“下定决心”，都还可以理解为延续了这个底层动作：本来卡住、纠结、拉扯，现在要把它往前推，推到一个更清楚的位置。\n\n**本体质感** · 这个词的手感不是“啪一下完成”，而是“把纠结慢慢收束”。在很多正式语境里，resolve 常给人一种比 solve 更书面、比 decide 更带决心色彩的感觉。resolve 一个 issue，不像单纯把答案报出来，更像把一团阻塞的东西拆开、摆平、归位；resolve to do something，则不是轻飘飘的“想要”，而是人把自己往一个方向拧紧，态度沉下来，带着点“我已经想清楚了”的硬度。  \n如果你看相近词，它们的温度差也很明显：decide 是做出选择，偏当下的判定；determine 往往更硬一些；resolve 则常常让人感觉到“内部的拉扯已经结束了，接下来是执行”。另外，除了 resolution，resolve 本身也可以作名词，表示一种坚定的决心、定力，所以这个词的重心，从来不只是“把事办完”，也是“把人定住”。\n\n**寻根溯源** · 这个词来自拉丁语 resolvere，核心意象就是“松开、解开、分开”。更早的一些用法里，它还带着“分解、化开、拆成部分”的意味。英语后来把这个动作从物理层面的“解开/分解”，扩展到抽象层面的“解决、澄清、决定”：问题被解开，分歧被处理，悬而未决的状态被收束，人也因此形成明确的决意。  \n所以 resolve 的几个常见方向看似不同——“解决”“决意”“正式决议”，甚至某些语境里“逐渐显现成某种状态”——其实大致都能回到同一个底层画面：先把纠结拆开，再让它归于清楚、稳定、可继续推进。\n\n**各路用法** ·\n\n**职场,会议里**\n> We need to resolve this before the client call this afternoon.\n> 我们需要在今天下午跟客户通话前把这个问题解决掉。\n\n这里的 resolve 不是泛泛地“处理一下”，而是把一个会继续卡住流程的东西真正摆平。\n\n**职场,邮件里**\n> The team is working to resolve the issue as quickly as possible.\n> 团队正在尽快解决这个问题。\n\n这类表达很常见，语气通常比 solve 稍正式，也更像在对外说明“我们已经开始把它收束了”。\n\n**日常,跟朋友**\n> They finally resolved their argument and talked it through.\n> 他们终于把争执解决了，也把话说开了。\n\n这里 resolve 常带一点“把僵着的关系重新理顺”的味道，不只是“赢了争论”。\n\n**日常,描述自己**\n> I resolved to quit scrolling before bed.\n> 我下定决心睡前不再刷手机了。\n\nresolve to do something 里的决心，通常不是一时兴起，而是带着自我约束的力度。\n\n**正式,董事会或机构文书**\n> It was resolved that the matter be referred to a higher authority.\n> 经正式决议，这件事将提交给更高层级处理。\n\n这里的 resolve 不是个人“决定”，而是机构、委员会、董事会那种带程序感的正式决议。你在新闻、会议纪要、章程语言里会经常遇到。\n\n**医疗,检查说明里**\n> Some symptoms resolve on their own.\n> 有些症状会自行缓解。\n\n这是医学语境里很常见的一支。这里的 resolve 不是“解决问题”，而是炎症、症状、反应慢慢消退，回到相对稳定的状态。\n\n**描述变化,状态演变**\n> The debate soon resolved into a shouting match.\n> 这场辩论很快演变成了一场互相叫喊。\n\nresolve into 很值得记一下，它把词源里“分解、转成某种形态”的那条线保留得很明显：一件事逐渐化成、显成另一种状态。\n\n**描述清晰化,画面或轮廓**\n> The image slowly resolved into focus.\n> 画面慢慢变得清晰对焦了。\n\n这也是同一条主线：原本模糊的一团东西，慢慢分开、归位，最后清楚起来。顺着这条线去看，也更容易理解它和 resolution“分辨率”为什么会是同一家人。\n\n**原生思维** · 英语母语者用 resolve 时，脑子里常常不是“我有个想法”，而是“这件事已经从混乱状态走向定型了”。它可以指外部问题被处理，也可以指内心意志被安定下来，还可以指一个正式机构把事项表决定案，或者指症状慢慢消退、画面慢慢清晰。中文里我们会分别说“解决”“化解”“下定决心”“决议”“缓解”“显现”，而英语把这些动作感压进了同一个词里。  \n所以你看到 resolve，不妨先别急着对应某个中文词，而先问一句：这里是不是有个“从纠结到清楚、从悬着到定下来”的过程？很多义项就会自己连起来。\n\n**悟道时刻** · resolve 的关键，不在“解决”或“决心”这两个中文标签本身，而在那个更深的图式：把一团散乱、拉扯、悬着的东西，收束成秩序，或至少收束成一个明确形状。\n\n以后你再遇到 resolve，不管它是在会议纪要里、医疗说明里，还是在一个人的意志里，都先去找这个变化：有没有什么东西正在从乱，走向定。抓住这一点，这个词就不会再碎成好几个陌生义项。",
+    "verification": {
+      "claimCount": 9,
+      "confirmedCount": 5,
+      "softenedCount": 4,
+      "uncertainCount": 0,
+      "rejectedCount": 1,
+      "checked": [
+        "解决问题/争端",
+        "下定决心",
+        "正式表决决定",
+        "名词 *resolve* = 决心",
+        "以及音乐、医学、光学/分析等延伸义"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/resolve"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/resolve"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/resolve_1"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/resolve"
+        },
+        {
+          "label": "DOI.org",
+          "url": "https://dx.doi.org/"
+        },
+        {
+          "label": "MathWorks",
+          "url": "https://www.mathworks.com/help/simulink/ug/resolving-symbols.html"
+        },
+        {
+          "label": "PMC / *Resolution of inflammation: state of the art, definitions and terms*",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3119634/"
         }
       ]
     }
@@ -2057,6 +2640,101 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "spawn": {
+    "displayWord": "spawn",
+    "meta": [
+      "Vibe Coding · 进程隐喻 · B1-B2",
+      "Issue 004"
+    ],
+    "markdown": "**字面含义** · 这个词最早和“产卵、繁殖”那一类动作连在一起。你可以先想一个画面——不是整齐地“生产”，而是某种东西从源头里不断散出来、冒出来、扩展出去。它的底色很具体：有一个源头，后面接出一串新的东西。\n\n**本体质感** · 现代英语里，spawn 最有手感的地方，是它常带着一种“源头一动，后面就冒出一片”的感觉。它不是单纯说“产生”，而更像：A 一出现，B、C、D 就跟着长出来了。这个词有繁殖、扩散的影子，所以常常带着一种“自动连锁”的动态感。和 generate 相比，它往往更像“冒出来”；和 cause 相比，它也常更强调结果像被一路衍生出来，而不是被理性地制造出来。\n\n**寻根溯源** · 它的老底子和“产卵、繁殖”有关。更细一点说，它早期的源流里本来就带着“散开、泼出、洒出”这样的动作感，所以这个词从一开始就不太像那种工整、可控的“生产”，而像某个源头一松动，东西就往外铺开。后来它慢慢扩展成“引出、催生、衍生出”，也就很自然了。正因为它原本就有这种生命繁衍和向外扩开的影子，所以今天即使用在抽象事物上，比如问题、争议、模仿品、子任务、进程，它也仍然保留那种“从一个点长出一串后续东西”的气息。\n\n**各路用法** ·  \n**职场,会议里**\n> The new policy has spawned several questions from the sales team.\n> 新政策引出了销售团队的几个问题。\n\n这里不是说“政策制造了问题”，而是说它一推出，就自然带出了一串要回应的疑问。\n\n**社媒,评论区**\n> The trailer spawned endless theories online.\n> 预告片在网上引出了没完没了的猜测。\n\n这里的画面很像：一个小起点丢出去，后面开始自发繁殖出很多版本、很多反应。\n\n**新闻,报道语气里**\n> The announcement spawned controversy across the industry.\n> 这则公告在整个行业里引发了争议。\n\n这类搭配很词典化。spawn controversy 不是单点爆炸，而是某个动作一出来，后面持续冒出反应、分歧和跟进讨论。\n\n**技术,文档里**\n> The server spawns a new process for each task.\n> 服务器会为每个任务启动一个新进程。\n\n这就是技术语境里很稳定的一支：spawn a process / child process。这里已经不是“抽象引发”，而是很具体地“创建并启动一个新的进程”。\n\n**游戏,玩法说明里**\n> Enemies spawn near the bridge at night.\n> 敌人会在夜里刷在桥附近。\n\n到了游戏里，这个词又回到一种非常直观的画面：角色、敌人、物件从某个点出现、刷出。你也会顺手见到 spawn point，也就是“出生点 / 刷新点”。\n\n**原生思维** · 这个词常让人联想到的，不只是“造成了什么结果”，而是“从一个源头冒出一批后续东西”。它经常带着一点不可控：不是我精心设计出结果，而是某个东西一出现，后果就自己繁衍开了。中文里我们会说“引发、催生、带出、衍生出”；技术里会说“启动新进程”；游戏里会说“刷出”。这些说法各抓一面，但 spawn 的内核其实很一致：都在看一个源头，怎样往外长出新的东西。\n\n顺手提醒一句，spawn 也常作名词。最原始的是“卵、卵群”，现代语境里也能指某种衍生物，或者游戏里的刷新点、刷出来的一波东西。不是这篇的主线，但你碰到时别意外。\n\n**悟道时刻** · 你真正要记住的，不是“spawn = 产生”，而是它偏爱一种“从源头往外长”的图式：可以是争议、问题、模仿品，也可以是子进程、敌人、物件。以后看到 spawn，先别急着翻成“导致”或“生成”，先问一句：这里是不是有个起点，后面又接出了一串新东西？抓住这一点，它在新闻、技术和游戏里的几张脸，其实是一张脸。",
+    "verification": {
+      "claimCount": 11,
+      "confirmedCount": 4,
+      "softenedCount": 3,
+      "uncertainCount": 1,
+      "rejectedCount": 0,
+      "checked": [
+        "这个词最早和‘产卵、产仔’那一类动作连在一起。",
+        "把生命、把后代‘放出来’。",
+        "它的底色很具体：有一个源头，后面接出一串新的东西。",
+        "现代英语里，spawn 最有手感的地方，是它带着一种‘源头一动，后面就冒出一片’的感…",
+        "它不是单纯说‘产生’，而是更像：A 一出现，B、C、D 就跟着长出来了。"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/spawn"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/spawn"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/spawn"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/spawn_1"
+        },
+        {
+          "label": "Python Documentation",
+          "url": "https://docs.python.org/3/library/multiprocessing.html"
+        },
+        {
+          "label": "Node.js Documentation",
+          "url": "https://nodejs.org/api/child_process.html"
+        },
+        {
+          "label": "Microsoft Learn",
+          "url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/spawn-wspawn-functions?view=msvc-170"
+        }
+      ]
+    }
+  },
+  "stale": {
+    "displayWord": "stale",
+    "meta": [
+      "Vibe Coding · 缓存状态 · B1-B2",
+      "Issue 004"
+    ],
+    "markdown": "**字面含义** · `stale` 原来贴着的，就是“放久了、不新鲜了”这个画面。词源上，一种常见说法是它早期先用在酒、麦酒这类东西上，带一点“放着一阵子、沉定下来”的意味，后来才更明确地走到今天这层：久放之后，已经不再 fresh。面包、饼干、蛋糕、啤酒，甚至空气和烟味，放过头了都可能变得 stale。这个词的底层通常不是“坏掉了”，而是新鲜感已经退了，原来那股刚刚好的状态不在了。\n\n**本体质感** · `stale` 的质地很干、很闷，带一点“时间在它身上停太久了”的感觉。你说一口 stale bread，脑子里通常不是腐烂，而是硬、干、不新鲜；如果再往抽象里走，它也确实容易让人联想到那种“生命感退掉了”的状态。说 a stale joke，也不是“有错”，而是听众已经听过太多遍，反应发不出来。它常常带着一种轻微的失望：本来该有的灵气没了，剩下的是陈旧、呆滞、乏味。和它贴近的那一排词，常见差别可以粗略理解为：`stale` 偏“放久了、失去新鲜感”；`boring` 更像“让人觉得无聊”；`tired` 常指“老套、被用烂了”；`stagnant` 则更偏“停滞不动”，有环境或局势的味道。\n\n**寻根溯源** · `stale` 这条线索有意思的地方，就在于它不是一下子跳到“难吃”“无聊”，而是先有一个“放着、停着、失去刚性”的过程。也因为这样，它后来很自然地从食物一路伸到空气、笑话、婚姻，甚至人的状态：不是彻底坏了，而是那种本来应该流动、鲜活、带劲的东西，慢慢退场了。这个延伸并不玄，它几乎就藏在“久放”这件事本身里。\n\n**各路用法** · 几个例子，在不同场域里你感受一下它怎么落地：\n\n**日常,厨房里**\n> The bread is stale, so let's make toast instead.\n> 面包已经不新鲜了，所以我们还是拿它去烤一下吧。\n\n这里的 `stale` 很具体，指“放久了变干、变硬”。\n\n**日常,房间里**\n> The room was full of stale air.\n> 房间里满是污浊、不新鲜的空气。\n\n这里就能看出，`stale` 不只管食物。它也能形容空气、烟味这种“闷住了、放久了”的不新鲜感。\n\n**日常,朋友聊天**\n> His jokes are getting stale.\n> 他的笑话越来越没新意了。\n\n这里不是说笑话“错了”，而是听多了，味道散了。\n\n**职场,工作状态里**\n> After ten years in the job, she felt stale and needed a change.\n> 做了十年这份工作后，她觉得自己有点疲了、钝了，需要一点变化。\n\n这是初学者很容易漏掉的一支：`stale` 不只形容东西，也能落在人身上。不是说这个人不行了，而是重复太久之后，劲头、灵感、新鲜度都下来了。\n\n**日常,关系里**\n> Their marriage had gone stale.\n> 他们的婚姻已经变得没劲、失去新鲜感了。\n\n这里的 `gone stale` 很传神：关系没有一定坏掉，但活气和新鲜感已经退了。\n\n**技术,缓存或数据里**\n> The page is showing stale data because the cache hasn’t revalidated yet.\n> 页面显示的是 stale data，也就是过期数据，因为缓存还没有重新校验。\n\n技术里的 `stale` 常译成“过期的、陈旧的、不是最新的”。它不一定是错数据，而是“曾经新鲜，现在已经过期，需要重新验证”的数据或缓存。\n\n**原生思维** · 英语母语者用 `stale` 时，常常是在看一件东西还有没有“新鲜地活着”的感觉。食物有没有还带着刚做好的口感，空气有没有还在流动，笑话有没有还带着第一次讲出来的冲击力，婚姻和工作状态有没有还保留变化感。它不是单纯说“旧”，而是说“旧到失去本来该有的即时感和弹性”。中文里我们会说“陈了”“闷了”“没新意了”“没劲了”，但英语会把这些体验压缩进一个很有触感的词里。\n\n**悟道时刻** · `stale` 真正值得你抓住的，不是“过期”这一个点，而是英语里一种很常见的判断方式：一件事只要放得太久、重复太久、停得太久，鲜度一退，整个人对它的感觉就会变。以后见到 `stale`，先别急着问“坏没坏”，先问：它是不是已经不再 fresh 了，不再有刚发生时的那股活气了？",
+    "verification": {
+      "claimCount": 10,
+      "confirmedCount": 5,
+      "softenedCount": 5,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "`stale` 的核心义是否真是“久置后不新鲜”",
+        "是否可用于食物、空气/烟味、笑话/routine、人的状态、关系/婚姻",
+        "是否存在初稿没写的重要高频义项",
+        "初稿中的“conversation went stale”是否有足够强的词典背书"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/stale"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/stale"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/stale"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/stale"
+        },
+        {
+          "label": "MDN Cache-Control",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control"
+        }
+      ]
+    }
+  },
   "surge": {
     "displayWord": "surge",
     "meta": [
@@ -2109,6 +2787,113 @@ window.WORD_SENSE_ENTRIES = {
         {
           "label": "Vocabulary.com",
           "url": "https://www.vocabulary.com/dictionary/surge"
+        }
+      ]
+    }
+  },
+  "throttle": {
+    "displayWord": "throttle",
+    "meta": [
+      "Vibe Coding · 流量控制 · B2-C1",
+      "Issue 004"
+    ],
+    "markdown": "**字面含义** · 现代高频里，你最常先遇到的 throttle，确实是“节流阀、油门控制”这类东西：一只手去拧、压、控制那个让气流、燃料、动力变快或变慢的部件。画面上不是“速度”这个抽象概念本身，而更像是对着一个阀门下手，去收、去放，别让它一下子冲得太猛。  \n但这个词再往前追，并不是先从“油门”长出来的。它更早和 throat 那条线有关，早期有“掐住喉咙、使人窒息”的意思，后来才发展出机械上的“节流、控流”义。也正因为这样，它今天哪怕进了技术和比喻场景，身上还是容易带着一点“掐住通道”的旧力道。\n\n**本体质感** · 这个词一出来，往往会让人联想到一种“人为地卡住、收紧、掐住”的触感。它不是单纯的“减少”，而是带着控制动作：本来能流动、能加速的东西，被你按住了、勒住了、限住了。  \n所以它常见的骨架，确实是一种“被控制的流量”——可以是引擎动力、带宽、请求速率，也可以是创新、表达、发展节奏。你可以把它想象成一个很具体的手势：手还在阀门上，东西不是自己慢下来，而是被你收住。  \n不过也正因为它本来就是对“阀门/油门”的操控，throttle 并不永远只表示压低。在机械语境里，它本质上是可上可下的：你可以 throttle back，也可以 throttle up。所以更准确的说法是：在很多现代技术和比喻语境里，它常比 regulate 更有“压制、限住”的力道；但在机械语境里，它说的是对动力的操控，不天然只朝“减小”那一边倒。\n\n**寻根溯源** · throttle 这条词路很有意思：早期先是“掐喉咙、使窒息”，中间还一度能直接指 throat，后来才落到机械装置上，变成“节流阀”“油门控制”这类现代人更熟的意思。大致可以理解成：最早掐的是人的喉咙，后来掐的是机器的“气口”。  \n这也解释了为什么它后来能一路长到技术系统和政策比喻里。因为它核心不是单纯的快慢，而是“卡住一个出口”“控制一股本来会继续往前的流”。一旦这个骨架立住了，从发动机到 API，再到 innovation，就都不是跳跃，而是顺着同一条隐喻在延伸。\n\n**各路用法** · 你会看到它在不同场景里都保留着那种“控住阀门、收放流量”的骨架，而且几个高频搭配很值得一起记：\n\n**职场,技术讨论里**\n> The new feature is throttling the API requests during peak hours.\n> 新功能在高峰时段会限制 API 请求速率。\n\n这里的 throttling 不是泛泛地“管理请求”，而是技术语境里很常见的“限流”。尤其在云服务、API 文档里，`request throttling`、`API throttling` 往往就是为了稳定性、公平性或容量控制而实施的请求速率限制。\n\n**日常,说车或路况**\n> I throttled back when the road got slippery.\n> 路面变滑的时候，我就收了收油门。\n\n这里的动作感很强。`throttle back` 或 `throttle down` 都是常见短语动词，意思不是停下来，而是把动力往回收、把强度往下压。\n\n**交通,起飞后**\n> The pilot throttled up after takeoff.\n> 起飞后飞行员加大了油门。\n\n这句很重要，因为它提醒你：throttle 不是只会“压住”。在机械语境里，`throttle up` 同样常见，表示把动力往上推。\n\n**职场,公司或政策语境**\n> The policy is throttling innovation by making approvals too slow.\n> 这项政策因为审批太慢，正在压制创新。\n\n这里已经不是机械动作了，而是借用“掐住通道”的图像，去说一种对发展节奏的压制。这个义项在现代英语里很稳，常见于政策、平台规则、审批流程、市场竞争这类讨论。\n\n**媒体,形容推进力度**\n> The team is moving ahead at full throttle.\n> 这个团队正在全速推进。\n\n`at full throttle` 或 `full-throttle` 也很常见，意思是全速、火力全开。它刚好提供了另一面：同样是 throttle 这套装置，收的时候是限制，放到大的时候就是全力推进。\n\n**原生思维** · 英语里这个词真正有意思的地方，不只是“变少”或“变快”，而是它总暗示着一个可操控的入口。和 reduce、slow down 相比，throttle 更容易让人感觉到：这里不是自然变化，而是有人在拧那个阀门。  \n也因此，中文里的“限制”“控制”“压住”“卡住”都只抓到它的一部分。throttle 把“控制动作”和“流动感”绑在一起了：有时是收油门，有时是加油门；但一旦进到技术和制度比喻里，它又常常偏向“把出口掐窄”。你抓住这个图像，就更容易理解为什么 `request throttling` 听起来不是普通调度，而是一种带边界感的限流。\n\n**悟道时刻** · throttle 的钥匙，不是“快”或“慢”，而是“阀门还在手上”。它说的往往不是结果，而是对通道、动力、流量的直接操控。\n\n以后看到这个词，先别急着译成“限制”或“加速”，先问一句：这里有没有一个被人收放的“出口”？这个问题一出来，你就能分清它是在收油门、在限流，还是在 full throttle 地往前推。",
+    "verification": {
+      "claimCount": 14,
+      "confirmedCount": 6,
+      "softenedCount": 3,
+      "uncertainCount": 0,
+      "rejectedCount": 1,
+      "checked": [
+        "词源与早期义：Etymonline、Merriam-Webster、OED 摘要",
+        "技术语境中的 `throttling`：AWS 官方文档（EC2/API Gateway）"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/throttle"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/throttle"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/throttle_1"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/throttle"
+        },
+        {
+          "label": "Merriam-Webster, *throttle back*",
+          "url": "https://www.merriam-webster.com/dictionary/throttle%20back"
+        },
+        {
+          "label": "Cambridge Dictionary, *throttle (something) back/down*",
+          "url": "https://dictionary.cambridge.org/dictionary/english/throttle-back-down"
+        },
+        {
+          "label": "Amazon EC2 Documentation, *Request throttling*",
+          "url": "https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-throttling.html"
+        },
+        {
+          "label": "Amazon API Gateway Documentation, *Request throttling*",
+          "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html"
+        }
+      ]
+    }
+  },
+  "thundering": {
+    "displayWord": "thundering",
+    "meta": [
+      "Vibe Coding · 系统群体隐喻 · B2-C1",
+      "Issue 004"
+    ],
+    "markdown": "**字面含义** · 它先是“打雷的、雷鸣般的”。你可以把它想成天空里那种巨大、压场的雷声：常让人联想到低沉滚动的轰鸣，但也可能是突然炸裂般的一响。重点不是某一种固定声学形态，而是那种体积感、震动感，像整片空气都被它带着动了一下。\n\n**本体质感** · 这个词一出来，声音感就先冲上来，而且不是轻巧的声音，是有重量的、能把场面压住的声音。所以它常常不只是描述雷，还会顺手把“很大、很猛、很强”的感觉一起带出来。它不只修饰“声音”名词，也常修饰那些会带出巨大声势的事物或运动，比如奔来的马蹄、轰鸣的瀑布、开过的卡车、铺满空间的音乐。它常给人一种“轰然压下来”的气势，带点戏剧性，也带点不可忽视。\n\n**寻根溯源** · 从构形上看，*thundering* 就是从 *thunder* 长出来的：先是“像雷一样响”，再慢慢扩成一种强度词。也就是说，它后来不只是模仿自然界的雷声，还会把“声势惊人、强度很高、动静很重”这层感觉借给别的场景。在这个意义上，它既是声音词，也像一个放大器。\n\n到了系统语境里，这个“很多东西同时轰过来”的画面就很有用了。你会遇到 *thundering herd problem*，中文技术语境里常叫“惊群效应”：大量客户端、线程或请求在同一刻醒来、重试、抢同一个资源，于是系统不是被一个请求打垮，而是被一群同时冲出来的请求压住。这里的 *thundering* 不是浪漫的雷声，而是“集体声势太大，系统承受不住”的工程隐喻。\n\n**各路用法** ·\n\n**日常,描述天气**\n> After a few crashes of thunder, the rain began.\n> 几声雷响之后，雨就开始下了。\n\n这里直接用 *thunder* 来写天气，更自然；如果用 *thundering*，重点通常会落在“雷鸣般地响、响得很猛”上。\n\n**日常,形容声音很大**\n> There was a thundering noise coming from upstairs all night.\n> 整晚楼上都传来轰隆隆的巨响。\n\n这里的 *thundering* 就是在把声音往“很响、很重、压得住人”那个方向推。\n\n**书面,描写声势**\n> We could hear the thundering hooves getting closer.\n> 我们能听见雷鸣般的马蹄声越来越近。\n\n它不只修饰抽象的“声音”，也常修饰那些本身就在运动、会制造巨大声势的东西。\n\n**演讲,评论或新闻语境**\n> He delivered a thundering speech against corruption.\n> 他发表了一场措辞激烈、气势汹汹的反腐演讲。\n\n到这里，*thundering* 已经不只是“响”，而是在写一种压人的气势、冲击力和公开宣告感。\n\n**报道,表示猛烈抨击**\n> The minister thundered against the proposal.\n> 这位部长厉声抨击了这项提议。\n\n这一支更常见于动词 *thunder against*：像打雷一样发声，语气强、立场硬，而且带公开斥责的感觉。\n\n**英式口语,强化语气**\n> It was a thundering great success.\n> 这真是一次非常了不起的成功。\n\n这里的 *thundering* 已经进一步变成“非常、极其”的强化词，尤其常见于英式口语，或带一点文学、评论色彩的表达里。\n\n**英式口语,带情绪地说“很多”**\n> That must have cost a thundering lot of money.\n> 那肯定花了极大一笔钱。\n\n这一类不是在写“有雷声”，而是在借雷的气势，把说话人的惊讶、夸张和分量感一起抬上来。\n\n**系统，终端日志或架构讨论里**\n> Add jitter so retries don't create a thundering herd at startup.\n> 加一点随机抖动，避免启动时重试请求形成 thundering herd，也就是“惊群效应”。\n\n这里的 `thundering herd` 是技术里的固定问题名。中文可以抓成“惊群效应”：一大群请求或进程同时冲向同一个资源。它真正强调的不是声音，而是“同时、密集、压过来”的系统压力。\n\n**原生思维** · 在很多语境里，英语使用者会把 *thundering* 当成一种“声势强化词”，而不只是天气词。它最稳的核心，当然还是“像雷一样响、非常响”；但它真正好用的地方，在于能把“力量很大、动静很重、场面很满”的感觉直接推到前台。所以掌声、马蹄、瀑布、音乐、演讲，甚至某些带情绪的口语强化，都可以借它来增压。\n\n这也是为什么它能自然进入 Vibe Coding：机器不是在文学化地说话，而是在借一个老画面提醒你，某个系统动作正在成群发生，动静太大，需要被错开、限流或缓冲。\n\n不过也要有个实用提醒：真要说“雷鸣般的掌声”，英语里更稳妥、更常见的默认搭配往往是 *thunderous applause*；*thundering applause* 不是错，也确实有人这样写，但更带一点风格色彩。至于 *a thundering silence*，也能见到，不过更像修辞性、文学性较强的写法，不算最日常的高频搭配。\n\n顺手一提，*thundering* 也可以作名词，表示“隆隆声、轰鸣声”，比如 *the thundering of hooves*，但这不是它最常见、也不是这篇的主线。\n\n**悟道时刻** · 读到 *thundering*，别急着问“这里有没有真的雷”。更好用的判断是：它是不是在把某个东西往“声势巨大、压得住场、强度被放大”的方向推。\n\n一旦你这么识别，这个词就不再只是天气词，而会变成一个清晰的信号：作者要的不是普通的“大”，而是带轰鸣感、带压迫感、带公开气势的“大”。",
+    "verification": {
+      "claimCount": 12,
+      "confirmedCount": 5,
+      "softenedCount": 5,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "这个词的核心词义是不是“雷鸣般地响/非常响”",
+        "是否存在“极其、非常”的强化义",
+        "初稿是否漏掉与 *thunder/thundering* 相关的高频现代义项"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/thundering"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/thundering"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/thunder"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/thundering_adj"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/thunderous"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/thunderous"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/thunder_2"
+        },
+        {
+          "label": "AWS Architecture Blog",
+          "url": "https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/"
         }
       ]
     }
@@ -2269,6 +3054,62 @@ window.WORD_SENSE_ENTRIES = {
         {
           "label": "Reuters Journalistic Standards",
           "url": "https://reutersagency.com/about/standards-values/"
+        }
+      ]
+    }
+  },
+  "zombie": {
+    "displayWord": "zombie",
+    "meta": [
+      "Vibe Coding · 进程状态 · B2-C1",
+      "Issue 004"
+    ],
+    "markdown": "**字面含义** · 在现代英语里，zombie 最典型的字面义，是“死而复起的人”或“被巫术支配、失去意志的尸体”这一类形象，画面感很强：身体还在动，但意识不在自己手里。这个词后来从恐怖叙事里长出来，逐渐变成一整个比喻家族。\n\n**本体质感** · 这个词真正扎人的地方，往往不只是“死人”，而是那种“还在运转，却已经不像在活”的感觉。在现代口语里，zombie 常被拿来抓一种钝、空、机械、失去自主性的状态：人站着、走着、回着消息，但像被掏空了，只剩动作没有灵魂。它既能指怪物，也能借来形容人被工作、屏幕、疲劳或惯性拖着走。语感上它带一点戏谑，也带一点冷感；不是正经诊断，更像对“人怎么变成这样了”的一记侧写。\n\n**寻根溯源** · zombie 一般认为来自西非语言，经由加勒比地区进入英语，早先就和“死者复返”“被巫术支配”这类民间观念密切相关。不过把它简单说成一开始就只指“复活尸体”也不太准：早期英语材料里的相关义，还牵涉 spirit、deity 这一类超自然观念。大致来看，它进入英语后先和加勒比宗教、民俗想象连在一起；到 20 世纪前半，英语里已经出现了把 zombie 用来指迟钝、木然、像自动机一样的人的用法。换句话说，它不是很晚才开始比喻化，而是很早就开始往“失去意志的活物”这条线上扩。\n\n**各路用法** · 几个例子，在不同场域里你感受一下它的弹性：\n\n**日常，跟朋友**\n> I was a zombie after that overnight flight.\n> 坐完那趟红眼航班后，我整个人都像僵尸一样。\n\n这里不是说“我像怪物”，而是在说人已经累到只剩壳。\n\n**日常，形容状态**\n> After three meetings in a row, everyone looked like zombies.\n> 连开了三个会之后，大家看起来都像僵尸。\n\n这个用法常带一点夸张，但夸得很准：不是“忙”，是“脑子被榨干了”。\n\n**社媒评论区**\n> The whole office was in zombie mode by 5 p.m.\n> 到下午五点，整个办公室都进入僵尸模式了。\n\n`zombie mode` 这种说法在口语和社媒里能见到，重点在“自动驾驶”“低电量”“无神地继续运转”。\n\n**职场，描述团队状态**\n> By 5 p.m., everyone was working like zombies.\n> 到下午五点，大家都像僵尸一样在干活了。\n\n这里的重心不是恐怖，而是对一种失去主动性的工作状态的批评。\n\n**写作，形容气氛或动作**\n> He gave me a zombie-like stare.\n> 他用一种僵尸般的眼神盯着我。\n\n`zombie-like / zombielike` 比 `zombie mode` 更稳，也更接近词典会收的那种写法。它不一定真跟怪物有关，很多时候只是把那种木、空、失神的感觉一下子具象化。\n\n**科技，网络安全**\n> The malware turned thousands of devices into zombie computers.\n> 这款恶意软件把成千上万台设备变成了被远程控制的“僵尸电脑”。\n\n这里就不是疲惫感了，而是“设备还在运行，但控制权已经不在自己手里”。这条用法其实很贴近 zombie 的深层隐喻：外表正常运转，内部却被他者接管。\n\n**商业，财经报道**\n> Some analysts warn that low interest rates can keep zombie companies alive.\n> 一些分析师警告说，低利率可能会让“僵尸企业”继续勉强活着。\n\n`zombie company / zombie firm` 指的是那种靠债务、低利率或外部输血续命、自己却缺乏真正生命力的公司。它把怪物义抽得很干净，只留下一个判断：还没倒，但也谈不上活。\n\n**原生思维** · 英语里用 zombie，常常不是为了做精确分类，而是为了抓一个状态的外壳：还在动，却没了神；还在运转，却失去了自己的意志。中文里我们也会说“行尸走肉”，但 zombie 更口语、更图像化，也更容易滑向日常夸张：累成 zombie、眼神很 zombie-like、电脑成了 zombie computer、公司成了 zombie company。它背后那种理解方式，可以把很多表面不同的场景一下串起来：疲劳、失神、被控制、空转、续命——说到底，都是“形式还在，主体性已经变薄”。\n\n**悟道时刻** · zombie 真正有力的地方，不在“僵尸”这个怪物本身，而在它总能一秒指出一种失控状态：身体在，动作在，系统也在，但“我”已经不完全在了。\n\n以后你再遇到这个词，不妨先别急着译成“僵尸”。先问一句：这里被强调的，是恐怖，还是失去自主、只剩运转？抓到这一下，很多用法都会瞬间通透。",
+    "verification": {
+      "claimCount": 10,
+      "confirmedCount": 4,
+      "softenedCount": 5,
+      "uncertainCount": 2,
+      "rejectedCount": 1,
+      "checked": [
+        "**zombie 最早是‘死而复起的人’‘被人操控的尸体’这一类形象**",
+        "**这个词的核心不是‘死人’，而是‘活着却像没在活’**",
+        "**zombie 一般认为来自西非语言经由加勒比地区进入英语**",
+        "**早先就和‘死者复返’‘被巫术支配的尸体’这类民间观念绑定**",
+        "**它进入英语后，先稳稳待在恐怖和民俗想象里，后来才被现代英语不断抽空、借壳、扩容*…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/zombie"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/zombie"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/zombie"
+        },
+        {
+          "label": "Britannica Dictionary",
+          "url": "https://www.britannica.com/dictionary/zombie"
+        },
+        {
+          "label": "Longman Dictionary of Contemporary English",
+          "url": "https://www.ldoceonline.com/dictionary/zombie"
+        },
+        {
+          "label": "Congressional Research Service",
+          "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF11673/IF11673.1.pdf"
+        },
+        {
+          "label": "OECD",
+          "url": "https://www.oecd.org/en/publications/confronting-the-zombies_f14fd801-en.html"
+        },
+        {
+          "label": "Britannica",
+          "url": "https://www.britannica.com/technology/zombie-computer"
         }
       ]
     }

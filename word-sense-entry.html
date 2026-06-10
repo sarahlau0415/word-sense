@@ -1787,6 +1787,19 @@
       }[character]));
     }
 
+    function entryPreview(markdown, fallback = "") {
+      const text = String(markdown || "")
+        .replace(/\*\*[^*]+\*\*\s*·\s*/g, "")
+        .replace(/`([^`]+)`/g, "$1")
+        .replace(/\*([^*\n]+)\*/g, "$1")
+        .replace(/^>\s*/gm, "")
+        .replace(/\s+/g, " ")
+        .trim();
+      if (!text) return fallback;
+      const firstSentence = text.match(/^[^。！？.!?]{18,80}[。！？.!?]/);
+      return firstSentence ? firstSentence[0] : text.slice(0, 56);
+    }
+
     function inline(text) {
       return escapeHtml(text)
         .replace(/`([^`]+)`/g, "<code>$1</code>")
@@ -2417,16 +2430,17 @@
         showError(word, "这份词条暂时还没有加入阅读档案。");
         return;
       }
-      const surfaceMeaning = card ? `“${card.meaning}”` : "“从真实语境里整理出的词义线索”";
-      const slipMeaning = card ? card.meaning : "newly filed entry";
+      const fallbackPreview = entryPreview(entry.markdown, "从这份词条里抽出一个用法线索");
+      const surfaceMeaning = card ? `“${card.meaning}”` : `“${fallbackPreview}”`;
+      const slipMeaning = card ? card.meaning : fallbackPreview;
 
       showFile(word, {
         surface: surfaceMeaning,
         slip: `<b>${escapeHtml(word)}</b><br>archive entry<br><br>${escapeHtml(slipMeaning)}`,
         markdown: entry.markdown,
         contrast: [
-          ["English in use", "the lived shape held inside this word"],
-          ["中文正面写着", card ? `“${card.meaning}”` : "先从语境回看它的落点"]
+          ["English in use", `${word} in actual sentences`],
+          ["中文正面写着", card ? `“${card.meaning}”` : `“${fallbackPreview}”`]
         ],
         verification: {
           sources: (entry.verification?.sources || []).slice(0, 5).map(item => [item.label, item.url])

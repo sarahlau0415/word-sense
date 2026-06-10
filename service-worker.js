@@ -1,4 +1,4 @@
-const CACHE_NAME = 'wordsense-v10-no-default-notice';
+const CACHE_NAME = 'wordsense-v11-public-shell';
 const APP_SHELL = [
   '/',
   '/index.html',
@@ -6,7 +6,6 @@ const APP_SHELL = [
   '/word-sense-author.html',
   '/word-sense-review.html',
   '/archive-pages.css',
-  '/word-sense-metrics.html',
   '/word-sense-events.js',
   '/manifest.webmanifest',
   '/wordsense-icon.svg',
@@ -40,6 +39,7 @@ self.addEventListener('fetch', (event) => {
   event.respondWith(
     fetch(event.request)
       .then((response) => {
+        if (!response.ok) return response;
         const copy = response.clone();
         caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
         return response;

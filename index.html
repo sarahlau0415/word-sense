@@ -186,6 +186,65 @@
       font: 12px/1.5 var(--mono);
     }
 
+    .update-notice {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 90;
+      width: min(380px, calc(100% - 28px));
+      padding: 15px;
+      border: 1px solid #9f9787;
+      background:
+        linear-gradient(rgba(255, 254, 250, 0.92), rgba(250, 246, 236, 0.96)),
+        url("assets/archive/old-paper-texture.jpg") center / cover;
+      box-shadow: 8px 10px 0 rgba(31, 28, 23, 0.1);
+      transform: translateY(16px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 180ms ease-out, transform 180ms ease-out;
+    }
+
+    .update-notice.is-visible {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .update-notice strong {
+      display: block;
+      margin-bottom: 5px;
+      font: 700 13px/1.35 var(--mono);
+    }
+
+    .update-notice p {
+      margin: 0;
+      color: #4f4a40;
+      font-size: 13px;
+      line-height: 1.62;
+    }
+
+    .update-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 12px;
+    }
+
+    .update-actions button {
+      min-height: 34px;
+      border: 1px solid var(--ink);
+      padding: 0 12px;
+      background: var(--ink);
+      color: var(--white);
+      font: 700 12px/1 var(--mono);
+    }
+
+    .update-actions button:last-child {
+      background: transparent;
+      color: #4f4a40;
+      border-color: #b5ad9d;
+    }
+
     @keyframes release-fade-in {
       from { opacity: 0; }
       to { opacity: 1; }
@@ -249,6 +308,55 @@
       gap: clamp(30px, 6vw, 88px);
       align-items: end;
       padding: 54px 0 44px;
+    }
+
+    .intro-copy {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: clamp(18px, 4vw, 42px);
+      align-items: center;
+    }
+
+    .intro-text {
+      min-width: 0;
+    }
+
+    .theme-stamp {
+      position: relative;
+      display: grid;
+      place-items: center;
+      width: clamp(132px, 15vw, 182px);
+      aspect-ratio: 1;
+      border: 3px solid #e24c49;
+      border-radius: 50%;
+      color: #d8433f;
+      font: 700 clamp(17px, 1.75vw, 23px)/1.2 var(--mono);
+      letter-spacing: 0.08em;
+      text-align: center;
+      transform: rotate(-7deg);
+      opacity: 0.92;
+      mix-blend-mode: multiply;
+    }
+
+    .theme-stamp::before {
+      content: "";
+      position: absolute;
+      inset: 8px;
+      border: 1px dashed rgba(216, 67, 63, 0.72);
+      border-radius: 50%;
+    }
+
+    .theme-stamp::after {
+      content: "ISSUE 004";
+      position: absolute;
+      bottom: 18%;
+      font: 700 9px/1 var(--mono);
+      letter-spacing: 0.12em;
+      color: rgba(216, 67, 63, 0.72);
+    }
+
+    .theme-stamp span {
+      transform: translateY(-7px);
     }
 
     .intro h1 {
@@ -362,8 +470,8 @@
     .search-cost-note {
       margin: 0 0 10px;
       color: #4a463d;
-      font-size: 13px;
-      line-height: 1.58;
+      font-size: 12px;
+      line-height: 1.55;
     }
 
     .key-row {
@@ -394,6 +502,30 @@
       color: var(--white);
       padding: 0 12px;
       font: 700 13px/1 var(--mono);
+    }
+
+    .api-cost-card {
+      margin: 11px 0 13px;
+      padding: 12px 13px;
+      border-left: 4px solid var(--coral);
+      background:
+        linear-gradient(rgba(255, 254, 250, 0.8), rgba(255, 246, 225, 0.82)),
+        url("assets/archive/old-paper-texture.jpg") center / cover;
+      color: #2f2b25;
+      font-size: 12px;
+      line-height: 1.62;
+    }
+
+    .api-cost-card strong {
+      display: block;
+      margin-bottom: 4px;
+      font: 700 11px/1.2 var(--mono);
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .api-cost-card p {
+      margin: 0;
     }
 
 
@@ -1902,6 +2034,15 @@
         padding: 34px 0 32px;
       }
 
+      .intro-copy {
+        grid-template-columns: 1fr;
+      }
+
+      .theme-stamp {
+        justify-self: start;
+        width: 116px;
+      }
+
       .subscribe-guide {
         grid-template-columns: 1fr;
         align-items: start;
@@ -2027,6 +2168,14 @@
       </div>
     </div>
   </section>
+  <aside id="cacheUpdateNotice" class="update-notice" aria-live="polite" aria-atomic="true" hidden>
+    <strong>新版已经准备好</strong>
+    <p>如果手机上还弹出登录框，刷新一次就会清掉旧缓存。</p>
+    <div class="update-actions">
+      <button type="button" id="cacheUpdateReload">刷新页面</button>
+      <button type="button" id="cacheUpdateDismiss">知道了</button>
+    </div>
+  </aside>
   <main class="page">
     <header class="masthead">
       <a class="brand" href="index.html">Word Sense</a>
@@ -2035,7 +2184,7 @@
         <a href="word-sense-author.html">一封信</a>
         <div class="issue">
           <span>FIELD NOTES ON ENGLISH</span>
-          <span>ISSUE 003</span>
+          <span>ISSUE 004</span>
         </div>
       </div>
       <div class="top-install">
@@ -2045,9 +2194,12 @@
     </header>
 
     <section class="intro">
-      <div>
-        <h1>那些你以为已经懂了的词</h1>
-        <p>一个英文词被翻成中文的那一刻，常常只剩下了正面。把卡片翻过来，看看真实使用里还留下了什么痕迹。</p>
+      <div class="intro-copy">
+        <div class="intro-text">
+          <h1>那些你以为已经懂了的词</h1>
+          <p>一个英文词被翻成中文的那一刻，常常只剩下了正面。把卡片翻过来，看看真实使用里还留下了什么痕迹。</p>
+        </div>
+        <div class="theme-stamp" aria-label="特别篇：机器术语"><span>特别篇<br>机器术语</span></div>
       </div>
 
       <form id="senseForm" class="lookup">
@@ -2065,7 +2217,11 @@
         </div>
         <details id="searchTools" class="lookup-support">
           <summary>API key</summary>
-          <p class="search-cost-note">已有词卡免费阅读。搜索内容库里没有的新词时，Word Sense 会启动审校流程并调用模型；这一步需要填写你自己的 OpenAI-compatible API key。本次 key 只临时存在浏览器 session，不会写进链接。</p>
+          <div class="api-cost-card">
+            <strong>新词生成费用</strong>
+            <p>已有词卡免费阅读。搜索未收录的新词会调用模型，通常约 $0.05-$0.20/次；复杂词或重试可能更高，最终以 API 服务商账单为准。</p>
+          </div>
+          <p class="search-cost-note">你的 key 只临时存在本次浏览器 session，Word Sense 不会保存。</p>
           <div class="key-row">
             <input id="searchApiKeyInput" type="password" autocomplete="off" placeholder="本次使用的 API key">
             <button id="searchApiKeySave" type="button">保存本次 key</button>
@@ -2077,7 +2233,7 @@
 
     <section aria-label="精选词卡">
       <div class="gallery-header">
-        <h2>ISSUE 003 WORD CARDS / 16 FILES</h2>
+        <h2>ISSUE 004 WORD CARDS / 16 FILES</h2>
         <div class="gallery-tools">
           <p>hover 看线索 / click 阅读词条</p>
           <button id="savedShelfToggle" class="shelf-toggle" type="button" aria-expanded="false">
@@ -2091,9 +2247,9 @@
 
     <section class="archive-section" aria-label="上一期归档词卡">
       <div class="gallery-header">
-        <h2>ARCHIVE DRAWER / ISSUE 002</h2>
+        <h2>ARCHIVE DRAWER / ISSUE 003</h2>
         <div class="gallery-tools">
-          <p class="archive-note">上一期收进档案夹，只露出词条标签；点开任意标签继续阅读。</p>
+          <p class="archive-note">Issue 003 已经收进档案袋，只露出词条标签；点开任意标签继续阅读。</p>
         </div>
       </div>
       <div id="archiveCards" class="archive-folder"><span class="archive-folder-label">open an old file -></span></div>
@@ -2179,6 +2335,25 @@
     let currentShareStyle = "direct";
 
     const cardCatalog = [
+      { word: "spawn", meaning: "生成；派生进程", trail: "进程 / 生成", clue: "不是凭空出现，而是一个系统把新的东西生出来、放出去。", card: "#c5dcf4", reveal: "#263fc7", revealInk: "#fffefa" },
+      { word: "fork", meaning: "分叉；复制分支", trail: "Git / 分叉", clue: "一条线从这里分出去，变成可以独立走的另一条路。", card: "#ff8875", reveal: "#fff1a6", revealInk: "#171717" },
+      { word: "mount", meaning: "挂载；装上去", trail: "结构 / 接入", clue: "不是单纯放上去，而是把一个东西接进系统，让它开始可用。", card: "#5b8b40", reveal: "#f5b08b", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "hydrate", meaning: "水合；客户端接管", trail: "前端 / SSR", clue: "HTML 已经有形状，JavaScript 再接上事件和状态，让页面活起来。", card: "#315f87", reveal: "#ff8875", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "flush", meaning: "刷写；冲出缓冲", trail: "日志 / 缓冲区", clue: "把暂时攒着的东西一次性推到真正的目的地。", card: "#f4f1ea", reveal: "#161818", revealInk: "#f7f3e9" },
+      { word: "drain", meaning: "排空；耗尽", trail: "队列 / 资源", clue: "不是突然消失，而是一点点流出去，直到系统里不剩多少。", card: "#f2e6c9", reveal: "#c95440", revealInk: "#fffefa" },
+      { word: "debounce", meaning: "防抖；等稳定再触发", trail: "交互 / 节奏", clue: "不要每一下抖动都响应，等动作安静下来再算数。", card: "#356248", reveal: "#e1dfda", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "throttle", meaning: "节流；限制频率", trail: "流量 / 控制", clue: "不是让它停下，而是掐住速度，让通过量可控。", card: "#d7d4cf", reveal: "#2447bd", revealInk: "#fffefa" },
+      { word: "poll", meaning: "轮询；征询", trail: "API / 状态", clue: "不等别人通知，而是隔一会儿问一次：好了没？", card: "#c75a48", reveal: "#f1e8d3", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "race", meaning: "竞态；抢先完成", trail: "并发 / 时间", clue: "问题不在谁快，而在几个动作同时跑时谁先改变结果。", card: "#486b3b", reveal: "#c8ddf0", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "resolve", meaning: "解析；收束结果", trail: "Promise / 路径", clue: "把悬着的一团状态收束到一个确定的落点。", card: "#b9d3ea", reveal: "#356248", revealInk: "#fffefa" },
+      { word: "fallback", meaning: "兜底；退回方案", trail: "失败路径", clue: "主路走不通时，系统往后退一步，拿出还能用的备选。", card: "#ffb498", reveal: "#25353a", revealInk: "#fffefa" },
+      { word: "stale", meaning: "过期；不再新鲜", trail: "缓存 / 数据", clue: "不一定是错的，只是曾经新鲜，现在该重新验证了。", card: "#32618a", reveal: "#e7dcb9", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "daemon", meaning: "后台守护进程", trail: "系统 / 后台", clue: "它不站在台前，却一直在后面等着处理事情。", card: "#f5b08b", reveal: "#285542", revealInk: "#fffefa" },
+      { word: "zombie", meaning: "僵尸进程；空壳", trail: "系统 / 状态", clue: "看起来还在，其实主体已经死了，只剩一个系统记录。", card: "#285542", reveal: "#d9d9d7", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "thundering", meaning: "雷鸣般；惊群", trail: "系统 / 群体压力", clue: "不是一个请求太大，而是一群请求同时轰过来。", card: "#e0ded9", reveal: "#234b72", revealInk: "#fffefa", compact: true }
+    ];
+
+    const archiveCardCatalog = [
       { word: "pull", meaning: "拉；牵引", trail: "动作 / 关系", clue: "不是把东西往自己这边拽这么简单，是一种看不见的力量在牵动。", card: "#c5dcf4", reveal: "#263fc7", revealInk: "#fffefa" },
       { word: "punch", meaning: "击打；冲击力", trail: "动作 / 力度", clue: "不只是打一拳，而是某个东西带着短促、集中、直接的冲击。", card: "#ff8875", reveal: "#fff1a6", revealInk: "#171717" },
       { word: "address", meaning: "处理；面对", trail: "职场 / 问题", clue: "不是知道地址，而是把一个问题正式拿到面前处理。", card: "#5b8b40", reveal: "#f5b08b", revealInk: "#171717", faceInk: "#fffefa" },
@@ -2196,27 +2371,6 @@
       { word: "cookbook", meaning: "食谱；操作配方集", trail: "技术 / 文档", clue: "在技术语境里，它不是厨房书，而是一套可照着做的解决方案。", card: "#285542", reveal: "#d9d9d7", revealInk: "#171717", faceInk: "#fffefa" },
       { word: "slopper", meaning: "湿乱底色的词", trail: "俚语 / 食物 / AI", clue: "词形先给你一层湿乱感，但真正意思要看它落在哪个场景。", card: "#e0ded9", reveal: "#234b72", revealInk: "#fffefa" }
     ];
-
-    const archiveCardCatalog = [
-      { word: "resilience", meaning: "恢复力；韧性", trail: "心理 / 恢复", clue: "不是硬扛，是受挫后还能恢复形状。", card: "#c5dcf4", reveal: "#263fc7", revealInk: "#fffefa" },
-      { word: "unfold", meaning: "展开；逐步显露", trail: "新闻 / 叙事", clue: "事情像一张折起的纸慢慢打开。", card: "#f4f1ea", reveal: "#161818", revealInk: "#f7f3e9" },
-      { word: "brace", meaning: "撑住；准备应对", trail: "新闻 / 生活", clue: "冲击还没来，身体已经先紧起来。", card: "#5b8b40", reveal: "#f5b08b", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "surge", meaning: "激增；涌起", trail: "新闻 / 数据", clue: "不是增加，是一股力量突然往上涌。", card: "#ff8875", reveal: "#fff1a6", revealInk: "#171717" },
-      { word: "verify", meaning: "核实；确认", trail: "AI / 证据", clue: "相信之前，先把手伸向证据。", card: "#b9d3ea", reveal: "#356248", revealInk: "#fffefa" },
-      { word: "cringe", meaning: "尴尬到缩起来", trail: "身体 / 社媒", clue: "不是不好看，是你身体先退了一下。", card: "#e0ded9", reveal: "#234b72", revealInk: "#fffefa" },
-      { word: "probe", meaning: "探查；深入调查", trail: "新闻 / 调查", clue: "不是普通调查，是带着针尖往里探。", card: "#f5b08b", reveal: "#285542", revealInk: "#fffefa" },
-      { word: "fallout", meaning: "余波；后果", trail: "新闻 / 政治", clue: "爆炸结束后，落下来的东西才难处理。", card: "#285542", reveal: "#d9d9d7", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "hallucination", meaning: "幻觉；无依据生成", trail: "AI / 错误", clue: "最危险的不是错，而是错得很像对。", card: "#315f87", reveal: "#ff8875", revealInk: "#171717", faceInk: "#fffefa", compact: true },
-      { word: "grounding", meaning: "锚定证据", trail: "AI / 信息", clue: "让漂浮的回答重新接到来源地面。", card: "#32618a", reveal: "#e7dcb9", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "delulu", meaning: "上头式幻想", trail: "社媒 / 自嘲", clue: "知道不现实，还是愿意先相信一会儿。", card: "#ffb498", reveal: "#25353a", revealInk: "#fffefa" },
-      { word: "brain rot", meaning: "碎片内容泡脑", trail: "社媒 / 文化", clue: "一边沉迷，一边嫌弃自己刷太久。", card: "#d7d4cf", reveal: "#2447bd", revealInk: "#fffefa" },
-      { word: "deprecate", meaning: "标记为不推荐", trail: "技术 / 文档", clue: "现在还能用，但官方已经不鼓励继续用。", card: "#486b3b", reveal: "#c8ddf0", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "orchestrate", meaning: "编排；调度", trail: "AI / 系统", clue: "像指挥乐团一样，让多个部分同时进入。", card: "#f2e6c9", reveal: "#c95440", revealInk: "#fffefa" },
-      { word: "inflection point", meaning: "拐点；转折点", trail: "商业 / 趋势", clue: "不是普通变化，是曲线开始换方向。", card: "#c75a48", reveal: "#f1e8d3", revealInk: "#171717", faceInk: "#fffefa", compact: true },
-      { word: "accountability gap", meaning: "责任缺口", trail: "AI / 治理", clue: "结果影响了人，却没人真正接住责任。", card: "#356248", reveal: "#e1dfda", revealInk: "#171717", faceInk: "#fffefa", compact: true },
-      { word: "clanker", meaning: "反 AI 侮辱词", trail: "AI / 俚语", clue: "金属声变成了人类对机器的排斥感。", card: "#c5dcf4", reveal: "#25353a", revealInk: "#fffefa" },
-      { word: "unhinged", meaning: "失控；离谱", trail: "社媒 / 评价", clue: "门铰链松开后，整个状态不再被固定。", card: "#ff8875", reveal: "#315f87", revealInk: "#fffefa" }
-    ];
     const archivedWords = new Set([
       "wail", "lowkey", "agentic", "reframe", "sentiment", "backdrop", "it's giving",
       "accountability gap", "address", "at its discretion", "blast", "brace", "brain rot",
@@ -2224,7 +2378,9 @@
       "distill", "exchange", "fallout", "grounding", "hallucination", "head", "horizon",
       "hushpitality", "inflection point", "navigate", "Norwegian life-cleaning", "orchestrate",
       "probe", "pull", "punch", "render", "resilience", "sense", "slopper", "surge",
-      "unfold", "unhinged", "verify"
+      "unfold", "unhinged", "verify", "spawn", "fork", "mount", "hydrate", "flush",
+      "drain", "debounce", "throttle", "poll", "race", "resolve", "fallback", "stale",
+      "daemon", "zombie", "thundering"
     ]);
 
     const files = {
@@ -2351,6 +2507,19 @@
         "\"": "&quot;",
         "'": "&#039;"
       }[character]));
+    }
+
+    function entryPreview(markdown, fallback = "") {
+      const text = String(markdown || "")
+        .replace(/\*\*[^*]+\*\*\s*·\s*/g, "")
+        .replace(/`([^`]+)`/g, "$1")
+        .replace(/\*([^*\n]+)\*/g, "$1")
+        .replace(/^>\s*/gm, "")
+        .replace(/\s+/g, " ")
+        .trim();
+      if (!text) return fallback;
+      const firstSentence = text.match(/^[^。！？.!?]{18,80}[。！？.!?]/);
+      return firstSentence ? firstSentence[0] : text.slice(0, 56);
     }
 
     function inline(text) {
@@ -2893,16 +3062,17 @@
         showError(word, "这份词条暂时还没有加入阅读档案。");
         return;
       }
-      const surfaceMeaning = card ? `“${card.meaning}”` : "“从真实语境里整理出的词义线索”";
-      const slipMeaning = card ? card.meaning : "newly filed entry";
+      const fallbackPreview = entryPreview(entry.markdown, "从这份词条里抽出一个用法线索");
+      const surfaceMeaning = card ? `“${card.meaning}”` : `“${fallbackPreview}”`;
+      const slipMeaning = card ? card.meaning : fallbackPreview;
 
       showFile(word, {
         surface: surfaceMeaning,
         slip: `<b>${escapeHtml(word)}</b><br>archive entry<br><br>${escapeHtml(slipMeaning)}`,
         markdown: entry.markdown,
         contrast: [
-          ["English in use", "the lived shape held inside this word"],
-          ["中文正面写着", card ? `“${card.meaning}”` : "先从语境回看它的落点"]
+          ["English in use", `${word} in actual sentences`],
+          ["中文正面写着", card ? `“${card.meaning}”` : `“${fallbackPreview}”`]
         ],
         verification: {
           sources: (entry.verification?.sources || []).slice(0, 5).map(item => [item.label, item.url])
@@ -2911,7 +3081,7 @@
     }
 
     function usesMobileCardPreview() {
-      return window.matchMedia("(max-width: 780px), (hover: none) and (pointer: coarse)").matches;
+      return window.matchMedia("(hover: none) and (pointer: coarse)").matches;
     }
 
     function clearCardPreviews(exceptCard = null) {
@@ -2994,7 +3164,7 @@
       if (!sessionKey.trim()) {
         searchTools?.setAttribute("open", "");
         apiKeyInput?.focus();
-        setInlineStatus(apiKeyStatus, "搜索内容库里没有的新词需要填写你自己的 API key。已有词卡可以直接阅读。", "error");
+        setInlineStatus(apiKeyStatus, "这是一个未收录的新词。继续生成会调用模型并产生费用，请填写你自己的 API key；已有词卡可以直接阅读。", "error");
         return;
       }
       if (apiKeyInput?.value.trim()) {
@@ -3109,8 +3279,48 @@
       if (type) installStatus.classList.add(type);
     }
 
+    const updateNotice = document.querySelector("#cacheUpdateNotice");
+    const updateReload = document.querySelector("#cacheUpdateReload");
+    const updateDismiss = document.querySelector("#cacheUpdateDismiss");
+
+    function showCacheUpdateNotice() {
+      if (!updateNotice) return;
+      updateNotice.hidden = false;
+      requestAnimationFrame(() => updateNotice.classList.add("is-visible"));
+    }
+
+    function hideCacheUpdateNotice() {
+      if (!updateNotice) return;
+      updateNotice.classList.remove("is-visible");
+      window.setTimeout(() => { updateNotice.hidden = true; }, 190);
+    }
+
+    updateReload?.addEventListener("click", () => window.location.reload());
+    updateDismiss?.addEventListener("click", hideCacheUpdateNotice);
+
     if ("serviceWorker" in navigator && window.location.protocol.startsWith("http")) {
-      navigator.serviceWorker.register("/service-worker.js").catch(() => {});
+      let refreshingForUpdate = false;
+
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if (refreshingForUpdate) return;
+        refreshingForUpdate = true;
+        showCacheUpdateNotice();
+      });
+
+      navigator.serviceWorker.register("/service-worker.js").then(registration => {
+        if (registration.waiting && navigator.serviceWorker.controller) {
+          showCacheUpdateNotice();
+        }
+        registration.addEventListener("updatefound", () => {
+          const worker = registration.installing;
+          if (!worker) return;
+          worker.addEventListener("statechange", () => {
+            if (worker.state === "installed" && navigator.serviceWorker.controller) {
+              showCacheUpdateNotice();
+            }
+          });
+        });
+      }).catch(() => {});
     }
 
     window.addEventListener("beforeinstallprompt", event => {
