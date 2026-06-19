@@ -321,44 +321,6 @@
       min-width: 0;
     }
 
-    .theme-stamp {
-      position: relative;
-      display: grid;
-      place-items: center;
-      width: clamp(132px, 15vw, 182px);
-      aspect-ratio: 1;
-      border: 3px solid #e24c49;
-      border-radius: 50%;
-      color: #d8433f;
-      font: 700 clamp(17px, 1.75vw, 23px)/1.2 var(--mono);
-      letter-spacing: 0.08em;
-      text-align: center;
-      transform: rotate(-7deg);
-      opacity: 0.92;
-      mix-blend-mode: multiply;
-    }
-
-    .theme-stamp::before {
-      content: "";
-      position: absolute;
-      inset: 8px;
-      border: 1px dashed rgba(216, 67, 63, 0.72);
-      border-radius: 50%;
-    }
-
-    .theme-stamp::after {
-      content: "ISSUE 005";
-      position: absolute;
-      bottom: 18%;
-      font: 700 9px/1 var(--mono);
-      letter-spacing: 0.12em;
-      color: rgba(216, 67, 63, 0.72);
-    }
-
-    .theme-stamp span {
-      transform: translateY(-7px);
-    }
-
     .intro h1 {
       margin: 0 0 17px;
       max-width: 490px;
@@ -2038,11 +2000,6 @@
         grid-template-columns: 1fr;
       }
 
-      .theme-stamp {
-        justify-self: start;
-        width: 116px;
-      }
-
       .subscribe-guide {
         grid-template-columns: 1fr;
         align-items: start;
@@ -2199,7 +2156,6 @@
           <h1>那些你以为已经懂了的词</h1>
           <p>一个英文词被翻成中文的那一刻，常常只剩下了正面。把卡片翻过来，看看真实使用里还留下了什么痕迹。</p>
         </div>
-        <div class="theme-stamp" aria-label="特别篇：机器术语"><span>特别篇<br>机器术语</span></div>
       </div>
 
       <form id="senseForm" class="lookup">
