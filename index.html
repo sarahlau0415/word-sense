@@ -347,7 +347,7 @@
     }
 
     .theme-stamp::after {
-      content: "ISSUE 004";
+      content: "ISSUE 005";
       position: absolute;
       bottom: 18%;
       font: 700 9px/1 var(--mono);
@@ -2184,7 +2184,7 @@
         <a href="word-sense-author.html">一封信</a>
         <div class="issue">
           <span>FIELD NOTES ON ENGLISH</span>
-          <span>ISSUE 004</span>
+          <span>ISSUE 005</span>
         </div>
       </div>
       <div class="top-install">
@@ -2233,7 +2233,7 @@
 
     <section aria-label="精选词卡">
       <div class="gallery-header">
-        <h2>ISSUE 004 WORD CARDS / 16 FILES</h2>
+        <h2>ISSUE 005 WORD CARDS / 16 FILES</h2>
         <div class="gallery-tools">
           <p>hover 看线索 / click 阅读词条</p>
           <button id="savedShelfToggle" class="shelf-toggle" type="button" aria-expanded="false">
@@ -2247,9 +2247,9 @@
 
     <section class="archive-section" aria-label="上一期归档词卡">
       <div class="gallery-header">
-        <h2>ARCHIVE DRAWER / ISSUE 003</h2>
+        <h2>ARCHIVE DRAWER / ISSUE 004</h2>
         <div class="gallery-tools">
-          <p class="archive-note">Issue 003 已经收进档案袋，只露出词条标签；点开任意标签继续阅读。</p>
+          <p class="archive-note">Issue 004 已经收进档案袋，只露出词条标签；点开任意标签继续阅读。</p>
         </div>
       </div>
       <div id="archiveCards" class="archive-folder"><span class="archive-folder-label">open an old file -></span></div>
@@ -2335,6 +2335,25 @@
     let currentShareStyle = "direct";
 
     const cardCatalog = [
+      { word: "What's cooking", meaning: "有什么新动静", trail: "口语 / 局面", clue: "不是问厨房，而是在探一个人、一个计划、一个局面里正在酝酿什么。", card: "#c5dcf4", reveal: "#263fc7", revealInk: "#fffefa", compact: true },
+      { word: "Revelation", meaning: "揭示；顿悟", trail: "发现 / 真相", clue: "不是普通发现，而是遮住的东西突然被掀开，世界换了一种读法。", card: "#ff8875", reveal: "#fff1a6", revealInk: "#171717" },
+      { word: "copy", meaning: "复制；文案", trail: "内容 / 复写", clue: "它一边是照着原样再做一份，一边是让人读了会行动的文字。", card: "#5b8b40", reveal: "#f5b08b", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "stew", meaning: "炖；憋着想", trail: "烹煮 / 情绪", clue: "不是马上爆发，而是情绪像锅里的东西一样慢慢闷着、煮着。", card: "#315f87", reveal: "#ff8875", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "fend", meaning: "抵挡；照料自己", trail: "防御 / 生存", clue: "它不是漂亮地解决问题，而是在压力靠近时先挡住、先撑住。", card: "#f4f1ea", reveal: "#161818", revealInk: "#f7f3e9" },
+      { word: "cast", meaning: "投下；塑成；选角", trail: "投掷 / 成形", clue: "cast 的底层像把东西抛出去，让它落到某个形状、影子或角色里。", card: "#f2e6c9", reveal: "#c95440", revealInk: "#fffefa" },
+      { word: "hygiene", meaning: "卫生；基本规范", trail: "习惯 / 系统", clue: "现代英语里它常不只是干净，而是让系统不出问题的一套基本维护。", card: "#356248", reveal: "#e1dfda", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "reference", meaning: "参考；指向", trail: "参照 / 关系", clue: "reference 不是把资料摆在旁边，而是把一件事指向另一件事来理解。", card: "#d7d4cf", reveal: "#2447bd", revealInk: "#fffefa", compact: true },
+      { word: "float", meaning: "漂浮；提出试探", trail: "试探 / 悬置", clue: "一个想法被 float 出来，不是拍板，而是先放到空气里看看会不会浮住。", card: "#c75a48", reveal: "#f1e8d3", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "fare", meaning: "进展；票价", trail: "旅程 / 状态", clue: "fare 关心的是一路走下来过得怎样，也可以是这趟路要付多少。", card: "#486b3b", reveal: "#c8ddf0", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "come off", meaning: "成功；显得", trail: "结果 / 观感", clue: "它常在问：这件事最后有没有成，以及别人看起来觉得你像什么。", card: "#b9d3ea", reveal: "#356248", revealInk: "#fffefa" },
+      { word: "affairs", meaning: "事务；关系事件", trail: "公共 / 私人", clue: "affairs 像一堆需要处理的事，也可能是关系里越界的那件事。", card: "#ffb498", reveal: "#25353a", revealInk: "#fffefa" },
+      { word: "peg", meaning: "钉住；归类", trail: "固定 / 判断", clue: "peg 的动作很具体：把东西钉住，也把一个人或事固定到某个判断里。", card: "#32618a", reveal: "#e7dcb9", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "legacy", meaning: "遗产；遗留系统", trail: "留下 / 负担", clue: "legacy 不总是光荣遗产，也可能是上一代留下、现在还得背着走的东西。", card: "#f5b08b", reveal: "#285542", revealInk: "#fffefa" },
+      { word: "business", meaning: "生意；事情；本分", trail: "边界 / 事务", clue: "它不只是商业，也常在划边界：这是不是你的事，你该不该管。", card: "#285542", reveal: "#d9d9d7", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "sandbox", meaning: "沙盒；安全试验区", trail: "技术 / 边界", clue: "不是儿童沙坑，而是一个可试错、可隔离、不至于弄坏外部世界的空间。", card: "#e0ded9", reveal: "#234b72", revealInk: "#fffefa" }
+    ];
+
+    const archiveCardCatalog = [
       { word: "spawn", meaning: "生成；派生进程", trail: "进程 / 生成", clue: "不是凭空出现，而是一个系统把新的东西生出来、放出去。", card: "#c5dcf4", reveal: "#263fc7", revealInk: "#fffefa" },
       { word: "fork", meaning: "分叉；复制分支", trail: "Git / 分叉", clue: "一条线从这里分出去，变成可以独立走的另一条路。", card: "#ff8875", reveal: "#fff1a6", revealInk: "#171717" },
       { word: "mount", meaning: "挂载；装上去", trail: "结构 / 接入", clue: "不是单纯放上去，而是把一个东西接进系统，让它开始可用。", card: "#5b8b40", reveal: "#f5b08b", revealInk: "#171717", faceInk: "#fffefa" },
@@ -2352,25 +2371,6 @@
       { word: "zombie", meaning: "僵尸进程；空壳", trail: "系统 / 状态", clue: "看起来还在，其实主体已经死了，只剩一个系统记录。", card: "#285542", reveal: "#d9d9d7", revealInk: "#171717", faceInk: "#fffefa" },
       { word: "thundering", meaning: "雷鸣般；惊群", trail: "系统 / 群体压力", clue: "不是一个请求太大，而是一群请求同时轰过来。", card: "#e0ded9", reveal: "#234b72", revealInk: "#fffefa", compact: true }
     ];
-
-    const archiveCardCatalog = [
-      { word: "pull", meaning: "拉；牵引", trail: "动作 / 关系", clue: "不是把东西往自己这边拽这么简单，是一种看不见的力量在牵动。", card: "#c5dcf4", reveal: "#263fc7", revealInk: "#fffefa" },
-      { word: "punch", meaning: "击打；冲击力", trail: "动作 / 力度", clue: "不只是打一拳，而是某个东西带着短促、集中、直接的冲击。", card: "#ff8875", reveal: "#fff1a6", revealInk: "#171717" },
-      { word: "address", meaning: "处理；面对", trail: "职场 / 问题", clue: "不是知道地址，而是把一个问题正式拿到面前处理。", card: "#5b8b40", reveal: "#f5b08b", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "blast", meaning: "爆发；猛批", trail: "新闻 / 社媒", clue: "像爆炸一样突然放出来：声音、批评、消息、情绪都可以 blast。", card: "#315f87", reveal: "#ff8875", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "head", meaning: "朝向；带头", trail: "身体 / 方向", clue: "head 不只是头，也可以是一个人或事情开始朝某个方向走。", card: "#f4f1ea", reveal: "#161818", revealInk: "#f7f3e9" },
-      { word: "render", meaning: "使成为；呈现", trail: "技术 / 表达", clue: "不是单纯渲染画面，而是把某个东西变成可见、可读、可判断的状态。", card: "#f2e6c9", reveal: "#c95440", revealInk: "#fffefa" },
-      { word: "capacity", meaning: "容量；身份能力", trail: "职场 / 制度", clue: "capacity 常常不是能装多少，而是你以什么身份、能承接多少。", card: "#356248", reveal: "#e1dfda", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "hushpitality", meaning: "安静式接待", trail: "新词 / 旅游", clue: "把 hush 和 hospitality 接在一起：服务变轻，噪音退后。", card: "#d7d4cf", reveal: "#2447bd", revealInk: "#fffefa", compact: true },
-      { word: "Norwegian life-cleaning", meaning: "挪威式生活整理", trail: "文化 / 生活方式", clue: "不是清理整个人生，而是在日常里提前减轻物品和未来负担。", card: "#c75a48", reveal: "#f1e8d3", revealInk: "#171717", faceInk: "#fffefa", compact: true },
-      { word: "at its discretion", meaning: "由其自行裁量", trail: "法律 / 条款", clue: "听起来礼貌，实际是在说决定权不在你手里。", card: "#486b3b", reveal: "#c8ddf0", revealInk: "#171717", faceInk: "#fffefa", compact: true },
-      { word: "navigate", meaning: "导航；周旋", trail: "职场 / 复杂局面", clue: "不是知道路线，而是在复杂环境里一边找路一边避开阻力。", card: "#b9d3ea", reveal: "#356248", revealInk: "#fffefa" },
-      { word: "distill", meaning: "提炼；萃取", trail: "思考 / 写作", clue: "从一堆材料里把最干净、最核心的东西慢慢提出来。", card: "#ffb498", reveal: "#25353a", revealInk: "#fffefa" },
-      { word: "canonical", meaning: "标准；正典", trail: "技术 / 学术", clue: "不是普通正确，而是被承认为那一个标准版本。", card: "#32618a", reveal: "#e7dcb9", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "horizon", meaning: "地平线；视野边界", trail: "趋势 / 想象", clue: "它不是远方本身，而是你目前能看见、能预期到的边界。", card: "#f5b08b", reveal: "#285542", revealInk: "#fffefa" },
-      { word: "cookbook", meaning: "食谱；操作配方集", trail: "技术 / 文档", clue: "在技术语境里，它不是厨房书，而是一套可照着做的解决方案。", card: "#285542", reveal: "#d9d9d7", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "slopper", meaning: "湿乱底色的词", trail: "俚语 / 食物 / AI", clue: "词形先给你一层湿乱感，但真正意思要看它落在哪个场景。", card: "#e0ded9", reveal: "#234b72", revealInk: "#fffefa" }
-    ];
     const archivedWords = new Set([
       "wail", "lowkey", "agentic", "reframe", "sentiment", "backdrop", "it's giving",
       "accountability gap", "address", "at its discretion", "blast", "brace", "brain rot",
@@ -2380,7 +2380,8 @@
       "probe", "pull", "punch", "render", "resilience", "sense", "slopper", "surge",
       "unfold", "unhinged", "verify", "spawn", "fork", "mount", "hydrate", "flush",
       "drain", "debounce", "throttle", "poll", "race", "resolve", "fallback", "stale",
-      "daemon", "zombie", "thundering"
+      "daemon", "zombie", "thundering",
+      "what's cooking", "revelation", "copy", "stew", "fend", "cast", "hygiene", "reference", "float", "fare", "come off", "affairs", "peg", "legacy", "business", "sandbox"
     ]);
 
     const files = {
