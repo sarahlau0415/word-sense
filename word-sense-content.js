@@ -393,19 +393,19 @@ window.WORD_SENSE_ENTRIES = {
       "抽象名词 · 发现时刻 · B1-B2",
       "Issue 005"
     ],
-    "markdown": "**字面含义** · revelation 的骨头里确实有一种 “uncover / unveil” 的动作感。它来自拉丁语 *revelare*；这里的 *re-* 更接近“反转、揭去遮蔽”，*velare* 是“盖上、以帷遮住”。所以这个词最原始的画面，不是“讲道理”，而是把原来盖住的东西掀开，让它露出来。你会感觉到一种从遮蔽到显现的瞬间。\n\n**本体质感** · 这个词在英语里常常带着“原来一直藏着”的质感。它不只是知道一件事，而是某个此前被遮住、被压着、没被看见的东西忽然露面了。这个“露面”有时会带来震动，有时带来启发，有时只是让真相一下子变得无法回避。  \n但大致来看，revelation 不能只理解成“个人顿悟”。现代英语里，它很常见的一支其实是“披露、揭露”——尤其是秘密、内幕、丑闻、隐藏事实被公开的时候。另一支常见用法，则是说某个人或某件事“出乎意料地好”，像一道突然亮起来的发现。  \n如果粗略地放在梯度里看，discovery 更像“发现了一个东西”，insight 更像“看懂了里面的关系”，announcement 只是“宣布出来”；而 revelation 往往更强调那层遮蔽被揭开之后，事实或价值一下子显形。\n\n**寻根溯源** · 这个词的核心词源就是“揭开”。它在英语里最早先落在宗教语境，指神意、神圣真理被启示给人；后来才逐渐扩展到更一般的意义，比如秘密、真相、隐藏信息的披露。也正因为这样，它今天才会同时出现在宗教、新闻调查、文学表达，甚至个人经验里。底层动作一直没怎么变：不是制造新东西，而是让本来已经在那里、只是之前没被看见的东西出场。  \n顺手一提，大写的 **Revelation** 还常专指《启示录》。这也是这个词宗教底色最直接的一种保留。\n\n**各路用法** · 几个例子，感受它在不同场域里怎么发光：\n\n**新闻,调查报道里**\n> The investigation led to shocking revelations about the company’s finances.\n> 这项调查披露了这家公司财务上的惊人内幕。\n\n这里的 revelation 不是“我突然开悟了”，而是典型的“被揭露出来的事实”。这其实是现代英语里很高频的一支。\n\n**职场,团队沟通里**\n> The revelation that the figures had been manipulated shocked the entire team.\n> 那个“数据曾被篡改”的披露让整个团队都震惊了。\n\n这里更典型的骨架是 **the revelation that...**：重点不在某份文件本身，而在“某个原本藏着的事实被揭出来”。\n\n**日常,聊一段经历**\n> My trip to Texas was a revelation.\n> 我那趟得州之行真是让我大开眼界。\n\n这里成立的不是泛泛“旅行很好玩”，而是这段经历像把某层幕一下拉开了：你忽然看见了原来没看见的东西。它也常见于 **be a revelation** 这种固定说法里。\n\n**评价,夸一个人或东西**\n> The young actor is a revelation in this film.\n> 这个年轻演员在这部电影里简直让人惊喜。\n\n这类用法很现代，也很常见。意思不是“他揭露了什么”，而是“他出乎意料地好，好到像一次惊喜的显现”。\n\n**书面/宗教语境**\n> The book is about divine revelation.\n> 这本书讲的是神启。\n\n在这个语境里，它保留了“来自更高处的显现”这层庄重感；不是一般的信息公开，而是神圣真理向人显明。\n\n**原生思维** · 从词源图像看，这个词很容易被理解成：重点不只是“信息出现了”，而是“遮盖被拿掉了”。所以 revelation 常常不只是在说内容本身，也是在说一种显现事件：原本在暗处的东西，现在进入了可见范围。  \n中文里我们会说“揭露”“披露”“让我恍然大悟”“大开眼界”“原来是这样”，这些都能碰到它。但要更贴近英语的实际分布，你最好先分辨它落在哪一支：是新闻里的“内幕曝光”，宗教里的“启示”，还是 **be a revelation** 那种“令人惊喜、让人重新认识”的评价。这样你对它的手感会稳很多。  \n而像 revelation 和 discovery、insight、announcement 这些近邻词，相较之下，revelation 往往更强调“藏着的东西露面了”，而不只是“有人知道了”“有人想明白了”或“有人宣布了”。\n\n**悟道时刻** · revelation 真正特别的地方，不只在“重要”，而在“揭幕”：它写的往往不是知识被添加，而是遮蔽被撤掉。以后你遇到相近词，不妨先问一句：这里是在说一个事实被披露、一层真相被显出来，还是只是有人获得了信息？这一下分清，很多英文里的“知道”，就不再是一个平面的“知道”。",
+    "markdown": "**字面含义** · revelation 最表层的画面，是原本遮着的东西被掀开了。它不是普通“我知道了”，而是某个原来不可见、不可说、不可理解的东西，突然显出来了。\n\n**本体质感** · 这个词在英语里带着一种“突然见光”的重量。它不只是知道了一个信息，而是原来那层雾一下散了，画面一下清楚了，之前那些零碎、模糊、说不通的东西，忽然被串起来了。在很多评价性用法里，母语者说 revelation，往往不只是在说“一个普通发现”，而是在说“这个发现一下刷新了原来的理解”。它有一种从遮蔽到显现的戏剧性。  \n但也要补一层现实感：不是所有 revelation 都这么“顿悟”。到了新闻、调查报道、正式书面语里，它也很常只是“披露、曝光、爆出的事实”，重点在信息被公开，而不一定在个人内心的震动。\n\n**寻根溯源** · 它的核心来源仍然是“揭开遮盖”的动作。英语后来把这种“揭开”，扩展到知识、真相、秘密、神意上，于是 revelation 既可以指“秘密或事实被揭开”，也可以指“让人眼前一亮的发现”。而在宗教语境里，它保留了更强的原始意味：不是人自己慢慢推理出来，而是某种更高的真理被显明出来。  \n这一点也解释了为什么 Revelation 单独大写时，常常就是《启示录》；the Book of Revelation 不是一般意义上的“发现录”，而是宗教传统里“启示”这个词最集中的那个名字。\n\n**各路用法** ·\n\n**职场,汇报里**\n> The customer interviews were a revelation, because they changed how we thought about the product.\n> 客户访谈带来了很大的启发，因为它改变了我们对这个产品的看法。\n\n这里的 revelation 不是普通“有收获”，而是“原来我们看错了，某个关键东西现在显出来了”。不过在更平直的职场表达里，很多人也会改用 finding、insight、takeaway，让语气没那么重。\n\n**正式书面,报告或新闻里**\n> The revelation that the data had been manipulated damaged the company's credibility.\n> 数据曾被篡改这一事实的披露，损害了公司的公信力。\n\n这是高频结构：the revelation that ...。这里通常不是“顿悟”，而是“……这一事实被曝光/被披露了”。\n\n**媒体,调查报道里**\n> The newspaper published shocking revelations about the minister's finances.\n> 这家报纸刊登了关于这位部长财务状况的惊人曝光。\n\nshocking revelations、damaging revelations 这一类，在现代媒体英语里很高频。revelation 在这里往往就该译成“披露、曝光、爆料内容”，而不是“启发”。\n\n**日常,跟朋友**\n> It was a revelation to learn that she had been running the whole project alone.\n> 得知她一直一个人负责整个项目，真是让我一下看清了很多事。\n\n这类句子是自然的，重点在“之前完全没意识到，现在一下被点亮了”。\n\n**评论语境,夸人或夸作品**\n> The new lead singer was a revelation.\n> 这位新主唱简直让人眼前一亮。\n\n这也是个很稳的高频句式：X was a revelation。它常常不是说“我获得了一条信息”，而是说“这个人或这个东西的表现，完全超出了原先预期”。\n\n**日常,说顿悟时刻**\n> It was a moment of revelation.\n> 那是一个顿时看明白的时刻。\n\na moment of revelation 会把重点放在那个“突然通了”的瞬间：不是积累本身，而是遮挡被拿开的那一下。\n\n➤ 值得注意的是，在宗教语境里，revelation 往往更稳定地指“启示；神启”这一层，语气比日常用法庄重得多；而单独大写的 Revelation，很多时候就是《启示录》。\n\n**原生思维** · 英语母语者用 revelation 时，脑子里常常不是先想“发现了一个东西”，而是想“某层遮挡被移开了”。所以这个词天然带着前后反差：之前看不见、看不懂、看不全，之后一下子通了。只是这份“通”，在不同语境里落点不一样：有时是宗教意义上的显明，有时是评论里的惊艳发现，有时则只是新闻里的事实曝光。  \n如果拿近义词来比，revelation 在很多语境下往往比 discovery 更容易带出“被揭开、被显露”的感觉；比起 insight，它也常更像一个“发生了的显明时刻”——当然，这种区别不是铁律，而是语感上的重心不同。至于 disclosure，它和 revelation 有交叉，但通常更偏制度、法律、信息披露，不一定带这种“突然见光”的戏剧性。\n\n**悟道时刻** · revelation 这个词真正抓人的地方，不是“知道了”，而是“遮蔽被拿掉了”。你以后遇到它，先别急着统一译成“启示”或“揭示”，先看它是在说哪一种“显露”：是神意被显明，是事实被曝光，还是某个人、某件作品突然让你眼前一亮。看见这层“从遮蔽到可见”，很多相关词的轻重就一下分开了。",
     "verification": {
-      "claimCount": 11,
-      "confirmedCount": 7,
-      "softenedCount": 4,
+      "claimCount": 10,
+      "confirmedCount": 5,
+      "softenedCount": 5,
       "uncertainCount": 1,
       "rejectedCount": 1,
       "checked": [
-        "revelation 的骨头里有 ‘uncover / unveil’ 的动作感。",
-        "它来自拉丁语 revelare。",
-        "re- 是‘往回、再’，velare 是‘盖上、遮住’。",
-        "这个词最原始的画面……是‘把原来盖住的东西掀开，让它露出来’。",
-        "后来它慢慢从‘把遮住的东西显出来’走向更抽象的意义：真相、意义、神意、隐藏信息的显现…"
+        "它来自拉丁语 revelare，re- 有‘往回、重新’，velare 有‘遮盖、盖…",
+        "所以它一开始不是‘灵光一闪’那种抽象感，而是‘原来被挡住的东西，现在让你看见了’。",
+        "英语后来把这种‘揭开’的动作，逐渐扩展到知识、真相、神意、秘密上，于是 revela…",
+        "在宗教语境里，它还保留着更强的原始意味：不是人自己推理出来，而是某种更高的东西显明出…",
+        "母语者说 revelation，常常不是在说‘一个普通发现’，而是在说‘这个发现把旧…"
       ],
       "sources": [
         {
@@ -417,28 +417,24 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://dictionary.cambridge.org/dictionary/english/revelation"
         },
         {
-          "label": "Oxford Learner’s Dictionaries",
-          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/revelation"
-        },
-        {
           "label": "Etymonline",
           "url": "https://www.etymonline.com/word/revelation"
         },
         {
-          "label": "Britannica Dictionary",
-          "url": "https://www.britannica.com/dictionary/revelation"
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.co.uk/definition/english/revelation"
         },
         {
           "label": "Britannica",
           "url": "https://www.britannica.com/topic/revelation"
         },
         {
-          "label": "Merriam-Webster idiom entry",
-          "url": "https://www.merriam-webster.com/dictionary/come%20as%20a%20revelation"
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/revelation_n"
         },
         {
-          "label": "Collins Dictionary",
-          "url": "https://www.collinsdictionary.com/dictionary/english/revelation"
+          "label": "Wiktionary",
+          "url": "https://en.wiktionary.org/wiki/revelation"
         }
       ]
     }
@@ -449,19 +445,16 @@ window.WORD_SENSE_ENTRIES = {
       "技术隐喻 · 安全空间 · B1-B2",
       "Issue 005"
     ],
-    "markdown": "**字面含义** · 沙坑：一块装着沙子的区域，孩子可以在里面堆、挖、铲、塑形。这个画面很关键，因为 **sandbox** 后来很多抽象用法，仍然保留了“有限空间里可以试、可以玩、可以造”的感觉。\n\n**本体质感** · 这个词自带一种“被圈起来的自由”。你不是在整个世界里乱试，而是在一个边界清楚、后果可控的地方做实验。它让人想到：一块单独划出的场地、一套暂时不影响主系统的环境、一种允许出错但不会闹大的空间。  \n所以英语里说 **sandbox**，很多时候重点不在“箱子里有沙”，而在“先给你一块安全地带，让你在里面折腾”。这也是它在科技语境里特别顺手的原因：试功能、跑代码、测改动，甚至让不完全可信的程序先在里面运行；出问题也尽量只是在这块小地方里，不会伤到外面。比起“测试环境”，它更核心的感觉其实是：**隔离、权限受限、风险被圈住**。  \n也正因为这样，**sandbox** 不一定天然等于“可回滚”，更准确地说，它常常意味着“就算出了问题，也尽量不影响主系统”。\n\n**寻根溯源** · 这个词确实是 **sand + box** 的组合，字面构成很透明。但它并不是一开始就专指孩子玩的沙坑。较早的英语里，**sandbox** 先指一种撒沙的器具；后来才有“装沙的盒子”这个意思，再往后才稳定出现儿童玩耍的低边沙坑义。  \n也就是说，它的现代抽象义，并不是简单从“儿童玩具”一步跳出来的，而是从一个非常具体、可盛放、可限制、可控制的物理容器，慢慢借到更抽象的“受控区域”上。这个转移之所以自然，大致也正因为沙坑/沙箱这类东西，本身就有两个很强的特征：边界明确，里面的东西又便于摆弄和重塑。于是到了现代，**sandbox** 就很自然地成了“可以试、可以改、但最好别波及外面”的隐喻。\n\n**各路用法** ·\n\n**职场，产品/技术讨论**\n> We should test the new checkout flow in a sandbox before releasing it.\n> 我们应该先在沙盒环境里测试新的结账流程，再发布。\n\n这里的 **sandbox** 不只是“玩一玩”，而是“先在不影响正式系统的隔离环境里试”。\n\n**技术文档，谈系统安全**\n> The app runs in a sandbox, so it has limited access to the rest of the system.\n> 这个应用运行在沙盒里，所以它对系统其他部分的访问是受限的。\n\n这里的重点不是测试，而是**权限限制**和**风险隔离**。\n\n**技术支持，说明状态**\n> The browser extension is sandboxed by default.\n> 这个浏览器扩展默认处于沙盒限制之下。\n\n**sandboxed** 很常见，意思是“被放进受控环境、权限被限制住了”。\n\n**游戏，聊玩法**\n> It’s a sandbox game, so players can build, explore, and ignore the main quest for hours.\n> 这是个沙盒游戏，所以玩家可以建造、探索，甚至连续几个小时都不管主线任务。\n\n这里的 **sandbox** 已经不是“测试环境”，而是“高自由度、规则边界在，但路径开放”的玩法类型。\n\n**监管，谈金融创新**\n> The company joined a regulatory sandbox to test its new fintech product under supervision.\n> 这家公司加入了一个监管沙盒，在监管监督下测试它的新金融科技产品。\n\n这里的 **regulatory sandbox** 很值得认识：它不是完全放开，也不是纯模拟，而是**在真实但受控的范围内试**。\n\n**日常，比喻性说法**\n> He treats his apartment like a sandbox and keeps moving the furniture around.\n> 他把自己的公寓当成一个试验场，老是挪来挪去地摆家具。\n\n这种说法能听懂，也很形象，但更像临时比喻性的延伸，不算和技术义一样稳定的固定用法。\n\n➤ *值得注意的是，在技术语境里，**sandbox** 往往首先让人想到的不是儿童沙坑，而是“隔离出来、权限受限、先别动正式系统”的那种环境。*\n\n**原生思维** · 在很多现代语境里，母语者看到 **sandbox**，往往会先联想到“一个被圈住、可以安全试东西的地方”。这和中文里常说的“实验田”“测试环境”有点像，但英文更容易保留一种“先放进去跑跑看、先折腾一下、看看会出什么事”的手感。  \n而且这个词的有趣之处在于：它既可以偏“开发试验”，也可以偏“安全隔离”，还可以进一步走到“高自由度玩法”或“受监管的小范围试点”。表面上看义项分散，底下其实还是同一个问题：**自由能给多少，边界画在哪儿，出了事能不能控制住。**\n\n**悟道时刻** · **sandbox** 真正迷人的地方，不是“沙”，而是“边界里的自由”。英语很擅长用空间词来安排风险：先圈一块地，再决定你能在里面试到什么程度。\n\n所以以后你再看到 **sandbox environment / sandboxed / sandbox game / regulatory sandbox**，别急着把它们拆成四个词义去背。先抓一个识别法：**凡是既允许探索，又强调边界、隔离或可控后果的地方，英语就很容易想到 sandbox。**",
+    "markdown": "**字面含义** · sandbox 最直观的画面，是一个有边界的沙箱或沙坑。你可以在里面搭、挖、试、弄乱；坏了也还在盒子里，不会伤到外面的世界。\n\n**本体质感** · 这个词带着一种“先在里面试试”的气质。母语者说 sandbox，脑子里常不是“正式运行”“最终定型”，而是一个受控、隔离、可撤回的空间：你可以乱搭、乱改、乱测，坏了也没关系，因为外面的主系统还没被碰到。它的手感是安全、临时、实验性的，带一点“先别认真”的宽容。  \n在技术语境里，这种质感尤其明显：sandbox 不是 production，不是正式对外的 live 环境，而是把风险先关进盒子里。更准确地说，它常常不只是“测试环境”，还带着“权限受限、隔离执行”的安全意味：有些东西不是因为值得信任才运行，而是因为先被关进 sandbox 里，才敢运行。很多团队也会把 sandbox 放在比 staging 更早、更安全的一侧；但具体怎么区分 sandbox、test、staging、UAT、production，并没有一套放之四海而皆准的标准。\n\n**寻根溯源** · 这个词的来历比“儿童玩沙”还早一些。词源材料里能看到更早的 sandbox 先指装砂或撒砂用的装置，后来才稳定成“装着沙子的箱子”，到 19 世纪末才明确出现“给孩子玩沙的低边沙坑”这一义。也就是说，今天我们最熟悉的那个儿童画面，虽然非常直观，却不是它最早的全部历史。  \n但有意思的恰恰在这里：不管早期细节怎么变，sandbox 后来真正留下来的核心想象，还是“把某种东西圈进一个有边界的容器里”。所以它一进入现代技术和制度语言，就几乎天然适合表示隔离、试验、缓冲、受控探索——你不是在空地上乱来，而是在一个边界已经先被画好的地方乱来。\n\n**各路用法** ·\n\n**职场,技术讨论里**\n> We tested the new payment flow in a sandbox before touching production.  \n> 我们在沙盒环境里测试了新的支付流程，之后才动正式环境。\n\n这里的 sandbox 不是“沙子箱子”，而是隔离出来给你试、而且不会碰到真实系统的一块地方。像支付平台里的 sandbox account / sandbox environment，常常就带着“可以模拟交易，但不影响真钱和真实数据”的意思。\n\n**安全,说运行隔离时**\n> The browser sandboxes untrusted code.  \n> 浏览器会把不受信任的代码放进受限环境中运行。\n\n这里更贴近计算机安全里的本义：重点不只是“测试”，而是限制权限、隔离影响。你也会看到 sandboxing、sandboxed app 这种说法，本质上都在讲“把风险关起来运行”。\n\n**产品,法务或风控沟通里**\n> Let's keep this change in the sandbox until legal signs off.  \n> 在法务批准之前，我们先把这个改动留在沙盒里。\n\n这种句子可以很自然地出现在审批前的内部沟通里。它不是某个必须背下来的术语，但语感很清楚：先别把风险放出去，先留在受控范围内。\n\n**制度,监管创新场景里**\n> The company joined a regulatory sandbox to test the product under close supervision.  \n> 这家公司进入了一个监管沙盒，在密切监管下测试产品。\n\n这就是当代很高频的制度用法。regulatory sandbox 说的不是程序员的测试环境，而是监管者给创新产品划出一个受控试验区：你可以试，但要在规则、边界和监督之内试。\n\n**日常,聊游戏或创作时**\n> This game feels like a sandbox where you can build almost anything.  \n> 这款游戏感觉像一个沙盒，你几乎可以随便搭建任何东西。\n\n这里的 sandbox 更偏“开放、可自由试”的空间，边界还在，但束缚很少。所谓 sandbox game / sandbox mode，重点就是不给你一条唯一正路，而是给你一块能自己折腾的场地。\n\n**原生思维** · 英语母语者用 sandbox 时，常常是在把“试错”这件事空间化：不是先问“这东西对不对”，而是先问“能不能把它关在一个不会伤到别处的地方”。中文里我们也会说“试验区”“测试环境”“先小范围试”，但 sandbox 的妙处在于，它把“安全边界”这层感觉做得很具体——像真的有个盒子，把动作、后果和外部世界隔开。于是它不只是“测试”，而是“带边界的测试”。  \n而且这个词已经不只属于技术圈。它能进游戏，能进支付，能进安全，也能进监管语言，恰好说明它抓住的不是某个行业动作，而是一种更通用的组织方式：先隔离，再试；先控住外溢，再允许探索。\n\n**悟道时刻** · sandbox 真正厉害的地方，不在“沙盒”这个翻译，而在它把一整套现代思路压缩进了一个小画面里：先画边界，再给自由。自由不是没有限制，而是在限制里放心试。\n\n以后你再见到这个词，别急着只把它译成“测试环境”。先问一句：这里强调的，是不是“把风险关起来，让试错不外溢”？如果是，你就抓到它的魂了。",
     "verification": {
-      "claimCount": 11,
-      "confirmedCount": 4,
-      "softenedCount": 4,
-      "uncertainCount": 2,
+      "claimCount": 8,
+      "confirmedCount": 5,
+      "softenedCount": 3,
+      "uncertainCount": 1,
       "rejectedCount": 1,
       "checked": [
-        "**sandbox** 的字面含义是‘沙坑 / 装着沙子的区域’，孩子可以在里面堆、…",
-        "这个词后来所有抽象用法，都保留了‘有限空间里可以试、可以玩、可以造’的感觉。",
-        "英语里说 **sandbox**，核心不是‘箱子里有沙’，而是‘先给你一块安全地带，…",
-        "这也是它在科技语境里特别顺手的原因：试功能、跑代码、测改动，出问题也只是在这块小地方…",
-        "这个词原本就是 **sand + box**，字面上很透明：装沙子的盒子。"
+        "词源与早期义项：Etymonline、OED 条目摘要",
+        "制度/治理语境中的稳定用法：OECD、UK FCA"
       ],
       "sources": [
         {
@@ -473,6 +466,10 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://dictionary.cambridge.org/dictionary/english/sandbox"
         },
         {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/sandbox"
+        },
+        {
           "label": "Etymonline",
           "url": "https://www.etymonline.com/word/sandbox"
         },
@@ -481,15 +478,15 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://csrc.nist.gov/glossary/term/Sandbox"
         },
         {
-          "label": "AWS Prescriptive Guidance",
-          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-git-branch-approach/sandbox-environment.html"
+          "label": "Microsoft Learn",
+          "url": "https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/"
         },
         {
-          "label": "MDN Web Docs",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy/sandbox"
+          "label": "Stripe Documentation",
+          "url": "https://docs.stripe.com/sandboxes"
         },
         {
-          "label": "UK Financial Conduct Authority",
+          "label": "FCA",
           "url": "https://www.fca.org.uk/firms/innovation/regulatory-sandbox"
         }
       ]
@@ -501,19 +498,19 @@ window.WORD_SENSE_ENTRIES = {
       "日常口语 · 情境寒暄 · A2-B1",
       "Issue 005"
     ],
-    "markdown": "**字面含义** · 这个短语字面上当然是“什么在煮着”“锅里在做什么”。你可以想象厨房里冒着热气，锅盖一掀，里面的东西正咕嘟咕嘟地翻着。只是到了固定说法里，它通常不是在真问做饭。\n\n**本体质感** · 今天真正常见的用法，是拿它来轻松地问一句：最近怎么样、在忙什么、有什么新动静。它不像 “What are you doing?” 那么直白，也不像 “What’s new?” 那么平。它更像是把“最近怎样”说得更有烟火气一点，带着熟人之间随口搭话的松弛感。\n\n但这里有个很重要的使用提醒：这句话是口语、俚语味的，而且还带一点老派、复古的美式寒暄感。也就是说，它不是那种任何场景都稳妥、任何年龄层都高频的万能招呼；真要说当代最中性的替代，往往还是 “What’s up?” 这类更现代。\n\n**寻根溯源** · 这个说法的画面基础很直接，就是 cooking 这个日常动作本身：锅里有东西正在做，说明事情正在进行中。它后来被借去问“最近在发生什么”“你在盘算什么”，并不难理解。可查到的资料里，这个引申义至少在 1942 年就已经出现了，所以它并不是近年的新潮说法，反而正因为有点年头，今天听上去才会带一点旧式口语的味道。\n\n**各路用法** · 几个例子，感受一下它的语气范围：\n\n**日常，朋友见面**\n> Hey, man. What's cooking?\n> 嘿，最近忙什么呢？\n\n这句话不是在真问做饭，而是在打招呼。重点常常不是追问具体事项，而是轻轻把话头打开。\n\n**日常，久未联系**\n> Long time no see. What's cooking in your world these days?\n> 好久不见。你最近那边有什么新动静？\n\n这里的 “in your world” 会让它更像个人化的寒暄，不是正式询问。自然是自然的，但整体也比普通的 “What’s new?” 更带一点口语表演感。\n\n**评论区，轻松搭话**\n> Looks like you've been busy. What's cooking?\n> 看起来你最近挺忙的。有什么新进展？\n\n这种说法在评论区或私聊里也能见到，语气里会有一点“来看看你最近在折腾什么”的轻松感。\n\n**碰到异样，追问情况**\n> Okay, what's cooking here?\n> 等等，这里什么情况？\n\n除了问近况，它在特定语境里也可以变成“怎么回事了？”语气会更像对眼前情况的追问。\n\n**原生思维** · 理解这句话时，可以把它想成一种“看看你这边有没有事在锅上”的联想：不是冷冰冰地盘问事项，而是去摸一摸近况是不是正在升温、推进、酝酿。所以它问的常常不只是“你在干吗”，而是“你这边最近有没有什么在发生”。\n\n这也是为什么它听起来比一般问句更有画面。但别忘了，它的画面感和年代感是绑在一起的：正因为这句话不是最平直、最现代的那一种，所以用得好会显得有味道，用得不对也可能显得有点老派。\n\n**悟道时刻** · `What’s cooking?` 真正有意思的地方，不是它把“近况”问得多花，而是它提醒你：英语里有些寒暄，不直接问抽象状态，而是借一个具体场景把关系拉近。\n\n以后再遇到这类字面上有点怪的表达，先别急着逐字翻。先看它是不是在用一个生活动作，给一段关系加温；再看它的语体是不是也顺手带出了年代感。",
+    "markdown": "**字面含义** · 这个短语最表层的画面，是厨房里锅还在火上，里面有东西正在煮。它借来的不是“菜”本身，而是那种“有东西正在发生、正在准备中”的生活感。\n\n**本体质感** · 在真正的英语里，What's cooking 常常不是在问菜谱，而是在轻轻扫一眼对方的近况：最近怎么样？有什么新动静？在计划什么？发生什么事了？它的质地很口语，很松，不是正式盘问。很多时候，它比 “What are you doing?” 更像在问近况或动静，而不一定只问你此刻正在做什么。  \n但这里要补一个很关键的语感：这个表达虽然自然、好懂，却还带一点偏老派、俏皮、略复古的味道，不算今天最中性的高频问候语。也正因为这样，它说出来往往有点熟人感，有点轻轻逗一下的感觉。\n\n**寻根溯源** · 这个短语未必要硬讲成一条可证的“官方词源链”，但它的画面确实很清楚：厨房里有火，锅里有东西，盖子一掀，就知道有没有动静。英语里这种表达很常见——先给你一个具体生活画面，再顺手去问一个更抽象的状态。  \n所以，What's cooking 里那种“酝酿、升温、在推进”的感觉，更适合把它理解成一种画面感，而不是词典会明说的唯一底层定义。词典上更稳的核心，还是：what's happening / what are you planning / what's new。\n\n**各路用法** · 这个短语主要活在轻松口语里，通常不用在正式书面语或正式商务交流里。它最核心的几支，不只是“你在酝酿什么事”，还包括很普通的寒暄式问候。\n\n**日常,跟朋友打招呼**\n> Hi, Tom—what's cooking?\n> 嗨，Tom，最近怎么样？\n\n这里很多时候就只是打个招呼，接近 What's up? / What's new?，不一定暗示真有什么大事在发生。\n\n**日常,问近况**\n> Hey, what's cooking? Haven't seen you around lately.\n> 最近忙什么呢？好久没见你了。\n\n这句比起盯着“你现在正在干嘛”，更像是在问你最近整个人的动静。\n\n**聊天,问计划或进展**\n> What's cooking with the new job?\n> 新工作那边进展怎么样？\n\n这里就更接近“最近那件事怎么样了”“在往哪边走”。\n\n**聊天,听说你有新动作**\n> I heard you're planning something big. What's cooking?\n> 我听说你在筹划大事，最近在忙什么？\n\n这种语境里，What's cooking 的确会更像“你在酝酿什么”，但那是语境给出来的，不是这个短语每次都自带“大动作”含义。\n\n**社媒评论区,说幕后有事在酝酿**\n> Sounds like something is cooking behind the scenes.\n> 听起来幕后有些事情正在酝酿。\n\n这和 What's cooking? 是相关延展，但不是完全同一件事。这里的 something is cooking 更明确是在说“某事正在发生、正在推进”。\n\n**创作语境,问最近在做什么**\n> What's cooking in your studio these days?\n> 你最近工作室里都在忙些什么？\n\n放在这种语境里，它很自然，因为 studio 本来就容易和“最近有什么新东西在做”连起来。\n\n**原生思维** · 理解这个短语，一个很稳的抓手是：先别把 cooking 只翻成“做饭”，也别把整句硬缩成“你是不是在谋划什么大事”。更贴近真实使用的方式，是把它听成一句带画面感的口语招呼：有时只是“最近咋样”，有时才是“有什么在进行、在计划”。  \n也就是说，它的核心不是“动作名称”，而是“动静感”。厨房这个画面给了它一种热度和生活气，但真正落地时，重点常常是 what’s new、what’s happening，而不一定非得是“已经在火上的秘密项目”。\n\n**悟道时刻** · What's cooking 真正值得记住的，不是“cooking=酝酿”这一个翻法，而是英语很常见的一种偷渡方式：先用一个具体画面把气氛搭起来，再去问抽象近况。  \n以后遇到这类表达，你可以先问自己一句：它是在说字面动作，还是借这个画面在问“最近有什么动静”？一旦抓到这层，很多口语就会突然变得顺耳。",
     "verification": {
-      "claimCount": 10,
-      "confirmedCount": 2,
-      "softenedCount": 4,
+      "claimCount": 9,
+      "confirmedCount": 3,
+      "softenedCount": 5,
       "uncertainCount": 1,
       "rejectedCount": 1,
       "checked": [
-        "这个短语最早就是‘什么在煮着’‘锅里正在做什么菜’。",
-        "但今天它几乎从来不是在问厨房。",
-        "它真正的手感，是一种轻松、带点嬉皮的开场。",
-        "它更像是把‘最近怎样’说得更有烟火气一点，带着一点熟人之间的随口搭话。",
-        "语气通常是松的、熟的、没压力的，像伸头进门时顺手抛出的一句招呼。"
+        "这个短语最早就是‘锅里正在煮什么’‘火上在做什么菜’的画面。",
+        "它的底层动作不是‘烹饪’这个抽象概念，而是‘某样东西正在被加热、被推进、快要有结果了…",
+        "在真正的英语里，What's cooking 不是在问菜谱，而是在把对方的状态扫一眼…",
+        "它的质地很口语，很松，不是正式盘问。",
+        "它比 ‘What are you doing?’ 更像‘你这边最近在酝酿什么呢？’而…"
       ],
       "sources": [
         {
@@ -521,16 +518,24 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://dictionary.cambridge.org/dictionary/english/what-s-cooking"
         },
         {
-          "label": "Collins Dictionary",
-          "url": "https://www.collinsdictionary.com/dictionary/english/whats-cooking"
-        },
-        {
-          "label": "Etymonline",
-          "url": "https://www.etymonline.com/word/cook"
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/be%20cooking"
         },
         {
           "label": "Wiktionary",
           "url": "https://en.wiktionary.org/wiki/what%27s_cooking"
+        },
+        {
+          "label": "The Free Dictionary",
+          "url": "https://idioms.thefreedictionary.com/what%27s+cooking"
+        },
+        {
+          "label": "Green’s Dictionary of Slang",
+          "url": "https://greensdictofslang.com/"
+        },
+        {
+          "label": "Internet Archive（*Wise-Crack Dictionary*, 1926）",
+          "url": "https://archive.org/download/wise-crack-dictionary/Wise-Crack%20Dictionary.pdf"
         }
       ]
     }
@@ -653,19 +658,19 @@ window.WORD_SENSE_ENTRIES = {
       "公共事务 · 关系边界 · B1-B2",
       "Issue 005"
     ],
-    "markdown": "**字面含义** · affairs 这个词最早和“做事、处理事情”这一层有关，和 affair 本身的“事情、事务”是同一个家族。你可以先把它想成一堆“要处理的事、相关的事”，不是一个静态物件，而更像一整套牵连在一起的事务。\n\n**本体质感** · 这个词的质地很“复杂”，而且带一点距离感。它常常不是说一件小事，而是把若干相关的事打包来看，像一个局面、一个摊子。学习时可以先把它理解成：重点不在某一个 thing，而在“这摊事整体怎么样”。  \n它还有一种很典型的语感：既可以很正式，像 “public affairs”“international affairs” 这种大场面；也可以很私密，像 “an affair” 指一段私情，常常还是不正当的私情。前者像公共领域里的事务，后者像不便公开的关系。两边放在一起看，很多语境里都会让人感觉：这里说的不是一个孤零零的点，而是一片牵涉面比较广的事。\n\n**寻根溯源** · 它来自古法语和更早的拉丁语路径，核心里是“去做、去处理”的意思。后来这个词逐渐长成了“事务、事情、状况”这一类更宽的用法，再往后又分化出“私情、风流事”这种带隐秘色彩的用法。也就是说，它不是从一开始就只指“恋爱关系”，那只是后来的一个分支。  \n这也解释了为什么今天你会同时见到 affairs 指个人事务、公共事务，也会见到单数 affair 指“整件事”“那场风波”。它们看上去分得很开，底下却还连着同一根筋：都是某件需要被处理、被交代、被卷进去的事。\n\n**各路用法** ·\n\n**职场,邮件里**\n> We need to get our financial affairs in order before the audit starts.\n> 审计开始之前，我们得先把财务事务理顺。\n\n这里的 financial affairs 就是财务事务；而 get one's affairs in order 也是很常见的一整块表达，意思是把个人事务、安排、财务这些先收拾妥当。\n\n**正式,新闻里**\n> The minister spoke about foreign affairs at the press conference.\n> 这位部长在新闻发布会上谈到了外交事务。\n\n这里几乎就是公共领域里的“事务”，很稳，很制度化，常见于政府、机构、新闻语域。\n\n**新闻,时政栏目**\n> She prefers reading about current affairs in the morning.\n> 她更喜欢在早上读时事新闻。\n\ncurrent affairs 是高频固定搭配，通常就是“时事”“时政”，不是抽象地说“当前的各种事情”，而是已经接近一个栏目名、信息类型名。\n\n**日常,跟朋友**\n> I do not want to get involved in other people's affairs.\n> 我不想卷进别人的私事里。\n\n这里的 affairs 常指别人的私事或个人事务，不一定多戏剧化，但语气里通常有一种“这不是你该插手的范围”。\n\n**家庭,说家里那些事**\n> He had to leave early to deal with family affairs.\n> 他得早点离开去处理家里的事务。\n\nfamily affairs 很自然，就是家事、家里的事务。放到 domestic affairs、internal affairs 这些搭配里，那个味道也类似：说的是某个范围内部要处理的事。\n\n**描述局面,评价现状**\n> This is a sad state of affairs.\n> 这真是个令人遗憾的局面。\n\nstate of affairs 是极高频短语，意思就是“事态”“局面”“现状”。它常常不是中性报幕，而是多少带一点“事情怎么弄成这样了”的评估感。\n\n**日常,说整件风波**\n> The whole affair was embarrassing for everyone involved.\n> 整件事让所有牵扯其中的人都很尴尬。\n\n这里的单数 affair 不是婚外情，而是“整件事”“整场风波”。这条义项很重要，因为它把 affair 从“事务”一路连到了“事件”。\n\n**日常,说婚外情**\n> It turned out to be an affair, and the marriage fell apart.\n> 后来才发现那是一段私情，婚姻也就散了。\n\n这里的 affair 已经不是普通“关系”，而是常常指婚外或不正当的私情。有些语境里它也可以更宽一点，指一段短暂而激情很强的恋情；但在现代日常理解里，最容易先被听出来的，还是那层隐秘和越界。\n\n**原生思维** · 英语里确实会用同一个词族去覆盖“事 / 事情 / 事务 / 事件 / 关系 / 局面”这一大片地带：复数 affairs 常常偏向各类事务、私事、公事，单数 affair 则既可以是私情，也可以是“整件事”。所以学这个词，重点不一定是死记某一个中文对等词，而是先判断：这里说的到底是要处理的事务、正在发展的局面，还是一段不便明说的关系。  \n至于我前面一直在强调的那种“卷入感”，更适合把它当成一个学习抓手：affairs 这个词族经常不只是给事情命名，还会顺手带出“谁牵涉其中、这摊事归谁管、能不能公开说”这些背景。\n\n**悟道时刻** · affairs 最值得抓住的，不是“事务”和“婚外情”这两个分散译法，而是它总在把事往“成套、成局面、成牵连”那里推。你以后再见到 current affairs、family affairs、state of affairs、the whole affair，先别急着逐字翻，先认出它在说的是哪一种“这一摊事”。\n\n一旦你有了这个识别框，affairs 就不再是一个词典上分叉很多的词，而是同一团意思在不同场景里的变形。",
+    "markdown": "**字面含义** · *affair / affairs* 的表层感觉很简单：它在说“事”。单数常像一件事、一桩事；复数则像一整摊要处理、要归类、要划清边界的事务。\n\n**本体质感** · 这个词一出现，英语母语者脑子里常常不是一个轻飘飘的点，而是某种有范围、有归属的局面。尤其到了复数 *affairs*，它往往不像随口说 *things* 那么散，而更像在说某个领域、某个人权限内、某一整组需要处理的事务。  \n所以它在很多语境里会显得更正式一点，也更有边界感。你会看到 *business affairs*、*foreign affairs*、*family affairs*、*financial affairs* 这类搭配；说 *affairs*，常像是在把事情放进一个可观察、可管理、也可不被外人随便插手的范围里。  \n但单数 *affair* 又提醒我们：这个词并不只属于“大系统”。它也可以很落地，指“这件事本身”，比如 *the whole affair*，就是“整件事”。\n\n**寻根溯源** · 这个词的来路很有意思。它不是先从一个抽象的“事务”概念长出来的，而是从“去做、待办、要处理”的方向一路演化过来的。英语里的 *affair* 经由古法语 *à faire* 进入，字面上就和“to do”那种未完成、待处理的意味连着。  \n所以今天我们看到 *affairs* 常带“事务”“事态”“局面”的味道，并不奇怪。它骨子里就不是只盯着一个孤立物体，而更接近“这摊事该怎么摆平、归谁管、落在哪个范围里”。这当然是一种解释性的理解，但用来抓它的语感，很准。\n\n**各路用法** · 几个例子放在一起看，你会更清楚：这个词真正麻烦、也真正好用的地方，在于单数和复数各自有自己的路数，而且复数里还有很多高频固定搭配。\n\n**正式,政府语境**\n> The minister will oversee foreign affairs.\n> 这位部长将负责外交事务。\n\n这里的 *foreign affairs* 就是很稳定的“外交事务”，说的是国家对外关系这一整块事。\n\n**正式,机构或公共事务语境**\n> She works in public affairs for a large university.\n> 她在一所大型大学从事公共事务工作。\n\n这里的 *public affairs* 不是泛泛“公共的事”，而是机构对外沟通、公共关系、政策联络这一类正式事务。\n\n**正式,机构内部语境**\n> The committee is reviewing internal affairs after the report.\n> 委员会正在报告发布后审查内部事务。\n\n这里的 *internal affairs* 是“内部事务”，比普通公司聊天里的 *internal matters* 更正式，也更像制度层面的内部问题。\n\n**日常,朋友聊天**\n> I do not want to get involved in their family affairs.\n> 我不想掺和他们家的私事。\n\n这里它有明显的边界感：别把自己卷进别人的内部生活和家务事里。\n\n**媒体,新闻或考试语境**\n> She follows current affairs every morning.\n> 她每天早上都会关注时事。\n\n*current affairs* 是非常高频的固定搭配，基本就是“时事”，常见于新闻、媒体栏目、考试话题。\n\n**人生安排,较正式**\n> He wanted to put his affairs in order before the operation.\n> 他想在手术前把自己的事务安排妥当。\n\n这里的 *put one’s affairs in order* 很典型，常指把个人事务——尤其财务、法律、家庭安排——整理好。也正因为这些事往往不止一件，所以英语自然用了复数。\n\n**日常,强调边界**\n> How I spend my money is my affair.\n> 我怎么花我的钱是我自己的事。\n\n这里要特别记住：单数 *my affair* 不是“婚外情”，而是“我的事，不关别人”。\n\n**叙事,回看一件事**\n> The whole affair was more embarrassing than anyone expected.\n> 整件事比任何人预想的都更尴尬。\n\n这个 *the whole affair* 说明单数 *affair* 也可以只是“一整件事、这一事件”，常带一点“这场风波/这档子事”的语感。\n\n**日常,带点八卦意味**\n> They are having an affair.\n> 他们有婚外情。\n\n这个确实是很多人最先记住的义项，但要分清：这里是单数 *an affair* 的固定走向，指秘密恋情、婚外关系；它不等于复数 *affairs* 的常规主线。\n\n再往上收一层看，在 *foreign affairs*、*public affairs*、*internal affairs*、*family affairs*、*affairs of state* 这类固定搭配里，*affairs* 通常都不是零散的“几件事”，而是某个范围内成体系的事务。\n\n**原生思维** · 英语母语者说 *affairs* 时，常常是在把“事情”看成一个可以被归类、被管理、被介入或被回避的整体。中文里我们会分开说“事”“情况”“事务”“私事”“局面”，但英语用 *affairs* 的时候，经常把这些层次揉在一起。  \n所以它通常比 *things* 更正式；而且在不少语境里，它也不像 *issues* 那样把注意力钉在“具体问题点”上，而更像在说“这一整组事务目前归谁管、处在什么状态”。  \n也正因为这样，这个词特别有“边界意识”：哪些是 *public affairs*，哪些是 *family affairs*，哪些是 *my affair*，哪些又要在出事之前先把 *my affairs in order*。英语不是只在说“发生了什么事”，而是在说“这事属于哪一块、谁该碰、谁别碰”。\n\n**悟道时刻** · 记 *affairs*，不要只记“事务”这个译词。真正有用的识别法是：一旦它出现，先看英语是不是在给“事”划范围、定归属、拉边界。  \n如果是复数，它常是在说一整块要处理的事务；如果是单数，它可能只是“这件事”，也可能一下滑到“秘密恋情”。抓住这个“范围感”和单复数分工，*affair / affairs* 就不会再乱。",
     "verification": {
-      "claimCount": 16,
-      "confirmedCount": 7,
-      "softenedCount": 5,
+      "claimCount": 12,
+      "confirmedCount": 5,
+      "softenedCount": 7,
       "uncertainCount": 1,
-      "rejectedCount": 0,
+      "rejectedCount": 1,
       "checked": [
-        "**affairs 这个词最早和‘做事、处理事情’这一层有关，和 affair 本身…",
-        "**你可以先把它想成一堆‘要发生、要处理、要牵连进去的事’，不是一个静态物件，而是一…",
-        "**它常常不是说一件小事，而是说一团事、几件事纠缠在一起，像一个局面、一个摊子、一个…",
-        "**母语者说 affairs 的时候，脑子里往往不是‘某一个 thing’，而是‘这…",
-        "**它既可以很正式，像 public affairs / international…"
+        "它来自拉丁语 *ad- + facere* 这一组里长出来的‘做、处理、办’的感觉。",
+        "后来落到英语里，指的不是一件孤零零的 thing，而是某种‘事情的进展、事务的状态、…",
+        "所以它最早的画面，不是抽象概念，而是一个人面对一堆需要处理、需要应付、需要收拾的局面…",
+        "在日常里，*affairs* 常常带一点距离感：说的是‘某个领域里的事态’‘某人的私…",
+        "它还常带‘需要被管理’的气息，所以你会看到 *business affairs*、*…"
       ],
       "sources": [
         {
@@ -673,24 +678,32 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://www.merriam-webster.com/dictionary/affairs"
         },
         {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/foreign%20affairs"
+        },
+        {
           "label": "Cambridge Dictionary",
           "url": "https://dictionary.cambridge.org/dictionary/english/affair"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/internal-affairs"
         },
         {
           "label": "Oxford Learner’s Dictionaries",
           "url": "https://www.oxfordlearnersdictionaries.com/definition/english/affair"
         },
         {
+          "label": "Collins Dictionary",
+          "url": "https://www.collinsdictionary.com/dictionary/english/affairs"
+        },
+        {
           "label": "Etymonline",
           "url": "https://www.etymonline.com/word/affair"
         },
         {
-          "label": "Collins Dictionary",
-          "url": "https://www.collinsdictionary.com/us/dictionary/english/affair"
-        },
-        {
-          "label": "Britannica",
-          "url": "https://www.britannica.com/topic/foreign-policy"
+          "label": "Wiktionary",
+          "url": "https://en.wiktionary.org/wiki/affair"
         }
       ]
     }
@@ -924,19 +937,15 @@ window.WORD_SENSE_ENTRIES = {
       "事情与边界 · 高频小词 · A2-B1",
       "Issue 005"
     ],
-    "markdown": "**字面含义** · business 最早和“忙”绑得很紧，核心画面不是公司、不是生意，而是“正在操心、正在处理、正在做事”的那种忙碌状态。更细一点说，它早期不只是“忙”，还有一点“挂心、操劳”的意味。后来它慢慢长出了“事务、买卖、经营、职业活动”这些意思；但到了现代英语里，“商业活动”和“企业”也已经成了它最基础、最高频的义项之一。所以你会发现，它身上一直有一层“不是闲着”的底色。\n\n**本体质感** · 这个词在英语里很有分量，但不一定很硬。常见语境里，它经常出现在项目、利润、客户、安排这些场景中，语气里带一点现实感、效率感，甚至一点“别绕了，进入正题”的劲儿。它既可以指“商业世界”那种大环境，也可以指“我自己的事/正经事”。比如 “mind your own business” 不是在讲商业，而是在说“管好你自己的事”，这里的 business 其实就是“该你管的那摊事”。  \n它还有一种很英语的分层：business 可以是宏观的“商业”，可以是具体的“一家公司/一个生意体”，也可以是微观的“事务、正经事、职责范围”。中文里我们常想把它统一成“生意”或“事业”，但英语里这几个面是一起挂在这个词上的。你听到 “It’s none of your business.”，那种感觉不是“这跟你没生意关系”，而是“这不在你的权限/范围里”，而且语气通常并不太客气。\n\n**寻根溯源** · business 来自古英语 *bisignes*，词根连到 *bisig*，也就是 modern English 里 busy 的古形。早期这个词指的不只是“忙”，还包括 care、anxiety、occupation 这类“操心、挂心、被事务占住”的状态。后来它没有单线条地“固定成”商业义，而是逐渐分化出两条并行主线：一条是“事务、职责、关切范围”，一条是“商业、经营、企业”。所以从词源和义项演变看，business 关注的更像“人一直在处理、推进、维持的事务或经营活动”，而不只是商品本身。\n\n**各路用法** · 几个最常见的落点，你一看就能感觉到它在不同场域里怎么变形：\n\n**职场,邮件里**\n> We need to discuss the business side before we move forward.\n> 在继续之前，我们需要先讨论商业这一面的事。\n\n这里的 business side 是很常见的搭配，接近“商业/运营/财务相关的那一面”，像是在把事情拉回现实层面。\n\n**日常,跟朋友**\n> I was just taking care of some business downtown.\n> 我只是去市中心办点事。\n\n这里的 business 甚至没有具体到“什么生意”，更像“我去处理点事务、办点正事”。\n\n**日常,吵架时**\n> That’s none of your business.\n> 那不关你的事。\n\n这里的 business 就不是“生意”，而是“你的责任范围、你该不该插手的事”。这类说法通常语气不太客气。\n\n**日常,相对克制地划界**\n> It’s not my business.\n> 这不归我管。\n\n这句比 none of your business 更缓和一点，常用来表示“这不是我该介入、该评价的事”。\n\n**社媒,评论区**\n> She turned her side hustle into a real business.\n> 她把自己的副业做成了真正的生意。\n\n这里的 business 带着一种“从个人折腾变成可持续经营”的意味，听起来很自然，也很常见。\n\n**创业,介绍近况**\n> She started a small online business.\n> 她开了一家小型线上生意。\n\n这里的 a business 就很具体了，指的是“一家公司、一个生意体”。这也是特别基础的高频用法，比如 small business、family business、start a business 都很常见。\n\n**合作,谈客户**\n> We’ve done business with them for years.\n> 我们和他们做生意已经很多年了。\n\ndo business with 就是“和……开展生意往来/业务往来”，是现实里很常遇到的结构。\n\n**街边,店门口告示**\n> We’re open for business.\n> 我们开始营业了。\n\nopen for business 说的是“开门营业、正式开始运转”，那个“开始做事”的底色在这里很明显。\n\n**新闻,讲店铺倒闭**\n> The restaurant went out of business last year.\n> 那家餐馆去年停业了。\n\ngo out of business 就是“歇业、倒闭”，把 business 当成一个经营中的生意体来看。\n\n**职场,收尾做事**\n> Let’s take care of business first.\n> 我们先把正事处理掉吧。\n\ntake care of business 是非常高频的说法，意思不是“照看商业”，而是“把该做的事处理好”。\n\n**原生思维** · 英语母语者用 business 的时候，常常是在把“事情”看成一套可运转、可安排、可经营的东西。它不是纯粹的“工作”，也不只是“赚钱”，而是一种更宽的认知框架：凡是要花心力、要负责、要推进、要交换资源的，都可能被收进 business 里。中文里我们有时会把它拆成“生意、事业、事务、正经事”几个词，但英语可以让一个 business 同时罩住这些层面。  \n还有一个特别实用的点：business 在数法上常常直接带出意思。do business 是“做生意、开展业务”，偏活动；a business 是“一家公司、一个生意体”，偏实体。这个区别很基础，但也最容易被中文思路带偏。\n\n**悟道时刻** · business 真正值得抓住的，不是“生意”这一个译法，而是它始终带着“有事在运转”的底色。你下次见到它，先别急着翻成一个中文词，先分三个方向看：是在说商业活动，还是一个企业/生意体，还是某个人该不该管的事。\n\n一旦你开始这么辨认，business 就不会再是那个“明明认识、老是翻窄”的词了。",
+    "markdown": "**字面含义** · business 最表层的感觉，是手上有事要处理。它后来当然可以指生意和经营，但底下那股“事情正在运转、需要人接手”的动感一直在。\n\n**本体质感** · 这个词在英语里很有“人在做事、事情在运转”的质地。说 business，它常让人联想到的不是一家公司的名字本身，而是订单、客户、流程、账目、谈判、利润这些东西怎么流动、怎么落地。和 company 相比，business 更常指商业活动或经营的那一面；和 job 相比，它也不等于一个人的职位，而更偏向持续发生的交易、运作或事务本身。\n\n所以 business 常带着一种“这件事是正经要办的”的语气：  \n- It’s just business. 不是在闲聊，而是在谈利益、安排，或者一种现实上的处理方式。  \n- Mind your own business. 别管别人那摊事。  \n- mean business 则更直接：我是认真的，不是在说着玩。\n\n它还有一个很重要的身份：在英语里，它既可以很正式，也可以很口语。你说 I’m in business，常常是“我在经商”或者“我在这个行当里”；你说 Now we’re in business. 又常常是“这下条件齐了，可以开工了”。背后都有一种进入现实、进入运作系统的感觉。\n\n**寻根溯源** · business 来自 busy，这一点很清楚。更早的时候，它靠近的不是今天的“商业领域”，而是 care、anxiety、occupation 这类意思：人被事情占着，心里有挂念，手头有事务。大致到 14 世纪晚期，它可以指一个人的工作、营生；到 16 世纪末，又能指“眼下正在处理的事”；再到 18 世纪，这个词才明确长出 “trade / commercial engagements” 这层商业义。也就是说，business 不是一开始就等于“商业”，而是从“有事在身”慢慢收束到“经营、交易、可持续运作的事”。\n\n这条线也解释了为什么它后来会同时长出几支看似分散、其实很统一的用法：自己的事、正事、商业上的事、要认真办的事，说到底都还是“那件占着你、需要你去处理的事”。\n\n**各路用法** · 几个常见场景里，你能看到它怎么换皮但不换骨：\n\n**职场,邮件里**\n> We need to discuss the business side before we move ahead.\n> 在推进之前，我们得先讨论一下商业和运营这一面。\n\n在搭配 business side 里，business 常指商业、运营、财务、合作条件这一面，不只是狭义的“生意”。\n\n**日常,跟朋友**\n> It's none of your business.\n> 这不关你的事。\n\n这句的核心不是“业务”，而是边界：别越界，别打听。这也是很稳定的习语，不只是临时的字面延伸。\n\n**日常,朋友聊天**\n> My brother runs a small business in Chicago.\n> 我哥哥在芝加哥经营一家小生意。\n\n这里 business 很具体，就是一个靠经营维持的生意实体。\n\n**开会,切入正题**\n> Let’s get down to business.\n> 我们开始谈正事吧。\n\n这句很典型：从寒暄切换到处理实际事务。\n\n**谈判,表明态度**\n> They’re not joking—they mean business.\n> 他们不是开玩笑——他们是认真的。\n\n这里的 business 已经不是“商业”本身，而是“正经来真的、准备采取行动”的分量。\n\n**合作,谈往来**\n> We’ve done business with them for years.\n> 我们和他们做生意已经很多年了。\n\ndo business with 是非常高频的说法，既可以是字面的做生意，也可以是更宽一点的合作往来。\n\n**经营状态,门店门口**\n> The cafe is now open for business.\n> 这家咖啡馆现在开始营业了。\n\nopen for business 很有画面感：门开了，系统转起来了，人和钱开始流动了。\n\n**经营状态,新闻报道**\n> Many local shops went out of business last year.\n> 去年很多本地商店停业了。\n\ngo out of business 就是停止经营、倒闭。它让 business 很清楚地落在“一个经营系统还能不能继续转”上。\n\n**评价能力,聊人做事**\n> She has a good business sense.\n> 她很有商业头脑。\n\nbusiness sense 说的不只是会赚钱，更是对划不划算、能不能做、怎么做得成有判断。\n\n**关系未了,气氛有点紧**\n> We have some unfinished business to discuss.\n> 我们还有些没了结的事要谈。\n\n这里完全不是“商业”义，而是事情、旧账、没处理完的问题。它提醒你：business 从来不只等于做生意。\n\n**原生思维** · 英语里的 business，词典义覆盖面确实比中文任何一个单词都更广。它可以是商业活动，可以是一家公司，也可以是事务、个人该管的事、该谈的正事、认真办事的态度。中文里我们会分成“生意”“业务”“正事”“事务”“关你什么事”；英语更容易把这些收进同一个容器里。\n\n这也是为什么 business 在很多句子里听起来很“稳”：它不是情绪词，也不只是给东西贴标签。它更像是在说——先别飘，回到现实操作层面，看看这件事归谁管、怎么转、值不值得、能不能继续。\n\n顺着这个感觉，你也更容易读懂很多常见搭配：mind your own business 是管好你自己的事，mean business 是我来真的，open for business 是系统开始运转，go out of business 是这套运转停了。\n\n**悟道时刻** · business 的厉害，不在于它能翻成多少个中文词，而在于它总把视线拉回“事情如何被现实地处理”。它可以是生意，可以是边界，可以是正事，也可以是没了结的事。\n\n以后再看到 business，不要先急着问它对应中文里的哪一个词。先问自己：这里说的，是不是某件“需要人接手、安排、计算、推进”的事？这一下，很多义项就会自动连起来。",
     "verification": {
-      "claimCount": 9,
-      "confirmedCount": 7,
-      "softenedCount": 3,
-      "uncertainCount": 1,
-      "rejectedCount": 0,
+      "claimCount": 16,
+      "confirmedCount": 8,
+      "softenedCount": 8,
+      "uncertainCount": 2,
+      "rejectedCount": 1,
       "checked": [
-        "**business 最早和‘忙’绑得很紧**，核心画面不是公司、不是生意，而是‘正…",
-        "**它后来慢慢长成了‘事务、买卖、经营、职业活动’这些意思**。",
-        "**business 源自古英语里的 busy**，原本跟‘忙碌、操劳’直接相关。",
-        "后面它慢慢从‘**忙着做事**’滑到‘**事务、职业活动**’，再进一步固定成‘**…",
-        "**它一路走来，内核一直不是‘商品’本身，而是‘人为了维持、交换、推进某些事情而持续…"
+        "“商业”义是否晚出于“事务、occupation”义"
       ],
       "sources": [
         {
@@ -948,24 +957,28 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://www.etymonline.com/word/business"
         },
         {
-          "label": "Etymonline",
-          "url": "https://www.etymonline.com/word/busy"
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/business"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/business"
         },
         {
           "label": "Cambridge Dictionary",
-          "url": "https://dictionary.cambridge.org/dictionary/english/business"
+          "url": "https://dictionary.cambridge.org/dictionary/english/get-down-to-business"
         },
         {
           "label": "Cambridge Dictionary",
           "url": "https://dictionary.cambridge.org/dictionary/english/be-none-of-business"
         },
         {
-          "label": "Oxford Learner's Dictionaries",
-          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/business"
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/be-in-business"
         },
         {
-          "label": "Collins Dictionary",
-          "url": "https://www.collinsdictionary.com/us/dictionary/english/to-mind-your-own-business"
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/mean%20business"
         }
       ]
     }
@@ -1077,19 +1090,19 @@ window.WORD_SENSE_ENTRIES = {
       "投掷与塑形 · 多义核心 · B1-B2",
       "Issue 005"
     ],
-    "markdown": "**字面含义** · `cast` 最早的画面感很强：把什么东西“投出去”“掷出去”“抛出去”。你可以想象一只手一扬，某个物件离开手心，带着方向感落到别处。这个动作后来长出很多意义，而很多常见用法里，仍然能看出这种“投出、送出、导向某处”的痕迹。\n\n**本体质感** · 这个词在英语里很有“动作骨架”感，不是安静地“有个结果”，而是有人在发力、在分配、在放出、在形成一个方向。它常常带一点决定感：不是随便发生，而是“被投向”“被安排成”“被塑成”。所以你会看到它既能是很具体的扔，也能是很抽象的“把责任、怀疑、光影、角色”投到某处。\n\n如果从质地上看，可以粗略感觉为：在一些语境里，它比 throw 更书面一点，也更容易带出“导向、分配、成形”的联想；比 assign 更少文书味；比 create 更少从无到有的庄重，更像“把某种东西定下来，往外落下去”。尤其是到了“铸造”这个核心义里，你会更清楚地看到这种成形感：不是凭空创造，而是把材料导入模子，让它成为一个确定的样子。放到表演、光线、判断、角色分配这些地方，也可以把它们串起来理解成一种“投射出去并造成效果”的动作。\n\n**寻根溯源** · 这个词作为动词，大约在 1200 年前后就已经有“投、掷、抛”的意思，和北欧语系里表示“扔出去”的词有亲缘关系。后来它一路往外长，既保留了“抛出”的动作感，也发展出“把东西导向某处”“使之成形”的支线。\n\n这也是为什么 `cast` 的义项看起来散，底下却并不完全散。你一旦抓到“发出—落点—结果”这条线，很多用法就会忽然变得顺：鱼线是甩出去的，影子是投过去的，票是投下去的，角色是分派进去的，怀疑是加到某件事上的，金属则是被导入模具、最后定成形。\n\n**各路用法** · 几个最常见的场景里，它的姿态不太一样：\n\n**日常,说动作**\n> He cast the fishing line into the river.\n> 他把鱼线甩进了河里。\n\n这里就是最原始的“投出去”。像 `cast anchor` 这种老派一点的说法，也还是这个动作底子：把东西放出去、落下去。\n\n**日常,形容光线或阴影**\n> A shadow was cast across her face.\n> 一道阴影落在她脸上。\n\n这里不是“制造阴影”那么平，而是某种东西被“投”过来，覆盖住了别的东西。英语里这一组不只说 `cast a shadow`，也常说 `cast light on`、`cast a warm glow over`，都是把光或影当成能被投向某处的东西。\n\n**正式,谈投票**\n> The committee members cast their votes on Friday.\n> 委员会成员在周五投了票。\n\n这里的 cast 带一点“把选择落下去”的感觉，和单纯 say yes / no 不一样。英语里 `cast a vote`、`cast a ballot` 都很常见。\n\n**影视,谈选角**\n> They cast him as the lead in the new series.\n> 他们选他担任新剧的主角。\n\n这里很典型：不是“给他一个角色”，而是把他“投放”进那个角色位置里。英语里这个词很有“角色匹配、位置安放”的味道。\n\n**新闻/评论,谈塑造成某种形象**\n> The policy was cast as a threat to local jobs.\n> 这项政策被塑造成对本地就业的威胁。\n\n这是现代英语里很常见的一支。`cast ... as ...` 不一定真在说“选角色”，也可以是在说：把某人、某事描述成某种样子，框进某种叙述里。\n\n**正式,谈怀疑或气氛**\n> The new evidence cast doubt on the whole story.\n> 新的证据让整个说法变得可疑。\n\n这里的 cast 不是你“提出一个怀疑”那么简单，而像是在整个叙述表面上覆上一层不确定性。它也常和 `suspicion`、`aspersions`、`a pall`、`a cloud` 这类词连用，形成一整簇“给事情加上某种评价或气氛”的正式表达。\n\n**制造/工艺,谈铸造**\n> The statue was cast in bronze.\n> 这座雕像是用青铜铸造的。\n\n这不是边缘义，反而是很核心的一支。这里最能看见 `cast` 的“成形”感：材料被导入模具，最后定成某个样子。\n\n**影视,名词**\n> The cast of the film appeared on stage together.\n> 这部电影的全体演员一起上台了。\n\n这里 `cast` 已经不是动词，而是名词，直接指影视或戏剧的演员阵容。这个用法非常常见，尤其在你看采访、海报、片单的时候。\n\n**原生思维** · 英语母语者用 cast 的时候，常常不是在想“这个东西是什么”，而是在想“某种力量已经把它送到某个位置上了”。所以它特别适合那些有方向、有落点、有影响范围的动作：光线落下来、影子铺过去、怀疑扩散开、票投出去、角色被分进去、某件事被塑造成某种叙述、金属被铸成一种形状。\n\n中文里我们会分别说“扔、投、选、铸、塑造成、蒙上一层”，英语却很喜欢用同一个词，把这些“向外发出去并产生效果”或“导入某种形状、框架”的动作串起来。顺手再提醒一句：它还有一些延伸搭配，比如 `cast aside`、`cast off`，也都还留着那种“甩开、丢开、往外丢”的旧动作感。\n\n你会慢慢发现，`cast` 不太适合被当成一个静态标签去背；更适合把它理解成一个“动态导向”的词：它关心的是东西如何从源头被送到表面、位置、叙述或结果上。\n\n**悟道时刻** · 真正该抓住的，不是 `cast` 的几个零散译法，而是它背后那条线：有东西被发出去，被导向某处，于是某种结果落了下来、定了下来。\n\n以后你再见到 `cast shadow`、`cast doubt`、`cast as`、`cast in bronze`，别急着逐个硬译。先问自己：这里到底是什么被投过去了、落在哪了、最后造成了什么效果。这个词一旦这么看，就会从“多义难背”变成“其实一直在说同一种力量方向”。",
+    "markdown": "**字面含义** · cast 最表层的动作，是把东西朝某个方向抛出去。手一扬，东西离开你，落到别处，后面的很多用法都保留着这种“向外投放”的方向感。\n\n**本体质感** · cast 这个词的底色不是“稳稳地摆着”，而是“把东西送出去，让它落到别处”。所以它在英语里常带一种朝外延展的动作感：光被 cast 过去，影子被 cast 在地上，怀疑被 cast onto 一件事，目光被 cast toward 某个方向。它经常不是在说“存在”，而是在说“朝外投放、覆盖、施加”。母语者用它时，脑子里常有一个“从这里向那里甩过去”的方向感。  \n相比日常口语里的 throw，cast 更常出现在一些带结果感、制度感，或者已经固定下来的搭配里：比如 cast doubt on，cast a vote，cast someone as a role。它像是一个老词，动作简单，但能长出很多方向。\n\n**寻根溯源** · cast 作为动词，英语里更稳妥的源头是中古英语的 casten，通常认为来自古诺斯语 kasta，意思就是“扔、掷、抛”。一种常见的说法是，它后来在“扔”这个义上逐渐取代了古英语里本来更常见的 weorpan。  \n到大约 1200 年前后，这个词已经进入英语；再往后，义项一路扩展：late 15c. 开始明显有“铸造、浇铸成形”的意思，1711 年前后能见到“给演员分派角色”，到 1840 年左右的美式英语里，又清楚发展出“投票”义。你今天看到的 cast 很散，其实很多用法大致都还能看出那个老动作：把某物送到别处，并让它在那里形成结果。\n\n**各路用法** ·  \n**职场,会议里**  \n> The manager cast doubt on the timeline during the call.  \n> 经理在电话会议里对时间表提出了怀疑。  \n\n这里的 cast doubt on 是很稳定的固定搭配，不是随便什么抽象名词都能往里塞。它像是把“怀疑”这层东西投到一个判断上，让原本看起来成立的东西变得没那么稳。\n\n**日常,朋友聊天**  \n> A tree cast a long shadow over the picnic table.  \n> 一棵树在野餐桌上投下了很长的影子。  \n\n这里的 cast 很自然，像光和影的物理关系被这个词轻轻按住了。英语里 cast a shadow、cast light、cast a glow 都是这一支的常见说法。\n\n**书面,看人一眼**  \n> She cast a quick glance at the door.  \n> 她朝门口迅速看了一眼。  \n\n这个用法很能说明 cast 的“送出去”感：不是单纯的 look，而像是把视线轻轻掷过去一下，所以常见于文学或稍微书面一点的表达。\n\n**日常,说演员选角**  \n> They cast her as the lead in the new series.  \n> 他们选她出演新剧的女主角。  \n\n这里的 cast 不是“扔”，而是“把某个角色位置分配给某个人”，本质还是把一个身份安放出去。  \n在影视语境里，动词 cast 常指“选角、分派角色”；而名词 the cast 则常指“全体演员、演员阵容”，这其实也是很高频的入口。\n\n**新闻,投票日**  \n> Millions are expected to cast their ballots today.  \n> 预计今天将有数百万人投票。  \n\ncast a vote / cast a ballot 是制度语境里的标准说法。这里的动作感还在，只是“投出去”的东西不再是石头，而是选票。\n\n**制造,工艺场景**  \n> The parts are cast in steel and then polished by hand.  \n> 这些零件先用钢浇铸成形,然后再手工打磨。  \n\n这条义项不能只当边角看。cast metal、cast in a mold 都是词典里的核心义项之一：先把材料送进模具，再让它定形，那个“送出去并形成结果”的骨架在这里反而特别直观。\n\n**媒体,评论里**  \n> The campaign tried to cast him as a responsible outsider.  \n> 这场竞选试图把他塑造成一个负责任的局外人。  \n\n这里的 cast sb as... 已经不是字面上的分派角色，而是“把某人描绘成、塑造成”某种公众形象。政治报道、媒体评论里很常见。\n\n**数码,手机投屏**  \n> The app lets you cast videos to your TV.  \n> 这个应用可以让你把视频投到电视上播放。  \n\n这是现代人非常常见的一支。它和老义其实并不远：你把画面从一个设备送到另一个屏幕上，让它在那里显示出来。换了技术，动作骨架没怎么变。\n\n**原生思维** · 英语母语者用 cast 的时候，常常不是在盯着“这个东西是什么”，而是在盯着“这个东西被送出去之后，落到了哪里，造成了什么结果”。所以它能自然地长出“投下光影”“投下怀疑”“分配角色”“投票”“浇铸成形”这些看起来差很远、底层却彼此勾连的用法。  \n但也要注意，cast 不是可以无限套用的万能“投放”词。真正高频、地道的，往往是那些已经站稳的搭配：cast doubt on，cast a shadow，cast a glance，cast a vote，cast sb as。抓搭配，比硬背一个抽象总义更有用。\n\n**悟道时刻** · 记 cast，别只记“扔”。更好用的抓手是：它常写的不是一个东西本身，而是这个东西被送出去以后，在别处落成了什么效果。光会落成影子，怀疑会落成不确定，选票会落成制度动作，人物会落成角色或形象。\n\n下次再遇到 cast，你先别急着翻译，先问一句：这里到底有什么被“送了出去”？一旦看见那个方向感，很多义项就会自己对齐。",
     "verification": {
-      "claimCount": 11,
-      "confirmedCount": 5,
+      "claimCount": 12,
+      "confirmedCount": 6,
       "softenedCount": 5,
-      "uncertainCount": 0,
+      "uncertainCount": 1,
       "rejectedCount": 2,
       "checked": [
-        "`cast` 最早的画面感很强：把什么东西‘投出去’‘掷出去’‘抛出去’。",
-        "这个动作后来长出很多意义，但骨头还是这个‘把东西送出去’的感觉。",
-        "它比 throw 更有一点‘成形’和‘指派’的意味；比 assign 更少文书味；比…",
-        "在表演、光线、判断、角色分配这些地方，它都保留着这种‘投射出去并定型’的底层动作。",
-        "例句义项一：“He cast the fishing line into the r…"
+        "这个词最早的画面，是‘扔出去’‘抛过去’：把东西投向某个方向。",
+        "古英语里有‘投掷、掷出’的影子，后来才慢慢长出各种比喻用法。",
+        "cast 作为动词，来自古诺斯语/古英语系统里表示‘扔、掷、抛’的词根，后来在英语里…",
+        "中世纪以后，它开始不只用于‘扔东西’，还用于‘铸造’‘投票’‘分配角色’‘投下光影’…",
+        "核心都还留着‘把某物送到某处，让它形成结果’的感觉。"
       ],
       "sources": [
         {
@@ -1097,28 +1110,28 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://www.merriam-webster.com/dictionary/cast"
         },
         {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/cast"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/cast_1"
+        },
+        {
           "label": "Etymonline",
           "url": "https://www.etymonline.com/word/cast"
         },
         {
-          "label": "Oxford Learner’s Dictionaries (verb)",
-          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/cast_1"
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/cast-doubt-on"
         },
         {
-          "label": "Oxford Learner’s Dictionaries (noun)",
-          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/cast_2"
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/cast%20light%20on"
         },
         {
-          "label": "Britannica Dictionary",
-          "url": "https://www.britannica.com/dictionary/cast"
-        },
-        {
-          "label": "Cambridge Dictionary — cast doubt/suspicion on",
-          "url": "https://dictionary.cambridge.org/dictionary/english/cast-doubt-suspicion-on"
-        },
-        {
-          "label": "Cambridge Dictionary — cast a shadow/cloud over/on",
-          "url": "https://dictionary.cambridge.org/us/dictionary/english/cast-a-shadow-cloud-over-on"
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/cast%20doubt%20on"
         }
       ]
     }
@@ -1185,19 +1198,18 @@ window.WORD_SENSE_ENTRIES = {
       "结果与观感 · 口语短语 · B1-B2",
       "Issue 005"
     ],
-    "markdown": "**字面含义** · 先别急着把 come off 只记成“显得”。这个短语本身其实有一张很清楚的三分图：东西可以 **come off**，表示“脱落、掉下来”；事情也可以 **come off**，表示“成功发生、顺利办成”；而在 **come off as / come off like / come off that way** 这一支里，它才是在说“给人某种印象、显得……”。把这三支先分开，后面的语感就不容易混。\n\n**本体质感** · 如果只看 **come off as** 这一支，它确实不是那种“一个义项对应一个中文”的死词。你可以把它想象成一个很有动作感的短语：一个人说话、做事、摆姿态，最后在别人那里落成了某种印象。它常常不是在描述事实本身，而是在描述“别人感受到什么”。所以它很容易落在“显得”“给人感觉像”“看起来有点儿……”这一层。英语母语者说 someone comes off rude，脑子里通常不是在判定这个人“本质上粗鲁”，而是在说：他的话、表情、语气，最后让人接收到了“粗鲁”这个印象。  \n\n这个短语有意思的地方，是它往往带一点从旁观察的感觉：说话人像站在外面，观察一个人或一件事给人留下什么效果，而不是直接下定义。正因为这样，它很适合用来评价“呈现出来的样子”，也常常带一点较间接的语气——不必把话说死。比如说一个人 come off confident，可能不等于他真的自信；更准确地说，是他在别人眼里“显得自信”。来不来得上分，往往就卡在这个“外部观感”上。  \n\n顺手提一句，词典对这一支还有地域标注：Oxford 把这种“给人某种印象”的用法标成 North American English，Cambridge 则标作 mainly US, informal。意思更像是“美式倾向更明显”，不是说英式里就完全不用。\n\n**寻根溯源** · 从学习上看，come off 最好不要当成一个单线条的词去背，而要当成一个“从具体动作往外长”的短语来看。最底层、最能摸得着的感觉，还是“从某个东西上分离、脱开”——按钮掉了，标签撕下来了，把手松脱了。再往外走，它才发展出“事情成了、效果出来了”，以及“一个人最后给人什么观感”这两支。  \n\n也就是说，“印象义”不是 come off 的全部，而更像是它在现代英语里长出来的一条很活跃的支线。把这个地图先看清，你就不会把 come off as rude 和 The handle came off、The plan came off 搞成三个互不相干的碎片。\n\n**各路用法** · 最值得先抓住的，当然还是 **come off as + 形容词/名词** 这一支，因为它最容易在真实对话里碰到；但也别漏掉另外两支高频核心义。\n\n**日常,跟朋友**\n> He comes off as a bit arrogant when he talks that much.\n> 他说那么多的时候，会给人一种有点傲慢的感觉。\n\n这里的重点不是给他下人格诊断，而是说他“呈现出来”的样子让人不舒服。\n\n**日常,评价一个人**\n> She didn’t mean to sound harsh, but she came off that way.\n> 她本来不是想显得刻薄，但听起来就是那样。\n\n这里很典型：意图是一回事，效果是另一回事。come off 盯的是后者。顺便也能看见一个常见结构：**come off that way**，就是“给人那种感觉”。\n\n**职场,会议后评价**\n> The presentation came off very polished, but the data was weak.\n> 这个演示整体显得很精致，但数据本身很弱。\n\n这里它在讲“包装出来的整体印象”。这也常可用于 presentation、speech、interview 这类对外呈现的场景，不过更核心的入门模板，还是 **come off as + adj./noun**。\n\n**评论语境,评价观感**\n> He comes off as trying too hard.\n> 他给人的感觉像是太用力了。\n\n这类表达在评论一个人的观感时很自然，语气往往比直接说 He is trying too hard 更绕一点，也更像在描述“观感”。\n\n**活动复盘,讲结果**\n> The event came off well despite the rain.\n> 尽管下雨了，这场活动还是办得很成功。\n\n这是 come off 的另一条核心高频线：不是“显得”，而是“事情成功办成了、效果还不错”。所以 **come off well / badly** 很常见，既可以讲活动，也可以讲一个人在某个场合里的整体表现。\n\n**面试后,评价表现**\n> He came off badly in the interview.\n> 他在面试里的整体观感不太好。\n\n这句有点卡在“表现”和“给人的印象”中间，也正因为这样，它特别常用。你可以翻成“表现不佳”，也可以翻成“给人的整体观感不太好”，看上下文决定。\n\n**日常,东西脱落**\n> One of the buttons came off my coat.\n> 我大衣上的一颗扣子掉了。\n\n这是最基础的字面义。把这个 sense 放在心里，再回头看那些抽象用法，会更容易抓到 come off 那种“最后呈现出一个结果”的感觉。\n\n➤ 值得注意的是，**在 come off as 这一支用法里**，它在语感上常常和 appears / seems / sounds 贴得很近，但它更容易让人想到“别人最后接收到的印象”：不是你内心怎么想，而是你最后被看成了什么样。\n\n**原生思维** · 英语里一旦用到 come off，常常就默认有一个“结果层”在前景：东西最后有没有脱开，事情最后有没有办成，人最后给人的感觉是什么。你可以把它理解成一种对“最后呈现效果”的捕捉。  \n\n所以英语母语者说 you came off as defensive，潜台词往往不是“你就是个防御性很强的人”，而是“你刚才那套说法，最后让人接收成了防御”。中文里我们当然也会说“给人感觉”“显得”“看起来”，但 come off 会把这种“观感是怎么落地的”推到更前面。尤其在 **come off as / like / that way** 里，它关心的往往不是本质，而是你最后落到别人眼里是什么样。\n\n**悟道时刻** · come off 最容易学偏的地方，是把“显得”当成它的全部；其实它真正的核心，是“最后出来的结果”——东西脱落了，事情办成了，人给出某种观感了。  \n\n所以以后遇到 come off，先别急着只翻字面，先问自己：这里在说的，是“掉下来”、是“成了”，还是“给人某种感觉”？尤其看到 **come off as**，再提醒自己一句：英语这里判断的，常常不是本质，而是别人收到的效果。",
+    "markdown": "**字面含义** · `come off` 最具体的一层，是某个东西从表面或原来的状态上离开：标签掉下来，纽扣松脱，污渍洗掉。往外走，它也常用来问一件事最后有没有成，或者一种呈现效果有没有落下来。\n\n**本体质感** · `come off` 这组词的感觉，常常都跟“结果有没有真的成立”有关，但这个结果不只是一种 impression。现代使用里，一个很常见的落点，确实是谈一个人、一段表达、一个帖子给人的感觉：是显得自信，还是显得油；是显得真诚，还是显得太用力。中文里常会想成“给人的感觉”，这方向没错，但 `come off as` 往往还多一点“外在呈现出来的效果”这种味道。\n\n它也保留着很实在的一面：东西从表面脱落、分开、被去掉。比如标签、纽扣、把手、污渍、印记，都可以 `come off`。另外，`come off` 也很常用来表示事情成功了、成行了、按计划发生了，或者反过来，没谈成、没办成。再往日常里走一步，它还可以说人从药物里“停下来”——也就是停药、戒掉。学习时，你可以把这些义项先放在一个共同的感觉里理解：某件事最后是“成了、显出来了、脱开了”，还是没真正挂住。\n\n**寻根溯源** · `come off` 不是一个靠词源故事就能讲完的短语，更适合从具体动作往抽象用法看。`off` 本来就有“离开、脱离、从某处移开”的方向感；当它和 `come` 组合在一起，很多现代用法都围绕一个结果展开：东西脱落了，计划成了或没成，话语最后呈现出某种效果。这里不必硬说所有义项都从同一条历史线长出来，但学习时可以把它们看成同一个动作图式的不同落点。\n\n**各路用法** · 几个最常见的落点，你可以先用画面抓它：\n\n**日常,跟朋友**\n> He comes off as a little arrogant, but he is actually quite shy.\n> 他给人的感觉有点傲慢，但他其实挺害羞的。\n\n这里说的不是他“真的是”傲慢，而是别人接收到的表面印象。\n\n**日常,讲效果**\n> That joke did not come off well.\n> 那个笑话效果不太好。\n\n这里是“没有成功地被接收到”，不是单纯“没说对”。\n\n**职场,复盘演示**\n> The whole presentation came off as more confident than we expected.\n> 整场演示呈现出来的感觉，比我们预期的更自信。\n\n这类说法很像在评估一个“呈现结果”，不是在给人下定性。\n\n**日常,描述物理脱落**\n> The label came off after one wash.\n> 洗了一次后标签就掉了。\n\n这里回到很直观的“从表面脱落”。\n\n**项目,事情没谈成**\n> The merger never came off.\n> 这次合并最终没谈成。\n\n这是 `come off` 很实用的一支：不是“看起来怎样”，而是事情到底成没成、有没有按计划发生。\n\n**面试或媒体呈现**\n> She came off well in the documentary.\n> 她在这部纪录片里整体给人的观感不错。\n\n`come off well / badly` 很高频，意思是最后呈现出来的结果好不好、占不占优。\n\n**医疗或日常恢复**\n> He's trying to come off antidepressants.\n> 他在尝试停用抗抑郁药。\n\n这里的 `come off` 是“停药、戒掉”，在医疗说明、新闻和日常对话里都很常见。\n\n**社媒评论区**\n> The whole post comes off as trying too hard.\n> 整条帖子给人的感觉就是太用力了。\n\n社媒里常用它来抓“姿态感”——不是事实细节，而是整体气息有没有让人不舒服。\n\n**原生思维** · 如果把 `come off` 用顺，一个很好用的抓手是：别只盯着动作本身，要看最后呈现出来的结果。`come off as ...` 是“显得、给人某种印象”；`come off well` 是“最后效果不错”；`The deal didn’t come off` 是“事情没成”；`come off the tablets` 则是“从药上退下来”。\n\n所以它和中文里“显得”“掉了”“谈成了”“停药了”看起来像四件事，但英语其实常常用同一组词，把注意力放在“最后离开原来的附着状态，进入一个结果”。这不一定是严格的词义演化史，但作为学习时的抓法，很有帮助。\n\n**悟道时刻** · `come off` 不是只有“显得”。它更像一个结果词：印象有没有成立，事情有没有办成，东西有没有脱落，人有没有从药里退下来。你以后再见到它，先别急着按字面拆 `come + off`，先问一句：这里在说的，是哪一种“最后结果”？\n\n一旦你开始这样识别，`come off as`、`come off well`、`come off the medication`、`the plan never came off` 就不再是零散搭配，而会变成同一张用法地图上的几个落点。",
     "verification": {
-      "claimCount": 12,
-      "confirmedCount": 4,
-      "softenedCount": 6,
+      "claimCount": 11,
+      "confirmedCount": 5,
+      "softenedCount": 4,
       "uncertainCount": 1,
-      "rejectedCount": 1,
+      "rejectedCount": 0,
       "checked": [
-        "**come off 不是那种‘词典里一个义项对应一个中文’的词，它更像一个动作感很…",
-        "**它常常不是在描述事实本身，而是在描述‘别人感受到什么’。所以它很容易落在‘显得’…",
-        "**英语母语者说 someone comes off rude…是在说：他的话、表情…",
-        "**这个短语最有意思的地方，是它经常带一点距离感：说话人像站在外面，观察一个人/一件…",
-        "**正因为这样，它很适合用来评价‘呈现出来的样子’，也很适合带一点委婉——不必把话说…"
+        "是否确有 `come off as` = “显得/给人印象”",
+        "是否确有 `come off` = “成功、奏效、按计划发生”",
+        "是否确有 `come off` = “脱落”",
+        "是否能证实“从表面脱落发展出 impression 义”这一历史链条"
       ],
       "sources": [
         {
@@ -1213,7 +1225,7 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://dictionary.cambridge.org/dictionary/english/come-off"
         },
         {
-          "label": "Oxford Learner’s Dictionaries",
+          "label": "Oxford Learner's Dictionaries",
           "url": "https://www.oxfordlearnersdictionaries.com/definition/english/come-off"
         },
         {
@@ -1282,19 +1294,19 @@ window.WORD_SENSE_ENTRIES = {
       "内容与复制 · 基础高频 · A2-B1",
       "Issue 005"
     ],
-    "markdown": "**字面含义** · copy 在英语里最早先指誊本、记录或副本，后来也发展出“抄写、复写”这个动作义。再往上追，它更早的拉丁来源里甚至还有“丰裕、丰富”的意思，真正走到“副本、复制品”这条线上，是后来的发展。到了今天，英语里很多常见用法，仍然没离开那个骨架：先有原件，再有一份照着它来的东西。\n\n**本体质感** · 如果把 copy 当成一个手感词来抓，它重点不只是“再来一个”，更像是“把既有东西照着弄过来”。这可以非常中性：把文件、文本、图片复制一份；也可以慢慢滑向“不够原创”的判断，像是在说“这不是你自己长出来的，而是从别处搬来的”。在口语里，copy somebody 往往不是字面上的“复制一个人”，而是“模仿、照着做”；那种感觉里，常常会带一点“没完全形成自己的路数”。  \n如果你听到 “That sounds like a copy of his earlier work.”，这里当然得看语境，但它往往不只是“有点像”，而是容易带出“照着以前那套又来了一遍、原创性不强”的意味。\n\n**寻根溯源** · 这个词有个挺反直觉的地方：它上游并不是一开始就只跟“复制”绑定。更早的拉丁词 `copia` 原本和“丰富、充足”有关，后来在中世纪拉丁语里，才逐渐发展出“誊本、摹本、复本”那层意思。也就是说，今天这个我们一看到就会想到 Ctrl+C 的词，历史上并不是天生就属于打印机和复印件的。  \n但一旦它在英语里落到“副本、誊本”这层，后面的路就很好理解了：名词上可以是 a copy of a book、a copy of a contract，动词上可以是 copy a page、copy a file，判断意味上又可以继续长成“模仿别人”“照搬旧东西”。这些分支看起来散，骨架其实一直没丢。\n\n**各路用法** · 几个最常见的场景，能看出它怎么从“副本/复写”一路长到今天：\n\n**数字场景,电脑上**\n> I copied the file to a USB drive.\n> 我把这个文件复制到一个 U 盘里。\n\n这里的 copy 是最现代、最高频的用法之一，就是把文件做出同样版本，放到另一个位置。\n\n**日常,电脑操作**\n> Just copy and paste the link into the chat.\n> 直接把链接复制粘贴到聊天框里。\n\ncopy and paste 几乎已经成了一个整体动作：不是创作，是把现成内容搬过去。\n\n**职场,邮件里**\n> Please send me a copy of the signed contract.\n> 请把已签署合同的副本发给我。\n\n这里的 copy 很干净，就是“副本、拷贝件”，不带什么情绪。\n\n**职场,邮件沟通**\n> Please copy me in on the reply.\n> 回复时请把我抄送进去。\n\n这里的 copy in 很值得记。它本质上还是“给我一份副本”，只是场景已经从纸面副本变成了邮件链里的信息副本。\n\n**学校,借笔记**\n> She copied my notes before the exam.\n> 她在考试前把我的笔记誊了一份。\n\n这里更像是“照着誊写一份”。如果英语里要更明确地说“抄别人答案、带作弊意味”，常会说 copy from someone 或 copy off someone。\n\n**学校,考试作弊**\n> He copied from the girl sitting next to him during the test.\n> 考试时他抄了坐在旁边那个女生的答案。\n\n这时候 copy 就不是普通“写一份”，而是明显带“照抄、作弊”的味道了。\n\n**日常,评论别人行为**\n> He just copies whatever his older brother does.\n> 他哥哥做什么，他就照着做什么。\n\n这里的 copy 已经变成“模仿、跟着学”。很多时候不一定是严厉批评，但常会隐约带一点“没自己的风格”。\n\n**社媒,吐槽穿搭**\n> This look is basically a copy of last year’s trend.\n> 这套造型基本上就是去年的潮流翻版。\n\n在这种评价语境里，copy 往往比 similar 更容易让人联想到“照搬”或“缺原创”，所以语气通常会更不客气一点。\n\n**广告行业,工作语境**\n> We need stronger copy for the landing page.\n> 我们需要一版更有力的落地页文案。\n\n这里的 copy 不是“复制内容”，而是“文案”本身，尤其常指广告、宣传、销售场景里的文字内容。也正因为这层意思，copywriter 才不是“复制文件的人”，而是“写广告或宣传文案的人”。\n\n**原生思维** · 理解 copy 时，可以先抓住一条很稳的线：有没有一个原件，或者至少有没有一个先在那里的范本。只要这条线在，很多义项就会自己串起来——复制文件，是照着原文件来；a copy of the book，是那本书的一份副本；copy someone，是照着某人的样子来；说一个作品 is a copy，也是在暗示它不是自己长出来的。  \n中文里我们常常把“复制、抄、仿、翻版、文案、抄送”分得很开；英语则让 copy 把这些感觉收在一个词下面，再靠搭配把方向拨清。连 copywriter 里的 copy，其实也不是例外：它接的不是“复制”那支，而是“广告文案”那支。\n\n**悟道时刻** · copy 的关键，不是“多了一份”，而是“这份东西有来处”。它背后总站着一个原件、一个范本、一个先行版本。\n\n以后你碰到 copy，不妨先问自己一句：这里强调的，是“数量增加了”，还是“来源暴露了”？如果是后者，你就更容易一下看懂它为什么会同时长出“副本、模仿、照抄、抄送、文案”这些看似分散、其实同骨架的意思。",
+    "markdown": "**字面含义** · copy 最直观的动作，是照着一个东西再做一份。它的表层画面不是“拥有了什么”，而是原件还在那里，你又生成了一个同内容的版本。\n\n**本体质感** · 这个词在英语里很轻，几乎是日常呼吸级别的词。更准确地说，它既可以很日常，也可以很技术：可以是手抄一句话，可以是复制文件，可以是抄送一封邮件，也可以是照着别人的设计来一版。在很多场景里，它都像一个中性动作按钮，干净、迅速、不带太多情绪。它不自带“抄袭”的道德判断，那个判断通常要靠上下文另加。对中文使用者来说，很容易先联想到“抄”，但英语里的 `copy` 覆盖面其实更宽：它可以只是复制、誊写、转存，也可能是模仿，到了考试或设计争议里，才会更明显地带上负面意味。至于那种“我明白了，我照你说的做”的感觉，最稳的落点其实不在日常闲聊里，而是在无线电、对讲或带指令感的通信里。\n\n**寻根溯源** · 这个词的来路也很有意思。它不是古英语本族词，而是后进入英语的。早期的 `copy` 先指“誊本、记录在案的文本”，像把一份内容可靠地留下来；到了后面，动词义才稳定成“做出一个副本”。再往后，“模仿、照着别人来”这层意思才越来越清楚。你会发现，这条线很顺：先有“文本的副本”，再有“任何东西的副本”，最后扩成“风格、做法、设计上的复刻”。连 `copyright` 这个今天很常见的词，也还保留着这个核心：它本质上就是围绕“复制这件事的权利”。\n\n**各路用法** ·\n\n**职场,邮件里**\n> I copied the file to the shared folder.\n> 我把文件复制到共享文件夹里了。\n\n这里的 `copy` 很机械，像一个搬运动作，没有多余语气。\n\n**职场,邮件里**\n> Please copy me in on the reply.\n> 请把回复也抄送给我。\n\n这里的 `copy` 已经不是“复制文件”，而是“让我也在收件链上”。这条办公义在现代英语里非常稳，后来一路延伸到了电子邮件语境。\n\n**日常,手写场景**\n> Can you copy this recipe for me?\n> 你能帮我把这个食谱抄一份给我吗？\n\n这里是手写/文本层面的“照着写一份”，很生活化。\n\n**日常,模仿说话方式**\n> He copied her tone exactly.\n> 他把她说话的语气模仿得一模一样。\n\n这里的 `copy` 已经不是誊写文字，而是复刻别人的表达方式。\n\n**社媒评论区**\n> This brand clearly copied the original design.\n> 这个品牌明显照搬了原来的设计。\n\n这里 `copy` 会带出一点批评意味，但那个批评主要来自具体语境，不是这个词天生就一定在谴责。\n\n**校园,考试里**\n> He was caught copying in the exam.\n> 他考试时因为抄答案被抓到了。\n\n这就是很多中文使用者最先联想到的那层，但它只是 `copy` 的一支，不是全部。\n\n**日常,买书或拿资料**\n> I bought a copy of the book.\n> 我买了一本这本书。\n\n这里 `copy` 是最基础的名词义：一份、一册、一个副本。\n\n**职场,发报告时**\n> Send me a copy of the report.\n> 把那份报告发一份给我。\n\n这里同样是名词，不强调“书”，而是强调“给我一个同内容版本”。\n\n**内容行业,营销会议上**\n> The website copy needs to sound more human.\n> 网站文案需要写得更像人在说话。\n\n这里的 `copy` 不是“复制品”，而是准备发布的文字内容。`ad copy`、`website copy`、`marketing copy` 都是这一支，所以做广告、内容、品牌的人嘴里的 `copy`，常常是在说“文案”。\n\n**无线电,对讲里**\n> Copy that.\n> 收到，明白。\n\n这里终于落到那种“我听见了，我按这个执行”的感觉了。它确实存在，而且很常见，但主要长在无线电、对讲、指令传达这种场景里。\n\n**无线电,确认线路时**\n> Do you copy?\n> 你收到吗？\n\n这不是在问“你复制了吗”，而是在问“你有没有接收到我的信息”。\n\n**原生思维** · 英语里用 `copy` 时，很多时候先抓住的都是“把同一个内容再做一份”这个动作核，而不是先急着判它是不是不光彩。它可以是文件、文本、设计、语气、邮箱链条，也可以是一本书、一份报告、一个链接，甚至是一段准备发布的文案。中文里我们常把“抄”“复制”“抄送”“照搬”“文案”分得更开，英语里的 `copy` 却像一个更中性的母体动作：先看是不是在复刻同一内容，再由场景决定这是方便、模仿、作弊，还是侵权。这样再回头看 `copyright`，也就很顺了：它不是一个突然冒出来的法律黑话，而是把 `copy` 这颗核心，推进到了“谁有权复制”的制度层。\n\n**悟道时刻** · `copy` 最值得记住的，不只是“复制”这个中文对译，而是它一直在围着同一个动作核打转：把原来的东西，再做出一个版本。文件、邮件、语气、设计、文案、考试答案，表面分叉很多，底层却是同一件事。\n\n以后你遇到一个新用法时，可以先别急着背中文词义，先问自己一句：这里是不是在“复刻同一内容”？如果是，你大概率就已经抓住了 `copy` 的骨头。",
     "verification": {
-      "claimCount": 11,
-      "confirmedCount": 5,
-      "softenedCount": 5,
+      "claimCount": 12,
+      "confirmedCount": 7,
+      "softenedCount": 4,
       "uncertainCount": 1,
       "rejectedCount": 1,
       "checked": [
-        "最早它就是‘抄下来、复写一份’的动作。",
-        "英语里很多后来的意思，都还带着这个‘复制、照搬、沿用’的骨架。",
-        "copy 这个词的核心手感，不是‘再来一个’，而是‘把既有东西移过来’。",
-        "在口语里，copy somebody 往往不是字面上的‘复制人’，而是‘模仿、照着做…",
-        "That sounds like a copy of his earlier wor…"
+        "古英语里和‘抄写、复制’这一类动作有关",
+        "核心画面不是‘拥有’，而是‘把同一个内容再生成一遍’",
+        "它最常见的气质不是‘技术动作’，而是‘顺手一抄’‘照着来一份’‘我先留个备份’",
+        "在口语里，copy 常常带一点‘我明白了，我照你说的做’的顺从感，像听到指令后点一下…",
+        "它不自带‘抄袭’的道德判断，那个判断通常要靠上下文另加"
       ],
       "sources": [
         {
@@ -1306,12 +1318,12 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://dictionary.cambridge.org/dictionary/english/copy"
         },
         {
-          "label": "Oxford Learner’s Dictionaries",
-          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/copy_1"
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/copy_2"
         },
         {
-          "label": "Oxford Learner’s Dictionaries",
-          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/copy-in"
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/copy-in"
         },
         {
           "label": "Etymonline",
@@ -1319,7 +1331,15 @@ window.WORD_SENSE_ENTRIES = {
         },
         {
           "label": "Merriam-Webster",
-          "url": "https://www.merriam-webster.com/dictionary/copywriter"
+          "url": "https://www.merriam-webster.com/dictionary/copyright"
+        },
+        {
+          "label": "U.S. Copyright Office",
+          "url": "https://www.copyright.gov/what-is-copyright/"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/copyright_n"
         }
       ]
     }
@@ -1859,15 +1879,19 @@ window.WORD_SENSE_ENTRIES = {
       "进展与费用 · 老词新读 · B1-B2",
       "Issue 005"
     ],
-    "markdown": "**字面含义** · fare 这个词最早确实带着“行进、旅行、过一段路程”的底色。你可以把它想象成一个不静止的画面：人在路上，事情在推进，一段过程正在展开。后来它慢慢长出“表现得怎么样”“过得如何”的意思，所以今天你在一句话里听到 someone is faring well，脑子里不妨先有一种“这一路下来状态如何”的感觉，而不是急着去找一个硬邦邦的中文对译。\n\n**本体质感** · fare 不是那种把结果拍在桌上的词，它更像站在旁边观察一段过程，带着一点克制的关心。它常常不说“成了没有”，而说“这一路走下来怎么样”。所以它特别适合用在健康、项目、经济、公司、球队这些“还在运行、还在承受”的对象上。英语里说 a company is faring badly，不是简单说“公司不好”，而是把公司放进一个持续考验的过程里，看它有没有扛住。它的质感是“过程中的表现”，不是“最终判决”。\n\n但也正因为这样，fare 这个词不能只锁死成动词。现代英语里它还有两个很高频的名词义：一个是“票价、车费”，一个是“餐饮、菜式”。这两个义项和前面的动词气质很不一样，读的时候要立刻切换频道。\n\n**寻根溯源** · 这个词来自古英语和更早的日耳曼语源。名词层面，古英语里的 `fær / faru` 指的是 journey、expedition 这一类“旅程、行程”；动词层面的 `faran` 则有 travel，也有 be in a particular condition 这样的意思。也就是说，它后来发展出“经历事情时的状态、进展得如何”这条线，并不是凭空拐出来的，而是一直带着“在途中”的老底子。\n\n这里还有一个很有用的连接点：fare 后来之所以能指“票价”，一种词源上的说明是，它原先可以指“为一段旅程所支付的价格”。所以 `bus fare`、`air fare` 这种今天看起来很现代的说法，底下其实还压着“旅程”这层旧义。至于 `pub fare`、`traditional fare` 里的 fare，则已经走到了另一条名词线，表示“提供出来给人享用的食物、菜式”，常见于餐馆介绍、评论和新闻文体里。\n\n**各路用法** · 几个例子，你看它怎么在不同场景里落地：\n\n**日常,跟朋友**\n> How is your dad faring after the surgery?\n> 你爸爸手术后恢复得怎么样？\n\n这里不是在问结果判决，而是在关心“这一段恢复过程扛不扛得住”。\n\n**职场,邮件里**\n> The smaller teams are faring better than expected this quarter.\n> 这个季度，小团队的表现比预期更好。\n\n这里的重点是“在这个季度的运行中，它们表现如何”，不是单点成绩。`fare` 很常和 `well / badly / better / worse / better than expected` 这些词连在一起。\n\n**新闻,灾后报道**\n> How are local businesses faring after the storm?\n> 暴风雨过后，当地企业现在情况怎么样？\n\n这类句子里，fare 常见于带时间或条件背景的句子里，比如 `since`、`after`、`during`、`under`，强调变化发生后，一个人或一件事是怎么撑过去的。\n\n**交通,问票价**\n> How much is the bus fare?\n> 这趟公交车票多少钱？\n\n这里的 fare 是名词，不是“表现如何”，而是非常高频的“车费、票价”。像 `bus fare`、`taxi fare`、`air fare` 都很常见。\n\n**餐馆介绍**\n> The restaurant serves simple Italian fare.\n> 这家餐馆供应朴素的意式餐食。\n\n这里的 fare 也不是“旅程”了，而是“餐饮、菜式”。你在美食评论、报刊介绍里会经常碰到 `traditional fare`、`pub fare` 这种说法。\n\n**出租车语境**\n> The driver picked up a fare at the station.\n> 司机在车站载上了一名乘客。\n\n这个义项频率没“票价”那么高，但在出租车语境里很真实：fare 还可以指付费乘车的乘客。\n\n**原生思维** · 英语母语者用 fare 的时候，脑子里常常不是在给一个静态标签，而是在给一个“经受过程”的对象做观察。中文里我们会说“怎么样”“过得如何”“表现如何”，这些都能靠近它，但 fare 往往更有一种过程感：像看一个人、一家公司、一件事，在风浪里有没有稳住。\n\n不过原生使用里还有一个很重要的提醒：fare 是那种不能靠“一个中文词走天下”去记的词。作动词时，它是在看进展、境况、表现；作名词时，它可能突然变成票价，也可能变成餐食。你一旦只把它背成“过得如何”，在 `air fare` 或 `traditional fare` 这种地方就会立刻卡住。\n\n**悟道时刻** · fare 真正值得记住的，不是“fare = 表现/过得”，而是它总在提醒你：英语里很多词不是一个中心义向外平铺，而是带着一条历史主线，分叉成长出不同用法。遇到 fare，先问它是在看“过程中的状态”，还是在指“被提供、被支付的东西”。\n\n这就是识别它的办法：看到 `fare well / fare badly`，抓过程；看到 `bus fare / pub fare`，立刻切到名词频道。一个词会不会用，常常就差这一下切换。",
+    "markdown": "**字面含义** · fare 最容易抓住的表层入口，是一段出行或经历之后要付出的东西，或者最终过得怎么样。它常常不盯着动作本身，而是看这一趟下来怎么算、结果如何。\n\n**本体质感** · 这个词的质感还是有点分裂，所以中国学习者很容易误判。它最常见的一面，是在 `bus fare / taxi fare / train fare` 里那种“车费、路费”的味道：钱不是为某个物品付的，而是为一次出行、一次运输服务付的。比起普通商品的“价格”，`fare` 更强调“这段路、这趟车、这次运输要付多少钱”。\n\n另一面，`How did you fare?` 这种用法又完全不在钱上，它是在问“你这件事下来，结果怎么样”。从词源和常见搭配看，`fare` 常带一点“经历了某种处境，再看最后如何”的色彩。所以它不像 `do` 那么日常、中性；它往往更像一种回看结果的说法，语气也常比口语里的 `do` 稍书面一些。你可以把它理解成：不是盯着动作本身，而是看人或事在局面里走过一段之后，最后是好是坏、顺不顺、扛没扛住。\n\n顺着这条线，再看它的其他名词义项就不那么散了。`fare` 还可以指“付费乘客”，尤其是在出租车语境里，说的是这趟要载、也会付钱的人；也可以指某类“餐饮、菜色”，像餐厅介绍里说的 `simple fare`、`traditional fare`。前者和“付费路程”直接相连，后者则更像是后来分出来的一支：这个地方提供给你的，是哪一类食物、哪一种日常供给。\n\n**寻根溯源** · 这个词有意思的地方就在于：它最早那层“journey / passage”的意思，今天在裸词 `fare` 里其实已经不太直接可见了，更多是留在词源和一些历史残影里。所以现代学习者会觉得它有点跳：为什么一会儿是车费，一会儿是表现如何？\n\n一种比较顺的理解是：早期那个“行进、经过、路程”的核心，后来分成了几条现实中很常用的线。一次付费的路程，变成了今天的 `bus fare`；人经历一件事之后“情况如何”，变成了动词 `fare well / fare badly / fare better / fare worse`；而餐馆、评论里说的 `Italian fare`、`traditional fare`，则又走到了“供人消费的食物/内容”这条支线上。也正因为如此，今天的 `fare` 看起来不像一个单纯的“旅行词”，而像一个从“经过一段路”慢慢长成的多义词。\n\n**各路用法** ·  \n**日常,问路上花销**\n> How much is the bus fare to the station?\n> 去车站的公交车票多少钱？\n\n这里的 `fare` 不是泛泛地说“价格”，而是你为了这段出行要支付的费用。\n\n**日常,问人事情结果**\n> How did you fare in the interview?\n> 你那场面试结果怎么样？\n\n这里不是在问“你做了什么”，而是在问“经历完之后，你表现得怎样”。这种动词用法常见于较书面、较总结性的表达里，不太像口语里万能替换 `do`。\n\n**日常,描述处境中的表现**\n> She fared better than I expected under pressure.\n> 她在压力下的表现比我预想的要好。\n\n`fare` 在这里有一种“在环境里经受了一轮，再看结果”的视角，所以常和 `well / badly / better / worse` 这类词一起出现。\n\n**出行,出租车语境**\n> The driver picked up a fare outside the hotel.\n> 司机在酒店外载上了一位付费乘客。\n\n这里的 `fare` 不是“车费”，而是“乘客本人”，尤其常见于出租车、网约车这一类靠接单载客的场景。\n\n**餐厅介绍,评论口吻**\n> The café serves simple Italian fare.\n> 这家咖啡馆供应简单的意大利风味餐食。\n\n这里的 `fare` 指某类食物、菜色。它带一点介绍、评论的语感，不像 `food` 那么直白，而像在说“这地方主打的是什么路数的吃食”。\n\n**原生思维** · 英语里这个词真正有意思的地方，不是它有几个中文释义，而是它常常把注意力放在“经过之后”。无论是车费、乘客，还是 `How did you fare?` 这种问法，背后都隐约有一个过程：一段路、一次处境、一轮经历，然后再看这件事怎么算、这个人怎么样。\n\n所以更自然的理解方式，不是硬记“`fare` = 车费 / 表现 / 乘客 / 食物”，而是抓住它那种“与一段经历或一次供给相关”的感觉。尤其动词 `fare`，你可以把它当成一种带结果感的词：不是正在做，而是做完、熬过、经过之后，回头看一句——`fared well` 还是 `fared badly`。\n\n**悟道时刻** · `fare` 真正值得记住的，不是“它怎么翻译”，而是它总爱把人和事放进一个过程里再下判断：这段路多少钱，这个人这一趟算不算一个乘客，这件事最后结果如何，这家店提供的是哪一路吃食。\n\n下次再见到它，先别急着找中文对位，先问一句：这里说的是“一次出行/供给”，还是“经历之后的结果”？这个识别动作一出来，`fare` 那几条看似分裂的义项，就会重新长回同一棵树上。",
     "verification": {
-      "claimCount": 9,
-      "confirmedCount": 5,
-      "softenedCount": 4,
+      "claimCount": 12,
+      "confirmedCount": 6,
+      "softenedCount": 6,
       "uncertainCount": 1,
-      "rejectedCount": 1,
+      "rejectedCount": 0,
       "checked": [
-        "义项范围：重点核对现代高频 noun/verb senses 是否被初稿遗漏"
+        "`Fare` 的老底子很朴素，和‘走、去、通行’这一类动作有关；它也有一条很古老的航…",
+        "你可以先把它想成一个‘路上的词’：不是静态摆着的东西，而是跟移动、经历、路途里的消耗…",
+        "它最常见的一面，是在 `bus fare / taxi fare` 里那种‘车费、路…",
+        "这里的核心不是‘价格’，而是‘通行成本’。",
+        "另一面，`How did you fare?` 这种用法又完全不在钱上，它是在问‘你…"
       ],
       "sources": [
         {
@@ -1883,12 +1907,24 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://dictionary.cambridge.org/dictionary/english/fare"
         },
         {
-          "label": "Oxford Learner's Dictionaries",
+          "label": "Oxford Learner's Dictionaries, noun",
           "url": "https://www.oxfordlearnersdictionaries.com/definition/english/fare_1"
         },
         {
-          "label": "Oxford English Dictionary",
-          "url": "https://www.oed.com/dictionary/fare_n1"
+          "label": "Oxford Learner's Dictionaries, verb",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/fare_2"
+        },
+        {
+          "label": "Britannica Dictionary",
+          "url": "https://www.britannica.com/dictionary/fare"
+        },
+        {
+          "label": "American Heritage Dictionary",
+          "url": "https://ahdictionary.com/word/search.html?q=fare"
+        },
+        {
+          "label": "Collins Dictionary",
+          "url": "https://www.collinsdictionary.com/dictionary/english/fare"
         }
       ]
     }
@@ -1899,19 +1935,19 @@ window.WORD_SENSE_ENTRIES = {
       "防御动作 · 短语动词 · B1-B2",
       "Issue 005"
     ],
-    "markdown": "**字面含义** · fend 这个词在词源上本来就是 defend 的缩略形式，早期意思也确实跟“防御、护住、挡开”有关。所以它一上来就带着那层“先把来势顶住”的动作感。在具象场景里，尤其是 fend off，你很容易看到那个画面：用手臂、盾牌、身体，或者手边任何可用的东西，把迎面来的打击先挡开。后来它当然长出了很多抽象用法，但大致还是能理解成从“挡开外来压力”一路延伸过来的。\n\n也要补一句频率上的现实：现代英语里，母语者很多时候不是单独用一个裸的 fend，而是更常在两个搭配里真正遇见它——fend off 和 fend for oneself。\n\n**本体质感** · 这个词的气质，依然是“防守型应对”。它不是精密解决，也不是从容安排，而是带着局促、韧性和一点临场性：先把这一波顶过去，再说下一步。只是这股气质，落到不同搭配上，重心不一样。\n\n在 fend off 里，重点是挡开、招架、回避外来的东西：攻击、追问、批评、挑战，甚至不想接住的压力。它有很强的边界感，像是在说：先别让这东西压进来。\n\n在 fend for oneself 里，重点则不是边界，而是“没人帮你时，你得自己照料自己、自己应付生活”。它常常不只是漂亮的“独立自主”，而是带着一种无人照应、需要自理的现实感；但语气轻重还是要看上下文，有时只是普通地说一个人得学会自立，有时才会更接近“自己扛着活下去”。\n\n如果拿近义词来帮忙体会，repel 往往更像直接把东西推开，硬度更高；ward off 常有一点提前防范、避免靠近的味道；fend，尤其是 fend off，更像人在压力已经来到眼前时的应急招架。这个比较只是帮助你摸语感，不是绝对边界。\n\n**寻根溯源** · fend 最硬的一块事实，恰恰也是它最省事的理解钥匙：它不是一个完全独立长出来的词，而是 defend 截短后的形式。也就是说，它骨子里一直带着 defend 那种“护住、挡住、防住”的底色。\n\n这也解释了为什么它后来就算进入抽象语境，味道还是没丢。你可以 fend off blows，也可以 fend off questions, criticism, or challenges。动作从“挡拳头”变成了“挡追问”“挡批评”“挡压力”，但那种防守性没有变。另一支 fend for oneself，则像是把“防守”往内收：不是把什么东西推出去，而是在缺少帮助的情况下，把自己维持住。\n\n**各路用法** · 几个例子，在不同场域里感受一下它最常见的落点：\n\n**日常,跟家人聊孩子成长**\n> Kids have to learn to fend for themselves eventually.\n> 孩子终究得学会自己照料自己、自己应付生活。\n\n这里的重点不只是“独立”，而是“不能永远有人替你兜着，你得开始自己处理自己的日子”。\n\n**日常,朋友之间**\n> She spent the afternoon fending off calls from the landlord.\n> 她整个下午都在挡着房东一通又一通打来的电话。\n\n这里的 fend off 很有画面感：电话像一波波压过来，她不是优雅处理，而是在不断招架、不断应付。\n\n**职场,会议后**\n> The spokesperson tried to fend off questions about the budget cuts.\n> 那位发言人试图挡开关于预算削减的追问。\n\n这是很高频、很典型的抽象用法。fend off questions 不是把问题解决了，而是先不让追问继续逼近。\n\n**职场,公关语境**\n> The company moved quickly to fend off criticism after the ad was released.\n> 广告发布后，公司迅速行动，试图挡住随之而来的批评。\n\n这里已经不是身体防御，而是舆论压力的防御。核心仍然是：外面的压力来了，先别让它全面压进来。\n\n**日常,口语**\n> He was too tired to fend off all the questions.\n> 他太累了，已经招架不住那些问题了。\n\n这句话里 fend off 很接近“招架”，但比中文“招架”更有身体感，像真的在一下一下把问题挡回去。\n\n**原生思维** · 英语母语者用 fend 时，脑子里常常不是“完成一个任务”，而是“面对外来压力时，先怎么守住”。但这套感觉最好分两支看：如果是 fend off，重点是挡开、回避、顶住外部压力；如果是 fend for oneself，重点是没有帮助时靠自己维持、自己张罗。\n\n所以中文里“应付、招架、抵挡、自己过、自己照料自己”都可能是它的一部分，但没有哪一个能单独包住它。fend 这个词族真正特别的地方，是把“防守”与“自持”揉在了一起：要么挡外面的东西，要么在没人托底时把自己撑住。\n\n**悟道时刻** · 记 fend，不要只记一个中文对译，要记两种姿势：fend off 是外面有东西压来，我先挡；fend for oneself 是外面没人帮我，我得自己撑。一个偏防守边界，一个偏自我维持。\n\n以后再见到它，先别问“它解决了什么”，先问“它是在挡什么，还是在自己撑什么”。这个角度一抓住，fend 立刻就活了。",
+    "markdown": "**字面含义** · fend 最容易看见的动作，是把逼近的东西先挡开。它不是把问题彻底解决，而是伸手、架住、顶住，让危险或麻烦暂时别靠过来。\n\n**本体质感** · 英语里 `fend` 的手感很硬，有点带劲。它不是温柔地处理问题，也不是系统性地解决问题，而是带着一种临场的、防御性的动作：先顶住，再说。最典型的现代入口，主要就是 `fend off` 和 `fend for oneself` 这两个固定搭配。前者的 `off` 很关键，像是把对方从自己身边推远一点；而且它常常带一种“先挡住，未必已经彻底解决”的意味。你会感觉到它很常出现在“外部压力正在往你身上压”的场景里：麻烦、批评、进攻、诱惑、追问，甚至各种指控、猜测。语感上，它往往比 `deal with` 更有抵挡的动作感，也通常没 `defend` 那么正式、那么制度化。\n\n**寻根溯源** · 这个词最值得补的一层，是它其实不是一条线到底。`fend` 一头连着 `defend`，所以 `fend off` 会保留很强的“挡、护、击退”感；但另一头，在较早的苏格兰英语里，它也发展出过 “provide for / support” 这样的意思，接近“供给、照料、撑住”。这就解释了为什么 `fend for oneself` 读起来不像“把东西挡开”，而更像“没人帮你，你得自己照料自己、自己把日子撑下去”。也就是说，这个词今天最常见的两条主线，一个偏抵御外来压力，一个偏无人帮助下自我维持。现代英语里，`fend` 裸着单独出现其实没这两个短语常见。\n\n**各路用法** · 几个例子，感受它那种“先挡住”或者“自己撑住”的动作。\n\n**日常, 跟朋友**\n> She was fending off questions about her breakup all night.\n> 她整晚都在挡着别人问她分手的事。\n\n这里不是“回答问题”，而是一直把话题推开，不让它贴上来。\n\n**公共语境, 面对追问**\n> She managed to fend off questions about new tax increases.\n> 她设法挡开了别人对新增税收的追问。\n\n这类 `fend off questions` 很典型，重点不在解释到底，而在先把追问压回去。\n\n**职场, 邮件里**\n> We need a clear statement to fend off speculation.\n> 我们需要一份明确声明，来挡住各种猜测。\n\n这里的重点不是“解释清楚了一切”，而是先把外面的猜测顶回去，别让它继续发酵。\n\n**社媒, 评论区**\n> She fended off the criticism without sounding defensive.\n> 她把批评挡了回去，又没有显得太防御。\n\n这类用法里，`fend off` 常表示把批评化开、挡回去，不一定是正面硬碰。\n\n**日常, 生活场景**\n> He had to fend for himself after his parents moved abroad.\n> 父母搬到国外后，他只能自己照顾自己。\n\n`fend for oneself` 是个很常见的搭配。它不是单纯“独立”这么抽象，也不完全是“挡开”那条线，而更像：没人替你安排、供给、照料了，你得自己把生活撑起来。\n\n**原生思维** · 在很多语境里，`fend` 给人的感觉都不是“把事情处理完了”，而是“先别让它压到我身上”。这在 `fend off` 里尤其明显：外面有东西过来了，你先做一个推开、隔开、撑住的动作。可一到 `fend for oneself`，重点又从“挡外力”转成“自己活下去、自己应付生活”。所以真正好用的识别方法不是死记一个中文，而是先看它走的是哪条线：是在挡外来的压力，还是在说无人帮助下的自我维持。\n\n**悟道时刻** · `Fend` 最有意思的地方，不是一个词包打天下，而是它在现代英语里清清楚楚分成两条活路：`fend off` 是把东西挡在门外，`fend for oneself` 是没人管时自己撑住。以后见到它，先别急着翻成“防御”或“应付”，先判断它是在写外来的逼近，还是在写一个人自己的生存姿态。这个分清了，词的力道就立起来了。",
     "verification": {
-      "claimCount": 8,
-      "confirmedCount": 4,
+      "claimCount": 12,
+      "confirmedCount": 6,
       "softenedCount": 6,
       "uncertainCount": 1,
       "rejectedCount": 1,
       "checked": [
-        "**fend 这个词最早有‘抵挡、挡开、护住自己’的那层动作感**",
-        "**像用手臂、工具、身体，或者任何可用的东西，把迎面来的东西顶回去**",
-        "**后来才长出很多比喻用法，但底层画面一直没变**",
-        "**英语里最有名的就是 fend for oneself**",
-        "**fend for oneself…不是‘独立自主’这种漂亮概念，而是‘没人替你挡…"
+        "`Fend` 这个词最早带着一种‘把东西挡开、顶开’的身体动作感。",
+        "它的底层画面不是‘解决’，而是‘先别让它靠近’。",
+        "最典型的搭配是 `fend off`。",
+        "`off` 很关键，像是把对方从自己身边推远一点。",
+        "它常常出现在‘外部压力正在往你身上压’的场景里：麻烦、批评、进攻、诱惑、追问，甚至寒…"
       ],
       "sources": [
         {
@@ -1923,12 +1959,8 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://www.merriam-webster.com/dictionary/fend%20off"
         },
         {
-          "label": "Merriam-Webster",
-          "url": "https://www.merriam-webster.com/dictionary/fend%20for%20oneself"
-        },
-        {
-          "label": "Cambridge Dictionary",
-          "url": "https://dictionary.cambridge.org/dictionary/english/fend"
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/fend"
         },
         {
           "label": "Cambridge Dictionary",
@@ -1939,12 +1971,16 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://dictionary.cambridge.org/dictionary/english/fend-off"
         },
         {
-          "label": "Oxford Learner's Dictionaries",
+          "label": "Oxford Learner’s Dictionaries",
           "url": "https://www.oxfordlearnersdictionaries.com/definition/english/fend-off"
         },
         {
-          "label": "Etymonline",
-          "url": "https://www.etymonline.com/word/fend"
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/fend-for-yourself"
+        },
+        {
+          "label": "Britannica Dictionary",
+          "url": "https://www.britannica.com/dictionary/fend"
         }
       ]
     }
@@ -1955,19 +1991,17 @@ window.WORD_SENSE_ENTRIES = {
       "漂浮与试探 · 动作隐喻 · B1-B2",
       "Issue 005"
     ],
-    "markdown": "**字面含义** · 最具体的画面是“漂在水面上，不沉下去”。一个东西既没有被牢牢固定住，也没有往下掉，而是轻轻地、带点不受控地待在某个介质里。这个画面后来长出了很多英语里的抽象用法：不只是在水上漂，也可以是在空气里飘——云、气味、声音、音乐都可以 float；再往后，想法会被抛出来，某种说法会在圈子里流传，在金融语境里，货币也可以“自由浮动”。\n\n**本体质感** · float 这个词的核心质感，不是“轻”，而是“没有被钉死”。它身上有一种松、悬、游移的感觉：东西先被放出来，不急着落地，不急着定案。英语母语者说 float an idea、float a proposal 的时候，常常带着一种“先放着看看”的姿态；它不是强推，而是把一个想法轻轻放到空气里，让别人接住或忽略。相比 submit 或 formally propose，float 往往更像试探、预热、留余地，但它是否正式，还是要看具体语境。  \n如果看相近词的梯度，可以粗略这样理解：drift 更像被动地飘走，hover 更像悬在那儿不下来，float 则更像“让某物保持可移动、可未定”。它不一定消极，但总带着未落定的空间。\n\n**寻根溯源** · float 是个很老的词，不是后来才拼出来的抽象表达。它的动词用法可以追到古英语时期，词源资料通常会追到 late Old English 的 flotian，意思就和“漂浮、漂着”有关。也正因为这个基础画面足够古老、足够具体，它后来长出“在空气中飘”“念头浮现”“把方案抛出来供考虑”这些延伸时，路其实很顺：先是物体没被钉住，后来变成概念也没被钉死。\n\n**各路用法** · 几个例子，感受它怎么在不同场景里“悬着”：\n\n**日常,空气里的感觉**\n> The smell of fresh bread floated up from the kitchen.\n> 新鲜面包的香味从厨房里飘了上来。\n\n这里的 float 不是水上漂，而是在空气中轻轻飘来。这个基础义很常见，也正好能解释它后面那些更抽象的用法。\n\n**职场,会议里**\n> We can float the proposal in tomorrow’s meeting and see how people react.\n> 我们可以在明天的会议上先把这个提案抛出来，看看大家什么反应。\n\n这里通常不像 submit 那样强调正式递交，而更像先拿出来看看反应。当然，它也完全可能发生在正式会议里，只是这个动作本身偏“试水”。\n\n**职场,邮件里**\n> I’m just floating a possible timeline before we commit to anything.\n> 在我们正式拍板之前，我只是先提一个可能的时间表。\n\n这句话里的“还没定”一方面来自 float，另一方面也被 before we commit to anything 说得很明白，所以整体语气就很像先摆出来讨论。\n\n**日常,跟朋友**\n> She floated the idea of moving to Seattle, but nothing is decided yet.\n> 她提过搬去西雅图这个想法，但还没决定。\n\n中文里容易直觉成“提出”，但这里更像是把念头先放出来，让它在谈话里待一会儿，而不是立刻进入执行。\n\n**社媒,评论区**\n> The theory is floating around, but no one has really proved it.\n> 这个说法一直在到处流传，但还没人真正证实。\n\n这里的 float around 是词典里稳定收录的说法，常用于想法、故事、传闻在很多人之间被谈论、被重复。它有一种“到处都在飘，但还没落定”的感觉。\n\n**商业,财经新闻**\n> The company was floated on the stock market in 2007.\n> 这家公司在 2007 年上市了。\n\n这是一个很常见、但如果只从“漂浮”去猜就不容易猜到的商业义。float a company / be floated on the stock market，说的是公司向公众发售股份、上市交易。到了这里，float 仍然保留了一点“放出来进入流通”的底色。\n\n**经济,政策讨论**\n> The government decided to allow the peso to float freely.\n> 政府决定让比索自由浮动。\n\n这里的 float 是稳定的经济学用法，指让货币汇率由市场决定，而不是被固定住。你会发现，它的底层感觉还是一样：不是钉死，而是让它在一个体系里自己浮动。\n\n**原生思维** · 英语母语者用 float 的时候，脑子里经常不是“表达一个结论”，而是“把一个东西放到可讨论、可流动的状态里”。在很多商务和讨论语境里，它往往服务于一种很英语的动作：先不把话说死，先让概念在场上轻轻晃一下。中文里我们也会“先放个风”“先抛个想法”，但 float 的感觉更轻、更松，像是你只是把它托在空气里，而不是拿在手上。  \n这个词还有一个很有意思的地方：从水里漂，到空气里飘，到想法浮现，到方案抛出，再到货币自由浮动、公司股票进入市场流通，它看起来跨得很远，底层却一直没变——不是消失，不是落实，而是进入一种尚未被钉住、但已经在场的状态。\n\n**悟道时刻** · float 真正值得抓住的，不是“漂浮”这一个画面，而是“已进入场中，但还没被钉死”。你记住这个感觉，就更容易看懂英语里很多动作词：它们不只是在说结果，也是在说一个东西被如何安放。\n\n以后再遇到 float，别急着翻成“漂”或“提出”。先问一句：这里说的是水上、空气里，还是某个想法、价格、货币、方案，正在被放进一个可流动、可观察、可暂不定案的状态里？",
+    "markdown": "**字面含义** · float 最直观的画面，是东西漂在水面上，不沉下去，也没有被钉住。它被某种环境托着，轻轻移动，暂时还没有落到一个固定位置。\n\n**本体质感** · 英语里 float 这个词有一种“先别落地”的气息。人一说 float，脑子里常常不是一个硬动作，而是一个状态：东西在边缘上晃着，话题被轻轻抛出来，决定还没钉死，情绪也还没沉到底。它比 push 软，比 announce 松，比 decide 开放。  \n如果放在近义词的语感里看，float 往往显得比 drift 更有一点点主动性，drift 更像被带着走；比 hover 更松，hover 常带一点悬停感和紧张感；比 propose 更轻，propose 更像正式摆上桌，float 则像先飘出来。这里不是硬边界，更像英语里的手感差别。  \n它也不总是柔和正面的。float 有时恰恰带一种“没落地、没着落”的感觉，所以既能说想法被轻轻抛出来，也能说一个人 float around、float through life，意思是晃来晃去，没什么明确方向。\n\n**寻根溯源** · 这个词很老，源头可以追到古英语时期，早义就是“漂在水面上”。后来它的路数大致很清楚：先是从水里漂，扩到在空气里飘，再扩到更抽象的“漂着存在”。所以你会看到 music floated out of the window 这种声音飘出来的说法，也会看到 float an idea 这种把想法先放出来、让它在场上悬一会儿的说法。  \n再往后，float 还进入了金融和制度语言：把公司股票放到市场上，是 float a company；不把汇率钉死、让它随市场上下，是 let a currency float。画面其实没变，变的是“被托着”的东西，从木头、声音、念头，变成了价格、股票和安排。\n\n**各路用法** · 几个例子，在不同场域里你感受一下它怎么从“漂着”一路长出不同意思：\n\n**日常,窗边听见声音**\n> Music floated out of the open window.\n> 音乐从敞开的窗户里轻轻飘了出来。\n\n这里还是很接近本义：不是猛地冲出来，而是轻轻地、柔软地进入你的感官。\n\n**职场,会议里**\n> Let me float an idea before we commit to a direction.\n> 在我们正式确定方向之前，让我先抛个想法出来。\n\n这里不是正式提案，而是先把想法放到空气里，看看大家怎么接。\n\n**日常,跟朋友**\n> I floated the idea of moving in together, and she seemed open to it.\n> 我试着提了下同居这件事，她看起来挺能接受。\n\n这里很像“试探性地抛出”，重点在试水，不在拍板。\n\n**生活状态,说一个人没定下来**\n> He’s been floating around since graduation, unsure what to do next.\n> 他毕业以后一直晃来晃去，不太确定下一步要做什么。\n\n这里的 float 就不浪漫了。它不是轻盈，而是没落地、没方向，甚至带一点“飘着过日子”的被动感。\n\n**金融,公司上市**\n> The company was floated on the stock market last week.\n> 这家公司上周在股市上市了。\n\n这里的 float 已经是稳定行业义了，指把公司股票放到市场上公开交易。\n\n**经济,汇率制度**\n> The government decided to let the currency float freely.\n> 政府决定让该货币自由浮动。\n\n这里的核心不是“漂漂亮亮地动”，而是“不钉死在固定价位上”，让它随市场浮动。\n\n**口语,随你高兴**\n> If staying home all weekend is what floats your boat, go for it.\n> 如果整个周末都待在家正合你意，那就这么做吧。\n\nwhatever floats your boat / what floats your boat 这类说法，意思不是“让船漂起来”，而是“只要你喜欢、你开心就行”。\n\n**技术,编程语境**\n> This function returns a float instead of an integer.\n> 这个函数返回的是浮点数，不是整数。\n\n这里的 float 是技术里的常见词，指 floating-point number。小数点可以“浮动”，所以不是固定整数位的那种表示。\n\n**原生思维** · 英语母语者用 float 的时候，常常是在把某个东西从“必须立即定案”的压力里松开。它可以是一个想法、一种可能性、一份说法，甚至一条试探市场和舆论的 trial balloon：先让它在场，但不要立刻压实。中文里我们常会直接说“提”“定”“决定”，而 float 更像是“先放出来看看”，中间保留一个缓冲层。  \n但这个词真正有意思的地方，在于这个缓冲层并不天然正面。它既可以是聪明的留白，也可以是没有着落；既可以是策略性的试探，也可以是被动地漂着。所以看到 float，不妨先问一句：这里被“托住”的，究竟是灵活性，还是不确定性？\n\n**悟道时刻** · 记 float，别只记“漂浮”，要记“没被钉住”。它的共同核心，不是轻，而是悬着：东西悬在水上，声音悬在空气里，想法悬在讨论中，价格悬在市场上，人也可能悬在生活边上。\n\n以后你再遇到 float an idea、float around、float a company、let the currency float，不要急着逐字翻。先看它是不是在说：某样东西没有被压实，而是在被环境托着走。那一层，你一看见，整个词就活了。",
     "verification": {
-      "claimCount": 12,
+      "claimCount": 9,
       "confirmedCount": 5,
-      "softenedCount": 7,
-      "uncertainCount": 1,
-      "rejectedCount": 0,
+      "softenedCount": 5,
+      "uncertainCount": 2,
+      "rejectedCount": 1,
       "checked": [
-        "**字面含义** · 最具体的画面是‘漂在水面上，不沉下去’。",
-        "这个画面后来长出了很多英语里的抽象用法：**思绪在飘，数字在游动，想法被抛出来，价格…",
-        "float 这个词的核心质感，不是‘轻’，而是‘**没有被钉死**’。",
-        "英语母语者说 **a float** 的时候，常常带着一种‘先放着看看’的姿态；说 …",
-        "它很少有中文里那种‘**正式提出**’的硬度，更多是试探、预热、留余地。"
+        "词源与时间层：Etymonline、OED",
+        "初稿几个例句里，哪些属于稳定义项，哪些更像作者自造但可理解的延伸",
+        "同时做了场域扫描：日常、职场、金融经济、口语习语、技术"
       ],
       "sources": [
         {
@@ -1979,28 +2013,24 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://dictionary.cambridge.org/us/dictionary/english/float"
         },
         {
-          "label": "Cambridge Dictionary",
-          "url": "https://dictionary.cambridge.org/dictionary/english/float-around"
-        },
-        {
           "label": "Oxford Learner’s Dictionaries",
-          "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/float_1"
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/float_1"
         },
         {
-          "label": "Oxford Advanced American Dictionary",
-          "url": "https://www.oxfordlearnersdictionaries.com/us/definition/american_english/float_1"
-        },
-        {
-          "label": "Oxford Learner’s Dictionaries",
-          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/float-around"
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/float_v"
         },
         {
           "label": "Etymonline",
           "url": "https://www.etymonline.com/word/float"
         },
         {
-          "label": "Oxford English Dictionary",
-          "url": "https://www.oed.com/dictionary/float_v"
+          "label": "Merriam-Webster, trial balloon",
+          "url": "https://www.merriam-webster.com/dictionary/trial%20balloon"
+        },
+        {
+          "label": "VerbNet float",
+          "url": "https://verbs.colorado.edu/html_groupings/float-v.html"
         }
       ]
     }
@@ -2447,15 +2477,15 @@ window.WORD_SENSE_ENTRIES = {
       "制度与习惯 · 现代用法 · B1-B2",
       "Issue 005"
     ],
-    "markdown": "**字面含义** · hygiene 最早跟“健康的、保健的”这一类意思绑在一起，背后连着古希腊语里“健康”那条词根。它原本不是“洗干净”这么窄，而是指一整套维持身体健康、避免出问题的做法。你可以把它想成：不是已经病了再处理，而是在病和乱之前，先把环境、习惯、边界收拾好。\n\n**本体质感** · 这个词在英语里有一种“清洁但不只是清洁”的感觉。它常常带着一种预防性的、略带规范感的气息：先把风险挡在门外，而不是等事情坏掉再补救。说到个人卫生、厨房卫生、数据卫生、工作卫生，它的核心都不是“看起来干净”，而是“系统性地保持不出问题”。  \n在语感上，它也常和这些词形成一种大致的分工：clean 更像“干净了”；sanitary 更像“符合卫生标准、可被接受”；hygienic 更像“在健康风险上是妥当的”；hygiene 本身则更像“这整套维持健康的实践”。如果中文里你只想到“卫生”，会容易漏掉它那种“防患于未然”的骨架。\n\n**寻根溯源** · hygiene 来自古希腊语，和“健康”同源；后来经过法语进入英语。词源学资料一般会把它追到希腊语 *hygieine techne*，大意是“保持健康的技艺”，英语里大约在 17 世纪后期经法语进入。它的路子很清楚：先是一个关于“如何建立并维持健康”的总框架，后来在现代英语里又常常落到清洁、卫生习惯、预防病菌这些具体而重复的实践上。不过，更宽的“健康维护/健康学”那一层并没有完全消失。也正因为这个来路，相较于 clean，hygiene 往往更容易让人联想到一种长期维护，而不只是眼前干净。\n\n**各路用法** ·\n\n**职场,报告/制度里**\n> Good hygiene practices reduce the risk of contamination in the lab.\n> 良好的卫生规范可以降低实验室污染的风险。\n\n这里的 hygiene 不是“擦得亮”，而是“让风险不要发生”的流程意识。hygiene practices、hygiene standards、hygiene regulations 这一类搭配，都很能体现它的规范色彩。\n\n**日常,医疗或公共卫生语境**\n> Proper hand hygiene helps prevent the spread of infection.\n> 正确的手部卫生做法有助于防止感染传播。\n\nhand hygiene 是非常稳定、标准化的说法，尤其常见于医院、诊所、公共卫生提醒里。它说的不是“手看起来干净”，而是洗手、消毒、接触前后处理这些预防动作。\n\n**日常,个人护理**\n> Good oral hygiene can help prevent gum disease.\n> 良好的口腔卫生有助于预防牙龈疾病。\n\noral hygiene / dental hygiene 都是很高频的固定搭配。这里的 hygiene 很典型：不是表面清爽，而是通过刷牙、使用牙线、定期护理去维持健康。\n\n**日常,健康建议里**\n> Improving your sleep hygiene may help you fall asleep more easily.\n> 改善你的睡眠卫生习惯，可能会帮助你更容易入睡。\n\nsleep hygiene 很能说明这个词不等于“清洁”。它说的是那些有助于稳定睡眠的习惯和条件，比如作息、光线、咖啡因摄入、睡前使用手机的边界。\n\n**职场,产品/管理语境里**\n> We need better data hygiene before launching the new campaign.\n> 在启动新活动之前，我们需要先把数据整理得更干净、更规范。\n\n这里的 hygiene 已经借到了别的领域，属于很常见的跨域/行业引申，意思是“基础整理、去脏数据、避免后患”。重点仍然不是“好看”，而是准确性、一致性和后续可用性。\n\n**日常,家里**\n> Maintaining good kitchen hygiene is easier if you clean as you cook.\n> 如果你边做饭边清理，就更容易维持良好的厨房卫生。\n\n厨房语境里的 hygiene 也是这样：它关心的不只是台面亮不亮，而是生熟分开、及时清理、减少污染风险这些持续动作。\n\n➤ *值得注意的是，在医学、实验室、食品、公共卫生和数据管理这些语境里，hygiene 往往都会落到“防风险的基础规范”这一层，不只是日常意义上的干净。*\n\n**原生思维** · 英语里用 hygiene 时，重点往往不只是“这个东西脏不脏”，而是：有没有一套习惯、流程、边界在持续保护健康和秩序。与其把它理解成一个结果词，不如把它理解成一个维护词。  \n所以你会看到它从洗手、口腔护理、睡眠习惯，一路借到数据治理、邮件列表管理、软件开发等场景。本质上说的都是同一件事：先做基础维护，别让污染、混乱或故障在系统里慢慢堆起来。\n\n**悟道时刻** · hygiene 真正该记住的，不是“卫生”这个中文标签，而是它背后的预防逻辑：健康不是等出问题再修，而是靠一套日常动作持续维持。\n\n以后再碰到 hand hygiene、oral hygiene、sleep hygiene，甚至 data hygiene、email hygiene 这类借用说法时，先别急着翻成“干净”。先问一句：这里是不是在说一套防后患的维护机制？一旦这样识别，这个词就会一下子亮起来。",
+    "markdown": "**字面含义** · hygiene 最表层的画面，是一套让身体和环境维持干净、健康、不容易出问题的习惯。它不只是“洗干净”，而是把风险和脏乱持续挡在外面。\n\n**本体质感** · 这个词在英语里有一种“把东西维持在可用、可安全、可继续运转”的感觉。它不只是“干净”，更像是在说：别让脏东西、风险、失控慢慢积起来。你会看到它常常出现在一种有点克制、带点提醒意味的语境里，比如 personal hygiene、sleep hygiene、food hygiene，也会延伸到 data hygiene、cyber hygiene——不是在夸你讲究，而是在轻轻敲一下：这里需要一个基本的维护习惯。  \n它的质感很像“底层保养”。不是光鲜的展示面，而是看不见但不能缺的那层东西。中文里“卫生”容易让人先想到表面清洁，英语里的 hygiene 常常更接近“维持健康或正常运转所需的基本秩序”。\n\n**寻根溯源** · hygiene 来自希腊语这条词源线，和 Hygieia 相关，原本就和“健康、保健”有关。更有意思的是，它早期背后还有一个说法：*hygieine techne*，大意就是“the healthful art”，也就是“维护健康的技艺”。所以这个词从一开始就不只是“洗干净”，而是带着一种“让状态维持良好”的底色。后来进入英语后，它一边保留了医学和公共健康里的正式意味，一边也慢慢进入更日常的卫生、习惯表达。再往后，它又较自然地延伸到一些强调预防、维护、规范的领域，比如睡眠、数据、网络安全这些地方。\n\n**各路用法** ·\n\n**日常,医生或学校提醒**\n> Good personal hygiene helps prevent infection.\n> 良好的个人卫生有助于预防感染。\n\n这是最基础也最常见的入口。这里的 hygiene 就是个人卫生习惯，不抽象，也不花哨，直接关乎健康维护。\n\n**日常,牙科场景**\n> The dentist said I need to improve my oral hygiene.\n> 牙医说我需要改善口腔卫生。\n\noral hygiene / dental hygiene 也很高频。它说明 hygiene 在英语里本来就经常和具体身体护理绑在一起。\n\n**职场,会议里**\n> We need better data hygiene before we roll out the new dashboard.\n> 在上线新仪表盘之前，我们需要更好的数据整理和规范。\n\n这里的 hygiene 不是“脏不脏”，而是“数据有没有被持续维护好”：准不准、齐不齐、一不一致、是不是还新鲜。\n\n**日常,跟朋友**\n> I was terrible about sleep hygiene last year, so I started going to bed earlier.\n> 我去年在睡眠习惯这件事上做得很差，所以我开始更早上床睡觉。\n\n这里它指的不是单纯“睡得够不够”，而是围绕睡眠建立起来的一整套基本习惯。\n\n**制度场景,安全培训**\n> Basic cyber hygiene includes patching and multi-factor authentication.\n> 基础网络安全卫生包括打补丁和启用多重身份验证。\n\ncyber hygiene / cybersecurity hygiene 是现在很稳的一支用法。它说的不是“网络干净”，而是那些最基础、最该长期做到位的安全动作。\n\n**社媒评论区**\n> Honestly, the app’s privacy hygiene is not great.\n> 老实说，这个 app 在隐私管理上做得不太行。\n\n这种说法在产品评论、隐私或安全讨论里也能见到。它还是在借 hygiene 说“基本规范有没有维持住”，只是这类搭配的固定程度，通常弱于 cyber hygiene 这种更制度化的说法。\n\nfood hygiene 也是很稳定的一支，常见于监管、餐饮、学校、公共卫生语境，说的是食品处理和储存过程中的卫生规范。  \n➤ *值得注意的是，在科技、数据、信息安全这些语境里，hygiene 常常就是在说“基础维护”和“最低限度的秩序”，看到时不用先往“洗干净”想。*\n\n**原生思维** · 在很多现代搭配里，hygiene 传达的都不是“洁癖”或“讲究”，而是“别让基本盘坏掉”：这个系统、这个习惯、这堆信息，得有人持续照看，不然问题会慢慢长出来。它是一个很典型的“维护型词”：重点不在一次性的清洁动作，而在长期、防患于未然的管理。中文里我们有时会用“卫生”“规范”“整理”去靠近它，但英语这边常把这些东西收拢到同一个词里。\n\n**悟道时刻** · hygiene 真正好用的地方，在于它把“健康维护”这套身体经验，借给了别的系统：睡眠要 hygiene，数据要 hygiene，网络安全也要 hygiene。你抓住的不是“卫生”两个字，而是那个更深的核——基本秩序、持续保养、预防性管理。\n\n所以下次再看到这类搭配，先别急着直译。先问一句：这里在防什么失控、补什么底层维护？这一下抓对了，hygiene 的路数就全通了。",
     "verification": {
-      "claimCount": 14,
+      "claimCount": 11,
       "confirmedCount": 7,
-      "softenedCount": 7,
-      "uncertainCount": 2,
+      "softenedCount": 4,
+      "uncertainCount": 1,
       "rejectedCount": 0,
       "checked": [
-        "医疗/公共卫生固定用法：CDC hand hygiene 资料"
+        "**词源与早期义项**：Etymonline、Merriam-Webster"
       ],
       "sources": [
         {
@@ -2463,32 +2493,32 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://www.merriam-webster.com/dictionary/hygiene"
         },
         {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/hygiene"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/hygiene"
+        },
+        {
           "label": "Etymonline",
           "url": "https://www.etymonline.com/word/hygiene"
         },
         {
           "label": "Cambridge Dictionary",
-          "url": "https://dictionary.cambridge.org/us/dictionary/english/hygiene"
+          "url": "https://dictionary.cambridge.org/dictionary/english/sleep-hygiene"
         },
         {
-          "label": "Oxford Learner's Dictionaries",
-          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/hygiene"
+          "label": "IBM",
+          "url": "https://www.ibm.com/think/insights/why-maintaining-data-cleanliness-is-essential-to-cybersecurity"
         },
         {
-          "label": "CDC — Hand Hygiene FAQ",
-          "url": "https://www.cdc.gov/clean-hands/faq/index.html"
+          "label": "CISA",
+          "url": "https://www.cisa.gov/cyber-hygiene-services"
         },
         {
-          "label": "CDC — Clinical Safety: Hand Hygiene for Healthcare Workers",
-          "url": "https://www.cdc.gov/clean-hands/hcp/clinical-safety/index.html"
-        },
-        {
-          "label": "Merriam-Webster — sleep hygiene",
-          "url": "https://www.merriam-webster.com/dictionary/sleep%20hygiene"
-        },
-        {
-          "label": "Adobe Experience Platform — Data Hygiene API Guide",
-          "url": "https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/api/overview"
+          "label": "NIST CSRC",
+          "url": "https://csrc.nist.gov/pubs/pd/2020/03/30/critical-cybersecurity-hygiene-patching-the-enterp/final"
         }
       ]
     }
@@ -2555,19 +2585,19 @@ window.WORD_SENSE_ENTRIES = {
       "遗留与影响 · 技术文化 · B2-C1",
       "Issue 005"
     ],
-    "markdown": "**字面含义** · 在现代英语里，legacy 一个很核心、也很稳定的基础义，就是法律或遗嘱语境中的“遗赠”——留给某人的钱财或财产。但它更常被人感受到的，是另一层意思：一个人、一段历史、一个制度离场之后，仍然留在后面的那部分影响。这个词的画面感不是“现在正在发生的事”，而是“已经退场了，但它的余波还在这里”。\n\n**本体质感** · 在很多现代语境里，legacy 带着一种时间上的延续感：某个东西已经结束了，却还在塑形今天。它可以是荣耀，也可以是包袱；可以是制度留下来的惯性，也可以是一个人留下来的声望。说 legacy 的时候，语气里常常带着一种回看：不是只看结果，而是看“这件事之后还留下了什么”。在常见语感上，它往往比 inheritance 更强调留下的影响与评价；而 inheritance 更容易让人想到继承所得，尤其是法律、财产或生物遗传语境。粗略地说，它也比 history 更有“被继续携带”的意味：history 更像“发生过什么”，legacy 更像“那些发生过的事现在还在怎么起作用”。\n\n**寻根溯源** · 这个词和拉丁语 legare / legatus / legatum 这一组词有关，核心都绕着“委派、交付、遗赠”打转。一个有意思的地方是：英语里这个词的早期记录，并不先只是“遗嘱留下的财产”，还带有“被派出去、被托付去完成某事”的影子。后来它才在英语里稳定长出了法律上的“遗赠”义，再慢慢扩展到更抽象的“留下来的影响”。所以它底层一直有个动作：不是简单“过去了”，而是“被交付给了后来的阶段”。也正因为这个来路，legacy 天生带着一种向后看、向后传的时间结构。\n\n**各路用法** ·\n\n**法律,遗嘱语境里**\n> She received a small legacy from her aunt.\n> 她从姨妈那里得到了一小笔遗赠。\n\n这里的 legacy 就是很直接的法律义，接近 bequest：遗嘱里留给某人的钱财或财产。\n\n**职场,公司介绍里**\n> The founder's legacy still shapes how the company makes decisions.\n> 创始人留下的影响至今仍在塑造公司的决策方式。\n\n这里的 legacy 不是说“留下了一笔东西”，而是说一种做事风格、组织惯性、价值取向还在延续。\n\n**日常,谈一个人**\n> My grandfather left a strong legacy of kindness in our family.\n> 我祖父在我们家留下了很深的善意传统。\n\n这里的 legacy 更像“他离开之后，仍然留在家里的那种影响”。\n\n**日常,谈社会问题**\n> The city is still dealing with the legacy of old industrial pollution.\n> 这座城市仍在处理旧工业污染留下的后果。\n\n这里的重点是“过去的东西没有真正过去，它还在当下制造后果”。\n\n**技术,和 IT 团队开会时**\n> We still rely on several legacy systems that are expensive to replace.\n> 我们现在仍然依赖几套难以替换、替换成本很高的旧系统。\n\n这里的 legacy 是现代很高频的形容词用法。legacy systems / legacy software 说的不是“有历史感的系统”，而是上一代留下来、已经显得老旧、但现实里还得继续用的系统。\n\n**社媒,写纪念性表达**\n> She wants her work to be remembered as part of her legacy.\n> 她希望自己的作品能被记住，成为她留下来的一部分。\n\n这种用法常带一点纪念和收束的意味，像是在给一个人的工作、人生或影响力做归档。\n\n**原生思维** · 英语里用 legacy 时，常常是在把一个人、一个机构、一个时代，当成“已经退场但仍在场”的东西来看。中文里我们很容易先把它压成“遗产”或“传承”，但英语里的 legacy 经常同时包含三层：留下来的东西、它继续造成的影响、以及别人如何记得它。连 legacy system 这种技术用法，底层逻辑都没变：它也是过去留下来的东西，只不过不是名声，而是代码、架构、流程，还在今天继续起作用。\n\n**悟道时刻** · legacy 真正厉害的地方，不是“留给后人”这四个字，而是它把“已经结束”和“仍在起作用”绑在了一起。以后你看到这个词，不妨先别急着翻成“遗产”，先问一句：这里说的到底是留下了什么，又是怎样继续活在现在的？",
+    "markdown": "**字面含义** · legacy 最容易抓住的画面，是一个人或一代人离开之后，仍然留在后面、继续产生影响的东西。它可以是钱财遗赠，也可以是制度、问题、名声或影响。\n\n**本体质感** · legacy 这个词最有意思的地方，不是“有”，而是“带着前任的影子继续活着”。它说的不是单纯的“过去”，而是过去在现在留下的持续效应。听到它，英语母语者脑子里往往不是一件静态的东西，而是一种时间压痕：前人做过什么，现在的人还在接着承受、使用、维护，甚至反抗。它可以是正面的，也可以是沉重的，所以你会看到它既能落在“成就、传统、声望”上，也能落在“债务、问题、创伤”上。那种感觉很像：东西已经不在场了，但它的形状还在房间里。\n\n**寻根溯源** · 词源上，这个词不能简单说“最早就是遗产”。较早的英语用法里，它一度和“被派出去执行任务的人群、使团”有关；而后来固定下来的“遗赠、遗产”这条线，则和拉丁语里另一层意思连着。更准确地说，legacy 经由 Medieval Latin *legatia*、Latin *legatus* 这一支往上追，还牵着 *legare* 这条词根；而 *legare* 本身就同时碰着“委派、派遣”和“以遗嘱指定、遗赠”两条语义线。所以英语里的 legacy 不是凭空从“派出去”比喻成“留下来”，而更像是这条词根里本来就藏着“托付给别人”的动作：可以是把人派出去，也可以是把东西留给后人。\n\n**各路用法** · 几个例子，在不同场域里你感受一下区别：\n\n**法律,遗嘱里**\n> She left her grandchildren a generous legacy.\n> 她给孙辈留下了一笔丰厚的遗赠。\n\n这里是最扎实的本义。legacy 不只是抽象影响，它在法律上本来就可以是实打实“留给某人的那份财产”。\n\n**职场,年度总结或公司介绍**\n> The company's legacy includes a strong engineering culture and a trusted brand.\n> 这家公司的传承里，包括扎实的工程文化和受信赖的品牌。\n\n这里的 legacy 不是“老旧代码”，而是在说这家公司从过去一路带到今天、仍然能影响当下的东西。\n\n**职场,谈历史问题**\n> We are still dealing with the legacy of poor infrastructure investment.\n> 我们现在仍在处理基础设施投资不足留下的后遗症。\n\n这里很典型：legacy 常常不是“纪念”，而是“过去决策留下的持续后果”。\n\n**日常,谈家里长辈**\n> She sees photography as part of her father's legacy.\n> 她把摄影看作她父亲留给她的一部分传承。\n\n这里更靠近“传下来的一种精神或影响”，不一定是钱，甚至不一定是物。\n\n**日常,谈一段冲突留下的问题**\n> I don't want to deal with the legacy of that conflict.\n> 我不想收拾那场冲突留下来的后果。\n\n这时它已经很接近“上一段事件留下的包袱或余波”，重点不在事件本身，而在它还没散去的影响。\n\n**社媒,谈品牌或作品**\n> This album feels like the artist's true legacy.\n> 这张专辑感觉才是这位艺术家真正留下来的代表性遗产。\n\n社媒里它常被用来给一个人、一个作品、一个时代盖章：最后留下来的是什么。\n\n**技术,工程团队讨论**\n> We still rely on a legacy system that is hard to maintain and doesn't integrate well with newer tools.\n> 我们现在还依赖一套遗留系统，它很难维护，而且和更新的工具衔接得不好。\n\n在技术领域里，legacy 常常会固定地指“遗留的、旧系统的、上一代留下来的”，比如 legacy code、legacy system。但它不只是“旧”，往往还暗含：还在运行、不能轻易替换、维护成本高，甚至和现代架构不太兼容，所以总要有人继续背着它往前走。\n\n**公共项目,活动或政策语境**\n> The city hopes the park will become a legacy project for future generations.\n> 这座城市希望这个公园能成为一个惠及后代的长期项目。\n\n这里的 legacy 是形容词，意思不是“遗留系统”，而是“为了留下长久影响而设计的”。这是一条很现代、也很容易和技术义混淆的支线。\n\n**原生思维** · 英语母语者用 legacy 时，常常不是在给某样东西做“名词分类”，而是在判断它和时间的关系：这东西是不是从前面那一段历史延伸过来的？它现在还在不在影响今天？所以 legacy 里天然带着“延续”和“余波”。中文里我们会把它拆成“遗产、传统、后遗症、传承”这些不同词；而 legacy 在很多语境里，确实能把这些面向收进同一个判断框架里。不过它落地时仍然要看场景：有时偏法律上的遗赠，有时偏名声与传承，有时则是负面后果。\n\n**悟道时刻** · legacy 真正厉害的，不是“遗产”这个中文词本身，而是它逼你看见一件事：过去从来不会老老实实待在过去。它总会化成某种还在起作用的东西，继续压在今天身上，或者托着今天往前走。\n\n以后再见到 legacy，先别急着翻译。先问一句：这里说的是留下了什么，还是那东西还在怎么起作用？抓住这个动作，你对它的判断就会一下子稳很多。",
     "verification": {
-      "claimCount": 11,
-      "confirmedCount": 7,
+      "claimCount": 12,
+      "confirmedCount": 6,
       "softenedCount": 5,
-      "uncertainCount": 2,
+      "uncertainCount": 1,
       "rejectedCount": 1,
       "checked": [
-        "legacy 最早就是‘留给后人的东西’，像遗嘱里分下去的财物、地位、名字，或者一个…",
-        "这个词来自拉丁语 **legatum**，原本和‘委托、遗赠’有关。",
-        "后来在英语里慢慢从法律和财产分配，扩展到更抽象的‘留下来的影响’。",
-        "它比 **inheritance** 更宽，不只指钱或物，更常指影响、传统、后果、声…",
-        "它也比 **history** 更有‘被继续携带’的意味；history 是发生过，…"
+        "这个词最早带着‘留给后人’的物件感。",
+        "它来自拉丁语 *legatus* 这一支，原意里有‘派遣、委派’的痕迹，后来在英语里…",
+        "legacy 说的不是单纯的‘过去’，而是过去在现在留下的持续效应。",
+        "它既能落在‘成就、传统、声望’上，也能落在‘债务、问题、创伤’上。",
+        "在技术领域里， legacy 常常会固定地指‘遗留的、旧系统的、上一代留下来的’。比…"
       ],
       "sources": [
         {
@@ -2576,14 +2606,14 @@ window.WORD_SENSE_ENTRIES = {
         },
         {
           "label": "Cambridge Dictionary",
-          "url": "https://dictionary.cambridge.org/dictionary/english/legacy"
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/legacy"
         },
         {
-          "label": "Oxford Learner's Dictionaries（noun）",
+          "label": "Oxford Learner’s Dictionaries（noun）",
           "url": "https://www.oxfordlearnersdictionaries.com/definition/english/legacy_1"
         },
         {
-          "label": "Oxford Learner's Dictionaries（adjective）",
+          "label": "Oxford Learner’s Dictionaries（adjective）",
           "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/legacy_2"
         },
         {
@@ -2591,8 +2621,12 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://www.etymonline.com/word/legacy"
         },
         {
-          "label": "Collins Dictionary",
-          "url": "https://www.collinsdictionary.com/dictionary/english/legacy"
+          "label": "IBM: What is legacy code?",
+          "url": "https://www.ibm.com/think/topics/legacy-code"
+        },
+        {
+          "label": "IBM: What is Legacy Application Modernization?",
+          "url": "https://www.ibm.com/think/topics/legacy-application-modernization"
         }
       ]
     }
@@ -2755,19 +2789,17 @@ window.WORD_SENSE_ENTRIES = {
       "固定与判断 · 具体物件 · B1-B2",
       "Issue 005"
     ],
-    "markdown": "**字面含义** · peg 最原始的画面，是一根小木钉、小栓子：把布、绳子、东西“卡住”“挂住”“固定住”的那个小东西。你可以想象木板上的小钉、墙上挂东西用的栓；在英式英语里，peg 也常指晾衣绳上的夹子。后来它长出很多比喻义，但很多高频用法的核心动作，仍然没有离开“把某物钉住、卡住、定位住”。\n\n**本体质感** · 这个词的手感很“硬”，很“点状”，不是一大片，而是一个小小的着力点。可以把 peg 理解成一种“把散的东西钉到一个点上”的动作：把观点 peg 在一个数字上，把人 peg as 某种类型，把价格 peg at 某个水平，把一项安排 peg to 某个基准。它不是那种缓慢铺开的词，而是带着一下子“扣住、锁定、钉死”的动作感。  \n如果看同族词的质感，peg 比 pin 更像“作为支点去固定”，比 label 更像“先在脑子里把它钉到某个分类上”，比 attach 更少一点过程感，多一点“定点落下”的感觉。\n\n**寻根溯源** · peg 的名词最早见于 15 世纪的中古英语，指的就是实物上的小钉子、小栓子；它大概率和中荷兰语 pegge 或相近的低地德语词有关。后来，动词义慢慢长出来：先是“用钉子固定”，再往后才扩展到“把数值定住”“把人归类”“把一项东西挂靠到另一项基准上”。所以今天你看到 peg at / peg as / peg to，骨子里还是那个“把东西钉在某处”的老动作，只是钉的对象从布条变成了数字、身份、价格、工资、汇率，甚至一个故事的切入点。\n\n**各路用法** · 几个最常见的落点，基本都围着“定住、挂住、钉住”转：\n\n**日常,跟朋友**\n> I pegged the poster to the wall with a small nail.  \n> 我用一颗小钉子把海报钉在墙上了。\n\n这里就是最老的实体用法，动作很直。\n\n**英式日常,晾衣服**\n> Can you help me peg out the clothes?  \n> 你能帮我把衣服夹到晾衣绳上吗？\n\n这里的 peg 是英式英语里很常见的“晾衣夹”那支，也保留了最原始的固定感。\n\n**职场,会议里**\n> They pegged the budget at around two million dollars.  \n> 他们把预算定在了大约两百万美元。\n\n这里不一定是死板地下结论，更常见的是把一个数字定在、或估定在某个水平上，语气通常比较干脆。\n\n**职场,讨论人和事**\n> He was pegged as the most likely candidate.  \n> 他被认定为最有可能的人选。\n\n这里有一点“先被贴上一个固定判断”的味道，像把人钉进一个框里。\n\n**日常,口语**\n> I had him pegged as a finance guy.  \n> 我原先把他认成那种做金融的人。\n\n这是 peg as 的口语变体。不是正式分类，而是你很快地把一个人归到某一类里。\n\n**金融,合同或政策里**\n> Loan repayments are pegged to your income.  \n> 贷款还款额与你的收入挂钩。\n\n这就是必须认识的 peg to：不是单纯“固定在一个数”，而是“跟着另一个基准走”。它常见于工资、奖金、贷款、价格、指标、汇率这些需要联动的语境。\n\n**经济,新闻里**\n> The currency is pegged to the dollar.  \n> 这种货币与美元挂钩。\n\n这个时候它的核心就是“人为维持在某个基准上”，所以它常常带一点制度设计或政策安排的意味。\n\n**媒体,写作策划里**\n> We need a strong news peg for this story.  \n> 我们需要给这篇报道找一个有力的新闻切入点。\n\n这里的 peg 变成了名词，不再是“钉住什么”，而是“拿什么来挂住这篇东西”。也就是报道、评论、内容策划里常说的由头、抓手、切入点。\n\n**原生思维** · 英语里这个词迷人的地方，在于它常常不是单纯描述一个状态，而是在做一个“定点动作”：把一个东西先拴到某个位置、某个数字、某个类别、某个参照物上。中文里我们可能会说“认为”“判断为”“定为”“和某指标挂钩”，但这些说法一拆开，就容易看不见英语里那一下“钉住”的动作。peg 的认知动作很像：先把流动的东西按住，再让它停在一个位置上；哪怕那个位置，后来是靠另一根“钉子”来维持的。\n\n**悟道时刻** · peg 的关键，不是“它有很多意思”，而是它总在替英语完成同一个动作：给漂着的东西找一个落点。价格可以落在一个数字上，人可以落进一个判断里，工资和汇率可以落到另一个基准上，连一篇报道都要先找到能挂住它的那个 peg。\n\n以后见到 peg at / peg as / peg to，不要急着逐个翻中文。先看它是不是在做“找落点、定住、挂靠”这件事。这个动作一旦认出来，很多分散的义项会突然连成一张网。",
+    "markdown": "**字面含义** · peg 最具体的画面，是一根短木钉、插销、挂钩，或者晾衣夹。它做的事很朴素：把东西卡住、挂住、固定到一个位置上。\n\n**本体质感** · peg 这个词有一种“把飘着的东西钉到一个位置上”的感觉。它不讲究华丽，动作很实用，手一按就落位了。更稳妥地说，很多用法里都会带出一种“给它找个落点”“先把它放到某个框里”的姿态。  \n在抽象用法里，它常常不是那种大开大合的判断，更像是把一个人归进某个印象框，把一个数字定在某个点上，或者把一件事先定性到某种解释里：他被 pegged as the likely winner；预算被 peg 在某个数上。这里的质感不是“彻底证明”，而是“先定位、先归类、先按住”。  \n如果做一种近似的手感比较：guess 比较轻，是猜；suspect 带一点怀疑；identify 更像识别出来；peg 则更像把它钉到某个标签上，带着一点“就先当作这个”的定位感。\n\n**寻根溯源** · 这个词的根，的确很“手上有东西”的那种实感。它在中世纪英语里就已经出现，名词和动词都很早，词源上一般认为和中古荷兰语 *pegge* 有关。也就是说，peg 一开始就不是那种抽象概念词，而是非常具体的固定物、固定动作。  \n这也解释了它后来为什么会自然长出那么多延伸义：从木钉、挂钉、插销，到把价格盯在某个水平、把人认作某一类、把一条新闻当作展开讨论的由头，底层其实还是同一个动作——先找一个能挂住、能卡住、能落位的点。\n\n**各路用法** · 几个最常见的场景，你会发现 peg 其实一直在做“固定”和“定位”这两件事。\n\n**日常，晾衣服**\n> I need some pegs to hang these clothes outside.\n> 我需要几个夹子把这些衣服晾到外面。\n\n这里的 peg 很接近实体本意。顺带一提，这里这种说法偏英式；美式更常说 clothespin。\n\n**家里，门后挂东西**\n> He hung his coat on a peg by the door.\n> 他把外套挂在门边的挂钉上。\n\n这也是很基础、很常见的名词义：peg 不只是小夹子，也可以是突出出来、用来挂东西的钉子或挂点。\n\n**户外，搭帐篷**\n> We need to peg the tent down before the wind gets stronger.\n> 趁风变大之前，我们得先把帐篷钉牢。\n\n这里是很实在的动词义：用 peg 把东西固定住。像 peg down、peg out 这种说法，能让这个词“先固定、再展开”的骨架特别清楚。\n\n**日常，聊人**\n> He was pegged as the quiet one in the group.\n> 他被大家看作是组里那个比较安静的人。\n\n这里不是简单“说他是”，而是把他按进一个印象框里。\n\n**日常，看透一个人**\n> I had him pegged from the start.\n> 我从一开始就把他看准了。\n\nhave someone pegged 是很活的说法，意思不是掌握了全部真相，而是“我大概知道你是什么路数”。\n\n**职场，会议上**\n> The finance team pegged the budget at two million dollars.\n> 财务团队把预算定在了两百万美元。\n\n这里 peg 很常见，意思是把数值定住、卡在某个范围或点上。\n\n**新闻，初步定性**\n> Initial reports pegged the incident as accidental.\n> 初步报道把这起事件定性为意外。\n\n这里的 peg 不是盖棺定论，更像是在信息还没完全展开时，先把它归入某一类。\n\n**金融，汇率语境**\n> The currency is pegged to the dollar.\n> 这种货币与美元挂钩。\n\n看到这种说法，脑子里直接想到“人为固定住一个基准”就行。金融里不光有这个动词说法，peg 也可以直接指这种“盯住安排”本身。\n\n**写作，找切入口**\n> The scandal gave the columnist a peg to hang his argument on.\n> 这场丑闻给了那位专栏作者一个可以挂住整篇论述的由头。\n\n这条很值得记。peg 在这里已经不是实体钉子了，而是“可供展开的支点、切入口”。媒体里说 news peg，也是在讲：一篇分析、一段评论，总得先有个东西挂上去。\n\n**原生思维** · 英语里用 peg，常像是在做一种“给东西找落点”的认知动作。东西没完全定型、没完全解释清楚、没完全安放好，于是先用 peg 把它钉到某个位置上。中文里我们也会说“归到”“算作”“定成”，但 peg 往往更有手感：不是纯抽象分类，而像拿一枚钉子把一个漂浮的判断先按住。  \n所以你一看到 peg someone as X、peg something at Y、be pegged to Z，背后都像有一只手在干同一种事：不是慢慢展开论证，而是先迅速定位、先行安放。顺着这条线去理解别的表达，比如 pin down、tag ... as，一般也会更容易抓住英语里这种“先落位再细说”的习惯。\n\n**悟道时刻** · peg 真正值得记住的，不是“木钉”这个中文义项，而是它那一下“先钉住”的动作。人可以被 peg 到某个印象里，数字可以被 peg 到某个点上，货币可以被 peg 到某个基准，连一篇文章都要先找个 peg 才好挂上去。  \n以后你再遇到它，别急着逐字翻。先问一句：这里是不是在把某个还流动的东西，先固定到一个可操作的位置上？一旦看见这层动作，这个词就会一下子通了。",
     "verification": {
-      "claimCount": 12,
-      "confirmedCount": 8,
+      "claimCount": 10,
+      "confirmedCount": 5,
       "softenedCount": 4,
       "uncertainCount": 1,
       "rejectedCount": 1,
       "checked": [
-        "**peg 最原始的画面，是一根小木钉、小栓子**",
-        "**你可以想象晾衣绳上的夹子、木板上的小钉、墙上挂东西用的栓，都是这个家族的老画面*…",
-        "**后来它长出很多比喻义，但核心动作一直没离开‘把某物钉住、卡住、定位住’**",
-        "**peg 来自中古英语**",
-        "**和‘木钉、栓子’这一类老家伙同源，最早就是实物上的小钉子**"
+        "核心本义与词源",
+        "`peg as`、`peg at`、`pegged to` 是否为词典明列用法",
+        "初稿给的几个例句模式是否贴近词典中的真实搭配"
       ],
       "sources": [
         {
@@ -2779,7 +2811,11 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://dictionary.cambridge.org/dictionary/english/peg"
         },
         {
-          "label": "Oxford Learner’s Dictionaries",
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/peg_1"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
           "url": "https://www.oxfordlearnersdictionaries.com/definition/english/peg_2"
         },
         {
@@ -2795,12 +2831,8 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://www.oed.com/dictionary/peg_v"
         },
         {
-          "label": "Longman Dictionary of Contemporary English",
-          "url": "https://www.ldoceonline.com/dictionary/peg-as"
-        },
-        {
-          "label": "Britannica",
-          "url": "https://www.britannica.com/money/international-payment/The-IMF-system-of-parity-pegged-exchange-rates"
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/have%20someone%20pegged"
         }
       ]
     }
@@ -3087,21 +3119,36 @@ window.WORD_SENSE_ENTRIES = {
       "指向与参照 · 学术职场 · B1-B2",
       "Issue 005"
     ],
-    "markdown": "**字面含义** · reference 最早可以理解成一种“回指、指向”的动作。它的拉丁词根 *referre* 里有“带回、指回去”的意味：说话时不是凭空造一个新意思，而是把注意力“搬回”到一个已有对象、来源、标准、证据上。你可以把它想成：当前这句话、这个判断、这份材料，并不悬空，它在朝某个别的地方连过去。\n\n**本体质感** · 这个词的核心气质，大致是“我不是自己说了算，我把你带去看一个别的东西”。在很多实际语境里，reference 都带着一种外部锚点感：你说“有 reference”，意思往往不只是“我有个想法”，而是“我能指给你看依据、出处、样本或线索在哪”。它的质地有点像把线头从当前话题拴到别处，让讨论不漂。  \n所以 reference 常常不只是“提到一下”这么轻，它更像一种建立连接的动作：把信息、判断、身份、来源、例子、标准，挂到一个可追溯、可对照的位置上。  \n如果看同族词，可以先粗略这么抓区别，但真实用法会有重叠：mention 更像顺手提一下；refer 更像把人或信息指向别处、转到别处；reference 则更常落在“把这个东西作为提及对象、参照、出处或证明来用”上，带一点正式的对接感。\n\n**寻根溯源** · 它来自拉丁语 *referre*，由 *re-*（回、向后）和 *ferre*（携带、带来）构成，原意就是“带回去”。英语里的 **reference** 作为名词，记录大致见于 1580 年代，先是“指回去、提及”的动作；到 1610 年代，已经能表示“指向书中某处的出处说明”；到 1895 年左右，又发展出招聘场景里的 “testimonial” 义，也就是推荐、证明这一路。  \n所以它后来长出的几个高频方向其实很连贯：在文本里是“提及、引用、出处”，在学习里是“参考资料、参考书”，在职场里是“推荐人”或“推荐/证明材料”，在行政系统里还会变成“编号、案号、订单号”这种用来回查的标识。它们未必都强调同一种强度的“核查”，但很多高频用法确实共享一种“把当前内容连到外部对象”的回指感。\n\n**各路用法** · 几个例子，感受一下它怎么在不同场景里落地：\n\n**职场,邮件里**\n> Please include a reference to the previous report in your summary.\n> 请在你的总结里加上对前一份报告的提及或参照。\n\n这里的 reference 不一定是严格学术意义上的“引文”，更像是把当前内容挂到前面的材料上。\n\n**求职,招聘流程**\n> We will contact your references before making a final decision.\n> 在做最终决定之前，我们会联系你的推荐人。\n\n这里的 references 是能为你作证、提供评价的人。顺着这个义项，job reference 也常常可以指推荐信或证明材料，不一定只指“人”。\n\n**日常,跟朋友**\n> She made a reference to our trip last summer.\n> 她提到了我们去年夏天那次旅行。\n\n这里更接近日常说的“提了一嘴”，但仍然带着“指向某个已有事件”的意味。\n\n**阅读,谈论书或文章**\n> There is a reference to Greek mythology in the second chapter.\n> 第二章里提到了希腊神话。\n\n这不是把神话完整讲一遍，而是轻轻指到它；有时也会带一点“典故指涉”的味道。\n\n**社媒,发帖/评论**\n> The post is full of references that only film fans would catch.\n> 这条帖子里全是只有影迷才看得出来的引用或梗。\n\n这里的 reference 往往带一点“你懂这个背景，就能接住”的共同文化感。\n\n**学习,论文或资料页**\n> Please list all references at the end of the paper.\n> 请把所有参考文献列在论文末尾。\n\n这里的 references 很具体，就是文末的参考文献、引用来源，不再只是泛泛的“提到”。\n\n**图书馆,学习场景**\n> This is a useful reference book for beginners.\n> 这是一本对初学者很有用的参考书。\n\nreference book / reference material 这一支很高频，重点不是“读完它”，而是“需要时拿来查”。\n\n**客服,订单或案件**\n> Please keep this reference number for future use.\n> 请保留这个参考编号以备后用。\n\nreference number 就是订单号、申请编号、案件编号这类“拿来回查”的标识。这个义项特别能看出 reference 的骨架：现在给你一个点，之后你可以凭它重新接回整个事项。\n\n**正式书面,邮件开头**\n> With reference to your email of May 12, I would like to clarify one point.\n> 关于你 5 月 12 日的邮件，我想澄清一点。\n\nwith reference to / in reference to 都是比较正式的说法，意思是“关于、就……而言”，语气像先把话题挂到某个既有对象上，再继续往下说。\n\n**职场,顺手提醒**\n> I’m saving the file here for future reference.\n> 我把文件存这里，供以后查用。\n\nfor future reference 很常见，意思不是抽象的“参考一下”，而是“以后你要回头找时，有东西可对照、可调用”。\n\n**原生思维** · 英语里用 reference 时，很多时候重点不在“我说了一个相关内容”，而在“我把这个内容接到某个外部点上了”。这个外部点可以是来源、典故、前文、编号、推荐人、推荐材料，也可以是一本参考书、一串参考文献。  \n所以中文会把它拆成“提到、参考、引用、出处、推荐人、推荐信、编号”这些不同词，而英语往往允许 reference 把它们串在同一条线上：不是每次都同样正式，也不是每次都强调核验，但大致都带着“别只看我这句话，请顺着这根线看向别处”的姿态。  \n如果你再往抽象一点看，reference point 这个搭配也很好懂：所谓“参照点”，就是你理解别的东西时，要先拿来对齐的那个点。\n\n**悟道时刻** · 你真正要抓住的，不是 “reference 有好多零散意思”，而是它反复在做同一个动作：把当前表达接到别处。这个“别处”有时是前文，有时是出处，有时是推荐人，有时只是一个可回查的编号。\n\n以后再看到 reference，别急着在“提到 / 参考 / 引用 / 推荐”里二选一，先问自己：这里是不是在给当前这件事安一个外部坐标？一旦认出这个坐标感，整串词——refer, referral, reference point——都会开始变得顺。",
+    "markdown": "**字面含义** · reference 的表层动作，是把眼前这句话、这个人或这条信息，指向另一个可查、可对照的地方。它不是让东西孤零零地站着，而是给它接上一根线。\n\n**本体质感** · reference 的本体不是“解释”，而是“指认、挂靠、借力”。你说 reference，里面常有一种很具体的关系感：这条信息要接到哪里，这个人要由谁来作证，这个表达在借谁的影子。  \n它有一种“我不是凭空说的，我有出处；我不是单独站着的，我有参照”的质地，所以它常常带着文书味、学术味、流程味。比如在写作里，reference 是把一句话绑到来源上；在简历或申请里，reference 可以是替你背书的人，也可以是那封背书的推荐信；在设计、影视、流行文化里，reference 又常用来指对某个已存在的符号、风格、桥段的提及、借用或指涉。  \n如果看同族和近义词那条梯度，常见情况下，mention 比较像顺手提一下，allusion 更间接，像轻轻带过；reference 往往比 mention 更有“你可以顺着它找到那个对象”的意味，但未必像 cite 那样正式；quotation 则是直接把原话引出来，不只是“指到”而已。\n\n**寻根溯源** · 它来自拉丁语 *referre* 这条线，字面上更接近 “carry back”——把东西带回去。后来到英语里，*refer* / *reference* 逐渐稳定出“提及、关联、引向、供查考”的路子。  \n所以这个词真正稳的骨架，不是“用手指过去”，而是把当前的话、当前的信息、当前的人，连到别处去：连到来源，连到证人，连到旧文本，连到一个已有框架。学术写作里，它稳定成“文献来源/参考文献”；职业场景里，它稳定成“推荐人”，也常指“推荐信、证明信”这类书面背书；文化表达里，它则常用来指对已有作品、风格或符号的提及、借用或指涉。  \n所以“把眼前这句话，拴到别处去”更适合作为一种理解它的方式：不是严格词源原义，但很贴近它今天的活法。\n\n**各路用法** · 几个例子，先感受它在不同场域里的“挂靠”方式：\n\n**职场，邮件里**\n> Please include references for each figure in the report.\n> 请在报告里给每个图表附上来源。\n\n这里的 references 不是“参考一下”这么轻，而是“你这句话、这个数据要有出处”。\n\n**职场，简历里**\n> She provided three professional references from previous managers.\n> 她提供了三位来自前任经理的职业推荐人。\n\n这里的 reference 不是东西，而是“能替你作证的人”；而在英美求职或申请语境里，reference 也常常直接指推荐信、证明信本身。\n\n**求职，申请材料里**\n> Please upload two academic references with your application.\n> 请随申请材料上传两封学术推荐信。\n\n这里就不是“推荐人名单”，而是正式的书面背书。\n\n**日常，聊天里**\n> That movie has a few references to old Hong Kong films.\n> 那部电影里有几处提到或影射老香港电影的地方。\n\n这里的 reference 更像“提及、典故、文化指涉”，听的人会去认那个被点到的对象。\n\n**社媒评论区**\n> The outfit feels like a reference to early 2000s streetwear.\n> 这套穿搭让人觉得是在借用 2000 年代早期街头风格。\n\n这里的 reference 常常不是正式引用，而是“我看得出你在指某个现成风格”。\n\n**客服，订单邮件里**\n> Please keep this reference number for future inquiries.\n> 请保留这个编号，以便日后查询。\n\n这时候的 reference number 就是案号、订单号、函件编号。它不是“参考”，而是你之后要拿来对上这件事的识别线索。商务邮件里也常见 our ref / your ref，意思就是“我方编号 / 贵方编号”。\n\n**职场，转发资料时**\n> I’m sending the updated policy for future reference.\n> 我把更新后的政策发你，供你日后查用。\n\nfor future reference 很高频，意思不是“随便参考”，而是“先留着，以后要对照、要回查时用得上”。\n\n**正式邮件，开头一句**\n> With reference to your email of May 12, we have reviewed the issue.\n> 关于你 5 月 12 日的邮件，我们已经审查了这个问题。\n\nwith reference to / in reference to 都很正式，有点公文口吻，意思就是“关于、就……而言”。\n\n**工具书，学习场景里**\n> This is a good reference book for students of linguistics.\n> 这是一本很适合语言学学生使用的参考书。\n\nreference book 这条也很直白：不是拿来从头读完的书，而是需要时可以翻查、核对的书。\n\n**技术，编程语境里**\n> In C#, strings are reference types.\n> 在 C# 里，字符串属于引用类型。\n\n这里的 reference 已经进入技术义：变量存的不是对象值本身，而是对对象的引用。它看起来离“提及”很远，但骨架还是同一个骨架——这个名字、这个变量，不是自己就是那个东西，而是连到那个东西。\n\n**写作，编辑标注里**\n> See Chapter 4 for a cross-reference to the earlier discussion.\n> 参见第 4 章，那里有一处指向前文讨论的交叉参照。\n\ncross-reference 就是把读者从一处引到另一处去核对、比照、补全。\n\n➤ 值得注意的是，reference 当然可以只是“提到一下”，不必每次都很重；但在学术写作、出版、设计、商务、技术这些语境里，它往往都会带一点“可追溯、可对照、有挂靠对象”的味道。看到它时，先往“它在把眼前这件事连到哪里”那边想，通常就不容易偏。\n\n**原生思维** · 英语里用 reference，常常不是单说“我知道这个”，而是在做一件更具体的事：把这件事接到另一个已存在的点上。这个点可以是来源，可以是人，可以是编号，可以是旧作品，也可以是某个对象在系统里的地址。  \n中文里我们会分开说“参考、引用、提到、致敬、推荐人、推荐信、编号、引用类型”，这些词各抓一面；reference 却常常把这些面托在一起。你可以把它理解成一种“连线思维”：眼前这个东西不该孤零零地站着，它最好能被追溯、被对照、被识别、被转接。  \n所以遇到 reference，不要急着先落成一个固定中文。先问：这里是在把什么连到什么？是在给出处，给背书，给编号，给文化指涉，还是给技术上的“引用”？\n\n**悟道时刻** · reference 真正厉害的地方，不是它能翻成多少中文，而是它始终在做同一个动作：不给你一个孤立的点，而是给你一根线。线的那头，可能是来源，可能是推荐人，可能是旧文本，可能是系统里的对象。\n\n以后再见到 refer, referral, reference number, for future reference, cross-reference，别先背意思，先认动作：它是不是在把当前这件事，接回另一个可追溯的东西上。你一旦认出这根线，这个词就会一下子变得很整。",
     "verification": {
-      "claimCount": 15,
-      "confirmedCount": 5,
+      "claimCount": 10,
+      "confirmedCount": 6,
       "softenedCount": 4,
-      "uncertainCount": 1,
+      "uncertainCount": 2,
       "rejectedCount": 1,
       "checked": [
-        "词源确实回到拉丁语 *referre*，字面为“carry back / 带回”",
-        "主流词典都支持“提及/引用/出处/推荐信或推荐人/参考资料/编号/固定搭配”等多个高频义项"
+        "reference 里有 ‘re-’ 回到、反复，以及 ‘fer’ 携带、带过去的影…",
+        "这个词最早是‘把手指向、把东西指给你看’的那种动作感。",
+        "它来自拉丁语系里‘回指、指向’的路子，核心意象一直没变。",
+        "后来它在学术写作里稳定成‘文献来源’，在职业场景里稳定成‘推荐人/证明人’，在文化表…",
+        "今天你看到它，背后其实还是那根线：把眼前这句话，拴到别处去。"
       ],
       "sources": [
         {
           "label": "Merriam-Webster",
           "url": "https://www.merriam-webster.com/dictionary/reference"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/refer"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/reference"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/reference_1"
         },
         {
           "label": "Etymonline",
@@ -3112,16 +3159,12 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://www.etymonline.com/word/refer"
         },
         {
-          "label": "Cambridge Dictionary",
-          "url": "https://dictionary.cambridge.org/dictionary/english/reference"
+          "label": "Microsoft Learn",
+          "url": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/reference-types"
         },
         {
-          "label": "Oxford Learner's Dictionaries",
-          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/reference_1"
-        },
-        {
-          "label": "Merriam-Webster",
-          "url": "https://www.merriam-webster.com/dictionary/point%20of%20reference"
+          "label": "cppreference",
+          "url": "https://en.cppreference.com/w/cpp/language/reference"
         }
       ]
     }
@@ -3490,19 +3533,17 @@ window.WORD_SENSE_ENTRIES = {
       "情绪与烹煮 · 画面动词 · B1-B2",
       "Issue 005"
     ],
-    "markdown": "**字面含义** · 对今天的学习者来说，stew 最直观的画面，还是把食材放进一锅液体里，用小火慢慢炖、慢慢煮。不是翻炒，不是猛烧，而是让东西在热气和汁水里一点点变软、变透。这个词的底层图像很稳：锅里咕嘟咕嘟，时间在起作用。\n\n**本体质感** · 这个词有一种“被热度裹住、慢慢推进”的感觉。说食物时，它是温吞、厚实、带汁的；说人时，母语者脑子里往往会浮出另一层画面：人坐不住，心里反复翻腾，像锅里的东西一直在热。于是 stew 很自然就长出了“闷着想、反复琢磨、心里打转”的用法，尤其常见在 **stew over sth** 这种结构里。但它又不只是在“想”——很多时候，它也带着一种压着不说的烦、怨气、憋闷。它不急，不爆发，重点不是一瞬间的情绪，而是那种持续被裹住、出不来、越放越热的状态。\n\n**寻根溯源** · 如果往词源上看，事情又有一点反差：stew 更早并不只是“炖菜”的词，它早期和热浴、蒸汽房这类“被热气包住”的场景有关。也正因为这样，它后来无论落到锅里，还是落到人的情绪里，那个核心感觉都没怎么变——不是一下子烧起来，而是被热、被闷、被时间慢慢推着走。\n\n**各路用法** · 几个例子，先看它在不同场景里怎么站住：\n\n**日常，跟朋友**\n> I’ve been stewing over that comment all day.\n> 我一整天都在为那句话闷着想，反复转个不停。\n\n这里最好抓住 **stew over sth** 这个结构。重点不只是“想”，而是那句话没有过去，反而一直留在心里慢慢发酵。\n\n**厨房，做饭时**\n> The vegetables need to stew for another ten minutes.\n> 这些蔬菜还得再炖十分钟。\n\n这时候就是最字面的做饭画面：让东西在液体里慢慢熟透。这里说“炖”或“慢慢煮”会比“焖”更贴近这个词。\n\n**日常，描述一个人的状态**\n> He just sat there stewing in silence.\n> 他就那样坐着，沉默不语，自己闷闷地烦着。\n\n这里不一定是在认真“思考”什么，更像是在生闷气，或者把烦躁压在心里不往外放。\n\n**日常，面试前的焦虑**\n> She was in a stew over the interview.\n> 那场面试让她整个人都很焦虑、很烦乱。\n\n**in a stew** 是很常见的固定说法，指一个人处在慌乱、烦躁、心里打结的状态里。\n\n**关系里，故意不回消息**\n> He read the message and let her stew for hours.\n> 他看了消息，却让她自己干着急了好几个小时。\n\n**let sb stew** 很有画面感：不是直接做什么，而是把人晾在那里，让对方自己在那股热气里熬着。\n\n➤ *值得注意的是，stew 作“心里闷着想”时，英语里通常比一般的 worry 更带压抑、闷着转的感觉；它更像情绪在里面持续加温，而不是单纯担心一下。*\n\n**原生思维** · 英语母语者用 stew 的时候，不只是说“我有一个想法”或“我很担心”，而是在把一种内部状态想成“被困在热里慢慢加温”。中文里我们也会说“闷着”“憋着”“反复琢磨”，但英语用 stew 时，那个“热、慢、黏、出不来”的感觉是整块打包进去的。它可以是反复想，也可以是压着烦、憋着气；共同点都是：情绪没有排出去，而是在里面持续翻滚。\n\n**悟道时刻** · stew 最妙的地方，是它把“煮东西”和“熬情绪”连成了同一幅画面：都不是一下子爆开，而是在热里、在时间里、在容器里慢慢变浓。\n\n以后你再遇到这类词，可以先别急着背“引申义”，先问一句：它原来让什么东西在里面慢慢发热？这个问题一出来，词义之间的桥，往往自己就亮了。",
+    "markdown": "**字面含义** · stew 最直观的画面，是食材在液体里慢慢炖着，不急、不猛，而是靠热和时间一点点变浓。这个词一出来，就带着锅里那种“闷着、热着、慢慢变化”的感觉。\n\n**本体质感** · 这个词身上有一种“热着、闷着、拖着”的质感。说一个人 is stewing in anger，脑子里不是那种爆发式的怒，而更像情绪被盖在锅里，咕嘟咕嘟地自己加热；但它也不只限于怒，很多时候也可以是担心、烦躁、怨气、心里不安。它常常带一点不舒服的内部过程：烦恼、怨气、焦躁、担心，被时间一点点捂出来，而不是当场喊出来。  \n如果看同类词的温度，可以粗略分层理解：brood 更像阴着脸反刍，fester 更像伤口在变坏，stew 则更像“在锅里闷煮着的情绪”——不一定马上坏掉，但也绝不轻松。它的妙处在于，这个词常让人先联想到那种闷热、憋住、持续不散的状态，再去补内容是什么。\n\n**寻根溯源** · 有意思的是，stew 的早期词源并不只是“炖菜”，还和 steam bath、heated room 这一类“蒸汽浴、热房”的意思有关。也就是说，它一开始就和“热气包着人、闷在里面”这层感觉沾边。后来它当然稳稳长成了烹饪词，指在液体里慢慢炖；但正因为早期就带着热、蒸、闷的背景，它后来拿去写情绪时，会显得格外自然。\n\n**各路用法** · 几个例子，先感受它在不同场景里的样子：\n\n**日常，跟朋友**\n> I’ve been stewing over that comment all morning.\n> 我整个上午都在反复想着那句话，越想越不是滋味。\n\n这里不是“我在思考”，而是那句话一直在心里闷着，自己发热。stew over something 也是很核心的一条搭配。\n\n**日常，家庭生活**\n> She was stewing in silence after the argument.\n> 她吵完架后一直沉默地憋着气。\n\n这句话里有一种“表面安静，里面在烧”的感觉。但这个“烧”不一定只是生气，也可能混着委屈、烦躁和没消化掉的情绪。\n\n**职场，邮件里**\n> Let’s not let this sit and stew for another week.\n> 咱们别让这件事再这么搁着发酵一周了。\n\n这里的重点不是解决方案细节，而是别让问题继续在那儿闷着。这种说法是把事情过程化了：它不是静止地放着，而是在拖延里越积越重。\n\n**关系里，故意不安抚**\n> Leave him to stew for a while.\n> 先让他自己去憋一会儿吧。\n\n这是词典里很常见的一种入口：let someone stew / leave someone to stew。意思不是“让他炖着”，而是别急着安抚，先让他自己在那股烦、急、怨里待一阵。\n\n**日常，面试前**\n> She was in a stew about the interview.\n> 她为了那场面试焦虑得不行。\n\nin a stew 是很常见的固定说法，意思是人处在焦虑、烦乱、心神不宁的状态里。它比单纯说 worried 更有一种“整个人都乱成一锅”的感觉。\n\n**社媒，评论区**\n> He is clearly stewing after the loss.\n> 他输球后明显还在那儿憋着。\n\n社媒里常用它来抓那种“看得出来人还没消化掉”的状态：不一定说出口，但你能感觉到那股情绪还在里面翻。\n\n**原生思维** · 英语母语者用 stew 的时候，常常不是把注意力放在“想了什么”，而是放在“这个东西在里面怎么被持续加热”。所以它很适合情绪、关系、争执、后悔这类内容：不是一次性表达出来，而是像被留在里面继续闷着、继续变浓。中文里我们会说“憋着”“闷着”“窝火”“反复想”，但这些说法各抓一面；英语的 stew 更像把这些面压进同一个锅里。它不是一个“动作词”那么简单，而是一种把内部不适看成慢性加热过程的看法。  \n顺手再记一个边上的画面：这个词本身也确实可以带“闷热得难受”的意思，所以它的情绪隐喻并不是凭空来的，而是和“热、蒸、捂着”这层体感连着的。\n\n**悟道时刻** · 你真正要记住的，不是 stew 等于某个中文词，而是它背后的英语式图像：有些情绪不是当场爆掉，而是在里面继续受热，慢慢变浓，越放越难受。\n\n以后再遇到 brood, simmer, fester, stew 这种词，先别急着查中文对应，先问一句：这是在说“立刻炸”，还是在说“内部闷煮”？你一旦会分这条线，很多英文里的情绪词就不再糊成一片了。",
     "verification": {
-      "claimCount": 7,
-      "confirmedCount": 4,
-      "softenedCount": 2,
-      "uncertainCount": 1,
+      "claimCount": 15,
+      "confirmedCount": 5,
+      "softenedCount": 5,
+      "uncertainCount": 2,
       "rejectedCount": 1,
       "checked": [
-        "**stew 最原始的画面，是把食材放进一锅里，用小火慢慢焖煮。**",
-        "**于是 stew 很自然就长出了‘闷着想、反复琢磨、心里打转’的用法。**",
-        "**I’ve been stewing over that comment all …",
-        "**The vegetables need to stew for another …",
-        "**He just sat there stewing in silence.**”…"
+        "词典是否支持 **烹饪义 → 情绪义** 的讲法",
+        "初稿中的几个例句句法是否符合真实英语",
+        "词源上是否真以“炖煮食物”为最早图像"
       ],
       "sources": [
         {
