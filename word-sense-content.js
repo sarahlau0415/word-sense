@@ -819,6 +819,62 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "blunt": {
+    "displayWord": "blunt",
+    "meta": [
+      "直接表达 · 钝化触感 · B1-B2",
+      "Issue 006"
+    ],
+    "markdown": "**字面含义** · 最先看见的是“钝”。一把刀没磨利，边缘不锋，切东西时不会利落地进，而是更像顶、压、磨。\n\n**本体质感** · 在现代英语里，这个词常带着一种“没有修饰、没有转弯”的硬质感。说人说话 blunt，不是在夸他“直接”这么轻，而是在说：他把想法说出来时，并不太试图显得礼貌，也不太顾及对方会不会被硌到。  \n如果你愿意把它记成一种形象化理解，它很像没打磨过的边：话不是绕着递过去，而是平推过去。于是 blunt 既可能是一种实用的直率，也可能带一点不耐烦、粗砺、甚至冒犯的边缘。  \n和它在气质上挨得近的词里，direct 往往更中性，像“直说”；straightforward 也常有清楚、坦率、不绕弯的感觉；blunt 则更容易带出那种不怎么顾及感受的生硬感。若再往下走，brutally blunt 会把那种刺感放大；而 tactless、rude、harsh 则开始从“说话方式”滑向“让人不舒服”的判断。\n\n**寻根溯源** · 这个词的词源其实不算特别确定。现有资料大致认为它可能和北欧或古英语路径有关，而不是一条清楚的“法语—拉丁语”主线。已知的是，它很早就有“钝、迟钝、不锋利”这一层意思，大约到 16 世纪后期，才比较明确地发展出“说话唐突、直截”的用法。  \n所以它后来的语义延伸是能看懂的：原来是边不利，后来借去形容表达不加修饰、不做缓冲。底层那种“缺少细致处理”的感觉，算是一路保留下来了。\n\n**各路用法** · 几个例子，在不同场域里你感受一下它的温度：\n\n**职场，会议里**\n> I want to be blunt: the current plan is not realistic.  \n> 我想直说：现在这个方案不现实。\n\n这里的 to be blunt 是很高频的话语标记，像“恕我直言”“我就不绕了”。它先把接下来可能不太好听的话挂出预告。\n\n**日常，朋友聊天**\n> She was blunt with me and said I was being unfair.  \n> 她很直接地对我说，我这样做不公平。\n\n这里的 blunt 有点“没绕弯”的意味，既可能让人一时难受，也可能因为少了客套而显得真诚。\n\n**日常，评价一个人**\n> He has a blunt way of speaking, but he means well.  \n> 他说话方式很冲，但本意是好的。\n\n这类句子里，blunt 往往带着一点替对方缓和的补充：话很硬，但人不一定坏。\n\n**新闻，政策讨论**\n> A hiring freeze is a blunt instrument for cutting costs.  \n> 冻结招聘是削减成本的一种很粗的手段。\n\n这里的 blunt instrument 不只是字面的“钝器”，也常是比喻：办法能用，但不精细，容易一刀切，也不太顾及具体差别。\n\n**医疗，急诊或法医语境**\n> The patient suffered blunt trauma to the chest.  \n> 患者胸部遭受了钝性创伤。\n\n这里的 blunt trauma 指的不是切割或刺穿，而是来自硬物撞击、挤压的伤。再往影视、警方通报、法医文本里走，你还会经常见到更完整的说法 blunt force trauma。  \n\n**影视，警方通报**\n> The report said the victim died from blunt force trauma.  \n> 报告称，死者死于钝器撞击造成的创伤。\n\n这个说法在犯罪报道和法医语境里非常高频，脑子里要直接连到“非穿透性的重击伤”。\n\n**评论，削弱影响**\n> The apology did little to blunt public criticism.  \n> 这份道歉几乎没有减弱公众的批评。\n\n这里 blunt 是动词，不再是“钝的”，而是“把锋利感削下来一点”：让批评没那么猛，让冲击没那么强。\n\n**日常，食欲被压下去**\n> A cup of coffee can blunt your appetite for a while.  \n> 一杯咖啡可以暂时压住你的食欲。\n\n这个动词义很实用：不是消灭，而是钝化、削弱、让反应没那么尖。\n\n**原生思维** · 很多场景里，blunt 听起来不只是“诚实”，而是“诚实得没怎么经过柔化”。这就是它和单纯的 direct、honest 不一样的地方。中文里我们常把“直”“冲”“没礼貌”“实话实说”分开讲；英语里 blunt 往往把这些感觉压在同一个词面上。  \n而且这个词的路子不只停在“说话冲”上。它还能一路走到 blunt instrument、blunt trauma、blunt criticism 这种表达里：共同点都不是“坏”，而是“不锋利但有冲击”“有效但不细致”“把尖锐感压下去”。如果你抓住这条线，很多看似散的用法会一下子并起来。  \n顺手提醒一句：在美语流行文化里，a blunt 还可能是俚语名词，指一种大麻卷雪茄。这个义项和上面的主线关系不大，但在歌词和影视里偶尔会撞见。\n\n**悟道时刻** · blunt 真正好记的地方，不是它等于“直率”，而是它几乎总在处理一个问题：边缘是尖的，还是被磨平了；话是被柔化过，还是直接顶过来。  \n\n以后见到它，别只问“是不是直接”，而要问“这个直接有没有摩擦感，或者它是在说一种不够精细的力量”。抓住这一下，你就能同时读懂它的人际语气、医学搭配和动词义。",
+    "verification": {
+      "claimCount": 8,
+      "confirmedCount": 5,
+      "softenedCount": 2,
+      "uncertainCount": 2,
+      "rejectedCount": 1,
+      "checked": [
+        "**字面含义** · 最先看见的是‘钝’。一把刀没磨利，边缘不锋，切东西时不会利落地…",
+        "**本体质感** · 这个词一出来，英语里常带着一种‘没有修饰、没有转弯’的硬质感。",
+        "说人说话 blunt，不是在夸他‘直接’这么轻，而是在说他的表达像没打磨过的刀口………",
+        "和它在气质上挨得近的词里，direct 更中性…… straightforward …",
+        "**寻根溯源** · 它来自法语和更早的拉丁语路径，核心一直围着‘钝、平、没锋利边缘…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/blunt"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/blunt"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/blunt_1"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/blunt"
+        },
+        {
+          "label": "Longman Dictionary of Contemporary English",
+          "url": "https://www.ldoceonline.com/dictionary/blunt"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/blunt%20trauma"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/blunt-trauma"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/blunt-instrument"
+        }
+      ]
+    }
+  },
   "brace": {
     "displayWord": "brace",
     "meta": [
@@ -979,6 +1035,46 @@ window.WORD_SENSE_ENTRIES = {
         {
           "label": "Merriam-Webster",
           "url": "https://www.merriam-webster.com/dictionary/mean%20business"
+        }
+      ]
+    }
+  },
+  "cannibalize": {
+    "displayWord": "cannibalize",
+    "meta": [
+      "商业竞争 · 自我蚕食 · B2-C1",
+      "Issue 006"
+    ],
+    "markdown": "**字面含义** · 这个词一上来给人的字面联想，还是很强：来自 *cannibal* 这条线，带着一种“同类吞同类”的不适感。你一听就知道，这不是一个温和的词。\n\n**本体质感** · 但到了现代英语里，*cannibalize* 常常不只是字面上的“吃”，而是在说：为了让一个东西活下去，去拆另一个同体系里的东西；或者让一个新东西去挤压、分流掉旧东西的生存空间。  \n所以它在商业语境里，通常不只是普通的 *replace*，而更强调内部挤压、自我分流；比起 *compete with*，它也更突出“自己家打自己家”的感觉。只是这种感觉未必每次都写得很重，在报告、策略讨论里，它也常常以一种相对中性的分析口吻出现。  \n中文里我们会说“蚕食”“自我蚕食”“内部消耗”，这些都接近；但 *cannibalize* 更特别的一点，是它总让你隐约看见那个画面：不是外人来抢，而是系统内部有一部分在拆另一部分、吞另一部分、拿另一部分续命。\n\n**寻根溯源** · 这个词确实来自 *cannibal*，也就是“食人者”这条线，后面再加上动词后缀，变成 *cannibalize*。早期它就已经可以往比喻方向走：从“人吃人”的具体图景，扩展成一种更广的吞并、挪用、拆取。  \n有一种很重要的现代发展，是它后来不只用来写商业竞争，也用来写工程和维修：把一台机器、车辆或设备上还能用的零件拆下来，装到另一台上。大致在二十世纪中期，这个用法变得很显眼，尤其常被认为和战争时期、军用装备维修有关。这样一看，这个词的主线就很清楚了：不管是血肉意义上的“吞吃”，还是工程意义上的“拆件补另一台”，核心都是——一个系统靠消耗另一个同类部分来维持自己。\n\n**各路用法** · 这个词真正好用的地方，在于它不是只活在一种语境里。它至少有几条很稳定的路，而且彼此之间是通的。\n\n**工程,维修现场**\n> They cannibalized one old truck for parts to keep the others running.\n> 他们拆了一辆旧卡车上的零件，来让其他卡车继续运转。\n\n这是现代词典里很核心的一条义：不是抽象隐喻，是真的拆一台，救另一台。那个“拿同类续命”的感觉，在这里最直接。\n\n**职场,产品讨论**\n> Our new subscription plan may cannibalize sales of the premium tier.\n> 我们新的订阅方案可能会蚕食高级套餐的销量。\n\n这里的典型宾语就是 *sales*。它不是泛泛地说“有影响”，而是在说：新方案会把本来属于旧方案的购买意愿直接分流走。\n\n**职场,会议上**\n> The cheaper model could cannibalize our own flagship product.\n> 更便宜的型号可能会蚕食我们自己的旗舰产品。\n\n这里最关键的不是“便宜型号会成功”，而是它会成功到开始伤到自家原本最重要的产品。这就是策略讨论里常说的“自己打自己”。\n\n**媒体,渠道转移**\n> The paper’s website is cannibalizing print sales.\n> 这家报纸的网站正在蚕食纸质版的销量。\n\n这也是很高频、很真实的一种场景：不是别家媒体来抢，而是你自己的新渠道，开始分走你旧渠道的用户、注意力和收入。\n\n**创业,业务判断**\n> If you launch that app too early, it might cannibalize your main business.\n> 如果你太早推出那个应用，它可能会蚕食你的主营业务。\n\n这里的宾语可以不只是 *sales*，也可以是 *revenue*、*market share*、*existing business*。也就是说，它不一定只吃掉销量，还可能吃掉收入、份额，甚至把原有业务本身慢慢掏空。\n\n➤ *所以在产品策略、渠道管理、零售和媒体分析里，cannibalize 确实是个高频词：常见意思就是新东西分流了旧东西的销量、收入、市场份额或既有业务。*\n\n**原生思维** · 英语母语者用 *cannibalize* 时，心里通常不是一个抽象的“内部冲突”，而是更具体的关系图：A 为了活得更强，开始抽走 B 的部件、份额、能量，甚至存在理由。这个词可以落在很实的维修现场，也可以落在很抽象的组织和市场分析里，但底层动作其实没变。  \n所以它特别适合那些“同体系内部互相拆补、互相分流”的场景：新产品吃旧产品，线上吃线下，一个部门抽走另一个部门的资源，一台机器拆另一台机器的零件。中文常先说“替代”“冲突”“内耗”，而 *cannibalize* 说得更狠一点：这不是平移，这是拿自己人续自己。\n\n**悟道时刻** · *Cannibalize* 最值得记住的，不只是“蚕食”，而是它总在提醒你：有些增长不是从外面赢来的，而是从内部拆出来的。\n\n以后你碰到一个变化，表面上像升级、扩张、推出新品，先问一句：它是在新增，还是在拿旧系统的血肉给新系统续命？如果是后者，英语里就很容易走到 *cannibalize*。",
+    "verification": {
+      "claimCount": 9,
+      "confirmedCount": 4,
+      "softenedCount": 5,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "**词源**：Etymonline、OED 词头信息，用来确认构词来源和时间线"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/cannibalize"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/cannibalize"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/cannibalize"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/cannibalize"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/cannibalize_v"
         }
       ]
     }
@@ -1561,6 +1657,62 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "demeanor": {
+    "displayWord": "demeanor",
+    "meta": [
+      "外在举止 · 人际观感 · C1",
+      "Issue 006"
+    ],
+    "markdown": "**字面含义** · 这个词在现代英语里，常常贴着“一个人怎么出现在别人面前”的画面：怎么说话，怎么停顿，神态是松还是紧，整个人给人的感觉是近还是远。它不先追问你心里到底怎么想，而是先看你外在怎么呈现。\n\n**本体质感** · demeanor 不是在给人下性格诊断，它更像是你一走进房间，别人先接收到的那层外在状态：说话的节奏、表情的松紧、身体的收放、眼神是迎人还是避人——这些线索合在一起，构成一个人“被看见时”的样子。  \n但它也不是和内在完全切断。更准确地说，demeanor 先落在外在表现上，而这种外在表现，常常会让人推测你当下的情绪、态度，甚至某种性情轮廓。  \n如果和近义词粗略分工，demeanor 往往比 manner 更像一个整体印象，比 behavior 更偏“呈现出来的样子”，比 attitude 更少直接谈立场；而 bearing 常更容易让人想到姿态、体态那一面。一个人可以 have a calm demeanor，也可以 have a nervous demeanor —— 重点不是“他到底是什么人”，而是“他看起来是以什么方式在场”。\n\n**寻根溯源** · 这个词来自古法语 **demener**，有 guide、conduct 这一类“引导、带着走、使之呈现某种状态”的意味；再往上追到拉丁语 **minari**，原义则和 threaten、drive 这一类“驱使”有关。  \n所以如果顺着词源去理解，demeanor 并不是一开始就专指“站姿走姿”，而是更早和 conduct、management、对外表现这条线连在一起。后来到了现代用法里，它才更稳定地落到“一个人外在的举止、神态、整体观感”上。  \n另外，这个词本身也带一点正式、书面的气质。美式常写 **demeanor**，英式常写 **demeanour**。在日常口语里大家当然听得懂，但真要随口聊天，很多人会更自然地说 manner、vibe，或者 the way he came across。\n\n**各路用法** · 几个例子，感受一下它通常怎么落在句子里：\n\n**正式,面试或人物描写**\n> The candidate's calm demeanor made the room feel less tense.\n> 这位候选人沉稳的神态让房间里的气氛没那么紧张了。\n\n这里不是在夸“性格很好”，而是在说他的外在呈现有一种安定效果。\n\n**正式,医疗或职业场景**\n> Her professional demeanor helped the patient trust her quickly.\n> 她专业的举止让病人很快就信任了她。\n\nprofessional demeanor 是职业语境里的高频搭配，常常和专业感、可靠感、值得信任联系在一起。\n\n**正式,法庭语境**\n> The jury was asked to consider the witness's demeanor on the stand.\n> 陪审团被要求考虑这名证人在证人席上作证时的举止神态。\n\n这是这个词一个很稳定的正式用法。法庭里说 witness demeanor，看的不是抽象人格，而是证人当场呈现出来的样子，以及这种样子会不会影响别人对其可信度的判断。\n\n**日常,朋友聊天**\n> He had this awkward demeanor that made everyone go quiet.\n> 他那种有点局促的样子，让大家都安静了下来。\n\n这里重点是“看起来不自在”，不是直接给他下人格结论；只是这种外在状态，会让周围人立刻读出一种紧绷感。\n\n**原生思维** · 英语里用 demeanor，往往不是在追问“你这个人本质上怎样”，而是在捕捉“你是以什么样的外在状态被人接收到的”。它天然带一点旁观者镜头感：先看整体呈现，再由这种呈现去形成印象。  \n所以它和中文里容易往内里走的“性格”“气质”“态度”并不完全重合。demeanor 更停留在表层，但不是浅薄的表层——它是那种别人一眼就能读到、而且会据此继续判断你的表层。尤其在面试、医疗、教育、法庭这些正式场景里，这种“被读到的方式”常常很重要。\n\n**悟道时刻** · demeanor 最妙的地方，是它抓住的不是“你是谁”，而是“你怎么被别人读到”。它先落在外在，却又总在悄悄牵出别人对你情绪、态度、可信度的判断。\n\n以后见到这个词，别急着翻成“性格”或“态度”。先看场景里有没有一个旁观者在读人：如果重点是“这个人一出现，整体给人的感觉是什么”，那多半就是 demeanor。",
+    "verification": {
+      "claimCount": 12,
+      "confirmedCount": 3,
+      "softenedCount": 3,
+      "uncertainCount": 2,
+      "rejectedCount": 1,
+      "checked": [
+        "这个词最早贴着‘人怎么站、怎么走、怎么把自己摆在别人面前’的画面。",
+        "它不先问你‘心里怎么想’，先看你‘外在怎么呈现’。",
+        "demeanor 不是在给人下性格诊断。",
+        "它更像是你走进房间后，别人先接收到的那层‘人身上的气场外壳’。",
+        "它带一点观察者视角：说话的速度、脸上的松紧、身体的收放、眼神是迎人还是避人，这些东西…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/demeanor"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/demeanor"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/demeanor"
+        },
+        {
+          "label": "Cambridge Dictionary (UK spelling)",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/demeanour"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/demeanour"
+        },
+        {
+          "label": "Cornell Law Review note",
+          "url": "https://community.lawschool.cornell.edu/wp-content/uploads/2023/09/Bialer-note-final.pdf"
+        },
+        {
+          "label": "Judicature (Duke Law)",
+          "url": "https://judicature.duke.edu/articles/the-changing-science-on-memory-and-demeanor-and-what-it-means-for-trial-judges/"
+        },
+        {
+          "label": "American Board of Pediatrics",
+          "url": "https://www.abp.org/professionalism-guide/chapter-2/professionalism-patient-care"
+        }
+      ]
+    }
+  },
   "deprecate": {
     "displayWord": "deprecate",
     "meta": [
@@ -1613,6 +1765,58 @@ window.WORD_SENSE_ENTRIES = {
         {
           "label": "Cambridge Dictionary — self-deprecating",
           "url": "https://dictionary.cambridge.org/dictionary/english/self-deprecating"
+        }
+      ]
+    }
+  },
+  "derogatory": {
+    "displayWord": "derogatory",
+    "meta": [
+      "贬损表达 · 语用边界 · C1",
+      "Issue 006"
+    ],
+    "markdown": "**字面含义** · 它的底子更接近“减损、贬低、把地位往下压”。字面上有一种把人或东西往低处放的动作感，像一句话说出来，不只是负面，而是在削弱对方的体面、分量或位置。\n\n**本体质感** · 这个词一出来，空气就有点冷。它强调的不是声音有多大、火气有多猛，而是话语里有没有一股明确的贬低意味。它可以是一句带刺的评价，也可以是一个称呼、一个标签、一个描述，看上去句子完整，甚至语气未必激烈，但里面已经在把对方往更低的位置放。\n\n它的味道也比单纯的 “rude” 更结构化一点：rude 更偏没礼貌，derogatory 更偏带着贬损方向。二者当然可能重叠，但焦点不同：rude 看的是礼貌失当，derogatory 看的是有没有在贬低对象。和 “insulting” 相比，derogatory 也更常用来判断某个词、评论或说法本身是不是带有贬低性；insulting 当然也不一定非得当面骂人，只是它更容易让人先想到“冒犯到了”，而 derogatory 更像是在判断“这里面有没有低看、轻贱、降格”的成分。\n\n所以你会在评论、标签、称呼、描述里感觉到它。它不只是在说“难听”，也常常是在说：这句话、这个说法，正在损及某个人或某件事的 character、dignity 或 standing。\n\n**寻根溯源** · 它来自拉丁语里“减损、贬低、削弱”这一支，源头可追到 derogare。这个词在较早的层面，不只是“说话不好听”，还带有“减损权威、权利或地位”的意思，甚至在法律语境里还有“部分废止、减损效力”这一层旧义。后来进入英语后，它先有“减损 authority / rights / standing”这类方向，到了更后面，才越来越明确地落到 honor、esteem、reputation，以及今天我们熟悉的“用语言贬低某人、某类人、某种东西”。\n\n所以它今天最核心的感觉，仍然不是单纯负面，而是那种很稳定的“低评价”方向。词典里有个很准的说法：*expressive of a low opinion*。也就是说，它说的不是情绪先爆出来，而是评价本身已经往下压了。\n\n**各路用法** · 几个例子，在不同场域里你感受一下区别：\n\n**职场,邮件里**\n> The report contains derogatory remarks about a former employee.\n> 这份报告里有一些贬低前员工的言论。\n\n这里的重点不是“粗鲁”，而是这些话本身就在往下压人，带着贬损性。\n\n**日常,朋友聊天**\n> That was a derogatory comment, and she was right to call it out.\n> 那句话带有贬损意味，她指出来是对的。\n\n日常里它常出现在“你这话不只是难听，而是有贬低成分”的语境里。\n\n**群体称呼,公共讨论里**\n> Many people consider the term derogatory when used to describe immigrants.\n> 很多人认为，这个词在用来指称移民时带有贬损意味。\n\n这是它很高频的一种真实用法：大家争的不是“这个词听着刺不刺耳”而已，而是“这个称呼本身是不是在把某个群体往低处放”。\n\n**互联网社媒,评论区**\n> The post got removed for using derogatory language toward a group of people.\n> 这条帖子因为使用了针对某个群体的贬损性语言而被删了。\n\n社媒里它很常和 language, remark, comment, term 这些词连在一起，指向“语言本身的贬损属性”。\n\n**媒体报道,措辞判断**\n> The newspaper later apologized for making a derogatory reference to the community.\n> 那家报纸后来为对该群体作出带有贬损意味的指称而道歉。\n\n这里的 derogatory reference 很能说明这个词的判断方式：不是看你有没有爆粗口，而是看你是不是用表述在降低对方的体面或地位。\n\n大致来看，在媒体报道、平台治理和规则讨论里，它常用来描述针对某个群体的贬损性称呼或表述；只是到了平台官方规则文本里，常见的并列词也会是 hate speech、degrading、dehumanizing、attack 这些，不一定总直接写 derogatory。\n\n**原生思维** · 英语母语者用这个词时，看的往往不是“这句话骂得狠不狠”，而是“这句话是不是在语言层面把对象往低处放”。它关心的是方向：有没有贬低、有没有降低体面、有没有损及 character、dignity 或 standing。中文里我们有“难听”“骂人”“不尊重”这些词，但它们各抓一部分；derogatory 更像是在给你看那股“降格”的力道本身。\n\n**悟道时刻** · 读这个词时，记住它盯的不是情绪强度，而是低评价的方向。英语里很多近义词的差别，不在“有没有负面”，而在负面是怎么发生的：是失礼、是冒犯、是轻蔑，还是在语言里把对方往下放。\n\n以后你一遇到某个 term、remark、comment、reference 被说成 derogatory，就先别问“凶不凶”，先问：它是不是在减损对方的体面、名誉或地位。抓住这个识别方式，这个词就真的活了。",
+    "verification": {
+      "claimCount": 10,
+      "confirmedCount": 5,
+      "softenedCount": 5,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "它的底子是‘往下说、往低处压’。",
+        "它来自拉丁语里‘降低、贬低’这一类词形。",
+        "后来进入英语后，逐渐从‘减少、降低’走向‘用语言降低某人/某物的地位’。",
+        "它今天最核心的感觉，仍然是‘把人往下压’的那个方向感。",
+        "它不是那种大吵大闹的侮辱，更像一句带刺的评价。"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/derogatory"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/derogatory"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/derogatory"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/derogatory"
+        },
+        {
+          "label": "Merriam-Webster Thesaurus",
+          "url": "https://www.merriam-webster.com/thesaurus/derogatory"
+        },
+        {
+          "label": "Meta Safety Center",
+          "url": "https://www.meta.com/safety/communities/lgbtq/policies/"
+        },
+        {
+          "label": "TikTok Community Guidelines",
+          "url": "https://www.tiktok.com/community-guidelines/en/?cgversion=2025H2update"
         }
       ]
     }
@@ -1703,6 +1907,58 @@ window.WORD_SENSE_ENTRIES = {
         {
           "label": "Etymonline",
           "url": "https://www.etymonline.com/word/drain"
+        }
+      ]
+    }
+  },
+  "epitome": {
+    "displayWord": "epitome",
+    "meta": [
+      "典型代表 · 高度概括 · C1",
+      "Issue 006"
+    ],
+    "markdown": "**字面含义** · 这个词一上来给人的感觉，像是把一整团东西压缩成一个可指认的代表。它常常不是在铺开描述很多细节，而是借一个具体的人或物，把某种特征一下子立住。\n\n**本体质感** · epitome 说出来有一种“往上提炼”的味道。它不是随口夸一句“很像”，而是在把某个人、某件事，往“这类东西的典型体现”上抬。语气里常带一点审美判断，也偏正式、偏书面，常见于人物描写、评论、颁奖词这类场景；但它不只用于夸赞，负面的特质也一样能用。母语者用它时，脑子里往往不是在做平铺直叙的信息描述，而是在做一种分类后的盖章：这个人、这个物，就是那类气质里最能被拿来指认的一例。\n\n**寻根溯源** · 它来自希腊语，原意确实跟“切短、缩写”有关。进入英语时，较早的意思也是“摘要、简述、缩写本”——大致在 1520 年代就有了。后来到了约 1600 年，这个词才进一步发展出今天更常见的意思：不是只把一段文字缩短，而是用一个人或一件事，把一整类特征浓缩地呈现出来。也因为这条线还留着，所以 epitome 到今天仍不只是“典范”，也还能指“摘要”；而固定说法 in epitome，本身也就在说“以浓缩形式、概括地”。\n\n**各路用法** · 几个例子，在不同场域里感受一下它怎么把对象推到“高度体现某种特质”的位置上：\n\n**日常,夸一个人**\n> She is the epitome of grace under pressure.\n> 她是“压力之下依然从容优雅”这种气质的典型体现。\n\n这里不是说她“有一点优雅”，而是在说她把这种品质活成了一个可被指认的样子。\n\n**职场,写人物介绍**\n> He is the epitome of a thoughtful manager.\n> 他是体贴周到型管理者的典型代表。\n\n这类说法常见于简介、介绍、颁奖词，语气会比普通 praise 更整齐、更凝练。实际使用里，它也更常接抽象名词，比如 professionalism、kindness、elegance。\n\n**日常,带一点审美判断**\n> That little café is the epitome of coziness.\n> 那家小咖啡馆就是“温馨感”的化身。\n\n这里把一个抽象气质直接压到一个具体场景上，所以听起来会有一点评论感，而不只是客观描述。\n\n**评论,也可用于负面特质**\n> His reply was the epitome of arrogance.\n> 他的那番回复，简直是傲慢的典型体现。\n\n这点很重要：epitome 虽然常出现在夸人的句子里，但它本身不是只能褒义。只要你想说“某种特质被高度集中地体现出来”，正负都可以。\n\n**阅读,保留的早期义**\n> This short chapter is an epitome of the whole argument.\n> 这段短短的章节，是整套论证的摘要。\n\n这一义今天不如“典型体现”常见，但主流词典仍保留着。你知道这层意思，就更容易看懂它为什么后来会走到“缩影、典型代表”那边去。\n\n**原生思维** · 英语母语者用 epitome 时，想的通常不是“它很像某种东西”，而是“它把这类东西的特征集中体现出来了”。中文里我们也会说“典范”“化身”“缩影”，但 epitome 的重点不在讲道理，而在做压缩后的代表确认：把一堆分散特征收拢成一个最能立住的样本。它的动作更像“抽出来，定住”，不是“慢慢描述很多”。所以它听起来总有点像在给一个人或事物下一个判词。顺手补一个很实用的学习点：它的发音是 ih-PIT-uh-mee，很多学习者第一次会按拼写误读。\n\n**悟道时刻** · epitome 真正厉害的地方，不是“很典型”这层字面意思，而是它背后的英语动作：先不铺陈，再不解释，直接把一个对象推到“这就是那种特质的集中体现”这个位置上。\n\n以后你再遇到 essence、embodiment、quintessence 这些近邻词，会更容易看出它们都和“集中体现某种特质”有关，只是侧重点不同：有的偏本质，有的偏化身，有的偏最纯的一种代表。",
+    "verification": {
+      "claimCount": 10,
+      "confirmedCount": 5,
+      "softenedCount": 5,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "这个词最早像是在说‘把一整类东西缩成一个小样本’。",
+        "它不是在指一个具体物件，而是在把一堆特征压缩到一个代表性的点上。",
+        "它常常带着一种正式、略书面、略抬高的腔调。",
+        "它来自希腊语，原意跟‘切下来的小片段、摘要’有关。",
+        "后来这个‘摘要’慢慢不只是缩写内容，也变成‘一个能代表整体的缩影’。"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/epitome"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/epitome"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/epitome"
+        },
+        {
+          "label": "Collins English Dictionary",
+          "url": "https://www.collinsdictionary.com/dictionary/english/epitome"
+        },
+        {
+          "label": "American Heritage Dictionary",
+          "url": "https://ahdictionary.com/word/search.html?q=epitome"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/epitome"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/epitome_n"
         }
       ]
     }
@@ -1929,6 +2185,54 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "feature": {
+    "displayWord": "feature",
+    "meta": [
+      "产品特性 · 重点呈现 · B1-B2",
+      "Issue 006"
+    ],
+    "markdown": "**字面含义** · 你一开始可以先把 feature 想成“人的形貌里那些能被看出来的部分”：脸部线条、面容特征，后来也很自然地落到我们今天熟悉的 facial features——眼睛、鼻子、嘴巴这些面部特征上。这个词一上来就和“样子”“长相”“外观里可指认的地方”贴得很近。\n\n**本体质感** · feature 这个词在英语里很像一只手电筒，照向“一个整体里最值得被挑出来看的那一块”。它不急着说“本质”，而是先把某个东西拎到前景里：房子的 feature 可以是落地窗，人的 feature 可以是高颧骨，产品的 feature 可以是夜间模式。它有一种“让你注意这里”的功能。  \n在语感上，它比 mere detail 更像“有存在感的组成部分”，比 aspect 更像“被具体看见的那一面”，比 characteristic 更偏向“外显、可点名”的部分。放到产品语境里，feature 往往也不是“功能”这个汉语词能完全覆盖的，因为英语里它既可以是一个具体功能模块，也常带“卖点”“亮点”“这玩意儿最拿得出手的地方”的意味。  \n所以“被拎出来看的那一块”更像是这个词的语义归纳：它说的不只是一个部分，而往往是一个值得被指出、被展示、被强调的部分。\n\n**寻根溯源** · 这个词确实来自拉丁语系，词源链大致可以追到 Old French `faiture`，再上溯到 Latin `factura`。早期意思更偏向 form、shape、formation 这一类，也和人的形貌、面容有关，而不宜说它一开始就专指某个单独五官。  \n也正因为它起点更接近“形状、外形、面貌”这些较具体的东西，后来才慢慢扩展出“显著特征”“特色”“功能模块”“专题内容”等更抽象、也更现代的用法。大致来看，这条扩展线很清楚：17 世纪末已经能表示“某物中有辨识度的部分”，19 世纪发展出媒体专题义，20 世纪初又稳定出 feature film 这样的固定说法。英语把它保留成一个很有弹性的词：既能指人的面部特征，也能指事物里最值得被展示的部分。\n\n**各路用法** · 几个例子，先看它怎么在不同场域里“把某一块拎出来”。\n\n**职场，产品讨论**\n> This update adds a feature that lets users schedule posts.\n> 这次更新增加了一个可以让用户预约发帖的功能。\n\n这里的 feature 不是泛泛的“特点”，而是一个具体可上线、可命名的功能点。\n\n**职场，市场/汇报**\n> One key feature of the campaign is its focus on first-time buyers.\n> 这次活动的一个关键特点是把重点放在首次购买者身上。\n\n这里更接近“特点/亮点”，是在把方案里最值得说的那块挑出来。\n\n**日常，描述人或物**\n> The house’s best feature is the view from the kitchen.\n> 这栋房子最好的地方是厨房望出去的景色。\n\n这里的 feature 很自然地落在“这东西最拿得出手的部分”。\n\n**地理，地图或考试语境**\n> The map shows the main geographical features of the region.\n> 这张地图展示了这个地区主要的地理特征。\n\n这里的 feature 常常就是地貌、地理特征，不是在说“功能”，而是在说一个地方可被识别的自然部分。\n\n**媒体，报纸或杂志**\n> The newspaper ran a feature on climate policy last weekend.\n> 这家报纸上周末刊登了一篇关于气候政策的专题报道。\n\n这里的 feature 是专题、特稿。它还是那个核心动作：从众多内容里拎出一块，专门展开给你看。\n\n**影视，院线或片单**\n> We watched a feature film instead of a short documentary.\n> 我们看的是一部长片，而不是一部短纪录片。\n\n在 `feature film` 里，feature 已经固化成“故事长片、主片”这层意思，是非常常见的固定说法。\n\n**文案，介绍某人或某物**\n> The film features Cary Grant.\n> 这部电影由加里·格兰特主演。\n\n这里 feature 变成动词，不是简单的“有”，而是“以……为特色 / 由……担纲 / 重点呈现……”。\n\n**展览，宣传文案**\n> Local artists are featured in the exhibition.\n> 这次展览重点展示了本地艺术家。\n\n动词 feature 常带一种“把谁放到台前”的感觉。\n\n**写作，搭配 feature in**\n> Olive oil features prominently in his recipes.\n> 橄榄油在他的食谱里占有很重要的位置。\n\n`feature in` 就是在说“出现在……中，并且还挺重要”。\n\n**平台，搭配 feature on**\n> Her work was featured on the front page of the website.\n> 她的作品被放在了网站首页重点展示。\n\n`feature on` 常见于媒体、平台、页面语境，意思是“登上……并被突出呈现”。\n\n➤ 值得注意的是，在软件、产品、设计语境里，feature 常常可以译成“功能”或“功能点”；但它也经常同时带着“卖点”“亮点”“可对外强调的点”这层意思。到了人物、建筑、方案、地理、媒体这些语境里，它又更像“特征”“专题”“最醒目的部分”。同一个词，脑子里先抓的始终是：哪一块被挑出来、被你看见了。\n\n**原生思维** · 英语母语者用 feature 时，不是在做“给一个东西下定义”，而是在做“从整体里圈出一个值得被注意的部分”。这就是为什么它可以在面孔、建筑、产品、方案、地理、媒体之间自由跳转：核心动作不是分类，而是凸显。  \n中文里我们往往会分别说“特征”“特点”“功能”“亮点”“专题”“长片”，英语却很愿意用 feature 把这些“可被指认、可被强调的显著部分”收在一起。连它变成动词时，这个动作都没变：不是单纯存在，而是被放到前景。\n\n**悟道时刻** · 你真正要抓住的不是“feature 等于哪个中文词”，而是它背后的视角：英语先把整体摆出来，再把其中值得你注意的那一块推到前景。它有时是五官，有时是功能，有时是亮点，有时甚至是一整篇专题或一部长片。\n\n下次见到 feature，先别急着翻成“功能”或“特点”，先问一句：这里到底是什么，被特意摆到你眼前了？一旦看见这个“推到前景”的动作，分散的义项会自己连成一张图。",
+    "verification": {
+      "claimCount": 6,
+      "confirmedCount": 4,
+      "softenedCount": 3,
+      "uncertainCount": 0,
+      "rejectedCount": 1,
+      "checked": [
+        "最早你可以把它想成‘脸上的一部分’那种画面：眼睛、鼻子、嘴巴这些显眼的轮廓，都是 f…",
+        "这个词一开始就带着‘可被看见、可被辨认的部分’这种感觉。",
+        "这个词来自拉丁语系，最早和‘形状、面貌、外观’有关。",
+        "它天生就不是抽象概念，而是先从‘看得见的样子’长出来，后来才慢慢扩展成‘特征’‘特色…",
+        "英语把它保留成一个很有弹性的词：既能指人的面部特征，也能指事物里最值得被展示的部分。"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/feature"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/feature"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries（noun）",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/feature_1"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries（verb）",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/feature_2"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/feature"
+        },
+        {
+          "label": "Britannica Dictionary",
+          "url": "https://www.britannica.com/dictionary/feature"
+        }
+      ]
+    }
+  },
   "fend": {
     "displayWord": "fend",
     "meta": [
@@ -1981,6 +2285,50 @@ window.WORD_SENSE_ENTRIES = {
         {
           "label": "Britannica Dictionary",
           "url": "https://www.britannica.com/dictionary/fend"
+        }
+      ]
+    }
+  },
+  "flex": {
+    "displayWord": "flex",
+    "meta": [
+      "弯曲动作 · 展示实力 · B1-B2",
+      "Issue 006"
+    ],
+    "markdown": "**字面含义** · 最先能看见的是“弯一下、屈一下、绷一下”的动作。手臂 flex 一下，是把肌肉收紧、显出来；一块可弯的材料 flex，是它能受力后弯曲而不断裂。这个词的画面感很强：不是静止地“有”，而是用力时会动、会显形。\n\n**本体质感** · flex 在英语里常常让人联想到一种“把力量或优势亮出来”的姿态。它当然可以只是中性的身体动作，或材料上的弯曲；但它也很容易滑向社交场景里的“显一下”：把肌肉、能力、资源、品味，故意或半故意地让别人看见。  \n所以它的质地，前半截是身体的、受力的，后半截是社交的、可见的。尤其到了网络和俚语里，flex 很常带着自夸、招人注意的意味；有时还会带点挑衅，或者带点讽刺地说：你这不是在正常展示，你这是在炫。\n\n**寻根溯源** · 它确实来自拉丁语里“弯折”这一支，英语里的 flex 大约在 16 世纪就已出现，背后连着 Latin *flectere*“to bend” 这条词源链。早期核心很明确，就是弯、屈，尤其也可指肌肉的收紧。  \n后来现代英语里又发展出几条很自然的延伸：一条是“施展、展示”某种能力或力量，另一条才是今天大家很熟的俚语“炫耀、显摆”。也就是说，flex 不只是从“弯”跳到“炫”；中间其实还经过了一个“把力量使出来、亮出来”的层次。正因为这样，今天的俚语 flex 之所以成立，背后很可能还是借着那个“绷一下、显一下”的身体画面。\n\n**各路用法** · 几个例子，感受它从动作到姿态，再到抽象“施展”的滑动：\n\n**日常，健身房里**\n> He flexed his biceps in the mirror.  \n> 他对着镜子绷了绷肱二头肌。\n\n这里就是最本义的 flex：肌肉收紧、鼓起来，让线条显出来。\n\n**日常，朋友聊天**\n> She kept flexing her new phone all night.  \n> 她整晚都在拿她的新手机炫来炫去。\n\n这已经是很口语、很俚语的用法了：不是单纯“有这个东西”，而是反复让别人看见“我有这个东西”。\n\n**社媒，评论区**\n> Nice watch. That's a subtle flex.  \n> 手表不错，这是一种很低调的炫耀。\n\n这里的 flex 已经直接变成名词了。现代口语里很常见的就是这种说法：*a subtle flex*、*a weird flex*，都指“一次炫耀行为”。\n\n**会议上，夸人能力**\n> She really flexed her problem-solving skills in that meeting.  \n> 她在那场会议里确实把自己的问题解决能力展现出来了。\n\n这条很重要。flex 不一定等于炫耀，它也常常只是“施展、展现、动用”自己的能力、技巧或影响力。\n\n**国际新闻，示强语境**\n> The country is flexing its military muscles near the border.  \n> 这个国家正在边境附近展示军事实力。\n\n这里可以顺手记住一个固定说法：*flex your muscles*。字面是“绷肌肉”，抽象上常常就是“示强、亮实力”，有时甚至带警告意味。\n\n**职场，系统调整**\n> We need a more flexible system that can flex to meet demand.  \n> 我们需要一个更灵活的系统，能够随着需求去调整。\n\n这里的 flex 不是“炫”，而是较特定地表示“调整、适配”。这种用法在商业、管理、空间设计之类的语境里能见到，但它不是这个词唯一、也不是最主导的现代感觉。\n\n大致来看，flex 这词今天至少有三层常见路线：最基础的是身体或材料上的弯、屈、绷；再往上，是施展能力、动用力量；到了社媒和俚语口语里，它又很常落成“炫一下、秀一下”的姿态。把这三层分开，你就不容易一见到 flex 就只想到“炫耀”。\n\n**原生思维** · 英语母语者用 flex 时，常常不只是先想到“炫耀”这个抽象评价，而是会借一个很身体化的动作来组织意思：收紧、显形、把某种力量调出来。中文里我们也有“秀”“显摆”“炫”，但 flex 比这些词更像“动作先于评价”。它先让你看到：我正在亮出某种东西。这个东西可以是肌肉，可以是新手机，可以是解决问题的能力，也可以是国家层面的权力。  \n这个词妙就妙在这里：它并不把“展示”都说成同一种展示。它保留了受力感、显形感，所以哪怕是在抽象语境里，flex 也常常不是安静地“具备”，而是主动地“使出来”。\n\n**悟道时刻** · 真正该记住的，不是 flex 只有“炫耀”，也不是它等于一切“灵活”。它的核心更像是：某种力量、能力或形态，在受力时被调动出来，并且变得可见。\n\n以后再见到 flex、flexible、flexibility 这些词，可以先抓住“弯、屈、适配”这条主轴；如果碰到 reflex，也只要知道它们在词源上有“回折、反应”一类历史联系，但现代意思已经分家了，不必硬套成同一句口诀。",
+    "verification": {
+      "claimCount": 14,
+      "confirmedCount": 5,
+      "softenedCount": 9,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "词源：Etymonline"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/flex"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/flex"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/flex_1"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/flex"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/flexible"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/flexible"
         }
       ]
     }
@@ -2139,6 +2487,109 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "gimmick": {
+    "displayWord": "gimmick",
+    "meta": [
+      "营销表达 · 吸睛手法 · B2",
+      "Issue 006"
+    ],
+    "markdown": "**字面含义** · `gimmick` 常指为了抓住注意力而设计的噱头、花招或小机关。它可以是一项产品功能、一种营销手法，也可以是表演里刻意安排的把戏；重点通常不在它“是什么”，而在它“被设计来吸引你”。\n\n**本体质感** · 这个词一冒出来，英语母语者脑子里往往不是“一个普通的花样”，而是那种“有点机灵、也有点可疑”的小动作：为了吸引眼球，故意加的一层包装，可能是设计里的噱头，广告里的钩子，表演里的小机关，甚至是人说话时突然抛出的一个抓注意力的招数。它通常带一点轻度贬义或怀疑色彩，但在轻松口吻里，也可以只是指那种有点讨巧的小设计。  \n你可以把它想成：东西本身不一定差，但它被做出来，往往就是为了让你多看两秒、多点一下、多买一次。\n\n**寻根溯源** · 这个词的词源其实没那么坐实。比较常见的说法是，它可能和 **gimcrack** 这类表示华而不实的小玩意儿的词有关，也可能和 **magic** 有某种字母重组式的关系；更稳妥的说法是：词源未定。  \n但它早期的路数是能看出来的。20 世纪初的美式英语里，**gimmick** 最早可见义之一，指的是那种**秘密操控赌博器具的机械装置**，也就是带一点作弊意味的小机关。顺着这条线再看，它后来扩展到“把戏、小手段、吸睛招数”，就很顺了：这个词之所以常让人觉得“有点可疑”，可能就和这层早期背景有关。  \n所以与其说它是从“巧”走到“虚”，不如更准确地说：它大致是从“秘密装置 / 把戏”一路滑到今天常说的“宣传噱头、营销花招”。\n\n**各路用法** · 几个例子，感受一下它在不同场景里的那股劲：\n\n**职场,做产品讨论**\n> The new feature is more of a gimmick than a real improvement.\n> 这个新功能更像是个噱头，不算真正的改进。\n\n这里的重点不是“它坏”，而是“它主要负责吸引人，不负责真正解决问题”。\n\n**日常,跟朋友聊天**\n> I bought the mug because of the little temperature gimmick on the side.\n> 我买这个杯子，就是因为侧面那个显示温度的小花样。\n\n这里的 gimmick 暗示它不是杯子的核心价值，而是促成购买的那个小卖点。\n\n**社媒评论区**\n> The whole campaign feels like a gimmick to get clicks.\n> 整个活动都像是在搞噱头，目的就是为了骗点击。\n\n这里往往带着更明显的怀疑：你在做的，是表演，不是实质。\n\n**公共话语,谈竞选或政策**\n> The tax cut was dismissed as an election gimmick.\n> 这次减税被斥为一种竞选噱头。\n\n这类用法在英语里很常见。**election gimmick / publicity gimmick / marketing gimmick / sales gimmick** 都是在说：这个动作最主要的功能，是吸睛、拉票、促销，而不是认真解决问题。\n\n**原生思维** · 英语母语者用这个词时，常常不是在给某个东西做客观分类，而是在判断它“是不是在演”。它盯的不是功能本身，而是功能背后那层意图：你是不是故意把东西做得花一点，好让人误以为它更有价值。中文里我们也会说“噱头”“花招”“小把戏”，但英语里的 gimmick 很常见的一层感觉是：这个东西可能真有点用，只是它首先服务于“吸引人”，而不是“成事”。  \n如果顺手和别的词对比着记，也可以这样抓：**gadget** 更偏那个装置本身，**gimmick** 更偏装置背后的吸睛意图。\n\n**悟道时刻** · gimmick 最值得记住的，不是“噱头”这个对译，而是它在帮你做一种判断：眼前这个东西，到底是在增加价值，还是只是在增加注意力。  \n\n下次再遇到它，你可以先不急着翻成“花招”，先问一句：这里被说中的，究竟是一个有用的设计，还是一个为了让你多看一眼的安排。这个判断一出来，词就活了。",
+    "verification": {
+      "claimCount": 12,
+      "confirmedCount": 5,
+      "softenedCount": 5,
+      "uncertainCount": 2,
+      "rejectedCount": 1,
+      "checked": [
+        "这个词一冒出来，英语母语者脑子里往往不是‘一个普通的花样’，而是那种‘有点机灵、也有…",
+        "它不一定全是贬义，但天然带着一点‘别被它骗了’的防备心。",
+        "你可以把它想成：东西本身不一定差，但它被做出来，就是为了让你多看两秒、多点一下、多买…",
+        "这个词大概和‘机关、把戏、诀窍’这一类老派英语词感是连着的。",
+        "早期更偏‘技术性的装置’或‘巧妙的小手段’。"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/gimmick"
+        },
+        {
+          "label": "Merriam-Webster Wordplay",
+          "url": "https://www.merriam-webster.com/wordplay/gambling-words/gimmick"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/gimmick"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/gimmick"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/gimmick"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/gimmick_n"
+        },
+        {
+          "label": "Wiktionary",
+          "url": "https://en.wiktionary.org/wiki/gimmick"
+        }
+      ]
+    }
+  },
+  "gross": {
+    "displayWord": "gross",
+    "meta": [
+      "感官评价 · 数量总额 · B1-B2",
+      "Issue 006"
+    ],
+    "markdown": "**字面含义** · 最早你可以先把 gross 贴近地理解成一种“厚、粗、笨重、成块”的感觉。它不是先切到细部，而更像先把东西当成一个整体端起来看；至于“总共地、毛的、未扣除的”，那是后来长出来的意思。\n\n**本体质感** · 这个词在英语里有一种“粗面地扫过去”的触感。说金额、收入、工资、重量之类是 gross，脑子里不是在夸它大，而是在说“这是还没扣除之前的总量”；说某个东西 gross，语气常常像把眉头一皱，带着明显的嫌弃、反胃、脏兮兮的那种退避。再往正式语域里走，gross 还常常指“严重到明显不可接受”的东西，比如 gross negligence、gross misconduct。  \n如果顺着词源和语义扩展去看，你大致可以把它理解成：不是精细处理过的，不是修干净了再端出来的，而是某种一眼就压上来的“粗、重、显眼、没过滤”——于是它一边能落在账本上，一边能落在嫌恶上，也能落在“严重失当”这种判断上。\n\n**寻根溯源** · gross 来自拉丁语系里表示“厚的、粗的、大的”那条线，经由古法语进入英语，早期更接近 thick、coarse、bulky 这一层。后来在英语里逐渐长出“整体的、未分拆的、未扣除的”意思，于是就有了 gross income 这种“总收入”或“毛收入”的用法，也常常和 net 对举。  \n另一条发展则把“粗、厚、不中细部”的感觉推向了品相、行为和感官层面，先能表示粗俗、下流、冒犯，再到现代口语里变成“令人厌恶、恶心”的 gross。这个“恶心”义并不是很早就有的说法；一种常见的词源记载是，它作为现代俚语义在 1958 年的美国学生俚语里开始被记录。你会发现，这几个看似离得很远的义项，底下大致还连着“没经过细修、直接以粗面貌出现”的图景。\n\n**各路用法** · 几个例子，在不同场域里你感受一下区别：\n\n**职场,财务汇报**\n> The company's gross revenue increased by 12% last quarter.\n> 公司的总收入在上个季度增长了 12%。\n\n这里的 gross 是“总的、毛的、未扣除的”，表示尚未扣除税项、成本或其他相关扣减前的总额；具体扣哪些，要看语境和口径。\n\n**人事,工资单上**\n> Your gross pay is listed at the top, and your net pay is below.\n> 你的税前总工资列在上面，实发工资列在下面。\n\ngross 和 net 的对举，是理解这个义项最稳的入口。\n\n**日常,朋友聊天**\n> That bathroom is gross.\n> 那个洗手间太恶心了。\n\n这里的 gross 不是“普通地不好”，而是带着一种直接的生理性排斥。\n\n**日常,看视频后的反应**\n> He kept chewing with his mouth open. Gross.\n> 他一直张着嘴嚼东西。真恶心。\n\n这种用法很短，几乎像当场把脸转开。\n\n**口语,直接说被恶心到了**\n> That smell really grosses me out.\n> 那股味道真的让我犯恶心。\n\ngross someone out 是很常见的固定搭配，意思就是“把某人恶心得不行”。\n\n**法律,新闻报道**\n> The court found no evidence of gross negligence.\n> 法院没有发现严重过失的证据。\n\n这里的 gross 不是“恶心”，也不是“总额”，而是“严重到明显不可接受、程度很重”的意思。它常见于 gross negligence、gross misconduct、gross injustice 这类正式表达。\n\n**公共表达,评价言行**\n> The comedian was criticized for using gross language.\n> 那位喜剧演员因使用粗俗下流的语言而受到批评。\n\n这里更接近“粗俗、下流、冒犯”，和 disgusting 有亲缘关系，但重点不完全是生理反胃，而是言行本身让人觉得低俗、失格。\n\n**媒体,票房报道**\n> The film grossed over $200 million worldwide.\n> 这部电影在全球取得了两亿多美元的总票房收入。\n\ngross 还可以作动词，表示“毛收入达到”“总共赚得”，在票房和商业报道里尤其常见。\n\n➤ *所以，gross 不是只有“毛额”和“恶心”两张脸。现代英语里，它至少还有一条很硬的正式义：严重、明显失当、不可接受。把这几支放在一起看，这个词的轮廓才完整。*\n\n**原生思维** · 英语母语者用 gross 的时候，很多时候是在做一种“先不往细里拆”的动作：要么把账目先拢成总量，要么把嫌恶直接抛出来，不给它任何美化空间，要么在正式语境里把某种错误、失职或冒犯标成“已经严重过界”。中文里“总的”“毛的”“恶心的”“严重失当的”“粗俗的”分别抓住了不同侧面，但英语把这些侧面压在同一个词形上。  \n所以 gross 的语感里，常会带着一种没经过精修、没经过过滤、直接露出来的粗粝感。把这一点当成理解工具是有帮助的；但真正落到使用时，还是要先看语域：财务里它常和 net 对着看，口语里它常是嫌恶反应，法律和新闻里它又常常是在给行为定性。\n\n**悟道时刻** · gross 最值得记住的，不是几个分散的中文对应词，而是它反复指向同一种场面：东西还没被处理干净，就已经整个压到你面前了。于是账目上它是“未扣除的总量”，感官上它是“恶心得让人退开”，正式判断里它是“严重到不能接受”。\n\n下次见到 gross，先别急着背中文，先问自己：这里是在说“总量未净化”，还是在说“粗暴地显出来，因而令人反感或不可接受”？这一问，词义就会自己站队。",
+    "verification": {
+      "claimCount": 11,
+      "confirmedCount": 6,
+      "softenedCount": 5,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "total / before deductions",
+        "disgusting / unpleasant",
+        "extreme / flagrant / unacceptable",
+        "coarse / vulgar"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/gross"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/gross"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/gross"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/gross_1"
+        },
+        {
+          "label": "Cambridge Dictionary（gross someone out）",
+          "url": "https://dictionary.cambridge.org/dictionary/english/gross-out"
+        },
+        {
+          "label": "Cornell Legal Information Institute（gross negligence）",
+          "url": "https://www.law.cornell.edu/wex/gross_negligence"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/gross_adj"
+        }
+      ]
+    }
+  },
   "grounding": {
     "displayWord": "grounding",
     "meta": [
@@ -2191,6 +2642,62 @@ window.WORD_SENSE_ENTRIES = {
         {
           "label": "NHS inform — Grounding exercises",
           "url": "https://www.nhsinform.scot/healthy-living/mental-wellbeing/breathing-and-relaxation-exercises/grounding-exercises/"
+        }
+      ]
+    }
+  },
+  "guerrilla": {
+    "displayWord": "guerrilla",
+    "meta": [
+      "游击策略 · 非常规行动 · B2",
+      "Issue 006"
+    ],
+    "markdown": "**字面含义** · 这个词最原始的画面，是一小股人不按常规军队的方式打仗：不排整齐队列，不正面硬碰，而是游击、突袭、伏击、迅速撤离。它既可以指这种不正规作战里的战法，也可以直接指从事这种作战的人。你会先看到“规模不大，但行动很机动、很难正面拦住”这个动作感。\n\n**本体质感** · guerrilla 这词带着一种“不正规、出其不意、依赖机动和时机”的气味。它不是大军压境的正面推进，而是从缝隙里钻出来，打一下就走；所以它常常让人联想到小股行动、骚扰、破坏、借地形、借时机、借对手空档。英语里一碰到它，脑子里不是“规模大”，而是“打法不正统，但很会找空子”。所以你会看到 guerrilla marketing 这类说法——重点不在“军事”，而在“用非常规、往往低成本的办法，把效果尽量做大”。至于 guerrilla filmmaking，这更像独立电影圈里常见的一种说法：小团队、低预算、就地取材，不按大制作流程来。\n\n**寻根溯源** · 它来自西班牙语 guerrilla，字面更准确地说是“小战争”，和 guerra（战争）同源。这个词进入英语，大致是在 19 世纪初半岛战争的背景里，先是实打实的军事词；后来英语里又发展出“游击战士、游击队员”的意思。再往后，它才慢慢被借到别的领域，专门借它那种“非正规、高机动、以小博大”的感觉。也正因为这个来路，今天很多非军事用法里，guerrilla 不只是“省钱灵活”，还常带一点“绕开正规渠道、突然出手”的侧面。\n\n**各路用法** · 几个例子，先感受它在不同语境里到底借了什么劲。\n\n**军事,新闻报道**\n> The army struggled against guerrilla tactics such as harassment and sabotage.  \n> 这支军队在应对游击战术时很吃力，比如骚扰和破坏这类做法。\n\n这里的 guerrilla tactics 不是泛泛的“灵活”，而是典型的不正规作战：小股、分散、独立行动，不跟你正面排阵。\n\n**职场,项目讨论**\n> We need a guerrilla approach to reach smaller clinics without a big ad budget.  \n> 我们需要一种游击式的办法，在没有大笔广告预算的情况下触达更小的诊所。\n\n这里不是说“打仗”，而是说资源不多，但打法要灵活、分散、出其不意。\n\n**职场,产品传播**\n> They ran a guerrilla marketing campaign in subway stations and coffee shops.  \n> 他们在地铁站和咖啡店里做了一场游击式营销活动。\n\n这里的重点是非常规、低成本、借场景、借人流，而不是传统那种铺天盖地的投放。\n\n**社区,城市空地**\n> Some residents started guerrilla gardening on the vacant lot.  \n> 一些居民开始在那块空地上进行游击式种植。\n\n这个搭配很值得记：它不只是“低成本种花种草”，还常常带“未经许可，先动手把一块地方种起来”的意思，所以 guerrilla 这里多了一层绕开正规批准的味道。\n\n**影视,独立拍摄**\n> They shot the film in a guerrilla style with a tiny crew and borrowed locations.  \n> 他们用一种游击式拍法拍这部电影：团队很小，场地也是借来的。\n\n这里更像行业里的常见说法：重点是超低预算、小团队、现场解决问题，不按标准工业流程走。\n\n**原生思维** · 英语母语者用 guerrilla 的时候，往往是在把一件事想成：正面硬打太贵、太慢，或者根本进不了正式通道，那就改用机动、分散、突袭、借空档的方式解决。它的核心不只是“秘密”，更是“非正规但有效”；而在一些搭配里，它还常带未经许可、绕开程序、突然出现的侧面。所以它一旦从军事进入商业、媒体、园艺、艺术，就总在传达同一件事：我不靠大规模碾压，我靠方式够活、时机够准、路径不按常规。\n\n顺手提醒一句：guerrilla 是“游击”，不是 gorilla“猩猩”，这两个词长得很像，也确实很容易混。\n\n**悟道时刻** · 这个词真正值得记住的，不是“游击队”这一个中文对应，而是它背后的动作逻辑：不走正门，不拼规模，专找系统最松、最慢、最没防备的地方切进去。你以后看到 guerrilla marketing、guerrilla gardening、guerrilla tactics，先别急着想“军事不军事”，先问一句：这里是不是在说一种绕开常规、借机动和突然性把小资源打出大效果的做法。抓住这根骨架，guerrilla 的很多搭配都会自己亮起来。",
+    "verification": {
+      "claimCount": 7,
+      "confirmedCount": 5,
+      "softenedCount": 3,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "这个词最原始的画面，是一小股人不按常规军队的方式打仗：不排整齐队列，不正面硬碰，而是…",
+        "guerrilla 这词带着一种‘边缘、灵巧、非主流但有攻击性’的气味。",
+        "所以你会看到 guerrilla marketing、guerrilla filmm…",
+        "它来自西班牙语 guerrilla，原本就是‘打小仗的人、小规模战争’的意思，和 g…",
+        "这个词先是实打实的军事词，后来慢慢被借到别的领域，专门借它那种‘非正规、低资源、高机…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/guerrilla"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/guerrilla%20warfare"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/guerrilla"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/guerrilla"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/guerrilla-marketing"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/guerrilla-gardening"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/guerrilla_1"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/guerrilla_2"
         }
       ]
     }
@@ -2631,6 +3138,62 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "maiden": {
+    "displayWord": "maiden",
+    "meta": [
+      "首次亮相 · 历史用语 · B2-C1",
+      "Issue 006"
+    ],
+    "markdown": "**字面含义** · 这个词最早会让人看到一个“未婚的年轻女子”的画面：还没进入婚姻关系，带着一点古早、书面、带时代感的气息。它不是那种今天日常里会自然蹦出来的词，更像是从旧故事、诗歌、仪式感很强的表达里走出来的。\n\n**本体质感** · maiden 的质感很“旧”，也很“轻”——至少今天读起来常常如此。它身上似乎有一种“尚未经历、初次登场”的感觉，所以后来很自然地活进了一些固定搭配里，比如 maiden voyage、maiden flight、maiden speech。这里被激活的，往往已经不再是“未婚女子”这个人物形象本身，而是“第一次、最初、未曾经历”的那层意味。  \n它和 girl、woman、lady 不是同一条线上的替换词：girl 更日常，woman 更中性，lady 更带礼貌或修辞色彩；maiden 则明显更古典、更文学，也更容易让人联想到一种被历史感包裹的女性形象。放在现代英语里，单独指人时，它往往显得有点陈旧，甚至带一点距离感。\n\n**寻根溯源** · maiden 来自古英语 mæden / mægden，原本就是“年轻未婚女子”的意思。这个人物义并没有彻底消失，但在现代英语里多半已经退到文学、旧式或特定场景里。与此同时，它在一些固定搭配和制度化表达中顽强地保留下来，尤其发展出了“首次的、最初的”这条稳定支线。  \n所以今天看 maiden，你会同时看到两层残影：一层是古老的人物义，一层是后来被搭配固定下来的“初次义”。像 maiden name 这样的说法，还直接把“未婚”那层旧义保存到了现代身份信息场景里。\n\n**各路用法** · 几个例子看它怎么在现代英语里活着：\n\n**文学/历史语境**\n> The novel describes a maiden who leaves her village for the first time.\n> 这部小说描写了一位第一次离开村庄的少女。\n\n这里的 maiden 还是人物词，而且明显带文学、旧式叙事的味道，不是随口说“女孩”。\n\n**议会/正式发言**\n> The senator delivered her maiden speech in Parliament.\n> 这位参议员在议会发表了她的首次正式发言。\n\n这里的 maiden speech 不是泛指任何“第一次发言”，而是很有制度色彩的固定说法，常指议员在议会中的首次正式发言。\n\n**航空/工程语境**\n> The rocket completed its maiden flight successfully.\n> 这枚火箭顺利完成了首次飞行。\n\n到了 maiden flight 这种搭配里，maiden 基本就是“首次的、初次的”。词还是旧的，但功能已经非常现代。\n\n**表格/身份信息**\n> Please enter your maiden name.\n> 请输入你的婚前姓氏。\n\nmaiden name 是现代人很容易真实遇到的用法。这里它保留的不是“初次”，而是“未婚时的”那层老义。\n\n**赛马语境**\n> The colt finally earned his maiden win last weekend.\n> 这匹小公马终于在上周末拿下了生涯首胜。\n\n这个说法主要活在赛马里。更准确地说，maiden 在赛马中还可以直接指“从未赢过比赛的马”，所以 maiden win 不是普通英语里的“第一次赢”，而是一个很稳定的行业用法。\n\n**原生思维** · 英语母语者看到 maiden，不一定是在处理一个现代、通用的人物称呼；很多时候，他们其实是在识别一个被历史保留下来的词壳。放进不同搭配里，它会激活不同旧层：有时是“未婚”，如 maiden name；有时是“首次、最初”，如 maiden voyage、maiden flight、maiden speech。  \n所以它在现代英语里常常不是自由生长的词，而是活在固定搭配和特定语域里。你不必急着把它统一翻成一个中文词，先看它保留的是哪一层旧义，往往更准。\n\n**悟道时刻** · maiden 真有意思的地方，在于它不是简单地“从少女变成首次”，而是旧义没有完全死，新义也没有完全吞掉旧义。它像一枚老词，被现代英语分装进了不同搭配里继续使用。\n\n下次遇到这种词，别急着问“它到底是什么意思”，先问：这个搭配把它身上的哪一层旧义保存下来了？你一旦学会这样看词，很多看似古怪的英语固定搭配都会突然变得很顺。",
+    "verification": {
+      "claimCount": 17,
+      "confirmedCount": 5,
+      "softenedCount": 3,
+      "uncertainCount": 2,
+      "rejectedCount": 2,
+      "checked": [
+        "这个词最早会让人看到一个‘未婚的年轻女子’的画面。",
+        "它不是那种今天日常里会自然蹦出来的词，更像是从旧故事、诗歌、仪式感很强的表达里走出来…",
+        "maiden 的质感很‘旧’，也很‘轻’。",
+        "所以常和 ‘first/early/initial’ 这类词结伴出现，去借它那种‘第…",
+        "比如 maiden voyage、maiden speech、maiden win。"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/maiden"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/maiden"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/maiden_1"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/maiden"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/maiden-speech"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/maiden%20name"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.co.uk/definition/english/maiden-name"
+        },
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maiden_race"
+        }
+      ]
+    }
+  },
   "mount": {
     "displayWord": "mount",
     "meta": [
@@ -2727,6 +3290,54 @@ window.WORD_SENSE_ENTRIES = {
         {
           "label": "Cambridge Dictionary",
           "url": "https://dictionary.cambridge.org/dictionary/english/navigate"
+        }
+      ]
+    }
+  },
+  "obliterate": {
+    "displayWord": "obliterate",
+    "meta": [
+      "彻底摧毁 · 抹除痕迹 · C1",
+      "Issue 006"
+    ],
+    "markdown": "**字面含义** · 这个词最原始的画面不是“弄坏一点”，而是把东西彻底抹掉、打没，或者压到你几乎看不出它原来的样子。你脑子里可以先浮出“被抹平”“被清空”“连痕迹都难留下”的感觉。\n\n**本体质感** · obliterate 说出来的时候，力道通常是很重的，不是轻轻擦掉。它常带一种“压倒性地消除”的感觉：对象不只是受损，而是变得不再可见、不再清楚，或者不再值得被当作“还完整在那儿”的东西看待。有些时候它是真的毁掉了，有些时候则只是遮蔽、抹平到你认不出来。大致来看，它常比 destroy 更强调“痕迹和原样也一起没了”，比 erase 更有物理冲击感；而且这是个偏正式、强语气的词，放在口语里时往往会带一点夸张。\n\n**寻根溯源** · 它来自拉丁语，早期确实跟“擦掉文字、抹去、使消失”这一类动作有关。英语里大约在 16 世纪中期就能见到它，早先一条线是“从记忆中抹去”，后来又用于把字迹、痕迹弄得看不见，再慢慢扩展到更广的“彻底毁掉”或“从存在中移除”。所以这个词一路走来的核心，比较稳的一种说法不是单纯“毁”，而是把东西弄到不再可见、不可辨认，或者不再被保留。\n\n**各路用法** · 几个例子，感受一下它不只是“狠狠干碎”，也包括“抹痕迹、遮到看不见、从记忆里消失”这几条线：\n\n**雪地里,找脚印**\n> The snow obliterated their footprints within minutes.\n> 大雪几分钟内就把他们的脚印全抹没了。\n\n这是很核心的 obliterate：不是抽象地“破坏”，而是把痕迹直接盖掉、抹平，让你再也辨认不出来。\n\n**回忆里,记不清那晚**\n> Everything that happened that night seemed to be obliterated from his memory.\n> 那天晚上发生的一切，似乎都从他的记忆里被抹掉了。\n\n这里走的是 memory 这条高频线。重点不是“受伤了”，而是那段内容像被从可提取的记忆里清空了。\n\n**天气里,窗外什么都看不见**\n> Fog had obliterated the view.\n> 大雾把眼前的景色全遮没了。\n\n这句很重要，因为它提醒你：obliterate 不一定总是“摧毁”，也可能只是遮蔽到看不见。\n\n**职场,报告里**\n> The latest outage obliterated all the progress we’d made that morning.\n> 最近这次故障把我们那一上午做出来的进展全毁掉了。\n\n这里不是普通的 delay 或 hurt，而是那种前面的努力被整块抹掉，等于白干了。\n\n**日常,朋友聊天**\n> The heat obliterated any desire I had to go out today.\n> 这么热，我今天一点出门的欲望都没了。\n\n这里是很自然的引申义，不是真的“毁灭”了什么实体，而是把某种感觉压到几乎不存在。\n\n**社媒评论区**\n> That performance obliterated every other act on the lineup.\n> 那场表演把同场其他节目都碾压了。\n\n这种说法在评论区和口语里常见，属于很重的夸张延伸：不是词典核心义项在排队展示，而是借 obliterate 的“打到对方都没轮廓了”去表达吊打全场。\n\n**原生思维** · 英语母语者用 obliterate 的时候，脑子里往往不是只在做“程度更高一点”的比较，而是在做一种“让对象失去可见性、可辨认性、可保留性”的判断。它关注的不只是“把对象打没”，也包括把痕迹抹掉、把边界抹平、把记忆清空、把视野遮住。中文里我们会说“秒杀”“碾压”“打没了”，但 obliterate 更像是把“存在痕迹”直接从画面里删掉。\n\n**悟道时刻** · obliterate 真正厉害的地方，不只在“狠”，而在它盯着“还能不能认出来”下手。东西可以没坏透，但只要痕迹、边界、记忆、视野被抹到认不出，它就已经进入这个词的世界了。\n\n以后你再遇到 erase、wipe out、annihilate、eradicate，别只比强弱，去看它们各自在消除什么：是痕迹，是空间，是对象，还是根。看懂这条线，你记住的就不是一个重词，而是一整套英语处理“消失”的方式。",
+    "verification": {
+      "claimCount": 10,
+      "confirmedCount": 5,
+      "softenedCount": 5,
+      "uncertainCount": 1,
+      "rejectedCount": 2,
+      "checked": [
+        "这个词最原始的画面不是‘弄坏一点’，而是把东西彻底抹掉、打没、让它不再以原来的样子存…",
+        "它带一种‘压倒性的消灭感’……原来的轮廓、边界、可辨认性都没了。",
+        "它比 destroy 更狠一点，比 erase 更暴力一点，比 wipe out 更…",
+        "它来自拉丁语，最早跟‘擦掉、消除、使不再被看见’这一类动作有关。",
+        "这个词一路走过来，核心一直都在‘把可识别性拿掉’上，只是后来从写字、痕迹、记忆，扩展…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/obliterate"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/obliterate"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/obliterate"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/obliterate"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/obliterate_v"
+        },
+        {
+          "label": "Dictionary.com",
+          "url": "https://www.dictionary.com/browse/obliterate"
         }
       ]
     }
@@ -2833,6 +3444,54 @@ window.WORD_SENSE_ENTRIES = {
         {
           "label": "Merriam-Webster",
           "url": "https://www.merriam-webster.com/dictionary/have%20someone%20pegged"
+        }
+      ]
+    }
+  },
+  "pledge": {
+    "displayWord": "pledge",
+    "meta": [
+      "郑重承诺 · 抵押捐赠 · B2",
+      "Issue 006"
+    ],
+    "markdown": "**字面含义** · 最早它更像是把某种担保先放到台面上：可能是保人、担保，也可能是作为抵押交出去的东西。到今天，这个画面已经更多转成语言里的动作——不是随口说一句，而是把承诺郑重地摆出来，让人记得住、追得上。\n\n**本体质感** · pledge 的核心感觉，可以理解成：不只是“我会”，而是“我郑重地把这句话压上分量”。它通常比 promise 更正式、更郑重，也更常见于公开、制度化、可被记录的场景。  \n它常常不是在描述一个轻松的未来安排，而是在给承诺加重量——像在把自己绑定到某个方向上。和 promise 相比，promise 往往更中性、更日常；pledge 则更像声明、誓言、捐助承诺、政治表态这种带姿态的说法。你会感觉说 pledge 的人，已经不只是“想做”，而是在“把自己放进一个承诺结构里”。  \n但这里也别把它理解得太死：pledge 并不只属于公开场合，私人场景也能用；只是语气会明显更重，甚至有时会带一点故意把话说重的效果。\n\n**寻根溯源** · 这个词和古法语、拉丁语系统有关，早期跟“担保、保人、抵押、保证”这一类动作连得很紧。更准确地说，它一开始靠近的是 surety、bail、security 这条线，而不只是今天我们熟悉的“承诺”。  \n从时间线上看，英语里较早的 pledge 先有“担保、保释、抵押物”这层意思；到后面，才更明确地发展出今天常见的“郑重承诺”义。也正因为这样，它身上一直留着一种担保色彩：从词源上看，像是先把责任放到台面上，再把话说出口。后来它逐渐从物理和法律上的“担保/抵押”，扩展到更广的“郑重承诺、宣誓、正式表态”。\n\n**各路用法** · 几个例子，感受它在不同场合里的分量：\n\n**职场,公告/新闻稿**\n> The company pledged to reduce emissions by 50% over the next decade.\n> 这家公司承诺在未来十年内将排放量减少 50%。\n\n这里不是普通地说“计划”，而是在公开场合做一种带责任感、以后可能会被拿来对照的承诺。\n\n**政治,竞选承诺**\n> The candidate repeated his campaign pledge to lower taxes.\n> 这位候选人再次重申了自己减税的竞选承诺。\n\ncampaign pledge 是很典型的现代用法。这里的 pledge 不是一时表态，而是会被公众记账、以后拿来追责的承诺。\n\n**公益,募捐页面**\n> She made a pledge of $500 to the charity.\n> 她向这家慈善机构承诺捐赠 500 美元。\n\n这里的 pledge 很常落在“捐款承诺”上：钱未必当场已经交出去，但这个承诺本身已经被正式记下。\n\n**制度,宣誓效忠**\n> The children stood and pledged allegiance to the flag.\n> 孩子们站起来，向国旗宣誓效忠。\n\n`pledge allegiance` 是一个很高频、也很能体现这个词气质的固定搭配。它把“郑重”“公开”“制度化”几层感觉一下子都带出来了。\n\n**法律/财务,抵押担保**\n> He pledged his watch as security for the loan.\n> 他把手表作为这笔贷款的抵押物。\n\n这就是它较早、也更“硬”的那条义线：把东西押上去，作为担保。你会发现，今天 pledge 在承诺义里的重量感，和这条老义项其实是连着的。\n\n**关系,约束自己**\n> She was pledged to secrecy until the deal was announced.\n> 在这笔交易公布之前，她被要求誓守秘密。\n\n这里的重点不是“答应一下”，而是进入一种受约束的状态。`be pledged to secrecy` 很能说明：pledge 之所以重，不只是语气重，而是真的常用来表达一种结构性的绑定。\n\n**日常,跟朋友**\n> He pledged that he would stop checking his phone during dinner.\n> 他郑重保证，吃饭的时候不再看手机了。\n\n这句当然也能成立；只是放在朋友之间，如果用 pledge，语气会显得刻意更重，甚至有点半开玩笑地把普通保证说成“郑重誓言”。\n\n**原生思维** · 英语母语者用 pledge 时，脑子里常常不只是“说了一句未来的话”，而更像是“我把自己正式押进这句话里了”。它常带公开或可被记录的意味，至少会让承诺显得更正式、更可追责。中文里我们常用“承诺、保证、誓言”分别抓住不同侧面，但 pledge 往往把这些侧面压到同一个词里。  \n也可以把它理解成一个介于 promise、oath 和 official statement 之间的词：有 promise 的内容，有 oath 的郑重，也常带一点可对外陈述、可被制度或公众记住的感觉。顺着这个思路，你就更容易理解为什么它会同时出现在竞选承诺、募捐承诺、效忠宣誓，甚至抵押担保这些看似分散的场景里。  \n如果你在美式语境里看到 a pledge，它还可能指“已承诺加入兄弟会/姐妹会、但尚未正式成为成员的人”。这也是同一条逻辑：先作出归属承诺，再等待正式接纳。\n\n**悟道时刻** · pledge 真正特别的地方，不是“承诺”这个表层意思，而是它总让承诺带上一点担保感、绑定感、可追责感。它不像随口说一句“我会”，更像把自己和一句话拴在了一起。\n\n以后再遇到 promise、vow、commitment 这些词时，可以先问一句：这里说话的人，是在表达意愿，还是在把自己正式押上去？一旦你能看见这层重量，pledge 就不会再只是“承诺”的另一个翻译。",
+    "verification": {
+      "claimCount": 13,
+      "confirmedCount": 5,
+      "softenedCount": 7,
+      "uncertainCount": 1,
+      "rejectedCount": 0,
+      "checked": [
+        "最早它像是‘把某样东西郑重地递出去、押出去’",
+        "这个词和古法语、拉丁语系统有关",
+        "早期跟‘抵押、保证、承诺’这一类动作连得很紧",
+        "它的骨架一直没变：把某种责任先摆出来，让别人知道这不是随口一提，而是有担保意味的",
+        "后来它逐渐从‘担保/抵押’的物理和法律意味，扩展到今天更广的‘郑重承诺、宣誓、正式表…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/pledge"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/pledge"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries（noun）",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/pledge_2"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries（verb）",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/pledge_1"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/pledge"
+        },
+        {
+          "label": "Britannica Dictionary",
+          "url": "https://www.britannica.com/dictionary/pledge"
         }
       ]
     }
@@ -3322,6 +3981,54 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "royalty": {
+    "displayWord": "royalty",
+    "meta": [
+      "王室身份 · 版权收入 · B2",
+      "Issue 006"
+    ],
+    "markdown": "**字面含义** · 这个词最直观的画面，确实是“王室那一类人”——国王、王后、王子、公主，或者更广一点，和王权、王室有关的东西。你先看到的往往不是抽象权力本身，而是一种带着冠冕、礼仪、距离感的存在。\n\n**本体质感** · royalty 这个词自带一种“抬高半级”的空气。它不是单纯说“王”，而是把人放进一整套王室秩序里：头衔、血统、仪式、服装、公开露面时的克制姿态。英语里说 royalty，常常不只是为了指认某个具体人，更是在调动一种被制度、礼仪和传统包起来的尊贵感。  \n它的质地很特殊：一方面是高高在上，另一方面又不是“权力机关”那种硬；它更像一种被看、被代表、被传统托住的身份。中文里如果直接只想到“王室成员”，会漏掉它那层“身份本身就是表演和符号”的味道。  \n但这个词也不只活在王冠和宫殿里。到了现代英语里，royalty 还有一条非常高频的路，走向“因某种权利而持续取得的付款”——也就是版税、使用费、分成。表面看离王室很远，骨子里却还连着“某种被承认的权利会不断带来收益”这条线。  \n如果你在别的语境里看到 royalty，也可能是在说一种“顶级、标杆、最有分量”的气场——那通常是借来的王室感，不是真在谈皇室。\n\n**寻根溯源** · 这个词来自法语和拉丁语系统，核心都绕着“王”这条线走。大致从中世纪英语时期开始，royalty 先指的不是某个王子公主，而更接近“君主的身份、位置、王权本身”。后来，它才稳定发展出“王室成员”这层更具体、也更常见的意思。  \n所以它的语义链，比较稳妥的看法其实是三层：一层是王室成员；一层是王者身份、王权地位、以及由此带出的尊贵气派；再往后，才发展出法律和经济里的付款义——也就是今天很常见的 royalty / royalties，指因出版、音乐、专利、采矿、钻探等权利而支付的版税、使用费或分成。  \n这条路看上去跳得很远，其实没那么断裂：早先是“王所拥有的权利”，后来慢慢变成“某种合法占有或使用某项资源、作品、技术时，需要向权利方持续支付的钱”。\n\n**各路用法** · 先把这词真正会遇到的几条路摆出来。\n\n**正式语境,历史或新闻里**\n> The museum is hosting an exhibition about European royalty in the 18th century.\n> 这家博物馆正在举办一个关于18世纪欧洲王室的展览。\n\n这里的 royalty 就是最标准的“王室/皇室成员”这个集体概念。\n\n**正式表达,强调身份或王权**\n> The ceremony was designed to display the royalty of the crown.\n> 这场仪式被设计出来，就是为了展示王冠所代表的王权与君主地位。\n\n这里说的不是具体哪个王室成员，而更接近“王者身份、王权本身”。这一义项现在没有“王室成员”那么高频，但理解了它，前后的词义链就顺了。\n\n**出版或音乐行业**\n> She earns royalties from her songs.\n> 她靠自己的歌曲持续获得版税收入。\n\n这里的 royalties 是现代英语里极高频的用法。不是“王室们”，而是“作品被使用后，权利人拿到的持续分成”。\n\n**商业或资源开发**\n> The company pays royalties for drilling rights.\n> 这家公司为钻探权支付使用费。\n\n这类 royalties 常见在矿业、石油、天然资源、专利授权这些场景里。重点不是作品，而是“你使用了别人的权利，所以要持续付费”。\n\n**日常,服务体验或夸张表达**\n> We were treated like royalty at the hotel.\n> 我们在那家酒店里被当成王室成员一样对待。\n\n这句不是说你真成了王室，而是在借 royalty 的待遇感：被格外照顾、被隆重对待、几乎不必自己操心。\n\n**娱乐新闻或社媒评论区**\n> She’s considered Hollywood royalty.\n> 她被认为是好莱坞的“王者级”人物。\n\n这里已经是借用，不是字面上的王室，而是说她在那个圈子里地位极高，带着一种名流级、标志性人物的分量。\n\n顺手提醒一个真实使用里的小差别：单数 royalty 更常见于“王室、王权、王者气派”这几条线；到了“版税、分成、使用费”，英语里非常常见的形式反而是复数 royalties。  \n另外，royalty 也不等于泛泛的“贵族”。它更贴近君主家族和王室系统；如果只是说更宽泛的贵族阶层，英语里常会用 nobility 或 aristocracy。\n\n**原生思维** · 英语里这个词常让人联想到的，不只是“权力有多大”，而是“这个人或这套东西，是不是属于一个被仪式和传统包住的身份系统”。它关心的是身份的外壳、公开形象、礼仪距离，以及那种不太像普通人的存在方式。  \n这也是为什么 royalty 会一边指王室，一边又能自然滑到“像王室一样被对待”，再滑到“某个圈子里的顶级人物”。它抓住的不是单纯的统治，而是那种被共同承认、被高规格对待的地位。  \n而当它进入 royalties 这条经济义时，英语保留下来的，反而是另一种很“制度化”的感觉：不是你一次性卖掉了什么，而是因为你拥有某项权利，所以别人每用一次、每开发一步、每卖出一份，就要不断付给你一笔钱。\n\n**悟道时刻** · royalty 的妙，不在于它有几个中文对译，而在于它把“王者地位”这件事拆成了两种现代可见形式：一种是被礼仪和传统托住的身份，一种是被制度和权利持续兑现的收益。  \n\n以后再见到这词，别只问它是不是“王室”。先看它到底在说哪一种高位：是被人仰视的身份感，还是能不断产生回报的权利感。抓到这条线，royalty 就不会再只是一顶王冠。",
+    "verification": {
+      "claimCount": 7,
+      "confirmedCount": 4,
+      "softenedCount": 3,
+      "uncertainCount": 0,
+      "rejectedCount": 1,
+      "checked": [
+        "**royalty** 最直观的画面，是‘王室那一类人’——国王、王后、王子、公主，…",
+        "英语里说 **royalty**，常常不是为了指认某个具体人，而是在召唤那种被制度包…",
+        "这个词来自法语和拉丁语系统，核心都绕着‘王’这条线走。",
+        "**royal** 是‘王的’，**royalty** 先是‘王室身份/王权地位’，…",
+        "英语把它保留下来以后，词义慢慢稳定成两层：一层是‘王室本身’，一层是‘因王室而来的尊…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/royalty"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/royalty"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/royalty"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/royalty"
+        },
+        {
+          "label": "Britannica Dictionary",
+          "url": "https://www.britannica.com/dictionary/royalty"
+        },
+        {
+          "label": "Collins Dictionary",
+          "url": "https://www.collinsdictionary.com/dictionary/english/royalty"
+        }
+      ]
+    }
+  },
   "sense": {
     "displayWord": "sense",
     "meta": [
@@ -3484,6 +4191,62 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "spiral": {
+    "displayWord": "spiral",
+    "meta": [
+      "螺旋轨迹 · 连锁恶化 · B2",
+      "Issue 006"
+    ],
+    "markdown": "**字面含义** · 它最先让人看到的是一种“绕着中心一圈一圈延展开来”的线条或运动。你会想到螺旋楼梯、弹簧、贝壳的纹路，或者某样东西沿着这个轨迹旋转、下落、上升。\n\n**本体质感** · 这个词有一种“被某种力量带着走”的感觉，不是平平地移动，而是一路盘绕着展开。到了现代抽象用法里，它尤其常被用来写那种越转越深、越转越远、最后有些失控的过程：事情不是直线推进，而是在不断放大、偏离、彼此咬合，像被卷进一个自己停不下来的轨道里。  \n英语里说 a spiral，常常不只是单纯在描述形状，也是在借这个形状讲“过程”。Merriam-Webster 甚至直接把它收成 “a continuously spreading and accelerating increase or decrease”，意思很清楚：它可以写上升，也可以写下降；可以是恶化，也可以是强化；重点是那种持续展开、而且往往越来越快的过程感。  \n所以它当然常见于失控局面，但不等于它天然只向下。和相关词相比，decline 更像平缓下坡，slip 更像轻轻一滑，spiral 则更有“转着进入某种局面”的感觉；如果说 unravel 是线头散开，spiral 更像你明明看见它在转，却已经很难拦住。\n\n**寻根溯源** · 它的词源链条大致是这样的：法语 *spiral*，再往前是中世纪拉丁语 *spiralis*，接到拉丁语 *spira*，更早可以追到希腊语 *speira*，核心都和 coil、twist、winding 这类“卷、盘绕、缠绕”有关。  \n也就是说，它一开始确实是个很具体的形状词。后来英语把这个几何画面稳定地拿去描述抽象变化，于是 *spiral* 不再只是“像螺旋”，而是“像螺旋那样沿着某个方向持续展开”，这才慢慢长成今天这些情绪、局势、经济里的常见用法。\n\n**各路用法** · 几个例子，先看它怎么从真实运动走到抽象局势。\n\n**新闻,飞机事故报道**\n> The plane spiraled downward before crashing.\n> 那架飞机在坠毁前沿着螺旋轨迹向下坠落。\n\n这里是很字面的物理运动：不是直直掉下去，而是盘旋着往下。\n\n**日常,跟朋友**\n> Things spiraled after that argument, and nobody could calm him down.\n> 那次争吵之后事情就一路失控了，谁也没法让他冷静下来。\n\n这里的 *spiraled* 不只是“变差”那么轻，而是局面被带着越转越乱。\n\n**职场,会议里**\n> The project spiraled into delays because every small change created more rework.\n> 这个项目因为每个小改动都带来更多返工，最后一路拖进了延期。\n\n这里很适合注意一个高频框架：*spiral into + 名词*。它常用来写进入某种更糟的状态，比如 *spiral into debt*、*spiral into depression*、*spiral into violence*。\n\n**社媒,情绪表达**\n> My anxiety spirals whenever I reread the message.\n> 我每次重读那条消息，焦虑都会越滚越严重。\n\n近年的口语和社媒表达里，它常见于情绪和心理状态，重点是“自己把自己卷进去”。\n\n**媒体评论,形势判断**\n> The situation is spiraling out of control.\n> 局势正在迅速失去控制。\n\n*spiral out of control* 基本就是这条语感主线的成品表达：不是一下炸掉，而是沿着某条轨道越转越脱手。\n\n**评论,描述长期恶化**\n> He fell into a downward spiral after losing his job.\n> 失业之后，他陷入了不断下坠的恶性循环。\n\n*downward spiral* 是非常高频的入口，常用来写情绪、债务、关系、健康一路往下滑，而且越滑越难停。\n\n**商业,写正向增长**\n> Better retention can create an upward spiral of trust and growth.\n> 更好的留存可以形成信任与增长的正向螺旋。\n\n这也提醒你：*spiral* 并不只写坏事。除了 *downward spiral*，也有 *upward spiral*，甚至会有人说 *virtuous spiral*，强调一种彼此强化、越转越好的增长。\n\n**经济,宏观讨论**\n> Policymakers are trying to avoid a wage-price spiral.\n> 政策制定者正试图避免工资—物价螺旋上升。\n\n这是经济里很稳定的术语：工资涨推高价格，价格涨又倒逼工资继续涨，彼此咬合，越转越深。\n\n**日常物件,文具店里**\n> I need a spiral-bound notebook for this class.\n> 我这门课需要一本线圈装订的笔记本。\n\n这也说明 *spiral* 并不只活在抽象隐喻里，它也保留在很具体的日常命名里，比如 *spiral-bound notebook*。\n\n**原生思维** · 英语母语者用 *spiral* 时，脑子里往往不是先想“恶化”这个标签，而是先想“某个过程正在沿着一条盘绕的轨迹展开”。在抽象语境里，这条轨迹常常会带出加速感、牵连感、失控感，所以它特别适合写情绪、冲突、债务、舆论、项目延期这类会自我放大的东西。  \n但你也要留一分宽度：*spiral* 不是“恶化”的专属词，它也可以是中性的盘旋运动，或者正向的相互强化。真正稳定的，不是“坏”，而是“事情不是直着变，而是转着进到另一种状态”。\n\n**悟道时刻** · *Spiral* 真正厉害的地方，不在于它等于“失控”，而在于它把“变化”写成了“轨迹”。一旦英语开始给情绪、关系、价格、项目配上轨迹，你看到的就不只是结果，而是那个把人带走的过程。\n\n以后遇到这类词，别急着翻成“恶化”或“升级”。先问自己一句：它写的是结果，还是一条正在把事情卷进去的路径？这一下看见了，词就活了。",
+    "verification": {
+      "claimCount": 8,
+      "confirmedCount": 5,
+      "softenedCount": 4,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "spiral 最先让人看到的是一种‘绕着中心一圈一圈往外转’的线条或运动。",
+        "英语里说 a spiral，常常不是单纯在描述形状，而是在借这个形状讲‘过程’。",
+        "它常带着一种动态失控感……像被卷进一个自己停不下来的过程里。",
+        "它来自拉丁语一类表示‘卷绕、螺旋状’的词根，最早就和‘绕圈的形状’绑定在一起。",
+        "后来这个具体的几何画面被拿来描述抽象过程，于是就有了今天这种常见的转义。"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/spiral"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/spiral"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/spiral"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/spiral_1"
+        },
+        {
+          "label": "Collins English Dictionary",
+          "url": "https://www.collinsdictionary.com/us/dictionary/english/spiral"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/spiral-bound"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/spiral-bound"
+        },
+        {
+          "label": "IMF Working Paper",
+          "url": "https://www.imf.org/-/media/files/publications/wp/2022/english/wpiea2022221-print-pdf.pdf"
+        }
+      ]
+    }
+  },
   "stale": {
     "displayWord": "stale",
     "meta": [
@@ -3581,6 +4344,58 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "streak": {
+    "displayWord": "streak",
+    "meta": [
+      "连续纪录 · 条纹痕迹 · B2",
+      "Issue 006"
+    ],
+    "markdown": "**字面含义** · streak 最早给人的画面，是“拉出一条长长的痕迹”——像液体流下来的印子，像光在玻璃上扫过的一道亮线，或者像某个东西在表面上留下的一条线。它本身带着“细、长、连续”的视觉感。\n\n**本体质感** · 这个词的一个核心感觉，不是“一个点”，而是“连成一线”。母语者说 streak 时，很多时候不是在数次数，而是在看一种走势：一段时间里不断发生、没断开、像被串起来的状态。  \n它有一种“已经滑起来了”的感觉，所以常见于连胜、连败、连续打卡、连续好运或坏运。  \n如果你在语感上分层，可以粗略把它感觉成这样：streak 比 series 更像“没被打断的长度”，比 habit 更强调“这段时间里正在持续出现的表现”。但这更像语感上的辨认，不是死板边界。  \n同时别忘了，streak 也不只讲“连续表现”。它还保留着“条纹、痕线”的本义，也能指人性格里一条很明显的倾向。\n\n**寻根溯源** · 这个词来自古英语体系，早期就有“线、笔画、运动轨迹一类的线状痕迹”的意思。后来它又扩展出今天常见的这些用法：既可以指表面上一道明显的线，也可以指时间上连续的一段表现、记录，甚至指性格里持续显出来的一股倾向。  \n所以它现在常见的几条路子，背后大致都还能看到那条“线”的影子：有时是看得见的痕迹，有时是时间上没断掉的延续，有时是一个人身上反复冒出来的那股劲。\n\n**各路用法** · 几个例子，先看它在不同场景里怎么落地：\n\n**日常，聊比赛**\n> She’s on a three-game winning streak.\n> 她已经连赢三场了。\n\n这句话重点不在“赢了三次”这个数字，而在“这股势头还没断”。反过来说 losing streak 也很常见，就是连败。\n\n**日常，聊生活习惯**\n> I’m trying to keep my workout streak going.\n> 我在努力保持连续锻炼的记录。\n\n这里的 streak 很像“不断档”，说的是一段持续性被维持住了。它很常出现在自我追踪、打卡、健康应用这类语境里。\n\n**社媒，打卡/应用提醒**\n> I lost my Duolingo streak yesterday.\n> 我昨天把多邻国的连续打卡记录断了。\n\n在社媒和应用里，这个词特别适合那种“连续天数”“连续记录”的语境。像 Snapchat、Duolingo 这种平台，几乎就是把 streak 做成了一个产品机制。\n\n**日常，聊运气或状态**\n> She’s on a lucky streak lately.\n> 她最近运气正旺，连着顺了一阵。\n\n这里不一定是正式比赛意义上的“连胜”，也可以是好运、手感、状态连续在线。hot streak 也是类似感觉，指一段特别顺、特别热的状态。\n\n**日常，描述个性或倾向**\n> He has a competitive streak.\n> 他骨子里有点好胜。\n\n这里已经不是“连续几次”了，而是“某种倾向在他身上一直很明显”，像性格里拉出的一道线。类似地，也会说 someone has a stubborn streak，表示那个人身上有一股拧劲。\n\n**文学感，描述快速掠过**\n> A shooting star streaked across the sky.\n> 一颗流星飞快划过天空。\n\n这里 streak 变成了动词，意思是“疾驰而过、划出一道线地掠过”。它一下把这个词最原始的画面拉回来了：线，不只是静止的线，也是速度留下的线。\n\n**原生思维** · 英语母语者说 streak，常常不是只在想“数量”，而是在想“这条线还在不在”。中文里我们会说“连着”“连续”“一阵子”“一口气”，但英语经常把这些感觉压缩进一个词里，而且这个词自带画面：一条不断开的痕迹。  \n所以它特别适合拿来讲“状态正在延续”这件事。你一旦抓住这个点，就会发现，在它表示连续记录或表现时，streak 不是“很多次”的同义词，而是“中间没有断”的表达工具。它更看走势，不只看总数。  \n再往前一步，streak 还有一个很英语的地方：它能把“表面上的一条线”“时间上的一段连续”“性格里的一股倾向”收进同一个词里。这不是中文常用的打包方式，但英语很自然。\n\n**悟道时刻** · streak 真正厉害的地方，不是它能表示“连续”，而是它把连续说成了一条线：看得见、没断掉、还带着走势。你以后再遇到连胜、打卡、好运，甚至某种性格倾向，不妨先问一句：这里有没有一条一直在延伸的线？\n\n一旦你能这样看，streak 就不只是一个词义点，而是一种识别方式。语感上再拿它去和 run、spree、spell 一起比较，很多“这一阵子发生得很密、很顺、很不断”的表达，会一起亮起来。",
+    "verification": {
+      "claimCount": 16,
+      "confirmedCount": 7,
+      "softenedCount": 4,
+      "uncertainCount": 1,
+      "rejectedCount": 0,
+      "checked": [
+        "**streak 最早给人的画面，是‘拉出一条长长的痕迹’——像液体流下来的印子，像…",
+        "**这个词的核心不是‘一个点’，而是‘连成一线的持续性’。**",
+        "**母语者说 streak，脑子里常常不是在数次数，而是在看一种走势：一段时间里不断…",
+        "**它有一种‘已经开始滑起来了’的感觉，所以常见于连胜、连败、连续打卡、连续好运/坏…",
+        "**它比单纯的 series 更带身体感，比 habit 更强调‘这段时间正发生着什…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/streak"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/streak"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/streak_1"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/streak"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/streak_n1"
+        },
+        {
+          "label": "Snapchat Support",
+          "url": "https://help.snapchat.com/hc/en-us/articles/7012394193684-How-do-Streaks-work-and-when-do-they-expire"
+        },
+        {
+          "label": "Duolingo Help Center",
+          "url": "https://www.duolingo.com/help/what-is-a-streak"
+        }
+      ]
+    }
+  },
   "surge": {
     "displayWord": "surge",
     "meta": [
@@ -3633,6 +4448,107 @@ window.WORD_SENSE_ENTRIES = {
         {
           "label": "Vocabulary.com",
           "url": "https://www.vocabulary.com/dictionary/surge"
+        }
+      ]
+    }
+  },
+  "tap into": {
+    "displayWord": "tap into",
+    "meta": [
+      "资源调用 · 潜力利用 · B1-B2",
+      "Issue 006"
+    ],
+    "markdown": "**字面含义** · 这里的 tap 不是 tap the table 那种“轻敲”，而更接近龙头、酒桶口、出水口那一路：从一个现成来源里引流、接上、取用。into 再把动作带向内部，所以 tap into 的画面，与其说是“打开一个东西”，不如说是“借着一个入口，把里面本来就有的那股东西接出来”。\n\n**本体质感** · 这个短语的手感，还是很像“接电、接水、接信号”：不是自己造出来，而是把现成的流动、储备、能量、资源接过来。英语里说 tap into，常常会带一点“本来就在那里，只是现在把它接上了”的感觉：可以是资源、市场、用户需求、情绪、潜力、记忆，也可以是团队里已经有的知识、公司手上的储备金。  \n它和 simply use、access 的区别，不必说得太死，但很多时候，tap into 确实更容易让人感觉到：你不是单纯“使用”一个东西，而是在顺着一个已经存在的来源去取用。中文里常会翻成“挖掘”“利用”“调动”，这些都不算错；只是 tap into 往往更像找到了入口，顺势连上。  \n它常见的质感是：轻、准、顺，不是硬碰硬。\n\n**寻根溯源** · 这个短语之所以这么有画面感，和 tap 背后的老隐喻有关。它更直接承接的，不是“轻轻敲”的 tap，而是“龙头、塞口、把液体从容器里放出来”这条义线。你可以想成酒桶开口、管道接通、水源被引出来：重点不是制造内容，而是从已有供应里把它导出来。  \n所以后来它很自然就从“引流、取用现成来源”扩展到抽象世界：tap into a market，tap into expertise，tap into reserves，tap into emotion。字面动作一旦成立，抽象用法就一点也不飘了。\n\n**各路用法** · 几个例子，在不同场域里你感受一下区别。你会发现它大致有两簇高频用法：一簇是动用既有资源、储备、知识；一簇是触及已经存在的情绪、需求、心理脉冲。\n\n**职场,会议里**\n> We need to tap into a new customer segment if growth is going to continue.\n> 如果增长要继续，我们得切入一个新的客户群。\n\n这里不是“创造”一个客户群，而是把现有市场里的某个部分接上。\n\n**职场,邮件里**\n> She has a strong ability to tap into what users actually care about.\n> 她很擅长把握用户真正关心什么。\n\n这里的重点不是泛泛地“知道”，而是接上用户真实在意的那股东西。\n\n**公司经营,财务讨论**\n> The company had to tap into its cash reserves during the downturn.\n> 公司在低迷期不得不动用自己的现金储备。\n\n这是特别高频的一支：tap into 很常用来表示动用既有储备，而不是凭空找来新钱。\n\n**团队协作,项目复盘**\n> We’re trying to tap into the expertise already on the team.\n> 我们正试着利用团队内部已经具备的专业能力。\n\n这里很能体现这个短语的核心：资源已经在那儿，你要做的是把它接上、调动起来。\n\n**工作状态,高压时刻**\n> She knows how to tap into her creativity under pressure.\n> 她知道怎样在压力之下调动自己的创造力。\n\n这里是把原本就在自己内部的能力引出来，不是临时编造。\n\n**社媒,评论区**\n> This show really taps into a lot of people’s loneliness.\n> 这部剧真的触及了很多人的孤独感。\n\n这里的对象不一定是“资源”，也可以是集体情绪；tap into 带的是“接入某种已经存在的心理能量”。\n\n**影评,文化评论**\n> The movie seems to tap into a general sentimentality about animals.\n> 这部电影似乎触动了人们对动物普遍存在的那种感伤情绪。\n\n这类用法在媒体、评论、文化写作里也很常见：它不是单说“煽情”，而是说作品接上了社会里本来就在流动的一股情绪。\n\n值得注意的是，tap into 在商业、产品、市场、心理这些语境里都很活跃；职场里你也会经常看到它接 funds、reserves、data、expertise 这类宾语。看到它时，脑子里通常先想到“接上某种已有来源”，会比先想到“直接使用”更贴切。\n\n**原生思维** · 英语母语者用 tap into 的时候，很多时候想的不是“我去控制这个东西”，而是“我找到一个入口，把我和里面那股已有的资源或力量连起来”。所以它能自然地用于抽象对象：潜力、灵感、文化记忆、群体焦虑、消费者欲望，也能落在很实的对象上：储备金、数据、专业知识。  \n中文里我们也说“调动”“激发”“挖掘”，但英语这边常常更像在说：那股东西本来就在流，你现在只是把它接通了。你也可以把它想成一种很轻的连接感——既有一点技术性的“接入”，也保留了一点直觉上的“顺势而取”。\n\n**悟道时刻** · tap into 真正值得记的，不是某个固定中文译法，而是它背后的动作模型：不是从无到有地制造，而是从已有来源里接出、调动、引流。\n\n以后再看到它，先别急着翻“利用”还是“挖掘”，先问一句：这句话里，哪样东西本来就已经存在？一旦你抓住这个“现成来源”的感觉，很多抽象句子都会突然落地。",
+    "verification": {
+      "claimCount": 9,
+      "confirmedCount": 5,
+      "softenedCount": 4,
+      "uncertainCount": 0,
+      "rejectedCount": 1,
+      "checked": [
+        "**tap into funds / savings / reserves**",
+        "**tap into expertise / data / information**"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/tap%20into"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/tap"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/tap-into"
+        },
+        {
+          "label": "Cambridge Learner’s Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/learner-english/tap-into-sth"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/tap_1"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/spigot"
+        },
+        {
+          "label": "Wiktionary",
+          "url": "https://en.wiktionary.org/wiki/tap_into"
+        }
+      ]
+    }
+  },
+  "tender": {
+    "displayWord": "tender",
+    "meta": [
+      "温柔触感 · 正式投标 · B1-B2",
+      "Issue 006"
+    ],
+    "markdown": "**字面含义** · 你可以把它先想成一种“不能粗来”的状态：肉是嫩的，皮肤或伤处是一碰会疼的，人和情绪则是柔软、经不起重手的。它不一定只是“软”，更像是那种一接触就提醒你：这里要轻一点。\n\n**本体质感** · 这个词大致不是单纯的“软”，而是一种常带着照料感、脆弱感或轻柔感的“不硬”。它身上有一种不硬扛、不粗砺、不冒犯的气息：手法要轻，声音要轻，态度也要轻。放到人身上，它常带一点敏感、容易受伤的底色；放到身体部位上，它又是在说“这里碰了会有反应”；放到局势、关系、面子上，也常暗示这事有点娇嫩、棘手，不能硬推。所以 tender 不是简单地“好”，而是那种一碰就知道不能乱来、需要被小心对待的状态。\n\n**寻根溯源** · 这里有个很值得分清的地方：我们平时最先学到的形容词 tender，和正式语域里那个动词/名词 tender，并不是一条简单直线长出来的。作为形容词，tender 这条线大致来自拉丁语里表示“柔软、娇嫩、幼弱”的来源，后来进入法语和英语，于是才有了“不坚硬”“温柔”“易受伤”“按着会疼”这些彼此相通的意思。至于动词 tender 那种“正式提出、递交”，以及名词里“投标、报价”“法定货币”那条线，则和“伸出、提出、递交”的来源更近一些。也正因为如此，形容词这边你可以用“娇嫩、易受影响、需轻对待”来串，动词和名词那边则更像正式场合里的“提交、提出、可被接受的支付”。\n\n**各路用法** · 几个例子，感受它在不同场域里的质地：\n\n**日常,形容食物**\n> The chicken was so tender that it fell apart with a fork.\n> 这鸡肉嫩到用叉子一拨就散了。\n\n这里的 tender 不是“味道好”，而是口感上那种不费力就能分开的状态。\n\n**日常,形容人或情绪**\n> He has a tender side that most people never see.\n> 他有温柔的一面，大多数人都看不到。\n\n这不是在说“性格软弱”，而是在说他身上有一块很容易被触到的柔软地带。\n\n**医疗,描述身体部位**\n> The area around the cut is still tender.\n> 伤口周围那一片碰着还是疼。\n\n这里就不是“温柔”了，而是“触痛、按着不舒服”，很常见于护理、医学、体检语境。\n\n**日常,固定搭配**\n> The old house needs some tender loving care.\n> 这栋老房子需要一些细心呵护。\n\ntender loving care，常缩写成 TLC，是非常高频的固定说法。它不是泛泛的“照顾”，而是那种带耐心、带感情、轻手轻脚的照料。\n\n**书面,固定搭配**\n> He left home at the tender age of fifteen.\n> 他十五岁那么小就离家了。\n\nat a tender age 指“年纪很小的时候”。这里保留的是“幼弱、娇嫩”那层旧义，所以不是说这个人“温柔”，而是说他当时还很年幼。\n\n**正式书面,动词**\n> She tendered her resignation yesterday.\n> 她昨天正式递交了辞呈。\n\n这里的 tender 已经不是形容词，而是正式语域里的动词，表示“正式提出、递交”。payment、apology、resignation 这类词后面都可能跟它。\n\n**商业,名词**\n> Three firms submitted tenders for the project.\n> 有三家公司为这个项目提交了投标书。\n\n作名词时，tender 常指投标、报价，尤其常见于采购、工程、合同语境。\n\n**法律金融,固定搭配**\n> Cash is legal tender in this country.\n> 现金在这个国家是法定货币。\n\nlegal tender 是高频制度表达，意思不是“温柔的钱”，而是法律认可、可以用来清偿债务的货币。\n\n**现代口语,形容关系氛围**\n> They looked so tender together in that photo.\n> 他们在那张照片里看起来特别温柔亲密。\n\n这种说法在当代口语里也能见到，强调的不是热烈张扬，而是一种让人心软的亲近感。\n\n**原生思维** · 英语母语者用 tender，脑子里常常不是先想“温柔”这个中文词，而更像是在判断：这个东西是不是不耐粗碰。于是它可以是肉的嫩、皮肤的痛、年纪的幼小、感情的柔软，也可以是局势或自尊那种“有点敏感，别硬来”的状态。中文里我们会把这些分散说成“嫩、软、温柔、敏感、疼、年幼”，但英语会把它们收拢到同一个感知簇里。\n\n更容易误判的地方反而是：同样写作 tender，正式文本里的 tender a resignation、submit a tender、legal tender，走的已经不是“温柔”那条直觉线了。读到这里时，别再往“柔软”上靠，而要切换到“正式提出、递交、可接受的支付”这组意思。\n\n**悟道时刻** · tender 最妙的地方，是它一半在身体和情感里，一半在制度和文本里。前一半的识别法是：这里经不起重手；后一半的识别法是：这里是在正式提出、递交、报价或支付。\n\n以后你再见到 tender，先别急着翻成“温柔”。先问一句：它是在说“娇嫩、触痛、需轻待”，还是在说“正式提交、法律认可、商业投标”？这一下分开，整个词就亮了。",
+    "verification": {
+      "claimCount": 11,
+      "confirmedCount": 4,
+      "softenedCount": 5,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "词源核对：查了 Etymonline，并与 OED 检索页、Wiktionary作交叉比对"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/tender"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/tender"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/tender_1"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/tender"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/tender_adj"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/legal%20tender"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/tender%20offer"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/tlc"
         }
       ]
     }
