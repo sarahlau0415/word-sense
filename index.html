@@ -3022,16 +3022,18 @@
         return;
       }
       const fallbackPreview = entryPreview(entry.markdown, "从这份词条里抽出一个用法线索");
-      const surfaceMeaning = card ? `“${card.meaning}”` : `“${fallbackPreview}”`;
-      const slipMeaning = card ? card.meaning : fallbackPreview;
+      const surfaceText = entry.surface || card?.meaning || fallbackPreview;
+      const surfaceMeaning = `“${surfaceText}”`;
+      const issueLabel = (entry.meta || []).find(item => /^Issue \d+$/i.test(item)) || "Word Sense";
+      const slipLabel = issueLabel === "Issue 006" ? "current issue / issue 006" : `archive entry / ${issueLabel.toLowerCase()}`;
 
       showFile(word, {
         surface: surfaceMeaning,
-        slip: `<b>${escapeHtml(word)}</b><br>archive entry<br><br>${escapeHtml(slipMeaning)}`,
+        slip: `<b>${escapeHtml(word)}</b><br>${escapeHtml(slipLabel)}<br><br>${escapeHtml(surfaceText)}`,
         markdown: entry.markdown,
         contrast: [
           ["English in use", `${word} in actual sentences`],
-          ["中文正面写着", card ? `“${card.meaning}”` : `“${fallbackPreview}”`]
+          ["中文正面写着", surfaceMeaning]
         ],
         verification: {
           sources: (entry.verification?.sources || []).slice(0, 5).map(item => [item.label, item.url])

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the curated 19-word WordSense Issue 006 batch."""
+"""Run the curated 18-word WordSense Issue 006 batch."""
 
 from __future__ import annotations
 
@@ -20,24 +20,24 @@ from run import (
 
 
 ISSUE_006_WORDS = [
-    {"word": "gimmick", "meta": ["营销表达 · 吸睛手法 · B2", "Issue 006"]},
-    {"word": "gross", "meta": ["感官评价 · 数量总额 · B1-B2", "Issue 006"]},
-    {"word": "royalty", "meta": ["王室身份 · 版权收入 · B2", "Issue 006"]},
-    {"word": "cannibalize", "meta": ["商业竞争 · 自我蚕食 · B2-C1", "Issue 006"]},
-    {"word": "tap into", "meta": ["资源调用 · 潜力利用 · B1-B2", "Issue 006"]},
-    {"word": "feature", "meta": ["产品特性 · 重点呈现 · B1-B2", "Issue 006"]},
-    {"word": "guerrilla", "meta": ["游击策略 · 非常规行动 · B2", "Issue 006"]},
-    {"word": "epitome", "meta": ["典型代表 · 高度概括 · C1", "Issue 006"]},
-    {"word": "maiden", "meta": ["首次亮相 · 历史用语 · B2-C1", "Issue 006"]},
-    {"word": "blunt", "meta": ["直接表达 · 钝化触感 · B1-B2", "Issue 006"]},
-    {"word": "flex", "meta": ["弯曲动作 · 展示实力 · B1-B2", "Issue 006"]},
-    {"word": "obliterate", "meta": ["彻底摧毁 · 抹除痕迹 · C1", "Issue 006"]},
-    {"word": "derogatory", "meta": ["贬损表达 · 语用边界 · C1", "Issue 006"]},
-    {"word": "streak", "meta": ["连续纪录 · 条纹痕迹 · B2", "Issue 006"]},
-    {"word": "tender", "meta": ["温柔触感 · 正式投标 · B1-B2", "Issue 006"]},
-    {"word": "pledge", "meta": ["郑重承诺 · 抵押捐赠 · B2", "Issue 006"]},
-    {"word": "demeanor", "meta": ["外在举止 · 人际观感 · C1", "Issue 006"]},
-    {"word": "spiral", "meta": ["螺旋轨迹 · 连锁恶化 · B2", "Issue 006"]},
+    {"word": "gimmick", "surface": "噱头；花招；吸睛的小机关", "meta": ["营销表达 · 吸睛手法 · B2", "Issue 006"]},
+    {"word": "gross", "surface": "恶心的；粗俗的；总额", "meta": ["感官评价 · 数量总额 · B1-B2", "Issue 006"]},
+    {"word": "royalty", "surface": "王室成员；版税；特许权使用费", "meta": ["王室身份 · 版权收入 · B2", "Issue 006"]},
+    {"word": "cannibalize", "surface": "蚕食；拆用；自相消耗", "meta": ["商业竞争 · 自我蚕食 · B2-C1", "Issue 006"]},
+    {"word": "tap into", "surface": "接入；利用；开发现有资源", "meta": ["资源调用 · 潜力利用 · B1-B2", "Issue 006"]},
+    {"word": "feature", "surface": "特征；功能；重点呈现", "meta": ["产品特性 · 重点呈现 · B1-B2", "Issue 006"]},
+    {"word": "guerrilla", "surface": "游击队员；游击式的；非常规的", "meta": ["游击策略 · 非常规行动 · B2", "Issue 006"]},
+    {"word": "epitome", "surface": "典型；缩影；化身", "meta": ["典型代表 · 高度概括 · C1", "Issue 006"]},
+    {"word": "maiden", "surface": "少女；首次的；初次的", "meta": ["首次亮相 · 历史用语 · B2-C1", "Issue 006"]},
+    {"word": "blunt", "surface": "钝的；直率的；不加修饰的", "meta": ["直接表达 · 钝化触感 · B1-B2", "Issue 006"]},
+    {"word": "flex", "surface": "弯曲；绷紧；炫耀", "meta": ["弯曲动作 · 展示实力 · B1-B2", "Issue 006"]},
+    {"word": "obliterate", "surface": "彻底摧毁；抹去；使难以辨认", "meta": ["彻底摧毁 · 抹除痕迹 · C1", "Issue 006"]},
+    {"word": "derogatory", "surface": "贬损的；侮辱性的", "meta": ["贬损表达 · 语用边界 · C1", "Issue 006"]},
+    {"word": "streak", "surface": "条纹；痕迹；连续纪录", "meta": ["连续纪录 · 条纹痕迹 · B2", "Issue 006"]},
+    {"word": "tender", "surface": "柔嫩的；触痛的；投标", "meta": ["温柔触感 · 正式投标 · B1-B2", "Issue 006"]},
+    {"word": "pledge", "surface": "郑重承诺；保证；抵押", "meta": ["郑重承诺 · 抵押捐赠 · B2", "Issue 006"]},
+    {"word": "demeanor", "surface": "举止；神态；外在风度", "meta": ["外在举止 · 人际观感 · C1", "Issue 006"]},
+    {"word": "spiral", "surface": "螺旋；盘旋；不断恶化", "meta": ["螺旋轨迹 · 连锁恶化 · B2", "Issue 006"]},
 ]
 
 
@@ -49,6 +49,7 @@ def write_meta(output_dir: Path, item: dict[str, object]) -> None:
     meta = {
         "key": word.lower(),
         "displayWord": display_word,
+        "surface": item.get("surface", ""),
         "meta": item["meta"],
     }
     (entry_dir / "entry-meta.json").write_text(

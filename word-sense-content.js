@@ -873,7 +873,8 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://www.oxfordlearnersdictionaries.com/definition/english/blunt-instrument"
         }
       ]
-    }
+    },
+    "surface": "钝的；直率的；不加修饰的"
   },
   "brace": {
     "displayWord": "brace",
@@ -1077,7 +1078,8 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://www.oed.com/dictionary/cannibalize_v"
         }
       ]
-    }
+    },
+    "surface": "蚕食；拆用；自相消耗"
   },
   "canonical": {
     "displayWord": "canonical",
@@ -1711,7 +1713,8 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://www.abp.org/professionalism-guide/chapter-2/professionalism-patient-care"
         }
       ]
-    }
+    },
+    "surface": "举止；神态；外在风度"
   },
   "deprecate": {
     "displayWord": "deprecate",
@@ -1819,7 +1822,8 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://www.tiktok.com/community-guidelines/en/?cgversion=2025H2update"
         }
       ]
-    }
+    },
+    "surface": "贬损的；侮辱性的"
   },
   "distill": {
     "displayWord": "distill",
@@ -1961,7 +1965,8 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://www.oed.com/dictionary/epitome_n"
         }
       ]
-    }
+    },
+    "surface": "典型；缩影；化身"
   },
   "exchange": {
     "displayWord": "exchange",
@@ -2231,7 +2236,8 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://www.britannica.com/dictionary/feature"
         }
       ]
-    }
+    },
+    "surface": "特征；功能；重点呈现"
   },
   "fend": {
     "displayWord": "fend",
@@ -2331,7 +2337,8 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://www.oxfordlearnersdictionaries.com/definition/english/flexible"
         }
       ]
-    }
+    },
+    "surface": "弯曲；绷紧；炫耀"
   },
   "float": {
     "displayWord": "float",
@@ -2537,7 +2544,8 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://en.wiktionary.org/wiki/gimmick"
         }
       ]
-    }
+    },
+    "surface": "噱头；花招；吸睛的小机关"
   },
   "gross": {
     "displayWord": "gross",
@@ -2588,7 +2596,8 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://www.oed.com/dictionary/gross_adj"
         }
       ]
-    }
+    },
+    "surface": "恶心的；粗俗的；总额"
   },
   "grounding": {
     "displayWord": "grounding",
@@ -2700,7 +2709,8 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://www.oxfordlearnersdictionaries.com/definition/english/guerrilla_2"
         }
       ]
-    }
+    },
+    "surface": "游击队员；游击式的；非常规的"
   },
   "hallucination": {
     "displayWord": "hallucination",
@@ -3192,7 +3202,8 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://en.wikipedia.org/wiki/Maiden_race"
         }
       ]
-    }
+    },
+    "surface": "少女；首次的；初次的"
   },
   "mount": {
     "displayWord": "mount",
@@ -3340,7 +3351,8 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://www.dictionary.com/browse/obliterate"
         }
       ]
-    }
+    },
+    "surface": "彻底摧毁；抹去；使难以辨认"
   },
   "orchestrate": {
     "displayWord": "orchestrate",
@@ -3494,7 +3506,8 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://www.britannica.com/dictionary/pledge"
         }
       ]
-    }
+    },
+    "surface": "郑重承诺；保证；抵押"
   },
   "poll": {
     "displayWord": "poll",
@@ -4027,7 +4040,8 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://www.collinsdictionary.com/dictionary/english/royalty"
         }
       ]
-    }
+    },
+    "surface": "王室成员；版税；特许权使用费"
   },
   "sense": {
     "displayWord": "sense",
@@ -4245,7 +4259,8 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://www.imf.org/-/media/files/publications/wp/2022/english/wpiea2022221-print-pdf.pdf"
         }
       ]
-    }
+    },
+    "surface": "螺旋；盘旋；不断恶化"
   },
   "stale": {
     "displayWord": "stale",
@@ -4394,7 +4409,8 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://www.duolingo.com/help/what-is-a-streak"
         }
       ]
-    }
+    },
+    "surface": "条纹；痕迹；连续纪录"
   },
   "surge": {
     "displayWord": "surge",
@@ -4499,7 +4515,8 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://en.wiktionary.org/wiki/tap_into"
         }
       ]
-    }
+    },
+    "surface": "接入；利用；开发现有资源"
   },
   "tender": {
     "displayWord": "tender",
@@ -4551,7 +4568,8 @@ window.WORD_SENSE_ENTRIES = {
           "url": "https://dictionary.cambridge.org/us/dictionary/english/tlc"
         }
       ]
-    }
+    },
+    "surface": "柔嫩的；触痛的；投标"
   },
   "throttle": {
     "displayWord": "throttle",

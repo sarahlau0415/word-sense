@@ -38,6 +38,12 @@ def audit(entries: dict, issue: str | None) -> list[str]:
             continue
         checked += 1
         markdown = entry.get("markdown", "")
+        surface = str(entry.get("surface") or "").strip()
+        if issue == "Issue 006":
+            if not surface:
+                errors.append(f"{key}: missing surface summary")
+            elif len(surface) > 40:
+                errors.append(f"{key}: surface summary is too long ({len(surface)} chars)")
         headings = [m.group(1).strip() for m in heading_pattern.finditer(markdown)]
         missing = [heading for heading in REQUIRED_HEADINGS if heading not in headings]
         if missing:

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'wordsense-v15-issue-006';
+const CACHE_NAME = 'wordsense-v16-issue-006-surface';
 const APP_SHELL = [
   '/',
   '/index.html',

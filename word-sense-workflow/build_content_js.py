@@ -165,6 +165,8 @@ def discover_entries() -> dict[str, dict[str, object]]:
                 "meta": meta.get("meta") or ["用户搜索", "WordSense"],
                 "dir": entry_dir.name,
             }
+            if meta.get("surface"):
+                entries[key]["surface"] = str(meta["surface"]).strip()
 
     return entries
 
@@ -189,6 +191,8 @@ def main() -> None:
             "markdown": markdown,
             "verification": build_verification(research),
         }
+        if meta.get("surface"):
+            content[key]["surface"] = meta["surface"]
 
     bundle = "window.WORD_SENSE_ENTRIES = "
     bundle += json.dumps(content, ensure_ascii=False, indent=2)
