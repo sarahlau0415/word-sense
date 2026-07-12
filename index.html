@@ -2141,7 +2141,7 @@
         <a href="word-sense-author.html">一封信</a>
         <div class="issue">
           <span>FIELD NOTES ON ENGLISH</span>
-          <span>ISSUE 005</span>
+          <span>ISSUE 006</span>
         </div>
       </div>
       <div class="top-install">
@@ -2189,7 +2189,7 @@
 
     <section aria-label="精选词卡">
       <div class="gallery-header">
-        <h2>ISSUE 005 WORD CARDS / 16 FILES</h2>
+        <h2>ISSUE 006 WORD CARDS / 18 FILES</h2>
         <div class="gallery-tools">
           <p>hover 看线索 / click 阅读词条</p>
           <button id="savedShelfToggle" class="shelf-toggle" type="button" aria-expanded="false">
@@ -2203,9 +2203,9 @@
 
     <section class="archive-section" aria-label="上一期归档词卡">
       <div class="gallery-header">
-        <h2>ARCHIVE DRAWER / ISSUE 004</h2>
+        <h2>ARCHIVE DRAWER / ISSUE 005</h2>
         <div class="gallery-tools">
-          <p class="archive-note">Issue 004 已经收进档案袋，只露出词条标签；点开任意标签继续阅读。</p>
+          <p class="archive-note">Issue 005 已经收进档案袋，只露出词条标签；点开任意标签继续阅读。</p>
         </div>
       </div>
       <div id="archiveCards" class="archive-folder"><span class="archive-folder-label">open an old file -></span></div>
@@ -2291,6 +2291,27 @@
     let currentShareStyle = "direct";
 
     const cardCatalog = [
+      { word: "gimmick", meaning: "噱头；花招", trail: "营销 / 吸睛", clue: "它不只是一项设计，更在暗示：这东西首先负责抓注意力，未必负责增加价值。", card: "#c5dcf4", reveal: "#263fc7", revealInk: "#fffefa" },
+      { word: "gross", meaning: "恶心的；总额", trail: "感官 / 数量", clue: "它可以让人本能地嫌恶，也可以把扣除之前的全部数量一把圈起来。", card: "#ff8875", reveal: "#fff1a6", revealInk: "#171717" },
+      { word: "royalty", meaning: "王室；版税", trail: "身份 / 收益", clue: "一边是王室成员的集体身份，一边是作品或资源持续带来的权利收入。", card: "#5b8b40", reveal: "#f5b08b", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "cannibalize", meaning: "蚕食；拆用", trail: "商业 / 竞争", clue: "不是被外敌吃掉，而是自己的新产品、渠道或零件反过来消耗自己。", card: "#315f87", reveal: "#ff8875", revealInk: "#171717", faceInk: "#fffefa", compact: true },
+      { word: "tap into", meaning: "接入；利用", trail: "资源 / 潜力", clue: "像接上一条已有的水管，把原本就在那里的资源、需求或能力引出来。", card: "#f4f1ea", reveal: "#161818", revealInk: "#f7f3e9" },
+      { word: "feature", meaning: "特征；重点呈现", trail: "产品 / 媒体", clue: "它既是让事物被认出的突出部分，也可以把某个人或事放到画面中央。", card: "#f2e6c9", reveal: "#c95440", revealInk: "#fffefa" },
+      { word: "guerrilla", meaning: "游击式的", trail: "策略 / 非常规", clue: "它强调小规模、灵活、出其不意：不按大部队的正面打法行动。", card: "#356248", reveal: "#e1dfda", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "epitome", meaning: "典型；化身", trail: "代表 / 概括", clue: "不是普通例子，而是某种特质浓缩到几乎可以拿来当标准答案。", card: "#d7d4cf", reveal: "#2447bd", revealInk: "#fffefa" },
+      { word: "maiden", meaning: "首次的；少女", trail: "首航 / 旧称", clue: "现代高频搭配常把它放在第一次正式亮相前：首航、首秀、首次演说。", card: "#c75a48", reveal: "#f1e8d3", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "blunt", meaning: "钝的；直白的", trail: "触感 / 表达", clue: "刀刃不再尖，人说话也不再绕：它把缓冲和修饰一起削掉。", card: "#486b3b", reveal: "#c8ddf0", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "flex", meaning: "弯曲；炫耀", trail: "肌肉 / 展示", clue: "从绷紧肌肉展示力量，走到社媒里亮出财富、品位或实力。", card: "#b9d3ea", reveal: "#356248", revealInk: "#fffefa" },
+      { word: "obliterate", meaning: "彻底摧毁；抹去", trail: "破坏 / 痕迹", clue: "不是普通损坏，而是把形状、痕迹或存在感一起消灭到难以辨认。", card: "#ffb498", reveal: "#25353a", revealInk: "#fffefa", compact: true },
+      { word: "derogatory", meaning: "贬损的", trail: "语言 / 边界", clue: "它标记的不只是负面，而是某种表达正在降低、贬损一个人或群体。", card: "#32618a", reveal: "#e7dcb9", revealInk: "#171717", faceInk: "#fffefa", compact: true },
+      { word: "streak", meaning: "条纹；连续纪录", trail: "痕迹 / 连续", clue: "一条痕迹沿着表面延伸，也可以是一串没有中断的胜利、失败或行为。", card: "#f5b08b", reveal: "#285542", revealInk: "#fffefa" },
+      { word: "tender", meaning: "柔嫩的；投标", trail: "触感 / 正式提交", clue: "一边是经不起重手的柔嫩与触痛，一边是制度语境里的正式递交。", card: "#285542", reveal: "#d9d9d7", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "pledge", meaning: "郑重承诺", trail: "承诺 / 担保", clue: "它不是随口答应，而是把信誉、行动甚至财物一起押进承诺里。", card: "#e0ded9", reveal: "#234b72", revealInk: "#fffefa" },
+      { word: "demeanor", meaning: "举止；神态", trail: "外在 / 观感", clue: "它不直接说内心是什么，而是看一个人的姿态、表情和行为呈现出什么样子。", card: "#efe0bd", reveal: "#c95440", revealInk: "#fffefa" },
+      { word: "spiral", meaning: "螺旋；不断恶化", trail: "轨迹 / 连锁", clue: "事情绕着圈往同一方向越走越远，常用来写失控式的上升或下坠。", card: "#9fc8c1", reveal: "#171818", revealInk: "#fffefa" }
+    ];
+
+    const archiveCardCatalog = [
       { word: "What's cooking", meaning: "有什么新动静", trail: "口语 / 局面", clue: "不是问厨房，而是在探一个人、一个计划、一个局面里正在酝酿什么。", card: "#c5dcf4", reveal: "#263fc7", revealInk: "#fffefa", compact: true },
       { word: "Revelation", meaning: "揭示；顿悟", trail: "发现 / 真相", clue: "不是普通发现，而是遮住的东西突然被掀开，世界换了一种读法。", card: "#ff8875", reveal: "#fff1a6", revealInk: "#171717" },
       { word: "copy", meaning: "复制；文案", trail: "内容 / 复写", clue: "它一边是照着原样再做一份，一边是让人读了会行动的文字。", card: "#5b8b40", reveal: "#f5b08b", revealInk: "#171717", faceInk: "#fffefa" },
@@ -2307,25 +2328,6 @@
       { word: "legacy", meaning: "遗产；遗留系统", trail: "留下 / 负担", clue: "legacy 不总是光荣遗产，也可能是上一代留下、现在还得背着走的东西。", card: "#f5b08b", reveal: "#285542", revealInk: "#fffefa" },
       { word: "business", meaning: "生意；事情；本分", trail: "边界 / 事务", clue: "它不只是商业，也常在划边界：这是不是你的事，你该不该管。", card: "#285542", reveal: "#d9d9d7", revealInk: "#171717", faceInk: "#fffefa" },
       { word: "sandbox", meaning: "沙盒；安全试验区", trail: "技术 / 边界", clue: "不是儿童沙坑，而是一个可试错、可隔离、不至于弄坏外部世界的空间。", card: "#e0ded9", reveal: "#234b72", revealInk: "#fffefa" }
-    ];
-
-    const archiveCardCatalog = [
-      { word: "spawn", meaning: "生成；派生进程", trail: "进程 / 生成", clue: "不是凭空出现，而是一个系统把新的东西生出来、放出去。", card: "#c5dcf4", reveal: "#263fc7", revealInk: "#fffefa" },
-      { word: "fork", meaning: "分叉；复制分支", trail: "Git / 分叉", clue: "一条线从这里分出去，变成可以独立走的另一条路。", card: "#ff8875", reveal: "#fff1a6", revealInk: "#171717" },
-      { word: "mount", meaning: "挂载；装上去", trail: "结构 / 接入", clue: "不是单纯放上去，而是把一个东西接进系统，让它开始可用。", card: "#5b8b40", reveal: "#f5b08b", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "hydrate", meaning: "水合；客户端接管", trail: "前端 / SSR", clue: "HTML 已经有形状，JavaScript 再接上事件和状态，让页面活起来。", card: "#315f87", reveal: "#ff8875", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "flush", meaning: "刷写；冲出缓冲", trail: "日志 / 缓冲区", clue: "把暂时攒着的东西一次性推到真正的目的地。", card: "#f4f1ea", reveal: "#161818", revealInk: "#f7f3e9" },
-      { word: "drain", meaning: "排空；耗尽", trail: "队列 / 资源", clue: "不是突然消失，而是一点点流出去，直到系统里不剩多少。", card: "#f2e6c9", reveal: "#c95440", revealInk: "#fffefa" },
-      { word: "debounce", meaning: "防抖；等稳定再触发", trail: "交互 / 节奏", clue: "不要每一下抖动都响应，等动作安静下来再算数。", card: "#356248", reveal: "#e1dfda", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "throttle", meaning: "节流；限制频率", trail: "流量 / 控制", clue: "不是让它停下，而是掐住速度，让通过量可控。", card: "#d7d4cf", reveal: "#2447bd", revealInk: "#fffefa" },
-      { word: "poll", meaning: "轮询；征询", trail: "API / 状态", clue: "不等别人通知，而是隔一会儿问一次：好了没？", card: "#c75a48", reveal: "#f1e8d3", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "race", meaning: "竞态；抢先完成", trail: "并发 / 时间", clue: "问题不在谁快，而在几个动作同时跑时谁先改变结果。", card: "#486b3b", reveal: "#c8ddf0", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "resolve", meaning: "解析；收束结果", trail: "Promise / 路径", clue: "把悬着的一团状态收束到一个确定的落点。", card: "#b9d3ea", reveal: "#356248", revealInk: "#fffefa" },
-      { word: "fallback", meaning: "兜底；退回方案", trail: "失败路径", clue: "主路走不通时，系统往后退一步，拿出还能用的备选。", card: "#ffb498", reveal: "#25353a", revealInk: "#fffefa" },
-      { word: "stale", meaning: "过期；不再新鲜", trail: "缓存 / 数据", clue: "不一定是错的，只是曾经新鲜，现在该重新验证了。", card: "#32618a", reveal: "#e7dcb9", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "daemon", meaning: "后台守护进程", trail: "系统 / 后台", clue: "它不站在台前，却一直在后面等着处理事情。", card: "#f5b08b", reveal: "#285542", revealInk: "#fffefa" },
-      { word: "zombie", meaning: "僵尸进程；空壳", trail: "系统 / 状态", clue: "看起来还在，其实主体已经死了，只剩一个系统记录。", card: "#285542", reveal: "#d9d9d7", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "thundering", meaning: "雷鸣般；惊群", trail: "系统 / 群体压力", clue: "不是一个请求太大，而是一群请求同时轰过来。", card: "#e0ded9", reveal: "#234b72", revealInk: "#fffefa", compact: true }
     ];
     const archivedWords = new Set([
       "wail", "lowkey", "agentic", "reframe", "sentiment", "backdrop", "it's giving",
