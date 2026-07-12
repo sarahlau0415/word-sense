@@ -27,7 +27,7 @@ def load_entries(path: Path) -> dict:
     return json.loads(match.group(1))
 
 
-def audit(entries: dict, issue: str | None) -> list[str]:
+def audit(entries: dict, issue: str | None, expected_count: int | None = None) -> list[str]:
     errors: list[str] = []
     checked = 0
     heading_pattern = re.compile(r"\*\*([^*]+?)\*\*\s*·")
@@ -39,7 +39,13 @@ def audit(entries: dict, issue: str | None) -> list[str]:
         checked += 1
         markdown = entry.get("markdown", "")
         surface = str(entry.get("surface") or "").strip()
-        if issue == "Issue 006":
+        issue_numbers = [
+            int(match.group(1))
+            for item in meta
+            if (match := re.fullmatch(r"Issue (\d{3})", str(item)))
+        ]
+        requires_surface = any(number >= 6 for number in issue_numbers)
+        if requires_surface:
             if not surface:
                 errors.append(f"{key}: missing surface summary")
             elif len(surface) > 40:
@@ -59,17 +65,20 @@ def audit(entries: dict, issue: str | None) -> list[str]:
 
     if checked == 0:
         errors.append(f"No entries matched issue filter: {issue}")
+    if expected_count is not None and checked != expected_count:
+        errors.append(f"Expected {expected_count} entries, found {checked}")
     return errors
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Audit built Word Sense content.")
     parser.add_argument("--issue", help="Only audit entries whose meta contains this issue label, e.g. 'Issue 003'.")
+    parser.add_argument("--expected-count", type=int, help="Fail unless the filtered issue contains exactly this many entries.")
     parser.add_argument("--content", type=Path, default=CONTENT_JS, help="Path to word-sense-content.js")
     args = parser.parse_args()
 
     entries = load_entries(args.content)
-    errors = audit(entries, args.issue)
+    errors = audit(entries, args.issue, args.expected_count)
     if errors:
         print("Content audit failed:")
         for error in errors:

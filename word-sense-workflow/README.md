@@ -15,18 +15,22 @@
 5. `prompts/v3-rewrite.md` — 改写 prompt
 6. `03-engineering-spec.md` — 工程实现规格(技术栈、API 调用、输出格式)
 7. `04-example-run.md` — 一个完整的"brainrot"跑过的实例,作为参照
+8. `05-issue-release-workflow.md` — 从展示元数据、首页归档到生产发布的整期流程
 
 ## 你要交付的东西
 
-一个能跑的 Python 脚本,使用 OpenAI-compatible API。输入一个英文词,输出三份文件:
+一个能跑的 Python 脚本,使用 OpenAI-compatible API。输入一个英文词,输出三份内容文件；正式期刊还必须输出展示元数据:
 
 ```
 output/
 ├── [词]/
 │   ├── step-1-draft.md       # Step 1 的写作初稿
 │   ├── step-2-research.md    # Step 2 的查证报告
-│   └── step-3-final.md       # Step 3 的改写终稿
+│   ├── step-3-final.md       # Step 3 的改写终稿
+│   └── entry-meta.json       # displayWord、surface、期数与分类
 ```
+
+正式发刊的完成定义不是“生成了三份 Markdown”，而是通过 `05-issue-release-workflow.md` 中的构建、首页、归档、缓存、视觉和公网验收。
 
 ## 一些原则
 

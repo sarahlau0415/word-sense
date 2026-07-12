@@ -25,12 +25,26 @@ word-sense-workflow/
 │   └── [word]/
 │       ├── step-1-draft.md
 │       ├── step-2-research.md
-│       └── step-3-final.md
+│       ├── step-3-final.md
+│       └── entry-meta.json
 ├── run.py
 ├── requirements.txt
 ├── .env.example
 └── .env
 ```
+
+正式 Issue 的 `entry-meta.json` 至少包含：
+
+```json
+{
+  "key": "streak",
+  "displayWord": "streak",
+  "surface": "条纹；痕迹；连续纪录",
+  "meta": ["连续纪录 · 条纹痕迹 · B2", "Issue 006"]
+}
+```
+
+`build_content_js.py` 必须把 `surface` 原样写入 `word-sense-content.js`。正式期刊条目缺少该字段应在发布审计阶段失败，不能让前端用正文第一段静默代替。
 
 ## 配置
 
@@ -120,7 +134,7 @@ python run.py backdrop \
 - 批量跑多个词
 - 搜索结果缓存
 - Web UI
-- 把终稿和用户可见来源自动接入前端
+- 用统一 `issue-XXX.json` 同时生成批处理输入、首页词卡、归档和宣传物料，彻底移除重复的手工词表
 - 生成 Notion/个人笔记版本
 
-第一版只需要"输入一个词,产出三份 md 文件"。其他都是后续迭代。
+单词级生成仍以三份 Markdown 为核心；正式 Issue 发布必须继续执行 `05-issue-release-workflow.md`。

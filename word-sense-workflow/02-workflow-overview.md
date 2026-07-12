@@ -36,8 +36,25 @@
 
          ↓
 
-输出:三份 markdown 文件
+输出:三份 markdown 文件 + 正式期刊展示元数据
 ```
+
+## 正式期刊的第二段工作流
+
+三阶段生成只负责把单词文章写好。正式 Issue 还必须继续完成：
+
+```text
+终稿 + entry-meta.json
+→ build_content_js.py
+→ word-sense-content.js
+→ 首页当期词卡 / 上一期归档
+→ 独立阅读页身份
+→ 缓存版本
+→ 内容审计 + 实际截图
+→ Git / VPS / 公网验收
+```
+
+详细步骤见 `05-issue-release-workflow.md`。
 
 ## 三步之间的数据流
 
@@ -72,6 +89,8 @@ python3 word-sense-workflow/audit_content.py --issue "Issue 003"
 ```
 
 这个脚本只负责机器能判断的部分:固定标题、占位文案、来源列表。它不能替代 sense coverage 审计。
+
+从 Issue 006 起，所有正式期刊词条的 Gate A 还必须检查独立的 `surface` 短释义。`surface` 是卡片正面，不是正文“字面含义”的摘要；缺失时必须阻止上线。旧归档继续兼容原有数据。
 
 **Gate B:sense coverage 覆盖审计**
 

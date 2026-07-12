@@ -46,6 +46,8 @@ The backend prompt in `lib/generate-sense.js` is aligned with the six-dimension 
 
 Production runs from the VPS-backed Word Sense server at `wordsense.sarahliu.fun`.
 
+For a full issue release—not only a code deploy—follow `word-sense-workflow/05-issue-release-workflow.md`. It covers required `surface` metadata, homepage/current-archive identity, cache versioning, visual screenshots, and public no-cache verification.
+
 Before release:
 
 1. Merge the prepared release branch into `main`.
