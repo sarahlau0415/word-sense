@@ -1,4 +1,4 @@
-const CACHE_NAME = 'wordsense-v17-issue-identity';
+const CACHE_NAME = 'wordsense-v18-archive-label';
 const APP_SHELL = [
   '/',
   '/index.html',

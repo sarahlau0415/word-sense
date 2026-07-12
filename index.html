@@ -816,14 +816,16 @@
 
     .archive-folder-label {
       position: absolute;
-      right: 26px;
-      top: 202px;
-      z-index: 35;
+      right: 34px;
+      top: 126px;
+      z-index: 70;
       padding: 8px 10px;
-      background: rgba(246, 246, 239, 0.82);
+      background: rgba(255, 249, 237, 0.96);
       border: 1px solid rgba(95, 96, 89, 0.34);
       color: #4b4d48;
       font: 700 12px/1 var(--mono);
+      white-space: nowrap;
+      box-shadow: 0 3px 8px rgba(72, 43, 19, 0.08);
     }
 
     @media (max-width: 760px) {
@@ -836,6 +838,12 @@
         width: calc(100% - 40px);
         transform: scale(0.66);
         transform-origin: center top;
+      }
+
+      .archive-folder-label {
+        top: 112px;
+        right: 18px;
+        font-size: 10px;
       }
 
       .archive-file-tab {
