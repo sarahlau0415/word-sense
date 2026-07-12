@@ -2290,6 +2290,16 @@
     let currentSentence = "";
     let currentShareStyle = "direct";
 
+    function currentPublishedIssue() {
+      const numbers = Object.values(window.WORD_SENSE_ENTRIES || {})
+        .flatMap(entry => entry.meta || [])
+        .map(item => String(item).match(/^Issue (\d+)$/i))
+        .filter(Boolean)
+        .map(match => Number(match[1]));
+      const latest = numbers.length ? Math.max(...numbers) : 6;
+      return `Issue ${String(latest).padStart(3, "0")}`;
+    }
+
     const cardCatalog = [
       { word: "gimmick", meaning: "噱头；花招", trail: "营销 / 吸睛", clue: "它不只是一项设计，更在暗示：这东西首先负责抓注意力，未必负责增加价值。", card: "#c5dcf4", reveal: "#263fc7", revealInk: "#fffefa" },
       { word: "gross", meaning: "恶心的；总额", trail: "感官 / 数量", clue: "它可以让人本能地嫌恶，也可以把扣除之前的全部数量一把圈起来。", card: "#ff8875", reveal: "#fff1a6", revealInk: "#171717" },
@@ -3025,7 +3035,9 @@
       const surfaceText = entry.surface || card?.meaning || fallbackPreview;
       const surfaceMeaning = `“${surfaceText}”`;
       const issueLabel = (entry.meta || []).find(item => /^Issue \d+$/i.test(item)) || "Word Sense";
-      const slipLabel = issueLabel === "Issue 006" ? "current issue / issue 006" : `archive entry / ${issueLabel.toLowerCase()}`;
+      const slipLabel = issueLabel === currentPublishedIssue()
+        ? `current issue / ${issueLabel.toLowerCase()}`
+        : `archive entry / ${issueLabel.toLowerCase()}`;
 
       showFile(word, {
         surface: surfaceMeaning,

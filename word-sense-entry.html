@@ -725,7 +725,7 @@
     }
 
     .case-cover::after {
-      content: "ARCHIVE COPY / HANDLE WITH CARE";
+      content: attr(data-stamp);
       position: absolute;
       right: 28px;
       bottom: 20px;
@@ -1571,7 +1571,7 @@
         <a href="word-sense-author.html">一封信</a>
         <div class="issue">
           <span>FIELD NOTES ON ENGLISH</span>
-          <span>ISSUE 005</span>
+          <span id="issueBadge">ISSUE 006</span>
         </div>
       </div>
     </header>
@@ -1593,7 +1593,7 @@
       <section id="actionReceipt" class="action-receipt" aria-live="polite" hidden>
         <div id="receiptContent"></div>
       </section>
-      <header class="case-cover">
+      <header id="caseCover" class="case-cover" data-stamp="CURRENT ISSUE / HANDLE WITH CARE">
         <h2 id="detailWord" class="word-heading">wail</h2>
         <p id="detailSurface" class="surface-label">正面写着：“哀号；嚎啕；痛哭；哭诉”</p>
       </header>
@@ -1619,6 +1619,8 @@
     const fileLabel = document.querySelector("#fileLabel");
     const detailWord = document.querySelector("#detailWord");
     const detailSurface = document.querySelector("#detailSurface");
+    const issueBadge = document.querySelector("#issueBadge");
+    const caseCover = document.querySelector("#caseCover");
     const clueTrail = document.querySelector("#clueTrail");
     const closeFile = document.querySelector("#closeFile");
     const featuredCards = document.querySelector("#featuredCards");
@@ -1641,6 +1643,16 @@
     let currentSource = "";
     let currentSentence = "";
     let currentShareStyle = "direct";
+
+    function currentPublishedIssue() {
+      const numbers = Object.values(window.WORD_SENSE_ENTRIES || {})
+        .flatMap(entry => entry.meta || [])
+        .map(item => String(item).match(/^Issue (\d+)$/i))
+        .filter(Boolean)
+        .map(match => Number(match[1]));
+      const latest = numbers.length ? Math.max(...numbers) : 6;
+      return `Issue ${String(latest).padStart(3, "0")}`;
+    }
 
     const cardCatalog = [
       { word: "What's cooking", meaning: "有什么新动静", trail: "口语 / 局面", clue: "不是问厨房，而是在探一个人、一个计划、一个局面里正在酝酿什么。", card: "#c5dcf4", reveal: "#263fc7", revealInk: "#fffefa", compact: true },
@@ -2168,6 +2180,11 @@
       fileLabel.textContent = `file / ${word}`;
       detailWord.textContent = word;
       detailSurface.textContent = `正面写着：${data.surface}`;
+      const issueLabel = data.issueLabel || "ARCHIVE";
+      issueBadge.textContent = issueLabel.toUpperCase();
+      caseCover.dataset.stamp = issueLabel === currentPublishedIssue()
+        ? "CURRENT ISSUE / HANDLE WITH CARE"
+        : "ARCHIVE COPY / HANDLE WITH CARE";
       const entries = data.markdown ? parseGeneratedDimensions(data.markdown) : data.story;
       clueTrail.innerHTML = renderTrail(entries, data, source, sentence, word);
       updateFileLink(word);
@@ -2434,10 +2451,13 @@
       const surfaceText = entry.surface || card?.meaning || fallbackPreview;
       const surfaceMeaning = `“${surfaceText}”`;
       const issueLabel = (entry.meta || []).find(item => /^Issue \d+$/i.test(item)) || "Word Sense";
-      const slipLabel = issueLabel === "Issue 006" ? "current issue / issue 006" : `archive entry / ${issueLabel.toLowerCase()}`;
+      const slipLabel = issueLabel === currentPublishedIssue()
+        ? `current issue / ${issueLabel.toLowerCase()}`
+        : `archive entry / ${issueLabel.toLowerCase()}`;
 
       showFile(word, {
         surface: surfaceMeaning,
+        issueLabel,
         slip: `<b>${escapeHtml(word)}</b><br>${escapeHtml(slipLabel)}<br><br>${escapeHtml(surfaceText)}`,
         markdown: entry.markdown,
         contrast: [
