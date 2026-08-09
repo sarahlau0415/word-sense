@@ -19,16 +19,18 @@
 - 建议 4–30 个中文字符，机器硬限制不超过 40 字。
 - 多义词要覆盖正文实际展开的主要义项。
 
-## 2. 三阶段内容生产
+## 2. 四阶段内容生产
 
 每个词依次保存：
 
 1. `step-1-draft.md`
 2. `step-2-research.md`
-3. `step-3-final.md`
-4. `entry-meta.json`
+3. `step-3-final.md`：事实改写结果，可含内部改动说明。
+4. `step-4-final.md`：纯用户可见的声音审校终稿。
+5. `step-4-review.json`：事实改动说明和声音审校记录，只供内部使用。
+6. `entry-meta.json`
 
-Step 2 必须使用搜索工具。Step 3 必须处理 sense coverage 中标记为“必须补”的项目。
+Step 2 必须使用搜索工具。Step 3 必须处理 sense coverage 中标记为“必须补”的项目。Step 4 只允许删减、改句和修正节奏，不得新增事实；构建器优先读取 Step 4，内部审校记录不得进入用户内容。
 
 ## 3. 构建内容包
 
@@ -84,6 +86,14 @@ python3 word-sense-workflow/audit_content.py --issue "Issue 006" --expected-coun
 - 无占位文案。
 - 有用户可见来源。
 - 本期词数与清单一致（发布脚本另行核对）。
+
+声音审计同样是发布门槛：
+
+```bash
+python3 word-sense-workflow/audit_voice.py --issue "Issue 007" --strict
+```
+
+硬性阻止内部审校记录、母语者心理代言、中英文标点错误和不必要的中英混搭进入终稿；模板句超限或多篇结尾雷同时必须人工处理。
 
 ## 7. 语法与视觉验收
 

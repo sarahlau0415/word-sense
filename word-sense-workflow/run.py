@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import re
 import sys
@@ -103,6 +104,38 @@ def build_step_3_user_message(word: str, draft: str, research_report: str) -> st
 """
 
 
+def build_step_4_user_message(word: str, verified_final: str) -> str:
+    return f"""请审校以下关于英文词“{word}”的已查证终稿。
+
+---
+
+{verified_final}
+
+---
+
+严格保持事实不变，执行减法编辑，并按指定格式输出。
+"""
+
+
+def extract_verified_final(markdown: str) -> tuple[str, str]:
+    text = re.sub(r"^#\s*改写终稿\s*", "", markdown.strip(), count=1).strip()
+    parts = re.split(r"\n---\s*\n#\s*改动说明\s*", text, maxsplit=1)
+    if len(parts) == 1:
+        parts = re.split(r"\n#\s*改动说明\s*", text, maxsplit=1)
+    return parts[0].strip(), parts[1].strip() if len(parts) > 1 else ""
+
+
+def split_voice_response(text: str) -> tuple[str, str]:
+    cleaned = re.sub(r"^#\s*终稿\s*", "", text.strip(), count=1).strip()
+    parts = re.split(r"\n---\s*\n#\s*声音审校记录\s*", cleaned, maxsplit=1)
+    if len(parts) != 2:
+        raise ValueError("声音编辑输出缺少独立的‘声音审校记录’部分")
+    final, review = parts[0].strip(), parts[1].strip()
+    if "改动说明" in final or "声音审校记录" in final:
+        raise ValueError("用户终稿中混入了内部审校记录")
+    return final, review
+
+
 class WordSenseWorkflow:
     def __init__(
         self,
@@ -144,6 +177,7 @@ class WordSenseWorkflow:
         self.write_prompt = load_prompt("v3-write")
         self.research_prompt = load_prompt("v3-research")
         self.rewrite_prompt = load_prompt("v3-rewrite")
+        self.voice_prompt = load_prompt("v4-voice-edit")
 
     def step_1_write(self, word: str, source: str = "", sentence: str = "") -> str:
         response = self.client.responses.create(
@@ -179,6 +213,15 @@ class WordSenseWorkflow:
         )
         return response_text(response)
 
+    def step_4_voice_edit(self, word: str, verified_final: str) -> str:
+        response = self.client.responses.create(
+            model=self.rewrite_model,
+            max_output_tokens=6000,
+            instructions=self.voice_prompt,
+            input=build_step_4_user_message(word, verified_final),
+        )
+        return response_text(response)
+
     def run(self, word: str, source: str = "", sentence: str = "") -> Path:
         word_output_dir = self.output_dir / safe_word_dir(word)
         word_output_dir.mkdir(parents=True, exist_ok=True)
@@ -204,7 +247,26 @@ class WordSenseWorkflow:
         print(f"  保存到 {final_path}")
         print(f"  长度:{len(final)} 字符")
 
-        print(f"\n完成。三份文件都在 {word_output_dir}")
+        print("\n=== Step 4: 声音审校 ===")
+        verified_final, fact_review = extract_verified_final(final)
+        voice_response = self.step_4_voice_edit(word, verified_final)
+        voice_final, voice_review = split_voice_response(voice_response)
+        voice_path = word_output_dir / "step-4-final.md"
+        voice_path.write_text(voice_final + "\n", encoding="utf-8")
+        review_path = word_output_dir / "step-4-review.json"
+        review_path.write_text(
+            json.dumps(
+                {"word": word, "source": "step-3-final.md", "factReview": fact_review, "voiceReview": voice_review},
+                ensure_ascii=False,
+                indent=2,
+            )
+            + "\n",
+            encoding="utf-8",
+        )
+        print(f"  保存到 {voice_path}")
+        print(f"  审校记录保存到 {review_path}")
+
+        print(f"\n完成。四阶段文件都在 {word_output_dir}")
         return word_output_dir
 
 
@@ -255,6 +317,7 @@ def dry_run(args: argparse.Namespace) -> None:
         "v3-write": load_prompt("v3-write"),
         "v3-research": load_prompt("v3-research"),
         "v3-rewrite": load_prompt("v3-rewrite"),
+        "v4-voice-edit": load_prompt("v4-voice-edit"),
     }
     output_path = args.output_dir / safe_word_dir(args.word or "example")
 

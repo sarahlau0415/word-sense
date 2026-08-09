@@ -104,9 +104,10 @@ def main() -> int:
         word = str(item["word"])
         entry_dir = args.output_dir / safe_word_dir(word)
         final_path = entry_dir / "step-3-final.md"
+        voice_path = entry_dir / "step-4-final.md"
         research_path = entry_dir / "step-2-research.md"
 
-        if final_path.exists() and research_path.exists() and not args.force:
+        if final_path.exists() and voice_path.exists() and research_path.exists() and not args.force:
             print(f"[{index}/{len(items)}] skip {word}: already generated")
             write_meta(args.output_dir, item)
             continue

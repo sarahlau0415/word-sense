@@ -73,9 +73,9 @@ response = client.responses.create(
 - `各路用法`的格式固定为:
 
 ```markdown
-**职场,Slack 上**
+**职场，Slack 上**
 > The numbers are concerning, so we should look at retention before Friday.
-> 这些数据有点令人担忧,所以我们应该在周五前看看留存情况。
+> 这些数据有点令人担忧，所以我们应该在周五前看看留存情况。
 
 这里的 concerning 不是普通担心,而是职场里一种克制的预警信号。
 ```

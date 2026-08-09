@@ -148,7 +148,7 @@ def discover_entries() -> dict[str, dict[str, object]]:
     for entry_dir in sorted(OUTPUT_DIR.iterdir()):
         if not entry_dir.is_dir():
             continue
-        if not (entry_dir / "step-3-final.md").exists():
+        if not (entry_dir / "step-4-final.md").exists() and not (entry_dir / "step-3-final.md").exists():
             continue
         if not (entry_dir / "step-2-research.md").exists():
             continue
@@ -178,7 +178,9 @@ def main() -> None:
     for key, meta in entries.items():
         dirname = meta.get("dir", key)
         entry_dir = OUTPUT_DIR / dirname
-        final_path = entry_dir / "step-3-final.md"
+        final_path = entry_dir / "step-4-final.md"
+        if not final_path.exists():
+            final_path = entry_dir / "step-3-final.md"
         research_path = entry_dir / "step-2-research.md"
         if not final_path.exists() or not research_path.exists():
             continue
