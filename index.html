@@ -2149,7 +2149,7 @@
         <a href="word-sense-author.html">一封信</a>
         <div class="issue">
           <span>FIELD NOTES ON ENGLISH</span>
-          <span>ISSUE 006</span>
+          <span>ISSUE 007</span>
         </div>
       </div>
       <div class="top-install">
@@ -2197,7 +2197,7 @@
 
     <section aria-label="精选词卡">
       <div class="gallery-header">
-        <h2>ISSUE 006 WORD CARDS / 18 FILES</h2>
+        <h2>ISSUE 007 WORD CARDS / 18 FILES</h2>
         <div class="gallery-tools">
           <p>hover 看线索 / click 阅读词条</p>
           <button id="savedShelfToggle" class="shelf-toggle" type="button" aria-expanded="false">
@@ -2211,9 +2211,9 @@
 
     <section class="archive-section" aria-label="上一期归档词卡">
       <div class="gallery-header">
-        <h2>ARCHIVE DRAWER / ISSUE 005</h2>
+        <h2>ARCHIVE DRAWER / ISSUE 006</h2>
         <div class="gallery-tools">
-          <p class="archive-note">Issue 005 已经收进档案袋，只露出词条标签；点开任意标签继续阅读。</p>
+          <p class="archive-note">Issue 006 已经收进档案袋，只露出词条标签；点开任意标签继续阅读。</p>
         </div>
       </div>
       <div id="archiveCards" class="archive-folder"><span class="archive-folder-label">open an old file -></span></div>
@@ -2304,11 +2304,11 @@
         .map(item => String(item).match(/^Issue (\d+)$/i))
         .filter(Boolean)
         .map(match => Number(match[1]));
-      const latest = numbers.length ? Math.max(...numbers) : 6;
+      const latest = numbers.length ? Math.max(...numbers) : 7;
       return `Issue ${String(latest).padStart(3, "0")}`;
     }
 
-    const cardCatalog = [
+    const archiveCardCatalog = [
       { word: "gimmick", meaning: "噱头；花招", trail: "营销 / 吸睛", clue: "它不只是一项设计，更在暗示：这东西首先负责抓注意力，未必负责增加价值。", card: "#c5dcf4", reveal: "#263fc7", revealInk: "#fffefa" },
       { word: "gross", meaning: "恶心的；总额", trail: "感官 / 数量", clue: "它可以让人本能地嫌恶，也可以把扣除之前的全部数量一把圈起来。", card: "#ff8875", reveal: "#fff1a6", revealInk: "#171717" },
       { word: "royalty", meaning: "王室；版税", trail: "身份 / 收益", clue: "一边是王室成员的集体身份，一边是作品或资源持续带来的权利收入。", card: "#5b8b40", reveal: "#f5b08b", revealInk: "#171717", faceInk: "#fffefa" },
@@ -2329,23 +2329,25 @@
       { word: "spiral", meaning: "螺旋；不断恶化", trail: "轨迹 / 连锁", clue: "事情绕着圈往同一方向越走越远，常用来写失控式的上升或下坠。", card: "#9fc8c1", reveal: "#171818", revealInk: "#fffefa" }
     ];
 
-    const archiveCardCatalog = [
-      { word: "What's cooking", meaning: "有什么新动静", trail: "口语 / 局面", clue: "不是问厨房，而是在探一个人、一个计划、一个局面里正在酝酿什么。", card: "#c5dcf4", reveal: "#263fc7", revealInk: "#fffefa", compact: true },
-      { word: "Revelation", meaning: "揭示；顿悟", trail: "发现 / 真相", clue: "不是普通发现，而是遮住的东西突然被掀开，世界换了一种读法。", card: "#ff8875", reveal: "#fff1a6", revealInk: "#171717" },
-      { word: "copy", meaning: "复制；文案", trail: "内容 / 复写", clue: "它一边是照着原样再做一份，一边是让人读了会行动的文字。", card: "#5b8b40", reveal: "#f5b08b", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "stew", meaning: "炖；憋着想", trail: "烹煮 / 情绪", clue: "不是马上爆发，而是情绪像锅里的东西一样慢慢闷着、煮着。", card: "#315f87", reveal: "#ff8875", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "fend", meaning: "抵挡；照料自己", trail: "防御 / 生存", clue: "它不是漂亮地解决问题，而是在压力靠近时先挡住、先撑住。", card: "#f4f1ea", reveal: "#161818", revealInk: "#f7f3e9" },
-      { word: "cast", meaning: "投下；塑成；选角", trail: "投掷 / 成形", clue: "cast 的底层像把东西抛出去，让它落到某个形状、影子或角色里。", card: "#f2e6c9", reveal: "#c95440", revealInk: "#fffefa" },
-      { word: "hygiene", meaning: "卫生；基本规范", trail: "习惯 / 系统", clue: "现代英语里它常不只是干净，而是让系统不出问题的一套基本维护。", card: "#356248", reveal: "#e1dfda", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "reference", meaning: "参考；指向", trail: "参照 / 关系", clue: "reference 不是把资料摆在旁边，而是把一件事指向另一件事来理解。", card: "#d7d4cf", reveal: "#2447bd", revealInk: "#fffefa", compact: true },
-      { word: "float", meaning: "漂浮；提出试探", trail: "试探 / 悬置", clue: "一个想法被 float 出来，不是拍板，而是先放到空气里看看会不会浮住。", card: "#c75a48", reveal: "#f1e8d3", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "fare", meaning: "进展；票价", trail: "旅程 / 状态", clue: "fare 关心的是一路走下来过得怎样，也可以是这趟路要付多少。", card: "#486b3b", reveal: "#c8ddf0", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "come off", meaning: "成功；显得", trail: "结果 / 观感", clue: "它常在问：这件事最后有没有成，以及别人看起来觉得你像什么。", card: "#b9d3ea", reveal: "#356248", revealInk: "#fffefa" },
-      { word: "affairs", meaning: "事务；关系事件", trail: "公共 / 私人", clue: "affairs 像一堆需要处理的事，也可能是关系里越界的那件事。", card: "#ffb498", reveal: "#25353a", revealInk: "#fffefa" },
-      { word: "peg", meaning: "钉住；归类", trail: "固定 / 判断", clue: "peg 的动作很具体：把东西钉住，也把一个人或事固定到某个判断里。", card: "#32618a", reveal: "#e7dcb9", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "legacy", meaning: "遗产；遗留系统", trail: "留下 / 负担", clue: "legacy 不总是光荣遗产，也可能是上一代留下、现在还得背着走的东西。", card: "#f5b08b", reveal: "#285542", revealInk: "#fffefa" },
-      { word: "business", meaning: "生意；事情；本分", trail: "边界 / 事务", clue: "它不只是商业，也常在划边界：这是不是你的事，你该不该管。", card: "#285542", reveal: "#d9d9d7", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "sandbox", meaning: "沙盒；安全试验区", trail: "技术 / 边界", clue: "不是儿童沙坑，而是一个可试错、可隔离、不至于弄坏外部世界的空间。", card: "#e0ded9", reveal: "#234b72", revealInk: "#fffefa" }
+    const cardCatalog = [
+      { word: "aristocratic", meaning: "贵族的；贵族气派的", trail: "阶层 / 气质", clue: "它不只标记贵族出身，也会把一种讲究、疏离、仿佛不必解释自己的姿态带进来。", card: "#c5dcf4", reveal: "#263fc7", revealInk: "#fffefa", compact: true },
+      { word: "juxtapose", meaning: "并置；并列对照", trail: "位置 / 对照", clue: "把两个东西放在彼此旁边，让差异、张力或关系自己显出来。", card: "#ff8875", reveal: "#fff1a6", revealInk: "#171717", compact: true },
+      { word: "wince", meaning: "畏缩；皱眉", trail: "痛感 / 反应", clue: "痛、尴尬或难堪先让脸和身体缩一下，是来不及掩饰的瞬间反应。", card: "#5b8b40", reveal: "#f5b08b", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "myriad", meaning: "无数；多种多样", trail: "数量 / 繁多", clue: "不是精确计数，而是多到视线无法逐一收拢，常带着丰富、纷杂的感觉。", card: "#315f87", reveal: "#ff8875", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "disembody", meaning: "脱离身体；失去实体", trail: "身体 / 抽象", clue: "把声音、意识或经验从承载它的身体里抽离，让它仿佛独立悬在空间中。", card: "#f4f1ea", reveal: "#161818", revealInk: "#f7f3e9", compact: true },
+      { word: "propensity", meaning: "倾向；习性", trail: "行为 / 倾向", clue: "不是一次选择，而是一个人或事物反复朝某个方向滑去的内在概率。", card: "#f2e6c9", reveal: "#c95440", revealInk: "#fffefa", compact: true },
+      { word: "divinity", meaning: "神性；神；神学", trail: "宗教 / 超越", clue: "既可指神圣属性，也可指神本身，语境再往制度里走时还会落到神学。", card: "#356248", reveal: "#e1dfda", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "ensemble", meaning: "整体；合奏团", trail: "组合 / 整体", clue: "重点不在单个成员，而在多个部分一起出现时形成的整体效果。", card: "#d7d4cf", reveal: "#2447bd", revealInk: "#fffefa" },
+      { word: "perturb", meaning: "使不安；扰乱", trail: "心理 / 系统", clue: "轻推原本稳定的状态，使情绪不安，或让一个系统偏离原来的轨道。", card: "#c75a48", reveal: "#f1e8d3", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "pasture", meaning: "牧场；放牧", trail: "土地 / 动作", clue: "既是供牲畜吃草的土地，也可以是把动物带到这片土地上放牧的动作。", card: "#486b3b", reveal: "#c8ddf0", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "elapse", meaning: "流逝；过去", trail: "时间 / 书面", clue: "时间不是被人花掉，而是在两个节点之间静静过去；这个词常见于书面说明。", card: "#b9d3ea", reveal: "#356248", revealInk: "#fffefa" },
+      { word: "ostracise", meaning: "排斥；放逐", trail: "群体 / 边界", clue: "群体通过不接纳、不邀请、不回应，把一个人推到共同体的边界之外。", card: "#ffb498", reveal: "#25353a", revealInk: "#fffefa", compact: true },
+      { word: "taunt", meaning: "嘲弄；挑衅", trail: "言语 / 攻击", clue: "不是普通取笑，而是用话反复戳人，逼出羞耻、愤怒或反应。", card: "#32618a", reveal: "#e7dcb9", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "averse", meaning: "反感的；不愿意的", trail: "态度 / 回避", clue: "常跟 to 连用，表示身体和判断都朝某件事转开，不愿靠近或参与。", card: "#f5b08b", reveal: "#285542", revealInk: "#fffefa" },
+      { word: "incur", meaning: "招致；承担", trail: "后果 / 成本", clue: "做了一件事，随后把费用、债务、责任或惩罚带到自己身上。", card: "#285542", reveal: "#d9d9d7", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "supposition", meaning: "假设；推测", trail: "推理 / 前提", clue: "是先放在桌面上供推理使用的想法，但它还没有被证据真正坐实。", card: "#e0ded9", reveal: "#234b72", revealInk: "#fffefa", compact: true },
+      { word: "despondency", meaning: "沮丧；消沉", trail: "情绪 / 希望", clue: "不只是心情不好，而是希望和行动力一起往下沉，觉得局面很难再转好。", card: "#efe0bd", reveal: "#c95440", revealInk: "#fffefa", compact: true },
+      { word: "vicinity", meaning: "附近；邻近地区", trail: "空间 / 范围", clue: "它画的不是精确边界，而是以某个点为中心的一圈模糊邻近范围。", card: "#9fc8c1", reveal: "#171818", revealInk: "#fffefa" }
     ];
     const archivedWords = new Set([
       "wail", "lowkey", "agentic", "reframe", "sentiment", "backdrop", "it's giving",
@@ -2357,7 +2359,9 @@
       "unfold", "unhinged", "verify", "spawn", "fork", "mount", "hydrate", "flush",
       "drain", "debounce", "throttle", "poll", "race", "resolve", "fallback", "stale",
       "daemon", "zombie", "thundering",
-      "what's cooking", "revelation", "copy", "stew", "fend", "cast", "hygiene", "reference", "float", "fare", "come off", "affairs", "peg", "legacy", "business", "sandbox"
+      "what's cooking", "revelation", "copy", "stew", "fend", "cast", "hygiene", "reference", "float", "fare", "come off", "affairs", "peg", "legacy", "business", "sandbox",
+      "gimmick", "gross", "royalty", "cannibalize", "tap into", "feature", "guerrilla", "epitome", "maiden", "blunt", "flex", "obliterate", "derogatory", "streak", "tender", "pledge", "demeanor", "spiral",
+      "aristocratic", "juxtapose", "wince", "myriad", "disembody", "propensity", "divinity", "ensemble", "perturb", "pasture", "elapse", "ostracise", "taunt", "averse", "incur", "supposition", "despondency", "vicinity"
     ]);
 
     const files = {

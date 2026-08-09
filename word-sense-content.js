@@ -708,6 +708,55 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "aristocratic": {
+    "displayWord": "aristocratic",
+    "meta": [
+      "阶层气质 · 身份风格 · B2-C1",
+      "Issue 007"
+    ],
+    "markdown": "**字面含义** · 这个词最早盯着的，是“贵族那一层的人”——不是普通民众，而是社会里被看作出身高、地位稳、带着头衔和家族光环的那群人。它强调的通常也不只是“有钱”，而是一种被历史、门第和阶层包起来的上层感。\n\n**本体质感** · aristocratic 这个词本身有一点“站得高、离人群有点距离”的气味。它常常不只是描述身份，也会顺手描出一种姿态：举止讲究，显得疏离，甚至有点势利。英语里它通常不只是“贵”，更像“贵得有来历，贵得带着阶层留下的空气感”。  \n它和相关词放在一起看，会更有手感：royal 更直接让人想到王室；noble 既可以指贵族，也常带“高贵、高尚”的意思；aristocratic 则可以大致体会成更偏“贵族阶层的气质、风度与门第感”。如果说 royal 是王冠本身，noble 是一个更宽的身份或品格标签，aristocratic 更像这套阶层在人的身上留下的神情、动作和气场。\n\n**寻根溯源** · 它的词源线确实来自“贵族统治”这条线：往上能追到希腊语 aristokratia / aristokratikos，再经过法语 aristocratique 进入英语。里面的 aristos 是“best”，kratos 是“权力、统治”，所以它一开始绕着的，就是“最上面那部分人来统治”的观念。英语里这个词已知很早在 1596 年就出现；到了 1845 年前后，又明确长出“像贵族那样、讲究而有门第感”的延伸义。也正因为这样，它后来不只指政治结构，也慢慢可以拿来形容人、家族、空间和风格。\n\n**各路用法** · 在现代英语里，它既常用于历史或阶层描述，也很常用于写人的气质、举止、外貌，甚至空间里那种旧式上层社会的空气。与此同时，它有时也不是夸奖：在一些语境里，aristocratic 还会带出“排外、势利、不太好接近”的味道。\n\n**日常,夸一个人的外形**\n> She has an aristocratic face and a very quiet way of carrying herself.\n> 她有一张很有贵族气质的脸，举止也很安静从容。\n\n这里的重点不是“她真是贵族”，而是她的轮廓、神情和姿态让人联想到门第感。\n\n**日常,描述房间或氛围**\n> The house retained an aristocratic air despite years of neglect.\n> 这栋房子尽管多年失于打理，还是保留着一种贵族气息。\n\n这里是在借“阶层感”来写空间的历史重量，也可以理解成一种上流、讲究、旧门第的氛围。\n\n**人物描写,带一点疏离感**\n> His aristocratic manner made him seem cold and unapproachable.\n> 他那种贵族派头的举止，让他显得冷淡而难以接近。\n\n这就不是单纯“高贵”了。aristocratic 在这里已经碰到词典里明写的那层边界：讲究、排外、甚至有点 snobbish。\n\n**正式,偏历史或社会描述**\n> The region has long been dominated by aristocratic families.\n> 这个地区长期由贵族家族主导。\n\n这里更接近字面身份，语气也比日常描写更正式、更冷静。\n\n**历史/政治,谈制度或统治**\n> The revolution was framed as a struggle against aristocratic rule.\n> 这场革命被表述为一场反对贵族统治的斗争。\n\n这一支不能漏掉。aristocratic 不只会写脸、举止和房子，它也可以回到词根最原始的位置，直接进入政治史语境，指向“贵族式统治”或“由上层少数人把持的制度”。\n\n**原生思维** · 英语里说 aristocratic，这个词通常更容易让人想到门第、阶层标记和上流社会留下的痕迹，而不只是财富本身。它很会把“身份”转成“气质”：不是你自己宣告高贵，而是你的脸、站姿、做派、房子的陈设、甚至一个社会的组织方式，都在替你说话。中文里我们会说“有贵族气”“有架子”“像名门出身”，但 aristocratic 往往把这些东西压成一个更整体、也更带历史感的印象。要紧的是，它并不天然是褒义：一旦那层上层气息开始显得封闭、拿腔作调，它就会滑向“势利”和“难接近”。\n\n**悟道时刻** · 你可以把 aristocratic 看成一种“阶层痕迹”的词：它不只说谁在上面，更说“上面”这件事怎样落到人和物上，变成脸、举止、房子、制度里的空气。以后再遇到这类身份形容词，别只问它在标谁，先问它有没有把一种社会结构，悄悄翻译成一种气场。",
+    "verification": {
+      "claimCount": 12,
+      "confirmedCount": 6,
+      "softenedCount": 6,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "Britannica 的 aristocracy 条目，补足“政治制度”这一历史核心义"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/aristocratic"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/aristocratic"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/aristocratic"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/aristocratic"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/aristocracy"
+        },
+        {
+          "label": "Britannica",
+          "url": "https://www.britannica.com/topic/aristocracy"
+        },
+        {
+          "label": "Google Books",
+          "url": "https://books.google.com/books/about/Remembrance.html?id=WNP1CAAAQBAJ"
+        }
+      ]
+    },
+    "surface": "贵族的；贵族气派的；高雅而疏离的"
+  },
   "at its discretion": {
     "displayWord": "at its discretion",
     "meta": [
@@ -763,6 +812,59 @@ window.WORD_SENSE_ENTRIES = {
         }
       ]
     }
+  },
+  "averse": {
+    "displayWord": "averse",
+    "meta": [
+      "态度倾向 · 风险回避 · B2-C1",
+      "Issue 007"
+    ],
+    "markdown": "**字面含义** · 这个词的画面感很强：像是身体本能地往后退了一步，侧开身，不想靠近。它常常不是“完全不接受”，而是“心里先起了排斥”，带着一点躲闪的姿态。\n\n**本体质感** · averse 的核心不是“讨厌”那么直白，而是“有抵触，不想碰”。它常跟 to 连用，像是把一个动作挡在门外：averse to risk, averse to change, averse to conflict。这里面有一种冷静、克制的拒绝，不一定带情绪爆炸，但态度很明确。很多时候，你可以把它粗略理解为：比 dislike 更正式一点，比 hate 更收一点；和 reluctant、resistant 这些词也有重叠，只是 averse 往往更像一种先退开的态度，而不一定是正面顶上去的对抗。它本身也很能生复合形，所以除了 averse to risk，你也会经常看到 risk-averse、change-averse、conflict-averse 这类写法。\n\n**寻根溯源** · 它来自拉丁语 aversus，意思接近“转开、背过去”。所以它今天的气味里一直留着那个“把脸别开”的动作：不是正面迎上去，而是本能地转身回避。现代英语里，averse 确实偏正式、偏书面，不太像日常口语里直接说“我不喜欢”；而它的词源，也会让人更容易记住这种“turn away”的动作感。\n\n**各路用法** · 几个例子，先看它在正式语境里的站姿。\n\n**职场，邮件里**\n> The team is not averse to change, but we need a clearer plan.\n> 团队并不排斥变化，但我们需要一个更清晰的方案。\n\n这里的 not averse to 很妙，表面是否定，实际常常是在委婉地说“并不反对，甚至愿意接受”。这种说法本身也略偏书面，带一点克制的、留有余地的语气。\n\n**职场，报告里**\n> Investors are averse to unnecessary risk.\n> 投资者对不必要的风险有明确抵触。\n\n这类搭配里，averse 常常跟 risk 这样的词挨在一起，语气是理性的排斥。\n\n**商业，分析文章里**\n> Rising risk aversion pushed money into safer assets.\n> 风险厌恶情绪上升，促使资金流向了更安全的资产。\n\n这里要顺手认出它的名词形式 risk aversion。真实阅读里，risk-averse 和 risk aversion 往往是一组一起出现的表达，尤其在金融、投资以及更广义的决策语境中很稳。\n\n**日常，对朋友**\n> My dad is averse to spending money on things he does not need.\n> 我爸不太愿意把钱花在不需要的东西上。\n\n这里听起来不像情绪化抱怨，更像一个人长期形成的倾向。不过也正因为 averse 偏正式，日常口语里很多人其实更可能说 he doesn't like spending money 或 he is reluctant to spend money。\n\n顺手再提醒一个读法上的小扩展：除了 averse to risk 这种结构，英语也很常把它压成前置复合形，比如 risk-averse investor、conflict-averse manager、publicity-averse celebrity。一个词一旦进入这种构词模式，说明它已经不只是单点词义，而是长出了一整片稳定用法。\n\n**原生思维** · 可以把 averse 理解成在心里先画出一道边：这件事我不想接近。它是一种姿态判断，不是情绪宣泄。中文里我们可能会说“排斥”“不愿意”“不太接受”，但 averse 抓住的是更早一步的那个动作——还没碰上，就先往后退。还有一个很实用的防混提醒：averse 是“反感、不愿”，adverse 则是“不利的、有害的”，长得近，意思却不是一回事。\n\n**悟道时刻** · 这个词真正好用的地方，是它把“反感”说得很安静，而且很制度化。你一旦看见 averse，就别只把它当“讨厌”记住；要顺手去认整片词群：averse to、not averse to、risk-averse、risk aversion。以后在文章里再遇到它，你识别的就不只是态度，而是一个人面对风险、变化和冲突时，先退半步的心理姿态。",
+    "verification": {
+      "claimCount": 8,
+      "confirmedCount": 5,
+      "softenedCount": 3,
+      "uncertainCount": 1,
+      "rejectedCount": 0,
+      "checked": [
+        "词源：查 Etymonline 的 `averse` 与 `aversion`"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/averse"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/averse%20to"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/grammar/adverse-or-averse-difference"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/averse"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/risk-averse"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/risk-aversion"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/averse"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/averse"
+        }
+      ]
+    },
+    "surface": "反感的；不愿意的"
   },
   "blast": {
     "displayWord": "blast",
@@ -1825,6 +1927,116 @@ window.WORD_SENSE_ENTRIES = {
     },
     "surface": "贬损的；侮辱性的"
   },
+  "despondency": {
+    "displayWord": "despondency",
+    "meta": [
+      "情绪低谷 · 希望流失 · C1",
+      "Issue 007"
+    ],
+    "markdown": "**字面含义** · 这个词让人联想到一种精神往下沉的状态：不是一时难过，而是整个人像被低气压拖住，提不起来。你看到的重点不是眼泪，而是希望和劲头一起往下掉。\n\n**本体质感** · despondency 不是普通的“伤心”，它更像一种持续性的低落和泄气：人心里那点往前撑的劲儿变少了，对局面也不太抱希望。它有一种“我知道该振作，但就是提不起”的质地。和它相近的词里，sad 是泛泛的难过，gloom 更像阴暗气氛压到心境上，depression 在日常理解里常常显得更重，但它也可能是医学语境里的“抑郁”；despondency 更稳的核心，是灰心、低落，以及希望和热情一起往下滑。\n\n**寻根溯源** · 它来自拉丁语 `despondere`，词源线上带着“放弃、灰心、失去勇气”的意思；再往深处追，和 `spondere` 这种“承诺、许诺”的词根有关。词源和早期释义里，都能看到一种 “a sinking or dejection of spirit from loss of hope or courage” 的意味——也就是精神往下沉，因为希望或勇气掉下去了。所以它不是单纯的伤心，更像是人心里的支撑感松了，整个人随之低下来。\n\n**各路用法** · 这个词在英语里通常偏书面，常出现在新闻、文学、评论里，用来写一个人、一个群体，或者一段时期的精神状态。实际使用里，名词 despondency 比较正式；日常里更常直接用形容词 despondent，比如说 someone feels despondent about something。\n\n**职场,公司前景讨论时**\n> There was growing despondency about the future across the company.\n> 公司内部对未来的消沉情绪越来越明显。\n\n这里的 despondency about the future 很典型，写的不是短暂失落，而是对前景越来越灰心。\n\n**职场,项目连续失利后**\n> The team slipped into despondency after three failed product launches.\n> 三次产品发布都失败后，团队陷入了沮丧和消沉。\n\nslip into despondency 有一种慢慢滑进去的感觉，不是情绪爆发，而是士气一点点掉下去。\n\n**日常,收到坏消息后**\n> After the rejection letter, he sat in quiet despondency for the whole evening.\n> 收到拒信后，他整个晚上都安静地消沉着。\n\nquiet despondency 写得很克制：外面没什么戏剧动作，里面的希望却已经低下去了。\n\n**文学,写声音里的情绪**\n> There was a kind of despondency in her voice that made the room feel smaller.\n> 她声音里有一种消沉感，让房间都显得更小了。\n\n它也常被放进 voice、mood、air 这种词旁边，写一种压低场域的精神气压。\n\n**原生思维** · 英语母语者用 despondency 时，通常不是在给情绪贴一个笼统标签，而是在抓一种“希望被抽走以后，人往下滑”的状态。它看重的不是情绪有多激烈，而是人还有没有盼头、有没有往前的劲儿。中文里我们会说“泄气”“灰心”“提不起劲”，但这些词分散在不同侧面；despondency 把它们收拢成一种更完整的状态。顺手记一个实用入口：正式写作里会见到 despondency，真正到日常表达，很多时候其实会直接说 despondent。\n\n**悟道时刻** · despondency 这个词最值钱的地方，不是“丧”，而是“希望掉了以后，整个人跟着往下沉”。以后你在英语里遇到某种低落，不妨先问一句：这只是难过，还是连勇气和期待也一起塌了？如果是后者，despondency 就出现了。",
+    "verification": {
+      "claimCount": 6,
+      "confirmedCount": 3,
+      "softenedCount": 4,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "这个词本来带着一种‘往下坠’的画面。",
+        "despondency 不是普通的‘伤心’……偏向‘失去希望、士气下滑、被打垮了一点…",
+        "它来自拉丁语系的词根，核心意思和‘回应、希望’有关，前缀把这种希望往回压、往下撤。",
+        "这个来路很重要，因为它不是单纯的‘伤心’，而是‘本来应该还能回应生活，但现在回应不出…",
+        "这个词在英语里通常偏书面，常出现在新闻、文学、评论里，用来写一个人、一个群体，或者一…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/despondency"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/despondency"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/despondency"
+        },
+        {
+          "label": "Collins Dictionary",
+          "url": "https://www.collinsdictionary.com/dictionary/english/despondency"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/despondency"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/despondency_n"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/despondent"
+        }
+      ]
+    },
+    "surface": "沮丧；消沉；绝望"
+  },
+  "disembody": {
+    "displayWord": "disembody",
+    "meta": [
+      "身体隐喻 · 抽象分离 · C1",
+      "Issue 007"
+    ],
+    "markdown": "**字面含义** · 这个词先给人的画面，不是“把身体拆开”，而是把原本依附身体的存在抽离出来：身体还在退后，声音、意识、灵魂，或者一种存在感先漂了出去，不再稳稳地挂在肉身上。\n\n**本体质感** · disembody 的核心质感，不只是“没有身体”，而是那种明显的脱离感、失重感、去肉身化。它常让人想到某种被剥离的状态：本来该连着身体、现场、触感的东西，被故意或被动地切开了，于是只剩声音、想法、影像、数据，或者一种悬空的存在。  \n它也不只用于“灵魂离体”这种直观画面。按词典的大义，它还可以往更宽一点的方向走：让某种东西失去现实性、物质性，不再落在可触、可感、可在场的层面上。所以它一旦进入媒介、技术、评论写作，重点往往不是“真的没了身体”，而是“原本该有的身体依附，被抽掉了”。\n\n**寻根溯源** · 它由 dis- 和 embody 组成，这个构词很直白：embody 是让某种东西有了形体、落到具体形态里；disembody 则反过来，把这种具身感抽走。词源资料一般把它解释成“使脱离身体、使摆脱肉身”。  \n这个词最早见于 1714 年；后来还发展出 disembodiment 这个名词。更早的英语里，它甚至还有一个现在已经很边缘的历史义，指军团或部队的解散、遣散。至于今天更容易遇到的用法，大致还是两条：一条是灵魂、精神、声音这类东西脱离身体；另一条是更现代的延伸——在学术、媒介批评、数字文化讨论里，拿它来写一种失去物质性、失去在场感的状态。像 *Being Human in a Disembodied World* 这样的说法，正好把这种现代焦虑说得很明白。\n\n**各路用法** · 几个例子，感受它在不同场景里的气味：\n\n**学术/媒介评论**\n> The essay argues that digital life can make human interaction feel disembodied.\n> 这篇文章认为，数字生活会让人与人之间的互动显得去身体化。\n\n这里不是说“人真的没身体了”，而是在说互动越来越脱离面对面的身体在场。这种写法尤其常见于理论、评论性的语境。\n\n**日常/描述感受**\n> After hours of scrolling, I felt almost disembodied.\n> 刷了几个小时手机后，我感觉自己几乎像脱离了身体。\n\n这句话的重点是那种飘、空、跟身体不在一块儿的感觉。它是自然的示例句，但更像一种体验描述，不必把它理解成固定口语。\n\n**宗教/哲学讨论**\n> Some traditions imagine the soul as disembodied.\n> 有些传统把灵魂设想成脱离肉身而存在。\n\n这里的 disembodied 更接近词典核心义，不只是修辞延伸。它点出的就是灵魂或精神与身体分离的设想。\n\n**影视/听觉场景**\n> A disembodied voice came from the dark hallway.\n> 一道不见其人来源的声音从漆黑的走廊里传来。\n\n这是很值得记住的一支高频入口。disembodied voice 不是“抽象的声音”，而是“只听见声音，却看不见说话的人或声音附着的身体”。\n\n**原生思维** · 英语母语者用 disembody 时，脑子里通常不是先想“抽象”，而是先想：本来应该挂在身体上的东西，现在被拿开了。所以它天然带一种对照——有身体感 vs. 去身体感，有在场的存在 vs. 悬空的存在。  \n中文里我们也会说“抽离”“飘了”“没有实体感”，但 disembody 更像是在强调一种结构性的剥离：不是单纯心情发飘，而是声音、灵魂、互动、存在方式，失去了它原本应有的肉身或物质依附。也正因为这样，在现代评论和学术语境里，它很容易出现在 digital、virtual、spiritual 这些话题附近。\n\n**悟道时刻** · disembody 真正值得抓住的，不是“身体”这个名词，而是英语在这里默认了一件事：很多真实感，原本是要靠身体来兜底的。  \n所以以后看到它，你可以顺手问一句：这里被抽掉的，到底是肉身、现场、触感，还是某种“只有通过身体才算真的存在”的部分真实。问到这一步，这个词就活了。",
+    "verification": {
+      "claimCount": 10,
+      "confirmedCount": 4,
+      "softenedCount": 6,
+      "uncertainCount": 2,
+      "rejectedCount": 1,
+      "checked": [
+        "这个词先给人的画面，是‘把身体拆开、把身体拿掉’。",
+        "原本有身体的东西，被从身体里抽离出来，变得不再依附肉身。",
+        "它由 dis- 和 embody 组成，字面上就是‘去身体化’‘解除具身’。",
+        "embody 本来就是‘让某种东西有了身体、落到具体形态里’，disembody 于…",
+        "后来它常用来写宗教、哲学、媒介、技术语境里那种‘从肉身中抽离出来’的状态。"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/disembody"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/disembody"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/disembodied"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/disembodied"
+        },
+        {
+          "label": "Collins English Dictionary",
+          "url": "https://www.collinsdictionary.com/dictionary/english/disembody"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/disembody_v"
+        },
+        {
+          "label": "Google Books, *The Extinction of Experience: Being Human in a Disembodied World*",
+          "url": "https://books.google.com/books/about/The_Extinction_of_Experience.html?id=vsHuEAAAQBAJ"
+        },
+        {
+          "label": "Google Books, *On the Internet*（书介含 “the disembodied, free floating web”）",
+          "url": "https://books.google.com/books/about/On_the_Internet.html?id=A-cIVdTsghAC"
+        }
+      ]
+    },
+    "surface": "使脱离身体；使失去实体"
+  },
   "distill": {
     "displayWord": "distill",
     "meta": [
@@ -1873,6 +2085,51 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "divinity": {
+    "displayWord": "divinity",
+    "meta": [
+      "宗教概念 · 超越属性 · C1",
+      "Issue 007"
+    ],
+    "markdown": "**字面含义** · 这个词最初就带着“神性”的画面：不是具体某一位神，而是那种超出凡人、带有神圣气息的东西。你可以先把它想成“神的属性”或“神圣本身”在发光。只是它在英语里不只会指这种抽象光感，也会落到更具体的“神祇”或“神学”上。\n\n**本体质感** · divinity 这个词一出来，空气会立刻变静一点，姿态也会收起来一点。它不像 everyday 里的 “god” 那么直冲，也不像 religion 里的术语那么硬，它更像一种带敬意的抬头观看：你在说某种高于人的存在感，或者某个人、某个事物身上被看见的神圣光泽。\n\n但它又不只是飘在空中的庄严词。英语里它最稳的几个入口，其实相当具体：可以是宗教/神学里的“神性”，可以直接指“神祇”，也可以指“神学这门学问”。也就是说，它既能往上抬，也能落地成制度、学科和传统语境里的正式用语。\n\n**寻根溯源** · 它来自拉丁语 divinitas，底层就是“神性、神圣、属于神的状态”。有意思的是，这个词在英语里的展开，似乎一开始就分了两路：大约在 1300 年前后，它先有“神学、关于神之事的学问”这一层意思；到 14 世纪后期，“神性、神圣性质”这层也稳定下来。后来再往外长，才慢慢有了那种更抽象的修辞性用法——不是严格讲神学，而是借“神”的高度去抬升艺术、自然或某种近乎完美的质感。\n\n所以它今天看起来像一个很飘的词，其实骨架并不飘：一头连着宗教和学科制度，一头才连向抽象的崇高感。英语里它也确实发展出了很具体的糖果义，像 divinity 或 divinity fudge 这种甜点名。至于为什么这样命名，一种常见解释是它借了 divine 那种“好得近乎神赐”的夸赞色彩。\n\n**各路用法** ·\n\n**正式,宗教/神学语境**\n> The sermon focused on the divinity of Christ.\n> 这篇讲道聚焦于基督的神性。\n\n这里的 divinity 不是“神仙气质”，而是很明确的神学概念：神性。\n\n**古典/历史书写**\n> The temple was dedicated to local divinities.\n> 这座神庙是献给当地诸神的。\n\n这里的 divinity 不是抽象“神圣感”，而是直接指神祇、神明本身。这个义项很正规，只是语域偏书面、偏古典。\n\n**教育,大学语境**\n> She studied divinity at Yale.\n> 她在耶鲁学习神学。\n\n这里的 divinity 是“神学”这门学问。它也常出现在固定搭配里，比如 divinity school、divinity student、Doctor of Divinity，都是制度语境里很真实的说法。\n\n**抒情/哲思,谈自然**\n> She spoke about the divinity of nature with real conviction.\n> 她非常真诚地谈论自然的神圣感。\n\n这里更像一种哲思性的抬升：不是把自然说成某位神，而是说自然带着超越性的光。这类用法能成立，但语气比日常口语更文一点。\n\n**文学/评论,比喻性延伸**\n> The novel treats art as a kind of divinity.\n> 这部小说把艺术写成一种近乎神圣的存在。\n\n这种用法里，divinity 常常不是指宗教本身，而是修辞性地把某个事物放到“值得敬畏”的高度。\n\n**生活文化,甜点名称**\n> My grandmother used to make divinity every Christmas.\n> 我祖母以前每到圣诞节都会做 divinity 这种糖果。\n\n这里的 divinity 已经是甜点名称本身，不只是临时的形容。它提醒你：这个词除了神学和抽象崇高，也真的会落到食物名上。\n\n**原生思维** · 英语母语者用 divinity 时，往往不是在给一个对象做普通分类，而是在给它“抬阶”——尤其当它不是在指神学学科或神祇本身的时候。它会把东西从“人间可触摸的层次”往上提，提到一种更高、更纯、更不可轻慢的位置。中文里我们也会说“神圣”“神性”“超凡”，但英语里的 divinity 常常更像一个姿态：说话的人先低一点，把对象捧高一点，语言的动作本身就在表达敬意。\n\n不过也正因为如此，这个词不能只按“抒情滤镜”去理解。你真正在现实里遇到它，很多时候反而是在宗教讨论、大学机构名称、学位头衔，或者古典书写里。先认出这些硬入口，再去体会它被借去抬高艺术、自然时的那层光，感觉会更准。\n\n**悟道时刻** · divinity 最妙的地方，是它一半是制度词，一半是抬升词：最稳的现实入口仍是宗教、神学、学位和 divinity school 这类正式语境，但它又总带着把对象往上托一层的力量。\n\n以后你再看到它，先问自己：这里是在说“神性”、在说“神”、在说“神学”，还是在借“神”的高度抬一个对象。这个识别动作一出来，整片语感地图就亮了。",
+    "verification": {
+      "claimCount": 8,
+      "confirmedCount": 5,
+      "softenedCount": 4,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "它来自拉丁语 **divinitas**，底层就是‘神性、神圣、属于神的状态’。",
+        "所以它今天的两层常见气质都保留着这条根：一层是宗教/神学里的‘神性’，一层是更抽象的…",
+        "英语里它也能进入非常具体的食物名，像 **divinity fudge** 那种甜点…",
+        "这时是历史上那种‘甜得像天堂’的命名趣味，不是词义变了，而是神圣感被借去做夸赞。",
+        "正式,宗教/神学语境”里 **the divinity of Christ** 是明…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/divinity"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/divinity"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/divinity"
+        },
+        {
+          "label": "Britannica Dictionary",
+          "url": "https://www.britannica.com/dictionary/divinity"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/divinity"
+        }
+      ]
+    },
+    "surface": "神性；神；神学"
+  },
   "drain": {
     "displayWord": "drain",
     "meta": [
@@ -1914,6 +2171,112 @@ window.WORD_SENSE_ENTRIES = {
         }
       ]
     }
+  },
+  "elapse": {
+    "displayWord": "elapse",
+    "meta": [
+      "时间流动 · 书面表达 · B2",
+      "Issue 007"
+    ],
+    "markdown": "**字面含义** · 从词源联想看，elapse 和“滑过去”“溜走”有关；到了现代英语里，它最常落在一个很具体的画面上：一段时间已经过去了。你不是在抓住它，而是在回头看时发现，这段时间已经从你身边经过。\n\n**本体质感** · elapse 不是那种会自己站到台前的时间词。它偏正式，也不算口语里特别高频的选择，更常见于报告、说明、学术或规章文本。它常和 time、days、hours、weeks、months、years 这类时间名词连在一起，而且通常就是这些时间段来做主语：three days elapsed, several months had elapsed, little time elapsed。语感上，它关心的不是人怎么度过这段时间，而是这段时间本身有没有从起点走到终点。说 “three days elapsed” 时，表达重点通常不在三天里发生了什么，而在于“三天这段长度已经过去了”。所以它在正式英语里常带一种客观陈述时间间隔的感觉，像旁观者在记时。\n\n**寻根溯源** · elapse 来自拉丁语 *elabi / elapsus*，有“滑开、滑走、溜过去”的意思。英语里大约在 1640s、也就是 1644 前后就已经有记录。需要稍微说得更准一点的是：这个词在历史上并不只有今天这一层意思，早期英语里还出现过更宽的用法，其中一些后来已经废用；现代通行义则基本收束为“（时间）过去”。所以今天我们读到它时，仍然会很自然地联想到时间从身边溜走，但这更适合看作一种词源留下来的质感，而不是一条可以硬说成“一路没变”的直线。\n\n**各路用法** · 它最常出现在“有多少时间过去了”的句式里，而且句法很稳定：常见的是 `X elapsed`、`X elapsed before...`、`X had elapsed since...`、`until X had elapsed` 这几类。\n\n**职场,报告里**\n> Two weeks elapsed between the first interview and the final offer.\n> 从第一次面试到最终录用，过去了两周。\n\n这里不是在讲“两周里做了什么”，而是在精确标出一个时间间隔已经完成。\n\n**项目复盘,时间线说明**\n> Three months had elapsed since the product launch.\n> 自产品上线以来，已经过去了三个月。\n\n`had elapsed since` 这种结构很常见，重点是从某个起点算，到现在已经走过了多久。\n\n**日常,书面通知**\n> No more than 30 days may elapse after the notice is sent.\n> 通知发出后，经过的时间不得超过三十天。\n\n这类句子很像规则条文：时间在这里被当作一个可计算、可界定的区间。\n\n**法规,正式条文语感**\n> Waiting periods must elapse before the acquisition may be completed.\n> 在收购可以完成之前，法定等待期必须先经过。\n\n这就是它在法律或规章语域里的典型样子：不是讲人的动作，而是讲某段法定时间是否已经走完。\n\n**技术,界面提示**\n> The system displays the elapsed time for each task.\n> 系统会显示每项任务已经过去的时间。\n\n`elapsed time` 是一个很高频的固定表达，在技术、测量、实验、程序输出、计时界面里都很常见。很多人现实里先遇到的，反而不是动词 elapse，而是这个短语。\n\n**原生思维** · 英语母语者用 elapse 的时候，脑子里看的通常不是“人怎么过日子”，而是“时间本身有没有走完一段”。它把时间当成一个会经过、会跨越边界的东西，所以特别适合和期限、间隔、等待期放在一起。中文里我们常说“过去了”“流逝了”，但 elapse 更像是在做一种冷静的计量：起点到终点之间，这段时间已经过去了。\n\n如果顺手和几个近邻词分开看，会更清楚：`pass` 最泛，什么时间过去都能说；`expire` 常常带“到期、失效”的结果感，比如证件、合同、优惠到期；`lapse` 在现代英语里更常见的是中断、失效、疏漏，或者一段间隔。elapse 则很专：它就是在说时间过去。\n\n**悟道时刻** · elapse 最值得抓住的，不是“流逝”这点诗意，而是它的观察站位：它不站在人身上看时间，而是站在计时线外面，确认“这段时间是否已经过去”。一旦你识别出这种视角，你在正式英文里就会更敏感——凡是期限、等待期、时间间隔、界面计时，看到的往往不是“怎么度过”，而是“多久已经 elapsed”。",
+    "verification": {
+      "claimCount": 11,
+      "confirmedCount": 6,
+      "softenedCount": 5,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "这个词最原始的画面，是时间一点点‘流过去’‘滑过去’。",
+        "elapse 来自拉丁语，核心意思就是‘滑过、流走、过去’。",
+        "这个词一路保留了那种‘从你手里漏掉’的感觉。",
+        "所以今天它仍然偏书面、偏正式。",
+        "常见于叙述时间间隔、法律或说明性文本里。"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/elapse"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/elapse"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/elapse"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/elapse"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/elapse_v"
+        },
+        {
+          "label": "Federal Trade Commission",
+          "url": "https://www.ftc.gov/legal-library/browse/statutes/hart-scott-rodino-antitrust-improvements-act-1976"
+        },
+        {
+          "label": "eCFR",
+          "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-314/subpart-D/section-314.107"
+        }
+      ]
+    },
+    "surface": "流逝；过去"
+  },
+  "ensemble": {
+    "displayWord": "ensemble",
+    "meta": [
+      "整体关系 · 艺术组合 · B2-C1",
+      "Issue 007"
+    ],
+    "markdown": "**字面含义** · 这个词最先让人看到的是“一整套一起出现的东西”，像一组人、一套衣服、一个整体的配搭。它的画面感不是“单个成员”，而是“几个部分站在一起，合起来才成立”。\n\n**本体质感** · ensemble 说出来，有一种“合在一起才好看、才像样”的感觉。它盯的不是某一个部件够不够强，而是整体有没有协调、有没有成型。你会在时装里听到它，那里它强调的是一身搭配；你也会在音乐里听到它，那里它强调的是一群人一起发声、彼此咬合。这个词天然带着“整体大于局部”的眼光。  \n在时尚语境里，ensemble 常让人想到成套、协调的一身搭配；在音乐语境里，它也往往突出作为一个整体协同演出的群体，不一定是流行乐队那种身份。再往影视和戏剧里走一步，它还常指一组演员共同撑起的群像感，而不是只围着一个主角转。\n\n**寻根溯源** · 它来自法语，核心方向就是“在一起、同时、共同”。后来英文把它借进来，也基本保留了“成组、成套、共同出现”的骨架。大致来看，这个词进入英语后一直沿着“把几个部分合起来看”的路在生长：英语里的名词用法很早就出现了，音乐义在 19 世纪中叶已经稳定，服装义则更晚一些才清楚落地。  \n所以它看起来跨了几个领域，其实底层并没怎么变：不管是穿搭、合奏、群像表演，还是现代技术语境里的延伸，它说的都是“多个部分被放进同一个整体框架里看”。\n\n**各路用法** · 几个例子，在不同场域里你感受一下它怎么落地：\n\n**时尚,看杂志或品牌介绍**\n> She wore a bold red ensemble with matching shoes and a structured coat.\n> 她穿了一整套醒目的红色搭配，配着同色鞋子和一件有型的外套。\n\n这里的 ensemble 不是单指一件衣服，而是整身造型。\n\n**音乐,看演出介绍**\n> The ensemble performed Mozart with remarkable precision and balance.\n> 这个合奏团演奏莫扎特时，精准又协调。\n\n这里的重点不是“有几个人”，而是他们如何作为一个整体一起运作。\n\n**影视,看剧评或颁奖季报道**\n> The film works because of its strong ensemble cast.\n> 这部电影之所以成立，是因为它有一组很强的群像演员阵容。\n\n这里的 ensemble cast 说的是一组演员共同撑起作品，不是只靠某一个明星单点发光。\n\n**日常,朋友聊天**\n> I like the ensemble, but the jacket alone feels too formal.\n> 我喜欢这一整套搭配，但单看这件外套就显得太正式了。\n\n这里明显把“整体效果”放在前面，单件只是整体里的一个零件。\n\n**技术,机器学习讨论**\n> Random forests are a classic ensemble method.\n> 随机森林是一种经典的集成方法。\n\n这里的 ensemble 已经进入机器学习里的固定说法，常见于 ensemble methods 或 ensemble learning，意思是把多个模型组合起来，让整体表现比单个模型更稳。\n\n**原生思维** · ensemble 这个词，通常会让人先注意整体效果，而不是单个部件。它的认知动作，是把分散的元素收束到同一个审美或功能框架里。中文里我们当然也会说“整套”“一身”“合奏”“群像阵容”，但英语把这种“整体感”做成了一个可反复调用的词，能跨到穿搭、音乐、影视表演，以及机器学习这些不同场景。\n\n**悟道时刻** · 记 ensemble，不要记成“很多东西放一起”这么平。它真正抓人的地方是：这些部分不是碰巧同场，而是被当作一个整体来感受、来评价。\n\n以后再遇到英语里那种“不是单个物件，而是整组一起成立”的表达，你就先问自己一句：这里在看的是成员，还是成员之间合起来之后产生的那个整体效果？",
+    "verification": {
+      "claimCount": 12,
+      "confirmedCount": 6,
+      "softenedCount": 4,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "这个词最先让人看到的是‘一整套一起出现的东西’，像一组人、一套衣服、一个整体的配搭。",
+        "它的画面感不是‘单个成员’，而是‘几个部分站在一起，合起来才成立’。",
+        "你会在时装里听到它，那里它强调的是一身搭配；你也会在音乐里听到它，那里它强调的是一群…",
+        "在时尚语境里，它常常比 outfit 更像‘搭配得体的一整套’，比 set 更有人在…",
+        "它来自法语，最早的核心就是‘在一起、同时、共同’的意思。"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/ensemble"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/ensemble"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/ensemble"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/ensemble"
+        },
+        {
+          "label": "scikit-learn API Reference",
+          "url": "https://sklearn.org/stable/api/sklearn.ensemble.html"
+        },
+        {
+          "label": "scikit-learn User Guide",
+          "url": "https://sklearn.org/1.6/modules/ensemble.html"
+        },
+        {
+          "label": "Britannica",
+          "url": "https://www.britannica.com/art/ensemble-theater"
+        }
+      ]
+    },
+    "surface": "整体；合奏团；全套服装"
   },
   "epitome": {
     "displayWord": "epitome",
@@ -3040,6 +3403,56 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "incur": {
+    "displayWord": "incur",
+    "meta": [
+      "后果成本 · 正式表达 · B2-C1",
+      "Issue 007"
+    ],
+    "markdown": "**字面含义** · 这个词早期就带着一种“把某种后果落到自己身上”的方向感。它不是主动去领取什么东西，而更像是因为前面的行为、决定或处境，让某种结果顺势记到了自己名下。\n\n**本体质感** · incur 的核心气质不是单纯“遭遇”，而是“自己这边的行动，把后果引到了自己头上”。它常常出现在比较正式、克制、带一点冷静结算感的语境里：费用、债务、责任、罚款、处罚，也包括招来别人的愤怒或不满。母语者用它时，心里不是在抒情，而是在记账——像把一个后果精准地挂到主体头上。  \n它和 have、face、suffer 不一样：have 只是持有，face 是正面迎上，suffer 更像承受痛感；incur 说的是“因自己的行为而招致、承担”。至于 provoke、invite、trigger，这些词也能帮助理解，但它们更偏“引发出某事”，不一定像 incur 这样，把责任或代价明确落到账上。  \n所以它听起来总有一点“账单式”的冷感。而且它通常接的，也多半是不太受欢迎、带代价的结果。\n\n**寻根溯源** · 它来自拉丁语 *incurrere*，词源上有 “towards + run” 的成分，大致就是“跑进去、撞上去”的方向感。这个画面更适合当助记：不是现代英语里真的在强调“什么东西冲进你身体”，而是词源层面留下了一种“后果朝你这边落来”的隐喻。  \n从时间线看，大约到 1400 年，英语里已经有了 “把某种不想要的后果招到自己身上” 这个意思；到 15 世纪中期，又更明确地发展出 “承担付款或费用责任” 的用法。也因此，现代英语里它尤其常见于法律、财务、合规和正式写作，给人的感觉很像：结果本身不只是发生了，而是被记到了某个主体头上。\n\n**各路用法** · 几个例子，感受它那种“后果记到你账上”的语气：\n\n**职场，邮件里**\n> If we delay the launch, we may incur additional costs.\n> 如果我们推迟上线，可能会产生额外成本。\n\n这里不是说“我们会有成本”这么平淡，而是“我们的决定会招来一笔成本”。\n\n**职场，合同/报告里**\n> The company could incur significant liability if the policy is ignored.\n> 如果忽视这项政策，公司可能会承担重大责任。\n\n这种句子里，incur 往往把后果写得很硬，像法律、合规和风控语言在落笔。\n\n**制度，合规提醒里**\n> Failure to comply may incur a financial penalty.\n> 未遵守规定可能会招致经济处罚。\n\n这类搭配在条款、规章、处罚通知里很常见，语气正式，而且责任落点非常明确。\n\n**日常，跟朋友**\n> I don’t want to incur any more debt this year.\n> 我今年不想再欠更多债了。\n\n日常里它也能用，但还是比口语里的 get into debt 或 run up debt 更正式、更书面，像是你在认真算自己的财务后果。\n\n**人际，办公室里**\n> She didn’t want to incur her manager’s wrath.\n> 她不想招来经理的怒火。\n\n这就能看出，incur 不只用于钱和法律。它也可以接 anger、wrath、displeasure 这类词，重点仍然是：因为自己的做法，把某种不愉快后果引到了自己身上。\n\n➤ *值得注意的是，incur 是一个高度偏好固定搭配的正式词。高频名词大致有两类：一类是财务/法律上的 costs, expenses, charges, fees, debts, liabilities, fines, penalties, bills；另一类是人际后果上的 anger, wrath, displeasure。*  \n➤ *另外，在报销、合同、审计、法律文本里，还经常直接看到后置结构：expenses incurred、costs incurred、liability incurred。你一旦认出这个格式，就会发现它其实是在说“已发生并由某方承担的费用/责任”。*\n\n**原生思维** · 英语母语者用 incur 的时候，脑子里不是“发生了一个坏结果”这么简单，而是“某个主体因为前面的动作，把一个可计量、可归责的后果背到了自己身上”。中文里我们常说“造成”“带来”“付出”“招致”，这些词各抓一角；incur 把它们压成一个很干脆的动作：后果不是飘着的，而是落账了。它天然适合写制度、合同、财务、报销和责任，因为英语很爱把这种因果关系写得像一笔账。\n\n**悟道时刻** · incur 最值得记住的，不是“招致”这个中文释义，而是它那种责任落点：结果发生了，还不够；关键是它被算到了谁头上。以后你在合同、政策、财务文本里看到正式词，先盯住这个落点去看——谁在承担，谁在背账，句子的骨架就会一下子亮出来。",
+    "verification": {
+      "claimCount": 11,
+      "confirmedCount": 7,
+      "softenedCount": 5,
+      "uncertainCount": 1,
+      "rejectedCount": 0,
+      "checked": [
+        "词源与时间线：Etymonline",
+        "搭配与场域：Cambridge Business English、词典例句"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/incur"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/incur"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/incur"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/incur"
+        },
+        {
+          "label": "Cornell Legal Information Institute",
+          "url": "https://www.law.cornell.edu/wex/liability"
+        },
+        {
+          "label": "Cornell Legal Information Institute (CFR)",
+          "url": "https://www.law.cornell.edu/cfr/text/26/31.3402%28n%29-1"
+        },
+        {
+          "label": "UK Legislation",
+          "url": "https://www.legislation.gov.uk/uksi/2016/1024/part/3/chapter/10/made?view=plain"
+        }
+      ]
+    },
+    "surface": "招致；承担；蒙受"
+  },
   "inflection point": {
     "displayWord": "inflection point",
     "meta": [
@@ -3095,6 +3508,57 @@ window.WORD_SENSE_ENTRIES = {
         }
       ]
     }
+  },
+  "juxtapose": {
+    "displayWord": "juxtapose",
+    "meta": [
+      "视觉关系 · 对照表达 · B2-C1",
+      "Issue 007"
+    ],
+    "markdown": "**字面含义** · 这个词最直观的画面，是把两个东西并排放着，放进同一个视线里。不是把它们混成一团，而更像是摆在旁边，让对照、关联或者某种效果自己冒出来。\n\n**本体质感** · juxtapose 带着一种有意安排的并置感：说话的人不是在平铺直叙，而是在“摆构图”。它常常有一点策展、写作、分析的气息——把两样东西放在一起，不急着下结论，先让对比自己发声；有时候不只是为了显出差异，也是为了制造一种效果，或者让原本不明显的关系突然被看见。这个词的动作感很强，像把两个镜头剪在一起，让观众自己看出张力。\n\n**寻根溯源** · 它的词根核心可以追到拉丁语 *juxta*，意思是“在旁边、紧挨着”。但英语里的 **juxtapose** 并不是直接从拉丁语一路落下来的：一种更准确的说法是，它大约见于 1826 年，是从更早出现的 **juxtaposition** 回构出来的词；而 **juxtaposition** 则更早，约见于 17 世纪。也因此，这个词在现代英语里很自然地带着一种“把东西有意识地并置起来”的修辞感，常见于艺术、写作和分析语境。\n\n**各路用法** · 最常见的句型是 **juxtapose A with B**：把 A 和 B 并置，让读者自己看到对照、关系或效果。\n\n**职场,写作或汇报里**\n> The report juxtaposes customer complaints with the latest retention numbers.\n> 这份报告把客户投诉和最新的留存数据并列呈现。\n\n这里不是简单“提到两件事”，而是在故意让它们形成对照。\n\n**日常,聊电影或照片**\n> The film juxtaposes scenes of luxury with scenes of poverty.\n> 这部电影把奢华场景和贫困场景并置在一起。\n\n说话的人想要的是那种一眼就能看出来的反差。\n\n**阅读,影评或文艺评论里**\n> The novel juxtaposes childhood innocence with political violence.\n> 这部小说把童年的天真和政治暴力并置在一起。\n\n这里的重点不只是“差很多”，也是让两者在同一框架里产生新的意义。\n\n顺带一提，名词 **juxtaposition** 也很常见。你在影评、文学分析、艺术评论里，常会直接看到它：不是说“并列”这件事做了，而是说“这种并置关系”本身值得拿出来谈。\n\n**原生思维** · 英语母语者用 juxtapose 时，脑子里不是“比较一下”这么轻，而是“把两个东西放到同一画面里，让对比自己发生”。中文里我们常说“对比”“并列”“放在一起看”，但 juxtapose 的重点更像是一个有设计感的摆放动作：先布置画面，再让意义浮出来。它和 compare、contrast、set against 这些词有交集，但并不完全等价：compare 最宽，contrast 更直接盯着差异，juxtapose 则更强调“把两者摆到同一框架里”。\n\n**悟道时刻** · 这个词真正值得你带走的，不只是“并排”这个动作，而是英语里一种很常见的造义方式：先把两个对象放进同一框架，再让差异、呼应、讽刺，甚至一种新的关系自己显形。\n\n以后你看到 juxtapose 这类词，先别急着翻成“对比”。先问一句：这里是在说“它们不同”，还是在说“有人把它们安排到一起，让这种不同被看见”？这一下，味道就出来了。",
+    "verification": {
+      "claimCount": 9,
+      "confirmedCount": 5,
+      "softenedCount": 4,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "核心义是否确为“side by side / next to each other”",
+        "词源是否可稳妥追到拉丁语 `juxta` “near, next to”",
+        "英语中 `juxtapose` 的入语时间与 `juxtaposition` 的先后关系"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/juxtapose"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/juxtapose"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/juxtapose"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/juxtapose"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/juxtaposition"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/juxtaposition"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/juxtaposition"
+        }
+      ]
+    },
+    "surface": "并置；并列对照"
   },
   "legacy": {
     "displayWord": "legacy",
@@ -3261,6 +3725,59 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "myriad": {
+    "displayWord": "myriad",
+    "meta": [
+      "数量表达 · 丰富繁多 · B2-C1",
+      "Issue 007"
+    ],
+    "markdown": "**字面含义** · 它原本就带着“成千上万、几乎数不过来”的量感。你看到它，先别急着把它压扁成一个普通的“很多”，而是先想象一片东西铺开来，多到人不再想逐个去数。\n\n**本体质感** · myriad 通常不是那种随手一说的 many。它往往比 many 更书面、更凝练：不是简单报一个“多”，而是把“多到没必要继续枚举”这层判断直接压进句子里。  \n和它接近的词里，many 很平，many things 就是“很多东西”；countless 更强调“数不过来”；innumerable 也偏书面；myriad 则常常一口气把数量或面向的繁多感整体推出去。尤其在现代英语里，它不只是在说数量巨大，也常常带“种类繁多、面向很多”的意思。  \n还有一个很关键的点：myriad 既能作形容词，也能作名词。作形容词时，你会看到 myriad problems、myriad ways；作名词时，则是 a myriad of challenges、a myriad of possibilities。所以它不是“非得跟 of”，而是两套结构本来都成立。\n\n**寻根溯源** · 它来自古希腊语，最早确实跟“万”这个数量单位有关，原本可以很具体地指“一万”或“一组一万”。后来，这个词慢慢从一个明确的大数，滑向了今天更常见的抽象义：极多、大量、难以细数。  \n这条线很有意思：它不是凭空变文雅的，而是从一个原本真的能数的数词，长成了一个表示“多到不再细数”的词。现代英语里，它因此多见于较正式、书面，或者略带文雅色彩的表达。顺手一提，很多人以为 a myriad of 是后来才冒出来的“宽松说法”，但一种更稳妥的说法是：它本来就有名词用法，而且进入英语的时间还相当早。\n\n**各路用法** ·\n\n**职场,报告或演讲里**\n> The company faces myriad challenges this year.\n> 这家公司今年面临着无数挑战。\n\n这里是形容词用法。重点不只是“问题很多”，而是困难已经多到不必逐项展开。\n\n**职场,报告或演讲里**\n> The company faces a myriad of challenges this year.\n> 这家公司今年面临着大量挑战。\n\n这里是名词用法。a myriad of 并不是错，它和上面那句都自然，只是句法重心略有不同：这一句更像把“一大堆挑战”当成一个整体端出来。\n\n**日常,讨论方案时**\n> There are myriad ways to solve this problem.\n> 解决这个问题有很多很多种办法。\n\n这句很常见。在日常闲聊里，很多人也许更可能直接说 many ways；而 myriad ways 听起来会更概括、更书面一些，不像在随口聊天，更像在收束一个判断。\n\n**写作,强调面向繁多时**\n> The project created myriad opportunities for collaboration.\n> 这个项目创造了许多合作机会。\n\n这里不只是“机会数量多”，也隐含“机会的类型和展开面很多”。这正是 myriad 在现代英语里很常见的一层：它说的往往不是单纯堆数量，而是繁多、纷杂、展开得很广。\n\n**原生思维** · 英语里用 myriad 的时候，常常不是在认真清点数量，而是在快速做一个判断：这些东西已经多到不值得一项项列了。这个词的力道，就在于它把零散项目压缩成一个整体印象。  \n不过这里最好分清两种动作：作名词时，a myriad of ... 的确很像把“大量事物”整个端出来；作形容词时，myriad ways / myriad problems 则更像直接给后面的名词罩上一层“极多、繁多”的量感。也正因为这样，它不只是“多”，还是一种把复杂度迅速收拢起来的说法。\n\n**悟道时刻** · 你真正要记住的，不是 myriad = many，而是它在帮说话者提前结束枚举：多到不用数了，甚至多到不只是数量大，而是面向也已经铺开了。以后再见到它，先别问“它是不是很多”，先问：这里是在报数，还是在把“繁多本身”整体端出来？这个开关一开，myriad 的味道就和 many、countless、various 自然分家了。",
+    "verification": {
+      "claimCount": 12,
+      "confirmedCount": 6,
+      "softenedCount": 6,
+      "uncertainCount": 1,
+      "rejectedCount": 2,
+      "checked": [
+        "它原本就是‘无数、成千上万那么多’的那种量感。",
+        "myriad 不是那种随手一说的 many。",
+        "它常常出现在较书面、较正式的句子里。",
+        "myriad 往往更像‘铺天盖地地多’。",
+        "而且它自己就能站稳，不一定非得后面再跟 of。"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/myriad"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/myriad"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/myriad_1"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/myriad_2"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/myriad"
+        },
+        {
+          "label": "Britannica Dictionary",
+          "url": "https://www.britannica.com/dictionary/myriad"
+        },
+        {
+          "label": "The Chicago Manual of Style Q&A",
+          "url": "https://www.chicagomanualofstyle.org/qanda/data/faq/topics/Usage/faq0258.html"
+        }
+      ]
+    },
+    "surface": "无数；大量；多种多样"
+  },
   "navigate": {
     "displayWord": "navigate",
     "meta": [
@@ -3406,6 +3923,116 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "ostracise": {
+    "displayWord": "ostracise",
+    "meta": [
+      "群体边界 · 社会排斥 · B2-C1",
+      "Issue 007"
+    ],
+    "markdown": "**字面含义** · 这个词最早的画面，是把一个人从共同体里“投出去”。你可以先想成：通常不只是简单不理，而是把他从圈子、关系、位置里持续地排开，让他站到外面。\n\n**本体质感** · 它带着一种冷处理、群体性的排斥感。与其说是一个人情绪上“我不喜欢你”，不如说它通常让人想到：一群人开始默契地把你从互动里拿掉。这个词确实有一点历史来源留下来的制度感，但放到现代语境里，它更多说的是社交和关系层面的孤立，不一定正式，也不一定公开。\n\n在很多语境里，可以把它理解成这样：比起 shun，它更容易让人想到群体共同疏离；比起 exclude，它更有“有意把人晾在圈外”的感觉；比起 banish，它又少了那种真的把人流放出去的法律或地理意味。原本它确实和放逐有关，但今天更常见的，是“人没被赶走，却被从群体里拿掉”。\n\n**寻根溯源** · 它来自古希腊语 *ostrakizein*，背后是 *ostrakon*，也就是“陶片”。最初它和古雅典一种投票排除公民的做法有关：人们把名字写在陶片上，通过这种“陶片投票”决定是否把某个人放逐出去。更准确地说，那是一种带有政治意味的临时放逐，常见说法是放逐十年。\n\n也正因为这个来路，ostracise 到今天还保留着一个很硬的骨架：不是普通地讨厌谁，而是共同体决定不再把你算在里面。只是古代更像真正的放逐，现代更多是社交性的排斥——不是把你赶出国境，而是把你排出关系网。\n\n**各路用法** · 几个例子，感受它不是普通的“排斥”，而是带有群体默契的隔离动作。顺手也记一下：这个词较正式、偏书面，常见于被动语态，比如 *be ostracised by...*、*feel ostracised*。日常口语里，人们更常说 *exclude*、*leave out*、*freeze out*。另外，*ostracise* 是英式拼写，*ostracize* 是更常见的美式拼写。\n\n**职场, 会议后风向变了**\n> After he criticized the company, he was ostracised by his colleagues.\n> 在他批评公司之后，他被同事们孤立了。\n\n这里的重点不是某个人不高兴，而是同事这一整圈人开始把他排除在内部互动之外。\n\n**日常, 朋友关系**\n> She felt ostracised when the group stopped inviting her to dinner.\n> 当那个小圈子不再请她吃饭时，她觉得自己被排挤了。\n\n这不是一次冲突，而是关系被慢慢抽空；人还在附近，但已经不再被算进“我们”。\n\n**校园, 班级里的排挤**\n> He was ostracised by his schoolmates after the rumor spread.\n> 谣言传开后，他被同学们排斥了。\n\n这个场景很典型：词典里常见的也是 *by colleagues*、*by classmates/schoolmates* 这一类搭配，因为它天然适合写“群体一起疏远某人”。\n\n**社媒评论区**\n> People online can be ostracised by a community over one unpopular opinion.\n> 在网上，人们可能因为一个不受欢迎的观点而被某个社群排斥。\n\n这里常常带一点“群体审判”的味道，不只是反对观点，而是顺手把人推出讨论圈。\n\n**原生思维** · 这个词通常让人联想到的，不是单纯“我对你有意见”，而是“这个群体现在不再接纳你”。它看的是关系网络的断裂：谁还跟谁说话、谁还被邀请、谁还算“我们的一员”。\n\n中文里我们常说“孤立”“排挤”，这些都能对上；但 ostracise 更强调那种由群体行为形成的边界变化。它关心的不是情绪本身，而是谁还有资格留在圈内。至于更边角一点的语境，它也可以用于社区、宗教或政治里的“遭排斥、遭弃绝”，只是主轴仍然是：从共同体中被拿掉。\n\n**悟道时刻** · 你会发现，ostracise 真正抓住的不是“讨厌”，而是“取消你的成员资格感”。人未必被赶走，但已经被悄悄移出“我们”。\n\n以后再遇到近义词，先别只看强弱，先看边界：这是一个人的冷淡，还是一群人一起改写了“谁算自己人”？能这么看，ostracise 这类词就一下清了。",
+    "verification": {
+      "claimCount": 10,
+      "confirmedCount": 6,
+      "softenedCount": 4,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "这个词最早的画面，是把一个人从共同体里‘投出去’。",
+        "不是简单不理，而是把他从圈子、关系、位置里排开。",
+        "它带着一种冷处理、集体性的排斥感，不是一个人情绪上‘我不喜欢你’，而是多人一起默契地…",
+        "这个词有一种历史感和制度感，像是‘被正式地、公开地赶到边上’。",
+        "比起 shun，它更像群体行为；比起 exclude，它更有‘有意孤立’的动作感；比…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/ostracize"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/ostracize"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/ostracize"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/ostracise"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/ostracize_v"
+        },
+        {
+          "label": "Britannica",
+          "url": "https://www.britannica.com/topic/ostracism"
+        },
+        {
+          "label": "Merriam-Webster Word History",
+          "url": "https://www.merriam-webster.com/wordplay/ostracize-ostracism-potsherd-shell-vote-word-history"
+        }
+      ]
+    },
+    "surface": "排斥；排挤；放逐"
+  },
+  "pasture": {
+    "displayWord": "pasture",
+    "meta": [
+      "土地场景 · 放牧动作 · B2",
+      "Issue 007"
+    ],
+    "markdown": "**字面含义** · pasture 先给人的画面，是一片可以放牧的草地：开阔、长着草、牛羊能在上面吃。你看到它，脑子里不是“抽象的田地”，而是“牲畜待的地方”。\n\n**本体质感** · 这个词的手感很“乡野”，带着农场、围栏、风、泥土和慢节奏。英语里说 pasture，不只是说一块地，更像是在把它放进“给动物吃草、让动物活动”的那个功能里看。它比 field 更有用途指向；field 更宽，是“地、田、场地”那一大类。至于 meadow，它更偏草地的样子和景观，不一定以放牧为核心；而 pasture 的重心，始终更靠近“养牲畜、供其吃草”。\n\n**寻根溯源** · 它确实来自拉丁语这条线，而且链条很清楚：Middle English，经由 Old French，往上连到 Late Latin *pastura*，再往前是 Latin *pascere*，意思就是“喂养、放牧、吃草”。所以这个词一路保留下来的底色，始终跟“让牲畜在草地上进食”有关。也正因为这样，后来它进入比喻时，常常也会延伸出“更适合安置、发展、转去的地方或处境”那层意味。\n\n**各路用法** · 几个例子，你先抓住它在句子里怎么落地。\n\n**日常,说农场**\n> The cows were moved to a new pasture after the rain.\n> 雨后，牛被赶到了一片新的牧场。\n\n这里的 pasture 就是最直白的“牧草地”。\n\n**日常,谈乡下生活**\n> We walked past a pasture full of sheep on the hill.\n> 我们走过山坡上一片满是羊的牧场。\n\n这时候它带出来的是一种很具体的乡村画面。\n\n**农场,作动词**\n> The cattle were pastured on open grassland all summer.\n> 整个夏天，这些牛都被放在开阔的草地上吃草。\n\npasture 不只可作名词，也可作动词，意思就是“放牧；把……放到牧地上”。\n\n**职场,谈跳槽或离开**\n> She left the company for greener pastures.\n> 她离开了公司，去寻找更好的发展机会。\n\ngreener pastures 是很常见的比喻，不再是草地本身，而是“更好的去处、更有前景的处境”。\n\n**新闻,带点不客气地说退场**\n> Some people think the old manager should be put out to pasture.\n> 有些人觉得那位老经理该被请下台了。\n\nput someone out to pasture 常指让某人退下、不再任用，语气里往往带一点“年纪大了、该让位了”的不客气。\n\n**原生思维** · 英语里说 pasture，通常先想到的不是“这是哪一种地貌”，而是“这块地方是给牲畜用的”。它往往从用途出发来认地，而不只是从景观出发。中文里我们有时会笼统说“草地”“田”“地”，但英语这里会更自然地问：这块地是拿来干什么的？能不能放牛羊？也因此，当 pasture 进入 greener pastures 这类说法时，它延伸出来的，往往不是一片单纯的绿地，而是一个“更适合去、待、发展”的地方。\n\n**悟道时刻** · pasture 真正值得记住的，不只是“牧场”这个中文对应，而是它那种很强的用途视角：一块地，不先按样子认，而先按它供谁使用、承担什么功能来认。抓住这一点，你以后再遇到 field、meadow、yard、lot 这些词，就不会只把它们都压成一个“地”字了。",
+    "verification": {
+      "claimCount": 8,
+      "confirmedCount": 6,
+      "softenedCount": 2,
+      "uncertainCount": 0,
+      "rejectedCount": 2,
+      "checked": [
+        "**pasture 先给人的画面，是一片可以放牧的草地：开阔、长着草、牛羊能在上面吃…",
+        "**英语里说 pasture，不只是说一块地，更像是在把它放进‘给动物吃草、让动物活…",
+        "**它比 field 更有用途指向，比 meadow 更有管理和牧养的意味；前者是‘…",
+        "**它来自拉丁语一系，和‘吃草、喂养、牧放’这条线有关。**",
+        "**这个词一路保留了‘让动物在草地上进食’的底色。**"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/pasture"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/pasture"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/pasture_1"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/pasture_2"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/pasture"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/pasture_n"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/greener%20pastures"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/put-out-to-pasture"
+        }
+      ]
+    },
+    "surface": "牧场；草地；放牧"
+  },
   "peg": {
     "displayWord": "peg",
     "meta": [
@@ -3459,6 +4086,55 @@ window.WORD_SENSE_ENTRIES = {
         }
       ]
     }
+  },
+  "perturb": {
+    "displayWord": "perturb",
+    "meta": [
+      "心理扰动 · 系统偏离 · C1",
+      "Issue 007"
+    ],
+    "markdown": "**字面含义** · 这个词的底子里，有一种“把原本平稳的东西搅动了”的画面。像水面被轻轻拨了一下，波纹一圈圈散开；或者一个人、一套秩序、一个系统，本来安稳的状态，被外力碰出了偏移。\n\n**本体质感** · perturb 不是那种日常随口会说的“打扰一下”式词，它带着一点冷静、书面、甚至略带技术感的距离。主流词典里，它很常见的一条义项其实就是“使人不安、担忧”，只是这个“不安”说出来时，语气通常比 bother、upset 更正式一些。放到不少正式或技术语境里，它又常把注意力放在平衡或秩序的偏移上：不是单纯“谁惹到我了”，而是“原本稳定的东西被碰歪了”。跟 annoy、disturb、disrupt 相比，它更像是在强调一种书面化的扰动感：annoy 偏“惹烦”，disrupt 偏“把流程打断”，而 perturb 往往落在“心绪、秩序、系统被搅动”这条线上。\n\n**寻根溯源** · 它来自拉丁语里的 perturbare，里面的 per- 有“完全、彻底”的意味，turbare 是“搅乱、扰乱”。所以这个词的老底子，确实带着一种“整锅搅翻”的力量。英语里很早就有它，能追到大约 14 世纪末。只是到了现代，这个词的锋芒大致弱下来了一些：一方面，它仍然保留“使人不安、使心绪受扰”的常见义；另一方面，在科学和技术语境里，它又稳定发展出“使系统偏离平衡、产生扰动”的用法。也就是说，它不是一路收窄成技术词，而是两条线都还在，只是都偏正式。\n\n**各路用法** · 几个例子，看看它在不同场合里怎么落地：\n\n**日常,听到坏消息**\n> The news of the arrest perturbed her greatly.\n> 逮捕的消息让她非常不安。\n\n这是 perturb 很主流的一条用法：直接接人，意思就是“使某人心绪不宁、担忧起来”。它不是不能讲人，恰恰相反，这是一条很稳的现代义，只是语气比口语里的 upset、bother 更书面。\n\n**职场,邮件里**\n> The delay may perturb the normal workflow, but it should not affect the final delivery.\n> 这次延迟可能会扰动正常的工作流程，但不应该影响最终交付。\n\n这里的 perturb 不是“让人不开心”，而是把原本顺着走的流程带偏一点。这种说法能成立，但整体偏书面；真到日常商务沟通里，很多人还是会更常说 affect、disrupt 或 delay。\n\n**正式写作,谈秩序**\n> Sudden policy shifts can perturb the social order.\n> 突然的政策变化可能会扰乱社会秩序。\n\n这条义项很值得补上：perturb 不只用于心理或技术，它也可以用来写秩序、进程、结构被搅乱。只是语域依然偏正式，甚至略带文学或评论感。\n\n**学术/技术,论文里**\n> Small changes in temperature can perturb the system's equilibrium.\n> 温度的微小变化会扰动系统的平衡状态。\n\n这个场景里它很顺手，因为它天生就适合写“系统偏离原有平衡”的事。\n\n**科学,更专门一点**\n> A nearby planet can perturb the orbit of a smaller body.\n> 一颗邻近行星可能会使较小天体的轨道发生摄动。\n\n到了天文、物理这些语境，perturb 就更专门了，常常不只是泛泛地“影响”，而是指轨道、粒子、平衡态出现可描述的扰动。\n\n**原生思维** · 这个词好用的地方，在于它总暗示着一个“先有稳定，再有偏移”的背景板。这个稳定可以是人的镇定，也可以是秩序、平衡、轨道、系统。中文里我们会说“让人不安”“扰乱秩序”“干扰系统”，看上去分成了几件事；但 perturb 常常把它们收进同一个动作里：不是简单碰到，而是把原来那份安稳搅出了纹路。也正因为这样，它很有书面感，而不太像口语里随手就扔出来的词。\n\n**悟道时刻** · 记 perturb，不要只记“扰乱”。更准的抓法是：它前面通常默认有一个平衡面，不管那是人的镇定，还是系统的均衡，还是秩序的稳定；而 perturb 说的是那块平衡面被碰歪了。\n\n以后再遇到 bother、upset、disturb、disrupt、perturb，你就先看它在动哪一层：是情绪起波纹，还是秩序出偏移，还是流程被打断。这样分，词义就立体了。",
+    "verification": {
+      "claimCount": 10,
+      "confirmedCount": 5,
+      "softenedCount": 5,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "perturb 不是那种日常随口会说的‘打扰一下’式词，它带着一点冷静、书面、甚至略…",
+        "它比 annoy 更克制，比 disrupt 更轻，比 disturb 更偏向‘状态…",
+        "它来自拉丁语里的 perturbare，核心就是‘完全搅乱、搅翻’。",
+        "英语里后来慢慢把它收窄成一种更书面、更抽象的‘扰动、使不稳定’。",
+        "常见于科学、心理、正式写作里。"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/perturb"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/perturb"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/perturb"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/perturb"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/perturb_v"
+        },
+        {
+          "label": "Collins English Dictionary",
+          "url": "https://www.collinsdictionary.com/dictionary/english/perturb"
+        }
+      ]
+    },
+    "surface": "使不安；扰乱；使偏离"
   },
   "pledge": {
     "displayWord": "pledge",
@@ -3620,6 +4296,63 @@ window.WORD_SENSE_ENTRIES = {
         }
       ]
     }
+  },
+  "propensity": {
+    "displayWord": "propensity",
+    "meta": [
+      "行为倾向 · 预测判断 · C1",
+      "Issue 007"
+    ],
+    "markdown": "**字面含义** · 这个词最早给人的画面，更接近“往某个方向倾过去、偏过去”：不是已经发生了，而是内里已经带着那股力，容易朝那边走。\n\n**本体质感** · propensity 不是一个日常聊天里会随手抛出来的词，它明显是正式用语。它很像把人的行为、性格、风险放到一张表里，冷静地看“更容易往哪边偏”。它常出现在分析、研究、风控、用户行为这些正式语境里，尤其适合说“某人更容易……”“某群体更倾向于……”。它讲的通常不是一时心情，而是相对稳定、能被反复观察到的倾向。\n\n和 tendency 比，propensity 常常更容易让人联想到一种内在或固有的偏向；和 inclination 比，很多时候它听起来更正式、更分析化。和 likelihood 不一样，它讲的不是“某件事发生的概率”，而是“这个人、这类人、这个对象本身有这种容易性”。\n\n还有一个很实用的语感点：它并不只能用于负面，但现实里确实常跟坏习惯、失当行为、风险放在一起，比如 violence、churn、assume the worst 这一类。所以你读到它时，往往会觉得这不是单纯描述喜好，而是在提示一种值得留意的偏向。\n\n**寻根溯源** · 它来自拉丁语，往上可以追到 *propendere*，有“向前悬垂、向一边倾、偏过去”的意思。英语里早期也保留了这种“偏向某边”的感觉，后来慢慢发展成今天这个偏正式的词。大致来看，它一路没怎么改掉自己的骨架：不是瞬间冲动，而是一种可描述的偏向。\n\n如果把这条线看得再清楚一点，词源资料里还能看到它在英语里 16 世纪就已经有“偏爱某种方向”的意思，17 世纪又出现了 “a bent of mind” 这种说法，也就是“心智上有个弯、有个偏头”。这也解释了为什么 propensity 到今天还带着一种距离感：它像是在描述人的模式，而不只是人的一时反应。\n\n**各路用法** · 先记两个最常见的骨架：**propensity to do sth**，以及 **propensity for/toward(s) sth**。前者是“容易去做某事”，后者是“对某类行为、结果、风险有偏向”。\n\n**职场，分析报告里**\n> The data suggests a propensity to churn among younger users.\n> 数据显示，年轻用户更容易流失。\n\n这里不是在说“他们可能会走”，而是在把一种可重复观察到的模式写进分析里。商业语境里，propensity to buy / click / vote / churn 都很常见。\n\n**日常，聊一个人**\n> He has a propensity to overthink everything.\n> 他这个人很容易把什么事都想太多。\n\n这句话比 “He tends to overthink.” 更像在说：这不是一次两次，而是他身上比较稳定的行为偏向。\n\n**风险，描述某种易发性**\n> The region has a propensity for drought.\n> 这个地区容易出现干旱。\n\n这里用的是 **propensity for sth**。它把“干旱”当成一种反复偏向出现的结果，不是单次天气判断。\n\n**正式语境，谈行为偏向**\n> The committee warned of his propensity toward violence.\n> 委员会警告说，他有诉诸暴力的倾向。\n\n这里的 **toward** 很典型，也顺手提醒你：这个词虽然不只用于负面，但负向搭配确实很多，所以语气里常带一点风险提示。\n\n**学术，正式写作**\n> The study examines the propensity of people to trust familiar brands.\n> 这项研究考察人们信任熟悉品牌的倾向。\n\n这种场合里，propensity 很顺手，因为它天然带一点研究语言的冷静和归纳感。\n\n**法律，专业英语里**\n> The court excluded propensity evidence.\n> 法院排除了倾向性证据。\n\n法律英语里，**propensity evidence** 指的是：拿一个人过去的行为或性格特征，去推断他这次也会照同样的倾向行事。这个说法很稳定，用户如果读法律新闻或法学院材料，是真的会遇到。\n\n**原生思维** · 英语母语者用 propensity 时，脑子里常常不是一个“行为结果”，而是一个“内置偏向”。他们在看：这个人、这类人、这个地区、这个群体，身上有没有一股稳定的方向性。中文里“有……倾向”“容易……”已经很接近了；只是 propensity 往往更像把这种偏向从具体事件里抽出来，变成一个可讨论、可分析的属性。\n\n所以它特别适合那些“不是已经发生，而是更容易发生”的语境。你不是在下结论说“他就是会这样”，而是在说“从现有模式看，他身上有这种偏向”。这也是为什么它比普通口语词更冷静，也更像观察者在说话。\n\n**悟道时刻** · 记 propensity，别只记成“倾向”。记成更准的一句话：**它是把一个人或一类对象的“容易怎样”，说成一种可被观察的稳定偏向。**  \n以后你一看到 formal 语境里有人在谈风险、习性、用户行为、甚至法律上的 character evidence，脑子里就该亮灯：这多半不是在说一次结果，而是在给对象贴一条“往哪边偏”的线。",
+    "verification": {
+      "claimCount": 13,
+      "confirmedCount": 7,
+      "softenedCount": 6,
+      "uncertainCount": 0,
+      "rejectedCount": 1,
+      "checked": [
+        "这个词最早给人的画面，有点像‘往某个方向滑过去’的倾向。",
+        "它说的不是一时心情，而是长期、反复出现的倾向。",
+        "和 tendency 比，propensity 更像‘内在带着这股偏向’。",
+        "比 inclination 更书面一点。",
+        "和 likelihood 不一样，它讲的不是‘发生的概率’，而是‘对象本身有这种容易…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/propensity"
+        },
+        {
+          "label": "Merriam-Webster Learner’s Dictionary",
+          "url": "https://www.merriam-webster.com/simple/propensity"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/propensity"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/propensity"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/propensity"
+        },
+        {
+          "label": "Merriam-Webster Example Sentences",
+          "url": "https://www.merriam-webster.com/sentences/propensity"
+        },
+        {
+          "label": "Legal Information Institute, Rule 404",
+          "url": "https://www.law.cornell.edu/rules/fre/rule_404"
+        },
+        {
+          "label": "Legal Information Institute, Wex “character evidence”",
+          "url": "https://www.law.cornell.edu/wex/character_evidence"
+        }
+      ]
+    },
+    "surface": "倾向；习性；偏好"
   },
   "pull": {
     "displayWord": "pull",
@@ -4412,6 +5145,51 @@ window.WORD_SENSE_ENTRIES = {
     },
     "surface": "条纹；痕迹；连续纪录"
   },
+  "supposition": {
+    "displayWord": "supposition",
+    "meta": [
+      "推理基础 · 未证判断 · C1",
+      "Issue 007"
+    ],
+    "markdown": "**字面含义** · 这个词的骨架里有一种“先把某件事放在台面上”的动作感：不是已经证实了，而是先把它摆出来，暂时当作成立来用。它像在地上垫一块木板，先站上去再说。\n\n**本体质感** · supposition 的气质很书面，也很克制。它不是那种情绪化的猜，而是带着一点分析姿态：我先把一个前提放进去，看看后面能不能推得通。从历史上的逻辑用法看，它本来就可以指“为了论证先暂时接受的前提”。和 assumption、hypothesis 相比，它们在很多语境里其实会重叠；如果只说一种常见语感，supposition 往往比 assumption 更显书面，也常不如 hypothesis 那样带着强烈的科学检验色彩。\n\n**寻根溯源** · 这个词来自拉丁语，原意和“放在下面、置于下方”这一类动作有关。后来它慢慢长成今天这种意思：把一个东西先放作前提，作为推理的底座。也正因为这条来路，再加上它早期确实带有“为了论证先设一个前提”的意味，你很容易把它理解成一种给后文垫底的东西——不是结论本身，而是结论脚下那块看不见的底板。\n\n**各路用法** · 几个例子，在不同场域里你感受一下它是怎么工作的：\n\n**职场，报告里**\n> The proposal rests on the supposition that customer demand will keep growing.\n> 这份提案建立在这样一个假设之上：客户需求会持续增长。\n\n这里的 supposition 不是在说“我猜”，而是在说“后面的论证依赖这个前提”。\n\n**正式分析，写作里**\n> They proceeded on the supposition that the data were accurate.\n> 他们是在“数据是准确的”这一假定前提下继续推进的。\n\n`on the supposition that ...` 是个很稳定的正式结构，意思就是“先按这个前提来”。\n\n**批评，指出证据不足时**\n> The report was based entirely on supposition.\n> 这份报告完全建立在推测之上。\n\n到了这里，supposition 就不再是中性的“先设前提”，而更接近“缺乏证据的判断”。语气比 guess 正式，但也因此更适合拿来批评论证站不稳。\n\n**讨论，承认只能猜时**\n> What happened next is a matter of supposition.\n> 接下来发生了什么，只能靠推测。\n\n这也是它很常见的一支：事情没有被证实，只能说到“臆测”这个层级。\n\n**日常，聊天里**\n> That is a fair supposition, but we do not know for sure yet.\n> 那算是个合理的推测，但我们现在还不能确定。\n\n放到口语里它也能用，只是会显得比 guess 更正式一点，也更像“可被拿进讨论”的判断。\n\n**原生思维** · 英语里用 supposition，常有两条主线同时存在：一条是“先暂时搭一个前提，让推理往下走”，另一条是“这事还没有证据，眼下只能推测”。前者常见于正式论证、分析写作，乃至法律式论证中；后者则提醒你，这个词并不天然替一个判断背书。中文里“假设”“设想”“推测”各抓一角，supposition 则常常把这几层压在一个更书面的壳里。\n\n**悟道时刻** · supposition 真正有意思的地方，在于它把英语里的两种思维动作缝在了一起：一边是“先设一个前提”，一边是“承认证据还不够”。所以你下次看到它，别急着只翻成“假设”或“推测”；先问一句：这里是在给论证搭台，还是在提醒你——这话其实还只是臆测。",
+    "verification": {
+      "claimCount": 10,
+      "confirmedCount": 6,
+      "softenedCount": 5,
+      "uncertainCount": 0,
+      "rejectedCount": 1,
+      "checked": [
+        "这个词的骨架里有一种‘先把某件事放在台面上’的动作感：不是已经证实了，而是先把它摆出…",
+        "supposition 的气质很‘书面’、很克制。",
+        "和 assumption 比，supposition 往往更像‘试着设想一个前提’；…",
+        "这个词来自拉丁语，原意和‘放在下面、放在后面’那类动作有关。",
+        "后来它慢慢长成今天这种意思：把一个东西先放作前提，作为推理的底座。"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/supposition"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/on%20the%20supposition%20that"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/supposition"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/supposition"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/supposition"
+        }
+      ]
+    },
+    "surface": "假设；推测；设想"
+  },
   "surge": {
     "displayWord": "surge",
     "meta": [
@@ -4517,6 +5295,59 @@ window.WORD_SENSE_ENTRIES = {
       ]
     },
     "surface": "接入；利用；开发现有资源"
+  },
+  "taunt": {
+    "displayWord": "taunt",
+    "meta": [
+      "攻击言语 · 挑衅动作 · B2",
+      "Issue 007"
+    ],
+    "markdown": "**字面含义** · 这个词最先给人的画面，像是有人当面抛出一句话去戳你：不是解释，不是争论，而是故意挑衅、故意刺痛。你会感觉到说话的人站得很近，语气却是往外推的，带着一种“我就是要你难受一下”的动作感。\n\n**本体质感** · taunt 的质地不是普通的“说难听话”。它更像是用带刺的话去嘲弄、刺激、激怒对方，里面通常有一种主动性：不是顺口一句不礼貌，而是故意把话递到对方面前，看对方会不会失控。它常常出现在冲突现场、对抗氛围里，语气里有一点戏弄、一点轻蔑、一点挑衅。  \n和它相近的词里，mock 常常更偏“嘲弄、学样子地讥讽”，ridicule 往往更强调把人变成笑柄，tease 可能轻很多，甚至带玩笑感；taunt 的语义重心则更靠近“拿话去激怒、去刺痛、去逼对方反应”。它们彼此有重叠，但 taunt 里那股挑衅感通常更强。\n\n**寻根溯源** · taunt 的词源说法并不完全一致。常见的一种解释，会把它和法语里“试探、挑动、激惹”这一类词联系起来；另一种说法则把它连到法语 *tant pour tant*，也就是有点像 tit for tat 这种“你来我往”的表达。比较稳妥的说法是：它进入英语后，后来稳定发展出今天更常见的意思——用带刺的话去刺激、嘲弄、激怒别人。  \n不过有意思的是，Oxford 还提到，这个词更早期的动词用法里，曾带有一点 “exchange banter” 的色彩，也就是互相斗嘴、互相抛话。也正因为这样，说它从头到尾都只有强攻击性，并不准确；更贴切的说法是：在现代英语里，它通常带明显对抗性，不是中性描述。\n\n**各路用法** ·\n\n**日常,争吵里**\n> He taunted his brother about losing the game.\n> 他拿哥哥输掉比赛这件事反复挖苦。\n\n这里的 **taunt sb about sth** 很常见，意思不是单纯“提到这件事”，而是故意揪住这件事去戳对方。\n\n**校园,霸凌场景**\n> The other kids continually taunted him about his size.\n> 其他孩子不停拿他的身材挖苦他。\n\n这也是 taunt 很典型的落点：反复拿一个人的弱点、外貌、失误去刺激他。\n\n**球场,对手或球迷**\n> Opposing fans taunted him with chants and signs.\n> 对方球迷用口号和标语嘲弄挑衅他。\n\n这里是另一个高频结构：**taunt sb with sth**，也就是“拿某种话、称呼、标语、提醒去刺激某人”。\n\n**街头,冲突现场**\n> The crowd taunted the player after the missed shot.\n> 投失那一球之后，人群开始嘲弄那名球员。\n\n这里的 taunt 往往不只是轻飘飘一句，而是一串冲着人去的刺激性话语。\n\n**抗议现场,作为名词**\n> The protesters shouted taunts at the police.\n> 抗议者朝警察喊出挑衅性的辱骂。\n\n这里的 **a taunt / taunts** 是名词，不是“挑衅这个动作”，而是“那些用来刺人、激人的挖苦话本身”。\n\n**社媒评论区**\n> People kept taunting her in the comments.\n> 人们一直在评论区嘲讽她。\n\n放到网上，它也完全成立：重点仍然不是“说得难听”，而是故意用话去刺激、羞辱、逼她回应。这是现代语境里的自然延伸，不是 taunt 专属的互联网义。\n\n**原生思维** · 英语母语者用 taunt 的时候，脑子里往往不是在描述“这句话不好听”，而是在看一个动作：说话的人把情绪当武器，朝对方递过去。这个词的重点不只在内容本身，更在它对对方造成的心理拉扯——你会不会被激怒、会不会失态、会不会被逼着回应。中文里我们也会说“挑衅”“嘲讽”“激将”，但 taunt 更像把这几层压在一个动作里：说话就是为了刺你、惹你、逼你上钩。  \n顺手记一个手感就够了：如果一句话的目的不是表达观点，而是故意让对方难堪、动怒、失控，那就已经很接近 taunt 了。\n\n**悟道时刻** · taunt 提醒你，英语里有些词真正编码的不是“话有多难听”，而是“这话被说出来，是在对人做什么”。一旦你开始抓这种话语动作，你分辨的就不只是 mock、tease、taunt 这些词的表面情绪，而是它们背后的意图：是在逗、在贬、在羞辱，还是在一步步把人推到失控边缘。",
+    "verification": {
+      "claimCount": 10,
+      "confirmedCount": 5,
+      "softenedCount": 4,
+      "uncertainCount": 2,
+      "rejectedCount": 1,
+      "checked": [
+        "**taunt 的质地不是普通的‘说难听话’。它更像带着节奏地挖苦、嘲笑、激怒对方*…",
+        "**mock 更偏‘模仿式嘲弄’， ridicule 更偏‘公开羞辱式嘲笑’， te…",
+        "**taunt 来自古法语**",
+        "**最初和‘挑逗、激怒’这一类动作有关**",
+        "**它后来进入英语后，逐渐固定成今天这种‘带攻击性的讽刺、嘲弄’用法**"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/taunt"
+        },
+        {
+          "label": "Merriam-Webster Usage Note (“Taunt” or “Taut”)",
+          "url": "https://www.merriam-webster.com/grammar/taunt-taut-usage"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/taunt"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/taunt"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries（verb）",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/taunt_1"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries（noun）",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/taunt_2"
+        },
+        {
+          "label": "Oxford English Dictionary（entry page）",
+          "url": "https://www.oed.com/dictionary/taunt_n1"
+        }
+      ]
+    },
+    "surface": "嘲弄；奚落；挑衅"
   },
   "tender": {
     "displayWord": "tender",
@@ -4837,6 +5668,108 @@ window.WORD_SENSE_ENTRIES = {
         }
       ]
     }
+  },
+  "vicinity": {
+    "displayWord": "vicinity",
+    "meta": [
+      "空间范围 · 模糊邻近 · B2-C1",
+      "Issue 007"
+    ],
+    "markdown": "**字面含义** · 现代英语里，vicinity 最常指“某个地方周边这一片区域”。像你站在一个点上，视线往外铺开，落进附近那一圈地带：不是一个点，而是一块围着中心展开的范围。\n\n**本体质感** · vicinity 不是那种会单独站出来抢戏的词，它很安静，像把镜头轻轻往外拉一格：不说“就在这儿”，也不说“很远”，而是说“离这里不远的周边范围”。它带着一点地图感、空间感，常出现在正式一点的表达里，尤其适合描述位置关系、事故发生地、搜索范围、设施附近，也很常见于新闻通报、公告、说明文字里。和 nearby 比起来，它通常更像在说一个“区域范围”，而不只是“就在附近”这个状态；和 around 比起来，它更书面，也更收束。你会感觉说话的人是在给边界画一个淡淡的圈。\n\n**寻根溯源** · 这个词一路可以追到拉丁语里“邻近、邻接、邻里”这一支意思。更值得注意的是，它在英语里的路并不是一开始就等于“周边区域”：16 世纪更早见到的意思，接近于“邻近、接近”本身；到了 18 世纪末，才比较清楚地发展出今天最常见的这种“某地周边区域”的用法。所以今天一看到 vicinity，脑子里会先浮现“围着某个地方的周边”，但它背后其实还留着一层更早的底色：不是先有“圈”，而是先有“近”。\n\n**各路用法** · 几个例子，感受一下它在不同场合里的气质。它最核心的结构其实就是 **in the vicinity of**，也就是“在……附近”。\n\n**职场，邮件里**\n> Please park in the vicinity of the main entrance.\n> 请把车停在主入口附近。\n\n这里不是随口说“旁边”，而是在给一个比较笼统但可执行的空间范围。\n\n**正式通知/公告**\n> No smoking is allowed in the vicinity of the station.\n> 车站周边禁止吸烟。\n\n这里的 vicinity 很适合和规则、边界、区域管理连在一起。\n\n**新闻通报，警方语气**\n> Police searched the immediate vicinity of the building.\n> 警方搜查了这栋楼的近邻区域。\n\nimmediate vicinity 是很常见的固定搭配，意思是“紧贴着那一带、近旁这一圈”，比普通的 nearby 更有边界感。\n\n**口头汇报，描述大概范围**\n> We don't know the exact address, but it's somewhere in the general vicinity of the river.\n> 我们不知道确切地址，但大致就在河边那一带。\n\ngeneral vicinity 则更松一点，不强调近贴着某点，而是“差不多这片区域”。\n\n**商业/新闻，谈数字**\n> His yearly salary is in the vicinity of one million dollars.\n> 他的年薪大约接近一百万美元。\n\n这是很多人会漏掉的一支：in the vicinity of 不只讲空间，也可以讲“接近某个数额、数量”，语气比 about 更书面一点。\n\n**日常，跟朋友**\n> There is a good coffee shop in the vicinity.\n> 这附近有一家不错的咖啡店。\n\n这句话能说，但放在朋友闲聊里会显得有点克制、略书面。更口语的人，往往会直接说 nearby 或 around here。\n\n**原生思维** · 英语里用 vicinity 的时候，通常不是在找一个精确点位，而更像是在给某个中心画出“周边影响圈”。它很像一种空间上的降噪：不用说得太细，但也不至于模糊到失焦。中文里我们常说“附近”“周边”，但 vicinity 的感觉更像“以某处为中心的周遭地带”；这更像是一种组织空间的方式，而不只是随手给一个大概方位。顺手再记一层：它不只围着地点转，围着人也可以说，比如 in his vicinity，就是“在他身边、在他近旁”。\n\n**悟道时刻** · 你真正要抓住的，不只是“附近”这个中文对位，而是英语里先判断“近不近”，再把“近”扩成一圈范围的习惯。vicinity 这个词表面在画圈，骨子里其实先是在说 proximity。以后再见到它，就别急着找一个点位翻译，先问自己：这里是在报坐标，还是在划出一个中心周边的作用范围。",
+    "verification": {
+      "claimCount": 8,
+      "confirmedCount": 4,
+      "softenedCount": 4,
+      "uncertainCount": 2,
+      "rejectedCount": 1,
+      "checked": [
+        "它原本是在说‘周围这一圈地方’",
+        "vicinity … 常出现在正式一点的表达里",
+        "尤其适合描述位置关系、事故发生地、搜索范围、设施附近",
+        "和 nearby 比起来，它更像一个‘区域’，而不是一个‘状态’；和 around …",
+        "这个词来自拉丁语里的‘邻近、接近’一类意思"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/vicinity"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/in%20the%20vicinity%20of"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/vicinity"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/vicinity"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/vicinity"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/vicinity_n"
+        }
+      ]
+    },
+    "surface": "附近；邻近地区；接近"
+  },
+  "wince": {
+    "displayWord": "wince",
+    "meta": [
+      "身体反应 · 尴尬痛感 · B2",
+      "Issue 007"
+    ],
+    "markdown": "**字面含义** · 这个动作很小：脸、肩膀、甚至整个上半身，忽然缩一下，像是被轻轻碰到疼处，或者提前替别人感到疼。它不是大幅度的“退后”，更像一瞬间的收紧。\n\n**本体质感** · wince 的核心不是“疼”本身，而是“疼一下的反射动作”。它带着一种几乎来不及思考的本能：听到刺耳声音，看到尴尬场面，甚至只是想到一件不想回想的事，身体都可能先替你皱一下。这个词的质地很轻，但很具体；它不是 dramatic 的崩溃，也不是 plain 的不舒服，而是那种短促、内收、带点躲闪的反应。  \n它常常不只管身体疼，也管心理上的“我替你不自在了一下”。所以它既能落在皮肤上，也能落在情境里。\n\n**寻根溯源** · 这个词见于中世纪英语，来自 Anglo-Norman / Old French 一支，原义大致和 turn aside、recoil、shrink back 这类动作有关。也有资料提示，它早期一度还可指那种因为疼痛或不耐而不安地蹬动、抽动的身体反应。后来它保留了那种“被刺激后立刻缩一下”的身体感，只是刺激源慢慢从真实疼痛，扩展到了难堪、刺耳，甚至想到某件事时那一下心理上的不适。\n\n**各路用法** ·\n\n**日常,看见别人被碰疼**\n> He winced when the doctor pressed on the bruise.\n> 医生按到淤青时,他疼得皱了一下脸。\n\n这里的 winced 很典型：不是长时间喊疼，而是被碰到的那一下，身体先缩了一下。\n\n**感官刺激,听到刺耳声音**\n> I winced at the sound of the chalk on the board.\n> 听到粉笔划过黑板的声音时,我难受得一下子缩紧了。\n\nwince 不一定非得来自受伤。刺耳的声音、突如其来的强光、任何让人不适的感官刺激，都可能触发这种短促反应。\n\n**社交场面,替别人尴尬**\n> She winced when he told that joke at the meeting.\n> 他在会议上讲那个笑话时,她尴尬得都替他皱了一下。\n\n这里已经不是身体疼，而是 embarrassment 落到脸上、肩上，变成一个很小的退缩动作。\n\n**回想时刻,想到黑历史**\n> I still wince at the thought of my first presentation.\n> 我现在一想到自己第一次做汇报,还是会尴尬得缩一下。\n\n这是很常见的一支：wince at the thought / memory / idea。事情甚至不在眼前，只要一想到，身体还是会先替你难受一下。\n\n**商业/消费/谈判中,听到价格或代价**\n> He winced at the price, but agreed to move forward.\n> 他听到这个价格时肉疼地皱了一下,但还是同意继续推进。\n\n这里不是单纯“觉得贵”，而是价格高到让人当场有一点生理性的、不由自主的不适。也正因为这样，wince at the price 常常比 “be surprised by the price” 更有肉疼感。\n\n顺手记一个可用结构：它常见的样子就是 **wince at sth**、**wince when…**、**wince as…**。有时也会说 **wince inwardly**，表示表面没动，但心里已经缩了一下。\n\n**原生思维** · 英语里用 wince 的时候，这个词通常抓的不是一个完整情绪结论，而是一个瞬间动作：先缩一下，先皱一下，先露出那一下不受控制的反应。中文里我们常说“皱眉”“一哆嗦”“倒吸一口气”，但 wince 这一个词把这些反应压缩成了一个很短、很有身体感的瞬间。它的重点不是“我判断这件事不好”，而是“我身体已经替我做出反应了”。  \n如果顺手和近邻词分一下边界：wince 更像短促的表情或收缩；flinch 往往更像整个人下意识一缩；cringe 则更常落在社交尴尬那种“脚趾抠地”的不自在上。\n\n**悟道时刻** · 你真正要记住的不是“wince = 疼”，而是它属于那类“先有身体反射,后有情绪判断”的词。看到这类词时，先问自己：它写的是态度，还是那一下本能的收紧？\n\n一旦抓住“瞬间收缩”这个骨架，你就会认出 wince 的边界：它不负责长篇大论地表达难受，只负责那一下已经写在脸上、肩上、神经上的反应。",
+    "verification": {
+      "claimCount": 10,
+      "confirmedCount": 8,
+      "softenedCount": 2,
+      "uncertainCount": 0,
+      "rejectedCount": 1,
+      "checked": [
+        "这个动作很小：脸、肩膀、甚至整个上半身，忽然缩一下……它不是大幅度的‘退后’，更像一…",
+        "wince 的核心不是‘疼’本身，而是‘疼一下的反射动作’。",
+        "它常常不只管身体疼，也管心理上的‘我替你不自在了一下’。",
+        "这个词来自古英语，原意就和‘收缩、退缩’这一类动作有关。",
+        "它后来保留了那种‘被刺激后立刻缩一下’的身体感，只是刺激源从真实疼痛，扩展到了难堪、…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/wince"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/wince"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/wince_2"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/wince"
+        },
+        {
+          "label": "Longman Dictionary of Contemporary English",
+          "url": "https://www.ldoceonline.com/dictionary/wince"
+        },
+        {
+          "label": "Collins English Dictionary",
+          "url": "https://www.collinsdictionary.com/dictionary/english/wince"
+        },
+        {
+          "label": "Merriam-Webster Examples",
+          "url": "https://www.merriam-webster.com/sentences/wince"
+        }
+      ]
+    },
+    "surface": "畏缩；皱眉；因痛退缩"
   },
   "zombie": {
     "displayWord": "zombie",

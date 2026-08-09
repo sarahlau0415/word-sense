@@ -1571,7 +1571,7 @@
         <a href="word-sense-author.html">一封信</a>
         <div class="issue">
           <span>FIELD NOTES ON ENGLISH</span>
-          <span id="issueBadge">ISSUE 006</span>
+          <span id="issueBadge">ISSUE 007</span>
         </div>
       </div>
     </header>
@@ -1650,7 +1650,7 @@
         .map(item => String(item).match(/^Issue (\d+)$/i))
         .filter(Boolean)
         .map(match => Number(match[1]));
-      const latest = numbers.length ? Math.max(...numbers) : 6;
+      const latest = numbers.length ? Math.max(...numbers) : 7;
       return `Issue ${String(latest).padStart(3, "0")}`;
     }
 
