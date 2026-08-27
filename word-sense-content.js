@@ -813,6 +813,59 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "attenuate": {
+    "displayWord": "attenuate",
+    "meta": [
+      "强度变化 · 正式表达 · C1",
+      "Issue 008"
+    ],
+    "markdown": "**字面含义** · 它本来的感觉是“把东西弄薄、弄弱、弄细”：线条被拉细，光变暗，声音被压低，力道被削弱。看到的往往不是笼统的“减少”，而是某种东西被调淡、调薄、调低。\n\n**本体质感** · 这个词常写原本存在的一股强度被削去一部分：信号弱了，噪音小了，影响被缓和了，毒力被减轻了。它语体较正式，常见于技术、医学、学术和政策讨论。和 reduce、weaken 相比，attenuate 更常用来精确描述强度、效应、振幅、毒力的减弱。  \n现代词典里也保留着一个较少见但确实存在的意思：**使某物变得更细长、更瘦削**。所以它身上的“薄、细”并非后来附会，今天仍能在义项里看到。\n\n**寻根溯源** · 它来自拉丁语 *attenuare*，大意就是“使变薄、使减少、使变小”。这条线索能解释它为何会从“物理上的变薄”发展到今天“强度上的减弱”。所以现在它既能讲光、声、信号，也能讲 impact、violence、influence 这类较抽象的对象；而“更细长”这个义项，也说明它和“thin”那层感觉一直没有断开。\n\n**各路用法** · 先看它在不同场合里怎样表示“把强度调低”或“把形体拉细”。\n\n**技术书面语，声学/通信**\n> The new filter attenuates background noise without affecting speech quality.\n> 新的滤波器在不影响语音质量的情况下削弱了背景噪音。\n\n这里强调的不是“去掉噪音”，而是把噪音的强度压低。在通信、声学里，attenuate 很常用来表示“使信号、声音、辐射等衰减”。\n\n**医学书面语，症状描述**\n> The medication attenuated the severity of his headache.\n> 这种药减轻了他头痛的严重程度。\n\n这里比 got better 书面得多，也更像医学或研究写作：说的是症状强度下降了。\n\n**医学/研究语境，病毒与毒力**\n> Researchers are working on an attenuated virus for use in vaccines.\n> 研究人员正在研制一种可用于疫苗的减毒病毒。\n\n医学里常见的不只动词 attenuate，还包括 **attenuated virus**、**attenuation**、**attenuate virulence** 这组说法。重点通常不是把它消灭，而是把毒力或致病性降下来。\n\n**政策讨论，抽象影响**\n> The measures may attenuate the impact of inflation on low-income families.\n> 这些措施可能会减轻通货膨胀对低收入家庭的影响。\n\n这也说明它不限于信号和医学。在政策、社会科学语境里，它也常用来写 impact、violence、inequality、influence 这类“效应被缓和”的对象。\n\n**词典保留义，形体变化**\n> The disease can attenuate the muscles of the lower limbs.\n> 这种疾病会使下肢肌肉变得更细瘦。\n\n这一支相对少见，但很重要：它说明 attenuate 不只有抽象的“削弱”，也还保留着“变细、变瘦、变长”的那层身体感。\n\n**原生思维** · attenuate 常搭配那些本来就能谈 force、magnitude、effect、virulence、severity、impact 的对象。它虽然也能用于较抽象的语境，但搭配并不随意；更常见的仍是带有测量感、技术感、书面感的对象。\n\n**悟道时刻** · 记这个词，抓住一条线就够了：先是变薄，接着变弱。它说的不是直接拿掉，而是把原本还在的那股强度慢慢调低。遇到它时，可以先看这里处理的是不是某种可感知的强度、效应或毒力；如果是，通常就离它的用法不远了。",
+    "verification": {
+      "claimCount": 11,
+      "confirmedCount": 6,
+      "softenedCount": 5,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "它本来就是‘把东西弄薄、弄弱、弄细’的那种动作感。",
+        "这个词一路从‘物理上的变薄’走到今天，保留了那种‘厚度/强度被抽掉’的感觉。",
+        "它来自拉丁语，核心意思和‘变薄、变细’有关。",
+        "所以现在既能讲光、声、信号，也能讲风险、情绪、影响。",
+        "它身上有一种技术感、精密感，常常带着‘把一个过强的东西调低’的味道。"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/attenuates"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/attenuate"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/attenuate"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/attenuate"
+        },
+        {
+          "label": "Merriam-Webster, attenuation",
+          "url": "https://www.merriam-webster.com/dictionary/att%C3%89nuation"
+        },
+        {
+          "label": "Britannica, attenuation in immunization",
+          "url": "https://www.britannica.com/science/attenuation-immunization"
+        },
+        {
+          "label": "National Cancer Institute Dictionary",
+          "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/attenuated"
+        }
+      ]
+    },
+    "surface": "减弱；稀释；使变细"
+  },
   "averse": {
     "displayWord": "averse",
     "meta": [
@@ -1336,6 +1389,59 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "cherry": {
+    "displayWord": "cherry",
+    "meta": [
+      "果实意象 · 价值延伸 · B1-B2",
+      "Issue 008"
+    ],
+    "markdown": "**字面含义** · 先浮出来的，常是一颗小而圆、带梗的樱桃：鲜亮，咬下去有汁水。很多人先想到红亮的样子，不过词典里的 cherry 也包括深红、黑红甚至近黑色的樱桃。\n\n**本体质感** · 这个词在英语里常带出“甜、亮、轻”的感官联想：小巧、精致，容易让人想到夏天、甜点和装饰色。它经常出现在颜色、口味这些场景里，比如常见搭配 cherry red，也可以直接用 cherry 表示鲜红色；说到 cherry flavor 或 cherry-flavored，也常会进入商品口味标签的语境。\n\n**寻根溯源** · 古英语里曾有相关词形，但现代 cherry 的直接来源通常追到 Anglo-French / Old North French 的 cherise，再往上连到拉丁—希腊这一支词族。这里有个关键的小转弯：英语后来把 cherise 里的 -s 误当成复数词尾，重新分析后，慢慢变成了今天这个单数形式 cherry。它的核心意义一直没有偏离这种果子本身，只是因为颜色和味道都足够鲜明，后来自然长出了颜色义，以及更多借形象发力的表达。\n\n**各路用法** · 几个最常见、也最值得认识的场景里，你会看到它怎样自然出现：\n\n**日常，超市/做饭**\n> I bought a bag of cherries for dessert tonight.\n> 我买了一袋樱桃，今晚当甜点吃。\n\n这里就是最基本的水果义。复数 cherries 在日常里很常见，因为它通常不是“一颗一颗”地被买，而是一袋、一盒地出现。\n\n**日常，聊口味**\n> This yogurt is cherry-flavored, but not too sweet.\n> 这个酸奶是樱桃味的，但不会太甜。\n\n这里更自然的是 cherry-flavored。它常见于包装、菜单、商品介绍里，不一定真有新鲜樱桃在里面，但会借这个词直接调动对味道的预期。\n\n**日常，描述颜色**\n> She wore a cherry red dress to the party.\n> 她穿了一条樱桃红的裙子去参加派对。\n\ncherry red 是很常见的搭配，重点不是“红”得多专业，而是那种鲜亮、讨喜、带一点装饰感的红。\n\n**日常，夸一个好东西更完整了**\n> A balcony with a sea view was the cherry on top.\n> 一个能看海的阳台，就是那个锦上添花的加分项。\n\nthe cherry on top / the cherry on top of the cake 说的不是核心部分，而是最后让整件事更圆满、更漂亮的小加分。\n\n**工作里，指出对方选择性取材**\n> The report was criticized for cherry-picking the data.\n> 这份报告因为选择性摘取数据而受到批评。\n\ncherry-pick 原来是“像摘樱桃一样挑最好的”，后来变成“只挑对自己有利的部分”。它既可以是中性的“精挑细选”，也常带一点批评：你不是在完整呈现，只是在挑着用。\n\n**原生思维** · 在日常使用里，cherry 往往不只是一个植物学名词，也会带出颜色和味道的联想。所以英语里用了它，很多时候不是为了精确定类，而是借那种鲜亮、小巧、可口的印象去说别的东西。这也解释了为什么它一边能落在 cherry red、cherry-flavored 这种具体的消费语境里，一边又能长出 the cherry on top、cherry-pick 这种更抽象的表达：前者借感官形象，后者借“挑出好东西”的动作感。\n\n**悟道时刻** · cherry 的特别之处，不只在“樱桃”这个意思本身，还在于它的画面很强：颜色亮，味道直，个头小，辨识度高。一个词只要画面够强，就容易长出颜色、口味、比喻，甚至动作性的表达。\n\n以后遇到这类词，可以多问一步：它后来扩出去的用法，到底是在借它的颜色、味道，还是最典型的动作和场景。这个问题问对了，词义就会一下子活起来。",
+    "verification": {
+      "claimCount": 5,
+      "confirmedCount": 3,
+      "softenedCount": 3,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "**cherry** 先看到的是一颗红得发亮的小果子，圆润、带梗，咬下去会有汁水。",
+        "它经常出现在颜色、口味、点缀这些场景里，比如 **cherry red、cherry…",
+        "**cherry** 来自古英语和更早的法语路径，最终都回到拉丁语里的 **cera…",
+        "它后来稳稳留在日常英语里，没有走得太远，但因为颜色醒目、味道鲜明，慢慢长出了很多‘借…",
+        "英语母语者用 **cherry** 的时候，往往不是先想‘这是一个植物学分类’，而是…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/cherry"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/cherry"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/cherry_1"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/cherry"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/cherry-on-top-of-the-cake"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/cherry-picking"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/cherry-pick"
+        }
+      ]
+    },
+    "surface": "樱桃；樱桃红；精选之物"
+  },
   "clanker": {
     "displayWord": "clanker",
     "meta": [
@@ -1391,6 +1497,59 @@ window.WORD_SENSE_ENTRIES = {
         }
       ]
     }
+  },
+  "clearance": {
+    "displayWord": "clearance",
+    "meta": [
+      "许可边界 · 空间余量 · B2-C1",
+      "Issue 008"
+    ],
+    "markdown": "**字面含义** · 一个直观的入口，是“被清出来的空间、余量，或被清出去的东西”。货架上腾出一截位置，门口让出一条通道，或者车底和地面之间留出的空隙，都是 clearance 的典型画面。它常指障碍处理过后，路或空间被腾出来。\n\n**本体质感** · clearance 的核心，常不在“清楚”这个抽象义上，而在“清理、放行之后终于能通过，或者终于留出余量”这类场景里。  \n它确实常带行政、程序、门槛感，但主要集中在制度性场景里。clearance 不都等于“批准”：有时是清理本身，有时是清理后的结果。  \n所以它常见的几种气息是：  \n- 在“海关/安检/审批”里，指一道门被正式打开。  \n- 在“清仓促销”里，指库存退场，价格也跟着下调。  \n- 在“物理空间”里，接近“留白”“间距”，带一点工程上的精确。  \n- 在更基础的层面，也可以直接指“清理、清除、腾空”这个过程。  \n中文里容易把它一概理解成“清除”或“清理”，但英语里它既可以指清理这一动作，也常指由此带来的通行资格、余量、空档。\n\n**寻根溯源** · `clearance` 这个名词本身，是英语里由 `clear` 加 `-ance` 构成的。再往前追，`clear` 经由法语可追到拉丁语 `clarus`，大致和“明亮、清楚、显明”有关。  \n它的语义后来慢慢展开：16 世纪时更接近“清理、弄清、使之变得无阻”；到了 18 世纪，可以指“清出来的空间”；19 世纪有了 `clearance sale` 这种把库存腾出去的商业说法；到 20 世纪，又稳定长出了“批准、许可、放行”这一支。  \n今天看到的 clearance，背后大致还留着一个老骨架：障碍被移走，于是东西可以通过，或者空间可以被腾出来。\n\n**各路用法** · 几个例子，感受它在不同场景里的气质：\n\n**职场，邮件里**\n> We need security clearance before you can access the file.\n> 你需要先获得安全许可，才能访问这个文件。\n\n这里不是“看懂文件”这么简单，而是“你有没有被允许接触它”。\n\n**职场，会议里**\n> The design has been approved, but we are still waiting for legal clearance.\n> 设计已经通过了，但我们还在等法务放行。\n\n这里的 legal clearance 是常见职场搭配，尤其在媒体、品牌、合规语境里，意思偏“法律审查通过，可以继续用、继续发”。\n\n**出入境，报关时**\n> Customs clearance may take up to two business days.\n> 清关最多可能需要两个工作日。\n\n这时候 clearance 很典型，就是“放行”这一层：东西到了，不等于流程已经走完。\n\n**机场，塔台里**\n> The plane has received clearance for take-off.\n> 这架飞机已经获得起飞许可。\n\n这类航空英语里，clearance 就是标准的“管制放行”。\n\n**日常，逛商场**\n> They are having a clearance sale this weekend.\n> 他们这个周末在做清仓促销。\n\n这里的重点不是“清洁”，而是“把库存清出去”。\n\n**日常，商场标签上**\n> These jackets are on clearance.\n> 这些夹克正在清仓处理。\n\n`on clearance` 也很常见，意思就是“正在作为清仓货出售”。\n\n**工程，聊车辆参数**\n> This SUV has higher ground clearance than the sedan.\n> 这辆 SUV 的离地间隙比那辆轿车更高。\n\n这里的 clearance 是很具体的净空、离障距离。`ground clearance` 是常见固定搭配：离地间隙。\n\n**日常，说空间**\n> The bike needs more clearance on the left side.\n> 这辆自行车左边需要再多留一点空隙。\n\n这里就是纯粹的间距、余量，带一点工程感。\n\n**银行，问到账情况**\n> The check is still waiting for clearance.\n> 这张支票还在等清算完成。\n\n这一支很多人会漏掉。这里的 clearance 说的是款项还在走流程，等“清完、过完、确认完”，钱才算真正到位。\n\n**搬家，清房子**\n> We need to finish the house clearance by Friday.\n> 我们得在周五前把这次清房整理完。\n\n这里就既不是“许可”，也不是“空隙”，而是更直接的“清理、清空”过程本身。\n\n➤ *值得注意的是，在海关、安保、法务这些场景里，clearance 往往直接对应一道“放行门槛”；在真实医疗语境里，也常会说 someone is medically cleared / gets medical clearance，意思接近“经评估后可以继续进行”，比如可以手术、可以出院、可以恢复训练。*\n\n**原生思维** · 在实际英语使用里，clearance 常不落在“做清理”这个动作本身，也不只指“清楚”这个抽象状态，而是指阻碍被移走后，系统可以继续往前走。  \n所以它可以落在“许可”“间距”“清仓”“清算完成”这些看起来差很大的地方，底层却有一种相通的动作感：把挡路的东西处理掉，让通行、通过、腾挪成为可能。中文里常拆开说“批准”“空隙”“清仓”“清算”“清理”，英语则常把这些收在同一个词里。\n\n**悟道时刻** · 记 clearance，别只记成“清理”，也别只记成“许可”。可以抓住一个判断：这里说的是“清的过程”，还是“清完之后可以过了”。这个分叉一抓住，clearance 那些看似分散的用法，就容易串到一条线上。",
+    "verification": {
+      "claimCount": 15,
+      "confirmedCount": 7,
+      "softenedCount": 8,
+      "uncertainCount": 0,
+      "rejectedCount": 1,
+      "checked": [
+        "它最先让人想到的是‘清空出来的一块地方’——货架上被拿走一批货，门口腾出一条通道，或…",
+        "这个词的核心气味不是‘清楚’，而是‘被放行、被腾挪、被处理过之后终于通了’。",
+        "它常常带着一种行政、程序、门槛感：不是随便空出来，而是经过批准、核准、检查、放过之后…",
+        "在‘海关/安检/审批’里，它像一道门被正式打开。",
+        "在‘清仓促销’里，它像库存终于要退场。"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/clearance"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/clearance"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/clearance"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/clearance"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/clearance_n"
+        },
+        {
+          "label": "Merriam-Webster, security clearance",
+          "url": "https://www.merriam-webster.com/dictionary/security%20clearance"
+        },
+        {
+          "label": "FDA, 510(k) Clearance Process",
+          "url": "https://www.fda.gov/medical-devices/510k-clearances/medical-device-safety-and-510k-clearance-process"
+        }
+      ]
+    },
+    "surface": "许可；清仓；净空"
   },
   "come off": {
     "displayWord": "come off",
@@ -1599,6 +1758,112 @@ window.WORD_SENSE_ENTRIES = {
         }
       ]
     }
+  },
+  "crisp": {
+    "displayWord": "crisp",
+    "meta": [
+      "感官质地 · 表达风格 · B2",
+      "Issue 008"
+    ],
+    "markdown": "**字面含义** · 最先浮出来的是那种“咔嚓一下”的感觉：饼干一掰就断，生菜脆，秋天的空气也带着清爽凉意。它指向一种边缘清楚、触感利落的状态。\n\n**本体质感** · crisp 的核心是“干净的脆感”和“利落的清晰感”。它既可说口感上的脆，也可说视觉、听觉或表达上的清楚利索——线条清楚，动作干净，不糊成一团。说衣服 is crisp，往往是在夸它挺括、清爽；说回答 is crisp，通常是在夸它简短、到点、没有废话。它整体给人的气质是干净、利落、清新，但未必温和；放到 reply 或 manner 这类场景里，有时甚至会显得有点忙、冷、略不友好。和它相邻的词里，crunchy 更偏“嚼起来有存在感”，crisp 更偏“脆、清、利”；sharp 往“尖锐、机敏”走，clean 往“整洁、无杂质”走。可以把 crisp 看成站在“脆感”和“利落感”交界处的那个词。\n\n**寻根溯源** · 更早的词源里，crisp 最初和“卷曲、起皱、波浪状”有关。已知较早的英语里，它就有 curly、crimped、wavy 这层意思；后来才慢慢发展出“脆”“挺括”“清晰”这些今天更常见的用法。顺着这条线看，它一直在把“轮廓分明、不软塌、有形状”这类感觉移到不同对象上：食物可以 crisp，衬衫和床单可以 crisp，空气可以 crisp，声音和图像也可以 crisp。\n\n**各路用法** · 几个例子，在不同场景里感受一下区别：\n\n**职场，邮件里**\n> We need a crisp summary for the client by noon.\n> 我们需要在中午前给客户一份简洁利落的总结。\n\n这里说的并非只是“短”，还包括简洁、到点、清楚，没有多余绕路。\n\n**职场，回复消息**\n> Her answer was crisp and to the point.\n> 她的回答干脆利落，直奔重点。\n\n这种用法常常是在夸效率；但放在具体语境里，也可能让人觉得有点冷，甚至略显不耐烦。\n\n**日常，形容食物**\n> These apples are so crisp.\n> 这些苹果真脆。\n\n最直接的身体感受：咬下去有清脆回弹。\n\n**日常，形容天气**\n> It feels crisp this morning.\n> 今天早上空气很清爽，有点凉意。\n\n这里不是单纯“冷”，而是冷得干净、冷得有精神。\n\n**日常，形容衣物和纸张**\n> I like a crisp white shirt.\n> 我喜欢那种挺括利落的白衬衫。\n\n衣服的 crisp 感，是“熨得平、站得住、看起来很利索”。同一组感觉也常落在纸张、床单、钞票上，比如 crisp sheets、a crisp bill：干净、平整、略带挺性，没有褶皱和塌软感。\n\n**数码，屏幕或音响**\n> The image on the new monitor is crisp and bright.\n> 这台新显示器上的画面清晰明亮。\n\n这时它讲的是清晰、锐利、边界分明。音响里说 crisp sound，也是在说声音干净、不糊。\n\n**原生思维** · 在英语使用里，crisp 常用来抓一种“边界清楚、触感分明、没有糊味”的状态。它很自然地从食物的清脆，延伸到声音、图像和表达方式：咬苹果时的清脆、屏幕画面的清晰、一句回复的干脆，底下是同一条线——清楚，不塌，不拖。中文里也有“清爽”“利落”“脆”这些说法，但各自只抓住一部分；crisp 的特点，是把这些部分收在一个词里。顺手一提，最早那层“卷曲”的旧义今天已经不常用，但它能帮你理解这个词为什么一开始就在乎“形状”和“纹理”。\n\n**悟道时刻** · 可以把 crisp 记成一个特别看重“边缘”的词：食物有脆感，空气有清劲，句子有断落，图像有轮廓。遇到它时，先看它是在夸“脆”、在夸“清”，还是在夸“利落”。抓住这条线，就能把这些用法串起来。",
+    "verification": {
+      "claimCount": 7,
+      "confirmedCount": 5,
+      "softenedCount": 6,
+      "uncertainCount": 2,
+      "rejectedCount": 2,
+      "checked": [
+        "**crisp 这个词的核心不是‘好吃’本身，而是‘干净的脆感’和‘利落的清晰感’。…",
+        "**说一件衣服 is crisp，往往是在夸它挺括、清爽；说一个回答 is cris…",
+        "**它来自古英语和更早的日耳曼语源，原本就和‘卷曲、干脆、折断时的利落感’有关。**",
+        "**这个词一路保留住了一个很稳定的核心：东西不软塌，不拖沓，触碰时有清脆的断裂感。*…",
+        "**后来它慢慢从食物和触感扩展到天气、颜色、语言风格，都是同一个骨架在换外衣。**"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/crisp"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/crisp"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/crisp_1"
+        },
+        {
+          "label": "Longman Dictionary of Contemporary English",
+          "url": "https://www.ldoceonline.com/dictionary/crisp"
+        },
+        {
+          "label": "Collins English Dictionary",
+          "url": "https://www.collinsdictionary.com/dictionary/english/crisp"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/crisp"
+        }
+      ]
+    },
+    "surface": "酥脆的；清晰利落的"
+  },
+  "crop": {
+    "displayWord": "crop",
+    "meta": [
+      "生长收成 · 图像动作 · B1-B2",
+      "Issue 008"
+    ],
+    "markdown": "**字面含义** · 最直观的画面还是田里的一茬作物：麦子、玉米、棉花，到了季节被收下来。`crop` 可以指庄稼、农作物，也可以指某一年的收成、产量。\n\n**本体质感** · 这个词容易让人误会的一点是：它不能总用“从整体里切出一块”来概括。现代最常见的动词用法里，尤其在图片和头发这类场景中，`crop` 常带着“把边缘切掉、把长度截短、留下更合适的一部分”的手感。它通常指一种很具体的人工处理：不只是变少了，还经过了修整和收拢。\n\n到了名词义，英语又把它拉回另一条线：田里的作物，一年的收成，以及“同一时期冒出来的一批东西”。所以 `crop` 在现代英语里有几条并行的意思：有的偏收成，有的偏截短，有的偏“一拨接一拨地出现”。\n\n**寻根溯源** · 词源上，`crop` 很早并不只是“收割物”。它来自古英语 `cropp`，早期和“植物的顶端、芽头”有关，也一度指鸟的嗉囊。后来才逐渐发展出“作物、收成”这条常见线。也正因为这样，拿今天熟悉的图片裁切感去倒推全部义项，会有点过头。\n\n换句话说，`crop a photo` 当然很好懂，但 `crop` 这个词本身并不是从“裁图片”长出来的；它更早贴着植物顶部、长出来的一头、收下来的一批这些画面在走。\n\n**各路用法** · 真正进入日常时，`crop` 至少有几条要分开看：\n\n**日常，照片编辑**\n> I cropped the photo to remove the background clutter.\n> 我把照片裁掉了一部分，把背景里杂乱的东西去掉了。\n\n这里的 `crop` 很典型，就是把边缘切掉，留下更想要的画面。\n\n**日常，说头发**\n> She cropped her hair short before summer.\n> 她在夏天前把头发剪短了。\n\n这里不是普通的 `cut`，而是带一点剪得很利落、很短的感觉。\n\n**日常，说发型结果**\n> He came back from the barber with a short crop.\n> 他理发回来，留了个很短的发型。\n\n`crop` 也可以直接指这种裁短后的结果，尤其是短发。\n\n**职场，做汇报材料**\n> We cropped the chart to focus on the top three categories.\n> 我们把图表裁了一下，只突出前三类。\n\n放到图表、截图、版面里，它延续的还是“把边缘和次要部分去掉”的思路。\n\n**教育，毕业季**\n> This year's crop of graduates is entering a difficult job market.\n> 今年这一批毕业生正进入一个不太容易的就业市场。\n\n这里的 `a crop of ...` 指“同一时期出现的一批、一拨”。这也是现代英语里很常见的一支，比如 films、novels、graduates、startups。\n\n**工作中，问题不断冒出来**\n> New issues keep cropping up during testing.\n> 测试过程中不断有新问题冒出来。\n\n`crop up` 是必须单独记的高频表达，意思是“突然出现、意外发生”。它和图片裁切不是一回事，重点在“原本没预料到的东西又冒出来了”。\n\n如果是在图片编辑里，你也会听到 `crop X out` 这种说法，表示把某个人或某块内容从画面里裁掉；但更核心、更稳定的基础感觉，还是 bare `crop` 本身的“裁切”。\n\n**原生思维** · 用 `crop` 时，常见的不是抽象的“减少”，而是很具体的场景：田里这一季长出来、收下来的东西；或者一张图、一道边缘、一头头发，被手动修到某个更利落的状态。到了 `a crop of ...`，画面又变成“同一拨里新长出来、新出现的一批”。\n\n所以它和 `shorten`、`reduce` 的差别，大致就在这里：在图片、头发这些语境里，`crop` 往往更有手感，像是真的拿剪刀或裁切框动过手。可一旦碰到 `crop up`，就别再往“裁剪”上靠了，直接把它当成“突然冒出来”更准。\n\n**悟道时刻** · `crop` 值得抓住的，是两种高频画面：一是“收成／一批”，二是“裁短／裁掉边缘”。这两条线在英语里长期并存，所以它既能落在田里，也能落在照片、头发、图表和毕业生身上。\n\n见到它时，先别急着统一成一个公式。先问：这里说的是“这一批长出来、出现了”，还是“这一块被裁得更利落了”？这一下分清，`crop` 就不散了。",
+    "verification": {
+      "claimCount": 7,
+      "confirmedCount": 4,
+      "softenedCount": 5,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "最直观的画面是‘收割下来的一茬作物’……你也会在一些老一点的语感里，感觉到‘这一季长…",
+        "crop 这个词有一种‘从整片东西里切出一块、留下可用部分’的手感。",
+        "所以它在英语里经常带着一种‘裁切、修整、截短’的动作感：照片里把边缘切掉，信息流里把…",
+        "A crop of fans showed up outside the store…",
+        "crop 既能是动作，也能是结果；既能是‘把边缘去掉’，也能是‘从整体中冒出来的一批…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/crop"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/crop%20up"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/crop"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/crop-up"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/crop_1"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/crop_2"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/crop"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/crop_n"
+        }
+      ]
+    },
+    "surface": "作物；一批；裁剪"
   },
   "daemon": {
     "displayWord": "daemon",
@@ -2658,6 +2923,59 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "field": {
+    "displayWord": "field",
+    "meta": [
+      "空间范围 · 专业领域 · B1-B2",
+      "Issue 008"
+    ],
+    "markdown": "**字面含义** · 先把它看成一片“地”：开阔、平坦，能让人走进去，也能让事情在里面展开。最常见的入口就是足球场、麦地、原野，或一块被划出来、留给某种活动发生的空间。\n\n**本体质感** · field 常可理解为“一块可供活动展开的区域”：可以是真实的田地、球场，也可以是学科、行业、研究方向，甚至是和办公室、实验室相对的“现场”。中文常译成“领域、田地、场地、界”；在英语里，它往往还保留一点空间感，像是把事情摊开在一块地方，让人进去工作、竞争、调查、观察。\n\n不过也别把所有用法都硬拧成同一幅画面。像 a field of study、the medical field，确实是“活动展开的范围”；但 a field of candidates 更常指一场竞赛、选举里成组出现的竞争者，重点在“这一整组人”。\n\n**寻根溯源** · 它来自古英语 feld，原本就和“开阔地、田地、牧地、耕地”有关。这个底图很早就定下来了：一片摊开的地。field 的抽象义，也就是“某类相关事物的范围、场域”，至少在 14 世纪中期就已经出现，后来又扩展到学科、行业、实地工作等语境。\n\n物理学里的 field，也就是 electric field、magnetic field 这种“场”，是更晚近的发展，大约到 19 世纪中叶才稳定下来。它看上去抽象，其实还是同一思路：一片力量会起作用的范围。\n\n**各路用法** · 看几个例子，你会看到它怎样在不同场景里切换，但底下常常还连着“某种范围或场域”的感觉。\n\n**日常，聊足球**\n> He played in midfield, but he can cover the whole field.\n> 他踢中场，但他能覆盖整片球场。\n\n这里的 field 就是直接的“比赛场地”：一块被划出来、供活动发生的地。\n\n**职场，谈行业**\n> She has worked in the medical field for over ten years.\n> 她已经在医疗行业工作了十多年。\n\n这里的 field 是“行业、专业领域”。虽然不是具体地面，仍像一块你在里面长期工作、积累经验的范围。\n\n**科研，谈实地工作**\n> We need more data from the field before we draw conclusions.\n> 在下结论之前，我们还需要更多来自实地的数据。\n\n这里的 from the field 不是泛指“来自这个领域”，而更接近“来自现场、来自一线、来自真实环境”。它常和 office、lab 形成对照。\n\n**教育，聊专业选择**\n> Anthropology is a field that really interests me.\n> 人类学是一个我很感兴趣的领域。\n\n这个用法很稳定，也很常见：某一门学科、研究方向、知识范围。\n\n**理科课堂，讲物理**\n> A charged particle moves differently in a magnetic field.\n> 带电粒子在磁场中的运动方式会不同。\n\n物理里的 field 需要单独认识。这里它不是“行业领域”，而是“某种作用分布开来的场”，比如电场、磁场。它和“范围里有事情在发生”这层感觉并不远。\n\n**数字产品，填表单**\n> Please fill in all required fields.\n> 请填写所有必填栏位。\n\n这个 field 很现代，也很高频。它指表单或数据库里一个个“字段、栏位”——本质上还是被划出来、等你往里填内容的一格位置。\n\n**会议现场，接问题**\n> The spokesperson fielded several tough questions from reporters.\n> 发言人接下并处理了记者提出的几个棘手问题。\n\n这里 field 变成了动词。to field a question 指“接下并处理问题”。语感上像是球被打过来，你这边要稳稳接住。\n\n**体育，排阵容**\n> The club will field a much younger team this season.\n> 这家俱乐部这个赛季将派出一支更年轻的队伍。\n\nto field a team 是“派队上场”。这个动词义在体育、政治、媒体里都很活，像 field candidates 也是“推出候选人参选”。\n\n**校园，做实地课题**\n> The students spent two weeks doing fieldwork in the village.\n> 学生们在村里做了两周田野调查。\n\nfieldwork、field data、field test、field trip 这些搭配都很能说明这个词的生命力：它既指抽象的“领域”，也反复指向“离开桌面，进入现场”。\n\n➤ 所以看见 field 时，先别急着只认“领域”。它可能是田地、球场、实地现场，也可能是物理学里的场、表单里的栏位，甚至还是动词，表示“接下并处理”问题，或“派出”队伍与候选人。\n\n**原生思维** · 这个词很能体现英语里一种常见的表达方式：把本来抽象的东西，说成某种可划分、可进入、可展开的范围。于是学科像一块研究地，行业像一片工作区，现场调查是真的“到那片地里去”，连物理学里的力也被想成分布在一整片范围中。\n\n但也要有分寸。field 可以和 scope、area、domain 对照着理解，可它们并不完全等值。scope 更像范围和限度，domain 往往更制度化、技术化，area 比较中性；field 则常多一点“人在其中活动”的感觉。\n\n**悟道时刻** · field 的关键，不在于背下多少中文义项，而在于认出它背后的共同点：总有一片范围被划出来，让行动、知识、竞争、观察在里面发生。看懂这一点，再遇到 field of study、in the field、electric field、required fields，就不容易把它们看成互不相干的几个词义。",
+    "verification": {
+      "claimCount": 10,
+      "confirmedCount": 5,
+      "softenedCount": 5,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "field 这个词的核心质地不是‘一个点’，而是‘一个可展开的范围’。",
+        "a field of study、the medical field、a field…",
+        "它最早来自古英语，原本就是‘地面、开阔地’的意思。",
+        "后来这个‘开阔的地’慢慢长出了更抽象的用法：凡是一个人要在里面活动、争夺、研究、劳动…",
+        "也正因为它的底层画面是‘可进入的空间’，所以今天它既能指农业、体育这种具体场域，也能…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/field"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/field"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/field_1"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/field"
+        },
+        {
+          "label": "Britannica",
+          "url": "https://www.britannica.com/science/field-physics"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/fieldwork"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/field-test"
+        }
+      ]
+    },
+    "surface": "田地；领域；实地"
+  },
   "flex": {
     "displayWord": "flex",
     "meta": [
@@ -2909,6 +3227,47 @@ window.WORD_SENSE_ENTRIES = {
       ]
     },
     "surface": "噱头；花招；吸睛的小机关"
+  },
+  "groom": {
+    "displayWord": "groom",
+    "meta": [
+      "照料培养 · 风险语义 · B2-C1",
+      "Issue 008"
+    ],
+    "markdown": "**字面含义** · 最原始的画面是“照料、打理、整理得像要见人一样”。能看到的是梳、擦、收拾，让某个东西、某个人，甚至某种表面，从乱变得整齐、好用。\n\n**本体质感** · 这个词自带一种“提前准备”的手感：不是临时修补，而是有步骤地把对象往某个目标状态推进。用在头发、外表、动物身上时，它偏向细致打理；用在计划、方案、人际关系上时，就会带出更深的意味：带着目的去培养、塑形，甚至有操控色彩。英语里的 groom 常有一种“表面温和，但有明确方向”的感觉；既能指日常打理，也能提示“这是在为后面的动作铺路”。\n\n**寻根溯源** · 这个词最早和“马夫、照料马匹的人”这类工作有关，核心不是把东西弄美，而是把需要照看的对象收拾妥当。后来它从照料动物、整理外表，扩展到培养能力、为将来做准备，又发展出今天很常见的 “groom someone for a position” 这种用法：把一个人慢慢推向某个角色。到更晚近的语境里，它也会指通过建立关系、获取信任与控制，为剥削或虐待做准备。它的轨迹可以概括为：从“手上的活”，发展成“对对象的长期塑形”。顺带一提，名词里的 groom 还有“新郎”等用法，但不是这里这条动词主线的重点。\n\n**各路用法** · 几个例子，先看它在不同场域里怎么落地：\n\n**日常，聊外表**\n> He was grooming his beard before the dinner.\n> 他晚餐前在打理胡子。\n\n这里就是最贴近“整理得体”的那层，动作轻，画面也很具体。\n\n**日常，照顾动物**\n> She spends a lot of time grooming her dog.\n> 她花很多时间给狗梳理毛发、照料它。\n\n这里的重点是细致照看，不是随便洗一下。\n\n**职场，谈人事培养**\n> They have been grooming her for a leadership role.\n> 他们一直在培养她，让她将来担任领导职务。\n\n这里说的已经不是外表，而是有计划地把人往某个位置上推。\n\n**户外，谈雪道整理**\n> The resort grooms the ski slopes every morning.\n> 这家度假村每天早晨都会整理滑雪道。\n\n这里的 groom 已经不再用于人或动物，而是把雪面压实、整平，让它适合使用。这个义项很能说明：groom 的核心不只是在“梳理”，也包括把表面收拾到可用状态。\n\n**新闻，谈儿童诱骗与操控**\n> The investigation focused on how he groomed vulnerable teenagers online for abuse.\n> 调查聚焦于他如何在网上通过建立关系与信任来诱骗并操控脆弱的青少年，进而实施虐待。\n\n这时词里那层“表面温和、实际有目的”的阴影会很重，而且重点不是简单的聊天诱导，而是逐步建立关系、信任和控制。\n\n值得注意的是，在职场和新闻语境里，groom 常带着“培养、塑形、预备”的方向感；一旦后面接上 vulnerable people、online、for abuse 之类的语境，它会迅速转向“诱骗、操控”的含义。\n\n**原生思维** · 使用 groom 时，语义重心常常不在一个静态结果上，而在“把某个对象一点点弄到位”的过程。这个“到位”可以是外形到位，也可以是能力到位，甚至是关系和心理状态被一步步安排到位。所以它天然带着过程感：持续、递进、带方向。中文里的“打理、培养、诱骗、操控”分别抓住了它的不同面，而英语里这些面可以由同一个词串起来，这也是它容易让人误判的地方。\n\n**悟道时刻** · 记住的关键，不要只停在“groom = 梳理”。它常在说一种“把对象慢慢收拾到某个可预期状态”的动作：这个状态可以是体面、可用、上岗，甚至是被控制。再遇到这个词，先问一句：这里是在照看，在塑形，还是在为后面的事铺路？",
+    "verification": {
+      "claimCount": 5,
+      "confirmedCount": 5,
+      "softenedCount": 1,
+      "uncertainCount": 0,
+      "rejectedCount": 1,
+      "checked": [
+        "核对主流词典中的动物梳理、个人整理和职位培养义",
+        "核对儿童保护机构对 grooming 过程的定义",
+        "核对雪道整理这一稳定现代用法",
+        "核对名词 groom 与动词 groom 的历史关系",
+        "核对各义项的大致出现年代"
+      ],
+      "sources": [
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/groom"
+        },
+        {
+          "label": "Merriam-Webster Dictionary",
+          "url": "https://www.merriam-webster.com/dictionary/groom"
+        },
+        {
+          "label": "NSPCC Learning",
+          "url": "https://learning.nspcc.org.uk/safeguarding-child-protection/grooming"
+        },
+        {
+          "label": "Online Etymology Dictionary",
+          "url": "https://www.etymonline.com/word/groom"
+        }
+      ]
+    },
+    "surface": "梳理；培养；诱骗接近"
   },
   "gross": {
     "displayWord": "gross",
@@ -3612,6 +3971,99 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "level": {
+    "displayWord": "level",
+    "meta": [
+      "尺度层级 · 平衡状态 · B1-B2",
+      "Issue 008"
+    ],
+    "markdown": "**字面含义** · 它最早让人想到的，既是测水平的工具，也是水平面本身。入口很直观：不倾斜，没有高低差，落在同一条线上，或者处在同一高度上。\n\n**本体质感** · 这个词的核心手感是“把高低差抹平，拉到同一水平线上”。所以说某物 is level，通常是在确认它够平、够稳、够对齐。  \n这个感觉一旦抽象化，就会用来讲“高度”“程度”“级别”这些能放到刻度线上的东西：water level 是水位，sea level 是海平面，energy level 是精力水平，student level 是学生所处的程度，entry-level 则是入门级、初级岗位。  \n再往人的表达上延伸，Oxford 这类词典确实支持 a level voice、a level gaze 这种说法：声音和目光都很稳，没有太多起伏。至于形容一个人整体冷静、判断稳，英语里更常见也更稳妥的是 level-headed。它重点不是“聪明”，而是脑子稳，不容易被情绪带歪。Etymonline 甚至直接把它解释成 mentally balanced，这个感觉很准：重心在稳。\n\n**寻根溯源** · 从词源上看，level 在英语里大约 14 世纪中叶先指“测水平的工具”；到了 16 世纪，才更清楚地长出“水平线、海平面、同一高度”这些今天更熟悉的意义。再往后，它又自然延伸到社会、道德、智力状态这类抽象层面。  \n所以这个词的发展路径很顺：先有“拿工具量平不平”，再有“东西是不是在同一高度”，最后才有“程度、级别、状态是不是落在同一线上”。也因此，今天的 level 看起来义项很多，底下却是同一根骨头：平、齐平、同高，再到“水平”“级别”“拉平差距”。\n\n**各路用法** ·\n\n**日常，形容东西是平的**\n> Put the picture on the wall and make sure it is level.\n> 把画挂在墙上，确保它是平的。\n\n这里的 level 就是最本义的“水平、没歪”。\n\n**路上，并排行进**\n> The two cars drew level at the traffic lights.\n> 两辆车在红绿灯前开到了齐头并进的位置。\n\n这里说的是到了同一高度、齐平。\n\n**生活，讲高度位置**\n> Keep the shelf at eye level.\n> 把架子放在视线高度。\n\neye level、sea level、water level 都是很高频的名词用法：某个高度线、水平线。\n\n**工作，讲程度或数量**\n> We need to understand the level of demand before we expand.\n> 我们需要先弄清需求的水平，再决定是否扩张。\n\n这时的 level 就是“程度、数量、水平”，是现代英语里很常见的一支。\n\n**教育或职场，讲级别**\n> This is an entry-level position, so we do not expect years of experience.\n> 这是一个入门级岗位，所以我们不要求你有很多年经验。\n\nstudent level、management level、senior-level 也都属于这一类：说的是你落在哪一层级。\n\n**施工，表示把东西弄平**\n> They leveled the ground before building the house.\n> 他们在盖房子前先把地面整平了。\n\n动词 level 在这里就是“弄平、整平”。\n\n**新闻，表示夷平或摧毁**\n> The explosion leveled the building.\n> 爆炸把那栋楼夷为了平地。\n\n这是动词义里很不能漏的一支：这里是真的“推平”。\n\n**职场或政策，讲拉平差距**\n> The new rules are meant to level the playing field for smaller companies.\n> 这些新规定是为了给较小的公司创造更公平的竞争环境。\n\nlevel the playing field 现在很常见，意思就是把优势劣势拉回到同一起跑线。这个比喻很现代，但骨子里还是同一个动作：把高低差抹平。\n\n**沟通，形容语气或目光平稳**\n> She answered in a level voice.\n> 她用一种平稳克制的语气回答。\n\n这里的 level 不是“冷冰冰”，而是声音里没有明显的情绪起伏。\n\n**危机处理中，形容人稳得住**\n> She stayed level-headed even when everyone else was panicking.\n> 即使其他人都慌了，她还是保持冷静、判断稳定。\n\n这里更自然的说法是 level-headed，而不是直接说 someone is level。\n\n**原生思维** · level 常用来处理这样几类关系：东西是否水平，位置是否齐平，数值是否落在某个水平，差距是否被拉平。于是它既能讲物理上的平，也能讲海平面、水位、视线高度；既能讲程度和级别，也能讲把某种不公平、不均衡、不对齐的状态重新拉平。  \n这也解释了为什么 level 一边能出现在 blood sugar level 这种表达里，一边又能出现在 a level voice、level-headed、level the playing field 这种语境里。它们看上去很散，其实都和“高低差”或“波动”有关。  \n顺手提醒一句：如果你想说“这个人很冷静稳重”，英语里通常更会说 level-headed；裸用的 level，更稳定的教学入口还是水平、高度、程度、级别，以及把差距拉平这些义项。\n\n**悟道时刻** · 记 level，不要只记成“平”。更好用的抓法是：它在处理各种“高低差”——让东西变平，让位置齐平，让数值落在某个水平，让人把语气稳住，让规则把差距拉回同一线。  \n看到 level of、sea level、entry-level、level the ground、level the playing field，不必拆开背。它们其实都在说同一件事：先看有没有一条可供对齐、衡量或拉平的线。",
+    "verification": {
+      "claimCount": 7,
+      "confirmedCount": 4,
+      "softenedCount": 3,
+      "uncertainCount": 2,
+      "rejectedCount": 1,
+      "checked": [
+        "`level` 作为形容词确有“平的、水平的”“同高”“声音/目光平稳不露情绪”等义"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/level"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/level_1"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/level_2"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/level"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/level-headed"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/level"
+        }
+      ]
+    },
+    "surface": "水平；层级；弄平"
+  },
+  "logistics": {
+    "displayWord": "logistics",
+    "meta": [
+      "组织运作 · 资源调度 · B2-C1",
+      "Issue 008"
+    ],
+    "markdown": "**字面含义** · logistics 指把人、物、时间、路线等安排到位的整套运转安排。你会看到箱子怎么走、车怎么接、货怎么到，背后其实是一张调度网。\n\n**本体质感** · logistics 说的不是“东西本身”，而是让事情真正落地所需的整套安排。它偏中性，常指实际的组织与执行；也常出现在细节很多、环环相扣的语境里，因此也会带出“难点在落实”这层语感。它的核心不只是搬运，还包括时间、人员、物资、路线的协调与执行。\n\n**寻根溯源** · 这个词现代常用义更直接的来源是法语 logistique，再往里可连到 loger，意思接近“安置、驻扎、安排住处”。这条线能帮助理解它为什么一直很落地：人驻哪、物放哪、队伍怎么走、补给怎么跟上。\n\n它后来在军事中变得很重要，指让行动得以发生的补给、运输、驻扎、部署，以及人员和物资保障。再往后，这个词才扩展到商业、项目、活动等场景。沿着这条军事到组织管理的发展线，logistics 到今天仍保留着很强的系统化、执行层安排色彩。\n\n更早层面上，它也和希腊语里与“计算、推理”有关的词有历史关联；但就现代用法看，更贴近的仍是“安置、驻扎、补给、调度”这条线。\n\n**各路用法** · 几个例子，感受它在不同场域里的分量：\n\n**职场，会议里**\n> We need to sort out the logistics before we announce the event.\n> 我们在公布活动之前，得先把各项安排理清楚。\n\n这里的 logistics 不是高大上的“物流”，而是具体执行层面的安排。你也会经常看到 the logistics of doing something 这种结构，比如 the logistics of moving the company to a new building，说的就是“把公司搬去新楼”背后的整套执行细节。\n\n**日常，跟朋友**\n> The trip sounds fun, but the logistics are a bit messy.\n> 这趟旅行听起来挺好玩，不过具体安排有点乱。\n\n说话人关注的不是“想不想去”，而是“怎么去、住哪、怎么衔接”。\n\n**职场，项目沟通**\n> The product launch is ready, but the logistics team still needs two more days.\n> 产品发布已经准备好了，不过执行统筹这边的物流团队还需要两天。\n\n这里的 logistics team 常常是很现实的部门名：负责供应、配送、物料、履约，或者其他执行层统筹工作，不一定只限于运输和仓储。你也会直接听到 work in logistics，意思就是“在物流／履约／供应执行这一行工作”。\n\n**求职，介绍岗位**\n> She works in logistics for an e-commerce company.\n> 她在一家电商公司做物流／履约统筹。\n\n这里的 logistics 已经很像一个行业或职能名了，指的是一整类具体业务。\n\n**复盘，吐槽执行**\n> It turned into a logistical nightmare.\n> 这件事最后变成了一场执行层面的噩梦。\n\n这里高频出现的是形容词 logistical。它一下就把问题从“点子好不好”拉回到“人、货、时间、流程根本兜不住”。\n\n➤ 值得注意的是，在供应链、运输、军工、活动策划这些语境里，logistics 常常更接近它的专业本义：调度、运输、补给、流程协调。这里说的也不只是“搬东西”，而是一整套让事情落地的系统。\n\n**原生思维** · 用 logistics 时，英语里常把“事情本身”和“事情如何落地”分开看。中文里，“安排”“协调”“后勤”“流程”“物流”常分散在不同词里；英语里 logistics 往往先把这些幕后动作收拢成一个整体，再去讨论它麻不麻烦、顺不顺、有没有卡点。\n\n所以它不是在命名一个物件，而是在命名让事情接通的那层现实。也正因为这样，它既能用于军事后勤、商业配送，也能用于旅行、搬家、活动、项目推进。形式上它看起来像复数，实际使用里常见 the logistics are ... 这样的说法。\n\n**悟道时刻** · 记 logistics，一个实用的抓手是：它关注的不是目标本身，而是让目标发生的支撑系统。遇到“安排、协调、部署、后勤、流程、执行”这类近义区时，先看说话的人是在谈结果，还是在谈让结果落地的那套系统，边界就清楚了。",
+    "verification": {
+      "claimCount": 7,
+      "confirmedCount": 5,
+      "softenedCount": 4,
+      "uncertainCount": 0,
+      "rejectedCount": 1,
+      "checked": [
+        "复杂活动的实际安排",
+        "商业中的运输配送",
+        "军事中的后勤保障",
+        "它来自法语 **logistique**"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/logistics"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/logistics"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/logistics"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/logistics"
+        },
+        {
+          "label": "Encyclopaedia Britannica",
+          "url": "https://www.britannica.com/topic/logistics-military"
+        },
+        {
+          "label": "Project Gutenberg, *The Art of War* (Jomini, English trans.)",
+          "url": "https://www.gutenberg.org/files/13549/13549-h/13549-h.htm"
+        }
+      ]
+    },
+    "surface": "物流；后勤；统筹安排"
+  },
   "maiden": {
     "displayWord": "maiden",
     "meta": [
@@ -4241,6 +4693,63 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "prime": {
+    "displayWord": "prime",
+    "meta": [
+      "优先程度 · 最佳状态 · B2-C1",
+      "Issue 008"
+    ],
+    "markdown": "**字面含义** · prime 最早就是“第一、最先”。后来很自然地发展出“首要的、最好的、正当其时的”等意思：排在前面，可以是最重要，也可以是质量最好，或正处在最能发挥作用的时候。\n\n**本体质感** · prime 常带一种“排在前面”的感觉。它可以指顺序上的前列、重要性上的优先，也可以指状态上的巅峰。  \n所以它不只是“好”，还常表示“主要”“优先”“正当盛时”。比如 prime location、prime farmland、prime beef，说的是位置、土地、肉质都更高一档；而 in one’s prime，说的是人正处在最旺盛、最能发挥的时候。  \n和 premier、principal 这些相邻词相比，prime 更灵活：既能说重要性，也能说质量，还能说人生或事物所处的高点。\n\n**寻根溯源** · prime 来自拉丁语 primus，意思就是“第一”。这条线很关键，因为它后来在英语里的几种常见用法，几乎都从这里长出来：顺序上的第一，重要性上的首要，再进一步延伸到质量上的上乘。  \n可以把它理解为：先有“第一”的骨架，再发展出“最优”“最佳状态”这些意思。“高质量、上等”这层意思也出现得很早。所以 prime 不是从“巅峰”倒推出来的，而是从“排在第一”一路扩展到“最好、最值钱、最成熟”。\n\n**各路用法** · 几个例子，看看它怎么在不同场景里落地：\n\n**职场，讨论重点**\n> Our prime concern right now is customer retention.\n> 我们现在最主要的关切是客户留存。\n\n这里的 prime 不是“特别棒”，而是“首要、主要”。这是它很核心、也很现代的用法。\n\n**新闻，案件报道**\n> She is the prime suspect in the case.\n> 她是这起案件中的头号嫌疑人。\n\nprime suspect 里，关键不是“巅峰”，而是“排在最前面的怀疑对象”。这种“首要对象”的感觉很典型。\n\n**职场，汇报里**\n> This is a prime opportunity for us to expand into the market.\n> 这是我们进入这个市场的绝佳机会。\n\n这里既有“好机会”，也有“值得优先抓住”的意思，所以 prime 用得很顺。\n\n**日常，聊人或状态**\n> He is still in his prime.\n> 他还处在巅峰期。\n\n这句里的 prime 不是单纯“年轻”，而是身体、脑力、精力都还在最旺盛、最能发挥的时候。\n\n**房产/餐厅，挑位置**\n> The apartment is expensive because it's in a prime location.\n> 这套公寓很贵，因为它处在一个极好的地段。\n\nprime location 比 prime table 更稳，也更常见。这里的 prime 是“位置非常好、很占优势、价值也高”。\n\n**媒体，谈播出时段**\n> The show was moved to prime time.\n> 这档节目被调到了黄金时段播出。\n\nprime time 要单独记，它是媒体里的固定说法，指广播电视观众或听众最多的高峰时段，不是泛泛地说“很好的时间”。\n\n**写作/表达，举例说明**\n> This essay is a prime example of clear thinking.\n> 这篇文章是清晰思考的一个典型例子。\n\nprime example 这里更接近“典型、极好的例证”，指拿出来就很能说明问题。\n\n**安全/商业，谈重点对象**\n> Small businesses are often a prime target for scams.\n> 小企业往往是诈骗的首要目标。\n\nprime target 说的是“优先被盯上的对象”。这种搭配在新闻、安全、商业语境里都很常见。\n\n**装修，动词用法**\n> The walls need to be primed before painting.\n> 这些墙在粉刷前需要先上底漆。\n\n这里的 prime 是动词，不再表示“首要”或“优质”，而是“先做准备处理”。上底漆、预先处理，都是这个方向。\n\n**沟通现场，动词引申**\n> The speaker tried to prime the audience for a difficult question.\n> 这位演讲者试着先让听众为一个棘手问题做好心理准备。\n\n这个动词义再往外走一步，就是“预先铺垫、让人进入状态”。它和前面的名词、形容词义不完全一样，但底层仍是“提前处理，让接下来的事更顺”。\n\n如果放到网络语境里，像 That is prime content. 这种说法也能听懂，意思大致是“这内容很顶、很值得看”。但这更像活用，不像 prime time 这样是稳定固定的词组。  \n另外还有一些常见的专门说法，比如数学里的 prime number，金融里的 prime rate。它们也都沿着“基本、首要、核心”这条线各自展开，只是语境更专门。\n\n**原生思维** · 用 prime 时，常常是在给对象排前后顺序：谁最重要，哪块最值钱，什么阶段最能出力，什么东西要先处理好。  \n这个词好用，就在于它能把几种看似分散的中文意思收进同一条线：首要、上乘、巅峰、黄金时段、预先处理。抓住“被提到前面，因此更关键”这一点，很多搭配就不会散。\n\n**悟道时刻** · prime 的义项看着多，骨架其实很统一：凡是被推到前排的东西，可能更重要，可能更值钱，也可能更该先处理。  \n遇到 prime suspect、prime example、prime target，甚至动词 prime someone for something，先看这里是谁、什么、或哪一步被放到了最前面，意思通常就清楚了。",
+    "verification": {
+      "claimCount": 13,
+      "confirmedCount": 8,
+      "softenedCount": 4,
+      "uncertainCount": 0,
+      "rejectedCount": 2,
+      "checked": [
+        "**prime** 最早的画面是‘第一、最先、最好的那一层’。",
+        "**prime** 有‘到位了’的质感，常带着评估、筛选、定级的动作感。",
+        "它经常不是在单纯说‘好’，而是在说‘值得优先看、值得下手、值得相信它正在最强状态’。",
+        "像 **prime spot / prime time / prime condit…",
+        "**premier、principal、prime** 都有‘第一层、最重要、最核心…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/prime"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/in%20one%27s%20prime"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/prime%20time"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/prime"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/prime-time"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/prime_1"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/prime_3"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/prime"
+        }
+      ]
+    },
+    "surface": "首要的；鼎盛期；使准备好"
+  },
   "probe": {
     "displayWord": "probe",
     "meta": [
@@ -4296,6 +4805,55 @@ window.WORD_SENSE_ENTRIES = {
         }
       ]
     }
+  },
+  "prod": {
+    "displayWord": "prod",
+    "meta": [
+      "身体动作 · 行动催促 · B2",
+      "Issue 008"
+    ],
+    "markdown": "```markdown\n# 终稿\n\n**字面含义** · `prod` 指轻轻戳、捅一下：可以用手指、短棍，也可以用一句话去“戳”出反应。力道不大，但目的明确：让对方动一下。\n\n**本体质感** · `prod` 带催促感，但通常不是强硬推进。它常见于把人从停滞里轻轻拨动一下：语气可轻可重，有时只是熟人之间顺手的提醒或催动。这个词的特点是动作小，意图清楚。\n\n**寻根溯源** · 它的本义就是“戳、刺、捅一下”这类具体动作。可查材料一般把动词放在 16 世纪中期：Merriam-Webster 记 1535，Etymonline 记 1530s，意思大致是“拿棍子戳一下”；更早的词源并不完全确定。后来，这个具体动作逐渐发展出抽象用法：不一定真的用东西去戳，也可以用言语、提醒、压力，把对方往前推一点。\n\n**各路用法** · 它常见的路数有几种：真的戳一下，试探性地拨弄一下，催某人动起来，以及追着对方把话说出来。\n\n**日常，跟朋友**\n> I had to prod him three times before he finally answered.\n> 我催了他三次，他才终于回应。\n\n这里的 `prod` 是“催到对方开口或有反应”。比正式敦促更轻，常带一点无奈的反复提醒。\n\n**职场，会议上**\n> She gently prodded the team to finish the draft by Thursday.\n> 她轻轻催了团队一下，让大家在周四前完成初稿。\n\n这里通常可以理解为：比 `push` 软一些，但也不只是 `remind` 那种轻提醒，而是带一点“该动起来了”的促动。\n\n**叙事，对话里**\n> “You still haven’t answered my question,” he prodded.\n> “你还没有回答我的问题。”他追着问了一句。\n\n这里不是单纯的 `said`，而是顺手带出“追着你开口”的力道。它不是大声逼问，而是再往前推半步。\n\n**餐桌上，试探性碰一下**\n> He prodded at the fish with his fork.\n> 他用叉子试探着戳了戳那条鱼。\n\n这里是 `prod at sth`：带着观察、确认、试探的意味去戳弄、拨弄一下。这个搭配也能说明它后来为什么会长出抽象义——先轻碰一下，看会不会有反应。\n\n**劝人行动**\n> She prodded him into action.\n> 她催得他终于行动起来了。\n\n这是常见结构：`prod sb into doing sth`。英语里也常见 `prod sb to do sth`。重点都不在“替他做”，而在给他那一下，让事情开始往前走。\n\n**口语里，一下提醒**\n> Give him a prod and see if he replies.\n> 轻轻催他一下，看看他会不会回。\n\n这里 `prod` 变成名词了。`give sb a prod` 可以是“戳一下”，也可以是“提醒一下、催一下”。动词和名词放在一起看，会更清楚这个词始终围着同一个核心：小动作，换来反应。\n\n**原生思维** · 英语里用 `prod` 时，常能看到很强的动作感：轻轻顶一下，看对方会不会动。它特别适合这种状态——人其实知道该做什么，只是慢了、拖了、迟疑了，或者有点不情愿。中文可以译成“催”“提醒”“敦促”“追问”，但这些词各抓住一面；`prod` 把“轻微施压、促使反应、试探性推动”放在了一起。所以它常落在一个微妙的位置上：不算重压，也不是中性的提示。\n\n**悟道时刻** · 记 `prod`，可以抓住它的动作逻辑：先轻碰一下，再等反应出来。遇到 `nudge`、`prompt`、`push` 这些近邻词时，也可以先看说话的人是在碰一下、带一下，还是已经开始施压。`prod` 大致站在“动作不大，但目的明确”的这一侧。",
+    "verification": {
+      "claimCount": 12,
+      "confirmedCount": 5,
+      "softenedCount": 4,
+      "uncertainCount": 1,
+      "rejectedCount": 0,
+      "checked": [
+        "`prod` 不是那种把人‘推走’的用力，更像用指尖、短棍、或一句话，轻轻捅一下、戳…",
+        "它常带着一点不耐烦，但不一定凶；有时甚至是熟人之间很自然的催促。",
+        "它本来就是‘戳、刺、顶一下’的动作。",
+        "后来这个具体动作慢慢长成了更抽象的用法：不一定真的拿东西去戳，也可以是言语、提醒、压…",
+        "这个从‘物理接触’滑到‘心理推动’的路径很典型。"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/prod"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/prod"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/prod_1"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/prod"
+        },
+        {
+          "label": "Collins Dictionary",
+          "url": "https://www.collinsdictionary.com/dictionary/english/prod"
+        },
+        {
+          "label": "Longman Dictionary of Contemporary English",
+          "url": "https://www.ldoceonline.com/dictionary/prod"
+        }
+      ]
+    },
+    "surface": "戳；催促；推动"
   },
   "propensity": {
     "displayWord": "propensity",
@@ -4353,6 +4911,60 @@ window.WORD_SENSE_ENTRIES = {
       ]
     },
     "surface": "倾向；习性；偏好"
+  },
+  "proposition": {
+    "displayWord": "proposition",
+    "meta": [
+      "论证提案 · 商业表达 · B2-C1",
+      "Issue 008"
+    ],
+    "markdown": "**字面含义** · proposition 的核心很稳定：把一个说法、判断或提议摆到面前，供人接受、反对或检验。早期英语里，它就有“被提出为讨论对象”的意思，后来才发展出今天这些义项。\n\n**本体质感** · proposition 有一种“摆出来供讨论”的感觉。在正式语境里，它通常比 idea 更书面，也比 suggestion 更像一个已经整理过、能进入讨论流程的对象。  \n和 proposal、statement、claim 放在一起看，会更清楚：proposal 偏向“向你提出一个安排”，statement 偏向“把一个说法陈述出来”，claim 偏向“主张这是真的”；而 proposition 在很多论证语境里，是先把一个待讨论的框架摆出来。  \n这个词也不总是中性的。到了商业里，它可能带条件交换的意味；到了人际语境里，甚至会带试探或性邀约的味道。所以它很难固定对应某一个中文词，关键在“提出、等待回应”这个动作。\n\n**寻根溯源** · 它来自拉丁语 *propositio*，核心意思是“放在前面”“提出”。进入英语后，早期就有“作为讨论主题被提出”的意思；后来一方面保留了“提出一个说法、意见、提议”的方向，另一方面又在逻辑和哲学里专门化为“可被判断真假的命题”。  \n所以它今天会同时出现在“逻辑命题”和“商业提议”两个方向上，并不矛盾：本质上都是先把一个东西提出来，再看你怎么判断、怎么回应。\n\n**各路用法** · 几个例子，看看它在不同场域里的位置：\n\n**职场，会议里**\n> We need to evaluate the proposition before we commit resources.\n> 在投入资源之前，我们需要评估这个提议。\n\n这里的 proposition 不是随口一说的点子，而是已经被拿出来、准备进入判断流程的方案。\n\n**论证，讨论某个观点时**\n> They rejected the proposition that more testing always improves learning.\n> 他们否定了“更多测试总能提升学习效果”这一命题。\n\n`the proposition that ...` 是很常见的句式，相当于把后面整件事当成一个可被讨论、可被证成或推翻的对象。\n\n**职场，法律/商务**\n> The proposition is simple: lower the fee, and we sign the contract today.\n> 这个提议很简单：把费用降下来，我们今天就签合同。\n\n这里带着“摆条件、谈交换”的意味，几乎像谈判桌上的筹码。\n\n**日常，朋友聊天**\n> That sounds like a risky proposition.\n> 这听起来是件有点冒险的事。\n\n这里不是在抠“提议”的字面，而是在给整件事下判断：这事风险不小。\n\n**日常，评价难度或收益**\n> Starting a restaurant in this economy is a tough proposition.\n> 在现在这种经济环境下开餐馆，是件很难做的事。\n\n`tough proposition`、`risky proposition` 是同一路用法：这里说的不是正式提案，而是“这事本身不好对付”。\n\n**商业，谈盈利模式**\n> At that price, the product is no longer a paying proposition.\n> 按这个价格，这个产品就不再是一门赚钱的买卖了。\n\n`a paying proposition` 指“值得做、能赚钱的事”，也是英语里很稳的一支老用法。\n\n**产品，营销讨论**\n> We still haven't defined the value proposition clearly.\n> 我们到现在还没有把价值主张说清楚。\n\n`value proposition` 是商业和产品语境里的高频固定搭配，重点不是“提议”，而是“你到底给用户提供了什么价值”。\n\n**人际，带警惕意味**\n> He propositioned her at the bar.\n> 他在酒吧里向她提出了性邀约。\n\n这里已经不是名词，而是动词 `proposition`。这个用法很重要：它常常特指带性意味的搭讪或要求，读到时不能只按“提议”去理解。\n\n**原生思维** · 在英语使用里，proposition 常把一件事处理成“可被摆出来讨论的对象”。重点在于：这不是随手冒出的想法，而是一个可评估、可接受、可拒绝的东西。  \n所以它在逻辑里能表示“命题”，在商业里能表示“提议”，也能出现在 `value proposition` 这类固定搭配里；到了日常表达中，它还可以指“一个有风险、很棘手、值不值当的事”。这些用法共用的是同一条线索：把某个东西推到台面上，让它进入判断。  \n顺手一提，如果你在美国政治新闻里看到 Proposition 13 这种写法，那个 Proposition 往往是“公投提案”的制度用法，也还是这条主线：一项被摆到公众面前、等待表决的事项。\n\n**悟道时刻** · proposition 最值得抓住的，是它背后的动作：先把一整件事对象化，再交给判断。  \n再看到 proposition、proposal、claim、case 这些词时，先看它到底是在陈述、在主张、在谈条件，还是在把一个待处理的东西摆上桌，边界就更容易分清。",
+    "verification": {
+      "claimCount": 11,
+      "confirmedCount": 8,
+      "softenedCount": 4,
+      "uncertainCount": 2,
+      "rejectedCount": 0,
+      "checked": [
+        "词源：Etymonline",
+        "逻辑义：Britannica"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/proposition"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/proposition"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/proposition_1"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/proposition"
+        },
+        {
+          "label": "Britannica",
+          "url": "https://www.britannica.com/topic/proposition"
+        },
+        {
+          "label": "Britannica",
+          "url": "https://www.britannica.com/topic/logic-of-propositions"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/value-proposition"
+        },
+        {
+          "label": "California Secretary of State",
+          "url": "https://quickguidetoprops.sos.ca.gov/"
+        }
+      ]
+    },
+    "surface": "主张；提议；价值命题"
   },
   "pull": {
     "displayWord": "pull",
@@ -4727,6 +5339,59 @@ window.WORD_SENSE_ENTRIES = {
       ]
     }
   },
+  "retrieve": {
+    "displayWord": "retrieve",
+    "meta": [
+      "恢复取回 · 信息检索 · B2",
+      "Issue 008"
+    ],
+    "markdown": "**字面含义** · 这个词的入口是“把某样东西重新拿回来”。可以是去捡回掉落的东西，也可以把原本失落、分散的东西带回手边。\n\n**本体质感** · retrieve 带有很明确的“去取回”动作：目标清楚，把东西从暂时脱离可用范围的状态里带回来。很多语境里，它比 get 正式一些，也比 find 更强调“带回来”这一步。和 recover 相比，retrieve 偏“取回、调回、找回到手”，recover 更常指“恢复正常、从损失中恢复”。\n\n因此，retrieve 常见于几类场景：取回物品、调取文件和记录、检索数据、从记忆里把某个名字想起来，也可在较正式的书面语里指“挽回”局面或名誉。它整体偏冷静、功能性、技术感，不像日常说“拿一下”那么松。retriever 这类狗名，背后也是“把猎物叼回来”的 retrieve。\n\n**寻根溯源** · retrieve 经由古法语进入英语，核心义一直围着“再次找到、带回”打转。更深一层常追到俗拉丁语 *tropare*，但这一层主要属于词源推定。比较稳妥的抓法是：它不是英语内部那种一眼可拆的构词，而是从更早的法语形式一路带着“找回”进入英语。\n\n它在英语里很早就有“重新找到”的意思。后来一支保留在“把东西取回、把猎物叼回、把球救回来”这些具象画面里；另一支扩展到把记忆调回，再到把信息、数据、记录从系统或存储里调出来。大致看，记忆义在 17 世纪已经出现，计算机相关用法到 20 世纪中期才稳定下来。骨架一直没变，只是“带回来”的对象从实物变成了名字、记录和数据。\n\n**各路用法** ·\n\n**职场，邮件/技术场景**\n> The system can retrieve deleted files within 30 days.\n> 系统可以在 30 天内找回已删除的文件。\n\n这里的 retrieve 不一定等于“彻底恢复内容”，更稳妥的理解是：系统能把这些文件从删除后的状态调回到可访问范围。\n\n**日常，跟朋友**\n> I need to retrieve my bag from the café before they close.\n> 我得在咖啡馆关门前把包拿回来。\n\n这里就是“去把东西取回”，比 get my bag 更正式一点，也更强调东西原本被落在了别处。\n\n**职场，数据/研究**\n> We were unable to retrieve the records from the archive.\n> 我们没能从档案中调取到这些记录。\n\n重点不在“记录存不存在”，而在“能不能把它们调出来并重新使用”。\n\n**脑子里，想名字的时候**\n> She tried to retrieve his name from memory.\n> 她试着从记忆里把他的名字想起来。\n\n这是很主流的用法。retrieve 不只用于外部世界里“取回东西”，也可以指把一时够不着的信息从脑子里调回来。\n\n**正式书面语，谈名誉/局面**\n> The apology did little to retrieve the company’s reputation.\n> 这次道歉几乎没能挽回公司的声誉。\n\n这里已经很抽象，但骨架没变：某种原本丢失的东西，试图被拉回到可接受的位置。所以它听起来会比 get back 更书面。\n\n**技术/学术，固定搭配**\n> Information retrieval is a core topic in computer science.\n> 信息检索是计算机科学中的一个核心主题。\n\n看到 retrieval 这个名词，逻辑还是一样：把信息从存储或信息海里调出来，让它重新进入可访问状态。data retrieval 也是同一套用法。\n\n**原生思维** · 用 retrieve 时，重点通常不在“拿到一个东西”这么笼统，而在一条清楚的路径：东西原本在某处，后来离开了可见或可用范围，再通过某种方式被带回来。中文里常分开说“找回”“取回”“调取”“想起”“挽回”；英语里，retrieve 往往把这条“离开——带回”的动作链压进一个词里。\n\n顺着这条线，就容易理解为什么它既能接 bag、files、records，也能接 memory、reputation，还能延伸到球类里把难救的球救回来的意思。\n\n**悟道时刻** · retrieve 说的不是普通的“得到”，而是把原本属于你、可用过、或本该回到你这边的东西重新带回来。抓住“离开可用范围——再被调回”这条轨迹，物品、文件、记忆、名誉这些看似分散的义项，就会落在同一张图里。\n\n见到 retrieve，先别急着翻成“获取”。先问一句：这里说的是不是“调回、取回、挽回”？",
+    "verification": {
+      "claimCount": 12,
+      "confirmedCount": 8,
+      "softenedCount": 5,
+      "uncertainCount": 1,
+      "rejectedCount": 1,
+      "checked": [
+        "这个词最早给人的画面,不是‘理解’或‘获取信息’,而是把某样东西重新拿回来。",
+        "retrieve 身上有一种‘定向去取回’的动作感……目标明确地把东西从某个地方、某…",
+        "它常出现在取回文件、检索数据、捡回物品、救援设备这类场景里。",
+        "retrieve 来自法语和更早的拉丁来源。",
+        "核心意思一直围着‘再次找到、带回’打转。"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/retrieve"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/retrieve"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/retrieve"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/retrieve"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/retrieve_v"
+        },
+        {
+          "label": "American Heritage Dictionary",
+          "url": "https://ahdictionary.com/word/search.html?q=retrieve"
+        },
+        {
+          "label": "APA Dictionary of Psychology",
+          "url": "https://dictionary.apa.org/retrieval"
+        }
+      ]
+    },
+    "surface": "取回；找回；检索"
+  },
   "royalty": {
     "displayWord": "royalty",
     "meta": [
@@ -4831,6 +5496,63 @@ window.WORD_SENSE_ENTRIES = {
         }
       ]
     }
+  },
+  "shack": {
+    "displayWord": "shack",
+    "meta": [
+      "居住空间 · 简陋质感 · B2",
+      "Issue 008"
+    ],
+    "markdown": "**字面含义** · shack 最先让人想到的，是临时感很重、简陋得有点寒酸的小屋：几块木板、金属片之类拼起来，先挡风遮雨再说。它没有“房子”那种完整感，只有“能住就行”的粗糙感。\n\n**本体质感** · 这个词一出来，往往就带着灰尘、吱呀作响的门、歪斜的墙板。说 shack 时，常会顺手把“简陋、破旧、将就”这层感觉带出来；但这种评价未必每次都很强，有时也只是随口说它条件差。拿来和 house、home 对照，会更清楚：house 是普通意义上的房子，home 带归属感，shack 则是“凑合待着的破地方”。\n\n**寻根溯源** · 这个词表示“粗糙搭起来的小屋、棚屋”时，常见说法是进入于 19 世纪后期的北美英语。它的词源并不完全确定：一种说法追到 Mexican Spanish 的 jacal，往上还可能连到 Nahuatl 的 xacalli；另一种说法认为，它也可能和方言里表示“摇摇晃晃、不结实”的词有关。词源虽无定论，但这种不稳、临时、拼搭出来的感觉，一直留在今天的用法里。\n\n**各路用法** · 几个例子，先看它在不同语境里的落点：\n\n**日常，聊住处**\n> They spent the summer in a little shack by the lake.\n> 他们整个夏天都住在湖边的一间小棚屋里。\n\n这里的重点不是严格的建筑分类，而是小、简单、条件一般的感觉。\n\n**日常，带点嫌弃**\n> I wouldn’t live in that shack even for free.\n> 就算免费，我也不想住那破屋子。\n\n这时 shack 很自然会带出说话人的嫌弃，但更多还是顺着“条件差”往外走，不一定是故意骂人。\n\n**日常，口语里夸张一点**\n> His office is basically a shack with Wi-Fi.\n> 他的办公室基本就是个能连 Wi‑Fi 的破棚子。\n\n口语里也会夸张地把条件差的地方说成 shack。这里不是字面上的建筑类型，而是在贬低它的配置和体面程度。\n\n**美式日常，说小岗亭或小房间**\n> The security guard stepped out of the guard shack to check our IDs.\n> 保安从门口的小岗亭里走出来检查我们的证件。\n\n这里的 shack 不一定是在骂它“破”，而是指那种很小、功能单一的封闭小屋。像 guard shack、snack shack 这类搭配，在美式英语里都很常见。\n\n**口语，讲同居**\n> They’ve been shacking up together for months.\n> 他们已经同居好几个月了。\n\n这里要认的是短语 **shack up (with somebody)**。它通常指未婚同居，或者和某人住在一起，带明显口语色彩；很多人遇到 shack，先遇到的其实就是这一支。\n\n**原生思维** · 用 shack 时，往往不是在做精确的建筑分类，而是在说一个本该像“住处”或“像样的小房间”的地方，只剩下基本功能，体面和完整性都掉下去了。中文里的“破屋”“棚屋”“小破房”都能接近它；shack 的特点是，“简陋”常常就带在这个名词里。\n\n也因为这样，它会自然往两边扩展：一边是字面上的破旧小屋，另一边是各种小而低配、只讲功能的小空间；再往口语里走，就有了 shack up 这种“住到一起去”的说法。它的核心一直没变：不正式、不完整，也不太体面的空间。\n\n**悟道时刻** · shack 不只是“棚屋”，还常把“低配、将就、不太体面”一起带进画面里。遇到这类词，可以多问一步：它是在给东西命名，还是也顺手带出了说话人的判断？",
+    "verification": {
+      "claimCount": 10,
+      "confirmedCount": 4,
+      "softenedCount": 5,
+      "uncertainCount": 2,
+      "rejectedCount": 1,
+      "checked": [
+        "**shack 最先让人看到的是那种临时搭起来、简陋得有点寒酸的小屋：几块木板、金属…",
+        "**它不是‘房子’的那种完整感，而是‘能住就行’的粗糙感。**",
+        "**说 shack 的人，通常不是在中性描述建筑，而是在把‘简陋、破旧、将就’这层感…",
+        "**它有点轻蔑，也可能只是随口的贫嘴；但无论哪种，核心都不是体面，而是‘不成样子却还…",
+        "**house 是完整的居所，home 还会带情感，shack 则更像‘凑合住的破地…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/shack"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/shack"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/shack_1"
+        },
+        {
+          "label": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/shack-up-with"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/shack%20up"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/shack"
+        },
+        {
+          "label": "Collins Dictionary",
+          "url": "https://www.collinsdictionary.com/dictionary/english/shack"
+        },
+        {
+          "label": "Oxford English Dictionary",
+          "url": "https://www.oed.com/dictionary/shack_n5"
+        }
+      ]
+    },
+    "surface": "简陋小屋；棚屋"
   },
   "slopper": {
     "displayWord": "slopper",
@@ -5144,6 +5866,59 @@ window.WORD_SENSE_ENTRIES = {
       ]
     },
     "surface": "条纹；痕迹；连续纪录"
+  },
+  "subtract": {
+    "displayWord": "subtract",
+    "meta": [
+      "数量运算 · 移除减少 · B1-B2",
+      "Issue 008"
+    ],
+    "markdown": "**字面含义** · 把一个数从另一个数里拿走。最直接的入口，是从总量里明确扣掉一块。\n\n**本体质感** · 这个词很有“算术”气质。它说的不是泛泛地“少了一点”，而是一个有对象、有方向的操作：从 B 里减去 A。语气通常中性、可核算，常见于纸面计算、表格扣数，或把某一项单独拎出来处理。因此，*subtract* 往往指结构上的扣除，不用于情绪上的损失。\n\n**寻根溯源** · 这个词来自拉丁语 *subtrahere*，大意是 “draw away / take away”，也就是“拉开、拿走”。英语里相关的早期形式很早就出现在数学语境中；现代拼写 *subtract* 大致在 16 世纪固定下来，延续到今天。它在英语里很早就和“减法式拿走”连在一起。即使用在更抽象的句子里，也保留着这个骨架：从整体中扣掉一部分，或把某个成分排除出去。\n\n**各路用法** · 几个例子，先感受它在不同场景里的用法：\n\n**职场，报表里**\n> We need to subtract the refund amount from this month’s revenue.\n> 我们需要把退款金额从这个月的收入里扣掉。\n\n这里是标准的账面动作，干脆、准确。也顺手记住最关键的句法：**subtract A from B**，不是反过来。\n\n**日常，跟朋友算账**\n> If you subtract the taxi fare from the total cost, the trip wasn’t that expensive.\n> 如果把出租车费从总花费里扣掉，这趟旅行其实没那么贵。\n\n这里还是同一个逻辑：先有一个整体，再把其中一项拿出来重算。学习者最容易错的，正是把“从哪里减”说丢了。\n\n**学习，数学课上**\n> Children learn to add and subtract in the first years of school.\n> 孩子们在上学最初几年会学习加法和减法。\n\n这里的 *subtract* 可以不带宾语，直接表示“做减法”。但核心感觉没变，仍然是减法动作本身。\n\n**分析，排除一个变量后**\n> If you subtract the effect of timing, the two teams performed about the same.\n> 如果把时机因素的影响扣掉，这两支队伍的表现大致差不多。\n\n这里是不一定真在算数字的延伸义，但仍然是把某个因素从整体判断里扣出去，再看全局。\n\n**原生思维** · 英语里用 *subtract* 时，最常见的还是数字、金额、数量这类可计算对象。再往外延一点，它也可以表示把某项成本、某个变量、某个因素从整体考虑里扣掉。但它的骨架一直很稳定：是把一块从整体中减出去。这也是为什么 **subtract A from B** 这么重要——它把动作关系定得很清楚。\n\n跟近邻词相比，边界也很清楚：*subtract* 是算术式的扣除；*deduct* 更常见于税、费用、工资、规则这类正式扣减；*remove* 则宽得多，重点只是“移走”，不自带这种数值关系。把这三个分开，很多句子会立刻清爽。\n\n**悟道时刻** · *Subtract* 最稳的，不是“减少”这个结果，而是“谁从谁里面被扣掉”的结构。遇到 *subtract*、*deduct*、*remove*，先别急着都译成“减去”或“去掉”，先看有没有一个明确整体、一个被扣掉的部分，以及两者之间像算式一样清楚的关系。",
+    "verification": {
+      "claimCount": 7,
+      "confirmedCount": 5,
+      "softenedCount": 3,
+      "uncertainCount": 2,
+      "rejectedCount": 1,
+      "checked": [
+        "这个词来自拉丁语，核心意思就是‘拿走、移除’。",
+        "它后来进入数学语境，变成了今天这种‘从总量中扣除一部分’的稳定用法。",
+        "即使到了抽象场景里，那个‘把某样东西从整体里拿掉’的骨架还在。",
+        "subtract 常跟数字、金额、数量、影响一起出现：它需要一个可切分的对象。",
+        "例句 1：**We need to subtract the refund amou…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/subtract"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/subtract"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/subtract"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/subtract"
+        },
+        {
+          "label": "Collins Dictionary",
+          "url": "https://www.collinsdictionary.com/dictionary/english/subtract"
+        },
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/deduct"
+        },
+        {
+          "label": "American Heritage Dictionary",
+          "url": "https://ahdictionary.com/word/search.html?q=deduct"
+        }
+      ]
+    },
+    "surface": "减去；扣除；削减"
   },
   "supposition": {
     "displayWord": "supposition",
@@ -5508,6 +6283,59 @@ window.WORD_SENSE_ENTRIES = {
         }
       ]
     }
+  },
+  "traffic": {
+    "displayWord": "traffic",
+    "meta": [
+      "流动交换 · 网络指标 · B1-C1",
+      "Issue 008"
+    ],
+    "markdown": "**字面含义** · 最常见的还是街上的车流，指一条路上来来往往的流动。它可以具体表示“交通”，也常用来指某条通道上的通行量。\n\n**本体质感** · traffic 带有“流量”“通行量”的感觉，重点在动态的来往，不是静态的系统本身。口语里，它常用来描述“这条路现在怎么样”“这里有多少来往”。\n\n这种用法也不限于公路。air traffic 是空中交通，sea traffic 是海上航运流动，through traffic 是“过境通行”的车流，oncoming traffic 是迎面而来的来车。traffic 盯住的往往不是“车”这个物件，而是某条路线、某个通道上有多少东西在通过。\n\n**寻根溯源** · 这个词来自法语、意大利语一类和“交换、贸易、来往”有关的词，最早和“为了贸易而运输货物”关系很近。后来先发展出“贸易、商业、交换”的意思，再慢慢落到“沿线路移动的人和车辆”，到现代才越来越稳地贴在道路交通、城市车流上。\n\n所以今天看到 traffic，里面还保留着“不断通过、不断交换”的底子。也因为这一点，它后来很自然地扩展到网站访问量、网络中的数据流量，以及更正式或负面的“非法交易”语境里。\n\n**各路用法** · 这个词最常见的还是道路上的车流，但用法比“交通”宽得多：可以指空中和海上的通行流动，也可以指网站访问量、门店客流、客运货运，甚至非法交易。\n\n**日常，路上**\n> There was a lot of traffic, so I arrived late.\n> 路上车很多，所以我迟到了。\n\n这是最直观的道路交通义，也是大多数人默认先想到的一层。\n\n**日常，堵车里**\n> We were stuck in traffic for almost an hour.\n> 我们堵在路上快一个小时了。\n\nstuck in traffic 是高频固定说法，说的是你被车流卡住了。\n\n**出行，机场广播或新闻里**\n> Air traffic was delayed because of the storm.\n> 由于暴风雨，空中交通延误了。\n\n这里的 traffic 已经不是公路车流，而是沿固定路线移动的交通流。sea traffic、oncoming traffic 也是同一套思路。\n\n**零售，门店运营**\n> The store gets a lot of foot traffic on weekends.\n> 这家店周末人流很大。\n\nfoot traffic 很常见，尤其在线下商业、地产、商场选址语境里，说的是客流、人流。\n\n**运输，行业汇报里**\n> Passenger traffic recovered faster than freight traffic this year.\n> 今年客运量的恢复速度比货运量更快。\n\n这里的 traffic 很自然地落在 passenger traffic 和 freight traffic 上，意思是客运量、货运量。\n\n**职场，汇报里**\n> We saw a big drop in traffic after the homepage redesign.\n> 首页改版后，我们看到流量大幅下降。\n\n这里的 traffic 不是“车流”，而是网站访问量。\n\n**社媒，运营语境**\n> This post is bringing a lot of traffic to our page.\n> 这条帖子给我们的页面带来了很多流量。\n\n这里 traffic 很自然地借到“引流、访问量”上了。\n\n**技术，网络语境**\n> Video streaming accounts for a huge share of internet traffic.\n> 视频流媒体占了互联网流量中的很大一部分。\n\ninternet traffic 不只可以指“有多少人来访问”，也可以更技术性地指网络里传输的数据和消息流量。\n\n**新闻，正式语境**\n> Police are trying to stop the traffic in illegal weapons.\n> 警方正试图阻止非法武器交易。\n\n这时的 traffic 回到了更早、也更正式的一支：交易、贩运。你也会在 human trafficking 这种固定说法里遇到它，意思是“人口贩运”。\n\n➤ *值得注意的是，在互联网和营销语境里，traffic 常常就是“访问量／引流量”；但在更技术的网络语境里，它也可以直接指数据和消息在系统中的流量。*\n\n**原生思维** · 英语里，traffic 常常按“某条通道上有多少东西在通过”来使用，所以很适合和路、航线、网站、平台、门店、渠道这些“通道”搭配。中文里往往分开说“车流”“人流”“客流”“流量”“货运量”，英语里则常常用 traffic 把这些收拢到一起。把它记成一个稳定骨架就够了：某条通道上的流动量。\n\n顺手提醒一句，traffic 还保留着“交易、贩运”这条旧线，所以看到 traffic in drugs、human trafficking 时，不要按“交通”去理解；那里说的是非法买卖和转运。\n\n**悟道时刻** · traffic 好用的地方，在于它让你直接看到“通道里的流动量”。路上是车在流，商场里是人在流，网站里是访问在流，网络里是数据在流。\n\n遇到它，先别急着翻成固定中文词，先问自己：这里的通道是什么，流过去的又是什么。这个问题一立起来，traffic 的大多数用法就容易打开。",
+    "verification": {
+      "claimCount": 7,
+      "confirmedCount": 4,
+      "softenedCount": 3,
+      "uncertainCount": 0,
+      "rejectedCount": 1,
+      "checked": [
+        "最先浮出来的是街上的车流、人流、物流：一条路上东西来来往往，像水一样不断通过。",
+        "它也可以很具体地指‘交通’，但这个词的画面从来不只是‘车多’，而是‘有东西在持续流动…",
+        "这个词来自法语和意大利语一类的‘交换、贸易、来往’概念，最早和‘人和货物的流通’关系…",
+        "后来它慢慢扩到道路上的车流，再扩到更抽象的‘流量、访问量、往来’。",
+        "这个词最常见的是讲道路上的车流，也常被借去讲网站访问量、社媒流量，甚至某种‘来往很密…"
+      ],
+      "sources": [
+        {
+          "label": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/traffic"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/traffic"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/traffic_1"
+        },
+        {
+          "label": "Etymonline",
+          "url": "https://www.etymonline.com/word/traffic"
+        },
+        {
+          "label": "Britannica Dictionary",
+          "url": "https://www.britannica.com/dictionary/traffic"
+        },
+        {
+          "label": "Oxford Learner's Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/human-trafficking"
+        },
+        {
+          "label": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/human-trafficking"
+        }
+      ]
+    },
+    "surface": "交通；流量；非法交易"
   },
   "unfold": {
     "displayWord": "unfold",

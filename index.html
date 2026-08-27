@@ -2149,7 +2149,7 @@
         <a href="word-sense-author.html">一封信</a>
         <div class="issue">
           <span>FIELD NOTES ON ENGLISH</span>
-          <span>ISSUE 007</span>
+          <span>ISSUE 008</span>
         </div>
       </div>
       <div class="top-install">
@@ -2197,7 +2197,7 @@
 
     <section aria-label="精选词卡">
       <div class="gallery-header">
-        <h2>ISSUE 007 WORD CARDS / 18 FILES</h2>
+        <h2>ISSUE 008 WORD CARDS / 16 FILES</h2>
         <div class="gallery-tools">
           <p>hover 看线索 / click 阅读词条</p>
           <button id="savedShelfToggle" class="shelf-toggle" type="button" aria-expanded="false">
@@ -2211,9 +2211,9 @@
 
     <section class="archive-section" aria-label="上一期归档词卡">
       <div class="gallery-header">
-        <h2>ARCHIVE DRAWER / ISSUE 006</h2>
+        <h2>ARCHIVE DRAWER / ISSUE 007</h2>
         <div class="gallery-tools">
-          <p class="archive-note">Issue 006 已经收进档案袋，只露出词条标签；点开任意标签继续阅读。</p>
+          <p class="archive-note">Issue 007 已经收进档案袋，只露出词条标签；点开任意标签继续阅读。</p>
         </div>
       </div>
       <div id="archiveCards" class="archive-folder"><span class="archive-folder-label">open an old file -></span></div>
@@ -2304,32 +2304,11 @@
         .map(item => String(item).match(/^Issue (\d+)$/i))
         .filter(Boolean)
         .map(match => Number(match[1]));
-      const latest = numbers.length ? Math.max(...numbers) : 7;
+      const latest = numbers.length ? Math.max(...numbers) : 8;
       return `Issue ${String(latest).padStart(3, "0")}`;
     }
 
     const archiveCardCatalog = [
-      { word: "gimmick", meaning: "噱头；花招", trail: "营销 / 吸睛", clue: "它不只是一项设计，更在暗示：这东西首先负责抓注意力，未必负责增加价值。", card: "#c5dcf4", reveal: "#263fc7", revealInk: "#fffefa" },
-      { word: "gross", meaning: "恶心的；总额", trail: "感官 / 数量", clue: "它可以让人本能地嫌恶，也可以把扣除之前的全部数量一把圈起来。", card: "#ff8875", reveal: "#fff1a6", revealInk: "#171717" },
-      { word: "royalty", meaning: "王室；版税", trail: "身份 / 收益", clue: "一边是王室成员的集体身份，一边是作品或资源持续带来的权利收入。", card: "#5b8b40", reveal: "#f5b08b", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "cannibalize", meaning: "蚕食；拆用", trail: "商业 / 竞争", clue: "不是被外敌吃掉，而是自己的新产品、渠道或零件反过来消耗自己。", card: "#315f87", reveal: "#ff8875", revealInk: "#171717", faceInk: "#fffefa", compact: true },
-      { word: "tap into", meaning: "接入；利用", trail: "资源 / 潜力", clue: "像接上一条已有的水管，把原本就在那里的资源、需求或能力引出来。", card: "#f4f1ea", reveal: "#161818", revealInk: "#f7f3e9" },
-      { word: "feature", meaning: "特征；重点呈现", trail: "产品 / 媒体", clue: "它既是让事物被认出的突出部分，也可以把某个人或事放到画面中央。", card: "#f2e6c9", reveal: "#c95440", revealInk: "#fffefa" },
-      { word: "guerrilla", meaning: "游击式的", trail: "策略 / 非常规", clue: "它强调小规模、灵活、出其不意：不按大部队的正面打法行动。", card: "#356248", reveal: "#e1dfda", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "epitome", meaning: "典型；化身", trail: "代表 / 概括", clue: "不是普通例子，而是某种特质浓缩到几乎可以拿来当标准答案。", card: "#d7d4cf", reveal: "#2447bd", revealInk: "#fffefa" },
-      { word: "maiden", meaning: "首次的；少女", trail: "首航 / 旧称", clue: "现代高频搭配常把它放在第一次正式亮相前：首航、首秀、首次演说。", card: "#c75a48", reveal: "#f1e8d3", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "blunt", meaning: "钝的；直白的", trail: "触感 / 表达", clue: "刀刃不再尖，人说话也不再绕：它把缓冲和修饰一起削掉。", card: "#486b3b", reveal: "#c8ddf0", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "flex", meaning: "弯曲；炫耀", trail: "肌肉 / 展示", clue: "从绷紧肌肉展示力量，走到社媒里亮出财富、品位或实力。", card: "#b9d3ea", reveal: "#356248", revealInk: "#fffefa" },
-      { word: "obliterate", meaning: "彻底摧毁；抹去", trail: "破坏 / 痕迹", clue: "不是普通损坏，而是把形状、痕迹或存在感一起消灭到难以辨认。", card: "#ffb498", reveal: "#25353a", revealInk: "#fffefa", compact: true },
-      { word: "derogatory", meaning: "贬损的", trail: "语言 / 边界", clue: "它标记的不只是负面，而是某种表达正在降低、贬损一个人或群体。", card: "#32618a", reveal: "#e7dcb9", revealInk: "#171717", faceInk: "#fffefa", compact: true },
-      { word: "streak", meaning: "条纹；连续纪录", trail: "痕迹 / 连续", clue: "一条痕迹沿着表面延伸，也可以是一串没有中断的胜利、失败或行为。", card: "#f5b08b", reveal: "#285542", revealInk: "#fffefa" },
-      { word: "tender", meaning: "柔嫩的；投标", trail: "触感 / 正式提交", clue: "一边是经不起重手的柔嫩与触痛，一边是制度语境里的正式递交。", card: "#285542", reveal: "#d9d9d7", revealInk: "#171717", faceInk: "#fffefa" },
-      { word: "pledge", meaning: "郑重承诺", trail: "承诺 / 担保", clue: "它不是随口答应，而是把信誉、行动甚至财物一起押进承诺里。", card: "#e0ded9", reveal: "#234b72", revealInk: "#fffefa" },
-      { word: "demeanor", meaning: "举止；神态", trail: "外在 / 观感", clue: "它不直接说内心是什么，而是看一个人的姿态、表情和行为呈现出什么样子。", card: "#efe0bd", reveal: "#c95440", revealInk: "#fffefa" },
-      { word: "spiral", meaning: "螺旋；不断恶化", trail: "轨迹 / 连锁", clue: "事情绕着圈往同一方向越走越远，常用来写失控式的上升或下坠。", card: "#9fc8c1", reveal: "#171818", revealInk: "#fffefa" }
-    ];
-
-    const cardCatalog = [
       { word: "aristocratic", meaning: "贵族的；贵族气派的", trail: "阶层 / 气质", clue: "它不只标记贵族出身，也会把一种讲究、疏离、仿佛不必解释自己的姿态带进来。", card: "#c5dcf4", reveal: "#263fc7", revealInk: "#fffefa", compact: true },
       { word: "juxtapose", meaning: "并置；并列对照", trail: "位置 / 对照", clue: "把两个东西放在彼此旁边，让差异、张力或关系自己显出来。", card: "#ff8875", reveal: "#fff1a6", revealInk: "#171717", compact: true },
       { word: "wince", meaning: "畏缩；皱眉", trail: "痛感 / 反应", clue: "痛、尴尬或难堪先让脸和身体缩一下，是来不及掩饰的瞬间反应。", card: "#5b8b40", reveal: "#f5b08b", revealInk: "#171717", faceInk: "#fffefa" },
@@ -2349,6 +2328,25 @@
       { word: "despondency", meaning: "沮丧；消沉", trail: "情绪 / 希望", clue: "不只是心情不好，而是希望和行动力一起往下沉，觉得局面很难再转好。", card: "#efe0bd", reveal: "#c95440", revealInk: "#fffefa", compact: true },
       { word: "vicinity", meaning: "附近；邻近地区", trail: "空间 / 范围", clue: "它画的不是精确边界，而是以某个点为中心的一圈模糊邻近范围。", card: "#9fc8c1", reveal: "#171818", revealInk: "#fffefa" }
     ];
+
+    const cardCatalog = [
+      { word: "attenuate", meaning: "减弱；稀释；使变细", trail: "强度 / 减弱", clue: "它让原本强烈、浓密或有力的东西逐渐变弱，但不一定把它完全消除。", card: "#c5dcf4", reveal: "#263fc7", revealInk: "#fffefa", compact: true },
+      { word: "prime", meaning: "首要的；鼎盛期", trail: "优先 / 状态", clue: "它既能把某物排到最重要的位置，也能指一个人或事物表现最好的阶段。", card: "#ff8875", reveal: "#fff1a6", revealInk: "#171717" },
+      { word: "logistics", meaning: "物流；后勤；统筹安排", trail: "资源 / 调度", clue: "重点不只是运货，而是让人、物、时间和地点在需要时准确碰面。", card: "#5b8b40", reveal: "#f5b08b", revealInk: "#171717", faceInk: "#fffefa", compact: true },
+      { word: "shack", meaning: "简陋小屋；棚屋", trail: "空间 / 简陋", clue: "它说的不只是小，更强调搭建粗糙、条件有限，像是勉强能遮风避雨。", card: "#315f87", reveal: "#ff8875", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "clearance", meaning: "许可；清仓；净空", trail: "许可 / 余量", clue: "从获得通行许可，到腾空库存或留出安全距离，它都在处理‘障碍被清开’。", card: "#f4f1ea", reveal: "#161818", revealInk: "#f7f3e9", compact: true },
+      { word: "groom", meaning: "梳理；培养；诱骗接近", trail: "准备 / 塑形", clue: "它可以是细致打理，也可以是有目的地培养；在安全语境里还可能指建立信任以实施操控。", card: "#f2e6c9", reveal: "#c95440", revealInk: "#fffefa" },
+      { word: "level", meaning: "水平；层级；弄平", trail: "尺度 / 平衡", clue: "它既标出同一高度或层次，也能把倾斜和差距处理到平齐。", card: "#356248", reveal: "#e1dfda", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "traffic", meaning: "交通；流量；非法交易", trail: "流动 / 交换", clue: "人车在道路上流动、访问在网络中流动，甚至非法商品在人际网络里流转，都能落进这个词。", card: "#d7d4cf", reveal: "#2447bd", revealInk: "#fffefa" },
+      { word: "field", meaning: "田地；领域；实地", trail: "范围 / 现场", clue: "它从一片可进入的土地，延伸到知识、工作或竞争展开的范围。", card: "#c75a48", reveal: "#f1e8d3", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "proposition", meaning: "主张；提议；价值命题", trail: "论证 / 提案", clue: "它把一个可供判断、讨论或接受的想法正式摆到面前。", card: "#486b3b", reveal: "#c8ddf0", revealInk: "#171717", faceInk: "#fffefa", compact: true },
+      { word: "crisp", meaning: "酥脆的；清晰利落的", trail: "质地 / 表达", clue: "咬下去干脆、边缘分明，延伸到语言和画面时也保留这种不拖泥带水。", card: "#b9d3ea", reveal: "#356248", revealInk: "#fffefa" },
+      { word: "crop", meaning: "作物；一批；裁剪", trail: "收成 / 截取", clue: "它可以是一季长出来的收成，也可以把图像边缘切掉，只留下需要的部分。", card: "#ffb498", reveal: "#25353a", revealInk: "#fffefa" },
+      { word: "prod", meaning: "戳；催促；推动", trail: "触碰 / 催动", clue: "先是用尖端轻戳一下，后来也用来写那种让人终于开始行动的提醒或压力。", card: "#32618a", reveal: "#e7dcb9", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "cherry", meaning: "樱桃；樱桃红；精选之物", trail: "果实 / 精选", clue: "除了果实和颜色，它还常进入固定表达，给事物添上一层甜美、珍贵或被挑中的意味。", card: "#f5b08b", reveal: "#285542", revealInk: "#fffefa" },
+      { word: "subtract", meaning: "减去；扣除；削减", trail: "运算 / 移除", clue: "从一个总量里拿走一部分，结果不仅用于算术，也能写某种因素让整体价值变少。", card: "#285542", reveal: "#d9d9d7", revealInk: "#171717", faceInk: "#fffefa" },
+      { word: "retrieve", meaning: "取回；找回；检索", trail: "返回 / 恢复", clue: "无论是捡回物件、恢复记忆还是调出数据，它都让某物重新回到可用的位置。", card: "#e0ded9", reveal: "#234b72", revealInk: "#fffefa" }
+    ];
     const archivedWords = new Set([
       "wail", "lowkey", "agentic", "reframe", "sentiment", "backdrop", "it's giving",
       "accountability gap", "address", "at its discretion", "blast", "brace", "brain rot",
@@ -2361,7 +2359,8 @@
       "daemon", "zombie", "thundering",
       "what's cooking", "revelation", "copy", "stew", "fend", "cast", "hygiene", "reference", "float", "fare", "come off", "affairs", "peg", "legacy", "business", "sandbox",
       "gimmick", "gross", "royalty", "cannibalize", "tap into", "feature", "guerrilla", "epitome", "maiden", "blunt", "flex", "obliterate", "derogatory", "streak", "tender", "pledge", "demeanor", "spiral",
-      "aristocratic", "juxtapose", "wince", "myriad", "disembody", "propensity", "divinity", "ensemble", "perturb", "pasture", "elapse", "ostracise", "taunt", "averse", "incur", "supposition", "despondency", "vicinity"
+      "aristocratic", "juxtapose", "wince", "myriad", "disembody", "propensity", "divinity", "ensemble", "perturb", "pasture", "elapse", "ostracise", "taunt", "averse", "incur", "supposition", "despondency", "vicinity",
+      "attenuate", "prime", "logistics", "shack", "clearance", "groom", "level", "traffic", "field", "proposition", "crisp", "crop", "prod", "cherry", "subtract", "retrieve"
     ]);
 
     const files = {

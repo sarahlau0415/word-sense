@@ -1,4 +1,4 @@
-const CACHE_NAME = 'wordsense-v20-issue-007-voice-edit';
+const CACHE_NAME = 'wordsense-v21-issue-008';
 const APP_SHELL = [
   '/',
   '/index.html',
