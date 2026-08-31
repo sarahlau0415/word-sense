@@ -21,12 +21,12 @@ from run import (
 
 ISSUE_008_WORDS = [
     {"word": "attenuate", "surface": "减弱；稀释；使变细", "meta": ["强度变化 · 正式表达 · C1", "Issue 008"]},
-    {"word": "prime", "surface": "首要的；鼎盛期；使准备好", "meta": ["优先程度 · 最佳状态 · B2-C1", "Issue 008"]},
+    {"word": "prime", "surface": "首要的；鼎盛期；预先激活", "meta": ["优先程度 · 联想启动 · B2-C1", "Issue 008"]},
     {"word": "logistics", "surface": "物流；后勤；统筹安排", "meta": ["组织运作 · 资源调度 · B2-C1", "Issue 008"]},
     {"word": "shack", "surface": "简陋小屋；棚屋", "meta": ["居住空间 · 简陋质感 · B2", "Issue 008"]},
     {"word": "clearance", "surface": "许可；清仓；净空", "meta": ["许可边界 · 空间余量 · B2-C1", "Issue 008"]},
     {"word": "groom", "surface": "梳理；培养；诱骗接近", "meta": ["照料培养 · 风险语义 · B2-C1", "Issue 008"]},
-    {"word": "level", "surface": "水平；层级；弄平", "meta": ["尺度层级 · 平衡状态 · B1-B2", "Issue 008"]},
+    {"word": "level", "surface": "水平；层级；坦诚相告", "meta": ["尺度层级 · 影视口语 · B1-B2", "Issue 008"]},
     {"word": "traffic", "surface": "交通；流量；非法交易", "meta": ["流动交换 · 网络指标 · B1-C1", "Issue 008"]},
     {"word": "field", "surface": "田地；领域；实地", "meta": ["空间范围 · 专业领域 · B1-B2", "Issue 008"]},
     {"word": "proposition", "surface": "主张；提议；价值命题", "meta": ["论证提案 · 商业表达 · B2-C1", "Issue 008"]},
